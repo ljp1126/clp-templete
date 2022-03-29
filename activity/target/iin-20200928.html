@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <%include _includes/meta.html %>
+    <title></title>
+    <%include _includes/css.html %>
+      <!-- <link rel="stylesheet" type="text/css" href="css/adiclub.css"> -->
+      <%include _includes/js.html %>
+        <!-- <script type="text/javascript" src="js/adiclub.js"></script> -->
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <%include _includes/modules/header.html %>
+      <!-- 内容部分 -->
+      <section class="container">
+
+        <style>
+          .article {
+            position: relative;
+          }
+
+          .article>img {
+            width: 100%;
+          }
+
+          .link-1 {
+            position: absolute;
+            width: 20%;
+            height: 12%;
+            left: 12%;
+            bottom: 32%;
+          }
+
+          .article-video .video-wrapper0 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+          }
+
+          .video-box .video-content0 {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+          }
+
+          .video-content0 .video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            visibility: hidden;
+          }
+
+          .video-box.is-play .video-wrapper0 .video-content0 .video {
+            visibility: visible;
+          }
+
+          .article-video1 .e-play-videoTwo iframe,
+          .article-video2 .e-play-videoTwo iframe,
+          .article-video3 .e-play-videoTwo iframe,
+          .article-video4 .e-play-videoTwo iframe,
+          .article-video5 .e-play-videoTwo iframe,
+          .article-video6 .e-play-videoTwo iframe {
+            display: none;
+          }
+
+          .article-video1 .e-play-videoTwo iframe,
+          .article-video2 .e-play-videoTwo iframe,
+          .article-video3 .e-play-videoTwo iframe,
+          .article-video4 .e-play-videoTwo iframe,
+          .article-video5 .e-play-videoTwo iframe,
+          .article-video6 .e-play-videoTwo iframe,
+          .article-video1 .video-click,
+          .article-video2 .video-click,
+          .article-video3 .video-click,
+          .article-video4 .video-click,
+          .article-video5 .video-click,
+          .article-video6 .video-click {
+            position: absolute;
+            left: 20%;
+            height: 92%;
+            top: 5%;
+            width: 19.2%;
+          }
+
+          .article-video2 .e-play-videoTwo iframe,
+          .article-video2 .video-click {
+            top: 3%;
+            height: 93.5%;
+            left: 60.8%;
+          }
+
+          .article-video3 .e-play-videoTwo iframe,
+          .article-video3 .video-click {
+            top: 2%;
+            left: 19.8%;
+            height: 92.3%;
+          }
+
+          .article-video4 .e-play-videoTwo iframe,
+          .article-video4 .video-click {
+            top: 27%;
+            height: 71%;
+            left: 60.8%;
+          }
+
+          .article-video5 .e-play-videoTwo iframe,
+          .article-video5 .video-click {
+            top: 3%;
+            height: 94%;
+            left: 20%;
+          }
+
+          .article-video6 .e-play-videoTwo iframe,
+          .article-video6 .video-click {
+            top: 2%;
+            height: 87%;
+            left: 60.8%;
+          }
+
+          .article-video1 .e-play-videoTwo iframe,
+          .article-video2 .e-play-videoTwo iframe,
+          .article-video3 .e-play-videoTwo iframe,
+          .article-video4 .e-play-videoTwo iframe,
+          .article-video5 .e-play-videoTwo iframe,
+          .article-video6 .e-play-videoTwo iframe {
+            width: 60%;
+            left: 20%;
+          }
+
+          .box {
+            /* position: absolute;
+      top: 2%;
+      left: 50%; */
+            /* transform: translateX(-50%); */
+            width: 60%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100%;
+          }
+
+          .box div {
+            width: 33.33%;
+            height: 50%;
+            position: relative;
+
+          }
+
+          .box div.tips {
+            overflow: auto;
+          }
+
+          .tips {
+            position: absolute !important;
+            width: 100% !important;
+            height: 100% !important;
+            background: #fff;
+            top: 0;
+            left: 0;
+            display: none;
+            padding: 10px 15px;
+            z-index: 99;
+          }
+
+          .box div .tips div {
+            width: 100%;
+            height: fit-content;
+            margin-bottom: 10px;
+            font-size: 14px;
+          }
+
+          .tips .title {}
+
+          @media (max-width: 1024px) {
+            .link-1 {
+              width: 55%;
+              left: 20%;
+              bottom: 54%;
+            }
+
+            .article-video1 .e-play-videoTwo iframe,
+            .article-video2 .e-play-videoTwo iframe,
+            .article-video3 .e-play-videoTwo iframe,
+            .article-video4 .e-play-videoTwo iframe,
+            .article-video5 .e-play-videoTwo iframe,
+            .article-video6 .e-play-videoTwo iframe {
+              top: 5%;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 90%;
+              height: 96%;
+            }
+
+            .article-video1 .e-play-videoTwo iframe,
+            .article-video2 .e-play-videoTwo iframe,
+            .article-video5 .e-play-videoTwo iframe {
+              top: 2%;
+            }
+
+            .article-video3 .e-play-videoTwo iframe {
+              height: 94.5%;
+            }
+
+            .article-video4 .e-play-videoTwo iframe {
+              top: 17.8%;
+              height: 80.3%;
+            }
+
+            .article-video6 .e-play-videoTwo iframe {
+              height: 94%;
+            }
+
+            .box .tips {
+              position: absolute;
+              width: 100% !important;
+              height: 100% !important;
+              padding: 5px 2px;
+            }
+
+            .box .tips div {
+              width: 100% !important;
+            }
+
+            .box {
+              width: 100%;
+              padding: 0 20px;
+            }
+
+            .box div {
+              width: 50% !important;
+            }
+
+            .box div .tips div {
+              font-size: 12px;
+            }
+
+            .tips.left {
+              left: -80px;
+            }
+          }
+        </style>
+        <article class="article article-video video-box">
+          <img src="https://img.adidas.com.cn/images/blank.gif"
+            data-image="{
+    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/AUG/4D/CN/fwd-cn-pc-1.jpg&quot;},
+    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/AUG/4D/CN/fwd-cn-pc-1.jpg&quot;},
+    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/AUG/4D/CN/fwd-cn-pc-1.jpg&quot;}}" />
+
+          <div class="video-wrapper0 e-video0 e-play-video-new1">
+            <div class="video-content1">
+              <!-- <iframe width=100%  height='741' src='https://www.youtube.com/watch?rel=0&amp&autoplay=1&v=fDEvW3iCv8k' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe> -->
+            </div>
+            <a class="video-play" href="javascript:void(0)">
+              <span class="video-code" data-video-code="6416F34079F1BC53F3342D97BB1D6DF8"></span>
+            </a>
+          </div>
+        </article>
+        <article class="article article-video article-video1 video-box2">
+          <div class="video-wrapper e-play-videoTwo">
+            <img src="https://img.adidas.com.cn/images/blank.gif"
+              data-image="{
+&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/CN/pc_022.jpg&quot;},
+&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/CN/mob_022.jpg&quot;},
+&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/CN/mob_022.jpg&quot;}}">
+            <div class="video-click"></div>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/wdRqNup3cGc"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""></iframe>
+          </div>
+        </article>
+        <article class="article article-video article-video6 video-box2">
+          <div class="video-wrapper e-play-videoTwo">
+            <img src="https://img.adidas.com.cn/images/blank.gif"
+              data-image="{
+&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/CN/pc_077.jpg&quot;},
+&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/CN/mob_077.jpg&quot;},
+&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/CN/mob_077.jpg&quot;}}">
+            <div class="video-click"></div>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/L53y1dX9YuU"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""></iframe>
+          </div>
+        </article>
+        <article class="article"
+          style="width: 100%;height: 100%;display: flex;justify-content: center;margin-bottom: 30px;">
+          <div class="box">
+            <div class="card">
+              <img lazysrc="https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/CN/08-1.png"
+                src="https://img.adidas.com.cn/images/blank.gif">
+              <div class="tips">
+                <div>
+                  方誠義
+                </div>
+                <div>
+                  運動員生涯有限，即使起步較別人遲，但方誠義也沒有輕言放棄，在他身上我們看見每一名運動員都有登上顛峰的機會。
+                </div>
+                <div>
+                  從2003年出道至今，方誠義轉眼之間已在香港籃壇縱橫18載，但未必人人都知道這位大前鋒其實是「中途出家」，於中學時期由足球員搖身一變成為籃球員。就算比同齡球員起步較遲，但他也沒有放棄，不斷努力練習，加上對籃球的熱情，為他帶來過不少獎項，職業生涯至今亦多次贏得聯賽總冠軍。
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img lazysrc="https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/CN/08-2.png"
+                src="https://img.adidas.com.cn/images/blank.gif">
+              <div class="tips">
+                <div>
+                  林樂勤
+                </div>
+                <div>
+                  受傷和轉會，對每個運動員都是必經的過程，過程和結果沒有人能預料，但在林樂勤身上，我們看見每個人都有創造改變的機會。
+                </div>
+                <div>
+                  運動員除了實力之外，或多或少也講求際遇。林樂勤(Jordan)年輕時曾遠赴英國試腳，2017年於香港展開職業足球員生涯，過去數年他先後經歷連環不幸事件，曾因嚴重受傷缺陣了一段長時間，傷癒後本身效力的班霸球隊又解散，他坦言這段期間曾失去對足球的熱誠，個人亦迷失了方向，但正是這些經歷讓他成長，更得到了改變的機會。
+                </div>
+                <div>
+                  Jordan本身是進攻球員出身，今季加盟新球隊披上7號球衣，這個創造改變的機會在現今足球環境中絕對來之不易，即使有機會改踢不熟識的位置，他亦會全力以赴，以展現個人真正的實力！
+                  過去兩年，疫情影響了我們的生活，香港最高級別的男子籃球聯賽也停頓了兩年，但方誠義也沒有鬆懈，在沒有比賽的日子除保持訓練外，也不斷增值自己，從籃球上發掘自己更多的可能性。即將踏入38歲也未言退，今季轉投新球隊，就是希望能夠再贏一次聯賽總冠軍，再次登上顛峰，為自己職業生涯寫下完滿的句號。
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img lazysrc="https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/CN/08-3.png"
+                src="https://img.adidas.com.cn/images/blank.gif">
+              <div class="tips">
+                <div>
+                  周漢聶
+                </div>
+                <div>
+                  從香港出發，透過跑步證明自己實力，在周漢聶身上我們看到自己雙腳跑向世界的可能。
+                </div>
+                <div>
+                  時間回到2019年，第一次參加馬拉松比賽便一鳴驚人，周漢聶這個名字開始讓其他人認識。及後因為疫情關係，他未有機會再次於香港比賽。為了跑得更快，他決定離開熟悉的地方，隻身遠赴肯亞特訓。
+                </div>
+                <div>
+                  過去兩年，他曾經陷入受傷的低潮期，但未有磨滅他的鬥志，經過特訓後，上月他在美國一場半馬拉松比賽跑出個人最佳時間，但他未有自滿，將會繼續挑戰不同比賽，透過雙腳繼續跑向世界不同舞台，向更高目標邁進。
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img lazysrc="https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/CN/08-4.png"
+                src="https://img.adidas.com.cn/images/blank.gif">
+              <div class="tips">
+                <div>
+                  梁嘉顯
+                </div>
+                <div>
+                  可能不少人會認為，學業上的成功會是邁向成功人生的第一步，但在梁嘉顯身上，我們看見年輕球員啟發新世代。
+                </div>
+                <div>
+                  要從運動員及學業之間作出取捨絕對不易，梁嘉顯2年前才於香港最頂級的甲一籃球聯賽初次登場，今年決定放棄大學學士學位，為的就是給予自己一個全新的身分及挑戰 - 職業籃球員。
+                </div>
+                <div>
+                  從學界走到甲一、從學生走到職業籃球員之路，這位年僅21歲、剛剛開始個人第二季甲一生涯的年輕運動員，選擇了走一條在普通人眼中看來更難取得成功的路，因為當其他人認為這個年紀應該要以學業為重，他願意放手一試，追逐職業籃球夢，期望機會來臨之時能把握機會衝出香港，登上更高水平的職業籃球聯賽舞台。
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img lazysrc="https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/CN/08-5.png"
+                src="https://img.adidas.com.cn/images/blank.gif">
+              <div class="tips">
+                <div>
+                  孫銘謙
+                </div>
+                <div>
+                  球場對於每個人都有不同意義，但在孫銘謙身上，我們看見球場可以成為發光的舞台。
+                </div>
+                <div>
+                  從學界走到香港職業足球聯賽的最高舞台，不經不覺今季已經是孫銘謙的第四個球季，由幼稚園時期開始接觸足球，已經數不清在球場渡過了多少時光，但從足球場上得到的見識卻未有令他停步，反而不斷尋求進步，因為從代表球會或香港踢過不同比賽、見識過外面的足球世界後，他更知道自己不論在技術或體力層面上，都依然跟頂級存在很大的差距，這亦是他不斷努力的目標。
+                </div>
+                <div>
+                  因為他相信，只要裝備好自己，當機會來到的時候好好把握，球場便會成為發光的舞台。
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img lazysrc="https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/CN/08-6.png"
+                src="https://img.adidas.com.cn/images/blank.gif">
+              <div class="tips">
+                <div>
+                  司徒兆殷
+                </div>
+                <div>
+                  每位跑手都想讓自己更快跑過終點，但在司徒兆殷身上，我們透過每一 步去證明每個人都能跑得更遠。
+                </div>
+                <div>
+                  司徒兆殷(Leanne)過去多次代表香港參加三項鐵人比賽，就算於2017 年告別全職運動員生涯，也未有放下這運動。不過，一場突如其來的疫 情，令Leanne不得不暫時放下三項鐵人，因為香港未有她現時主攻的 長距離三鐵比賽，加上疫情令她未能出外與其他運動員較量，但她未有 停步，反而定下新目標希望跑得更遠-馬拉松。
+                </div>
+                <div>
+                  以往由三項鐵人轉戰長跑的運動員，大多會參加較短距離的10公里或 半馬拉松，但為了挑戰自己，Leanne本月尾將首次在港挑戰馬拉松比 賽。為了好好準備，她幾乎把工作以外時間都安排好訓練，每天早上五 時開始，就算午休及放工後亦保持練習，每星期訓練時數至少達30小 時。她坦言馬拉松比賽比三項鐵人更加辛苦，但為了能達成SUB
+                  3目標 甚至站上頒獎台，就算訓練更辛苦也沒有怨言，透過每一步證明每個人 都能跑得更遠。
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <script type="text/javascript">
+          $(function () {
+            // 换图 + 懒加载
+            $.spice.lazyLoad('img[lazysrc]', {
+              attr: 'lazysrc'
+            });
+            $.spice.tools.changeImageSrc({
+              callBack: function (img, self) {
+                $.spice.lazyLoad('img[lazysrc]', {
+                  attr: self.opt.lazyData,
+                  prestrain: 1
+                });
+              }
+            });
+
+            $('.article-video').tap(function () {
+              $(this).find('iframe').show()
+            });
+
+            $(".card").tap(function () {
+              // $('.tips').hide()
+              if ($(this).children('.tips').css('display') == 'block') {
+                $(this).children('.tips').hide()
+              } else {
+                $(this).children('.tips').show()
+              }
+            })
+
+            // var indexVedio = document.querySelector(".e-play-videoTwo");
+            // indexVedio.onclick = function () {
+            //     indexVedio.innerHTML = "<iframe width=100%  height='682' src='https://www.youtube.com/embed/SJFmEb7FoqQ?rel=0&autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>";
+            // }
+            var loadImgFun_index = function (imgArr, fn) {
+              var loadImgLen = 0,
+                errImgLen = 0;
+              var imgdefereds = [];
+              $(imgArr).each(function () {
+                var defered = $.Deferred();
+                $(this)
+                  .on("load", function () {
+                    defered.resolve();
+                    loadImgLen++;
+                  })
+                  .on("error", function () {
+                    defered.resolve();
+                    errImgLen++;
+                  });
+                if (this.complete)
+                  setTimeout(function () {
+                    defered.resolve();
+                  }, 200);
+                imgdefereds.push(defered);
+              });
+              $.when.apply(null, imgdefereds).done(function () {
+                if (fn && $.isFunction(fn)) {
+                  fn();
+                }
+              });
+            };
+            // 视频1自动播放
+            $(".e-video0").each(function (index, el) {
+              $(el).addClass("home-video");
+              var videoCode = $(".video-code", el).data("video-code"),
+                videoId = "home_video0_" + index;
+              loadImgFun_index($(".video-code img", el), function () { });
+              var bannerVideoId = videoCode;
+              var url = base + "/indexCCVideo.json";
+              var data = loxia.syncXhrGet(url, {
+                'bannerVideoId': bannerVideoId
+              });
+              var videoUrl = data.mp4VideoUrl;
+              // var videoUrl="https://cm15-c110-3.play.bokecc.com/flvs/ca/QxDEP/MaBAAuhdHl-30.mp4?t=1623549723&key=F17BC72A8745AD0551D123D085FF3517&tpl=10"
+              var html = '<video class="video" id="' +
+                videoId +
+                '"  webkit-playsinline="true" playsInline="true" autoplay="autoplay" loop="loop" muted><source src="' +
+                videoUrl +
+                '" ></source></video>';
+              $(".video-content0", el).html(html);
+              var _parent_article = $(this).parents(".article-video")
+              if (!_parent_article.hasClass("is-play")) {
+                _parent_article.addClass("is-play");
+              }
+            });
+
+          });
+        </script>
+      </section>
+      <%include _includes/modules/footer-no-back-top.html %>
+        <!-- 公共部分放最下，如回到顶部，弹出层等 -->
+  </div>
+</body>
+
+</html>

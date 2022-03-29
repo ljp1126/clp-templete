@@ -1,0 +1,625 @@
+<html>
+<head>
+	<%include _includes/meta.html %>
+	<title>campaign</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+
+		<style type="text/css">
+		.video-container {
+			margin-bottom: 100px;
+		}
+		.video-container .video-info img {
+			width: 100%;
+		}
+		.video-container .video-wrap {
+			position: relative;
+			text-align: center;
+			margin: 0 10%;
+		}
+		.video-container .video-wrap img {
+			width: 100%;
+			max-width: 1201px;
+			margin: 0 auto;
+		}
+		.video-container .video-wrap .video-cursor {
+			position: absolute;
+			left: 50%;
+			top: 56%;
+		    width: 12%;
+		    height: 21%;
+		    display: block;
+		    border-radius: 50%;
+		    -webkit-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		    transform: translateX(-50%);
+		}
+
+		.hover-scale {
+			clear: both;
+			overflow: hidden;
+			margin-bottom: 106px;
+		}
+		.hover-scale .box-left {
+			float: left;
+			width: 50.03%;
+		}
+		.hover-scale .box-left .show-left {
+		    float: left;
+		    width: 50%;
+		}
+		.hover-scale .box-left .show-right {
+			float: left;
+			width: 50%;
+		}
+		.hover-scale .box-left .show-left img,
+		.hover-scale .box-left .show-right img {
+			width: 100%;
+		}
+
+
+		.hover-scale .box-right {
+			float: left;
+			width: 49.97%;
+		}
+		.hover-scale .box-right .buy-btn {
+			position: relative;
+		}
+		.hover-scale .box-right .buy-btn a {
+			position: absolute;
+			left: 50%;
+			bottom: 14%;
+			width: 284px;
+			font-size: 22px;
+			margin-left: -142px;
+		}
+		.hover-scale .box-right .show-right {
+			clear: both;
+			overflow: hidden;
+		}
+		.hover-scale .box-right .buy-btn a {
+			bottom: 6%;
+		}
+		.hover-scale .box-right .show-right .show-right-top {
+			float: left;
+			width: 50.1%;
+		}
+		.hover-scale .box-right .show-right .show-right-bottom {
+			float: left;
+			width: 49.9%;
+		}
+		.hover-scale .box-right .buy-btn img,
+		.hover-scale .box-right .show-right .show-right-top img,
+		.hover-scale .box-right .show-right .show-right-bottom img {
+			width: 100%;
+		}
+
+
+		.section-campaign {
+			margin-bottom: 112px;
+		}
+		.section-campaign .scroll .scroll-btn-next,
+		.section-campaign .scroll .scroll-btn-prev {
+			padding: 0;
+			margin-top: -42px;
+		}
+		.section-campaign .scroll .scroll-btn-next {
+			right: 47px;
+		}
+		.section-campaign .scroll .scroll-btn-prev {
+			left: 47px;
+		}
+		.section-campaign .scroll .scroll-btn-next a,
+		.section-campaign .scroll .scroll-btn-prev a {
+			text-indent: -9999px;
+		}
+		.section-campaign .scroll .scroll-btn-next a i,
+		.section-campaign .scroll .scroll-btn-prev a i {
+		    display: inline-block;
+		    background: url(../images/icon.png);
+		    width: 42px;
+		    height: 76px;
+		}
+		.section-campaign .scroll .scroll-btn-prev a i {
+			background-position: -568px -50px;
+		}
+		.section-campaign .scroll .scroll-btn-next a i{
+			background-position: -620px -50px;
+		}
+		.section-campaign li a{
+		    position: absolute;
+	        top: 71%;
+			right: 13%;
+		}
+
+
+		.article-swiper-swift {
+			position: relative;
+			margin-bottom: 25px;
+		}
+		.article-swiper-swift .swiper-container {
+		  position: relative;
+		}
+		.article-swiper-swift .swiper-container .swiper-wrapper {
+		  width: 64%;
+		  height: auto;
+		  position: relative;
+		}
+		.article-swiper-swift .swiper-container .swiper-wrapper .swiper-slide {
+			height: auto;
+		}
+		.article-swiper-swift .swiper-container .swiper-wrapper .swiper-slide >a{
+			cursor: default;
+		}
+		.article-swiper-swift .swiper-container .swiper-wrapper .content-text {
+		  position: absolute;
+		  bottom: 7%;
+		  left: 50%;
+		  margin-left: -105px;
+		  text-align: center;
+		}
+		.article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn {
+		  margin-top: 0;
+		  width: 210px;
+		  font-size: 24px;
+		}
+		.article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn span:after {
+		  top: 7px;
+		}
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn {
+		  width: 64%;
+		  left: 18%;
+		  position: absolute;
+		  top: 50%;
+		  z-index: 0;
+		}
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn .swiper-button-disabled {
+		  opacity: 0;
+		}
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev,
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+		  width: 33px;
+		  height: 63px;
+		  margin-top: -32px;
+		  background-image: none;
+		  overflow: hidden;
+		}
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev {
+		  left: -47px;
+		}
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+		  right: -47px;
+		}
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev .icon-action-sports-arrow-l {
+		  display: block;
+		  width: 33px;
+		  height: 63px;
+		  background: url(images/icon.png);
+		  background-position: -676px -454px;
+		}
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next .icon-action-sports-arrow-r {
+		  display: block;
+		  width: 33px;
+		  height: 63px;
+		  background: url(images/icon.png);
+		  background-position: -790px -454px;
+		}
+
+
+		@media screen and (max-width: 1024px) {
+			.video-container {
+				margin-bottom: 28px;
+			}
+			.video-container .video-wrap {
+				margin: 0 10px;
+			}
+
+			.hover-scale {
+				margin-bottom: 25px;
+			}
+			.hover-scale .box-left,
+			.hover-scale .box-right {
+				width: 100%;
+			}
+			.hover-scale .box-left .show-left {
+				width: 50.401%;
+			}
+			.hover-scale .box-left .show-right {
+			    width: 49.599%;
+			}
+			.hover-scale .box-right .buy-btn a {
+				font-size: 16px;
+				width: 226px;
+				margin-left: -113px;
+			}
+			.hover-scale .box-right .show-right .show-right-top {
+			    width: 50%;
+			}
+			.hover-scale .box-right .show-right .show-right-bottom {
+			    width: 50%;
+			}
+
+			.section-campaign {
+				margin-bottom: 50px;
+			}
+			.section-campaign .scroll .scroll-btn-next {
+				right: 16px;
+				margin-top: -15px;
+			}
+			.section-campaign .scroll .scroll-btn-prev {
+				left: 16px;
+				margin-top: -15px;
+			}
+			.section-campaign .scroll .scroll-btn-next a i,
+			.section-campaign .scroll .scroll-btn-prev a i {
+			    width: 15px;
+			    height: 30px;
+			    background-size: 15px 30px;
+			}
+			.section-campaign .scroll .scroll-btn-next a i,
+			.section-campaign .scroll .scroll-btn-prev a i {
+			        width: 24px;
+				    height: 40px;
+				    background-size: 500px;
+			}
+			.section-campaign .scroll .scroll-btn-prev a i {
+				background-position: -283px -24px;
+			}
+			.section-campaign .scroll .scroll-btn-next a i{
+				background-position: -309px -24px;
+			}
+			.section-campaign li img{
+				width: 100%;
+			}
+			.section-campaign li a {
+			    top: auto;
+			    right: 5%;
+			    width: 90%;
+			    bottom: 5%;
+			    height: 40px;
+			    line-height: 40px;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.article-swiper-swift .swiper-container {
+		    padding: 0px 35px 0px;
+		  }
+		  .article-swiper-swift .swiper-container .swiper-wrapper {
+		    width: 100%;
+		  }
+		  .article-swiper-swift .swiper-container .swiper-wrapper .content-text {
+			    bottom: 7%;
+			    margin-left: -60px;
+			    position: static;
+				margin: 24px auto 0;
+		  }
+		  .article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn {
+		    width: 160px;
+		    min-width: 160px;
+		    font-size: 16px;
+		    height: 40px;
+		    line-height: 40px;
+		    background: #262626;
+		    opacity: 1;
+		    color: #fff;
+		  }
+		  .article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn span:after {
+		    top: 3px;
+		    background-size: 500px;
+			background-position: -26px -18px !important;
+		  }
+		  .article-swiper-swift .swiper-container .action-sports-swiper-btn {
+		    z-index: 1;
+	        width: 100%;
+			left: 0;
+		  }
+		  .article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev,
+		  .article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+		    width: 18px;
+		    height: 34px;
+		    margin-top: -40px;
+		  }
+		  .article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev{
+		  	left: 8px;
+		  }
+		  .article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+			    right: 8px;
+			}
+		  .article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev .icon-action-sports-arrow-l {
+		    width: 18px;
+		    height: 34px;
+		    background: url(images/icon@2x.png);
+		    background-size: 500px;
+		    background-position: -303px -652px;
+		  }
+		  .article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next .icon-action-sports-arrow-r {
+		    width: 18px;
+		    height: 34px;
+		    background: url(images/icon@2x.png);
+		    background-size: 500px;
+		    background-position: -275px -652px;
+		  }
+		}
+		</style>
+		<script type="text/javascript">
+			$(function () {
+				$.spice.kvScroll('.events-scroll-loop-campaign', {
+					type: 'scroll-loop',
+					autoPlay: true,
+					loop: true
+				});
+
+				// 图片hover放大
+				$('.events-scale img').on('mouseenter', function() {
+					$(this).css({ 'transition': 'transform 7.5s linear', 'transform': 'scale(1.3)' });
+					$(this).parent().parent().find('i').css({ 'transition': 'transform 1s linear', 'transform': 'rotate(180deg)' })
+				});
+
+				// 图片hover复原
+				$('.events-scale img').on('mouseleave', function() {
+					$(this).css({ 'transition': 'none', 'transform': 'none'});
+					$(this).parent().parent().find('i').css({ 'transition': 'transform 1s linear', 'transform': 'rotate(-180deg)'});
+				});
+
+				// 視頻播放
+				$('.e-video-open').on('tap', function(e) {
+					e.preventDefault();
+			        openVideo('CB33444B7A8902789C33DC5901307461','true');
+			    });
+
+			    	var swiper = new Swiper('.swiper-container-od-jacket', {
+			            slidesPerView: 'auto',
+			            loop: true,
+			            centeredSlides: true,
+			            paginationClickable: true,
+			            spaceBetween: 64,
+			    	    prevButton:'.swiper-button-prev1',
+			    	    nextButton:'.swiper-button-next1',
+			    	    initialSlide: 0
+			        });
+			});
+		</script>
+			<!-- kv-模块 -->
+			<!-- <article class="article">
+				<div class="scroll events-scroll-loop-false">
+					<div class="scroller-wrap">
+						<ul>
+							<li>
+								<a href="">
+									<img class="" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/campaign/c-kv.png"},
+											"medium":{"high":"", "normal":"../static/images/campaign/c-kv-mob.png"},
+											"small":{"high":"", "normal":"../static/images/campaign/c-kv-mob.png"}
+									}' />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</article> -->
+
+
+			<!-- kv-模块 -->
+			<article class="article section-campaign">
+				<div class="scroll events-scroll-loop-campaign">
+					<div class="scroller-wrap">
+						<ul>
+							<li>
+								<span>
+									<img class="" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/campaign/p-slider-1.png"},
+											"medium":{"high":"", "normal":"../static/images/campaign/p-slider-mob1.png"},
+											"small":{"high":"", "normal":"../static/images/campaign/p-slider-mob1.png"}
+									}' />
+								</span>
+								<a class="btn btn-white btn-have-arrow btn-have-opacity" href="https://www.adidas.com.cn/men_outdoor_terrex?sp=OD-Terrex"><span>立即购买</span></a>
+							</li>
+							<li>
+								<span>
+									<img class="" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/campaign/p-slider-2.png"},
+											"medium":{"high":"", "normal":"../static/images/campaign/p-slider-mob2.png"},
+											"small":{"high":"", "normal":"../static/images/campaign/p-slider-mob2.png"}
+									}' />
+								</span>
+								<a class="btn btn-white btn-have-arrow btn-have-opacity" href="https://www.adidas.com.cn/women_outdoor_ulbancapsule?sp=OD-Urban%20capsule"><span>立即购买</span></a>
+							</li>
+							<li>
+								<span>
+									<img class="" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/campaign/p-slider-3.png"},
+											"medium":{"high":"", "normal":"../static/images/campaign/p-slider-mob3.png"},
+											"small":{"high":"", "normal":"../static/images/campaign/p-slider-mob3.png"}
+									}' />
+								</span>
+								<a class="btn btn-white btn-have-arrow btn-have-opacity" href="https://www.adidas.com.cn/men_outdoors_korea?sp=OCT-Korea-line"><span>立即购买</span></a>
+							</li>
+							<li>
+								<span>
+									<img class="" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/campaign/p-slider-4.png"},
+											"medium":{"high":"", "normal":"../static/images/campaign/p-slider-mob4.png"},
+											"small":{"high":"", "normal":"../static/images/campaign/p-slider-mob4.png"}
+									}' />
+								</span>
+								<a class="btn btn-white btn-have-arrow btn-have-opacity" href="https://www.adidas.com.cn/outdoor_terrex?sp=OD-Terrex"><span>立即购买</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+
+			<!-- 视频模块 -->
+			<article class="article video-container">
+				<div class="video-info">
+					<img class="" src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/campaign/pc-img-text.png"},
+						"medium":{"high":"", "normal":"../static/images/campaign/mob-img-text.png"},
+						"small":{"high":"", "normal":"../static/images/campaign/mob-img-text.png"}
+					}' />
+				</div>
+				<div class="video-wrap">
+					<img class="" src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/campaign/poster-pc.png"},
+						"medium":{"high":"", "normal":"../static/images/campaign/poster-mob.png"},
+						"small":{"high":"", "normal":"../static/images/campaign/poster-mob.png"}
+					}' />
+					<a class="video-cursor e-video-open"></a>
+				</div>
+			</article>
+
+			<!--  -->
+			<article class="article hover-scale">
+				<div class="box-left">
+					<div class="show-left overflow-hidden events-scale">
+						<a href="#">
+							<img class="" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/campaign/eqt-pc-01.png"},
+									"medium":{"high":"", "normal":"../static/images/campaign/eqt-mob-01.jpg"},
+									"small":{"high":"", "normal":"../static/images/campaign/eqt-mob-01.jpg"}
+							}' />
+						</a>
+					</div>
+					<div class="show-right">
+						<div class="show-right-top overflow-hidden events-scale">
+							<a href="https://www.adidas.com.cn/item/CI4200">
+								<img class="" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/campaign/eqt-pc-02.png"},
+										"medium":{"high":"", "normal":"../static/images/campaign/eqt-mob-02.jpg"},
+										"small":{"high":"", "normal":"../static/images/campaign/eqt-mob-02.jpg"}
+								}' />
+							</a>
+						</div>
+						<div class="show-right-bottom overflow-hidden events-scale">
+							<a href="https://www.adidas.com.cn/item/CI4218">
+								<img class="" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/campaign/eqt-pc-03.png"},
+										"medium":{"high":"", "normal":"../static/images/campaign/eqt-mob-03.jpg"},
+										"small":{"high":"", "normal":"../static/images/campaign/eqt-mob-03.jpg"}
+								}' />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="box-right">
+					<div class="buy-btn">
+						<img class="" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/campaign/eqt-pc-04.png"},
+								"medium":{"high":"", "normal":"../static/images/campaign/eqt-mob-04.jpg"},
+								"small":{"high":"", "normal":"../static/images/campaign/eqt-mob-04.jpg"}
+						}' />
+						<a href="https://www.adidas.com.cn/men_outdoor_terrex?sp=OD-Terrex" class="btn btn-white btn-have-arrow">
+							<span>更多户外冬日保暖装备</span>
+						</a>
+					</div>
+					<div class="show-right">
+						<div class="show-right-top overflow-hidden events-scale">
+							<a href="https://www.adidas.com.cn/men_outdoor_terrex?sp=OD-Terrex">
+								<img class="" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/campaign/eqt-pc-05.png"},
+										"medium":{"high":"", "normal":"../static/images/campaign/eqt-mob-05.jpg"},
+										"small":{"high":"", "normal":"../static/images/campaign/eqt-mob-05.jpg"}
+								}' />
+							</a>
+						</div>
+						<div class="show-right-bottom overflow-hidden events-scale">
+							<a href="https://www.adidas.com.cn/men_outdoor_terrex?sp=OD-Terrex">
+								<img class="" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/campaign/eqt-pc-06.png"},
+										"medium":{"high":"", "normal":"../static/images/campaign/eqt-mob-06.jpg"},
+										"small":{"high":"", "normal":"../static/images/campaign/eqt-mob-06.jpg"}
+								}' />
+							</a>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article class="article article-swiper-swift">
+				<div class="swiper-container swiper-container-od-jacket">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a>
+								<img class="" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/campaign/swiper-1.png"},
+											"medium":{"high":"", "normal":"../static/images/campaign/swiper-mob-1.png"},
+											"small":{"high":"", "normal":"../static/images/campaign/swiper-mob-1.png"}
+								}' />
+							</a>
+							<div class="content-text">
+								<a href="https://www.adidas.com.cn/outdoor_terrex?sp=OD-Terrex" class="btn btn-white btn-have-arrow btn-have-opacity"><span>立即购买</span></a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<a>
+								<img class="" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/campaign/swiper-2.png"},
+											"medium":{"high":"", "normal":"../static/images/campaign/swiper-mob-2.png"},
+											"small":{"high":"", "normal":"../static/images/campaign/swiper-mob-2.png"}
+									}' />
+							</a>
+							<div class="content-text">
+								<a href="https://www.adidas.com.cn/item/CI4218" class="btn btn-white btn-have-arrow btn-have-opacity"><span>立即购买</span></a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<a>
+								<img class="" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/campaign/swiper-3.png"},
+											"medium":{"high":"", "normal":"../static/images/campaign/swiper-mob-3.png"},
+											"small":{"high":"", "normal":"../static/images/campaign/swiper-mob-3.png"}
+								}' />
+							</a>
+							<div class="content-text">
+								<a href="https://www.adidas.com.cn/item/CI4190" class="btn btn-white btn-have-arrow btn-have-opacity"><span>立即购买</span></a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<a>
+								<img class="" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/campaign/swiper-4.png"},
+											"medium":{"high":"", "normal":"../static/images/campaign/swiper-mob-4.png"},
+											"small":{"high":"", "normal":"../static/images/campaign/swiper-mob-4.png"}
+								}' />
+							</a>
+							<div class="content-text">
+								<a href="https://www.adidas.com.cn/item/CI4200" class="btn btn-white btn-have-arrow btn-have-opacity"><span>立即购买</span></a>
+							</div>
+						</div>
+					</div>
+					<!-- 箭头 -->
+					<div class="action-sports-swiper-btn">
+						<div class="swiper-button-prev swiper-button-prev1">
+							<i class="icon icon-action-sports-arrow-l"></i>
+						</div>
+						<div class="swiper-button-next swiper-button-next1">
+							<i class="icon icon-action-sports-arrow-r"></i>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+		<!-- 视频弹层 -->
+		<script id="video-dialog" type="text/template">
+			<div class="dialog">
+				<div class="dialog-container">
+					<div class="loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+					<div class="video-content">
+
+					</div>
+				</div>
+				<i class="icon icon-close dialog-close">&times;</i>
+			</div>
+		</script>
+	</div>
+</body>
+</html>

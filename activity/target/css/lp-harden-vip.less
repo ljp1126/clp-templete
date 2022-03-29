@@ -1,0 +1,411 @@
+@charset "utf-8";
+
+.article{
+    position: relative;
+    >img{
+        width: 100%;
+    }
+}
+
+.link{
+    position: absolute;
+    z-index: 1;
+    // background: rgba(0, 0, 0, .4);
+}
+
+.article-pup{
+    .pup-cent{
+        position: absolute;
+        width: 70%;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+         .pup-cent-style{
+            position: absolute;
+            top: 72%;
+            left: 37%;
+            width: 26.2%;
+            height: 10.8%;
+        }
+    }
+   
+}
+
+.article-clothes{
+    .clothes-content-01{
+        position: absolute;
+        width: 38%;
+        height: 30.5%;
+        left: 45%;
+        top: 23%;
+        .link-01{
+            width: 100%;
+            height: 100%;
+        }
+        .btn{
+            top: 45%;
+            position: absolute;
+            left: 17%;
+            z-index: 2;
+            background: #9e825b;
+        }
+    }
+    .clothes-content-02{
+        position: absolute;
+        width: 38%;
+        height: 32%;
+        left: 44%;
+        top: 56.5%;
+        .link-02{
+            width: 100%;
+            height: 100%;
+        }
+        .btn{
+            top: 53%;
+            position: absolute;
+            left: 62%;
+            z-index: 2;
+            background: #9e825b;
+        }
+    }
+}
+
+.article-kv{
+    .swiper-container-kv2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        .swiper-pagination{
+            // position: relative;
+            .swiper-pagination-bullet{
+                position: relative;
+            }
+            .swiper-pagination-bullet-active{
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin-top: -1px;
+                    border: 20px solid transparent;
+                    border-top: 25px solid rgba(0, 0, 0, 1);
+                }
+            }
+        }
+        .pagination-click{
+            position: absolute;
+            bottom: 5%;
+            height: 4%;
+            width: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 13;
+            div{
+                position: absolute;
+                top: 0%;
+                width: 14%;
+                height: 87%;
+                a{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                }
+            }
+            .pagination-click-01{
+                left: 13%;
+            }
+            .pagination-click-02{
+                left: 43%;
+            }
+            .pagination-click-03{
+                left: 74%;
+            }
+        }
+        
+    }
+    .swiper-container-horizontal{
+        >.swiper-pagination-bullets{
+            bottom: 0;
+            height: 25.6%;
+            width: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            span{
+                width: 30%;
+                height: 100%;
+                background: none;
+                opacity: 1;
+                .img-content{
+                    width: 88%;
+                }
+            }
+        }
+    }
+}
+
+.article-foot{
+    margin: 66px 0 80px 0;
+    .center-box{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 0;
+       .box{
+           display: inline-block;
+           margin-right: 20px;
+           max-width: 23%;
+           position: relative;
+           &:last-child{
+               margin-right: 0;
+           }
+           .box-shade{
+                display: none;
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+                .box-shade-bg{
+                    width: 100%;
+                    height: 100%;
+                    background: #000;
+                    opacity: 0.7;
+                }
+                .box-shade-item{
+                    position: absolute;
+                    font: 16px/30px "";
+                    text-align: center;
+                    left: 50%;
+                    top: 50%;
+                    box-sizing: border-box;
+                    transform: translate(-50%, -50%);
+                    span{
+                        display: block;
+                        color: #fff;
+                        white-space: nowrap;
+                        &:nth-child(2){
+                            padding: 0 0 10px 0;
+                        }
+                    }
+                    .btn{
+                            color: #000;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 16px;
+                        }
+                }
+           }
+           &:hover{
+               .box-shade{
+                   display: block;
+               }
+           }
+       } 
+    }
+}
+.dialog-opacity{
+    .dialog-scroll-container{
+        .dialog{
+            margin: 0;
+            max-width: 2000px;
+        }
+    }
+} 
+.fingerpost-winning{
+    .fingerpost-draw{
+        position: relative;
+        .fingerpost-draw-link{
+
+        }
+    }
+    .fingerpost-draw-ic{
+        position: fixed;
+        top: 0;
+        height: 30px;
+        width: 100%;
+        left: 0;
+        .fingerpost-draw-ic-t{
+            position: relative;
+            max-width: 700px;
+            margin: 0 auto;
+            .close-fingerpost-btn{
+                position: absolute;
+                    width: 30px;
+                    height: 36px;
+                    right: 20px;
+                    line-height: 36px;
+            }
+        }
+    }
+    .close-fingerpost-btn{
+        position: fixed;
+        width: 30px;
+        height: 36px;
+        top: 3%;
+        right: 27%;
+        line-height: 36px;
+        .icon-close{
+            background: #fff;
+            position: relative;
+            top: 30px;
+            left: 72px;
+            width: 1px;
+            height: 20px;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            display: inline-block;
+            line-height: 36px;
+            &:after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 1px;
+                    height: 20px;
+                    background: #fff;
+                    -webkit-transform: rotate(270deg);
+                    -moz-transform: rotate(270deg);
+                    -o-transform: rotate(270deg);
+                    -ms-transform: rotate(270deg);
+                    transform: rotate(270deg);
+            }
+            &:before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+} 
+.fingerpost-winning{
+    .fingerpost-draw{
+        .fingerpost-draw-link{
+            position: absolute;
+            top: 8.7%;
+            left: 59%;
+            width: 8.5%;
+            height: 1.5%;
+        }
+        .fingerpost-draw-link-02{
+            position: absolute;
+            top: 10%;
+            left: 25.4%;
+            width: 24.1%;
+            height: 1.5%;
+        }
+    } 
+} 
+@media (max-width: 1024px){
+    img{
+        width: 100%;
+    }
+    .article-pup{
+        .pup-cent{
+            width: 90%;
+            top: 84%;
+        }
+    }
+    .article-clothes{
+        .clothes-content-01{
+            width: 62%;
+            height: 23.5%;
+            left: 36%;
+            top: 44%;
+        }
+        .clothes-content-02{
+            width: 61%;
+            height: 23%;
+            left: 31%;
+            top: 70.5%;
+        }
+    }
+    .article-foot{
+        margin: 0;
+        .center-box-mob{
+            .link{
+                width: 90.1%;
+                height: 17%;
+                left: 5%;
+            }
+            .link-01{
+                top: 7.5%;
+            }
+            .link-02{
+                top: 26%;
+            }
+            .link-03{
+                top: 45%;
+            }
+            .link-04{
+                top: 63.5%;
+            }
+        }
+    }
+    .article-pup{
+        .pup-cent{
+            .pup-cent-style{
+                top: 75%;
+                left: 24%;
+                width: 52%;
+                height: 12%;
+            }
+        }   
+    } 
+    .article-kv{
+        .swiper-container-kv{
+            position: absolute;
+            top: 0;
+            left: 0;
+            .swiper-button-next{
+                background-image: url(https://img.adidas.com.cn/resources/activePage/JUN/hardenmvp/kv-right.png);
+                top: 88%;
+            }
+            .swiper-button-prev{
+                background-image: url(https://img.adidas.com.cn/resources/activePage/JUN/hardenmvp/kv-left.png);
+                top: 88%;
+            }
+        }
+        .swiper-container-horizontal{
+            >.swiper-pagination-bullets{
+                    bottom: 26%;
+                    height: 0;
+
+                .swiper-pagination-bullet{
+                    width: 60px;
+                    height: 6px;
+                    border-radius: 0;
+                    background: #9e825b;
+                    opacity: 1;
+                }
+                .swiper-pagination-bullet-active{
+                    background: #ffffff;
+                }
+            }
+        }
+    }
+    .fingerpost-winning{
+        .fingerpost-draw{
+            .fingerpost-draw-link{
+                top: 13.7%;
+                left: 40%;
+                width: 45.5%;
+                height: 1.5%;
+            }
+            .fingerpost-draw-link-02{
+                top: 15%;
+                left: 16.4%;
+                width: 26.1%;
+                height: 1.5%;
+            }
+        } 
+    } 
+}

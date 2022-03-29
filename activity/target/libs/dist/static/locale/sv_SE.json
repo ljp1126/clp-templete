@@ -1,0 +1,61 @@
+{
+  "general": {
+    "today": "Idag",
+    "month": {
+      "0": "Januari",
+      "1": "Februari",
+      "2": "Mars",
+      "3": "April",
+      "4": "Maj",
+      "5": "Juni",
+      "6": "Juli",
+      "7": "Augusti",
+      "8": "September",
+      "9": "Oktober",
+      "10": "November",
+      "11": "December"
+    },
+    "ordinal": {
+      "st": "ST",
+      "nd": "ND",
+      "rd": "RD",
+      "th": "TH"
+    },
+    "launchDate": "8 juni, 2018",
+    "endDate": "8 juli, 2018",
+    "error": "Hoppsan, något gick snett. Vänligen försök igen lite senare."
+  },
+  "teaser": {
+    "distance": {
+      "top": "Bidragit",
+      "amount": "8,403,081",
+      "label": "översikt km lopp"
+    },
+    "members": {
+      "top": "Från 8 juni till 8 juli",
+      "amount": "744,440",
+      "label": "löpare världen över"
+    },
+    "intro": {
+      "label01": "Varje minut hamnar en lastbil full med plast ut i haven.",
+      "label02": "Detta måste få ett slut.",
+      "label03": "Gå med rörelsen nu!"
+    },
+    "cta": {
+      "label01": "Varje km räknas",
+      "label02": "Ta reda på nedan hur du kan hjälpa till"
+    },
+    "end": {
+      "label01": "Över hela världen förenades individer för att göra Run for the Oceans till en banbrytande framgång.<br />Till alla som sprang sina kilometrar, ökade medvetenheten och hjälpte till att stötta Parley Ocean Plastic Program.",
+      "label02": "Tack!"
+    }
+  },
+  "preLoader": {
+    "title": "Run for the Oceans",
+    "subtitle": "laddar"
+  },
+  "app": {
+    "name": "Run for the Oceans",
+    "slug": "parley-ss18-rfto"
+  }
+}

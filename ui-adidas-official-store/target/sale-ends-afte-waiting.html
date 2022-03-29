@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" href="css/sale.css">
+	<%include _includes/js.html %>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-simple.html %>
+		<!-- 内容部分 -->
+		<section class="container container-min-h">
+			
+			<article class="article">
+				<div class="sale-content">
+					<div class="img-box"><img src="images/sale/sorry@2x.png" /></div>
+					<div class="text-box">
+						<h3>很遗憾，本次抢购活动已结束。</h3>
+						<p>感谢您的参与，欢迎继续关注adidas后续活动。</p>
+					</div>
+					<div class="btn-box">
+						<a class="btn btn-black" href="index.html">返回首页</a>
+					</div>
+				</div>
+			</article>
+
+			<!-- 您可能也喜欢 -->
+			<article class="article article-res-gallery-box">
+				<div class="style-guess-you-Iike you-might-like">
+					<h3>您可能也喜欢</h3>
+					<!-- 您可能也喜欢 -->
+					<%include _includes/guess-you-Iike.html %>
+				</div>
+			</article>		
+		</section>
+
+		<%include _includes/modules/footer-simple.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title>登录</title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" href="css/login.css" />
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="js/login.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+			<!-- 内容部分 -->
+			<section class="container">
+
+				<article class="article one-side-title">
+					<div>
+						<h3>初次登录</h3>
+					</div>
+				</article>
+				
+				<article class="article article-first-login login-bg">
+					<div class="login-content float-clearfix"> 
+						<div class="login-left">
+							<p class="login-title">由于系统升级，2017年8月1日前已注册用户请先重置密码，给您带来不便敬请谅解。</p>
+							<div class="login-box">
+								<h4 class="float-clearfix fontw-b">重置密码</h4>
+								<p class="one-side-email color888">我们已经向您 James@icloud.com 邮箱发送了一封电子邮件，请点击邮件中的链接重置您的密码。</p>
+								<div class="login-detial">
+									<div class="login-btn float-clearfix">
+										<a class="btn btn-blue btn-have-arrow"><span>去重置</span></a>
+										<a href="" class="forget float-left">返回登录</a>
+									</div>
+							</div>
+						</div>
+					</div>
+				</article>
+	
+			</section>
+			<%include _includes/modules/footer-no-back-top.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		</div>
+	</body>
+</html>

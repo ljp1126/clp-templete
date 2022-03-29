@@ -1,0 +1,179 @@
+ <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<!-- 内容部分 -->
+		<section class="container football-width">
+			<!-- banner -->
+			<style>
+				@media screen and (min-width: 1025px) { 
+					.pc-mb39 { margin-bottom: 39px !important; }
+					.pc-md { position: absolute; top: 50%; transform: translateY(-50%); }
+					.pc-tl { position: absolute; left: 50%; transform: translateX(-50%);  }
+					.pc-l14d6 { left: 14.6% !important;  }
+					.pc-r15d1 { right: 15.1% !important;  }
+				}
+				.article img { width: 100%;  }
+				.article .city-desc h3 { font-size: 36px; font-weight: 700; margin-bottom: 25px; }
+				.article .city-desc p { font-size: 18px; margin-bottom: 17px; }
+				.btn-ck { background: rgba(0, 0, 0, 0) !important; color: #000; border: 1px solid #000; min-width: 189px; height: 50px; line-height: 50px; }
+				.article .md-banner { position: relative; }
+				.article .md-banner .md-b-w { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+				.article .city-at { position: relative; }
+				.article .paris-at .paris-desc, .article .shanghai-at .shanghai-desc { text-align: right; }
+				.article .md-ft { position: relative; }
+				.article .md-ft .md-b-w { top: 21.4%; text-align: center; }
+				.article .md-ft .md-b-w .btn { margin-top: 38px; width: 252px; }
+				@media screen and (max-width: 1500px) {
+					.article .md-ft .md-b-w .btn { margin-top: 18px; }
+				}
+				@media screen and (max-width: 1250px) {
+					.article .md-ft .md-b-w .btn { margin-top: 8px; }
+				}
+				@media screen and (max-width: 1024px) {
+					.mb-mb { margin-bottom: 35px !important;  }
+					.mb-md { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+					.article .city-desc {  text-align: center !important; padding: 25px 0 35px; }
+					.article .city-desc h3 { font-size: 24px; margin-bottom: 18px; }
+					.article .city-desc p { font-size: 16px; margin-bottom: 7px; }
+					.btn-ck {  min-width: 298px; height: 53px; line-height: 53px; }
+					.article .md-ft .md-b-w .btn { margin-top: 0px; }
+
+				}
+			</style>
+			<!-- banner -->
+			<article class="article">
+				<div class="md-banner">
+					<a>
+						<img class="events-changeSrc action-sports-banner-pic" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-miadidas/img-b-1-pc.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-miadidas/img-b-1-mob.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-miadidas/img-b-1-mob.jpg"}
+						}' />
+					</a>
+					<div class="md-b-w none-sm">
+						<img src="../static/images/lp-miadidas/img-1-w.png" alt="">
+					</div>
+				</div>
+			</article>
+			<!-- 纽约 -->
+			<article class="article">
+				<div class="new-york-at city-at">
+					<div class="new-york-bg">
+						<a>
+							<img class="events-changeSrc action-sports-banner-pic" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-miadidas/img-b-2-pc.jpg"},
+									"medium":{"high":"", "normal":"../static/images/lp-miadidas/img-b-2-mob.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-miadidas/img-b-2-mob.jpg"}
+							}' />
+						</a>
+					</div>
+					<div class="new-york-desc city-desc pc-md pc-l14d6">
+						<h3>纽约</h3>
+						<p>adidas NYC 565</p>
+						<p>5th Ave.</p>
+						<p>New York, NY 10017</p>
+						<p class="pc-mb39 mb-mb">(212) 883-5606</p>
+						<a href="" class="btn btn-white btn-have-arrow btn-have-opacity btn-ck"><span>查看地图</span></a>
+					</div>
+				</div>
+			</article>
+
+			<!-- 巴黎 -->
+			<article class="article">
+				<div class="paris-at city-at">
+					<div class="paris-bg">
+						<a>
+							<img class="events-changeSrc action-sports-banner-pic" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-miadidas/img-b-3-pc.jpg"},
+									"medium":{"high":"", "normal":"../static/images/lp-miadidas/img-b-3-mob.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-miadidas/img-b-3-mob.jpg"}
+							}' />
+						</a>
+					</div>
+					<div class="paris-desc city-desc pc-md pc-r15d1">
+						<h3>巴黎</h3>
+						<p>22 avenue des Champs Elysees</p>
+						<p>75008 Paris</p>
+						<p class="pc-mb39 mb-mb">01 56 59 32 80</p>
+						<a href="" class="btn btn-white btn-have-arrow btn-have-opacity btn-ck"><span>查看地图</span></a>
+					</div>
+				</div>
+			</article>
+
+
+			<!-- 柏林 -->
+			<article class="article">
+				<div class="berlin-at city-at">
+					<div class="berlin-bg">
+						<a>
+							<img class="events-changeSrc action-sports-banner-pic" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-miadidas/img-b-4-pc.jpg"},
+									"medium":{"high":"", "normal":"../static/images/lp-miadidas/img-b-4-mob.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-miadidas/img-b-4-mob.jpg"}
+							}' />
+						</a>
+					</div>
+					<div class="berlin-desc city-desc pc-md pc-l14d6">
+						<h3>柏林</h3>
+						<p>Muenzstrasse 13-15</p>
+						<p>10178 Berlin</p>
+						<p class="pc-mb39 mb-mb">0049 (0) 3075659890</p>
+						<a href="" class="btn btn-white btn-have-arrow btn-have-opacity btn-ck"><span>查看地图</span></a>
+					</div>
+				</div>
+			</article>
+
+			<!-- 上海 -->
+			<article class="article">
+				<div class="shanghai-at city-at">
+					<div class="shanghai-bg">
+						<a>
+							<img class="events-changeSrc action-sports-banner-pic" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-miadidas/img-b-5-pc.jpg"},
+									"medium":{"high":"", "normal":"../static/images/lp-miadidas/img-b-5-mob.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-miadidas/img-b-5-mob.jpg"}
+							}' />
+						</a>
+					</div>
+					<div class="shanghai-desc city-desc pc-md pc-r15d1">
+						<h3>上海</h3>
+						<p>上海市静安区南京西路789号</p>
+						<p>021-52910023</p>
+						<p class="pc-mb39 mb-mb">兴业太古汇L370</p>
+						<a href="" class="btn btn-white btn-have-arrow btn-have-opacity btn-ck"><span>查看地图</span></a>
+					</div>
+				</div>
+			</article>
+
+
+			<!-- 底部 -->
+			<article class="article">
+				<div class="md-ft">
+					<a>
+						<img class="events-changeSrc action-sports-banner-pic" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-miadidas/img-b-6-pc.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-miadidas/img-b-6-mob.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-miadidas/img-b-6-mob.jpg"}
+						}' />
+					</a>
+					<div class="md-b-w pc-tl">
+						<img src="../static/images/lp-miadidas/img-2-word.jpg" alt="" class="none-sm"><br class="none-sm">
+						<a href="" class="btn btn-white btn-have-arrow btn-have-opacity btn-ck mb-md"><span>开始定制</span></a>
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<%include _includes/modules/footer-no-back-top.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+</html>

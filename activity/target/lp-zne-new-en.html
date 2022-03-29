@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" href="css/lp-neo-7.css" /> -->
+	<%include _includes/js.html %>
+	<!-- <script type="text/javascript" src="js/hotSpot.js"></script> -->
+</head>
+
+<body>
+	<div id="wrapper">
+		<!-- 头部 -->
+		<%include _includes/modules/header.html %>
+		<!-- 內容 -->
+		<section class="container">
+			<style>
+				.article,
+				.article-top {
+					position: relative;
+				}
+
+				.article img {
+					width: 100%;
+					height: auto;
+				}
+				.link {
+					position: absolute;
+					background: rgba(255,0,2,0.3);
+				}
+				.pro-main .swiper-pagination{
+					left: 50%;
+    				transform: translate(-50%, 20px);
+				}
+				.pro-main .swiper-pagination .swiper-pagination-bullet{
+					width: 12px;
+					height: 12px;
+					padding: 2px;
+					background-color: transparent;
+					margin: 0 12px;
+					position: relative;
+				}
+				.pro-main .swiper-pagination .swiper-pagination-bullet:after{
+					position: absolute;
+					display: block;
+					width: 20px;
+					height: 20px;
+					content: "";
+					border: 2px solid #fff;
+					top: -4px;
+					left: -4px;
+					border-radius: 50%;
+				}
+				.pro-main .swiper-pagination .swiper-pagination-bullet-active{
+					background-color: #fff;
+				}
+				.video-top.video-box .video-wrapper {
+					position: absolute;
+					left: 53.7%;
+					top: 0;
+					width: 82%;
+					text-align: center;
+					transform: translate(-50%, 0);
+					cursor: pointer;
+				}
+
+				.video-top.article-video .video-wrapper .video-content .video {
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+					visibility: hidden;
+				}
+
+				.video-top.article-video .video-wrapper .video-content {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+				}
+
+				.video-top.article-video.is-play .video-wrapper .video-content .video {
+					visibility: visible;
+				}
+
+				article img {
+					width: 100%;
+				}
+				.main-link .link-1{
+					width: 29%;
+					height: 52%;
+					left: 6%;
+					top: 0;
+				}
+				.main-link .link-2{
+					width: 22%;
+					height: 56%;
+					left: 67%;
+					top: 10%;
+				}
+				.main-link .link-3{
+					width: 36%;
+					height: 42.5%;
+					left: 31%;
+					top: 46%;
+				}
+				.video-top.video-box.video-box2 .video-wrapper {
+					left: 52.7%;
+				}
+				.main-link2 .link-1{
+					width: 25%;
+					height: 69%;
+					left: 6%;
+					top: 0;
+				}
+				.main-link2 .link-2{
+					width: 28%;
+					height: 59%;
+					left: 67%;
+					top: 10%;
+				}
+				.main-link2 .link-3{
+					width: 53%;
+					height: 29.5%;
+					left: 11%;
+					top: 57%;
+				}
+				.tab{
+					position: absolute;
+					width: 58.1%;
+					left: 0;
+					top: 0;
+					display: flex;
+					justify-content: start;
+					flex-wrap: wrap;
+				}
+				.tab span .tabshow-active{
+					display: none;
+				}
+				.tab span{
+					width: 50%;
+					cursor: pointer;
+				}
+				.tab span.active .tabshow{
+					display: none;
+				}
+				.tab span.active .tabshow-active{
+					display: block;
+				}
+				.tab-main .link-1{
+					width: 40%;
+					height: 43%;
+					left: 0;
+					top: 6%;
+				}
+				.tab-main .link-2{
+					width: 60%;
+					height: 43%;
+					left: 40%;
+					top: 6%;
+				}
+				.tab-main .link-3{
+					width: 61%;
+					height: 49%;
+					left: 0;
+					top: 49%
+				}
+				.tab-main .link-4{
+					width: 40%;
+					height: 49%;
+					left: 61%;
+					top: 49%;
+				}
+				.main-link3 .link-1{
+					width: 30%;
+					height: 74%;
+					left: 22.3%;
+					top: 0;
+				}
+				.main-link3 .link-2{
+					width: 30%;
+					height: 74%;
+					left: 52.3%;
+					top: 7%;
+				}
+
+				@media (max-width:1024px) {
+					.pro-main .swiper-pagination .swiper-pagination-bullet{
+					width: 8px;
+					height: 8px;
+					padding: 2px;
+					margin: 0 8px;
+				}
+				.pro-main .swiper-pagination .swiper-pagination-bullet:after{
+					width:16px;
+					height: 16px;
+					top: -4px;
+					left: -4px;
+				}
+				.pro-main .swiper-pagination{
+					transform: translate(-50%, 10px);
+				}
+				.video-top.video-box .video-wrapper{
+					left: 55.7%;
+				}
+					.video-top.article-video .video-wrapper .video-content {
+						width: 100%;
+						height: 100%;
+					}
+					.video-top.video-box.video-box2 .video-wrapper{
+						width: 82%;
+					}
+					.main-link .link-1 {
+						width: 50%;
+						height: 50%;
+						left: 6%;
+						top: 0;
+					}
+					.main-link .link-2 {
+						width: 31%;
+						height: 52%;
+						left: 67%;
+						top: 19%;
+					}
+					.main-link .link-3 {
+						width: 71%;
+						height: 27.5%;
+						left: 18%;
+						top: 71%;
+					}
+					.main-link2 .link-1{
+						width: 50%;
+						height: 47%;
+						left: 46%;
+						top: 47%;
+					}
+					.main-link2 .link-2{
+						width: 50%;
+						height: 53%;
+						left: 46%;
+						top: 0;
+					}
+					.main-link2 .link-3{
+						
+						width: 46%;
+						height: 75%;
+						left: 0;
+						top: 17%;
+					}
+					.tab{
+						display: flex !important;
+						width: 93.1%;
+					}
+					.tab-main .link-1{
+						width: 50%;
+					}
+					.tab-main .link-2{
+						width: 50%;
+						left: 50%;
+					}
+					.tab-main .link-3{
+						width: 61%;
+					}
+					.tab-main .link-4{
+						width: 50%;
+						left: 50%;
+					}
+					.main-link3 .link-1 {
+						width: 50%;
+						height: 80%;
+						left: 0;
+						top: 0;
+					}
+					.main-link3 .link-2 {
+						width: 50%;
+						height: 80%;
+						left: 50%;
+						top: 6%;
+					}
+				}
+			</style>
+			<article class="article">
+				<div class="pro-main pro-main-sec">
+					<div class="swiper-container swiper-container-main">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img class="none-sm" src="../static/images/lp-zne-new/en/img1-p1.jpg" alt="">
+								<img class="none block-sm" src="../static/images/lp-zne-new/en/img1-m1.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img class="none-sm" src="../static/images/lp-zne-new/en/img1-p2.jpg" alt="">
+								<img class="none block-sm" src="../static/images/lp-zne-new/en/img1-m2.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</article>
+			
+			<article class="article">
+				<img lazysrc="https://img.adidas.com.cn/images/blank.gif" src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"../static/images/lp-zne-new/en/img2-p.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/lp-zne-new/en/img2-m.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-zne-new/en/img2-m.jpg"}
+				}' />
+			</article>
+			<article class="article">
+				<img lazysrc="https://img.adidas.com.cn/images/blank.gif" src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"../static/images/lp-zne-new/en/img4-p.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/lp-zne-new/en/img4-m.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-zne-new/en/img4-m.jpg"}
+				}' />
+			</article>
+			<article class="article main-link main-link1">
+				<img lazysrc="https://img.adidas.com.cn/images/blank.gif" src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"../static/images/lp-zne-new/en/img5-p.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/lp-zne-new/en/img5-m.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-zne-new/en/img5-m.jpg"}
+				}' />
+				<a href="https://www.adidas.com.hk/item/GM6533" class="link link-1"></a>
+				<a href="https://www.adidas.com.hk/item/GM6545" class="link link-2"></a>
+				<a href="https://www.adidas.com.hk/item/FR7146" class="link link-3"></a>
+			</article>
+			<article class="article article-video article-second video-box video-box2 video-top">
+				<img lazysrc="https://img.adidas.com.cn/images/blank.gif" src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"../static/images/lp-zne-new/en/img6-p.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/lp-zne-new/en/img6-m.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-zne-new/en/img6-m.jpg"}
+				}' />
+				<div class="video-wrapper e-video e-play-video-new">
+					<div class="video-content">
+					</div>
+					<a class="video-play" href="javascript:void(0)">
+						<span class="video-code" data-video-code="99BC93C326FEA24C9C33DC5901307461">
+							<img lazysrc="https://img.adidas.com.cn/images/blank.gif" src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-zne-new/en/video-pc2.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-zne-new/en/video-mob2.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-zne-new/en/video-mob2.jpg"}
+						}' />
+						</span>
+					</a>
+				</div>
+			</article>
+			<article class="article">
+				<img lazysrc="https://img.adidas.com.cn/images/blank.gif" src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"../static/images/lp-zne-new/en/img7-p.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/lp-zne-new/en/img7-m.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-zne-new/en/img7-m.jpg"}
+				}' />
+			</article>
+			<article class="article main-link main-link2">
+				<img lazysrc="https://img.adidas.com.cn/images/blank.gif" src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"../static/images/lp-zne-new/en/img8-p.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/lp-zne-new/en/img8-m.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-zne-new/en/img8-m.jpg"}
+				}' />
+				<a href="https://www.adidas.com.hk/item/GM3275" class="link link-2"></a>
+				<a href="https://www.adidas.com.hk/item/GM3282" class="link link-3"></a>
+			</article>
+			<article class="article">
+				<img lazysrc="https://img.adidas.com.cn/images/blank.gif" src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"../static/images/lp-zne-new/en/img9-p.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/lp-zne-new/en/img9-m.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-zne-new/en/img9-m.jpg"}
+				}' />
+			</article>
+			<article class="article">
+				<div class="tab none-sm">
+					<span class="active">
+						<img class="tabshow" src="../static/images/lp-zne-new/en/tab1.png">
+						<img class="tabshow-active" src="../static/images/lp-zne-new/en/tab1-active.png">
+					</span>
+					<span>
+						<img class="tabshow" src="../static/images/lp-zne-new/en/tab2.png">
+						<img class="tabshow-active" src="../static/images/lp-zne-new/en/tab2-active.png">
+					</span>
+				</div>
+				<div class="tab none block-sm">
+					<span class="active">
+						<img class="tabshow" src="../static/images/lp-zne-new/en/tab1mob.png">
+						<img class="tabshow-active" src="../static/images/lp-zne-new/en/tab1mob-active.png">
+					</span>
+					<span>
+						<img class="tabshow" src="../static/images/lp-zne-new/en/tab2mob.png">
+						<img class="tabshow-active" src="../static/images/lp-zne-new/en/tab2mob-active.png">
+					</span>
+				</div>
+				<div class="tab-main">
+					<img class="none-sm" src="../static/images/lp-zne-new/en/tab-con-1.jpg">
+					<img class="none block-sm" src="../static/images/lp-zne-new/en/tab-con-1mob.jpg">
+					<a href="https://www.adidas.com.hk/item/GM6532" class="link link-1"></a>
+					<a href="https://www.adidas.com.hk/item/GM6531" class="link link-2"></a>
+					<!-- <a href="https://www.adidas.com.hk/item/GM6543" class="link link-3"></a> -->
+					<a href="javascript:;" class="link link-3"></a>
+				</div>
+				<div class="tab-main none">
+					<img class="none-sm" src="../static/images/lp-zne-new/en/tab-con-2.jpg">
+					<img class="none block-sm" src="../static/images/lp-zne-new/en/tab-con-2mob.jpg">
+					<a href="javascript:;" class="link link-1"></a>
+					<a href="https://www.adidas.com.hk/item/GM3281" class="link link-2"></a>
+					<a href="https://www.adidas.com.hk/item/GM3282" class="link link-3"></a>
+				</div>
+			</article>
+			<article class="article main-link3">
+				<img lazysrc="https://img.adidas.com.cn/images/blank.gif" src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"../static/images/lp-zne-new/en/img10-p.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/lp-zne-new/en/img10-m.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-zne-new/en/img10-m.jpg"}
+				}' />
+				<a href="https://www.adidas.com.hk/zne/all" class="link link-1"></a>
+				<a href="https://www.adidas.com.hk/zne/all" class="link link-2"></a>
+			</article>
+			<script type="text/javascript">
+				$(function() {
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+					$('.swiper-container-main').each(function(index, el) {
+						$(this).addClass('swiper-container-main' + '-' + index);
+						$(this).siblings('.swiper-pagination').addClass('swiper-pagination' + index);
+						var newSwiper;
+						if ($('.swiper-container-main').length) {
+							newSwiper = new Swiper(el, {
+								// loop: true,
+								autoplay:3000,
+								pagination : '.swiper-pagination'+index,
+								buttonClickable: true,
+								slidesPerView: 1,
+								speed: 300,
+								noSwiping: true,
+								slidesPerGroup: 1,
+								centeredSlides: false,
+								autoplayDisableOnInteraction: false,
+								onlyExternal: true,
+								loop: true,
+								paginationClickable :true
+							});
+						}
+					});
+					$('.tab span').on("tap",function(){
+						var i = $(this).index();
+						$(this).addClass('active').siblings().removeClass('active');
+						$(".tab-main").addClass('none').eq(i).removeClass('none');
+					})
+					
+					var loadImgFun_index = function(imgArr, fn) {
+						var loadImgLen = 0,
+							errImgLen = 0;
+						var imgdefereds = [];
+						$(imgArr).each(function() {
+							var defered = $.Deferred();
+							$(this)
+								.on("load", function() {
+									defered.resolve();
+									loadImgLen++;
+								})
+								.on("error", function() {
+									defered.resolve();
+									errImgLen++;
+								});
+							if (this.complete)
+								setTimeout(function() {
+									defered.resolve();
+								}, 200);
+							imgdefereds.push(defered);
+						});
+						$.when.apply(null, imgdefereds).done(function() {
+							if (fn && $.isFunction(fn)) {
+								fn();
+							}
+						});
+					};
+					$(".e-video").each(function(index, el) {
+						$(el).addClass("home-video");
+						var videoCode = $(".video-code", el).data("video-code"),
+							videoId = "home_video_" + index;
+						loadImgFun_index($(".video-code img", el), function() {});
+						var bannerVideoId = videoCode;
+						var url = base + "/indexCCVideo.json";
+						var data = loxia.syncXhrGet(url, {
+							'bannerVideoId': bannerVideoId
+						});
+						var videoUrl = data.mp4VideoUrl;
+						// var videoUrl = 'https://cm11-c110-2.play.bokecc.com/flvs/ca/QxIzd/uvUsVoW47n-30.mp4?t=1601713532&key=82C932E9B66BA17C54B96B9DFB4A0D03&tpl=10';
+						var html = '<video class="video" id="' +
+							videoId +
+							'"  webkit-playsinline="true" playsInline="true"><source src="' +
+							videoUrl +
+							'" ></source></video>';
+						$(".video-content", el).html(html);
+					});
+					
+					$(".e-play-video-new").on("tap", function() {
+						var _parent_article = $(this).parents(".article-video"),
+							_video_s = $(this).parents(".article-video").find(".video"),
+							_video = $(this)
+							.parents(".article-video")
+							.find(".video");
+						_parent_article.toggleClass("is-play");
+						if (_parent_article.hasClass("is-play")) {
+							for (var i = 0; i < _video_s.length; i++) {
+								_video_s.eq(i)[0].pause();
+							}
+							_video[0].play();
+							_video[0].addEventListener("ended", function() {
+								this.play();
+							});
+						} else {
+							_video[0].pause();
+						}
+					});
+				})
+			</script>
+		</section>
+		<!-- 底部 -->
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

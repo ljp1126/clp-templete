@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" href="css/sale.css">
+	<%include _includes/js.html %>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-simple.html %>
+		<!-- 内容部分 -->
+		<section class="container waiting-room container-min-h">
+			
+			<article class="article article-frame">
+				<div class="bg-box"></div>
+				<div class="sale-content waiting-in-queue">
+					<div class="img-box"><img src="images/sale/waiting-logo.png" /></div>
+					<div class="text-box">
+						<h3>很遗憾，您选择的尺码已售罄。</h3>
+						<p>如果已下单的其他顾客未在规定时间内成功付款，您仍然有机会选购。<br/>请稍后重试，或返回活动页继续挑选其他尺码。</p>
+					</div>
+					<div class="btn-box btn-two-box">
+						<a class="btn btn-white" href="pdp-1.html">返回活动页</a>
+						<a class="btn btn-black" href="index.html">返回首页</a>
+					</div>
+				</div>
+			</article>
+		
+		</section>
+
+		<%include _includes/modules/footer-simple-no-back-top.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+	</div>
+</body>
+</html>

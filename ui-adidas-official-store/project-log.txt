@@ -1,0 +1,317 @@
+﻿示例：
+2017年11月01日{
+	AD-6666  (html, css, js)
+}
+jira 编号后为 修改文件，在相应的jira中需要备注具体修改的文件
+
+
+
+
+
+----------------------- bug log -----------------------
+	2017年11月01日——2017年11月03日{
+		2017年11月01日{
+
+			AD-4105{
+				pdp-hyper-launch-1-en_GB.html
+				pdp-en_GB.less
+				pdp.js (EndTime定义)
+			}
+
+			AD-4195{
+				pdp-en_GB.html(尺码表)
+				pdp-en_GB.less
+					size-en_GB.html
+				size-en_GB.less
+			}
+
+			AD2-241  (index.html, img)
+
+		}
+
+		2017年11月02日{
+			AD-4067  {
+				myaccount-review-us.less
+			}
+
+			AD-4136，AD-4137  {
+				checkout-guest-en_GB.html
+				checkout-member-empty-address-en_GB.html
+				checkout-member-en_GB.html
+				checkout-en_GB.less
+				order-summary-box-en_GB.less
+			}
+
+			AD-4211,
+			AD-4199,
+			AD-4083,
+			AD-4026,
+			AD-4178 {
+				index-en_GB.html
+				footer-en_GB.html
+				footer-en_GB.less
+			}
+
+			AD-4181 {
+				plp-en_GB.html
+				plp-en_GB.less
+			}
+
+			AD-4223 {
+				myaccount-personal-information-en_GB.html
+				myaccount-memeber-en_GB.less
+			}
+
+			AD-4224 {
+				myaccount-memeber-en_GB.html
+				myaccount-memeber-en_GB.less
+			}
+
+			AD-4223 {
+				myaccount-personal-information-en_GB.html
+				myaccount-memeber-en_GB.less
+			}
+		}
+
+		2017年11月03日{
+			AD-4234 {
+				myaccount-memeber-en_GB.html
+				goods-item.less
+			}
+		}
+		2017年11月06日{
+			AD-4242 {
+				ui包正常
+			}
+			AD-4243 {
+				ui包正常
+			}
+			AD-4245 {
+				myaccount-returns-goods-process-en_GB.less
+			}
+			AD-4272{
+				checkout-en_GB.less
+				checkout-member-en_GB.html
+			}
+			AD-4275{
+				ui包正常
+			}
+			AD-4286{
+				ui包正常
+			}
+		}
+	}
+
+	2017年11月06日——2017年11月10日{
+		2017年11月08日{}
+	}
+	2017年11月13日——2017年11月17日{
+		2017年11月13日{
+			AD-4310 （index-en_GB.html , header-en_GB.less）
+			AD-4359  (birthday.html)
+		}
+		2017年11月14日{
+			AD-4349 （pdp-en_GB.less）
+			AD-4333  (myaccount系列左侧导航文案)
+		}
+
+		2017年11月17日{
+			AD-4409  提取公用样式  {
+				lp-draw-step-2.html
+				lp-draw-step-1.css
+			}
+
+			AD-4409  信息填写弹层提示信息  {
+				lp-draw-step-1.css
+			}
+		}
+	}
+	2017年11月20日——2017年11月24日{
+		AD-4412,AD-4090 (guest-order-apply-en_GB.html,guest-cancel-order-create-en_GB.htmlguest-order-apply-en_GB.less)
+	}
+	2017年11月28日{
+		AD-4564（brafinder.html ）
+		AD-4507（myaccount-orders-details-prepared-en_GB.html，myaccount-orders-en_GB.css）
+		AD-4547 (brafinder.html brafinder.css ,brafinder.js, img的icon)
+		AD-4479 （checkout-member-en_GB.html， checkout-member-en_GB.css）
+	}
+	2017年11月30日{
+		AD-4564（brafinder.html ）
+		AD-4612 (brafinder.html,brafinder.css,添加icon)
+		AD-4599 (myaccount-my-subscriptions.html,common.css,icon图标)
+	}
+	2017年12月01日{
+		AD-4625 (release-dates.html,release-dates.css)
+	}
+	2017年12月08日{
+		AD-4684 (faq1.html,icon.css, icon图标)
+		AD-4772 (lp-eqt-campaign.html img)
+		AD-4717 (myaccount-my-subscriptions.less)
+	}
+----------------------- 页面新增，优化 -----------------------
+	2017年11月01日——2017年11月03日{
+		2017年11月01日{
+			AD-4204 增加链接  (tn-winterJacket.html, img)
+
+			brafinder.html下面轮播图也增加尺码
+
+			AD-4206 首页字体更换  {
+				common-en_GB.css
+				index-en_GB.css
+			}
+		}
+
+		2017年11月02日{
+			AD-4121  员工账号增加以及调整 两个页面  (html, css, icon)
+			AD-3982  [mob]双语 My Account 修改  (css)
+		}
+
+		2017年11月03日{
+			AD-4229 {
+				pdp-hyper-launch-new.html
+				pdp.less
+				pdp.js
+			}
+		}
+	}
+
+	2017年11月06日——2017年11月10日{
+		2017年11月06日{
+			AD-4207 {
+				pdp-en_GB.html
+				pdp-en_GB.less
+				guess-you-Iike-en_GB.less
+			}
+			AD-4208 {
+				plp-en_GB.html
+				plp-en_GB.less
+			}
+			AD-4210 {
+				checkout-en_GB.less
+				order-summary-box-en_GB.less
+				checkout-guest-en_GB.html
+			}
+			AD-4280 {
+				邮件模板birthday.html新增100、200生日卷
+			}
+
+			AD-4277 plp benner 视频播放优化{
+				plp-banner-video.html
+				plp.css
+				plp.js
+				common.js
+			}
+
+			AD2-256 MOB端sticky head吸顶{
+				pdp.css
+				pdp.js
+			}
+		}
+
+		2017年11月07日{
+			AD-4285 {
+				myaccount-left-nav.less
+			}
+
+			AD-4222 {
+				易烊千玺抽奖活动页面（lp-draw-step-2.html,lp-draw-step-2.less,lp-draw-step-2.js img）
+			}
+			AD-4215 {
+				易烊千玺抽奖活动页面
+					lp-draw-step.html
+					lp-draw-step-1.html
+					lp-draw-step-1.less
+					lp-draw-step-1.js
+			}
+			玺包活动页面添加抽奖效果  (html, css, js)
+
+			玺包活动页面添加抽奖效果 位置更换  (html, css, js)
+
+			brafinder-pad 添加跳转逻辑  (brafinder-pad.js)
+		}
+
+		2017年11月08日{
+			plp usp-header mobile 添加icon，样式优化  (common.css)
+
+			AD-4313 {
+				【MOB】PLP 的sticky header 弹层样式修改
+				usp-header.html
+				usp-header.less
+			}
+
+			首页 新添样式和页面结构  (index.html,index.css)
+
+			AD-4326 {
+				index.css
+				index.js
+			}
+
+			AD2-256 {
+				common.js
+			}
+		}
+
+		2017年11月09日{
+			AD2-256 {
+				plp.css
+				common.js
+			}
+
+			AD-4209 {
+				myaccount-address-book-en_GB.less
+				myaccount-orders-en_GB.less
+				myaccount-returns-en_GB.less
+				myaccount-address-book-en_GB.html
+				myaccount-address-book-empty-en_GB.html
+				myaccount-returns-en_GB.html
+				myaccount-returns-goods-process-en_GB.html
+			}
+			AD-4215 {
+				弹层添加关闭按钮
+			}
+		}
+
+		2017年11月10日{
+			AD2-4347 {
+				login-en_GB.html
+				login-en_GB.less
+				first-login-resetZC-step2-2-en_GB.html
+			}
+
+			AD2-284 {
+				lp-draw-step-1.html
+				lp-draw-step-1.less
+				lp-draw-step-1.js
+				img
+			}
+			AD-4353{
+				lp-draw-step-1.js
+			}
+		}
+	}
+
+	2017年11月13日——2017年11月17日{
+		2017年11月14日{
+			AD2-209 {
+				first-login-resetP-step2-2.html
+				login.less
+				first-login-reset.js
+			}
+		}
+		2017年11月15日{
+			lp-world-cup-germany.html  按钮位置调整
+			AD2-291  样式调整  (waiting-room-error-2.html)
+			AD-4395 (lp-originals-winter.html)
+		}
+		2017年11月16日{
+			product-purchase.html  edm调整和增加文案
+			AD-4385  （about-adiclub-en_GB.html sitemap.less）
+
+		}
+	}
+
+	2017年11月20日——2017年11月24日{
+		2017年11月23日{
+			AD-4522 (lp-custom-made.html)
+		}
+	}

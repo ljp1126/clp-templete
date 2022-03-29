@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/myaccount-orders.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/myaccount-orders.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+
+		<!-- 内容部分 -->
+		<section class="container">
+			<!-- 模块一 -->
+			<article class="article article-breadcrumb-common-width none-sm">
+				<div class="breadcrumb">
+					<ul class="list-inline">
+						<li><a href="#"><i class="icon icon-round-lightgray-lefts"></i>返回</a></li>
+						<li class="divider">丨</li>
+						<li><a href="/">首页</a></li>
+						<li class="divider">/</li>
+						<li><a href="/">我的账户</a></li>
+					</ul>
+				</div>
+			</article>
+
+			<!-- 模块二 -->
+			<article class="article article-my-width">
+				<div class="my-content-box float-clearfix">
+					<!-- 左 导航 -->
+					<%include _includes/myaccount-left-nav.html %>
+
+					<!-- 右 内容 -->
+					<div class="myaccount-right">
+						<div class="myaccount-rig-left float-clearfix">
+							<div class="myaccount-right-content">
+								<div class="myaccount-right-tit float-clearfix">
+									<h3>我的订单</h3>
+									<div class="myaccount-top-nav events-nav-tab">
+										<ul class="float-clearfix">
+											<li class="is-active"><a>官网订单<span>&nbsp;7</span></a></li>
+											<li class=""><a>门店交易订单<span>&nbsp;3</span></a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="my-orders-item-box">
+									<div class="website-orders-item events-orders-item">
+										<div class="order-status events-nav-tab">
+											<ul class="float-clearfix">
+												<li class="is-active"><a>全部订单<span>17</span></a></li>
+												<li class=""><a>待支付<span>1</span></a></li>
+												<li class=""><a>待发货<span>1</span></a></li>
+												<li class=""><a>待收货<span>1</span></a></li>
+												<li class=""><a>待评价<span>1</span></a></li>
+											</ul>
+										</div>
+
+										<div class="goods-item-box">
+
+											<%include _includes/modules/evaluation-integral-1.html %>
+
+											<!-- 不同状态的订单，在此加不同的class，如待支付加class='goods-item-stay-pay' -->
+											<div class="goods-item-info goods-item-stay-pay float-clearfix">
+												<div class="info-wrapper">
+													<p class="order-info">
+														<span>
+															<span>下单时间：&nbsp;</span>2017.4.25 10:30:30
+														</span>
+														<span class="mob-block">
+															<span>订单编号：&nbsp;</span>AD123456789
+														</span>
+														<strong class="pull-right">待支付</strong>
+													</p>
+													<p class="order-info">
+														<span class="mob-margin">
+															共&nbsp;<strong>1</strong>&nbsp;件商品<span class="none-sm">，</span>
+														</span>
+														<span>
+															<span>订单金额：&nbsp;</span><strong>￥999.00</strong>
+														</span>
+													</p>
+												</div>
+												<!-- mobile 定制结构 -->
+												<!-- <div class="mob-miadidas none block-sm">
+													<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p>
+												</div> -->
+												<div class="product-show">
+													<div class="product-info">
+														<a href="#" class="product-info-link none block-sm"></a>
+														<div class="thumbnail float-clearfix">
+														    <a href="">
+														        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+														        <!-- 小图标 笔A -->
+														        <i class="icon icon-personalise"></i>
+														    </a>
+														    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+														    <div class="desc">
+														    	<p>颜色：<span>黄</span></p>
+														    	<p>尺码：<span>41</span></p>
+														    	<p>姓名：<span>Curze</span></p>
+														    	<p>号码：<span>10</span></p>
+														    	<p>徽章：<span>REAL Club World Cup badge</span></p>
+														    	<!-- <p>左脚文字：<span>james</span></p>
+														    	<p>右脚文字：<span>james</span></p> -->
+														    	<div class="Price-item">
+															    	<span class="Price-text">价格：</span>
+															    	<span class="goods-price">￥799<del class="original-price">￥1,099</del></span>
+															    	<span>&nbsp;&nbsp;x&nbsp;</span>
+															    	<span>1</span>
+															    </div>
+														    	<p>定制费：<span>50</span></p>
+														    	<!-- <p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p> -->
+														    </div>
+														</div>
+													</div>
+													<div class="jumpbtn">
+
+														<!-- 倒计时加class（count-down） -->
+														<div class="count-down">
+															<a class="btn btn-blue btn-have-arrow payment-button">
+																<span>立即支付&nbsp;<label class="count-down-text">30:00</label></span>
+															</a>
+														</div>
+
+														<div class="none-sm">
+															<a class="btn btn-white btn-have-arrow btn-white-details"><span>查看详情</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="goods-item-info float-clearfix">
+												<div class="info-wrapper">
+													<p class="order-info">
+														<span>
+															<span>下单时间：&nbsp;</span>2017.4.25 10:30:30
+														</span>
+														<span class="mob-block">
+															<span>订单编号：&nbsp;</span>AD123456789
+														</span>
+														<strong class="pull-right">已取消</strong>
+													</p>
+													<p class="order-info">
+														<span class="mob-margin">
+															共&nbsp;<strong>1</strong>&nbsp;件商品<span class="none-sm">，</span>
+														</span>
+														<span>
+															<span>订单金额：&nbsp;</span><strong>￥999.00</strong>
+														</span>
+													</p>
+												</div>
+												<!-- mobile 定制结构 -->
+												<!-- <div class="mob-miadidas none block-sm">
+													<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p>
+												</div> -->
+												<!-- 商品不止一个，加class='product-multiple' -->
+												<div class="product-show product-multiple">
+													<ul class="product-multiple-list float-clearfix">
+														<li class="thumbnail">
+															<a>
+																<img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+																<!-- 小图标 笔A -->
+														        <!-- <i class="icon icon-personalise"></i> -->
+															</a>
+														</li>
+														<li class="thumbnail">
+															<a>
+																<img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+																<!-- 小图标 笔A -->
+														        <i class="icon icon-personalise"></i>
+															</a>
+														</li>
+														<li class="thumbnail">
+															<a>
+																<img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+																<!-- 小图标 笔A -->
+														        <!-- <i class="icon icon-personalise"></i> -->
+															</a>
+														</li>
+														<li class="thumbnail">
+															<a>
+																<img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+																<!-- 小图标 笔A -->
+														        <!-- <i class="icon icon-personalise"></i> -->
+															</a>
+														</li>
+														<li class="thumbnail">
+															<a>
+																<img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+																<!-- 小图标 笔A -->
+														        <!-- <i class="icon icon-personalise"></i> -->
+															</a>
+														</li>
+														<li class="thumbnail">
+															<a>
+																<img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+																<!-- 小图标 笔A -->
+														        <!-- <i class="icon icon-personalise"></i> -->
+															</a>
+														</li>
+														<li class="thumbnail-more">
+															<a class="more-img">
+																<i></i><i></i><i></i>
+															</a>
+														</li>
+													</ul>
+													<div class="product-info">
+														<a href="#" class="product-info-link none block-sm"></a>
+														<div class="thumbnail float-clearfix">
+														    <a href="">
+														        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+														        <!-- 小图标 笔A -->
+														        <!-- <i class="icon icon-personalise"></i> -->
+														    </a>
+														    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+														    <div class="desc">
+														    	<!-- <p>颜色：<span>黄</span></p> -->
+														    	<p>尺码：<span>41</span></p>
+														    	<!-- <p>左脚文字：<span>james</span></p>
+														    	<p>右脚文字：<span>james</span></p>-->
+															    <div class="Price-item">
+															    	<span class="Price-text">价格：</span>
+															    	<span class="goods-price price-single">￥799</span>
+															    	<span>&nbsp;&nbsp;x&nbsp;</span>
+															    	<span>1</span>
+															    </div>
+														    	<!-- <p>定制费：<span>50</span></p> -->
+														    	<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p>
+														    </div>
+														</div>
+													</div>
+													<div class="jumpbtn none-sm">
+														<!-- <div class="">
+															<a class="btn btn-blue btn-have-arrow payment-button"><span>立即支付</span></a>
+														</div> -->
+														<div class="">
+															<a class="btn btn-white btn-have-arrow btn-white-details"><span>查看详情</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="goods-item-info float-clearfix">
+												<div class="info-wrapper">
+													<p class="order-info">
+														<span>
+															<span>下单时间：&nbsp;</span>2017.4.25 10:30:30
+														</span>
+														<span class="mob-block">
+															<span>订单编号：&nbsp;</span>AD123456789
+														</span>
+														<strong class="pull-right">待发货</strong>
+													</p>
+													<p class="order-info">
+														<span class="mob-margin">
+															共&nbsp;<strong>1</strong>&nbsp;件商品<span class="none-sm">，</span>
+														</span>
+														<span>
+															<span>订单金额：&nbsp;</span><strong>￥999.00</strong>
+														</span>
+													</p>
+												</div>
+												<!-- mobile 定制结构 -->
+												<!-- <div class="mob-miadidas none block-sm">
+													<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p>
+												</div> -->
+												<!-- 商品不止一个，加class='product-multiple' -->
+												<div class="product-show product-multiple">
+													<ul class="product-multiple-list float-clearfix">
+														<li class="thumbnail">
+															<a>
+																<img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+																<!-- 小图标 笔A -->
+														        <!-- <i class="icon icon-personalise"></i> -->
+															</a>
+														</li>
+														<li class="thumbnail">
+															<a>
+																<img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+																<!-- 小图标 笔A -->
+														        <i class="icon icon-personalise"></i>
+															</a>
+														</li>
+														<li class="thumbnail-more">
+															<a class="more-img">
+																<i></i><i></i><i></i>
+															</a>
+														</li>
+													</ul>
+													<div class="product-info">
+														<a href="#" class="product-info-link none block-sm"></a>
+														<div class="thumbnail float-clearfix">
+														    <a href="">
+														        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+														        <!-- 小图标 笔A -->
+														        <!-- <i class="icon icon-personalise"></i> -->
+														    </a>
+														    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+														    <div class="desc">
+														    	<!-- <p>颜色：<span>黄</span></p> -->
+														    	<p>尺码：<span>41</span></p>
+														    	<!-- <p>左脚文字：<span>james</span></p>
+														    	<p>右脚文字：<span>james</span></p>-->
+															    <div class="Price-item">
+															    	<span class="Price-text">价格：</span>
+															    	<span class="goods-price price-single">￥799</span>
+															    	<span>&nbsp;&nbsp;x&nbsp;</span>
+															    	<span>1</span>
+															    </div>
+														    	<!--<p>定制费：<span>50</span></p> -->
+														    	<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p>
+														    </div>
+														</div>
+													</div>
+													<div class="jumpbtn none-sm">
+														<!-- <div class="">
+															<a class="btn btn-blue btn-have-arrow payment-button"><span>立即支付</span></a>
+														</div> -->
+														<div class="">
+															<a class="btn btn-white btn-have-arrow btn-white-details"><span>查看详情</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="goods-item-info float-clearfix">
+												<div class="info-wrapper">
+													<p class="order-info">
+														<span>
+															<span>下单时间：&nbsp;</span>2017.4.25 10:30:30
+														</span>
+														<span class="mob-block">
+															<span>订单编号：&nbsp;</span>AD123456789
+														</span>
+														<strong class="pull-right">待收货</strong>
+													</p>
+													<p class="order-info">
+														<span class="mob-margin">
+															共&nbsp;<strong>1</strong>&nbsp;件商品<span class="none-sm">，</span>
+														</span>
+														<span>
+															<span>订单金额：&nbsp;</span><strong>￥999.00</strong>
+														</span>
+													</p>
+												</div>
+												<!-- mobile 定制结构 -->
+												<div class="mob-miadidas none block-sm">
+													<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p>
+												</div>
+												<div class="product-show">
+													<div class="product-info">
+														<a href="#" class="product-info-link none block-sm"></a>
+														<div class="thumbnail float-clearfix">
+														    <a href="">
+														        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+														        <!-- 小图标 笔A -->
+														        <!-- <i class="icon icon-personalise"></i> -->
+														    </a>
+														    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+														    <div class="desc">
+														    	<!-- <p>颜色：<span>黄</span></p> -->
+														    	<p>尺码：<span>41</span></p>
+														    	<!-- <p>左脚文字：<span>james</span></p>
+														    	<p>右脚文字：<span>james</span></p>-->
+															    <div class="Price-item">
+															    	<span class="Price-text">价格：</span>
+															    	<span class="goods-price price-single">￥799</span>
+															    	<span>&nbsp;&nbsp;x&nbsp;</span>
+															    	<span>1</span>
+															    </div>
+														    	<!--<p>定制费：<span>50</span></p> -->
+														    	<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p>
+														    </div>
+														</div>
+													</div>
+													<div class="jumpbtn none-sm">
+														<!-- <div class="">
+															<a class="btn btn-blue btn-have-arrow payment-button"><span>立即支付</span></a>
+														</div> -->
+														<div class="">
+															<a class="btn btn-white btn-have-arrow btn-white-details"><span>查看详情</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="goods-item-info float-clearfix">
+												<div class="info-wrapper">
+													<p class="order-info">
+														<span>
+															<span>下单时间：&nbsp;</span>2017.4.25 10:30:30
+														</span>
+														<span class="mob-block">
+															<span>订单编号：&nbsp;</span>AD123456789
+														</span>
+														<strong class="pull-right">待评价</strong>
+													</p>
+													<p class="order-info">
+														<span class="mob-margin">
+															共&nbsp;<strong>1</strong>&nbsp;件商品<span class="none-sm">，</span>
+														</span>
+														<span>
+															<span>订单金额：&nbsp;</span><strong>￥999.00</strong>
+														</span>
+													</p>
+												</div>
+												<!-- mobile 定制结构 -->
+												<!-- <div class="mob-miadidas none block-sm">
+													<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p>
+												</div> -->
+												<div class="product-show">
+													<div class="product-info">
+														<a href="#" class="product-info-link none block-sm"></a>
+														<div class="thumbnail float-clearfix">
+														    <a href="">
+														        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+														        <!-- 小图标 笔A -->
+														        <!-- <i class="icon icon-personalise"></i> -->
+														    </a>
+														    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+														    <div class="desc">
+														    	<p>颜色：<span>黄</span></p>
+														    	<p>尺码：<span>41</span></p>
+														    	<p>左脚文字：<span>james</span></p>
+														    	<p>右脚文字：<span>james</span></p>
+															    <div class="Price-item">
+															    	<span class="Price-text">价格：</span>
+															    	<span class="goods-price">￥799<del class="original-price">￥1,099</del></span>
+															    	<span>&nbsp;&nbsp;x&nbsp;</span>
+															    	<span>1</span>
+															    </div>
+														    	<p>定制费：<span>50</span></p>
+														    	<!-- <p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p> -->
+														    </div>
+														</div>
+													</div>
+													<div class="jumpbtn none-sm">
+														<!-- <div class="">
+															<a class="btn btn-blue btn-have-arrow payment-button"><span>立即支付</span></a>
+														</div> -->
+														<div class="">
+															<a class="btn btn-white btn-have-arrow btn-white-details"><span>查看详情</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="goods-item-info float-clearfix">
+												<div class="info-wrapper">
+													<p class="order-info">
+														<span>
+															<span>下单时间：&nbsp;</span>2017.4.25 10:30:30
+														</span>
+														<span class="mob-block">
+															<span>订单编号：&nbsp;</span>AD123456789
+														</span>
+														<strong class="pull-right">已完成</strong>
+													</p>
+													<p class="order-info">
+														<span class="mob-margin">
+															共&nbsp;<strong>1</strong>&nbsp;件商品<span class="none-sm">，</span>
+														</span>
+														<span>
+															<span>订单金额：&nbsp;</span><strong>￥999.00</strong>
+														</span>
+													</p>
+												</div>
+												<!-- mobile 定制结构 -->
+												<!-- <div class="mob-miadidas none block-sm">
+													<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p>
+												</div> -->
+												<div class="product-show">
+													<div class="product-info">
+														<a href="#" class="product-info-link none block-sm"></a>
+														<div class="thumbnail float-clearfix">
+														    <a href="">
+														        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+														        <!-- 小图标 笔A -->
+														        <!-- <i class="icon icon-personalise"></i> -->
+														    </a>
+														    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+														    <div class="desc">
+														    	<p>颜色：<span>黄</span></p>
+														    	<p>尺码：<span>41</span></p>
+														    	<!-- <p>左脚文字：<span>james</span></p>
+														    	<p>右脚文字：<span>james</span></p>-->
+															    <div class="Price-item">
+															    	<span class="Price-text">价格：</span>
+															    	<span class="goods-price price-single">￥799</span>
+															    	<span>&nbsp;&nbsp;x&nbsp;</span>
+															    	<span>1</span>
+															    </div>
+														    	<!--<p>定制费：<span>50</span></p>
+														    	<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p> -->
+														    </div>
+														</div>
+													</div>
+													<div class="jumpbtn none-sm">
+														<!-- <div class="">
+															<a class="btn btn-blue btn-have-arrow payment-button"><span>立即支付</span></a>
+														</div> -->
+														<div class="">
+															<a class="btn btn-white btn-have-arrow btn-white-details"><span>查看详情</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="goods-item-info float-clearfix">
+												<div class="info-wrapper">
+													<p class="order-info">
+														<span>
+															<span>下单时间：&nbsp;</span>2017.4.25 10:30:30
+														</span>
+														<span class="mob-block">
+															<span>订单编号：&nbsp;</span>AD123456789
+														</span>
+														<strong class="pull-right">已完成</strong>
+													</p>
+													<p class="order-info">
+														<span class="mob-margin">
+															共&nbsp;<strong>1</strong>&nbsp;件商品<span class="none-sm">，</span>
+														</span>
+														<span>
+															<span>订单金额：&nbsp;</span><strong>￥999.00</strong>
+														</span>
+													</p>
+												</div>
+												<!-- mobile 定制结构 -->
+												<!-- <div class="mob-miadidas none block-sm">
+													<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p>
+												</div> -->
+												<div class="product-show">
+													<div class="product-info">
+														<a href="#" class="product-info-link none block-sm"></a>
+														<div class="thumbnail float-clearfix">
+														    <a href="">
+														        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+														        <!-- 小图标 笔A -->
+														        <!-- <i class="icon icon-personalise"></i> -->
+														    </a>
+														    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+														    <div class="desc">
+														    	<p>颜色：<span>黄</span></p>
+														    	<p>尺码：<span>41</span></p>
+														    	<p>姓名：<span>Curze</span></p>
+														    	<p>号码：<span>10</span></p>
+														    	<p>徽章：<span>REAL Club World Cup badge</span></p>
+														    	<!-- <p>左脚文字：<span>james</span></p>
+														    	<p>右脚文字：<span>james</span></p> -->
+														    	<div class="Price-item">
+															    	<span class="Price-text">价格：</span>
+															    	<span class="goods-price">￥799<del class="original-price">￥1,099</del></span>
+															    	<span>&nbsp;&nbsp;x&nbsp;</span>
+															    	<span>1</span>
+															    </div>
+														    	<p>定制费：<span>40</span></p>
+														    	<!-- <p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p> -->
+														    </div>
+														</div>
+													</div>
+													<div class="jumpbtn none-sm">
+														<!-- <div class="">
+															<a class="btn btn-blue btn-have-arrow payment-button"><span>立即支付</span></a>
+														</div> -->
+														<div class="">
+															<a class="btn btn-white btn-have-arrow btn-white-details"><span>查看详情</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+										<!-- mobile加载 -->
+										<div class="list-loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+
+										<!-- 分页 -->
+										<div class="myaccount-paging paging none-sm">
+											<ul class="float-clearfix">
+												<li class="paging-tit">页数</li>
+												<li class="paging-select-wrapper">
+													<div class="select-box">
+														<div class="dropdown none-sm events-dropdown">
+															<a class="btn">
+																<span class="dropdown-text">1</span>
+																<span class="dropdown-icon"><i class="icon icon-caret"></i></span>
+															</a>
+															<div class="sub-menu tinyscrollbar">
+																<div class="viewport">
+																	<div class="overview">
+																		<ul>
+																			<li>
+																				<a>1</a>
+																			</li>
+																			<li>
+																				<a>2</a>
+																			</li>
+																			<li>
+																				<a>3</a>
+																			</li>
+																			<li>
+																				<a>4</a>
+																			</li>
+																	</div>
+																</div>
+																<div class="scrollbar none">
+																	<div class="track">
+																		<div class="thumb">
+																			<div class="end"></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="dropdown none block-sm events-form-select">
+															<a class="btn">
+																<span class="dropdown-text">1</span>
+																<span class="dropdown-icon"><i class="icon icon-caret"></i></span>
+															</a>
+															<select>
+																<option value="">请选择</option>
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+																<option value="4">4</option>
+															</select>
+														</div>
+													</div>
+												</li>
+												<li class="paging-total">/4</li>
+												<li class="left-arrow"><i class="icon icon-round-lightgray-leftm is-disabled"></i></li>
+												<li class="right-arrow"><i class="icon icon-round-lightgray-rightm"></i></li>
+											</ul>
+										</div>
+										<!-- 分页 end -->
+									</div>
+
+									<div class="store-orders-item events-orders-item">
+										<div class="store-tit none block-sm">*如您对门店交易信息有任何疑问，烦请拨打实体店客服热线：400-880-1515</div>
+										<ul>
+											<li class="store-orders-tit none-sm float-clearfix">
+												<p>购买时间</p>
+												<p>交易号</p>
+												<p>线下门店</p>
+												<p>订单金额</p>
+											</li>
+											<li class="float-clearfix">
+												<p><span>购买时间：</span>2016.4.25 10:30:30</p>
+												<p><span>交易号：</span>AD18468628</p>
+												<p><span>线下门店：</span>上海来福士广场</p>
+												<p><span>订单金额：</span>￥11,700.00</p>
+											</li>
+											<li class="float-clearfix">
+												<p><span>购买时间：</span>2016.4.25 10:30:30</p>
+												<p><span>交易号：</span>AD18468628</p>
+												<p><span>线下门店：</span>上海来福士广场</p>
+												<p><span>订单金额：</span>￥11,700.00</p>
+											</li>
+											<li class="float-clearfix">
+												<p><span>购买时间：</span>2016.4.25 10:30:30</p>
+												<p><span>交易号：</span>AD18468628</p>
+												<p><span>线下门店：</span>上海来福士广场</p>
+												<p><span>订单金额：</span>￥11,700.00</p>
+											</li>
+										</ul>
+										<div class="store-tit none-sm">*如您对门店交易信息有任何疑问，烦请拨打实体店客服热线：<span>400-880-1515</span></div>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</article>
+		</section>
+
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+<!-- 商品模板 -->
+<script id="product-template" type="text/template">
+	<div class="goods-item-info float-clearfix">
+		<div class="info-wrapper">
+			<p class="order-info">
+				<span>
+					<span>下单时间：&nbsp;</span>2017.4.25 10:30:30
+				</span>
+				<span class="mob-block">
+					<span>订单编号：&nbsp;</span>AD123456789
+				</span>
+				<strong class="pull-right">已完成</strong>
+			</p>
+			<p class="order-info">
+				<span class="mob-margin">
+					共&nbsp;<strong>1</strong>&nbsp;件商品<span class="none-sm">，</span>
+				</span>
+				<span>
+					<span>订单金额：&nbsp;</span><strong>￥999.00</strong>
+				</span>
+			</p>
+		</div>
+		<!-- mobile 定制结构 -->
+		<!-- <div class="mob-miadidas none block-sm">
+			<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p>
+		</div> -->
+		<div class="product-show">
+			<div class="product-info">
+				<a href="#" class="product-info-link none block-sm"></a>
+				<div class="thumbnail float-clearfix">
+				    <a href="">
+				        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+				        <!-- 小图标 笔A -->
+				        <!-- <i class="icon icon-personalise"></i> -->
+				    </a>
+				    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+				    <div class="desc">
+				    	<p>颜色：<span>黄</span></p>
+				    	<p>尺码：<span>41</span></p>
+				    	<!-- <p>左脚文字：<span>james</span></p>
+				    	<p>右脚文字：<span>james</span></p>-->
+					    <div class="Price-item">
+					    	<span class="Price-text">价格：</span>
+					    	<span class="goods-price price-single">￥799</span>
+					    	<span>&nbsp;&nbsp;x&nbsp;</span>
+					    	<span>1</span>
+					    </div>
+				    	<!--<p>定制费：<span>50</span></p>
+				    	<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p> -->
+				    </div>
+				</div>
+			</div>
+			<div class="jumpbtn none-sm">
+				<!-- <div class="">
+					<a class="btn btn-blue btn-have-arrow payment-button"><span>立即支付</span></a>
+				</div> -->
+				<div class="">
+					<a class="btn btn-white btn-have-arrow btn-white-details"><span>查看详情</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+	</div>
+</body>
+</html>

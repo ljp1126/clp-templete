@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>lp-zne</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+<body>
+<div id="wrapper">
+	<%include _includes/modules/header.html %>
+	<!-- 内容部分 -->
+	<section class="container">
+		<style type="text/css">
+			.zne-img-item{ position: relative;}
+			.zne-img-item>img{ display: block;width: 100%;}
+			.zne-img-item .zne-video{ position: absolute;top: 0;left: 4.5%;width: 91%;height: 100%;font-size: 0;text-align: center;cursor: pointer;}
+			.zne-img-item .zne-video-01{ padding-top: 2%;}
+			.zne-img-item .zne-video-02{ padding-top: 18%;}
+			.zne-img-item .zne-video .video-content1{ display: inline-block;width: 100%}
+			.zne-img-item .zne-video .video-content1 img{ display: block;width: 100%}
+			.customized-goods{ position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+			.customized-goods .customized-goods-list{ padding: 0 4%;font-size: 0}
+			.customized-goods .customized-goods-list .customized-goods-item{ display: inline-block;padding: 0 1.5%;width: 25%;text-align: center;}
+			.customized-goods .customized-goods-list .customized-goods-item>a{ display: block;box-shadow: 18px 18px 2px #000;}
+			.customized-goods .customized-goods-list .customized-goods-item .goods-item-box{ padding-top: 17px;box-shadow: 18px 18px 2px #000;}
+			.customized-goods .customized-goods-list .customized-goods-item .goods-item-box .btn{ width: 100%;height: 60px;line-height: 60px;font-size: 22px;}
+			.customized-goods .customized-goods-list .customized-goods-item .goods-item-box .btn span:after{ top: 7px;}
+			.customized-goods .customized-btn{  margin: 0 10%;width: 80%;} 
+			.customized-goods .customized-btn .btn{ width: 100%;height: 50px;line-height: 50px;font-size: 20px;}
+			.customized-goods .customized-btn .btn span:after{ top: 6px;}
+			.img-buy{ position: absolute;width: 30%;min-width: 350px;top: 67%;left: 55%;margin: -40px 0 0 0;}
+			.img-buy .btn{ width: 100%;height: 80px;line-height: 80px;font-size: 30px;}
+			.img-buy .btn span:after{ top: 12px;}
+			.article-swiper-zne .swiper-slide>a{ cursor: default;}
+			.article-swiper-zne .swiper-slide a img{ width: 100%;}
+			.article-swiper-zne .content-text{ position: absolute;bottom: 5%;left: 56.5%;}
+			.article-swiper-zne .content-text .btn{ width: 210px;height: 70px;line-height: 70px;font-size: 26px;}
+			.article-swiper-zne .content-text .btn span:after{ top: 10px;}
+			.article-swiper-zne .swiper-button-next,.article-swiper-zne .swiper-button-prev{cursor: pointer;background: none;}
+			.article-swiper-zne .swiper-button-next i,.article-swiper-zne .swiper-button-prev i{display: inline-block;background: url(../images/icon.png);width: 42px;height: 76px;}
+			.article-swiper-zne .swiper-button-prev{ left: 50px;}
+			.article-swiper-zne .swiper-button-prev i{ background-position: -568px -50px;}
+			.article-swiper-zne .swiper-button-next{ right: 50px;}
+			.article-swiper-zne .swiper-button-next i{ background-position: -620px -50px;}
+			@media (max-width: 768px){
+				.zne-img-item .zne-video{ left: 0;width: 100%;}
+				.zne-img-item .zne-video-01{ padding-top: 0;}
+				.zne-img-item .zne-video-02{ padding-top: 31%;}
+				.img-buy{ width: 43%;min-width: 180px;top: 75%;left: auto;right: 10px;margin: -20px 0 0 0;}
+				.img-buy .btn{ width: 100%;height: 40px;line-height: 40px;font-size: 12px;}
+				.img-buy .btn span:after{ top: 0;}
+				.article-swiper-zne .swiper-container{ padding-bottom: 44px; }
+				.article-swiper-zne .content-text{ position: static;margin: 13px 10% 0;width: 80%;}
+				.article-swiper-zne .content-text .btn{ width: 100%;height: 50px;line-height: 50px;font-size: 20px;}
+				.article-swiper-zne .content-text .btn span:after{ top: 6px;}
+				.article-swiper-zne .swiper-pagination{ padding: 20px 0; font-size: 0;bottom: 0;}
+				.article-swiper-zne .swiper-pagination .swiper-pagination-bullet{ margin: 0 8px;width: 20px;height: 4px;background: #c9cbcc;opacity: 1;border-radius: 0;}
+				.article-swiper-zne .swiper-pagination .swiper-pagination-bullet-active{ background: #b7352d;}
+				.last-img{ margin-top: -107px; }
+			}
+		}
+		</style>
+		<script type="text/javascript">
+			$(function(){
+				var mySwiper = new Swiper('.swiper-container',{
+					loop: true,
+					prevButton: '.swiper-button-prev',
+					nextButton: '.swiper-button-next',
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					initialSlide: 0
+				})
+
+				$('.video-01').on('tap', function(e) {
+			        e.preventDefault();
+			        openVideo('801393B0DA8D32969C33DC5901307461','true');
+			    });
+			    $('.video-02').on('tap', function(e) {
+			        e.preventDefault();
+			        openVideo('2D1C3C57FDDADE449C33DC5901307461','true');
+			    });
+				 
+			});
+		</script>
+		
+		<article class="article article-zne">
+			<div class="zne-img-item">
+				<img class="events-changeSrc" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-zne/zne-01.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-zne/zne-01.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-zne/zne-mob-01.jpg"}
+				}' />
+				<div class="zne-video zne-video-01">
+					<div class="video-content1 video-01">
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-zne/zne-vedio-01.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-zne/zne-vedio-01.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-zne/zne-vedio-mob-01.jpg"}
+						}' />
+					</div>
+				</div>
+			</div>
+			<div class="zne-img-item">
+				<img class="events-changeSrc" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-zne/zne-02.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-zne/zne-02.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-zne/zne-mob-02.jpg"}
+				}' />
+			</div>
+			<div class="zne-img-item">
+				<img class="events-changeSrc" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-zne/zne-03.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-zne/zne-03.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-zne/zne-mob-03.jpg"}
+				}' />
+			</div>
+			<div class="zne-img-item">
+				<img class="events-changeSrc" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-zne/zne-04.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-zne/zne-04.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-zne/zne-mob-04.jpg"}
+				}' />
+				<div class="customized-goods">
+					<ul class="customized-goods-list none-xs">
+						<li class="customized-goods-item">
+							<a href="https://www.adidas.com.cn/item/BS4877">
+								<img src="../static/images/plp/product-blank.png" lazy-src="../static/images/lp-zne/goods-01.jpg" />
+							</a>
+							<div class="goods-item-box">
+								<a class="btn btn-red btn-have-arrow" href="https://www.adidas.com.cn/item/BS4877">
+									<span>立即开始定制</span>
+								</a>
+							</div>
+						</li>
+						<li class="customized-goods-item">
+							<a href="https://www.adidas.com.cn/item/BS4945">
+								<img src="../static/images/plp/product-blank.png" lazy-src="../static/images/lp-zne/goods-02.jpg" />
+							</a>
+							<div class="goods-item-box">
+								<a class="btn btn-red btn-have-arrow" href="https://www.adidas.com.cn/item/BS4945">
+									<span>立即开始定制</span>
+								</a>
+							</div>
+						</li>
+						<li class="customized-goods-item">
+							<a href="https://www.adidas.com.cn/item/BQ0074">
+								<img src="../static/images/plp/product-blank.png" lazy-src="../static/images/lp-zne/goods-03.jpg" />
+							</a>
+							<div class="goods-item-box">
+								<a class="btn btn-red btn-have-arrow" href="https://www.adidas.com.cn/item/BQ0074">
+									<span>立即开始定制</span>
+								</a>
+							</div>
+						</li>
+						<li class="customized-goods-item">
+							<a href="https://www.adidas.com.cn/item/BQ0099">
+								<img src="../static/images/plp/product-blank.png" lazy-src="../static/images/lp-zne/goods-04.jpg" />
+							</a>
+							<div class="goods-item-box">
+								<a class="btn btn-red btn-have-arrow" href="https://www.adidas.com.cn/item/BQ0099">
+									<span>立即开始定制</span>
+								</a>
+							</div>
+						</li>
+					</ul>
+					<div class="customized-btn none block-xs">
+						<a class="btn btn-red btn-have-arrow" href="https://www.adidas.com.cn/athletics_zne">
+							<span>立即开始定制</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="zne-img-item">
+				<img class="events-changeSrc" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-zne/zne-05.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-zne/zne-05.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-zne/zne-mob-05.jpg"}
+				}' />
+			</div>
+			<div class="zne-img-item">
+				<img class="events-changeSrc" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-zne/zne-06.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-zne/zne-06.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-zne/zne-mob-06.jpg"}
+				}' />
+				<div class="img-buy">
+					<a class="btn btn-red btn-have-arrow" href="https://www.adidas.com.cn/athletics_zne">
+						<span>选购Z.N.E. pulse系列 </span>
+					</a>
+				</div>
+			</div>
+			<!-- <div class="zne-img-item">
+				<img class="events-changeSrc" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-zne/zne-07.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-zne/zne-07.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-zne/zne-mob-07.jpg"}
+				}' />
+			</div> -->
+			<article class="article article-swiper-zne">
+				<div class="swiper-container swiper-container-zne">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a>
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-zne/zne-kv-01.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-zne/zne-kv-01.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-zne/zne-kv-mob-01.jpg"}
+								}' />
+							</a>
+							<div class="content-text">
+								<a class="btn btn-red btn-have-arrow" href="https://www.adidas.com.cn/item/BS4877">
+									<span>立即购买</span>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<a>
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-zne/zne-kv-02.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-zne/zne-kv-02.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-zne/zne-kv-mob-02.jpg"}
+								}' />
+							</a>
+							<div class="content-text">
+								<a class="btn btn-red btn-have-arrow" href="https://www.adidas.com.cn/item/BQ0074">
+									<span>立即购买</span>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<a>
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-zne/zne-kv-03.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-zne/zne-kv-03.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-zne/zne-kv-mob-03.jpg"}
+								}' />
+							</a>
+							<div class="content-text">
+								<a class="btn btn-red btn-have-arrow" href="https://www.adidas.com.cn/item/BS4945">
+									<span>立即购买</span>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<a>
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-zne/zne-kv-04.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-zne/zne-kv-04.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-zne/zne-kv-mob-04.jpg"}
+								}' />
+							</a>
+							<div class="content-text">
+								<a class="btn btn-red btn-have-arrow" href="https://www.adidas.com.cn/item/BQ0099">
+									<span>立即购买</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- 箭头 -->
+					<div class="action-sports-swiper-btn none-xs">
+						<div class="swiper-button-prev">
+							<i></i>
+						</div>
+						<div class="swiper-button-next">
+							<i></i>
+						</div>
+					</div>
+					<div class="swiper-pagination none block-xs"></div>
+				</div>
+			</article>
+			<div class="zne-img-item last-img">
+				<img class="events-changeSrc" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-zne/zne-08.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-zne/zne-08.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-zne/zne-mob-08.jpg"}
+				}' />
+				<div class="zne-video  zne-video-02">
+					<div class="video-content1 video-02">
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-zne/zne-vedio-02.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-zne/zne-vedio-02.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-zne/zne-vedio-mob-02.jpg"}
+						}' />
+					</div>
+				</div>
+			</div>
+
+		</article>
+		<!-- 视频弹层 -->
+		<script id="video-dialog" type="text/template">
+			<div class="dialog">
+				<div class="dialog-container">
+					<div class="loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+					<div class="video-content">
+
+					</div>
+				</div>
+				<i class="icon icon-close dialog-close">&times;</i>
+			</div>
+		</script>
+	</section>
+	<%include _includes/modules/footer.html %>
+	<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	
+</div>
+</body>
+</html>

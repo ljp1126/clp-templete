@@ -1,0 +1,61 @@
+{
+  "general": {
+    "today": "Dnes",
+    "month": {
+      "0": "Január",
+      "1": "Február",
+      "2": "Marec",
+      "3": "Apríl",
+      "4": "Máj",
+      "5": "Jún",
+      "6": "Júl",
+      "7": "August",
+      "8": "September",
+      "9": "Október",
+      "10": "November",
+      "11": "December"
+    },
+    "ordinal": {
+      "st": "ST",
+      "nd": "ND",
+      "rd": "RD",
+      "th": "TH"
+    },
+    "launchDate": "8. jún 2018",
+    "endDate": "8. júl 2018",
+    "error": "Stala sa chyba. Skús to opäť neskôr."
+  },
+  "teaser": {
+    "distance": {
+      "top": "Dokopy odbehlo",
+      "amount": "8 403 081",
+      "label": "kilometrov"
+    },
+    "members": {
+      "top": "Od 8. júna do 8. júla",
+      "amount": "744 440",
+      "label": "bežcov z celého sveta"
+    },
+    "intro": {
+      "label01": "Každú minútu v oceáne skončí jedno nákladné auto plné plastu.",
+      "label02": "Musíme to zastaviť.",
+      "label03": "Pridaj sa k hnutiu!"
+    },
+    "cta": {
+      "label01": "Záleží na každom kilometri",
+      "label02": "Nižšie zistíš, ako môžeš prispieť"
+    },
+    "end": {
+      "label01": "Ľudia na celom svete sa spojili a dokázali z Behu za oceány spraviť prelomovú udalosť.<br />Každému, kto bežal, šíril povedomie a podporil program Parley Ocean Plastic Program.",
+      "label02": "Ďakujeme!"
+    }
+  },
+  "preLoader": {
+    "title": "Beh za oceány",
+    "subtitle": "nahrávam"
+  },
+  "app": {
+    "name": "Beh za oceány",
+    "slug": "parley-ss18-rfto"
+  }
+}

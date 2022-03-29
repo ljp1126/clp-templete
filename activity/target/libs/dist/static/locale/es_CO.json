@@ -1,0 +1,61 @@
+{
+  "general": {
+    "today": "Hoy",
+    "month": {
+      "0": "Enero",
+      "1": "Febrero",
+      "2": "Marzo",
+      "3": "Abril",
+      "4": "Mayo",
+      "5": "Junio",
+      "6": "Julio",
+      "7": "Agosto",
+      "8": "Septiembre",
+      "9": "Octubre",
+      "10": "Noviembre",
+      "11": "Diciembre"
+    },
+    "ordinal": {
+      "st": "ST",
+      "nd": "ND",
+      "rd": "RD",
+      "th": "TH"
+    },
+    "launchDate": "8 de junio de 2018",
+    "endDate": "8 de julio de 2018",
+    "error": "Ups, algo salió mal. Por favor vuelve a intentarlo más tarde."
+  },
+  "teaser": {
+    "distance": {
+      "top": "Contribución",
+      "amount": "8.403.081",
+      "label": "Kilómetros totales recorridos"
+    },
+    "members": {
+      "top": "Del 8 de junio al 8 de julio",
+      "amount": "744.440",
+      "label": "corredores de todo el mundo"
+    },
+    "intro": {
+      "label01": "Cada minuto, un camión de residuos plásticos acaba en nuestros océanos.",
+      "label02": "Esto tiene que acabar.",
+      "label03": "¡Únete al movimiento ahora!"
+    },
+    "cta": {
+      "label01": "Cada kilómetro cuenta",
+      "label02": "Descubre cómo contribuir más abajo"
+    },
+    "end": {
+      "label01": "Individuos de todo el mundo se reúnen para colaborar con Run for the Oceans, el suceso que cambiará las reglas del juego.<br />A todos los que corrieron, crearon conciencia o ayudaron con el Programa Parley Ocean Plastic.",
+      "label02": "¡Gracias!"
+    }
+  },
+  "preLoader": {
+    "title": "Corre por los océanos",
+    "subtitle": "cargando"
+  },
+  "app": {
+    "name": "Corre por los océanos",
+    "slug": "parley-ss18-rfto"
+  }
+}

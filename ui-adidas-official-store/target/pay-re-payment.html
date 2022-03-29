@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>重新支付</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" href="css/checkout.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/checkout.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-simple.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+			<div class="order-submit-content checkout-pay-content float-clearfix">
+				<!-- order-content-left 开始 -->
+				<div class="order-content-left checkout-pay-new">
+					<div class="checkout-pay payment-method">
+						<h2 class="order-title">重新支付</h2>
+						<p class="payment-text">請您在30分鐘內完成支付，否則訂單會被自動取消。</p>
+						<div class="order-detail-box">
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">订单编号：</dt>
+								<dd class="order-detail-text">AD2748596038</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">订单状态：</dt>
+								<dd class="order-detail-text">待发货</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">支付方式：</dt>
+								<dd class="order-detail-text">支付宝</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">订单金额：</dt>
+								<dd class="order-detail-text">￥1,899.00</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">配送地址：</dt>
+								<dd class="order-detail-text">
+									<span>James</span>&nbsp;&nbsp;&nbsp;<span>13855962542</span>
+								</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title"></dt>
+								<dd class="order-detail-text">上海市静安区万荣路1268号市北高新云立方B栋
+								<span class="pc-none-mb">，&nbsp;200046</span></dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix none-sm">
+								<dt class="order-detail-title"></dt>
+								<dd class="order-detail-text">200046</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">配送方式：</dt>
+								<dd class="order-detail-text">普通快递</dd>
+							</dl>
+							<span class="order-detail-text order-reminder">*因订单内有订制商品，需3-5个工作日发货</span>
+						</div>
+					</div>
+
+					<div class="order-line repay-order-line"></div>
+
+					<div class="payment-method">
+						<h2 class="order-title">支付方式</h2>
+
+						<ul class="payment-method-content float-clearfix">
+							<li class="payment-method-item event-payment-list is-active">
+								<i class="icon icon-radio"></i>
+								<img src="images/check/icon_alipay@2x.png">
+							</li>
+							<li class="payment-method-item event-payment-list">
+								<i class="icon icon-radio"></i>
+								<img src="images/check/icon_wechat@2x.png">
+							</li>
+							<li class="payment-method-item event-payment-list">
+								<i class="icon icon-radio"></i>
+								<img src="images/check/icon_onlinepayment@2x.png">
+							</li>
+						</ul>
+
+					</div>
+					<!-- 支付按钮 -->
+					<div class="submit-button-box">
+						<a class="btn btn-blue btn-have-arrow payment-button event-payment"><span>立即支付</span></a>
+					</div>
+				</div>
+				<!-- order-content-left 结束 -->
+
+				<!-- order-content-right 开始 -->
+				<div class="order-content-right">
+					<div class="common-payment">
+						<!-- 公共右 帮助 -->
+					    <%include _includes/checkout-modules/help.html %>
+					</div>
+				</div>
+				<!-- order-content-right 结束 -->
+			</div>
+			<!-- order-submit-content 结束 -->
+		</section>
+		<%include _includes/modules/footer-simple.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+</html>

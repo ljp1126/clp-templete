@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/myaccount-orders.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/myaccount-orders.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+
+		<!-- 内容部分 -->
+		<section class="container">
+			<!-- 模块一 -->
+			<article class="article article-breadcrumb-common-width none-sm">
+				<div class="breadcrumb">
+					<ul class="list-inline">
+						<li><a href="#"><i class="icon icon-round-lightgray-lefts"></i>返回</a></li>
+						<li class="divider">丨</li>
+						<li><a href="/">首页</a></li>
+						<li class="divider">/</li>
+						<li><a href="/">我的账户</a></li>
+					</ul>
+				</div>
+			</article>
+
+			<!-- 模块二 -->
+			<article class="article article-my-width">
+				<div class="my-content-box float-clearfix">
+					<!-- 左 导航 -->
+					<%include _includes/myaccount-left-nav.html %>
+
+					<!-- 右 内容 -->
+					<div class="myaccount-right">
+						<div class="myaccount-rig-left float-clearfix">
+							<!-- 订单细节class=‘myaccount-orders-details’ -->
+							<div class="myaccount-right-content myaccount-orders-details">
+								<div class="myaccount-right-tit float-clearfix my-return-order">
+									<h3>取消订单申请</h3>
+									<div class="return-order">
+										<a href="#">返回订单详情<i class="icon icon-round-gray-rights"></i></a>
+									</div>
+
+								</div>
+								<div class="my-order-number">
+									<p>订单编号：AD1234567890</p>
+								</div>
+								<div class="my-orders-item-box">
+									<div class="website-orders-item events-orders-item">
+										<div class="goods-item-box">
+
+											<!-- 不同状态的订单修改添加不同的class 如待发货=goods-item-prepared -->
+											<div class="goods-item-info goods-return-order goods-item-stay-pay goods-item-prepared float-clearfix">
+
+
+												<div class="product-show">
+													<div class="list-of-goods float-clearfix">
+														<p>商品</p>
+														<p>购买数量</p>
+														<p>商品总额</p>
+
+													</div>
+
+
+													<div class="product-list-item">
+														<div class="product-info product-info-width">
+															<div class="thumbnail float-clearfix">
+															<div></div>
+															    <a href="">
+														        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+														        <!-- 小图标 笔A -->
+														        <i class="icon icon-personalise"></i>
+															    </a>
+															    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+															    <span class="quantity-purchased">2</span>
+															    <div class="desc">
+															    	<p class="number">BB0008</p>
+
+															    	<div class="size float-clearfix">
+															    		<p>颜色：<span>黄</span></p>
+															    		<p>尺码：<span>41</span></p>
+															    	</div>
+
+															    	<p>价格：<span>￥799</span></p>
+															    	<div class="Price-item">
+
+																    	<p class="goods-price-total">￥1,998.00</p>
+																    </div>
+
+															    </div>
+															</div>
+														</div>
+
+													</div>
+
+
+												</div>
+
+												<div class="product-show">
+													<div class="product-list-item">
+														<div class="product-info product-info-width">
+															<div class="thumbnail float-clearfix">
+															    <a href="">
+															        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+															        <!-- 小图标 笔A -->
+															        <i class="icon icon-personalise"></i>
+															    </a>
+															    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+															    <div class="desc">
+															    	<p class="number">BB0008</p>
+															    	<div class="size float-clearfix">
+															    		<p>颜色：<span>黄</span></p>
+															    		<p>尺码：<span>41</span></p>
+															    	</div>
+															    	<span class="quantity-purchased">1</span>
+															    	<p>左脚文字：<span>james</span></p>
+															    	<p>右脚文字：<span>james</span></p>
+															    	<div class="Price-item">
+																    	<span class="Price-text">价格：</span>
+																    	<!-- <span class="goods-price price-single">￥799</span>
+																    	<span>&nbsp;&nbsp;x&nbsp;</span>
+																    	<span>1</span> -->
+																    	<p class="goods-price-total">￥1,998.00</p>
+																    </div>
+															    	<p>定制费：<span>50</span></p>
+															    	<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p>
+															    </div>
+															</div>
+														</div>
+
+													</div>
+
+												</div>
+
+												<div class="footer-order-price">
+													<div class="order-price-classify remove-order-price-bodder">
+										                <div class="product-price float-clearfix">
+										                	<span>共 3 件退货商品</span>
+										                    <span class="deductible-amount">已扣除优惠金额
+										                    	<span class="none-sm">：</span>
+										                    </span>
+										                    <span>￥400.00</span>
+										                </div>
+										                <div class="product-price float-clearfix product-price-blod">
+										                    <span>退款总计<span class="none-sm">：</span></span>
+										                    <span class="text-bold">¥1,598.00</span>
+										                </div>
+
+										            </div>
+												</div>
+
+												<div class="reason-cancellation-rder">
+													<div>
+														<p class="reason-cancellation-rder-btn">请选择取消订单的原因<i class="icon reason-cancellation-icon-bottom"></i></p>
+
+														<div class="reason-cancellation-rder-con">
+															<p>不想要了</p>
+															<p>买错颜色或尺码</p>
+															<p>其他原因</p>
+														</div>
+													</div>
+												</div>
+												<div class="cancel-order-description">
+													<textarea placeholder="取消订单说明（非必填）"></textarea>
+													<span>0/100</span>
+												</div>
+												<div class="cancel-btn">
+													<div>暂不取消</div>
+													<div class="events-cancel-order">确认取消</div>
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</article>
+		</section>
+
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+
+	</div>
+</body>
+</html>

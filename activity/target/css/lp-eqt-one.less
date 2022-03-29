@@ -1,0 +1,86 @@
+@charset "UTF-8";
+// 公共方法
+@import "common/utilities.less";
+// 公共变量、样式
+@import "common/variables.less";
+
+.article{
+	background: #eee;
+	padding: 60px 20px;
+	ul{
+		width: 100%;
+		max-width: 960px;
+		margin: 0 auto;
+		font-size: 0;
+		transition: all 0.3s ease-out;
+
+		li{
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			
+			width: 25%;
+			padding: 5px;
+
+			a{
+				display: block;
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+
+@media (min-width: 1025px){
+	.article{
+		ul{
+			li{
+				a{
+					transition: box-shadow 0.6s ease-out;
+				}
+				&:hover{
+					a{
+						box-shadow: 2px 2px 12px 6px rgba(163, 163, 163, 0.5);
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+@media (max-width: 768px){
+	.article{
+        font-size: 0;
+		padding: 0;
+		ul{
+            font-size: 0;
+			li{
+                font-size: 0;
+				padding: 0;
+                width: 50%;
+                overflow: hidden;
+                a{
+                    font-size: 0;
+                }
+                img{
+                    width: e('calc(100% + 2px)');
+                    position: relative;
+                }   
+                &:nth-child(1),
+                &:nth-child(3){
+                    left: 1px;
+                }
+
+                &:nth-child(2),
+                &:nth-child(4){
+                    left: -1px;
+                }
+			}
+		}
+	}
+
+
+}

@@ -1,0 +1,105 @@
+.myaccount-right-content{
+    .coupons-nav-top-box{
+        .coupons-nav-top{
+            li{
+                &.is-active{
+                    border-bottom: 2px solid #000000;
+                }
+                a{
+                    &:hover{
+                        color: #000000;
+                    }
+                }
+                &.is-active{
+                    border-bottom: 2px solid #000000;
+                    span{
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//优惠券改版
+@media (max-width: 1024px){
+	.myaccount-right-content{
+		.coupons-item-cont{
+			padding: 30px 0 0;
+			ul{
+				&.coupons-item-ul{
+					li{
+						margin-bottom: 20px;
+						.coupons-img{
+							z-index: 1;
+							padding: 0 3px;
+							.coupons-price{
+								left: 29%;
+								top: 50%;
+								transform: translateY(-50%);
+								i{
+									margin-right: 2px
+								}
+								span{
+									font-size: 30px;
+									font-weight: 700;
+								}
+							}
+							.p-box{
+								left: 47.87%;
+								top: 50%;
+								transform: translateY(-50%);
+							}
+						}
+						.coupons-use-rule{
+							border-right: 0px #e5e5e5 dashed;
+							box-shadow: 0 1px 6px 0 rgba(204,204,204,0.50);
+							margin: 0 10px;
+							.rule-box{
+								border-top: 0px #e5e5e5 dashed;
+    							border-bottom: 0px #e5e5e5 dashed;
+								.rule-p{
+									border-left: 0px #e5e5e5 dashed;
+								}
+							}
+						}
+						.warm-tips{
+							z-index: 1;
+							height: 20px;
+							line-height: 20px;
+							right: 15px;
+							top: -10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 375px){
+	.myaccount-right-content{
+		.coupons-item-cont{
+			ul{
+				&.coupons-item-ul{
+					li{
+						.coupons-img{
+							.p-box{
+								left: 43%;
+								top: 50%;
+								transform: translateY(-50%);
+							}
+							.coupons-price{
+								left: 28%;
+								span{
+									font-size: 25px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

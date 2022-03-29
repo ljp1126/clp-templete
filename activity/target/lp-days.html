@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%include _includes/meta.html %>
+	<title>lp-deerupt-campaign</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+
+	<!-- <script type="text/javascript" src="libs/hotSpot/hotSpot.js"></script> -->
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+			<style>
+
+            .article{
+                position: relative;
+            }
+            img{
+                width: 100%;
+            }
+            .link{
+                position: absolute;
+                z-index: 1;
+            }
+            @media (max-width: 1024px){
+
+            }
+
+			</style>
+
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+							"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/OCT/DAS/pc-das.jpg"},
+							"medium":{"high":"",  "normal":"https://img.adidas.com.cn/resources/activePage/OCT/DAS/mob-das.jpg"},
+							"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/OCT/DAS/mob-das.jpg"}}' />
+			</article>
+
+			<script type="text/javascript">
+                $(function() {
+                    // 换图 + 懒加载
+                    $.spice.lazyLoad('img[lazysrc]', {
+                        attr: 'lazysrc'
+                    });
+                    $.spice.tools.changeImageSrc({
+                        callBack: function(img, self) {
+                            $.spice.lazyLoad('img[lazysrc]', {
+                                attr: self.opt.lazyData,
+                                prestrain: 1
+                            });
+                        }
+                    });
+
+                });
+
+			</script>
+		</section>
+		<%include _includes/modules/footer.html %>
+	</div>
+</body>
+
+</html>

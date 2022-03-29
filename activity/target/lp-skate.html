@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>lp-skate</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+<body>
+<div id="wrapper">
+	<%include _includes/modules/header.html %>
+	<!-- 内容部分 -->
+	<section class="container">
+		<style type="text/css">
+			.skate-img{ font-size: 0;position: relative; }
+			.skate-img > img{ width: 100%; }
+			.skate-img-group{ font-size: 0; }
+			.skate-img-group .col-one{ width: 24.64%; }
+			.skate-img-group .col-two{ width: 25.36%; }
+			.skate-img-group .skate-img{ overflow: hidden; }
+			.skate-img-group .skate-img > img{ transition: transform 3s linear; }
+			.skate-img-group .skate-img > img:not(.no-scale):hover{ transform: scale(1.1); }
+			.skate-img-btn{ position: absolute; }
+			.skate-img-group .skate-img-btn{ top: 70%;left: 50%;margin: -24px 0 0 -107px; }
+			.skate-img-group .skate-img-btn .btn{ width: 214px;background: rgba(255,255,255,.9); }
+			.skate-swiper{ margin: 10.1% 0 0; }
+			.skate-img-content{ position: absolute;top: 0;left: 0;width: 100%;height: 100%; }
+			.skate-img-content .skate-img-btn{ top: 56.5%;left: 12.4%;margin: -24px 0 0 0; }
+			.skate-img-content .skate-img-btn .btn{ width: 154px;background: rgba(255,255,255,.7); }
+			.skate-img-content .article-swiper-skate{ position: absolute;bottom: 0;left: 69.2%;margin: 0 0 0 -18.05%;width: 36.1%; }
+			.skate-img-content .article-swiper-skate .swiper-container-skate{ padding: 0 0 24%; }
+			.skate-img-content .article-swiper-skate .swiper-container-skate .swiper-pagination{ bottom: 12% }
+			.skate-img-content .article-swiper-skate .swiper-container-skate .swiper-pagination .swiper-pagination-bullet{ margin: 0 10px;width: 20px;height: 20px;background: #fff;opacity: .5; }
+			.skate-img-content .article-swiper-skate .swiper-container-skate .swiper-pagination .swiper-pagination-bullet-active{ opacity: 1; }
+			.group-three-img > .skate-img{ position: absolute; }
+			.group-three-img > .skate-img-one{ top: 14.2%;left: 3.125%;width: 25.9%;z-index: 2; }
+			.group-three-img > .skate-img-two{ top: 26.8%;left: 14.84%;width: 29.2%; }
+			.group-three-img > .skate-img-three{ top: 34.4%;right: 3.125%;width: 44%; }
+			.skate-goods-list h2{ padding: 30px 0;font-size: 30px;text-align: center; }
+			@media (max-width: 768px){
+				.skate-img-group .col-one{ width: 47.3%; }
+				.skate-img-group .col-two{ width: 52.7%; }
+				.skate-img-group .col-three{ width: 51.46667%; }
+				.skate-img-group .col-four{ width: 48.53333%; }
+				.skate-img-group .skate-img > img:not(.no-scale):hover{ transform: none; }
+				.skate-img-group .skate-img-btn .btn{ transform: scale(.5); }
+				.skate-swiper{ margin: 10.1% 8px 0; }
+				.skate-img-content{ position: relative; }
+				.skate-img-content .skate-img-btn{ z-index: 2;top: 72.5%;left: 50%;margin: -18px 0 0 -59px; }
+				.skate-img-content .skate-img-btn .btn{ min-width: 118px;width: 118px;line-height: 36px;height: 36px;font-size: 14px; }
+				.skate-img-content .skate-img-btn .btn span:after{ top: 1px;right: -22px; }
+				.skate-img-content .article-swiper-skate{ position:static;margin: 0;width: 100%; }
+				.skate-img-content .article-swiper-skate .swiper-container-skate{ padding: 0 0 16%; }
+				.skate-img-content .article-swiper-skate .swiper-container-skate .swiper-pagination{ bottom: 8% }
+				.skate-img-content .article-swiper-skate .swiper-container-skate .swiper-pagination .swiper-pagination-bullet{ margin: 0 4px;width: 8px;height: 8px;background: #000; }
+				
+			}
+			/*商品列表*/
+			.goods-list {
+			  max-width: 960px;
+			  margin: 0 auto 50px;
+			  font-size: 0;
+			}
+			.goods-list .goods-item {
+			  display: inline-block;
+			  width: 230px;
+			  margin: 5px;
+			}
+			.goods-list .goods-item .thumbnail {
+			  position: relative;
+			  padding: 0;
+			  background: #fff;
+			  -webkit-transition: box-shadow 0.3s ease-in-out;
+			  -moz-transition: box-shadow 0.3s ease-in-out;
+			  -ms-transition: box-shadow 0.3s ease-in-out;
+			  -o-transition: box-shadow 0.3s ease-in-out;
+			  transition: box-shadow 0.3s ease-in-out;
+			  -webkit-border-radius: 0;
+			  -moz-border-radius: 0;
+			  -ms-border-radius: 0;
+			  -o-border-radius: 0;
+			  border-radius: 0;
+			}
+			.goods-list .goods-item .thumbnail img {
+			  -webkit-border-radius: 0;
+			  -moz-border-radius: 0;
+			  -ms-border-radius: 0;
+			  -o-border-radius: 0;
+			  border-radius: 0;
+			}
+			.goods-list .goods-item .thumbnail > a .icon {
+			  opacity: 0;
+			  position: absolute;
+			  top: 10px;
+			  left: 10px;
+			  -webkit-transition: all 0.3s ease-in-out 0s;
+			  -moz-transition: all 0.3s ease-in-out 0s;
+			  -ms-transition: all 0.3s ease-in-out 0s;
+			  -o-transition: all 0.3s ease-in-out 0s;
+			  transition: all 0.3s ease-in-out 0s;
+			}
+			.goods-list .goods-item .thumbnail .goods-box {
+			  padding: 10px;
+			}
+			.goods-list .goods-item .thumbnail .goods-box > a {
+			  width: 100%;
+			  padding: 0;
+			}
+			.goods-list .goods-item .thumbnail .goods-box .goods-title {
+			  font-size: 12px;
+			  height: 36px;
+			  line-height: 18px;
+			  overflow: hidden;
+			  text-overflow: ellipsis;
+			  display: -webkit-box;
+			  -webkit-line-clamp: 2;
+			  -webkit-box-orient: vertical;
+			}
+			.goods-list .goods-item .thumbnail .goods-box .goods-bottom {
+			  padding: 14px 0 0;
+			}
+			.goods-list .goods-item .thumbnail .goods-box .goods-bottom > span.goods-price {
+			  font-size: 16px;
+			  line-height: 1;
+			  color: #000;
+			}
+			.goods-list .goods-item .thumbnail:hover {
+			  box-shadow: 1px 2px 5px 0 rgba(136, 136, 136, 0.5);
+			}
+			.goods-list .goods-item .thumbnail:hover > a .icon {
+			  opacity: 1;
+			}
+			@media (max-width: 1024px) {
+			  .goods-list {
+			    max-width: 768px;
+			    margin: 30px auto 0;
+			  }
+			  .goods-list .goods-item {
+			    width: 33.3%;
+			    height: auto;
+			    margin: 0;
+			    padding: 5px;
+			  }
+			  .goods-list .goods-item .thumbnail img {
+			    width: 100%;
+			  }
+			  .goods-list .goods-item .thumbnail > a .icon {
+			    top: 18px;
+			    left: 18px;
+			    opacity: 1;
+			  }
+			}
+			@media (max-width: 768px) {
+			  .goods-list {
+			    margin: 8px 17px 0;
+			  }
+			  .goods-list .goods-item {
+			    width: 50%;
+			  }
+			  .goods-list .goods-item .thumbnail .goods-box {
+			    margin-top: 14px;
+			    border-top: 1px dotted #8d8d8d;
+			    text-align: center;
+			  }
+			}
+		</style>
+		<script type="text/javascript">
+			$(function(){
+				var mySwiper = new Swiper('.swiper-container',{
+					loop: true,
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					initialSlide: 0
+				});
+				 
+			});
+		</script>
+		
+		<article class="article article-skate">
+			<div class="skate-img">
+				<img class="events-changeSrc" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-skate/lp-skate-01.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-skate/lp-skate-01.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-skate/lp-skate-mob-01.jpg"}
+				}' />
+			</div>
+			<div class="skate-img">
+				<img class="events-changeSrc" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-skate/lp-skate-02.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-skate/lp-skate-02.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-skate/lp-skate-mob-02.jpg"}
+				}' />
+			</div>
+			<div class="skate-img-group">
+				<div class="col-12-3 col-xs-12-6 skate-img col-one">
+					<img class="events-changeSrc" src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-skate/lp-skate-03.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-skate/lp-skate-03.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-skate/lp-skate-mob-03.jpg"}
+					}' />
+				</div>
+				<div class="col-12-3 col-xs-12-6 col-two">
+					<div class="row skate-img">
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-skate/lp-skate-04.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-skate/lp-skate-04.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-skate/lp-skate-mob-04.jpg"}
+						}' />
+					</div>
+					<div class="row skate-img">
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-skate/lp-skate-06.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-skate/lp-skate-06.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-skate/lp-skate-mob-06.jpg"}
+						}' />
+					</div>
+				</div>
+				<div class="col-12-6  col-xs-12-12">
+					<div class="row skate-img">
+						<img class="events-changeSrc no-scale" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-skate/lp-skate-05.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-skate/lp-skate-05.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-skate/lp-skate-mob-05.jpg"}
+						}' />
+						<div class="skate-img-btn">
+							<a class="btn btn-white btn-have-arrow" href="https://www.adidas.com.cn/skateboarding_traplord?sp=SKATE%20TRAPLORD">
+								<span>立即购买</span>
+							</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12-6 skate-img col-three">
+							<img class="events-changeSrc" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-skate/lp-skate-07.jpg"},
+									"medium":{"high":"", "normal":"../static/images/lp-skate/lp-skate-07.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-skate/lp-skate-mob-07.jpg"}
+							}' />
+						</div>
+						<div class="col-12-6 skate-img col-four">
+							<img class="events-changeSrc" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-skate/lp-skate-08.jpg"},
+									"medium":{"high":"", "normal":"../static/images/lp-skate/lp-skate-08.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-skate/lp-skate-mob-08.jpg"}
+							}' />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="skate-img skate-swiper">
+				<img class="events-changeSrc none-xs" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-skate/lp-skate-09.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-skate/lp-skate-09.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-skate/lp-skate-09.jpg"}
+				}' />
+				<div class="skate-img-content">
+					<div class="skate-img-btn">
+						<a class="btn btn-white btn-have-arrow none-xs" href="https://www.adidas.com.cn/skateboarding_traplord?sp=SKATE%20TRAPLORD">
+							<span>立即购买</span>
+						</a>
+						<a class="btn btn-white btn-have-arrow none block-xs" href="https://www.adidas.com.cn/item/CG5615">
+							<span>立即购买</span>
+						</a>
+					</div>
+					<article class="article article-swiper-skate">
+						<div class="swiper-container swiper-container-skate">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a>
+										<img class="events-changeSrc" src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/lp-skate/lp-skate-scroll-01.jpg"},
+												"medium":{"high":"", "normal":"../static/images/lp-skate/lp-skate-scroll-01.jpg"},
+												"small":{"high":"", "normal":"../static/images/lp-skate/lp-skate-scroll-mob-01.jpg"}
+										}' />
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a>
+										<img class="events-changeSrc" src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/lp-skate/lp-skate-scroll-02.jpg"},
+												"medium":{"high":"", "normal":"../static/images/lp-skate/lp-skate-scroll-02.jpg"},
+												"small":{"high":"", "normal":"../static/images/lp-skate/lp-skate-scroll-mob-02.jpg"}
+										}' />
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a>
+										<img class="events-changeSrc" src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/lp-skate/lp-skate-scroll-03.jpg"},
+												"medium":{"high":"", "normal":"../static/images/lp-skate/lp-skate-scroll-03.jpg"},
+												"small":{"high":"", "normal":"../static/images/lp-skate/lp-skate-scroll-mob-03.jpg"}
+										}' />
+									</a>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="skate-img-group skate-img group-three-img">
+				<img class="events-changeSrc" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-skate/lp-skate-10.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-skate/lp-skate-10.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-skate/lp-skate-mob-10.jpg"}
+				}' />
+				<div class="skate-img skate-img-one none-xs">
+					<img class="events-changeSrc" src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-skate/lp-skate-11.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-skate/lp-skate-11.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-skate/lp-skate-11.jpg"}
+					}' />
+				</div>
+				<div class="skate-img skate-img-two none-xs">
+					<img class="events-changeSrc" src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-skate/lp-skate-12.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-skate/lp-skate-12.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-skate/lp-skate-12.jpg"}
+					}' />
+				</div>
+				<div class="skate-img skate-img-three none-xs">
+					<img class="events-changeSrc" src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-skate/lp-skate-13.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-skate/lp-skate-13.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-skate/lp-skate-13.jpg"}
+					}' />
+				</div>
+			</div>
+
+			<div class="skate-goods-list">
+				<h2>全部商品</h2>
+				<ul class="goods-list">
+					<li class="goods-item">
+						<div class="thumbnail">
+	                        <a href="https://www.adidas.com.cn/item/CG5615">
+	                        	<i class="icon icon-bule-logo"></i>
+	                            <img src="../static/images/lp-skate/goods-01.jpg" height="230" width="230" />
+	                        </a>
+	                        <div class="goods-box">
+	                            <a href="https://www.adidas.com.cn/item/CG5615">
+	                                <span class="goods-title">MATCHCOURT X TRAP LORD 经典鞋中性 originals</span>
+	                            </a>
+	                            <div class="goods-bottom">
+	                                <span class="goods-price">¥699</span>
+	                            </div>
+	                        </div>
+	                    </div>
+					</li>
+					<li class="goods-item">
+						<div class="thumbnail">
+	                        <a href="https://www.adidas.com.cn/item/CG5614">
+	                        	<i class="icon icon-bule-logo"></i>
+	                            <img src="../static/images/lp-skate/goods-02.jpg" height="230" width="230" />
+	                        </a>
+	                        <div class="goods-box">
+	                            <a href="https://www.adidas.com.cn/item/CG5614">
+	                                <span class="goods-title">MATCHCOURT X TRAP LORD 经典鞋中性 originals</span>
+	                            </a>
+	                            <div class="goods-bottom">
+	                                <span class="goods-price">¥699</span>
+	                            </div>
+	                        </div>
+	                    </div>
+					</li>
+					<li class="goods-item">
+						<div class="thumbnail">
+	                        <a href="https://www.adidas.com.cn/item/CG0852">
+	                        	<i class="icon icon-bule-logo"></i>
+	                            <img src="../static/images/lp-skate/goods-03.jpg" height="230" width="230" />
+	                        </a>
+	                        <div class="goods-box">
+	                            <a href="https://www.adidas.com.cn/item/CG0852">
+	                                <span class="goods-title">防风衣男子 originals</span>
+	                            </a>
+	                            <div class="goods-bottom">
+	                                <span class="goods-price">¥799</span>
+	                            </div>
+	                        </div>
+	                    </div>
+					</li>
+					<li class="goods-item">
+						<div class="thumbnail">
+	                        <a href="https://www.adidas.com.cn/item/CG0853">
+	                        	<i class="icon icon-bule-logo"></i>
+	                            <img src="../static/images/lp-skate/goods-04.jpg" height="230" width="230" />
+	                        </a>
+	                        <div class="goods-box">
+	                            <a href="https://www.adidas.com.cn/item/CG0853">
+	                                <span class="goods-title">短袖球衣男子 originals</span>
+	                            </a>
+	                            <div class="goods-bottom">
+	                                <span class="goods-price">¥399</span>
+	                            </div>
+	                        </div>
+	                    </div>
+					</li>
+					<li class="goods-item">
+						<div class="thumbnail">
+	                        <a href="https://www.adidas.com.cn/item/CG0850">
+	                        	<i class="icon icon-bule-logo"></i>
+	                            <img src="../static/images/lp-skate/goods-05.jpg" height="230" width="230" />
+	                        </a>
+	                        <div class="goods-box">
+	                            <a href="https://www.adidas.com.cn/item/CG0850">
+	                                <span class="goods-title">短袖上衣男子 originals</span>
+	                            </a>
+	                            <div class="goods-bottom">
+	                                <span class="goods-price">¥349</span>
+	                            </div>
+	                        </div>
+	                    </div>
+					</li>
+					<li class="goods-item">
+						<div class="thumbnail">
+	                        <a href="https://www.adidas.com.cn/item/CG0851">
+	                        	<i class="icon icon-bule-logo"></i>
+	                            <img src="../static/images/lp-skate/goods-06.jpg" height="230" width="230" />
+	                        </a>
+	                        <div class="goods-box">
+	                            <a href="https://www.adidas.com.cn/item/CG0851">
+	                                <span class="goods-title">长裤男子 originals</span>
+	                            </a>
+	                            <div class="goods-bottom">
+	                                <span class="goods-price">¥599</span>
+	                            </div>
+	                        </div>
+	                    </div>
+					</li>
+				</ul>
+			</div>
+
+		</article>
+	</section>
+	<%include _includes/modules/footer.html %>
+	<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	
+</div>
+</body>
+</html>

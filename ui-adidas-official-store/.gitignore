@@ -1,0 +1,10 @@
+node_modules/
+/html/
+/libs/
+.project
+.idea/adidas-official-store.iml
+.idea/codeStyleSettings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml

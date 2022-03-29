@@ -1,0 +1,278 @@
+@charset "utf-8";
+.article{
+	position: relative;
+}
+.article-kv{
+	margin-bottom: 50px;
+	.swiper-button-next{
+    	background: url(https://img.adidas.com.cn/resources/2018/5/lp-exercise-new/right.png);
+	}
+	.swiper-button-prev{
+		background: url(https://img.adidas.com.cn/resources/2018/5/lp-exercise-new/left.png);
+	}
+}
+.article-banner{
+	img{
+		width: 100%;
+	}
+}
+.article-tab{
+	margin: -50px 0 0;
+	>p{
+		width: 100%;
+		height: 51px;
+		margin: 0 auto;
+		background: #131319;
+	}
+	.tab-left{
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		margin: 0% 0 0 0;
+		max-width: 240px;
+		width: 20.5%;
+		width: auto;
+		height: 50px;
+	}
+	.tab-right{
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 1;
+		margin: 0% 0 0 0;
+		width: 18.9%;
+		max-width: 240px;
+		width: auto;
+		height: 50px;
+	}
+	.tab-main{
+		width: 100%;
+		height: 50px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(0,0, 0, 0.4);
+		ul{
+			width: 100%;
+			font-size: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			text-align: center;
+			background: #131319;
+			li{
+				display: inline-block;
+				padding: 0 15px;
+				// margin: 0 4px;
+				min-width: 100px;
+				width: 12%;
+				position: relative;
+				vertical-align: text-bottom;
+				&:hover{
+					a{
+						background: #ffffff!important;
+						color: #000000!important;
+					}
+				}
+				a{
+					color: #ffffff;
+					font-size: 22px;
+					line-height: 51px;
+					font-weight: bold;
+					display: block;
+					width: 100%;
+					text-align: center;
+					
+				}
+				&:after{
+					position: absolute;
+					top: 50%;
+					right: 0;
+					content: '';
+					display: block;
+					width: 1px;
+					height: 20px;
+					margin-top: -10px;
+					background: #5a6e7f;
+				}
+				&:last-child{
+					&:after{
+						width: 0px;
+					}
+				}
+				&.is-active{
+					a{
+						color: #efed1e;
+					}
+				}
+				&:first-child{
+					a{
+						line-height: 15px;
+						padding: 8px 0;
+						font-style: italic;
+						.tab-main-small{
+								font-size: 12px;
+							
+						}
+						
+					}
+				}
+			}
+		}
+
+	}
+	&.tab-fixed{
+		.tab-main{
+			position: fixed;
+			z-index: 3;
+			transition: all 0.3s;
+		}
+	}
+}
+
+@media (max-width: 1366px){
+
+	// .article-tab{
+	// 	.tab-left{
+	// 		margin: -2% 0 0 0;
+	// 	}
+	// 	.tab-right{
+	// 		margin: -2% 0 0 0;
+	// 	}
+	// }
+
+}
+
+@media (min-width: 1025px){
+	// .tab-fixed{
+	// 	.tab-main{
+	// 		height: 50px;
+	// 		ul{
+	// 			li{
+	// 				padding: 5px 0;
+	// 				a{
+	// 					line-height: 40px;
+	// 					font-size: 22px;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// 	.tab-left{
+	// 		left: -2%;
+	// 		transition: all 0.3s;
+	// 	}
+	// 	.tab-right{
+	// 		right: -2%;
+	// 		transition: all 0.3s;
+	// 	}
+	// }
+}
+
+@media (max-width: 1024px){
+	.article-kv{
+		margin-bottom:0;
+		.swiper-pagination{
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			.swiper-pagination-bullet{
+				margin: 0 5px;
+				width: 30px;
+				border-radius: 0;
+				background: #333333;
+				height: 5px;
+				border: 1px solid #eee;
+			}
+			.swiper-pagination-bullet-active{
+				background: #000000;
+			}
+		}
+	}
+	.article-tab{
+		margin: 0;
+		>p{
+			width: 100%;
+			height: 46px;
+		}
+		.tab-left{
+			left: -24px;
+			top: 0;
+			margin: -17px 0 0 0;
+			width: 40%;
+			max-width: 150px;
+			height: auto;
+		}
+		.tab-right{
+			right: -38px;
+			top: 0;
+			margin: -20px 0 0 0;
+			width: 40%;
+			max-width: 150px;
+			height: auto;
+		}
+		.tab-main{
+			width: 100%;
+			height: 46px;
+			ul{
+				width: 100%;
+				z-index: 2;
+				left: 0;
+				li{
+					padding: 0 5px;
+					margin: 0;
+					min-width: 50px;
+					width: 20%;
+					vertical-align: text-bottom;
+					a{
+						font-size: 14px;
+						line-height: 47px;
+						padding: 0px 0;
+					}
+					&:after{
+						height: 12px;
+						margin-top: -6px;
+					}
+					&:first-child{
+						a{
+							line-height: 15px;
+							padding: 8px 0;
+							font-style: italic;
+							.tab-main-small{
+								
+									font-size: 12px;
+								
+							}
+							
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+
+}
+
+
+//believe
+@import "modules/believe.less";
+
+// schedule
+@import "modules/schedule.less";
+
+// dress
+@import "modules/dress.less";
+
+// accessories
+@import "modules/accessories.less";
+
+// combat-boots
+@import "modules/combat-boots.less";
+
+// knowledge
+@import "modules/knowledge.less";
+
+// customization
+@import "modules/customization.less";

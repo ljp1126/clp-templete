@@ -1,0 +1,1035 @@
+@charset "UTF-8";
+// 公共方法
+@import "common/utilities.less";
+@import "common/variables.less";
+.start-draw-inner{
+    position: relative;
+    .ad-logo{
+        position: absolute;
+        top: 55px;
+        right:14%;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+.article-activity{
+    text-align: center;
+}
+
+.extract-row{
+    position: absolute;
+    // width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 75px;
+    ul{
+        width: 100%;
+        max-width: 730px;
+        margin: 0 auto;
+
+        li{
+            position: relative;
+            .lang-bg{
+                img{
+                    width: 100%;
+                }
+            }
+
+            .lang-text{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                left: 0;
+                top: 0;
+
+                .lang-header{
+                    color: #fff;
+                    font-size: 51px;
+                    text-align: center;
+                    margin-top: 50px;
+                    margin-bottom: 22px;
+                }
+                .lang-details{
+                    color: #000;
+                    font-size: 38px;
+                    line-height: 30px;
+                    text-align: center;
+                    margin-bottom: 28px;
+                    span{
+                        font-family:@fonts-adineueprolight,@fonts-common-suffix;
+                    }
+                }
+            }
+
+            .btn-draw-handle{
+                width: 494px;
+                position: absolute;
+                bottom: -30px;
+                left: 50%;
+                margin-left: -247px;
+            }
+        }
+    }
+}
+
+.footer-draw-inner{
+    background: #000;
+    text-align: center;
+    position: relative;
+    >img{
+        width: 979px;
+        margin: 0 auto;
+    }
+
+    .view-the-rules{
+        // background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        width: 323px;
+        height: 66px;
+        top: 227px;
+        left: 50%;
+        margin-left: -58px;
+    }
+}
+
+
+
+/* 按钮 */
+	.btn-base-white{
+	    display: inline-block;
+	    overflow: hidden;
+		background: white;
+		color: #000;
+	    text-align: center;
+	    white-space: normal;
+	    height: 68px;
+	    line-height: 68px;
+	    font-size: 35px;
+	    font-weight: bold;
+	    border-radius: 0;
+	    text-decoration: none;
+	    letter-spacing: 2px;
+
+	    &:hover{
+	    	color: #000000;
+	    }
+
+	    img{
+	    	width: 30px;
+			height: 30px;
+			margin-left: 10px;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			border-radius: 50%;
+			margin-top: -3px;
+	    }
+	}
+	/* 开始抽取 */
+	.btn-start-handle{
+        width: 32%;
+        height: 7%;
+        bottom: 6%;
+        left: 32%;
+        z-index: 99;
+    }
+    .btn-start-handle1{
+        bottom: 19%;
+    }
+
+	/* 查看活动规则 */
+	.btn-link-handle{
+		width: 70.5%;
+	}
+/* 按钮 end */
+
+/* 重定义公共弹层样式 */
+	.active-regular-box,
+	.extract-result-box,
+	.editor-information-box,
+	.submit-result-box{
+		width: 100%;
+		background: rgba(0,0,0,0.8);
+
+		.dialog{
+			width: 100% !important;
+			max-width: 100% !important;
+			background: none !important;
+			border: none !important;
+            margin: 0 !important;
+            
+            box-shadow: none !important;
+
+			.dialog-container{
+				background: none;
+			}
+		}
+	}
+
+
+/* 查看活动规则弹层 */
+    .active-regular-box {
+        .dialog-scroll-container .dialog-scroll{
+            // padding:80px 0;
+        }
+        .btn-close{
+            right: -160px;
+            top: -50px;
+        }
+    }
+/* 查看活动规则弹层 end*/
+
+/* 开始抽取结果弹层 */
+	// .extract-result-box{
+    //     .dialog-scroll-container {
+    //         .dialog{
+    //             box-shadow: none;
+    //             .dialog-container{
+    //                 .scroll{
+    //                     .scroller-wrap{
+    //                         padding: 0 20px;
+    //                         text-align: center;
+    //                         p{
+    //                             color: #ffffff;
+    //                             font-size: 43px;
+    //                             text-align: center;
+    //                             margin-bottom: 20px;
+            
+    //                             &:first-child{
+                                    
+    //                                 color: #e7696c;
+    //                             }
+    //                         }
+    //                         >img{
+    //                             width: 344px;
+    //                         }
+                            
+    //                         .btn-editor-handle{
+    //                             display: block;
+    //                             width: 495px;
+    //                             margin-top: 20px;
+    //                             position: relative;
+                    
+    //                             img{
+    //                                 width: 100%;
+    //                             }
+    //                         }
+    //                     }
+    //                 }
+    //             }
+                
+    //         }
+    //     }
+	// }
+
+/* 填写信息弹层 */
+    .editor-information-box{
+        .dialog-scroll-wrap{
+            .dialog-scroll-container{
+                .dialog-scroll{
+                    >div{
+                        .dialog{
+                            box-shadow: none;
+                            .dialog-container{
+                                .scroll{
+                                    .scroller-wrap{
+                                        padding: inherit;
+                                        width: 90%;
+                                        margin: 0 auto;
+                                        border: 2px solid #000000;
+                                        background: #efefef;
+                                        padding: 40px 0;
+                                        >p{
+                                            text-align: center;
+                                            font-size: 36px;
+                                            color: #fff;
+                                            margin-bottom: 45px;
+                                            span{
+                                                color: #e7696c;
+                                                margin-right: 8px;
+                                            }
+                                        }
+
+                                        .form-input{
+                                            font-size: 0;
+                                            margin-bottom: 30px;
+                                            label{
+                                                font-size: 36px;
+                                                color: #000000;
+                                                display: inline-block;
+                                                vertical-align: middle;
+                                                margin-right: 30px;
+                                            }
+                                            input{
+                                                font-size: 25px;
+                                                background: #676767;
+                                                border: none;
+                                                width: 477px;
+                                                height: 49px;
+
+                                                display: inline-block;
+                                                vertical-align: middle;
+
+                                                color: #fff;
+
+                                                &::-webkit-input-placeholder {
+                                                    font-size: 25px;
+                                                    color: #c2c2c2;
+                                                }
+                                    
+                                                &::-moz-placeholder {
+                                                    font-size: 25px;
+                                                    color: #c2c2c2;
+                                                }
+                                    
+                                                &:-ms-input-placeholder {
+                                                    font-size: 25px;
+                                                    color: #c2c2c2;
+                                                }
+                                    
+                                                &:-moz-placeholder {
+                                                    font-size: 25px;
+                                                    color: #c2c2c2;
+                                                }
+
+                                                &:focus{
+                                                    border: none;
+                                                    padding-top: 0;
+                                                }
+                                            }
+
+                                            &.is-error{
+                                                &::before{
+                                                    display: none;
+                                                }
+                                                .msg-block{
+                                                    padding-left: 100px;
+                                                    i{
+                                                        display: none;
+                                                    }
+                                                    span{
+                                                        display: block;
+                                                        font-size: 20px;
+                                                        line-height: normal;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .btn-submit-handle{
+                                            display: block;
+                                            width: 386px;
+                                            margin: 0 auto;
+                                        }
+                                    }
+                                    .btn-submit-handle{
+                                        img{
+                                            margin-top: 43px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+/* 填写完信息提交后弹层 */
+	.submit-result-box{
+		.back-shopping{
+            position: absolute;
+            display: inline-block;
+            width: 34%;
+            bottom: 1%;
+            left: 33%;
+            height: 16%;
+		}
+	}
+
+/* 弹层公共关闭按钮样式 */
+	.btn-close{
+		display: inline-block;
+		position: absolute;
+		width: 35px;
+		height: 35px;
+		right: 25px;
+		top: 71%;
+		text-align: center;
+		cursor: pointer;
+
+		&:before,
+		&:after{
+			content: '';
+		    position: absolute;
+		    width: 22px;
+		    height: 2px;
+		    background: #000;
+		    top: 15px;
+		    left: 5px;
+		}
+
+		&:before{
+			-webkit-transform: rotate(-45deg);
+			-moz-transform: rotate(-45deg);
+			-ms-transform: rotate(-45deg);
+			-o-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+		}
+
+		&:after{
+		    -webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+	}
+
+
+    .qx-winning-box{
+        .dialog-scroll-container {
+            .dialog-scroll{
+                >div{
+                    .qx-winning{
+                        .yi-draw,
+                        .losing-lottery{
+                            a{
+                                width: 37%;
+                                height: 12%;
+                                position: absolute;
+                                top: 68%;
+                                left: 33%;
+                                z-index: 1;
+                                // background: rgba(204, 204, 204, .5);
+                            }
+                        }
+
+                        .winning-infro{
+                            top: 28%;
+                            left: 10%;
+                            >p{
+                                font-size: 35px;
+                                color: #000000;
+                                &:first-child{
+                                    margin-bottom: 10px;
+                                    span{
+                                        color: #f06d70;
+                                    }
+                                }
+
+                                &:nth-child(2){
+                                    margin-bottom: 30px;
+                                }
+                            }
+
+                            .infro-box{
+                                margin: 0 auto;
+                                width: 750px;
+                                border: 2px solid #fff;
+                                padding: 70px 80px;
+                                text-align: left;
+                                p{
+                                    font-size: 30px;
+                                    color: #000000;
+                                    margin-bottom: 40px;
+                                    span{
+                                        font-size: 35px;
+                                        margin-right: 50px;
+                                    }
+                                }
+                                div{
+                                    font-size: 20px;
+                                    color: #f06d70;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+	}
+.active-regular-box,
+	.extract-result-box,
+	.editor-information-box,
+	.submit-result-box{
+		background: rgba(0,0,0,0.8);
+    }
+.dialog-opacity{
+    background: rgba(0,0,0,0.8) !important;
+}
+//添加的抽奖的样式
+.back-shop{
+    position: absolute;
+    bottom: 21%;
+    width: 37%;
+    height: 11%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.start-draw-inner{
+    .start-draw-inner-size{
+        top: 2%;
+        right: 3%;
+        width: 30%;
+    }
+    .start-draw-inner-btn{
+        left: 0%;
+        bottom: 0%;
+    }
+}
+.start-draw-inner-bg-size{
+    position: fixed;
+    top: 70px;
+    right: 4%;
+    width: 30%;
+}
+.start-draw-inner-bg-size-01{
+    top: 70px;
+}
+.start-draw-inner-bg-size-02{
+    top: 70px;
+}
+.start-draw-inner-bg-size-03{
+    position: fixed;
+    top: 70px;
+}
+
+
+@media (max-width:1024px){
+     .winning-infro-btn{
+            width: 42%;
+            bottom: -31%;
+            right: 50%;
+            transform: translateX(50%);
+    }
+	.start-draw-inner{
+        .draw-handle{
+            bottom: 0%;
+            left: 0%;
+        }
+		.ad-logo{
+			position: absolute;
+			top: 10px;
+			right:20px;
+			text-align: right;
+			img{
+				width:104px;
+			}
+		}
+	}
+
+    /* 抽取玺包 */
+		.extract-row{
+			left: 10px;
+			right: 10px;
+			bottom: 60px;
+
+			ul{
+				li {
+					.lang-text {
+                        .lang-header {
+							font-size: 50px;
+							margin-bottom: 10px;
+                        }
+
+                        .lang-details {
+							font-size: 38px;
+							margin-bottom: 10px;
+                        }
+
+                    }
+
+                    .btn-draw-handle{
+                        width: 65.86%;
+                        left: 17.07%;
+                        margin-left: 0;
+                    }
+				}
+			}
+        }
+
+        .footer-draw-inner{
+            >img{
+                width: 100%;
+            }
+
+            .view-the-rules{
+                width: 36%;
+                height: 18%;
+                top: 67%;
+                left: 31%;
+                margin-left: 0;
+            }
+        }
+
+
+	/* 按钮 */
+
+		/* 查看活动规则 */
+		.btn-link-handle{
+			width: 160px;
+		}
+	/* 按钮 end */
+
+	/* 弹层关闭按钮 */
+		.btn-close{
+			right: 15px;
+			top: 71%;
+		}
+
+    /* 查看活动规则弹层 */
+        .active-regular-box {
+            .dialog-scroll-container {
+                display: block;
+                // padding: 20px;
+                .dialog-scroll{
+                    width: 100%;
+                    padding: 0;
+                    .dialog{
+                        .dialog-container{
+                            // padding: 80px 0;
+                            p{
+                                &:first-child{
+
+                                }
+
+                                &:nth-child(2){}
+
+                                &:nth-child(3){
+                                    margin-top: 190px;
+                                    span{}
+                                }
+                                &:nth-child(4){}
+                                &:nth-child(5){}
+                            }
+                        }
+                    }
+
+                    .btn-close{
+                        right: 10px;
+                        top: 10px;
+                    }
+                }
+            }
+        }
+
+	/* 开始抽取结果弹层 */
+    .extract-result-box{
+        .dialog-scroll-container {
+            .dialog{
+                .dialog-container{
+                    .scroll{
+                        .scroller-wrap{
+                            p{
+                                &:first-child{}
+                            }
+                            >img{}
+                            
+                            .btn-editor-handle{
+                                img{}
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+	}
+
+	/* 填写信息弹层 */
+    .editor-information-box{
+        .dialog-scroll-wrap{
+            .dialog-scroll-container{
+                .dialog-scroll{
+                    >div{
+                        .dialog{
+                            .dialog-container{
+                                .scroll{
+                                    .scroller-wrap{
+                                        >p{
+                                            span{}
+                                        }
+
+                                        .form-input{
+                                            label{}
+                                            input{
+
+                                                &::-webkit-input-placeholder {}
+                                    
+                                                &::-moz-placeholder {}
+                                    
+                                                &:-ms-input-placeholder {}
+                                    
+                                                &:-moz-placeholder {}
+
+                                                &:focus{}
+                                            }
+
+                                            &.is-error{
+                                                &::before{}
+                                                .msg-block{
+                                                    i{}
+                                                    span{}
+                                                }
+                                            }
+                                        }
+
+                                        .btn-submit-handle{}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* 填写完信息提交后弹层 */
+	.submit-result-box{
+		.back-shopping{
+            width: 34%;
+            bottom: 1%;
+            left: 33%;
+            height: 16%;
+		}
+	}
+
+}
+
+
+@media (max-width:768px){
+    /* 抽取玺包 */
+		.extract-row{
+            bottom: 40px;
+			ul{
+				li {
+					.lang-text {
+                        .lang-header {
+                            font-size: 25px;
+                            margin-top: 8%;
+                            margin-bottom: 5px;
+                        }
+
+                        .lang-details {
+							font-size: 19px;
+                        }
+
+                    }
+
+                    .btn-draw-handle{
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 18px;
+                        bottom: -20px;
+                        img{
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+				}
+			}
+        }
+
+        .footer-draw-inner{
+            >img{
+                width: 100%;
+            }
+
+            .view-the-rules{
+                width: 36%;
+                height: 18%;
+                top: 67%;
+                left: 31%;
+                margin-left: 0;
+            }
+        }
+
+    /* 查看活动规则弹层 */
+    .active-regular-box {
+        .dialog-scroll-container {
+            .dialog-scroll{
+                .dialog{
+                    .dialog-container{
+                        // padding: 40px 0;
+                        p{
+                            font-size: 18px;
+                            line-height: 36px;
+                            &:first-child{
+
+                            }
+
+                            &:nth-child(2){
+                                font-size: 22px;
+                            }
+
+                            &:nth-child(3){
+                                margin-top: 90px;
+                                span{}
+                            }
+                            &:nth-child(4){
+                                margin-top: 50px;
+                            }
+                            &:nth-child(5){}
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    /* 登录注册弹层 */
+		.login-register-tamplate{
+
+		}
+
+    /* 弹层公共关闭按钮样式 */
+	.btn-close{
+		width: 30px;
+		height: 30px;
+
+		&:before,
+		&:after{
+            width: 22px;
+            top: 15px;
+		}
+	}
+
+    /* 开始抽取结果弹层 */
+    // .extract-result-box{
+    //     .dialog-scroll-container {
+    //         .dialog{
+    //             .dialog-container{
+    //                 .scroll{
+    //                     .scroller-wrap{
+    //                         p{
+    //                             font-size: 22px;
+    //                             &:first-child{}
+    //                         }
+    //                         >img{
+    //                             width: 45%;
+    //                             min-width: 200px;
+    //                         }
+                            
+    //                         .btn-editor-handle{
+    //                             width: 66%;
+    //                             min-width: 250px;
+    //                             margin: 0 auto;
+    //                             margin-top: 20px;
+    //                             img{}
+    //                         }
+    //                     }
+    //                 }
+    //             }
+                
+    //         }
+    //     }
+    // }
+    
+    /* 填写信息弹层 */
+    .editor-information-box{
+        .dialog-scroll-wrap{
+            .dialog-scroll-container{
+                .dialog-scroll{
+                    width: 100%;
+                    >div{
+                        .dialog{
+                            .dialog-container{
+                                .scroll{
+                                    .scroller-wrap{
+                                            padding: inherit;
+                                            width: 90%;
+                                            margin: 0 auto;
+                                            border: 2px solid #000000;
+                                            background: #efefef;
+                                            padding: 40px 0;
+                                        >p{
+                                            font-size: 18px;
+                                            margin-bottom: 22px;
+                                            span{}
+                                        }
+
+                                        .form-input{
+                                            width: 90%;
+                                            max-width: 332px;
+                                            margin: 0 auto;
+                                            margin-bottom: 15px;
+                                            label{
+                                                font-size: 18px;
+                                                margin-right: 15px;
+                                            }
+                                            input{
+                                                font-size: 14px;
+                                                // width: 280px;
+                                                width: calc(~'100% - 51px');
+                                                height: 30px;
+
+                                                &::-webkit-input-placeholder {
+                                                    font-size: 14px;
+                                                }
+                                    
+                                                &::-moz-placeholder {
+                                                    font-size: 14px;
+                                                }
+                                    
+                                                &:-ms-input-placeholder {
+                                                    font-size: 14px;
+                                                }
+                                    
+                                                &:-moz-placeholder {
+                                                    font-size: 14px;
+                                                }
+
+                                                &:focus{}
+                                            }
+
+                                            &.is-error{
+                                                &::before{}
+                                                .msg-block{
+                                                    padding-left: 50px;
+                                                    i{}
+                                                    span{
+                                                        font-size: 14px;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .btn-submit-handle{
+                                            width: 51px;
+                                            min-width: 250px;
+                                        }
+                                    }
+                                    .btn-submit-handle{
+                                        img{
+                                            margin-top: 43px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .qx-winning-box{
+        .dialog-scroll-container {
+            .dialog-scroll{
+                width: 100%;
+                >div{
+                    .qx-winning{
+                        .yi-draw{
+                            a{}
+                        }
+                        .losing-lottery{
+                            a{
+                                width: 37%;
+                                top: 68%;
+                                left: 33%;
+                            }
+                        }
+
+                        .winning-infro{
+                            top: 28%;
+                            left: 10%;
+                            >p{
+                                font-size: 18px;
+                                &:first-child{
+                                    span{}
+                                }
+
+                                &:nth-child(2){
+                                    margin: 15px;
+                                }
+                            }
+
+                            .infro-box{
+                                border: none;
+                                width: 100%;
+                                padding: 30px;
+                                p{
+                                    font-size: 16px;
+                                    margin-bottom: 20px;
+                                    span{
+                                        font-size: 18px;
+                                        margin-right: 25px;
+                                    }
+                                }
+                                div{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+	}
+
+}
+
+
+
+.start-draw-inner{
+	>img{
+		position: relative;
+		z-index: 0;
+	}
+	.yyqx-bg-box{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 0;
+		>img{
+			display: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+    }
+    .btn-login-handle{
+        bottom: 6%;
+        width: 34%;
+        height: 8%;
+        left: 31%;
+    }
+    .btn-login-handle-01{
+        width: 30%;
+        height: 8%;
+        bottom: 7%;
+        left: 13%;
+    }
+    .btn-login-handle-02{
+        width: 30%;
+        height: 8%;
+        bottom: 7%;
+        right: 14%;
+    }
+}
+
+
+
+// 修复 ios mobile光标丢失
+	@media (max-width: 1024px){
+		.editor-information-box{
+			position: absolute;
+		}
+	}
+

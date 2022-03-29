@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+		<!-- <link rel="stylesheet" type="text/css" href="css/lp-neo-cny.css"> -->
+		<%include _includes/js.html %>
+		<!-- <script type="text/javascript" src="js/lp-neo-cny.js"></script> -->
+	</head>
+    <body>
+		<div id="wrapper">
+			<!-- 头部 -->
+			<%include _includes/modules/header.html %>
+			<!-- 內容 -->
+			<section class="container">
+				<style>
+					.article img {
+					display: block;
+					width: 100%;
+					}
+					.article-swiper .swiper-button-next,
+					.article-swiper .swiper-button-prev {
+					top: 89.9%;
+					width: 4.5%;
+					height: auto;
+					background: none;
+					margin-top: 0;
+					}
+					.article-swiper .swiper-button-next {
+					right: 16.5%;
+					}
+					.article-swiper .swiper-button-prev {
+					left: 70.5%;
+					}
+					.modular .list {
+					position: relative;
+					}
+					.modular .list .link {
+					position: absolute;
+					top: 8.8%;
+					left: 0%;
+					width: 18%;
+					height: 35%;
+					font-size: 0;
+					}
+					.modular .list .link img {
+					height: 100%;
+					}
+					.modular .list .link1 {
+					left: 22.5%;
+					}
+					.modular .list .link2 {
+					left: 41%;
+					}
+					.modular .list .link3 {
+					left: 59.5%;
+					}
+					.modular .list .link4 {
+					top: 44.5%;
+					left: 31.5%;
+					}
+					.modular .list .link5 {
+					top: 44.5%;
+					left: 50%;
+					}
+					.modular .list-zys .link {
+					top: 10.8%;
+					height: 44%;
+					}
+					.modular .list-zys .link4 {
+					top: 56.5%;
+					}
+					.modular .list-zys .link5 {
+					top: 56.5%;
+					}
+					.article-bottom {
+					margin-bottom: 10%;
+					}
+					.article-bottom img {
+					display: block;
+					width: 100%;
+					}
+					.article-bottom ul {
+					max-width: 1408px;
+					margin: 0 auto;
+					}
+					.article-bottom ul li {
+					width: 25%;
+					padding: 0 27px;
+					float: left;
+					}
+					.article-bottom ul li a {
+					position: relative;
+					display: block;
+					text-align: center;
+					}
+					.article-bottom ul li a .btn {
+					position: absolute;
+					bottom: 20px;
+					left: 50%;
+					width: 180px;
+					margin-left: -90px;
+					}
+					@media (max-width: 1024px) {
+					.article-swiper .swiper-button-prev,
+					.article-swiper .swiper-button-next {
+						top: 89.5%;
+						width: 7%;
+					}
+					.article-swiper .swiper-button-prev {
+						left: 73%;
+					}
+					.article-swiper .swiper-button-next {
+						right: 7%;
+					}
+					.modular .list {
+						position: relative;
+					}
+					.modular .list .link {
+						top: 3.8%;
+						width: 32%;
+						height: 44%;
+					}
+					.modular .list .link1 {
+						left: 2%;
+					}
+					.modular .list .link2 {
+						left: 34%;
+					}
+					.modular .list .link3 {
+						left: 66%;
+					}
+					.modular .list .link4 {
+						top: 47.5%;
+						left: 18%;
+					}
+					.modular .list .link5 {
+						top: 47.5%;
+						left: 50%;
+					}
+					.modular .list-dlrb .link {
+						height: 42.2%;
+					}
+					.modular .list-dlrb .link1,
+					.modular .list-dlrb .link2,
+					.modular .list-dlrb .link3 {
+						top: 6.8%;
+					}
+					.modular .list-dlrb .link4,
+					.modular .list-dlrb .link5 {
+						top: 49.5%;
+					}
+					.modular .list-qcs .link {
+						height: 42%;
+					}
+					.modular .list-qcs .link4,
+					.modular .list-qcs .link5 {
+						top: 46%;
+					}
+					.modular .list-zys .link {
+						height: 47.2%;
+					}
+					.modular .list-zys .link1,
+					.modular .list-zys .link2,
+					.modular .list-zys .link3 {
+						top: 7.8%;
+					}
+					.modular .list-zys .link4,
+					.modular .list-zys .link5 {
+						top: 54.5%;
+					}
+					.article-bottom {
+						margin-bottom: 5%;
+					}
+					.article-bottom ul {
+						padding: 0 4px;
+					}
+					.article-bottom ul li {
+						width: 50%;
+						padding: 0 3px 6px;
+					}
+					.article-bottom ul li a .btn {
+						bottom: 15px;
+						width: 140px;
+						margin-left: -70px;
+						min-width: 120px;
+						height: 40px;
+						line-height: 40px;
+						font-size: 16px;
+					}
+					}
+
+				</style>
+				<article class="article article-swiper">
+					<div class="swiper-container events-swiper-neo">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/kv_01.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-cny/kv_01m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-cny/kv_01m.jpg"}
+								}' />
+							</div>
+							<div class="swiper-slide">
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/kv_02.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-cny/kv_02m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-cny/kv_02m.jpg"}
+								}' />
+							</div>
+							<div class="swiper-slide">
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/kv_03.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-cny/kv_03m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-cny/kv_03m.jpg"}
+								}' />
+							</div>
+							<div class="swiper-slide">
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/kv_04.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-cny/kv_04m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-cny/kv_04m.jpg"}
+								}' />
+							</div>
+							<div class="swiper-slide">
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/kv_05.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-cny/kv_05m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-cny/kv_05m.jpg"}
+								}' />
+							</div>
+						</div>
+						<!-- 箭头 -->
+						<div class="swiper-button-prev">
+							<img src="../static/images/lp-neo-cny/icon-kv-left.png" alt="">
+						</div>
+						<div class="swiper-button-next">
+							<img src="../static/images/lp-neo-cny/icon-kv-right.png" alt="">
+						</div>
+					</div>
+				</article>
+				<article class="article">
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_03.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_03.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_03.jpg"}
+						}' />
+					</div>
+				</article>
+				<!-- 易洋千玺 -->
+				<article class="article modular">
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_04.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_04.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_04.jpg"}
+						}' />
+					</div>
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_05.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_05.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_05.jpg"}
+						}' />
+					</div>
+					<div class="list list-yyqx">
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_06.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_06.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_06.jpg"}
+						}' />
+
+						<a target="_blank" class="link link1" href="https://www.adidas.com.cn/item/CV7000">
+							1<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link2" href="https://www.adidas.com.cn/item/CV6903">
+							2<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link3" href="https://www.adidas.com.cn/item/CV6925">
+							3<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link4" href="https://www.adidas.com.cn/item/DB0892">
+							4<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link5" href="https://www.adidas.com.cn/item/DB1568">
+							5<img src="images/blank.gif" />
+						</a>
+
+					</div>
+				</article>
+
+				<!-- 迪丽热巴 -->
+				<article class="article modular">
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_07.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_07.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_07.jpg"}
+						}' />
+					</div>
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_08.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_08.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_08.jpg"}
+						}' />
+					</div>
+					<div class="list list-dlrb">
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_09.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_09.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_09.jpg"}
+						}' />
+						<a target="_blank" class="link link1" href="https://www.adidas.com.cn/item/CV9253">
+							6<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link2" href="https://www.adidas.com.cn/item/CZ4366">
+							7<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link3" href="https://www.adidas.com.cn/item/CV7387">
+							8<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link4" href="https://www.adidas.com.cn/item/DB1787">
+							9<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link5" href="https://www.adidas.com.cn/item/DB0294">
+							10<img src="images/blank.gif" />
+						</a>
+					</div>
+				</article>
+
+				<!-- 郑恺 -->
+				<article class="article modular">
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_10.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_10.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_10.jpg"}
+						}' />
+					</div>
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_11.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_11.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_11.jpg"}
+						}' />
+					</div>
+					<div class="list list-zk">
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_12.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_12.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_12.jpg"}
+						}' />
+
+						<a target="_blank" class="link link1" href="https://www.adidas.com.cn/item/CV9281">
+							11<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link2" href="https://www.adidas.com.cn/item/CV6921">
+							12<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link3" href="https://www.adidas.com.cn/item/CV9276">
+							13<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link4" href="https://www.adidas.com.cn/item/DB1816">
+							14<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link5" href="https://www.adidas.com.cn/item/DB1540">
+							15<img src="images/blank.gif" />
+						</a>
+					</div>
+				</article>
+
+				<!-- 屈楚萧 -->
+				<article class="article modular">
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_13.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_13.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_13.jpg"}
+						}' />
+					</div>
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_14.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_14.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_14.jpg"}
+						}' />
+					</div>
+					<div class="list list-qcs">
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_15.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_15.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_15.jpg"}
+						}' />
+						<a target="_blank" class="link link1" href="https://www.adidas.com.cn/item/CV8991">
+							19
+							<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link2" href="https://www.adidas.com.cn/item/CV9063">
+							20
+							<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link3" href="https://www.adidas.com.cn/item/AW3914">
+							17
+							<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link4" href="https://www.adidas.com.cn/item/DA9654">
+							18
+							<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link5" href="https://www.adidas.com.cn/item/CG5800">
+							16
+							<img src="images/blank.gif" />
+						</a>
+					</div>
+				</article>
+
+				<!-- 张艺上 -->
+				<article class="article modular">
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_16.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_16.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_16.jpg"}
+						}' />
+					</div>
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_17.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_17.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_17.jpg"}
+						}' />
+					</div>
+					<div class="list list-zys">
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_18.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_18.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_18.jpg"}
+						}' />
+
+						<a target="_blank" class="link link1" href="https://www.adidas.com.cn/item/CV7379">
+							22
+							<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link2" href="https://www.adidas.com.cn/item/CV8996">
+							23
+							<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link3" href="https://www.adidas.com.cn/item/CV9055">
+							21
+							<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link4" href="https://www.adidas.com.cn/item/DB1688">
+							24
+							<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link5" href="https://www.adidas.com.cn/item/DB0307">
+							25
+							<img src="images/blank.gif" />
+						</a>
+					</div>
+				</article>
+				<article class="article article-bottom">
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_19.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_19.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_19.jpg"}
+						}' />
+					</div>
+					<ul class="float-clearfix">
+						<li>
+							<a target="_blank" href="https://www.adidas.com.cn/men_adidasneo_shoes">
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_21.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_21.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_21.jpg"}
+								}' />
+								<span class="btn btn-white btn-have-arrow btn-have-opacity"><span>选购男子鞋类</span></span>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://www.adidas.com.cn/men_adidasneo_clothing">
+
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_23.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_23.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_23.jpg"}
+								}' />
+								<span class="btn btn-white btn-have-arrow btn-have-opacity"><span>选购男子服饰</span></span>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://www.adidas.com.cn/women_adidasneo_shoes">
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_25.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_25.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_25.jpg"}
+								}' />
+								<span class="btn btn-white btn-have-arrow btn-have-opacity"><span>选购女子鞋类</span></span>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://www.adidas.com.cn/women_adidasneo_clothing">
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny/pc_27.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-cny/mob_27.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-cny/mob_27.jpg"}
+								}' />
+								<span class="btn btn-white btn-have-arrow btn-have-opacity"><span>选购女子服饰</span></span>
+							</a>
+						</li>
+					</ul>
+				</article>
+
+				<script>
+					$(function(){
+						// 視頻播放
+						var mySwiper1 = new Swiper('.events-swiper-neo', {
+							loop: true,
+							slidesPerView : 1,
+							spaceBetween : 0,
+							paginationClickable: true,
+							centeredSlides: true,
+							autoplay: 2500,
+							autoplayDisableOnInteraction: false,
+							nextButton: '.swiper-button-next',
+							prevButton: '.swiper-button-prev'
+						});
+
+					})
+				</script>
+			</section>
+			<!-- 底部 -->
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		</div>
+    </body>
+</html>

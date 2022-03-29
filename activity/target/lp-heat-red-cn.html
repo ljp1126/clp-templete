@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%include _includes/meta.html %>
+	<title>lp-deerupt-campaign</title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" href="css/lp-heat-red.css"  type="text/css"/> -->
+	<%include _includes/js.html %>
+
+		<!-- <script type="text/javascript" src="js/jquey.marquee.js"></script>
+	<script type="text/javascript" src="js/lp-heat-red.js"></script> -->
+
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+			<script type="text/javascript" src="https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/jquey.marquee.js"></script>
+
+			<style>
+			@charset "UTF-8";
+			@font-face {
+			  font-family: AdihausDIN;
+			  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Bold/AdihausDIN-Bold.woff2") format("woff2"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Bold/AdihausDIN-Bold.woff") format("woff"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Bold/AdihausDIN-Bold.ttf") format("truetype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Bold/AdihausDIN-Bold/AdihausDIN-Bold.eot") format("embedded-opentype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Bold/AdihausDIN-Bold.svg") format("svg");
+			  font-weight: 400;
+			  font-style: normal;
+			}
+
+		 @font-face {
+			  font-family: AdihausDIN;
+			  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-BoldItalic/AdihausDIN-BoldItalic.woff2") format("woff2"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-BoldItalic/AdihausDIN-BoldItalic.woff") format("woff"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-BoldItalic/AdihausDIN-BoldItalic.ttf") format("truetype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-BoldItalic/AdihausDIN-BoldItalic.eot") format("embedded-opentype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-BoldItalic/AdihausDIN-BoldItalic.svg") format("svg");
+			  font-weight: 400;
+			  font-style: normal;
+			}
+
+
+		@font-face {
+		  font-family: AdihausDIN-cn;
+		  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Cond/AdihausDIN-Cond.woff2") format("woff2"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Cond/AdihausDIN-Cond.woff") format("woff"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Cond/AdihausDIN-Cond.ttf") format("truetype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Cond/AdihausDIN-Cond.eot") format("embedded-opentype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Cond/AdihausDIN-Cond.svg") format("svg");
+		  font-weight: 400;
+		  font-style: normal;
+		}
+		@font-face {
+		  font-family:AdihausDIN-CondBoldIta ;
+		  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondBold/AdihausDIN-CondBold.woff2") format("woff2"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondBold/AdihausDIN-CondBold.woff") format("woff"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondBold/AdihausDIN-CondBold.ttf") format("truetype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondBold/AdihausDIN-CondBold.eot") format("embedded-opentype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondBold/AdihausDIN-CondBold.svg") format("svg");
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+
+		@font-face {
+		  font-family: AdihausDIN-CondBoldIta;
+		  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondBoldIta/AdihausDIN-CondBoldIta.woff2") format("woff2"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondBoldIta/AdihausDIN-CondBoldIta.woff") format("woff"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondBoldIta/AdihausDIN-CondBoldIta.ttf") format("truetype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondBoldIta/AdihausDIN-CondBoldIta.eot") format("embedded-opentype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondBoldIta/AdihausDIN-CondBoldIta.svg") format("svg");
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+
+		@font-face {
+		  font-family: AdihausDIN-CondIta;
+		  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondIta/AdihausDIN-CondIta.woff2") format("woff2"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondIta/AdihausDIN-CondIta.woff") format("woff"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondIta/AdihausDIN-CondIta.ttf") format("truetype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondIta/AdihausDIN-CondIta.eot") format("embedded-opentype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondIta/AdihausDIN-CondIta.svg") format("svg");
+			  font-weight: 400;
+			  font-style: normal;
+			}
+			@font-face {
+			  font-family: AdihausDIN-CondMediIta;
+			  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondMediIta/AdihausDIN-CondMediIta.woff2") format("woff2"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondMediIta/AdihausDIN-CondMediIta.woff") format("woff"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondMediIta/AdihausDIN-CondMediIta.ttf") format("truetype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondMediIta/AdihausDIN-CondMediIta.eot") format("embedded-opentype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondMediIta/AdihausDIN-CondMediIta.svg") format("svg");
+			  font-weight: 400;
+			  font-style: normal;
+			}
+			@font-face {
+			  font-family:AdihausDIN-cn-medium;
+			  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondMedium/AdihausDIN-CondMedium.woff2") format("woff2"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondMedium/AdihausDIN-CondMedium.woff") format("woff"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondMedium/AdihausDIN-CondMedium.ttf") format("truetype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondMedium/AdihausDIN-CondMedium.eot") format("embedded-opentype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-CondMedium/AdihausDIN-CondMedium.svg") format("svg");
+			  font-weight: 400;
+			  font-style: normal;
+			}
+			@font-face {
+			  font-family: AdihausDIN;
+			  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Italic/AdihausDIN-Italic.woff2") format("woff2"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Italic/AdihausDIN-Italic.woff") format("woff"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Italic/AdihausDIN-Italic.ttf") format("truetype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Italic/AdihausDIN-Italic.eot") format("embedded-opentype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Italic/AdihausDIN-Italic.svg") format("svg");
+			  font-weight: 400;
+			  font-style: normal;
+			}
+			@font-face {
+			  font-family: AdihausDIN;
+			  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Medium/AdihausDIN-Medium.woff2") format("woff2"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Medium/AdihausDIN-Medium.woff") format("woff"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Medium/AdihausDIN-Medium.ttf") format("truetype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Medium/AdihausDIN-Medium.eot") format("embedded-opentype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Medium/AdihausDIN-Medium.svg") format("svg");
+			  font-weight: 400;
+			  font-style: normal;
+			}
+
+			@font-face {
+			  font-family: AdihausDIN;
+			  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-MediumItalic/AdihausDIN-MediumItalic.woff2") format("woff2"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-MediumItalic/AdihausDIN-MediumItalic.woff") format("woff"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-MediumItalic/AdihausDIN-MediumItalic.ttf") format("truetype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-MediumItalic/AdihausDIN-MediumItalic.eot") format("embedded-opentype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-MediumItalic/AdihausDIN-MediumItalic.svg") format("svg");
+			  font-weight: 400;
+			  font-style: normal;
+			}
+
+			@font-face {
+			  font-family: AdihausDIN;
+			  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Regular/AdihausDIN-Regular.woff2") format("woff2"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Regular/AdihausDIN-Regular.woff") format("woff"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Regular/AdihausDIN-Regular.ttf") format("truetype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Regular/AdihausDIN-Regular.eot") format("embedded-opentype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/AdihausDIN-Regular/AdihausDIN-Regular.svg") format("svg");
+				  font-weight: 400;
+				  font-style: normal;
+			}
+
+			@font-face {
+			  font-family: adineuePRO-Black;
+			  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Black/adineuePRO-Black.woff2") format("woff2"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Black/adineuePRO-Black.woff") format("woff"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Black/adineuePRO-Black.ttf") format("truetype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Black/adineuePRO-Black.eot") format("embedded-opentype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Black/adineuePRO-Black.svg") format("svg");
+			  font-weight: 600;
+			  font-style: normal;
+			}
+
+			@font-face {
+			  font-family: adineuePRO-BlackItalic;
+			  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-BlackItalic/adineuePRO-BlackItalic.woff2") format("woff2"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-BlackItalic/adineuePRO-BlackItalic.woff") format("woff"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-BlackItalic/adineuePRO-BlackItalic.ttf") format("truetype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-BlackItalic/adineuePRO-BlackItalic.eot") format("embedded-opentype"),
+			       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-BlackItalic/adineuePRO-BlackItalic.svg") format("svg");
+			  font-weight: 600;
+			  font-style: normal;
+			}
+
+			@font-face {
+		  font-family: adineuePRO;
+		  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Bold/adineuePRO-Bold.woff2") format("woff2"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Bold/adineuePRO-Bold.woff") format("woff"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Bold/adineuePRO-Bold.ttf") format("truetype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Bold/adineuePRO-Bold.eot") format("embedded-opentype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Bold/adineuePRO-Bold.svg") format("svg");
+		  font-weight: 600;
+		  font-style: normal;
+		}
+		@font-face {
+		  font-family: adineuePRO-BoldItalic;
+		  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-BoldItalic/adineuePRO-BoldItalic.woff2") format("woff2"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-BoldItalic/adineuePRO-BoldItalic.woff") format("woff"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-BoldItalic/adineuePRO-BoldItalic.ttf") format("truetype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-BoldItalic/adineuePRO-BoldItalic.eot") format("embedded-opentype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-BoldItalic/adineuePRO-BoldItalic.svg") format("svg");
+		  font-weight: 600;
+		  font-style: normal;
+		}
+		@font-face {
+		  font-family: adineuePROCyr-Black;
+		  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePROCyr-Black/adineuePROCyr-Black.woff2") format("woff2"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePROCyr-Black/adineuePROCyr-Black.woff") format("woff"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePROCyr-Black/adineuePROCyr-Black.ttf") format("truetype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePROCyr-Black/adineuePROCyr-Black.eot") format("embedded-opentype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePROCyr-Black/adineuePROCyr-Black.svg") format("svg");
+		  font-weight: 600;
+		  font-style: normal;
+		}
+
+
+		@font-face {
+		  font-family: adineuePROCyr-Bold;
+		  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePROCyr-Bold/adineuePROCyr-Bold.woff2") format("woff2"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePROCyr-Bold/adineuePROCyr-Bold.woff") format("woff"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePROCyr-Bold/adineuePROCyr-Bold.ttf") format("truetype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePROCyr-Bold/adineuePROCyr-Bold.eot") format("embedded-opentype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePROCyr-Bold/adineuePROCyr-Bold.svg") format("svg");
+		  font-weight: 600;
+		  font-style: normal;
+		}
+
+		@font-face {
+		  font-family: adineuePROCyr-Light;
+		  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePROCyr-Light/adineuePROCyr-Light.woff2") format("woff2"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePROCyr-Light/adineuePROCyr-Light.woff") format("woff"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePROCyr-Light/adineuePROCyr-Light.ttf") format("truetype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePROCyr-Light/adineuePROCyr-Light.eot") format("embedded-opentype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePROCyr-Light/adineuePROCyr-Light.svg") format("svg");
+		  font-weight: 600;
+		  font-style: normal;
+		}
+
+		@font-face {
+		  font-family: adineuePRO-Light;
+		  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Light/adineuePRO-Light.woff2") format("woff2"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Light/adineuePRO-Light.woff") format("woff"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Light/adineuePRO-Light.ttf") format("truetype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Light/adineuePRO-Light.eot") format("embedded-opentype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Light/adineuePRO-Light.svg") format("svg");
+		  font-weight: 600;
+		  font-style: normal;
+		}
+
+		@font-face {
+		  font-family: adineuePRO-LightItalic;
+		  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-LightItalic/adineuePRO-LightItalic.woff2") format("woff2"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-LightItalic/adineuePRO-LightItalic.woff") format("woff"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-LightItalic/adineuePRO-LightItalic.ttf") format("truetype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-LightItalic/adineuePRO-LightItalic.eot") format("embedded-opentype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-LightItalic/adineuePRO-LightItalic.svg") format("svg");
+		  font-weight: 600;
+		  font-style: normal;
+	}
+
+	@font-face {
+		  font-family: adineuePRO;
+		  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Regular/adineuePRO-Regular.woff2") format("woff2"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Regular/adineuePRO-Regular.woff") format("woff"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Regular/adineuePRO-Regular.ttf") format("truetype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Regular/adineuePRO-Regular.eot") format("embedded-opentype"),
+		       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-Regular/adineuePRO-Regular.svg") format("svg");
+		  font-weight: 400;
+		  font-style: normal;
+}
+
+@font-face {
+  font-family: adineuePRO-RegularItalic;
+  src: url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-RegularItalic/adineuePRO-RegularItalic.woff2") format("woff2"),
+       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-RegularItalic/adineuePRO-RegularItalic.woff") format("woff"),
+       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-RegularItalic/adineuePRO-RegularItalic.ttf") format("truetype"),
+       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-RegularItalic/adineuePRO-RegularItalic.eot") format("embedded-opentype"),
+       url("https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/fonts/adineuePRO-RegularItalic/adineuePRO-RegularItalic.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+			.article {
+			  position: relative;
+			}
+			.article img {
+			  width: 100%;
+			}
+			.article-text {
+			  height: 210px;
+			  width: 100%;
+			  text-align: center;
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  color: #fff;
+			  background: #000;
+
+			}
+            .article-text h2{
+				 font-family: AdineuePRO,Helvetica,Arial,sans-serif;
+				 font-size: 26px;
+				font-weight: 600;
+			}
+
+			.mob-heat-text {
+			  display: none;
+			}
+			.article-marquee {
+			  padding: 40px 0;
+			  background: #000;
+			}
+			.article-marquee .marquee-box {
+			  width: 100%;
+			  overflow: hidden;
+			}
+			.article-marquee .marquee-box .marquee-item-sj .text {
+			  display: inline-block;
+			  margin-right: 20px;
+			}
+			.article-btn {
+			  height: 140px;
+			  justify-content: center;
+			  align-items: center;
+			  background: #000;
+			  display: flex;
+			}
+			.article-video {
+			  cursor: pointer;
+			}
+			.article-video.video-box-distance {
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  background: #000;
+			  color: #fff;
+			}
+			.article-video.video-box-distance .heat-text > h2 {
+			  letter-spacing: 1.5px;
+			  font-size: 26px;
+			  font-family: AdineuePRO,Helvetica,Arial,sans-serif;
+			}
+			.article-video.video-box-distance .heat-text p {
+			  font-size: 16px;
+			  margin-top: 24px;
+			  font-family: AdihausDIN,Helvetica,Arial,sans-serif;
+			}
+			.article-video .video-wrapper {
+			  position: absolute;
+			  cursor: pointer;
+			}
+			.article-video .video-wrapper.video-wrapper-pc {
+			  display: block;
+			}
+			.article-video .video-wrapper.video-wrapper-mob {
+			  display: none;
+			}
+			.article-video .video-wrapper.video-container-1 {
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			}
+			.article-video .video-wrapper.video-container-2 {
+			  top: 0;
+			  width: 100%;
+			}
+			.article-video .video-wrapper.video-container-right {
+			  right: 8%;
+			  width: 24%;
+			  top: 22%;
+			}
+			.article-video .video-wrapper.video-container-left {
+			  left: 8%;
+			  width: 24%;
+			  top: 22%;
+			}
+			.article-video .video-wrapper .video-content {
+			  position: absolute;
+			  height: 100%;
+			  width: 100%;
+			  left: 0;
+			}
+			.article-video .video-wrapper .video-content .video {
+			  width: 100%;
+			  height: 100%;
+			  object-fit: cover;
+			  visibility: hidden;
+			}
+			.article-video .heat-text {
+			  position: absolute;
+			  top: 42%;
+			  text-align: center;
+			  color: #fff;
+			  width: 100%;
+			  z-index: 3;
+
+			}
+			.article-video .heat-text > h1 {
+			  font-size: 10vw;
+			  letter-spacing: .75vw;
+			   font-family: AdihausDIN-cn,Helvetica,Arial,sans-serif;
+			}
+			.article-video .heat-text > p {
+			  width: calc(60%);
+			  max-width: 420px;
+			  pointer-events: none;
+			  margin: 94px auto 50px;
+			  font-size: 20px;
+			   font-family: AdihausDIN,Helvetica,Arial,sans-serif;
+			}
+			.article-video.is-play .video-wrapper .video-content .video {
+			  visibility: visible;
+			}
+			.article-video.is-play .video-wrapper .video-code img {
+			  visibility: hidden;
+			}
+
+			@media (min-width: 1280px){
+				.article-text > h2 {
+			   font-size: 30px;
+			   font-family: AdineuePRO, Helvetica, Arial, sans-serif;
+			 }
+			}
+
+			@media (max-width: 768px) {
+			.article-video .heat-text > h1{
+				font-size: 20vw;
+				    line-height: 1;
+				    letter-spacing: 1.25vw;
+							}
+			  .article-text {
+				height: 258px;
+			  }
+			  .article-text > h2 {
+				font-size: 26px;
+				font-family: AdineuePRO, Helvetica, Arial, sans-serif;
+			  }
+			  .mob-heat-text {
+				background: #000;
+				height: 220px;
+				display: block;
+				padding-top: 83px;
+				padding-left: 15px;
+				padding-right: 15px;
+				color: #fff;
+				text-align: center;
+			  }
+			  .mob-heat-text > h2 {
+				letter-spacing: 1.5px;
+				font-size: 26px;
+				 font-family: adineuePRO,Helvetica,Arial,sans-serif;
+			  }
+			  .mob-heat-text p {
+				font-size: 16px;
+				margin-top: 24px;
+				width: 100%;
+				 font-family: AdihausDIN,Helvetica,Arial,sans-serif;
+			  }
+			  .article-marquee {
+				padding: 40px 0;
+				background: #000;
+			  }
+			  .article-marquee .marquee-box {
+				width: 100%;
+				overflow: hidden;
+			  }
+			  .article-marquee .marquee-box .marquee-item-sj .text {
+				display: inline-block;
+				margin-right: 20px;
+			  }
+			  .article-video {
+				cursor: pointer;
+				height: 131.25vw;
+				background: #000;
+			  }
+			  .article-video.video-box-distance {
+				padding: 0;
+			  }
+			  .article-video.video-box-distance .heat-text {
+				display: none;
+			  }
+			  .article-video .video-wrapper {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				cursor: pointer;
+			  }
+			  .article-video .video-wrapper.video-wrapper-pc {
+				display: none;
+			  }
+			  .article-video .video-wrapper.video-wrapper-mob {
+				display: block;
+			  }
+			  .article-video .video-wrapper.video-container-1 {
+				left: 0;
+				width: 100%;
+				top: 0;
+				height: 100%;
+			  }
+			  .article-video .video-wrapper.video-container-2 {
+				top: 1%;
+				width: 100%;
+			  }
+			  .article-video .video-wrapper.video-container-right {
+				left: 50%;
+				transform: translate(-50%);
+				width: 79%;
+				bottom: 0%;
+				top: auto;
+			  }
+			  .article-video .video-wrapper.video-container-left {
+				left: 50%;
+				transform: translate(-50%);
+				width: 79%;
+				bottom: 0%;
+				top: auto;
+			  }
+			  .article-video .video-wrapper .video-content {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				left: 0;
+			  }
+			  .article-video .video-wrapper .video-content .video {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				visibility: hidden;
+			  }
+			  .article-video .heat-text {
+				top: 43%;
+			  }
+			  .article-video .heat-text > p {
+				width: 84%;
+				margin: 23px auto 0;
+			  }
+			  .article-video.is-play .video-wrapper .video-content .video {
+				visibility: visible;
+			  }
+			  .article-video.is-play .video-wrapper .video-code img {
+				visibility: hidden;
+			  }
+			}
+
+			</style>
+			<!--kv视频  -->
+			<article class="article article-video video-box-1">
+			   <img  src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+					   "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/video-pc-1.jpg"},
+					   "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/video-mob-1.png"},
+					   "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/video-mob-1.png"}
+				   }' />
+			   <div class="video-wrapper video-wrapper-pc  video-container-1  e-video e-play-video">
+				   <div class="video-content  video-content-pc"></div>
+				   <a class="video-play" href="javascript:void(0)">
+					   <span class="video-code video-code-pc" data-video-code="FB08B11ED3EB8F479C33DC5901307461">
+						   <img src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+								   "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/video-pc-1.jpg"},
+								   "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/video-mob-1.jpg"},
+								   "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/video-mob-1.jpg"}
+							   }' />
+					   </span>
+				   </a>
+			   </div>
+			   <div class="video-wrapper video-wrapper-mob video-container-1  e-video e-play-video">
+					<div class="video-content  video-content-mob"></div>
+					<a class="video-play" href="javascript:void(0)">
+						<span class="video-code video-code-mob" data-video-code="C652F25634EA47BB9C33DC5901307461">
+							<img  src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+									"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/video-pc-1.jpg"},
+									"medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/video-mob-1.png"},
+									"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/video-mob-1.png"}
+								}' />
+						</span>
+					</a>
+				</div>
+			   <div class="heat-text">
+				  <h1>HEAT.RDY</h1>
+				  <p>炎熱將至，我們的獨家HEAT.RDY科技讓你在<br class="none-xs">比賽中保持酷涼、乾爽、自信。</p>
+			   </div>
+		   	</article>
+		   <article class="article-text">
+			  <h2>HEAT.RDY 助你保持酷涼</h2>
+		   </article>
+		   <!-- 视频1 -->
+		   <article class="article article-video video-box-distance">
+			   <img  class="none-xs" src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+					   "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/pc-1.jpg"},
+					   "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-1.jpg"},
+					   "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-1.jpg"}
+				   }' />
+			   <div class="video-wrapper video-wrapper-pc video-container-2  e-video e-play-video">
+				   <div class="video-content  video-content-pc"></div>
+				   <a class="video-play" href="javascript:void(0)">
+					   <span class="video-code video-code-pc" data-video-code="0B224A016C6A5FC59C33DC5901307461">
+						   <img   src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+								  "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/pc-1.jpg"},
+								  "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-1.jpg"},
+								  "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-1.jpg"}
+							  }' />
+					   </span>
+				   </a>
+			   </div>
+			   <div class="video-wrapper video-wrapper-mob video-container-2  e-video e-play-video">
+				  <div class="video-content  video-content-mob"></div>
+				  <a class="video-play" href="javascript:void(0)">
+					  <span class="video-code video-code-mob" data-video-code="0B4B9B31DC8A4F999C33DC5901307461">
+						  <img   src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+								 "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/pc-1.jpg"},
+								 "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-1.jpg"},
+								 "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-1.jpg"}
+							 }' />
+					  </span>
+				  </a>
+			  </div>
+			   <div class="heat-text">
+				  <h2>全身透氣舒適</h2>
+				  <p>透氣科技帶來透氣通風感受。 讓你身形自在暢動。</p>
+			   </div>
+		   </article>
+		   <article class="mob-heat-text">
+			   <h2>全身透氣舒適</h2>
+			   <p>透氣科技帶來透氣通風感受。 讓你身形自在暢動。</p>
+		   </article>
+		   <article class="article article-marquee">
+			   <div class="marquee-box">
+				   <div data-speed="2" class="marquee-item-sj">
+					   <div class="text"> <img src="https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/head-red.png" /></div>
+					    <div class="text"> <img src="https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/head-red.png" /></div>
+
+				   </div>
+			   </div>
+		   </article>
+		   <!-- 视频2 -->
+		   <article class="article article-video video-box-distance">
+			   <img class="none-xs"  src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+					  "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/pc-2.jpg"},
+					  "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-2.jpg"},
+					  "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-2.jpg"}
+				  }' />
+			   <div class="video-wrapper video-wrapper-pc video-container-2  e-video e-play-video">
+				   <div class="video-content  video-content-pc"></div>
+				   <a class="video-play" href="javascript:void(0)">
+					   <span class="video-code video-code-pc" data-video-code="5520CBA8F360999D9C33DC5901307461">
+						   <img  src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+								 "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/pc-2.jpg"},
+								 "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-2.jpg"},
+								 "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-2.jpg"}
+							 }' />
+					   </span>
+				   </a>
+			   </div>
+			   <div class="video-wrapper video-wrapper-mob video-container-2  e-video e-play-video">
+				  <div class="video-content  video-content-mob"></div>
+				  <a class="video-play" href="javascript:void(0)">
+					  <span class="video-code video-code-mob" data-video-code="5D68537E18AF8CD39C33DC5901307461">
+						  <img   src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+								 "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/pc-2.jpg"},
+								 "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-2.jpg"},
+								 "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-2.jpg"}
+							 }' />
+					  </span>
+				  </a>
+			  </div>
+
+			   <div class="heat-text">
+				  <h2>擺脫炎熱</h2>
+				  <p>AQUA-X 紗線觸感酷涼乾爽， 排除身上所有汗水。</p>
+			   </div>
+		   </article>
+		   <article class="mob-heat-text">
+			   <h2>擺脫炎熱</h2>
+			   <p>AQUA-X 紗線觸感酷涼乾爽， 排除身上所有汗水。</p>
+		   </article>
+			<!-- 视频3 -->
+		   <article class="article article-video video-box-distance">
+			   <img class="none-xs"  src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+					  "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/pc-3.jpg"},
+					  "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-3.jpg"},
+					  "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-3.jpg"}
+				  }' />
+			   <div class="video-wrapper video-wrapper-pc video-container-2  e-video e-play-video">
+				   <div class="video-content  video-content-pc"></div>
+				   <a class="video-play" href="javascript:void(0)">
+					   <span class="video-code video-code-pc" data-video-code="37A0516AC0669ADA9C33DC5901307461">
+						   <img   src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+								  "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/pc-3.jpg"},
+								  "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-3.jpg"},
+								  "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-3.jpg"}
+							  }' />
+					   </span>
+				   </a>
+			   </div>
+
+			   <div class="video-wrapper video-wrapper-mob video-container-2  e-video e-play-video">
+				 <div class="video-content  video-content-mob"></div>
+				 <a class="video-play" href="javascript:void(0)">
+					 <span class="video-code video-code-mob" data-video-code="27054EBE4F5C24909C33DC5901307461">
+						 <img  src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+								"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/pc-3.jpg"},
+								"medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-3.jpg"},
+								"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/mob-3.jpg"}
+							}' />
+					 </span>
+				 </a>
+			 </div>
+
+
+			   <div class="heat-text">
+				   <h2>快乾排汗</h2>
+				   <p>創新紗線打造極速吸濕  排汗效能。 保持乾爽，迎風高飛。 </p>
+			   </div>
+		   </article>
+		   <article class="mob-heat-text">
+			   <h2>快乾排汗</h2>
+			   <p>創新紗線打造極速吸濕  排汗效能。 保持乾爽，迎風高飛。 </p>
+		   </article>
+		   <article class="article article-marquee">
+			   <div class="marquee-box">
+				   <div data-speed="2" class="marquee-item-sj">
+					   <div class="text"> <img src="https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/head-red.png" /></div>
+					   <div class="text"> <img src="https://img.adidas.com.hk/resources/2020/KV/Apr/HEAT_RDY/head-red.png" /></div>
+
+
+				   </div>
+			   </div>
+		   </article>
+		   <article class="article-btn">
+			   <a class="btn btn-have-opacity gl-cta-height gl-cta-color-white gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="https://www.adidas.com.hk/training/heat_ready/all"> 立即選購<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+		   </article>
+			<script type="text/javascript">
+			$(function(){
+				// 换图 + 懒加载
+				setTimeout(function() {
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+				}, 500);
+				$.spice.tools.changeImageSrc({
+					callBack: function(img, self) {
+						$.spice.lazyLoad('img[lazysrc]', {
+							attr: self.opt.lazyData,
+							prestrain: 1
+						});
+					}
+				});
+
+
+				//跑马灯
+				if($(window).width() > 900) {
+					$('.marquee-item-sj').marquee({
+						duration: 9000,
+						gap: 20,
+						delayBeforeStart: 0,
+						direction: 'right',
+						startVisible: true,
+						duplicated: true
+					});
+				} else {
+					$('.marquee-item-sj').marquee({
+						duration: 9000,
+						gap: 20,
+						delayBeforeStart: 0,
+						direction: 'right',
+						startVisible: true,
+						duplicated: true
+					});
+				}
+				//终端
+				var browser = {
+					versions: function() {
+						var u = navigator.userAgent,
+							app = navigator.appVersion;
+						return { //移动终端浏览器版本信息
+							ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+							android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+							iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+							iPad: u.indexOf('iPad') > -1, //是否iPad
+						};
+					}(),
+				}
+
+
+				// home-page视频
+				var loadImgFun_index = function(imgArr, fn) {
+				  // 图片加载fun
+				  var loadImgLen = 0,
+					  errImgLen = 0
+				  var imgdefereds = [];
+				  $(imgArr).each(function() {
+					  var defered = $.Deferred();
+					  $(this).on('load', function() {
+						  defered.resolve();
+						  loadImgLen++
+					  }).on('error', function() {
+						  defered.resolve();
+						  errImgLen++
+					  })
+					  if (this.complete) setTimeout(function() {
+						  defered.resolve();
+					  }, 200);
+					  imgdefereds.push(defered);
+				  })
+				  $.when.apply(null, imgdefereds).done(function() {
+					  if (fn && $.isFunction(fn)) {
+						  fn()
+					  }
+				  });
+				}
+
+				//视频
+				$('.e-video').each(function(index, el) {
+						$(el).parents('.article').addClass('home-video')
+					var  videoCodePC = $('.video-code-pc', el).data('video-code'),
+						 videoCodeMob = $('.video-code-mob', el).data('video-code'),
+						 videoId = 'home_video_' + index;
+						 console.log(videoId);
+					// loadImgFun_index($('.video-code img', el), function() {
+					// 	// $('.video-content', el).show().css({
+					// 	// 	'height': $('.video-code img', el).outerHeight(true)
+					// 	// })
+					// 	// $('.video-code img', el).css({
+					// 	// 	'visibility': 'hidden'
+					// 	// })
+					// })
+					// 开发需要打开此代码---开始
+					var bannerVideoIdPc = videoCodePC;
+					var bannerVideoIdMob = videoCodeMob;
+					var url = base + "/indexCCVideo.json";
+					var dataPc = loxia.syncXhrGet(url, {
+						'bannerVideoId': bannerVideoIdPc
+					});
+					var dataMob = loxia.syncXhrGet(url, {
+						'bannerVideoId': bannerVideoIdMob
+					});
+					var videoUrlPc = dataPc.mp4VideoUrl;
+					var videoUrlMob = dataMob.mp4VideoUrl;
+					// 开发需要打开此代码---结束
+
+					// 下面的videoUrl为前端静态视频地址（静态页面的video路径 ，开发需注释掉）
+					// var videoUrlMob = 'https://brand.assets.adidas.com/video/upload/q_auto,vc_auto/video/upload/training-ss20-rdy_c1-flp_rdy-lv1-generic-5-statement-m_mzafjy.mp4';
+					//
+					// var videoUrlPc = 'https://brand.assets.adidas.com/video/upload/q_auto,vc_auto/video/upload/training-ss20-rdy_c1-flp_rdy-lv1-generic-3-statement-d_hx2aqg.mp4';
+					var pchtml = '<video class="video" id="' + videoId + '"   webkit-playsinline="true" playsInline="true" muted="true" "><source src="' + videoUrlPc + '" ></source></video>';
+
+					var mobhtml = '<video class="video" id="' + videoId + '"  webkit-playsinline="true" playsInline="true" muted="true" ><source src="' + videoUrlMob + '" ></source></video>';
+
+					$('.video-content-pc', el).html(pchtml);
+					$('.video-content-mob', el).html(mobhtml);
+
+				     $(el).parents('.home-video').addClass('is-play')
+					 $('#home_video_' + index)[0].play();
+ 					$('#home_video_' + index)[0].addEventListener('canplaythrough', function() {
+ 						console.log('视频准备就绪，开始播放');
+ 						this.play()
+ 					});
+ 					$('#home_video_' + index)[0].addEventListener('ended', function() {
+ 						this.play()
+ 					});
+
+
+
+				});
+
+				// $(".e-play-video").on('tap', function() {
+				// 	if ($(this).parents('.article-video').hasClass('video-box2')) {
+				// 		$('.article-second .article-video').removeClass('is-play');
+				// 	}
+				// 	var _parent_article = $(this).parents('.article-video'),
+				// 		_video_s = $('.article-video').find('.video'),
+				// 		_video = $(this).parents('.article-video').find('.video');
+				// 	_parent_article.toggleClass('is-play');
+				// 	$(this).parents('.article-video').siblings().removeClass('is-play');
+				//
+				// 	if (_parent_article.hasClass('is-play')) {
+				// 		for (var i = 0; i < _video_s.length; i++) {
+				// 			_video_s.eq(i)[0].pause();
+				// 		}
+				// 		_video[0].play();
+				// 		_video[0].addEventListener('ended', function() {
+				// 			this.play()
+				// 		});
+				// 	} else {
+				// 		_video[0].pause();
+				// 	}
+				//
+				// });
+
+
+
+
+			})
+
+			</script>
+
+		</section>
+		<%include _includes/modules/footer.html %>
+	</div>
+</body>
+
+</html>

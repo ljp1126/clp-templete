@@ -1,0 +1,210 @@
+@charset "UTF-8";
+.article-kv .scroll .scroller-wrap ul li .scroll-container {
+  /*hyper launch*/
+  /*zne*/
+}
+.article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.btn-right-little {
+  margin: 0 0 0 26.4%;
+}
+.article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.btn-middle-little {
+  margin: 0 0 0 37.6%;
+}
+.article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.btn-middle {
+  margin: 0 0 0 46%;
+}
+.article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.btn-right {
+  margin: 0 0 0 50.3%;
+}
+.article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.m-topp12 {
+  margin-top: 12%;
+}
+.article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.m-topp16 {
+  margin-top: 16%;
+}
+.article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.m-topp19 {
+  margin-top: 19%;
+}
+.article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.btn-left-little {
+  margin: 0 26.4% 0 0;
+}
+.article-kv .scroll .scroller-wrap ul li .scroll-container.hyper-launch-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component {
+  margin: 0 23% 0 0;
+}
+.article-kv .scroll .scroller-wrap ul li .scroll-container.zne-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component {
+  margin: 11% 25.5% 0 0;
+}
+.article-kv .scroll .scroller-wrap ul li .scroll-container.zne-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component a {
+  display: inline-block;
+  margin: 0 5px;
+}
+.article-kv .scroll .scroller-wrap ul li .scroll-container.zne-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component a.btn-red {
+  background: #b32d34;
+}
+.article-kv .scroll .scroller-wrap ul li .scroll-container.zne-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component a.btn-width {
+  width: 190px;
+}
+@media (max-width: 1450px) {
+  .article-kv .scroll .scroller-wrap ul li .scroll-container {
+    /*hyper launch*/
+    /*zne*/
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.btn-right-little {
+    margin: 0 0 0 26.4%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.btn-middle-little {
+    margin: 0 0 0 37.6%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.btn-middle {
+    margin: 0 0 0 43.8%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.btn-right {
+    margin: 0 0 0 50.3%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.m-topp12 {
+    margin-top: 12%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.m-topp16 {
+    margin-top: 16%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.m-topp19 {
+    margin-top: 22%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container.hyper-launch-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component {
+    margin: 0 16% 0 0;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container.zne-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component {
+    margin: 11% 22% 0 0;
+  }
+}
+@media (max-width: 1024px) {
+  .article-kv .scroll .scroller-wrap ul li .scroll-container {
+    /*hyper launch*/
+    /*zne*/
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.btn-right-little {
+    margin: 0 auto;
+    margin-bottom: 5.3%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.btn-middle {
+    margin: 0 auto;
+    margin-bottom: 5.3%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.btn-right {
+    margin: 0 auto;
+    margin-bottom: 5.3%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.m-topp12 {
+    margin: 0 auto;
+    margin-bottom: 5.3%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.m-topp16 {
+    margin: 0 auto;
+    margin-bottom: 5.3%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.m-topp19 {
+    margin: 0 auto;
+    margin-bottom: 5.3%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component.btn-left-little {
+    margin: 0 auto;
+    margin-bottom: 5.3%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container.hyper-launch-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component {
+    margin: 0 auto;
+    margin-bottom: 11%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container.hyper-launch-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component .btn-red {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container.hyper-launch-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component .btn-red span:after {
+    background-position: -286px -219px;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container.hyper-launch-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component .btn-gray-disabled {
+    background: rgba(204, 204, 204, 0.8);
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container.zne-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component {
+    margin: 0 auto 11%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container.zne-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component a {
+    margin: 10px 0 0;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container.zne-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component a.btn-width {
+    width: 100%;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container.zne-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component a.btn-red {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container.zne-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component a.btn-red span:after {
+    background-position: -286px -219px;
+  }
+  .article-kv .scroll .scroller-wrap ul li .scroll-container.zne-container .scroll-component-content-wrap .scroll-component-content .scroll-btn-component a.btn-gray-disabled {
+    background: rgba(204, 204, 204, 0.8);
+  }
+}
+.article-kv .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container,
+.article-originals-kv .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container,
+.banner-article .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container,
+.article-kv .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container,
+.article-originals-kv .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container,
+.banner-article .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container {
+  height: auto;
+  height: inherit;
+  top: auto;
+  top: inherit;
+  bottom: 12%;
+}
+.article-kv .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-left,
+.article-originals-kv .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-left,
+.banner-article .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-left,
+.article-kv .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-left,
+.article-originals-kv .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-left,
+.banner-article .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-left {
+  margin-left: 29.2%;
+  left: -71px;
+}
+.article-kv .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-center,
+.article-originals-kv .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-center,
+.banner-article .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-center,
+.article-kv .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-center,
+.article-originals-kv .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-center,
+.banner-article .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-center {
+  left: 50%;
+  transform: none;
+  margin-left: -71px;
+}
+.article-kv .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-right,
+.article-originals-kv .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-right,
+.banner-article .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-right,
+.article-kv .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-right,
+.article-originals-kv .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-right,
+.banner-article .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-right {
+  margin-right: 29.2%;
+  right: -71px;
+}
+@media (max-width: 1024px) {
+  .article-kv .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-left,
+  .article-originals-kv .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-left,
+  .banner-article .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-left,
+  .article-kv .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-left,
+  .article-originals-kv .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-left,
+  .banner-article .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-left,
+  .article-kv .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-center,
+  .article-originals-kv .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-center,
+  .banner-article .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-center,
+  .article-kv .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-center,
+  .article-originals-kv .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-center,
+  .banner-article .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-center,
+  .article-kv .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-right,
+  .article-originals-kv .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-right,
+  .banner-article .scroll .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-right,
+  .article-kv .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-right,
+  .article-originals-kv .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-right,
+  .banner-article .header-banner .scroller-wrap ul li.kv-scroll-new .scroll-container.scroll-container-right {
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 5.3%!important;
+  }
+}

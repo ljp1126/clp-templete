@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>adidasneo</title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" type="text/css" href="css/lp-eqt-aug17.css"> -->
+	<%include _includes/js.html %>
+</head>
+<body>
+<div id="wrapper">
+	<%include _includes/modules/header.html %>
+	<!-- 内容部分 -->
+	<section class="container">
+	<style type="text/css">
+
+		/* 模块一 banner 图 */
+		.article .action-sports-branner {
+		    position: relative;
+		}
+		.article .action-sports-branner .btn-group-1 {
+			position: absolute;
+		    left: 37%;
+		    top: 54%;
+		}
+		/* 視頻模塊 */
+		.article .video-poster {
+			position: relative;
+    		text-align: center;
+			margin: 60px auto 68px auto;
+		}
+		.article .video-poster > img {
+		    max-width: 1325px;
+		    margin: 0 auto;
+		    width: 100%;
+		}
+		/*    */
+		.article .hover-scale .box-left {
+			float: left;
+		    width: 55.73%;
+		}
+		.article .hover-scale .box-right {
+			float: left;
+		    width: 44.27%;
+		}
+		.article .hover-scale .box-left .show-right {
+			float: left;
+		    width: 39.72%;
+		}
+		.article .hover-scale .box-left .show-right > div {
+			overflow: hidden;
+		}
+		.article .hover-scale .box-left .show-left {
+			float: left;
+		    width: 60.28%;
+		    overflow: hidden;
+		}
+		.article .hover-scale .box-right .show-right .show-01,
+		.article .hover-scale .box-right .show-right .show-02 {
+			float: left;
+		    width: 50%;
+		    overflow: hidden;
+		}
+		.article .hover-scale .box-right .buy-btn .action-box4-btn {
+			position: absolute;
+		    top: 74.5%;
+		    left: 50%;
+		    margin-left: -71px;
+		}
+
+
+		/*轮播模块*/
+		.article .swiper-bg {
+		    position: relative;
+		}
+		.article .swiper-bg > .action-bg-banner-pic {
+		    width: 100%;
+		}
+		.article .swiper-bg .swiper-01 {
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    width: 100%;
+		}
+		.article .swiper-bg .swiper-01 .action-sports-swiper .swiper-wrapper,
+		.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn {
+			width: 40%;
+		}
+		.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn {
+			position: absolute;
+			top: 50%;
+			left: 30%;
+		}
+		.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn .swiper-button-prev,
+		.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn .swiper-button-next {
+			background-image: none;
+			width: 33px;
+			height: 63px;
+			margin-top: -32px;
+			transform: none;
+		}
+		.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn .swiper-button-prev i,
+		.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn .swiper-button-next i {
+			display: block;
+		    width: 33px;
+		    height: 63px;
+		    background: url(images/icon.png);
+		}
+		.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn .swiper-button-prev {
+			left: -47px;
+		}
+		.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn .swiper-button-prev i {
+		    background-position: -676px -454px;
+		}
+		.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn .swiper-button-next {
+			right: -47px;
+		}
+		.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn .swiper-button-next i {
+		    background-position: -790px -454px;
+		}
+		.article .swiper-bg .swiper-01 .swiper-container1 .swiper-wrapper .swiper-slide {
+		    text-align: center;
+		}
+		.article .swiper-bg .swiper-01 .swiper-container1 .swiper-wrapper .swiper-slide img {
+		    width: 100%;
+		}
+		.article .hover-scale {
+		    padding:0;
+		}
+		.article .swiper-box-03 {
+		    position: relative;
+		}
+		.article .swiper-box-03 .title{
+		    top: auto;
+			left: 50%;
+			bottom: 53.8%;
+		}
+		.article .swiper-box-03 .swiper-container3 .swiper-wrapper .swiper-slide img {
+		    width: 100%;
+		}
+		.article .swiper-box-03 .swiper-container3 .swiper-wrapper .swiper-slide .btn-01 {
+		    position: absolute;
+		    left: 61%;
+		    top: 55%;
+		    width: 13%;
+		    height: 7%;
+		}
+		.article .swiper-box-03 .swiper-container3 .swiper-wrapper .swiper-slide .btn-02 {
+		    position: absolute;
+		    left: 22%;
+	        top: 75%;
+	        width: 13%;
+	        height: 7%;
+		}
+		.article .swiper-box-03 .swiper-container3 .swiper-wrapper .swiper-slide .btn-03 {
+		    position: absolute;
+		    left: 50%;
+		    top: auto;
+		    bottom: 3%;
+			width: 160px;
+			min-width: 160px;
+			font-size: 16px;
+			margin-left: -80px;
+
+		}
+		.article .swiper-box-03 .swiper-container3 .swiper-wrapper .swiper-slide .btn-c {
+			position: absolute;
+		    left: 22%;
+	        top: 86%;
+	        width: 13%;
+	        height: 7%;
+		}
+		.article .hover-scale .box-right .buy-btn {
+		    position: relative;
+		}
+		.article .swiper-box-03 .action-box3-btn {
+		    position: absolute;
+		    bottom: 6.5%;
+		    left: 50%;
+		    z-index: 1;
+		    -webkit-transform: translate(-50%, 50%);
+		    -ms-transform: translate(-50%, 50%);
+		    transform: translate(-50%, 50%);
+		}
+		.article .swiper-box-03 .action-box3-btn .btn{
+			width: 280px;
+			letter-spacing: 2px;
+		}
+		.article .swiper-box-03 .swiper-container3 .swiper-button-prev,
+		.article .swiper-box-03 .swiper-container3 .swiper-button-next{
+			top: auto;
+			bottom: 53.6%;
+		}
+		.article .swiper-box-03 .swiper-container3 .swiper-button-prev {
+		    left: 30.1%;
+		    background: url(../../static/images/lp-eqt-aug17/icon-kv-left.png);
+		    background-size: 80px;
+		    width: 80px;
+		    height: 80px;
+		}
+		.article .swiper-box-03 .swiper-container3 .swiper-button-next {
+		    right: 25%;
+		    background: url(../../static/images/lp-eqt-aug17/icon-kv-right.png);
+		    background-size: 80px;
+		    width: 80px;
+		    height: 80px;
+		}
+		@media screen and (max-width: 1024px) {
+			/* 模块一 banner 图 */
+			.article .action-sports-branner .btn-group-1 {
+				position: absolute;
+			    left: 5%;
+    			top: 54%;
+    			font-size: 14px;
+    			min-width: 110px;
+    			height: 32px;
+    			line-height: 32px;
+			}
+			.article .action-sports-branner .btn-group-1 span:after {
+				top: 1px;
+			}
+		    /* 視頻模塊 */
+		    .article .video-poster {
+		    	margin: 0;
+		    }
+		    .article .video-poster .banner-video {
+		    	top: 37.5%;
+		    }
+		    /**/
+		    .article .swiper-bg .swiper-01,
+		    .article .swiper-bg .swiper-01 .action-sports-swiper {
+		    	height: 100%;
+		    }
+		    .article .swiper-bg .swiper-01 .action-sports-swiper .swiper-wrapper {
+		    	width: 100%;
+		    	height: 100%;
+		    }
+		    .article .swiper-bg .swiper-01 .action-sports-swiper .swiper-wrapper .swiper-slide img {
+		    	height: 100%;
+		    	width: auto;
+		    	margin: 0;
+		    }
+		    .article .swiper-bg .swiper-01 .swiper-container1 .swiper-button-prev,
+		    .article .swiper-bg .swiper-01 .swiper-container1 .swiper-button-next {
+		        background-image: none;
+    			overflow: hidden;
+		    }
+		    .article .swiper-bg .swiper-01 .swiper-container1 .swiper-button-prev .icon-action-sports-arrow-l {
+		        width: 18px;
+		        height: 34px;
+		        background: url(images/icon@2x.png);
+		        background-size: 500px;
+		        background-position: -303px -652px;
+		    }
+		    .article .swiper-bg .swiper-01 .swiper-container1 .swiper-button-next .icon-action-sports-arrow-r {
+		        width: 18px;
+		        height: 34px;
+		        background: url(images/icon@2x.png);
+		        background-size: 500px;
+		        background-position: -275px -652px;
+		    }
+	    	.article .swiper-box-03 .swiper-container3 .swiper-wrapper .swiper-slide .btn-01 {
+	    	    left: 59%;
+			    top: 66%;
+			    width: 30%;
+	    	}
+	    	.article .swiper-box-03 .swiper-container3 .swiper-wrapper .swiper-slide .btn-02 {
+	    	    position: absolute;
+	    	    left: 60%;
+	            width: 29%;
+	    	}
+	    	.article .swiper-box-03 .swiper-container3 .swiper-wrapper .swiper-slide .btn-03 {
+	    	    left: 50%;
+			    bottom: 1%;
+			    top: auto;
+	    	}
+	    	.article .swiper-box-03 .swiper-container3 .swiper-wrapper .swiper-slide .btn-01.mob-f2-1 {
+	    	    left: 10%;
+	    	}
+	    	.article .swiper-box-03 .swiper-container3 .swiper-wrapper .swiper-slide .btn-02.mob-f2-2 {
+	    	    left: 10%;
+	    	    top: 79%;
+	    	}
+	    	.article .swiper-box-03 .swiper-container3 .swiper-wrapper .swiper-slide .btn-01.mob-ab-1 {
+				left: 10%;
+	    	}
+	    	.article .swiper-box-03 .swiper-container3 .swiper-wrapper .swiper-slide .btn-02.mob-ab-2 {
+				top: 80%;
+	    	}
+	    	.article .swiper-box-03 .swiper-container3 .swiper-wrapper .swiper-slide .btn-c {
+	    		left: 10%;
+	    		top: 80%;
+    			width: 36%;
+	    	}
+		    /**/
+		    .article .hover-scale {
+		    	display: flex;
+		    	flex-direction: column-reverse;
+		    	clear: both;
+		    	overflow: hidden;
+		    }
+			.article .hover-scale .box-left {
+				float: left;
+				width: 100%;
+			}
+			.article .hover-scale .box-right {
+				display: flex;
+				flex-direction: column-reverse;
+				float: left;
+				width: 100%;
+			}
+			.article .hover-scale .box-left .show-left {
+				width: 49.65%;
+			}
+			.article .hover-scale .box-left .show-right {
+			    width: 50.25%;
+			}
+			.article .swiper-bg .swiper-01 .swiper-container1 .swiper-button-prev,
+			.article .swiper-bg .swiper-01 .swiper-container1 .swiper-button-next {
+				top: 51%;
+			}
+
+			.article .swiper-box-03 .swiper-container3 .swiper-button-prev,
+			.article .swiper-box-03 .swiper-container3 .swiper-button-next {
+			    top: auto;
+			    bottom: 20%;
+			}
+			.article .swiper-box-03 .swiper-container3 .swiper-button-prev {
+				left: 2%;
+			}
+			.article .swiper-box-03 .swiper-container3 .swiper-button-next {
+				right: 2%;
+			}
+			.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn {
+			    position: absolute;
+			    top: 50%;
+			    left: 0;
+			    width: 100%;
+			}
+			.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn .swiper-button-prev,
+			.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn .swiper-button-next {
+				background-image: none;
+				width: 18px;
+				height: 34px;
+				margin-top: -9px;
+			}
+			.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn .swiper-button-prev i,
+			.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn .swiper-button-next i {
+				display: block;
+			    width: 18px;
+			    height: 34px;
+			    background: url(images/icon@2x.png);
+			}
+			.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn .swiper-button-prev {
+			    left: 8px;
+			}
+			.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn .swiper-button-next {
+			    right: 8px;
+			}
+			.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn .swiper-button-prev i {
+				background-size: 500px;
+    			background-position: -303px -652px;
+			}
+			.article .swiper-bg .swiper-01 .action-sports-swiper .action-sports-swiper-btn .swiper-button-next i {
+				background-size: 500px;
+    			background-position: -275px -652px;
+			}
+			.article .swiper-box-03 .swiper-container3 .swiper-button-prev {
+				width: 22px;
+				height: 38px;
+				background: url(images/icon@2x.png);
+				background-position: -355px -265px;
+				-webkit-background-size: 500px;
+				background-size: 500px;
+			}
+			.article .swiper-box-03 .swiper-container3 .swiper-button-next {
+				width: 22px;
+				height: 38px;
+				background: url(images/icon@2x.png);
+				background-position: -389px -265px;
+				-webkit-background-size: 500px;
+				background-size: 500px;
+			}
+		}
+
+	</style>
+		<!-- 模块一 -->
+		<article class="article">
+			<div class="action-sports-branner">
+				<!-- banner图片 -->
+				<img class="events-changeSrc action-sports-banner-pic" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-tubular/tubular-pc_01.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-tubular/tubular-pc_01.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-tubular/tubular-mob_01.jpg"}
+				}' />
+				<a href="http://www.adidas.com.cn/originals_tubular" class="btn-group-1 btn btn-black btn-have-arrow">
+					<span>立即购买</span>
+				</a>
+			</div>
+		</article>
+		<!-- 視頻模塊 -->
+		<article class="article">
+			<div class="video-poster">
+				<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-tubular/tubular-pc_02.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-tubular/tubular-pc_02.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-tubular/tubular-mob_02.jpg"}
+				}' />
+				<a class="banner-video e-video-open"></a>
+			</div>
+		</article>
+		<!-- 模块二 -->
+		<article class="article">
+			<!-- 轮播1 -->
+			<div class="swiper-bg">
+				<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-aug17/tub_pc.png"},
+						"medium":{"high":"", "normal":"../static/images/lp-eqt-aug17/tub_pc.png"},
+						"small":{"high":"", "normal":"../static/images/lp-eqt-aug17/tubular-mob_02.jpg"}
+				}' />
+				<div class="swiper-01">
+					<div class="action-sports-swiper swiper-container1 events-swiper1-eject">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/tubular/l/shoes_04.png"},
+										"medium":{"high":"", "normal":"../static/images/tubular/l/shoes_04.png"},
+										"small":{"high":"", "normal":"../static/images/tubular/l/shoes_04.png"}
+								}' />
+
+								<!-- <div class="action-sports-banner-btn">
+									<a href="https://pro.adidas.com.cn/item/BY9112" class="btn btn-white btn-have-arrow btn-have-opacity">
+										<span>立即购买</span>
+									</a>
+								</div> -->
+							</div>
+							<div class="swiper-slide">
+								<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/tubular/f1/shoes_03.png"},
+										"medium":{"high":"", "normal":"../static/images/tubular/f1/shoes_03.png"},
+										"small":{"high":"", "normal":"../static/images/tubular/f1/shoes_03.png"}
+								}' />
+								<!-- <div class="action-sports-banner-btn">
+									<a href="https://pro.adidas.com.cn/item/BY9585" class="btn btn-white btn-have-arrow btn-have-opacity">
+										<span>立即购买</span>
+									</a>
+								</div> -->
+							</div>
+							<div class="swiper-slide">
+								<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/tubular/f2/shoes_02.png"},
+										"medium":{"high":"", "normal":"../static/images/tubular/f2/shoes_02.png"},
+										"small":{"high":"", "normal":"../static/images/tubular/f2/shoes_02.png"}
+								}' />
+								<!-- <div class="action-sports-banner-btn">
+									<a href="https://pro.adidas.com.cn/item/BY8783" class="btn btn-white btn-have-arrow btn-have-opacity">
+										<span>立即购买</span>
+									</a>
+								</div> -->
+							</div>
+							<div class="swiper-slide">
+								<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/tubular/AB/shoes_06.png"},
+										"medium":{"high":"", "normal":"../static/images/tubular/AB/shoes_06.png"},
+										"small":{"high":"", "normal":"../static/images/tubular/AB/shoes_06.png"}
+								}' />
+								<!-- <div class="action-sports-banner-btn">
+									<a href="https://pro.adidas.com.cn/item/BZ0000" class="btn btn-white btn-have-arrow btn-have-opacity">
+										<span>立即购买</span>
+									</a>
+								</div> -->
+							</div>
+							<div class="swiper-slide">
+								<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/tubular/c/shoes_05.png"},
+										"medium":{"high":"", "normal":"../static/images/tubular/c/shoes_05.png"},
+										"small":{"high":"", "normal":"../static/images/tubular/c/shoes_05.png"}
+								}' />
+								<!-- <div class="action-sports-banner-btn">
+									<a href="https://pro.adidas.com.cn/item/BY9390" class="btn btn-white btn-have-arrow btn-have-opacity">
+										<span>立即购买</span>
+									</a>
+								</div> -->
+							</div>
+							<div class="swiper-slide">
+								<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/tubular/YO/shoes_01.png"},
+										"medium":{"high":"", "normal":"../static/images/tubular/YO/shoes_01.png"},
+										"small":{"high":"", "normal":"../static/images/tubular/YO/shoes_01.png"}
+								}' />
+								<!-- <div class="action-sports-banner-btn">
+									<a href="https://pro.adidas.com.cn/item/BY9509" class="btn btn-white btn-have-arrow btn-have-opacity">
+										<span>立即购买</span>
+									</a>
+								</div> -->
+							</div>
+						</div>
+						<!-- 箭头 -->
+						<div class="action-sports-swiper-btn">
+							<div class="swiper-button-prev">
+								<i class="icon icon-action-sports-arrow-l"></i>
+							</div>
+							<div class="swiper-button-next">
+								<i class="icon icon-action-sports-arrow-r"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="article">
+
+			<div class="swiper-box-03">
+				<div class="swiper-container events-swiper2-eject swiper-container3">
+					<div class="swiper-wrapper">
+						<!-- 鹿晗  -->
+						<div class="swiper-slide">
+							<div class="hover-scale float-clearfix">
+								<div class="box-left float-clearfix">
+									<div class="events-scale show-left">
+										<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/tubular/l/tubular-pc_02.jpg"},
+												"medium":{"high":"", "normal":"../static/images/tubular/l/tubular-pc_02.jpg"},
+												"small":{"high":"", "normal":"../static/images/tubular/l/tubular-mob_02.jpg"}
+										}' />
+									</div>
+									<div class="show-right">
+										<div class="events-scale">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/l/tubular-pc_03.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/l/tubular-pc_03.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/l/tubular-mob_03.jpg"}
+											}' />
+										</div>
+										<div class="events-scale">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/l/tubular-pc_05.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/l/tubular-pc_05.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/l/tubular-mob_05.jpg"}
+											}' />
+										</div>
+									</div>
+								</div>
+								<div class="box-right">
+									<div class="buy-btn">
+										<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/tubular/l/tubular-pc_04.jpg"},
+												"medium":{"high":"", "normal":"../static/images/tubular/l/tubular-pc_04.jpg"},
+												"small":{"high":"", "normal":"../static/images/tubular/l/tubular-mob_04.jpg"}
+										}' />
+										<a href="https://www.adidas.com.cn/item/CQ1410" class="action-box4-btn btn btn-black btn-have-arrow">
+											<span>立即购买</span>
+										</a>
+									</div>
+									<div class="show-right float-clearfix">
+										<div class="events-scale show-01">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/l/tubular-pc_06.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/l/tubular-pc_06.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/l/tubular-mob_06.jpg"}
+											}' />
+										</div>
+										<div class="events-scale show-02">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/l/tubular-pc_07.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/l/tubular-pc_07.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/l/tubular-mob_07.jpg"}
+											}' />
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/tubular/l/tubular-pc_08.jpg"},
+										"medium":{"high":"", "normal":"../static/images/tubular/l/tubular-pc_08.jpg"},
+										"small":{"high":"", "normal":"../static/images/tubular/l/tubular-mob_08.jpg"}
+								}' />
+								<a href="https://www.adidas.com.cn/item/CD1717" class="btn-01"></a>
+								<a href="https://www.adidas.com.cn/item/CD1714" class="btn-02"></a>
+								<a href="http://www.adidas.com.cn/originals_tubular" class="btn-03 btn btn-white btn-have-arrow">
+									<span>购买所有服饰</span>
+								</a>
+							</div>
+						</div>
+						<!-- 范冰冰1 -->
+						<div class="swiper-slide">
+							<div class="hover-scale float-clearfix">
+								<div class="box-left float-clearfix">
+									<div class="events-scale show-left">
+										<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/tubular/f1/tubular-pc_02.jpg"},
+												"medium":{"high":"", "normal":"../static/images/tubular/f1/tubular-pc_02.jpg"},
+												"small":{"high":"", "normal":"../static/images/tubular/f1/tubular-mob_02.jpg"}
+										}' />
+									</div>
+									<div class="show-right">
+										<div class="events-scale">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/f1/tubular-pc_03.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/f1/tubular-pc_03.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/f1/tubular-mob_03.jpg"}
+											}' />
+										</div>
+										<div class="events-scale">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/f1/tubular-pc_05.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/f1/tubular-pc_05.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/f1/tubular-mob_05.jpg"}
+											}' />
+										</div>
+									</div>
+								</div>
+								<div class="box-right">
+									<div class="buy-btn">
+										<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/tubular/f1/tubular-pc_04.jpg"},
+												"medium":{"high":"", "normal":"../static/images/tubular/f1/tubular-pc_04.jpg"},
+												"small":{"high":"", "normal":"../static/images/tubular/f1/tubular-mob_04.jpg"}
+										}' />
+										<a href="https://www.adidas.com.cn/item/BZ0631" class="action-box4-btn btn btn-black btn-have-arrow">
+											<span>立即购买</span>
+										</a>
+									</div>
+									<div class="show-right float-clearfix">
+										<div class="events-scale show-01">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/f1/tubular-pc_06.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/f1/tubular-pc_06.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/f1/tubular-mob_06.jpg"}
+											}' />
+										</div>
+										<div class="events-scale show-02">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/f1/tubular-pc_07.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/f1/tubular-pc_07.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/f1/tubular-mob_07.jpg"}
+											}' />
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/tubular/f1/tubular-pc_08.jpg"},
+										"medium":{"high":"", "normal":"../static/images/tubular/f1/tubular-pc_08.jpg"},
+										"small":{"high":"", "normal":"../static/images/tubular/f1/tubular-mob_08.jpg"}
+								}' />
+								<a href="https://www.adidas.com.cn/item/BR4519" class="btn-01"></a>
+								<a href="https://www.adidas.com.cn/item/BR4428" class="btn-02"></a>
+								<a href="http://www.adidas.com.cn/originals_tubular" class="btn-03 btn btn-white btn-have-arrow">
+									<span>购买所有服饰</span>
+								</a>
+							</div>
+						</div>
+						<!-- 范冰冰2 -->
+						<div class="swiper-slide">
+							<div class="hover-scale float-clearfix">
+								<div class="box-left float-clearfix">
+									<div class="events-scale show-left">
+										<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/tubular/f2/tubular-pc_02.jpg"},
+												"medium":{"high":"", "normal":"../static/images/tubular/f2/tubular-pc_02.jpg"},
+												"small":{"high":"", "normal":"../static/images/tubular/f2/tubular-mob_02.jpg"}
+										}' />
+									</div>
+									<div class="show-right">
+										<div class="events-scale">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/f2/tubular-pc_03.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/f2/tubular-pc_03.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/f2/tubular-mob_03.jpg"}
+											}' />
+										</div>
+										<div class="events-scale">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/f2/tubular-pc_05.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/f2/tubular-pc_05.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/f2/tubular-mob_05.jpg"}
+											}' />
+										</div>
+									</div>
+								</div>
+								<div class="box-right">
+									<div class="buy-btn">
+										<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/tubular/f2/tubular-pc_04.jpg"},
+												"medium":{"high":"", "normal":"../static/images/tubular/f2/tubular-pc_04.jpg"},
+												"small":{"high":"", "normal":"../static/images/tubular/f2/tubular-mob_04.jpg"}
+										}' />
+										<a href="https://www.adidas.com.cn/item/BY9742" class="action-box4-btn btn btn-black btn-have-arrow">
+											<span>立即购买</span>
+										</a>
+									</div>
+									<div class="show-right float-clearfix">
+										<div class="events-scale show-01">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/f2/tubular-pc_06.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/f2/tubular-pc_06.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/f2/tubular-mob_06.jpg"}
+											}' />
+										</div>
+										<div class="events-scale show-02">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/f2/tubular-pc_07.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/f2/tubular-pc_07.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/f2/tubular-mob_07.jpg"}
+											}' />
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/tubular/f2/tubular-pc_08.jpg"},
+										"medium":{"high":"", "normal":"../static/images/tubular/f2/tubular-pc_08.jpg"},
+										"small":{"high":"", "normal":"../static/images/tubular/f2/tubular-mob_08.jpg"}
+								}' />
+								<a href="https://www.adidas.com.cn/item/BP9482" class="btn-01 mob-f2-1"></a>
+								<a href="https://www.adidas.com.cn/item/BP5246" class="btn-02 mob-f2-2"></a>
+								<a href="http://www.adidas.com.cn/originals_tubular" class="btn-03 btn btn-white btn-have-arrow">
+									<span>购买所有服饰</span>
+								</a>
+							</div>
+						</div>
+						<!-- BAB -->
+						<div class="swiper-slide">
+							<div class="hover-scale float-clearfix">
+								<div class="box-left float-clearfix">
+									<div class="events-scale show-left">
+										<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/tubular/AB/tubular-pc_02.jpg"},
+												"medium":{"high":"", "normal":"../static/images/tubular/AB/tubular-pc_02.jpg"},
+												"small":{"high":"", "normal":"../static/images/tubular/AB/tubular-mob_02.jpg"}
+										}' />
+									</div>
+									<div class="show-right">
+										<div class="events-scale">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/AB/tubular-pc_03.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/AB/tubular-pc_03.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/AB/tubular-mob_03.jpg"}
+											}' />
+										</div>
+										<div class="events-scale">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/AB/tubular-pc_05.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/AB/tubular-pc_05.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/AB/tubular-mob_05.jpg"}
+											}' />
+										</div>
+									</div>
+								</div>
+								<div class="box-right">
+									<div class="buy-btn">
+										<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/tubular/AB/tubular-pc_04.jpg"},
+												"medium":{"high":"", "normal":"../static/images/tubular/AB/tubular-pc_04.jpg"},
+												"small":{"high":"", "normal":"../static/images/tubular/AB/tubular-mob_04.jpg"}
+										}' />
+										<a href="https://www.adidas.com.cn/item/BY9743" class="action-box4-btn btn btn-black btn-have-arrow">
+											<span>立即购买</span>
+										</a>
+									</div>
+									<div class="show-right float-clearfix">
+										<div class="events-scale show-01">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/AB/tubular-pc_06.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/AB/tubular-pc_06.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/AB/tubular-mob_06.jpg"}
+											}' />
+										</div>
+										<div class="events-scale show-02">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/AB/tubular-pc_07.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/AB/tubular-pc_07.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/AB/tubular-mob_07.jpg"}
+											}' />
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/tubular/AB/tubular-pc_08.jpg"},
+										"medium":{"high":"", "normal":"../static/images/tubular/AB/tubular-pc_08.jpg"},
+										"small":{"high":"", "normal":"../static/images/tubular/AB/tubular-mob_08.jpg"}
+								}' />
+								<a href="https://www.adidas.com.cn/item/BR4436" class="btn-01 mob-ab-1"></a>
+								<a href="https://www.adidas.com.cn/item/BR4487" class="btn-02 mob-ab-2"></a>
+								<a href="http://www.adidas.com.cn/originals_tubular" class="btn-03 btn btn-white btn-have-arrow">
+									<span>购买所有服饰</span>
+								</a>
+							</div>
+						</div>
+						<!-- 陈奕迅 -->
+						<div class="swiper-slide">
+							<div class="hover-scale float-clearfix">
+								<div class="box-left float-clearfix">
+									<div class="events-scale show-left">
+										<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/tubular/c/tubular-pc_02.jpg"},
+												"medium":{"high":"", "normal":"../static/images/tubular/c/tubular-pc_02.jpg"},
+												"small":{"high":"", "normal":"../static/images/tubular/c/tubular-mob_02.jpg"}
+										}' />
+									</div>
+									<div class="show-right">
+										<div class="events-scale">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/c/tubular-pc_03.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/c/tubular-pc_03.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/c/tubular-mob_03.jpg"}
+											}' />
+										</div>
+										<div class="events-scale">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/c/tubular-pc_05.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/c/tubular-pc_05.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/c/tubular-mob_05.jpg"}
+											}' />
+										</div>
+									</div>
+								</div>
+								<div class="box-right">
+									<div class="buy-btn">
+										<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/tubular/c/tubular-pc_04.jpg"},
+												"medium":{"high":"", "normal":"../static/images/tubular/c/tubular-pc_04.jpg"},
+												"small":{"high":"", "normal":"../static/images/tubular/c/tubular-mob_04.jpg"}
+										}' />
+										<a href="https://www.adidas.com.cn/item/BY4392" class="action-box4-btn btn btn-black btn-have-arrow">
+											<span>立即购买</span>
+										</a>
+									</div>
+									<div class="show-right float-clearfix">
+										<div class="events-scale show-01">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/c/tubular-pc_06.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/c/tubular-pc_06.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/c/tubular-mob_06.jpg"}
+											}' />
+										</div>
+										<div class="events-scale show-02">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/c/tubular-pc_07.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/c/tubular-pc_07.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/c/tubular-mob_07.jpg"}
+											}' />
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/tubular/c/tubular-pc_08.jpg"},
+										"medium":{"high":"", "normal":"../static/images/tubular/c/tubular-pc_08.jpg"},
+										"small":{"high":"", "normal":"../static/images/tubular/c/tubular-mob_08.jpg"}
+								}' />
+								<a href="https://www.adidas.com.cn/item/BR4146" class="btn-c"></a>
+								<a href="http://www.adidas.com.cn/originals_tubular" class="btn-03 btn btn-white btn-have-arrow">
+									<span>购买所有服饰</span>
+								</a>
+							</div>
+						</div>
+						<!-- yosuke -->
+						<div class="swiper-slide">
+							<div class="hover-scale float-clearfix">
+								<div class="box-left float-clearfix">
+									<div class="events-scale show-left">
+										<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/tubular/YO/tubular-pc_02.jpg"},
+												"medium":{"high":"", "normal":"../static/images/tubular/YO/tubular-pc_02.jpg"},
+												"small":{"high":"", "normal":"../static/images/tubular/YO/tubular-mob_02.jpg"}
+										}' />
+									</div>
+									<div class="show-right">
+										<div class="events-scale">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/YO/tubular-pc_03.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/YO/tubular-pc_03.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/YO/tubular-mob_03.jpg"}
+											}' />
+										</div>
+										<div class="events-scale">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/YO/tubular-pc_05.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/YO/tubular-pc_05.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/YO/tubular-mob_05.jpg"}
+											}' />
+										</div>
+									</div>
+								</div>
+								<div class="box-right">
+									<div class="buy-btn">
+										<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/tubular/YO/tubular-pc_04.jpg"},
+												"medium":{"high":"", "normal":"../static/images/tubular/YO/tubular-pc_04.jpg"},
+												"small":{"high":"", "normal":"../static/images/tubular/YO/tubular-mob_04.jpg"}
+										}' />
+										<a href="https://www.adidas.com.cn/item/BY3564" class="action-box4-btn btn btn-black btn-have-arrow">
+											<span>立即购买</span>
+										</a>
+									</div>
+									<div class="show-right float-clearfix">
+										<div class="events-scale show-01">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/YO/tubular-pc_06.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/YO/tubular-pc_06.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/YO/tubular-mob_06.jpg"}
+											}' />
+										</div>
+										<div class="events-scale show-02">
+											<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/tubular/YO/tubular-pc_07.jpg"},
+													"medium":{"high":"", "normal":"../static/images/tubular/YO/tubular-pc_07.jpg"},
+													"small":{"high":"", "normal":"../static/images/tubular/YO/tubular-mob_07.jpg"}
+											}' />
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/tubular/YO/tubular_02.jpg"},
+										"medium":{"high":"", "normal":"../static/images/tubular/YO/tubular_02.jpg"},
+										"small":{"high":"", "normal":"../static/images/tubular/YO/tubular-mob_08.jpg"}
+								}' />
+								<a href="https://www.adidas.com.cn/item/BQ1890" class="btn-01"></a>
+								<a href="https://www.adidas.com.cn/item/BQ1903" class="btn-02"></a>
+								<a href="http://www.adidas.com.cn/originals_tubular" class="btn-03 btn btn-white btn-have-arrow">
+									<span>购买所有服饰</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- 箭头 -->
+					<div class="swiper-button-prev">
+						<i class="left-arrow1"></i><i class="left-arrow2"></i>
+					</div>
+					<div class="swiper-button-next">
+						<i class="right-arrow1"></i><i class="right-arrow2"></i>
+					</div>
+				</div>
+
+				<!-- <div class="action-box3-btn">
+					<a href="" class="btn btn-white btn-have-arrow">
+						<span>购买所有服饰</span>
+					</a>
+				</div> -->
+				<!-- <p class="title">潮流穿搭</p> -->
+			</div>
+		</article>
+
+		<article class="article more-commodity-article more-commodity-man">
+			<div class="product-list">
+				<div class="product-title">
+					<p>全部鞋类</p>
+				</div>
+				<div class="row product-list-cont float-clearfix">
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CQ1410">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-1.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CQ1410" class="goods-title">
+									<p>TUBULAR RADIAL 经典鞋</p>
+									<span>中性 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,099</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BY4392">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-2.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BY4392" class="goods-title">
+									<p>TUBULAR SHADOW 经典鞋</p>
+									<span>中性 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥999</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BY3564">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-3.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BY3564" class="goods-title">
+									<p>TUBULAR DOOM SOCK PK 经典鞋</p>
+									<span>中性 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,199</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BY2123">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-4.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BY2123" class="goods-title">
+									<p>TUBULAR DAWN W 经典鞋</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,299</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BY9746">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-5.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BY9746" class="goods-title">
+									<p>TUBULAR VIRAL2 W 经典鞋</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥999</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BZ0631">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-6.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BZ0631" class="goods-title">
+									<p>TUBULAR DAWN W 经典鞋</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,299</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="article more-commodity-article more-commodity-man">
+			<div class="product-list">
+				<div class="product-title">
+					<p>全部服饰</p>
+				</div>
+				<div class="row product-list-cont float-clearfix">
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CD1714">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-7.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CD1714" class="goods-title">
+									<p>防风衣</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥899</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CD1717">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-8.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CD1717" class="goods-title">
+									<p>卫衣</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥699</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ1814">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-9.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ1814" class="goods-title">
+									<p>卫衣</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥699</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ1890">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-10.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ1890" class="goods-title">
+									<p>运动外套</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥899</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ1903">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-11.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ1903" class="goods-title">
+									<p>运动裤</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥799</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BR4146">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-12.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BR4146" class="goods-title">
+									<p>外套茄克</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,099</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BP5246">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-13.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BP5246" class="goods-title">
+									<p>绑腿裤</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥299</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BP9482">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-14.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BP9482" class="goods-title">
+									<p>套头衫</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥599</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BR4428">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-15.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BR4428" class="goods-title">
+									<p>裙子</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥799</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BR4432">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-16.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BR4432" class="goods-title">
+									<p>卫衣</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥899</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BR4436">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-17.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BR4436" class="goods-title">
+									<p>运动外套</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥799</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BR4467">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-18.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BR4467" class="goods-title">
+									<p>短袖上衣</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥449</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BR4487">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-19.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BR4487" class="goods-title">
+									<p>裙子</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥599</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BR4519">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-tubular/tubular-img-20.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BR4519" class="goods-title">
+									<p>运动外套</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,099</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</article>
+
+		<script type="text/javascript">
+			$(function() {
+				// swiper8个轮播
+				var arr = [];
+				var mySwiper1 = new Swiper('.events-swiper1-eject', {
+					slidesPerView: 'auto',
+			        loop: true,
+			        centeredSlides: true,
+			        paginationClickable: true,
+			        spaceBetween: 64,
+				    prevButton:'.swiper-button-prev',
+				    nextButton:'.swiper-button-next',
+				    initialSlide: 0
+				});
+
+				// 底部最后个轮播
+				var mySwiper2 = new Swiper('.events-swiper2-eject', {
+					loop: true,
+					slidesPerView : 'auto',
+					spaceBetween : 0,
+					// 监视器，动态更新banner
+					observer: true,
+					observeParents: true,
+					nextButton: '.swiper-button-next',
+					prevButton: '.swiper-button-prev'
+				});
+				mySwiper1.params.control = mySwiper2;
+				mySwiper2.params.control = mySwiper1;
+				var Swiper3 = new Swiper('#swiper-container3',{
+					control: [mySwiper1, mySwiper2],//控制前面两个Swiper
+				});
+
+
+				// 放大
+				//
+				$('.events-scale img').on('mouseenter', function() {
+					$(this).css({ 'transition': 'transform 7.5s linear', 'transform': 'scale(1.3)' });
+					$(this).parent().parent().find('i').css({ 'transition': 'transform 1s linear', 'transform': 'rotate(180deg)' })
+				})
+
+				// 复原
+				//
+				$('.events-scale img').on('mouseleave', function() {
+					$(this).css({ 'transition': 'none', 'transform': 'none'});
+					$(this).parent().parent().find('i').css({ 'transition': 'transform 1s linear', 'transform': 'rotate(-180deg)'});
+				})
+
+				// 視頻播放
+				$('.e-video-open').on('tap', function(e) {
+					e.preventDefault();
+			        openVideo('CB33444B7A8902789C33DC5901307461','true');
+			    });
+			});
+		</script>
+	</section>
+	<%include _includes/modules/footer.html %>
+	<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	<!-- 视频弹层 -->
+	<script id="video-dialog" type="text/template">
+		<div class="dialog">
+			<div class="dialog-container">
+				<div class="loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+				<div class="video-content">
+
+				</div>
+			</div>
+			<i class="icon icon-close dialog-close">&times;</i>
+		</div>
+	</script>
+</div>
+</body>
+</html>

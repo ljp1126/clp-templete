@@ -1,0 +1,1399 @@
+@charset "UTF-8";
+/* input placeholder文字颜色 */
+	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	color: #000;
+	}
+	input:-moz-placeholder, textarea:-moz-placeholder {
+	color: #000;
+	}
+	input::-moz-placeholder, textarea::-moz-placeholder {
+	color: #000;
+	}
+	input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+	color: #000;
+	}
+	/* end */
+.article-faq-width{
+	width: 100%;
+	max-width: 1920px;
+	.search-page-content{
+    	.ask-help-search-container{
+    		background: linear-gradient(to top left,#c1c0c3,#e7e5e2);
+    		position: relative;
+    		.ask-help-search{
+				max-width: 950px;
+				margin:0 auto;
+				max-height: 282px;
+				padding:40px 0 51px;
+                position: relative;
+				.help-container{
+					margin:0 0 31px;
+					width:380px;
+					height: 120px;
+					.title-48{
+						font-size: 46px;
+						line-height: 60px;
+						span{
+							display: block;
+						}
+					}
+					&:before {
+					    background-image: url(../../images/faq/seach_bg.png);
+				        content: '';
+					    width: 490px;
+					    height: 100%;
+					    position: absolute;
+					    top: 0;
+					    right: 50%;
+					    margin-right: -475px;
+					    background-repeat: no-repeat;
+					    background-position: center;
+                    }
+                    
+                    & + .info{
+                        font-size: 16px;
+                        width: 40%;
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%); 
+                        margin-top: -30px;
+                    }
+				}
+				// 搜索框
+				.help-search-container{
+					width: 950px;
+					margin-bottom: 51px;
+					.form-group{
+						div{
+							&.dropdown{
+								.btn{
+									background: transparent;
+									padding:0;
+									border: none;
+									height: 40px;
+									line-height: 40px;
+									padding: 0 100px 0 0;
+									input{
+										padding-right: 10px;
+										&:focus{
+											border: 1px solid #C8CBCC;
+											border-bottom: 1px solid #C8CBCC;
+											margin-top: 0;
+											padding-top: 0px;
+										}
+									}
+									a{
+										display: block;
+									    height: 100%;
+									    position: absolute;
+									    right: 0;
+									    top: 0px;
+									    width: 100px;
+									    cursor: pointer;
+									    border:0;
+									    height: 40px;
+									    line-height: 40px;
+										&.btn-blue{
+											background: #0287CD;
+											min-width: 100px;
+											line-height: 40px;
+											color: #fff;
+											font-size: 16px;
+											z-index: 1;
+											padding: 0 20px 0 4px;
+											span{
+												&:after {
+													right: -20px;
+												}
+											}
+										}
+									}
+									&:hover{
+										background-color: transparent;
+									}
+								}
+								.sub-menu{
+									background: #FFFFFF;
+									border: 1px solid #C8CBCC;
+									border-top:none;
+									border-radius: 0;
+									padding: 0;
+									.viewport{
+										max-height: 306px;
+										.overview{
+											ul{
+												li{
+													border-bottom: 1px solid #C8CBCC;
+													&:last-child{
+														border:none;
+													}
+													a{
+														color: #000;
+														font-size: 14px;
+														padding: 13px 18px 13px 10px;
+														p{
+															font-size: 14px;
+															line-height: 20px;
+														}
+													}
+													&:hover{
+														background: #F9F9F9;
+													}
+												}
+											}
+										}
+									}
+									.tinyscrollbar{
+
+									}
+									.scrollbar{
+										/*width: 0;*/
+										.track{
+											.thumb{}
+										}
+									}
+								}
+
+							}
+						}
+					}
+				}
+			}
+    	}
+    	.help-container{
+			max-width: 950px;
+			margin: 0 auto;
+    	}
+		.help-categories-content{
+			margin-top: 30px;
+			h2{
+				font-size: 24px;
+				line-height: 24px;
+				margin-bottom: 20px;
+			}
+			.contentasset{
+				padding-bottom: 35px;
+				margin-bottom: 44px;
+				border-bottom: 1px dotted #C8CBCC;
+				>li{
+					width: 288px;
+					display: block;
+					float: left;
+					&.questions1{
+						margin-right: 186px;
+						ul{
+							li{
+								display: block;
+								a{
+									font-size: 18px;
+									line-height: 38px;
+									color: #0087D3;
+									display: block;
+								}
+							}
+						}
+					}
+					&.questions2{
+						ul{
+							li{
+								display: block;
+								a{
+									font-size: 18px;
+									line-height: 38px;
+									color: #0087D3;
+									display: block;
+								}
+							}
+						}
+					}
+				}
+			}
+			// 帮助中心
+			.help-categories-nav {
+				width: 100%;
+				margin-bottom: 40px;
+				h2{
+					font-size: 36px;
+					line-height: 48px;
+					margin-bottom: 37px;
+				}
+				.help-nav {
+					max-height: 384px;
+					background: #F9F9F9;
+					.help-nav-content {
+						position: relative;
+						.help-nav-items {
+							width: 38%;
+							height: 46px;
+							line-height: 46px;
+							background: #fff;
+							border-bottom:1px solid #C8CBCC;
+							label{
+								font-size: 18px;
+								padding: 0 10px;
+								height: 46px;
+								line-height: 46px;
+								width: 100%;
+								display: inline-block;
+								cursor: pointer;
+								.iconleft-box{
+								    width: 30px;
+								    height: 30px;
+								    display: block;
+								    vertical-align: middle;
+								    float: left;
+								    margin-right: 15px;
+								}
+								a{
+									display: inline-block;
+									&:hover{
+										color: #000;
+										text-decoration: underline;
+									}
+								}
+								.iconright-box{
+									display: block;
+									float: right;
+								}
+								i{
+									vertical-align: middle;
+								}
+								.icon-delivery{
+									width: 27px;
+									height: 17px;
+								}
+								.icon-refund{
+									width: 29px;
+									height: 25px;
+								}
+
+								.icon-payment{
+									width: 26px;
+									height: 21px;
+								}
+								.icon-size{
+									width: 30px;
+									height: 25px;
+								}
+								.icon-newsletter{
+									width: 24px;
+									height: 26px;
+								}
+								.icon-sale{
+									width: 28px;
+									height: 21px;
+								}
+								.icon-products{
+									width: 30px;
+									height: 14px;
+								}
+								.icon-company{
+									width: 28px;
+									height: 21px;
+								}
+								.icon-arrow{
+									width: 8px;
+									height: 15px;
+								}
+								.icon-miadidas,
+								.icon-Print{
+									width: 26px;
+									height: 32px;
+								}
+							}
+							.help-tab{
+								display: none;
+								padding-top: 6px;
+								position: absolute;
+								top: 0;
+								left: 38%;
+								width: 60%;
+								margin-left: 10px;
+								li{
+									line-height: 40px;
+									height: 40px;
+									font-size: 14px;
+									padding: 10px 0;
+									line-height: 20px;
+									height: auto;
+									a{
+										display: block;
+										color: #0087D3;
+									}
+								}
+								&.help-tab-show{
+									display: block;
+								}
+							}
+							&.is-active{
+								background: #F9F9F9;
+							}
+							&:hover{
+								background: #F9F9F9;
+							}
+						}
+					}
+				}
+			}
+		}
+		//如何查询订单
+		.help-myaccount{
+			border-top: 1px solid #e3e5e5;
+		    border-bottom: 1px solid #e3e5e5;
+		    position: relative;
+		    margin-bottom: 50px;
+		    .help-myaccount-box{
+				.help-myaccount-left{
+					padding: 22px 0;
+					float: left;
+					width: 50%;
+					padding-right: 23px;
+					.contentasset{
+						h2{
+							margin-bottom: 15px;
+							font-size: 24px;
+							line-height: 24px;
+						}
+						.help-myaccount-text{
+							font-size:12px;
+							line-height: 22px;
+							margin-bottom: 22px;
+						}
+						.help-myaccount-buttons{
+							width: 50%;
+							a{
+								font-size: 16px;
+								display: block;
+								&:nth-child(1){
+									margin-bottom: 20px;
+								}
+							}
+						}
+					}
+				}
+				.help-myaccount-right{
+					padding: 22px 0;
+					float: right;
+					width: 50%;
+					background: #F9F9F9;
+					padding-left: 19px;
+					.customer-care-first{
+						.contentasset{
+							h2{
+								font-size: 18px;
+								margin-bottom: 10px;
+							}
+							h3{
+								font-size: 36px;
+								font-weight: bold;
+								line-height: 36px;
+								margin-bottom: 20px;
+							}
+						}
+						.help-myaccount-support{
+							padding: 17px 0;
+							border-top: 1px dotted #e3e5e5;
+		    				border-bottom: 1px dotted #e3e5e5;
+		    				p{
+		    					font-size: 16px;
+		    					line-height: 16px;
+		    					&.help-myaccount-support-tit{
+									margin-bottom: 14px;
+		    					}
+		    					&.help-myaccount-support-tiem{
+		    						font-size: 14px;
+									color: #888888;
+									line-height: 14px;
+		    					}
+		    				}
+						}
+						.help-myaccount-text{
+							padding: 20px 0;
+							div{
+								height: 50px;
+								line-height:auto;
+								margin-bottom: 0;
+								span{
+									display: inline-block;
+									vertical-align: middle;
+									margin-right: 0;
+									i{
+										width: 50px;
+										height: 50px;
+									}
+									&.help-myaccount-icon{
+										width: 50px;
+										height: 50px;
+										margin-right: 20px;
+									}
+									&.help-myaccount-cont{
+										vertical-align: middle;
+										a{
+											height: 50px;
+											font-size: 18px;
+											line-height: 50px;
+											&:hover{
+												color: #000;
+											}
+										}
+										p{}
+									}
+								}
+								&:nth-child(1){
+									margin-bottom: 10px;
+								}
+							}
+						}
+					}
+				}
+		    }
+		}
+		//faq内页样式
+    	//面包屑
+		.breadcrumb{
+			margin:22px 0 41px;
+			.list-inline{
+				li{
+					height: 14px;
+					line-height: 14px;
+					a{
+						font-size: 14px;
+						line-height: 14px;
+						height: 14px;
+						.icon-reture{
+							width: 14px;
+							height: 14px;
+							margin-right: 5px;
+							vertical-align: text-bottom;
+						}
+						&.reture-text{
+							font-weight: bold;
+						}
+					}
+					&.slash{
+						margin: 0 5px;
+					}
+					&.vertical-line{
+						margin: 0 12px;
+					}
+					&.hele-core{
+						color: #888888;
+					}
+				}
+			}
+		}
+		.contentasset-container{
+			.contentasset{
+				h2{
+					font-size: 24px;
+					line-height: 24px;
+					margin-bottom: 20px;
+				}
+				.contentasset-cont{
+					border-top: 1px solid #C8CBCC;
+					padding: 20px 0 37px;
+					p{
+						font-size: 12px;
+						line-height: 22px;
+					}
+				}
+				&.border-bot-none{
+					border: none;
+					margin-bottom: 0;
+					padding-bottom: 0;
+				}
+				.mb-40{
+					margin-bottom: 40px;
+				}
+				.pb-0{
+					padding-bottom: 0!important;
+				}
+				//为什么订单取消
+				.contentasset-box{
+					li{
+						font-size: 12px;
+						line-height: 22px;
+					}
+				}
+				//为什么订单取消 end
+				//使用什么快递配送
+				.express-cont{
+				    .table-warrenty{
+						background: #FFFFFF;
+						border: 1px solid #C8CBCC;
+						border-radius: 2px;
+						vertical-align: middle !important;
+						thead{
+							background: #555555;
+							th{
+								width: 175px;
+								height: 40px;
+								line-height:40px;
+								padding: 0;
+								font-size: 14px;
+							    display: table-cell;
+							    color: #fff;
+							}
+						}
+						td{
+							width: 175px;
+							height: 40px;
+							line-height:40px;
+							padding: 0;
+							text-align: center;
+						    display: table-cell;
+						}
+						&.express-table-width{
+							width: 525px;
+						}
+				    }
+				}
+				.service-cont{
+					margin-top: 25px;
+					p{
+						font-size: 12px;
+						line-height: 22px;
+					}
+					.contentasset-cont-box{
+						padding-bottom: 40px;
+						li{
+							font-size: 12px;
+							line-height: 22px;
+							position: relative;
+							padding-left: 12px;
+						}
+						li:before {
+						    content: "";
+						    display: block;
+						    position: absolute;
+						    top: 9px;
+						    left: 0;
+						    width: 4px;
+						    height: 4px;
+						    border-radius: 50%;
+						    -webkit-border-radius: 50%;
+						    -moz-border-radius: 50%;
+						    -ms-border-radius: 50%;
+						    -o-border-radius: 50%;
+						    background-color: #404040;
+						}
+					}
+				}
+				//使用什么快递配送 end
+				//快递费用
+				.express-charges-table-con-width{
+					width: 100%;
+					.table-warrenty{
+						thead{
+							th{
+							}
+						}
+						.col-1{
+							width: 176px;
+						}
+						.col-2{
+							width: 216px;
+						}
+						.col-3{
+							width: 176px;
+						}
+						.col-4{
+							width: 229px;
+						}
+						.col-5{
+							width: 145px;
+						}
+						td{
+							height: auto;
+							padding:8px 11px;
+							font-size: 12px;
+						    line-height: 16px;
+							span{
+								display: block;
+								color:#C53622;
+							    padding: 0 6px;
+							    &.cor-0{
+							    	color: #000;
+							    }
+							}
+						}
+					}
+
+				}
+				//快递费用 end
+				//无理由退货
+				&.return-goods-cont{
+					.contentasset-cont{
+					    padding: 20px 0 20px;
+					}
+					.reture-title{
+						font-size: 14px;
+						margin-bottom: 15px;
+						font-weight: 500;
+					}
+					.reture-pro-cont{
+						width: 660px;
+						height: 421px;
+						margin-bottom: 40px;
+					}
+				}
+				//无理由退货 end
+			}
+		}
+		//faq内页样式 end
+	}
+}
+
+
+@media (max-width:1024px){
+	.article-faq-width{
+		width: 100%;
+		.search-page-content{
+	    	.ask-help-search-container{
+	    		background: linear-gradient(to top left,#c1c0c3,#e7e5e2);
+	    		position: relative;
+	    		.ask-help-search{
+					max-width:100%;
+					margin:0 auto;
+					max-height: 188px;
+					padding: 20px;
+					.help-container{
+						padding: 0;
+						margin: 0 0 10px;
+						width:100%;
+						height: 24px;
+						.title-48{
+							font-size: 22px;
+							line-height: 24px;
+							color: #fff;
+							text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+							position: relative;
+							span{
+								display: inline-block;
+							}
+						}
+						&:before {
+				            content: '';
+						    width: 52%;
+						    height: 100%;
+						    position: absolute;
+						    bottom: 0;
+						    right: 0;
+						    background-repeat: no-repeat;
+						    background-size: auto 100%;
+						    margin-right: 0;
+						    background-position: left bottom;
+                        }
+                        
+                        & + .info{
+                            position: relative;
+                            width: 100%;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                            transform: none;
+                        }
+					}
+					// 搜索框
+					.help-search-container{
+						width: 100%;
+						margin-bottom: 52px;
+						.form-group{
+							div{
+								&.dropdown{
+									.btn{
+										padding: 0 120px 0 0;
+										input{}
+										a{
+										    width: 120px;
+										    height: 40px;
+										    line-height: 40px;
+											&.btn-blue{
+												min-width: 120px;
+												font-size: 14px;
+												padding: 0 25px 0 4px;
+												span{
+													&:after {
+														top: 1px;
+														right: -25px;
+													}
+												}
+											}
+										}
+									}
+									.sub-menu{
+										.viewport{
+											.overview{
+												ul{
+													li{
+														a{
+															p{
+															font-size: 12px;
+															line-height: 18px;
+															}
+														}
+													}
+												}
+											}
+										}
+										.tinyscrollbar{
+
+										}
+										.scrollbar{
+											.track{
+												.thumb{}
+											}
+										}
+									}
+
+								}
+							}
+						}
+					}
+				}
+	    	}
+	    	.help-container{
+	    		width: 100%;
+	    		padding: 0 20px;
+				max-width: 100%;
+	    	}
+			.help-categories-content{
+				h2{
+					text-align: center;
+					margin-bottom: 30px;
+				}
+				.contentasset{
+					padding-bottom: 0;
+					margin-bottom:30px;
+					border-bottom: 1px dotted #C8CBCC;
+					>li{
+						width: 100%;
+						display: block;
+						float: left;
+						padding-left: 20px;
+						&.questions1{
+							margin-right: 0;
+							ul{
+								li{
+									a{
+										font-size: 18px;
+										line-height: 20px;
+										padding-bottom: 30px;
+									}
+								}
+							}
+						}
+						&.questions2{
+							ul{
+								li{
+									a{
+										font-size: 18px;
+										line-height: 18px;
+										padding-bottom: 30px;
+									}
+								}
+							}
+						}
+					}
+				}
+				// 帮助中心
+				.help-categories-nav {
+					width: 100%;
+					margin-bottom: 30px;
+					h2{
+						font-size: 24px;
+						line-height: 24px;
+						margin-bottom: 30px;
+					}
+					.help-nav {
+						border: 1px solid #C8CBCC;
+						max-height: 100%;
+						.help-nav-content {
+							position: relative;
+							.help-nav-items {
+								width: 100%;
+								height:auto;
+								line-height: auto;
+								background: #fff;
+								border-bottom:1px solid #C8CBCC;
+								&:last-child{
+									border-bottom: none;
+								}
+								label{
+									font-size: 18px;
+									padding: 0 20px;
+									height: 50px;
+									line-height: 50px;
+									width: 100%;
+									.icon-arrow {
+										transform: rotate(90deg);
+										&.icon-arrow-up {
+											transform: rotate(270deg);
+										}
+									}
+									.iconleft-box{
+									    width: 40px;
+									    height: 40px;
+									    float: left;
+									    margin-right:0;
+									}
+									a{
+										&:hover{
+											text-decoration: none;
+										}
+									}
+									.iconright-box{
+										float: right;
+									    width: 8px;
+									    padding: 0 8px;
+									    height: 40px;
+									}
+								}
+								.help-tab{
+									display: none;
+									padding-top:0;
+									position: static;
+									top: 0;
+									left:0;
+									width: 100%;
+									margin-left: 0;
+									background: #F7F7F7;
+								    padding: 0 20px 0 27px;
+									li{
+										/*line-height: 40px;
+										height: 40px;
+										font-size: 14px;*/
+										a{
+											display: block;
+											color: #0287CD;
+
+										}
+									}
+									&.help-tab-show{
+										display: block;
+									}
+								}
+								&.is-active{
+									background: #F9F9F9;
+									border-bottom:none;
+								}
+								&:hover{
+									background: #F9F9F9;
+								}
+							}
+						}
+					}
+				}
+			}
+			//如何查询订单
+			.help-myaccount{
+				border-top: none;
+			    border-bottom: none;
+			    position: relative;
+			    margin: 0;
+			    padding: 0;
+			    .help-myaccount-box{
+
+					.help-myaccount-left{
+						border-top: 1px dotted #e3e5e5;
+						margin: 0 20px;
+						padding: 30px 10px 30px 0px;
+						width:90%;
+						height: 100%;
+						.contentasset{
+							h2{
+								line-height: 24px;
+							}
+							.help-myaccount-text{
+								font-size:14px;
+								line-height: 14px;
+								margin-bottom: 14px;
+								p{
+									font-size:14px;
+									line-height: 28px;
+								}
+							}
+							.help-myaccount-buttons{
+								width: 100%;
+								max-width: 100%;
+								a{
+									display: block;
+									&:nth-child(1){
+										margin-bottom: 10px;
+									}
+								}
+							}
+						}
+					}
+					.help-myaccount-right{
+						margin: 0 ;
+						padding: 30px 0;
+						float: right;
+						width: 100%;
+						background: #F9F9F9;
+						height: 100%;
+						padding-left: 20px;
+						.customer-care-first{
+							.contentasset{
+								text-align: center;
+								h2{
+									font-size: 14px;
+									line-height: 14px;
+									margin-bottom: 20px;
+								}
+								h3{
+									font-size: 24px;
+									font-weight: bold;
+									line-height: 24px;
+									margin-bottom: 30px;
+
+								}
+							}
+							.help-myaccount-support{
+							}
+							.help-myaccount-text{
+								padding: 0;
+								div{
+									height: 60px;
+									line-height:auto;
+									margin-bottom: 0;
+									span{
+										display: inline-block;
+										vertical-align: middle;
+										margin-right: 0;
+										i{
+											width: 50px;
+											height: 50px;
+										}
+										&.help-myaccount-icon{
+											width: 50px;
+											height: 50px;
+											margin-right: 20px;
+										}
+										&.help-myaccount-cont{
+											vertical-align: middle;
+											a{
+												height: 26px;
+												font-size: 18px;
+												line-height: 26px;
+												margin-bottom: 0px;
+											}
+											p{
+												height: 20px;
+												font-size: 12px;
+												line-height: 20px;
+											}
+										}
+									}
+									&:nth-child(1){
+										margin-bottom: 10px;
+									}
+								}
+							}
+						}
+					}
+			    }
+			}
+			//faq内页样式
+			//面包屑
+			.breadcrumb{
+				margin:30px 0 30px;
+				.list-inline{
+					li{
+						a{
+							.icon-reture{
+								width: 15px;
+							}
+							&.reture-text{}
+						}
+						&.slash{}
+						&.vertical-line{}
+						&.hele-core{}
+					}
+				}
+			}
+			.contentasset-container{
+				.contentasset{
+					h2{
+						margin-bottom: 30px;
+					}
+					.contentasset-cont{
+						border-top: 1px dotted #C8CBCC;
+						padding: 20px 0 20px;
+						p{
+							font-size: 14px;
+							line-height: 24px;
+						}
+					}
+					&.border-bot-none{
+						h2{
+							text-align: left;
+						}
+					}
+					//滚动条
+					.express-cont{
+						.scroller-wrap{
+						    margin-right: 0px;
+						    .iScrollHorizontalScrollbar{
+								.iScrollIndicator{
+									background:rgba(204, 204, 204, 1)!important;
+								}
+							}
+						}
+					}
+					//为什么订单取消
+					.contentasset-box{
+						li{
+							font-size: 14px;
+							line-height: 24px;
+						}
+					}
+					//为什么订单取消 end
+					//使用什么快递配送
+					.express-cont{
+					    .table-warrenty{
+					    	cursor: e-resize;
+							thead{
+								background: #555555;
+								th{
+									width: 167px;
+									min-width: 167px;
+								}
+							}
+							td{
+								width: 167px;
+								min-width: 167px;
+							}
+							&.express-table-width{
+								width: 335px;
+							}
+					    }
+						.express-table{
+							position: relative;
+							overflow: hidden;
+							padding-bottom: 6px;
+							&.express-table-con-width{
+								width: 335px;
+							}
+						}
+					}
+					.service-cont{
+						p{
+							font-size: 14px;
+							line-height: 24px;
+						}
+						.contentasset-cont-box{
+							padding-bottom: 20px;
+							li{
+								font-size: 14px;
+								line-height: 24px;
+								padding-left: 14px;
+							}
+						}
+					}
+					//使用什么快递配送 end
+					//快递费用及发货
+					h2.lh-32{
+						line-height: 32px;
+					}
+					.express-table-mob-continer{
+						position: relative;
+						// height: 412px;
+						.express-table-title{
+						    display: block;
+						    float: left;
+						    position: relative;
+						    width: 100px;
+						    table{
+								background: #555555;
+								td{
+									color: #fff;
+									font-size: 12px;
+									line-height: 24px;
+									border: 1px solid #000000;
+									padding: 5px 7px;
+									font-weight: 300;
+									text-align:center;
+									// &.clm-1{
+									// 	height: 32px;
+									// }
+									// &.clm-2{
+									// 	height: 148px;
+									// }
+									// &.clm-3{
+									// 	height: 48px;
+									// }
+									// &.clm-4{
+									// 	height: 133px;
+									// }
+									// &.clm-5{
+									// 	height: 44px;
+									// }
+								}
+						    }
+						}
+						.express-table-mob-cont{
+							// position: absolute;
+							// top: 0;
+							// left: 0;
+							padding-left: 100px;
+							width: 100%;
+							.table-con-width-mob{
+								height: auto;
+								table{
+									width: 1041px;
+									// .tab-row-1 {
+									// 	height: 32px;
+									// }
+									// .tab-row-2 {
+									// 	height: 148px;
+									// }
+									// .tab-row-3 {
+									// 	height: 48px;
+									// }
+									// .tab-row-4 {
+									// 	height: 133px;
+									// }
+									// .tab-row-5 {
+									// 	height: 44px;
+									// }
+									td{
+										border: 1px solid #000;
+    									text-align: center;
+    									white-space:normal;
+    									word-break:break-all;
+    									padding: 5px 7px;
+    									min-width: 65px;
+    									font-size: 12px;
+    									line-height: 24px;
+									    vertical-align: middle !important;
+									    span{
+									    	display: block;
+									    	color: #C53622;
+									    	&.cor-0{
+										    	color: #000;
+										    	display: inline-block;
+										    }
+
+									    }
+									}
+								}
+							}
+						}
+					}
+					//快递费用及发货 end
+					//无理由退货
+					&.return-goods-cont{
+						.contentasset-cont{
+						    padding: 20px 0 30px;
+						}
+						.reture-title{
+							font-size: 18px;
+							margin-bottom: 30px;
+							&.mb-20{
+								margin-bottom: 20px;
+							}
+						}
+						.reture-pro-cont{
+							width:100%;
+							height: 100%;
+							position: relative;
+							.img-enlarge{
+								position: absolute;
+								width: 37px;
+								height: 37px;
+								right: 0;
+								top: -45px;
+								z-index: 100;
+								i{
+									width: 37px;
+									height: 37px;
+								}
+							}
+						}
+					}
+					//无理由退货 end
+				}
+			}
+			//faq内页样式 end
+		}
+	}
+	//退货流程弹窗
+	.reture-goods{
+		.dialog-scroll-wrap{
+			.dialog-scroll-container{
+				.dialog-scroll{
+					width: 100%;
+					>div{
+						.dialog{
+							min-width: 320px;
+							max-width: 100%;
+							width: 100%;
+							margin: 0;
+							.dialog-container{
+							    padding: 54px 0 0px;
+								border-radius: 0;
+								.reture-goods-cont{
+									.notice-font{
+										position: absolute;
+										top: 0;
+										left: 20px;
+										font-size: 18px;
+										line-height: 54px;
+									}
+									.reture-goods-scroller-container{
+										width: 100%;
+									    border-top: 1px solid #C8CBCC;
+									    padding-top: 20px;
+										.reture-goods-scroller-cont{
+										    position: relative;
+										    overflow: hidden;
+										    padding: 0 0 20px 0;
+										    >div{
+												padding-left: 20px;
+												width: 400px;
+												>div{
+													width: 660px;
+													img{
+														width: 660px;
+														max-width: none;
+													}
+												}
+										    }
+										    .scroller-wrap{
+											    margin-right: 0px;
+											    .iScrollHorizontalScrollbar{
+											    	bottom: -20px;
+											    	height: 10px !important;
+													.iScrollIndicator{
+														background:rgba(204, 204, 204, 1)!important;
+														border-radius: 5px!important;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							.dialog-close {
+							    width: 18px;
+							    height: 18px;
+							    top: 16px;
+							    right: 18px;
+							    font-size: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	//退货流程弹窗 end
+}
+@media (max-width:360px){
+	.article-faq-width {
+		.search-page-content {
+			.contentasset-container {
+				.contentasset {
+					.express-cont {
+						.express-table.express-table-con-width,
+						.table-warrenty.express-table-width{
+							width: 320px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width:320px){
+	.article-faq-width {
+		.search-page-content {
+			.contentasset-container {
+				.contentasset {
+					.express-cont {
+						.express-table.express-table-con-width,
+						.table-warrenty.express-table-width{
+							width: 280px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.article-faq-width{
+		.search-page-content{
+	    	.ask-help-search-container{
+	    		.ask-help-search{
+					.help-container{
+						padding: 0;
+						.title-48{
+							font-size:20px;
+						}
+					}
+				}
+	    	}
+			.help-categories-content{
+				h2{
+					text-align: center;
+					margin-bottom: 30px;
+				}
+				.contentasset{
+					padding-bottom: 0;
+					margin-bottom:30px;
+					border-bottom: 1px dotted #C8CBCC;
+					>li{
+						width: 100%;
+						display: block;
+						float: left;
+						padding-left: 20px;
+						&.questions1{
+							margin-right: 0;
+							ul{
+								li{
+									a{
+										font-size: 16px;
+										line-height: 16px;
+										padding-bottom: 30px;
+									}
+								}
+							}
+						}
+						&.questions2{
+							ul{
+								li{
+									a{
+										font-size: 16px;
+										line-height: 16px;
+										padding-bottom: 30px;
+									}
+								}
+							}
+						}
+					}
+					//滚动条
+					.express-cont{
+						.table-warrenty{
+							.express-table{
+								&.express-table-con-width{
+									width: 280px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//样式同步
+.article-faq-width{
+	.search-page-content{
+		.help-categories-content{
+			h2{
+				font-family: "adineueproblack", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+			}
+		}
+	}
+}

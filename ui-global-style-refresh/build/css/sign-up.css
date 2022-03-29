@@ -1,0 +1,191 @@
+@charset "UTF-8";
+body {
+  background: #ECEDEF;
+}
+.container {
+  padding-bottom: 30px;
+}
+.banner-site {
+  position: relative;
+  margin-bottom: 24px;
+}
+.banner-site img {
+  width: 100%;
+}
+.email-site {
+  position: relative;
+  padding-top: 46px;
+  padding-bottom: 26px;
+}
+.email-sign .tit {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.email-sign .login-box {
+  max-width: 600px;
+  margin: 0 auto 24px;
+  padding: 0 13.5px;
+}
+.email-sign .login-box .tips {
+  font-size: 12px;
+  font-weight: 400;
+  color: #888888;
+  line-height: 16px;
+  margin-top: 8px;
+}
+.email-sign .login-box .tips a {
+  color: #0286CD;
+  text-decoration: underline;
+}
+.form-input {
+  float: left;
+  width: 375px;
+  margin-right: 18px;
+}
+.form-input input {
+  width: 100%;
+  height: 42px;
+}
+.form-input .msg-block .msg-icon {
+  transition: all .2s ease;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+}
+.gl-input__label {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #888888;
+  position: absolute;
+  pointer-events: none;
+  text-transform: uppercase;
+  left: 11px;
+  top: 14px;
+  transition: all .2s ease;
+}
+.gl-input__label--hoisted {
+  font-size: 14px;
+  top: -8px;
+  left: 17px;
+  margin-top: 0;
+  padding: 2px 5px 1px;
+  background-color: #fff;
+}
+.subscribe-btn {
+  float: left;
+  width: 170px;
+}
+.subscribe-btn a {
+  width: 100%;
+  justify-content: center;
+  font-size: 16px;
+}
+.dialog-subscribte .dialog-scroll-container .dialog {
+  width: 483px;
+  padding: 54px 74px;
+}
+.dialog-subscribte .dialog-scroll-container .dialog .dialog-container > div.subscribte-box .tit {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+.dialog-subscribte .dialog-scroll-container .dialog .dialog-container > div.subscribte-box p {
+  font-size: 14px;
+  color: #000;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 12px;
+}
+.dialog-subscribte .dialog-scroll-container .dialog .dialog-container > div.subscribte-box p.email-address {
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.dialog-subscribte .dialog-scroll-container .dialog .dialog-container > div.subscribte-box .btn {
+  min-width: 135px;
+  width: 135px;
+  justify-content: center;
+  font-size: 16px;
+}
+@media screen and (max-width: 1024px) {
+  .banner-site {
+    margin-bottom: 25px;
+  }
+  .email-site {
+    margin-bottom: 25px;
+    padding: 0 20px;
+  }
+  .container {
+    padding-bottom: 0;
+  }
+  .email-sign .tit {
+    text-align: left;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+    margin-bottom: 15px;
+  }
+  .email-sign .login-box {
+    max-width: 100%;
+    padding: 0px;
+  }
+  .email-sign .login-box .tips {
+    margin-top: 11px;
+  }
+  .form-input {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+  .form-input input {
+    height: 40px;
+  }
+  .form-input .msg-block .msg-icon {
+    right: 10px;
+    top: 12px;
+  }
+  .gl-input__label {
+    font-size: 14px;
+  }
+  .gl-input__label--hoisted {
+    font-size: 14px;
+  }
+  .subscribe-btn {
+    margin-top: 20px;
+    float: none;
+    width: 100%;
+  }
+  .subscribe-btn a {
+    width: 100%;
+    justify-content: center;
+  }
+  .dialog-subscribte .dialog-scroll-container .dialog {
+    width: 335px;
+    padding: 30px 18px 18px;
+    margin: 0;
+  }
+  .dialog-subscribte .dialog-scroll-container .dialog .dialog-container > div.subscribte-box .tit {
+    margin-bottom: 12px;
+  }
+  .dialog-subscribte .dialog-scroll-container .dialog .dialog-container > div.subscribte-box p {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  .dialog-subscribte .dialog-scroll-container .dialog .dialog-container > div.subscribte-box p.email-address {
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .dialog-subscribte .dialog-scroll-container .dialog {
+    width: 300px;
+    margin: 0;
+  }
+}

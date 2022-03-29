@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/lp-reba.css">
+	<%include _includes/js.html %>
+	
+</head>
+<body>
+<div id="wrapper">
+	<%include _includes/modules/header.html %>
+	<!-- 内容部分 -->
+	<section class="container">
+		<!-- 模块一 -->
+		<article class="article">
+			<div class="reba-video banner-iterm-video">
+				<a href="">
+					<img class="events-changeSrc" src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-reba/pc_01.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-reba/mob_01.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-reba/mob_01.jpg"}
+					}' />
+				</a>
+			</div>
+			<div>
+				<img class="events-changeSrc" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-reba/pc_02.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-reba/mob_02.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-reba/mob_02.jpg"}
+				}' />
+			</div>
+			<div class="show">
+				<img class="events-changeSrc" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-reba/pc_03.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-reba/mob_03.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-reba/mob_03.jpg"}
+				}' />
+				<!-- 短袖T恤 -->
+				<a href="" class="t-shirt-1"></a>
+				<a href="" class="t-shirt-2"></a>
+				<!-- 休闲鞋 -->
+				<a href="" class="casual-shoes-1"></a>
+				<a href="" class="casual-shoes-2"></a>
+				<!-- 连衣裙  -->
+				<a href="" class="dress-1"></a>
+				<a href="" class="dress-2"></a>
+				
+				<!-- 短裤 -->
+				<a href="" class="shorts-1"></a>
+				<a href="" class="shorts-2"></a>
+				
+				<!-- 查看女子产品 -->
+				<a href="" class="view-women-products"></a>
+				
+				<!-- 查看女子产品 -->
+				<a href="" class="view-man-products"></a>
+			</div>
+		</article>
+		
+		
+
+	</section>
+	<%include _includes/modules/footer.html %>
+	<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	<!-- 视频弹层 -->
+	<script id="video-dialog" type="text/template">
+		<div class="dialog">
+			<div class="dialog-container">
+				<div class="loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+				<div class="video-content">
+
+				</div>
+			</div>
+			<i class="icon icon-close dialog-close">&times;</i>
+		</div>
+	</script>
+</div>
+</body>
+</html>

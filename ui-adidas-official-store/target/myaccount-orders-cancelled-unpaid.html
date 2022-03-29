@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/myaccount-orders.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/myaccount-orders.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+
+		<!-- 内容部分 -->
+		<section class="container">
+			<!-- 模块一 -->
+			<article class="article article-breadcrumb-common-width none-sm">
+				<div class="breadcrumb">
+					<ul class="list-inline">
+						<li><a href="#"><i class="icon icon-round-lightgray-lefts"></i>返回</a></li>
+						<li class="divider">丨</li>
+						<li><a href="/">首页</a></li>
+						<li class="divider">/</li>
+						<li><a href="/">我的账户</a></li>
+					</ul>
+				</div>
+			</article>
+
+			<!-- 模块二 -->
+			<article class="article article-my-width">
+				<div class="my-content-box float-clearfix">
+					<!-- 左 导航 -->
+					<%include _includes/myaccount-left-nav.html %>
+					
+					<!-- 右 内容 -->
+					<div class="myaccount-right">
+						<div class="myaccount-rig-left float-clearfix">
+							<!-- 订单细节class=‘myaccount-orders-details’ -->
+							<div class="myaccount-right-content myaccount-orders-details">
+								<div class="myaccount-right-tit float-clearfix">
+									<h3>我的订单</h3>									
+								</div>
+								
+								<div class="my-orders-item-box">
+									<div class="website-orders-item events-orders-item">
+										<div class="goods-item-box">
+
+											<!-- 不同状态的订单修改添加不同的class 如待发货=goods-item-prepared -->
+											<div class="goods-item-info goods-item-stay-pay goods-item-prepared float-clearfix">
+												<div class="info-details float-clearfix">
+													<div class="info-wrapper">
+														<p class="order-info">
+															<span>
+																<span>下单时间：&nbsp;</span>2017.4.25 10:30:30
+															</span>
+															<strong class="pull-right none block-sm">已取消</strong>
+														</p>
+														<p>
+															<span>
+																<span>订单编号：&nbsp;</span>AD123456789
+															</span>
+														</p>
+														<p>
+															<span>
+																<span>订单总计：&nbsp;</span><span>￥11,000.00</sapn>
+															</span>
+														</p>
+														<p>
+															<span>
+																<span>退款状态：&nbsp;</span><span>取消订单成功，等待退款</span>
+															</span>
+														</p>
+														<p>
+															<span>
+																<span>退款状态：&nbsp;</span><span class="contact-customer-service">退款处理完成，具体退款周期可能受银行，支付机构等相关因素影响。如有疑问，请<a href="#"><strong>联系客服</strong></a></span>
+															</span>
+														</p>
+														<p>
+															<span>
+																<span>取消原因：&nbsp;</span><span>不想要了</span>
+															</span>
+														</p>
+													</div>
+													<div class="jumpbtn">
+														<p class="order-info none-sm">
+															<span>
+																<span>订单状态：&nbsp;</span><strong>已取消</strong>
+															</span>
+														</p>
+													</div>
+												</div>
+												
+												<div class="orders-details-info">
+													<h4>配送信息</h4>
+													<div>
+														<p class="block-inline"><span>收货人：</span><span>凯文</span>，<span>15261595660</span></p>
+														<p>
+															<span>配送地址：</span><span>上海市静安区万荣路1268号云立方B栋宝尊电商IT部</span>
+														</p>
+														<p><span>&nbsp;</span><span>200000</span></p>
+														<p><span>配送方式：</span><span>普通快递</span></p>
+														
+													</div>
+												</div>
+
+
+												<div class="orders-details-info invoice-info">
+													<h4>支付信息</h4>
+													<div>
+														<p class="orders-details-info-mg">
+															<span>支付方式：</span>
+															<span>
+																<label>支付宝</label>
+																<img src="images/check/icon_alipay@2x.png" />
+															</span>
+														</p>
+														<p>
+															<span>发票抬头：</span><span>上海宝尊电子商务有限公司</span>
+														</p>
+														<p>
+															<span>纳税人识别号/统一社会信用代码：</span><span>CH89884</span>
+														</p>
+														<!-- 两种类型的发布结构都在这了，后端自己用相应的结构 -->
+														<p>
+															<span>发票类型：</span><span>增值税专用发票</span>
+														</p>
+														<p>
+															<span>纳税人识别号/统一社会信用代码：</span><span>CH89884</span>
+														</p>
+														<p>
+															<span>公司名称：</span><span>上海宝尊电子商务有限公司</span>
+														</p>
+														<p>
+															<span>公司地址：</span><span>上海市万荣路1168号</span>
+														</p>
+														<p>
+															<span>公司电话：</span><span>021-6667377337</span>
+														</p>
+														<p>
+															<span>开户银行名称：</span><span>中国农业银行宝山支行</span>
+														</p>
+														<p>
+															<span>开户银行账号：</span><span>33223484747483930</span>
+														</p>
+													</div>
+												</div>
+
+												<div class="product-show">
+													<h4>商品详情</h4>
+													<div class="product-list-item">
+														<div class="product-info">
+															<div class="thumbnail float-clearfix">
+															    <a href="">
+															        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+															        <!-- 小图标 笔A -->
+															        <i class="icon icon-personalise"></i>
+															    </a>
+															    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+															    <div class="desc">
+															    	<p class="number">BB0008</p>
+															    	<p>颜色：<span>黄</span></p>
+															    	<p>尺码：<span>41</span></p>
+															    	<!-- <p>左脚文字：<span>james</span></p>
+															    	<p>右脚文字：<span>james</span></p> -->
+															    	<div class="Price-item">
+																    	<span class="Price-text">价格：</span>
+																    	<span class="goods-price">￥799<del class="original-price">￥1,099</del></span>
+																    	<span>&nbsp;&nbsp;x&nbsp;</span>
+																    	<span>1</span>
+																    	<p class="goods-price-total">￥1,998.00</p>
+																    </div>
+															    	<!-- <p>定制费：<span>50</span></p>
+															    	<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p> -->
+															    </div>
+															</div>
+														</div>
+														<div class="btn-wrapper">
+															<div>
+																<a href="myaccount-review.html" class="btn-evaluate" target="_blank"><span>评价</span><i class="icon icon-evaluate"></i></a>
+															</div>
+													
+														</div>
+													</div>
+													<div class="product-list-item">
+														<div class="product-info">
+															<div class="thumbnail float-clearfix">
+															    <a href="">
+															        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+															        <!-- 小图标 笔A -->
+															        <i class="icon icon-personalise"></i>
+															    </a>
+															    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+															    <div class="desc">
+															    	<p class="number">BB0008</p>
+															    	<p>颜色：<span>黄</span></p>
+															    	<p>尺码：<span>41</span></p>
+															    	<!-- <p>左脚文字：<span>james</span></p>
+															    	<p>右脚文字：<span>james</span></p> -->
+															    	<div class="Price-item">
+																    	<span class="Price-text">价格：</span>
+																    	<span class="goods-price">￥799<del class="original-price">￥1,099</del></span>
+																    	<span>&nbsp;&nbsp;x&nbsp;</span>
+																    	<span>1</span>
+																    	<p class="goods-price-total">￥1,998.00</p>
+																    </div>
+															    	<!-- <p>定制费：<span>50</span></p>
+															    	<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p> -->
+															    </div>
+															</div>
+														</div>
+														<div class="btn-wrapper">
+															<div>
+																<a href="myaccount-review.html" target="_blank" class="btn-evaluate"><span>评价</span><i class="icon icon-evaluate"></i></a>
+															</div>
+														
+														</div>
+													</div>
+													<div class="product-list-item">
+														<div class="product-info">
+															<div class="thumbnail float-clearfix">
+															    <a href="">
+															        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+															        <!-- 小图标 笔A -->
+															        <!-- <i class="icon icon-personalise"></i> -->
+															    </a>
+															    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+															    <div class="desc">
+															    	<p class="number">BB0008</p>
+															    	<p>颜色：<span>黄</span></p>
+															    	<p>尺码：<span>41</span></p>
+															    	<p>左脚文字：<span>james</span></p>
+															    	<p>右脚文字：<span>james</span></p>
+															    	<div class="Price-item">
+																    	<span class="Price-text">价格：</span>
+																    	<span class="goods-price price-single">￥799</span>
+																    	<span>&nbsp;&nbsp;x&nbsp;</span>
+																    	<span>1</span>
+																    	<p class="goods-price-total">￥1,998.00</p>
+																    </div>
+															    	<p>定制费：<span>50</span></p>
+															    	<!-- <p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p> -->
+															    </div>
+															</div>
+														</div>
+														<div class="btn-wrapper">
+															<div>
+																<a href="myaccount-review.html" target="_blank" class="btn-evaluate"><span>评价</span><i class="icon icon-evaluate"></i></a>
+															</div>
+															
+														</div>
+													</div>
+													
+													<!-- 商品加展开评论详情开始 -->
+													<div class="product-list-item">
+														<div class="product-info product-info-width">
+															<div class="thumbnail float-clearfix">
+															    <a href="">
+															        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+															        <!-- 小图标 笔A -->
+															        <i class="icon icon-personalise"></i>
+															    </a>
+															    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+															    <div class="desc">
+															    	<p class="number">BB0008</p>
+															    	<p>颜色：<span>黄</span></p>
+															    	<p>尺码：<span>41</span></p>
+															    	<!-- <p>左脚文字：<span>james</span></p>
+															    	<p>右脚文字：<span>james</span></p> -->
+															    	<div class="Price-item">
+																    	<span class="Price-text">价格：</span>
+																    	<span class="goods-price price-single">￥799</span>
+																    	<span>&nbsp;&nbsp;x&nbsp;</span>
+																    	<span>1</span>
+																    	<p class="goods-price-total">￥1,998.00</p>
+																    </div>
+															    	<!-- <p>定制费：<span>50</span></p>
+															    	<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p> -->
+															    </div>
+															</div>
+														</div>
+									
+													</div>
+													<div class="product-list-item">
+														<div class="product-info product-info-width">
+															<div class="thumbnail float-clearfix">
+															    <a href="">
+															        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+															        <!-- 小图标 笔A -->
+															        <i class="icon icon-personalise"></i>
+															    </a>
+															    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+															    <div class="desc">
+															    	<p class="number">BB0008</p>
+															    	<p>颜色：<span>黄</span></p>
+															    	<p>尺码：<span>41</span></p>
+															    	<!-- <p>左脚文字：<span>james</span></p>
+															    	<p>右脚文字：<span>james</span></p> -->
+															    	<div class="Price-item">
+																    	<span class="Price-text">价格：</span>
+																    	<span class="goods-price">￥799<del class="original-price">￥1,099</del></span>
+																    	<span>&nbsp;&nbsp;x&nbsp;</span>
+																    	<span>1</span>
+																    	<p class="goods-price-total">￥1,998.00</p>
+																    </div>
+															    	<!-- <p>定制费：<span>50</span></p>
+															    	<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p> -->
+															    </div>
+															</div>
+														</div>
+									
+													</div>
+													
+													<!-- 商品加展开评论详情结束 -->
+											
+					
+													
+													
+												</div>
+
+												<div class="footer-order-price">
+													<div class="order-price-classify">
+										                <div class="product-price float-clearfix">
+										                    <span>商品金额<span class="none-sm">：</span></span>
+										                    <span>￥11,400.00</span>
+										                </div>
+										                <div class="coupon-price float-clearfix">
+										                    <span>优惠金额<span class="none-sm">：</span></span>
+										                    <span>-¥400.00</span>
+										                </div>
+										                <div class="freight-price float-clearfix">
+										                    <span>运费<span class="none-sm">：</span></span>
+										                    <span>免费</span>
+										                </div>
+										            </div>
+										            <div class="price-totle-wrap">
+										                <div class="product-total float-clearfix">
+										                    <span>订单总计</span>
+										                    <span>￥11,000.00</span>
+										                </div>
+										            </div>
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>	
+			</article>
+		</section>
+
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+
+	</div>
+</body>
+</html>

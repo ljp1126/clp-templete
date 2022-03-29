@@ -1,0 +1,483 @@
+@charset "UTF-8";
+// 进度条
+.progressbar {
+	display: -webkit-flex;
+  	display: flex;
+  	-webkit-flex-flow: row nowrap;
+  	-moz-flex-flow: row nowrap;
+  	-ms-flex-flow: row nowrap;
+  	-o-flex-flow: row nowrap;
+  	flex-flow: row nowrap;
+  	-webkit-justify-content: space-between;
+  	-moz-justify-content: space-between;
+  	-ms-justify-content: space-between;
+  	-o-justify-content: space-between;
+  	justify-content: space-between;
+  	-ms-align-items: center;
+  	align-items: center;
+  	-webkit-align-content: center;
+  	-moz-align-content: center;
+  	-ms-align-content: center;
+  	-o-align-content: center;
+  	align-content: center;
+  	.progress-item {
+  		-webkit-flex-grow: 1;
+  		-moz-flex-grow: 1;
+  		-ms-flex-grow: 1;
+  		-o-flex-grow: 1;
+  		flex-grow: 1;
+  		font-size: 16px;
+		color: #C8CBCC;
+		line-height: 16px;
+		padding-top: 21px;
+		padding-bottom: 15px;
+		border-bottom:2px solid #C8CBCC;
+  		.progress-icon {
+  			display: inline-block;
+  			position:relative;
+  			width: 20px;
+  			height: 20px;
+  			line-height:20px;
+  			font-size:12px;
+  			color:#ffffff;
+  			border-radius:100%;
+  			margin-right: 6px;
+
+  			background: #C8CBCC;
+  			vertical-align: middle;
+  			font-style: normal!important;
+  			text-align: center;
+  			.check-img{
+  				display:none;
+  				position:absolute;
+  				width: 20px;
+  				height:20px;
+  				top: 0;
+  				left:0;
+  				background:url(../images/icon.png);
+  				background-position:-360px -85px;
+  				z-index:9;
+  			}
+  		}
+
+  		&.adopt {
+  			color: #000!important;
+  			border-bottom:2px solid #C8CBCC!important;
+  			.progress-icon {
+  				.check-img{
+  					display:block!important;
+
+  				}
+  			}
+  		}
+  		&.adopt1 {
+            color: #0287CD!important;
+            border-bottom:2px solid #0287CD!important;
+            .progress-icon {
+                .check-img{
+                    display:none!important;
+
+                }
+            }
+        }
+  		&.current {
+  			color: #0287CD;
+  			border-bottom:2px solid #0287CD;
+  			.progress-icon {
+  				background: #0287CD;
+
+  				.check-img{
+  					display:none;
+
+  				}
+  			}
+
+	  	}
+  	}
+}
+
+// 退货状态
+.return-details {
+    margin-top: 22px;
+    .return-item {
+        margin-bottom: 20px;
+        .return-text {
+            float: left;
+            display: block;
+            font-size: 16px;
+            color: #000000;
+            line-height: 16px;
+        }
+        .discript-txt {
+            color: #3A3A3A;
+            font-size: 14px;
+            line-height: 16px;
+        }
+		.return-info {
+			margin-left: 116px;
+			// margin-left: 80px;
+			font-size: 14px;
+			.service-text {
+				font-weight: bold;
+				font-size:16px;
+				margin-right: 6px;
+			}
+			.address-box {
+				font-weight: bold;
+				line-height: 20px;
+				margin-top: 14px;
+			}
+			.order-box {
+				margin: 8px auto;
+				li {
+					line-height: 20px;
+				}
+			}
+			.over-add {
+				line-height: 20px;
+			}
+		}
+        .returns-form{
+            padding-bottom:20px;
+            border-bottom: 1px solid #C8CBCC;
+        }
+        .form-group {
+            margin-top: 20px;
+            .control-label {
+                display: block;
+            }
+            .form-input {
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.list {
+    padding: 0 0px 15px;
+
+    border-bottom: 1px solid #C8CBCC;
+    .list-item {
+        overflow: hidden;
+        line-height: 22px;
+        .label {
+            float:left;
+            color: #888;
+            margin-right: 7px;
+        }
+        .label-text {
+            color: #000;
+            a{
+                text-decoration: underline;
+            }
+        }
+        .img-box {
+            margin-left:70px;
+            margin-top:5px;
+
+            .img-list {
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+    &.list-bottom {
+        padding-top: 0;
+        border-top: none;
+    }
+}
+.company-box {
+    li {
+        line-height: 20px;
+    }
+}
+// 弹窗
+.dialog-return {
+    .dialog-scroll-container {
+        .dialog {
+            width: 530px;
+            max-width: 530px;
+            height: 254px;
+            padding: 50px 70px;
+            .dialog-container {
+                .dialog-content {
+                    h4 {
+                        font-size: 18px;
+                        color: #000;
+                        line-height: 1;
+                        margin-bottom: 16px;
+                        border-bottom: none;
+
+                    }
+                    .logistics{
+                        li{
+                            margin-bottom:5px;
+                        }
+                    }
+                }
+                .dialog-btn-wrap {
+                    display: -webkit-flex; /* Safari */
+                    display: flex;
+                    -webkit-justify-content: space-between;
+                    -moz-justify-content: space-between;
+                    -ms-justify-content: space-between;
+                    -o-justify-content: space-between;
+                    justify-content: space-between;
+                    margin-top: 40px;
+                    a {
+                        width: 180px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.myaccount-orders-details .goods-item-box .goods-item-prepared .product-show .product-list-item .product-info{
+    border-right: 0px solid #EBEBEB;
+}
+
+@media (max-width: 1024px) {
+	// 进度条
+	.progressbar {
+		position: relative;
+	  	border-top: 1px solid #C8CBCC;
+	  	border-bottom: 1px solid #C8CBCC;
+	  	&:before {
+	  		-webkit-z-index: 1;
+	  		-moz-z-index: 1;
+	  		-ms-z-index: 1;
+	  		-o-z-index: 1;
+	  		z-index: 1;
+	  		display: block;
+	  		content: "";
+	  		position: absolute;
+	  		top: 40%;
+	  		left: 15%;
+	  		width: 70%;
+	  		height: 1px;
+	  		background: #C8CBCC;
+	  	}
+	  	&.progressbar-two{
+	  		&:before {
+		  		left: 24%;
+    			width: 50%;
+		  	}
+	  	}
+	  	&.progressbar-three{
+	  		&:before {
+		  		left: 16%;
+    			width: 66%;
+		  	}
+	  	}
+	  	&.progressbar-four{
+	  		&:before {
+		  		left: 15%;
+		  		width: 74%;
+		  	}
+	  	}
+	  	.progress-item {
+	  		-webkit-z-index: 8;
+	  		-moz-z-index: 8;
+	  		-ms-z-index: 8;
+	  		-o-z-index: 8;
+	  		z-index: 8;
+	  		display: -webkit-flex;
+  			display: flex;
+  			-webkit-flex-direction: column;
+  			-moz-flex-direction: column;
+  			-ms-flex-direction: column;
+  			-o-flex-direction: column;
+  			flex-direction: column;
+  			-webkit-align-items: center;
+  			-moz-align-items: center;
+  			-ms-align-items: center;
+  			-o-align-items: center;
+  			align-items: center;
+	  		font-size: 12px;
+			line-height: 12px;
+			text-align: center;
+	  		.progress-icon {
+	  			display: inline-block;
+	  			width: 32px;
+	  			height: 32px;
+	  			line-height:32px;
+	  			font-size:14px;
+	  			border-radius:100%;
+	  			margin-right: 0px;
+	  			margin-bottom: 10px;
+	  			background: #C8CBCC;
+	  			color:#ffffff;
+	  			.check-img{
+	  				width: 32px;
+	  				height:32px;
+	  				background:url(../images/icon@2x.png);
+	  				background-size: 500px auto;
+	  				background-position:-329px -320px;
+	  			}
+	  		}
+
+	  		&.adopt {
+	  			color: #000!important;
+	  			border-bottom:2px solid #C8CBCC!important;
+	  			.progress-icon {
+	  				.check-img{
+	  					display:block!important;
+
+	  				}
+	  			}
+	  		}
+	  		&.current {
+	  			color: #0287CD;
+	  			border-bottom:2px solid #C8CBCC;
+	  			.progress-icon {
+	  				background: #0287CD;
+
+	  				.check-img{
+	  					display:none;
+
+	  				}
+	  			}
+
+
+
+		  	}
+
+
+	  	}
+		&.progressbar-eng{
+			.progress-item{
+				span{
+					min-height: 24px;
+				}
+			}
+		}
+	}
+    // 退货状态
+    .return-details {
+        padding: 0 20px;
+        .return-item {
+            margin-bottom: 0px;
+            .return-text {
+                font-size: 12px;
+                line-height: 20px;
+            }
+            .discript-txt {
+                font-size: 12px;
+                line-height: 20px;
+            }
+			.return-info {
+				margin-left: 90px;
+				font-size: 12px;
+				.top-text-box {
+					line-height: 20px;
+					.service-text {
+						font-size:12px;
+						// font-weight: normal;
+						margin-right: 6px;
+					}
+				}
+				.address-box {
+					margin: 0px;
+					font-weight: normal;
+					.tel {
+						font-weight: bold;
+					}
+				}
+				.order-box {
+					margin-top: 0;
+					li{
+						color:#000000;
+					}
+				}
+			}
+			.returns-form{
+				padding:0 20px 20px;
+				margin:0 -20px;
+				border-bottom: 1px solid #C8CBCC;
+			}
+			.form-group {
+				margin-top: 20px;
+				.control-label {
+					display: block;
+				}
+				.form-input {
+					vertical-align: middle;
+				}
+			}
+		}
+    }
+
+    .list {
+        padding: 15px 20px;
+        border-top: none;
+        .list-item {
+            line-height: 22px;
+            .label {
+                float:none;
+                color: #000;
+            }
+            .label-text {
+                color: #000;
+                a{
+                    text-decoration: underline;
+                }
+            }
+            .img-box {
+                margin:3px 0 0 ;
+
+
+                .img-list {
+
+                }
+            }
+        }
+    }
+
+    .list-bottom {
+        padding-top: 0;
+        border-top: none;
+    }
+
+    // 弹窗
+    .dialog-return {
+        .dialog-scroll-container {
+            .dialog {
+                width: 100%;
+                max-width: 100%;
+                height: 281px;
+                padding: 40px 70px;
+                margin: 0;
+                .dialog-container {
+                    .dialog-content {
+                        h4 {
+                            font-size: 14px;
+                            color: #000;
+                            line-height: 1;
+                            margin-bottom: 16px;
+                            border-bottom: none;
+                        }
+                        .logistics{
+                            li{
+                                margin-bottom: 5px;
+                            }
+                        }
+                    }
+                    .dialog-btn-wrap {
+                        -webkit-flex-wrap: wrap;
+                        -moz-flex-wrap: wrap;
+                        -ms-flex-wrap: wrap;
+                        -o-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        margin-top: 12px;
+                        a {
+                            width: 100%;
+                            margin: 0;
+                            margin-top: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

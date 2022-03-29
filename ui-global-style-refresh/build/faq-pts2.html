@@ -1,0 +1,2408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no" />
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit" />
+	<meta name="MobileOptimized" content="320" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta content="telephone=no" name="format-detection" />
+
+	<title></title>
+
+	<!-- 公共 CSS 部分开始 -->
+	<link rel="stylesheet" href="libs/spice/css/spice.css" />
+	<!-- 字体图标样式，不需要时可不引用 -->
+	<link rel="stylesheet" href="libs/spice/css/spice.icon.css" />
+	<!--[if lt IE 9]>
+			<link rel="stylesheet" href="libs/spice/css/spice.ie8.css" />
+		<![endif]-->
+	<!--[if lte IE 7]>
+			<link rel="stylesheet" href="libs/spice/css/spice.ie7.css" />
+		<![endif]-->
+	<link rel="stylesheet" href="libs/spice/js/cloudzoom/css/cloudzoom.css" />
+	<link rel="stylesheet" href="libs/spice/js/tinyscrollbar/css/tinyscrollbar.css" />
+	<link rel="stylesheet" href="libs/spice/js/datetime/css/datetime.css" />
+	<link rel="stylesheet" href="libs/slider/jquery-ui.css" />
+	<link rel="stylesheet" href="libs/swiper/css/swiper.min.css" />
+	<!-- 自定义 CSS -->
+	<link rel="stylesheet" href="css/common.css" />
+	<!-- 自定义 CSS end -->
+	<!-- 公共 CSS 部分结束 -->
+
+
+	<link rel="stylesheet" type="text/css" href="css/faq.css">
+	<!-- 公共 JS 部分开始 -->
+	<script type="text/javascript" src="libs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="libs/iscroll/iscroll.js"></script>
+	<script type="text/javascript" src="libs/handlebars/handlebars-v4.0.5.js"></script>
+	<script type="text/javascript" src="libs/spice/js/jquery.spice.js"></script>
+	<script type="text/javascript">
+		(function($) {
+			$.spice.init({
+				throttleTime: 100,
+				debounceTime: 300
+			});
+		})(jQuery);
+	</script>
+	<script type="text/javascript" src="libs/spice/js/jquery.spice.tools.js"></script>
+	<script type="text/javascript" src="libs/spice/js/checkBox/jquery.checkBox.js"></script>
+	<script type="text/javascript" src="libs/spice/js/lazyLoad/jquery.lazyLoad.js"></script>
+	<script type="text/javascript" src="libs/velocity/velocity.js"></script>
+	<script type="text/javascript" src="libs/spice/js/kvScroll/jquery.kvScroll.js"></script>
+	<script type="text/javascript" src="libs/spice/js/dropdown/jquery.dropdown.js"></script>
+	<script type="text/javascript" src="libs/spice/js/cloudzoom/jquery.cloudzoom.js"></script>
+	<script type="text/javascript" src="libs/spice/js/tinyscrollbar/jquery.tinyscrollbar.js"></script>
+	<script type="text/javascript" src="libs/spice/js/placeholder/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="libs/spice/js/citySelect/json/area.zh.js"></script>
+	<script type="text/javascript" src="libs/spice/js/citySelect/jquery.citySelect.js"></script>
+	<script type="text/javascript" src="libs/spice/js/calculateNum/jquery.calculateNum.js"></script>
+	<script type="text/javascript" src="libs/spice/js/checkBox/jquery.checkBox.js"></script>
+	<script type="text/javascript" src="libs/spice/js/searchBox/jquery.searchBox.js"></script>
+	<script type="text/javascript" src="libs/spice/js/ymdSelect/jquery.ymdSelect.js"></script>
+	<script type="text/javascript" src="libs/slider/jquery-ui.js"></script>
+	<script type="text/javascript" src="libs/swiper/js/swiper.min.js"></script>
+	<script type="text/javascript" src="libs/spice/js/starRank/jquery.starRank.js"></script>
+	<script type="text/javascript" src="libs/spice/js/messageLimit/jquery.messageLimit.js"></script>
+	<!--[if lt IE 9]>
+			<script type="text/javascript" src="libs/respond/respond.min.js"></script>
+			<script type="text/javascript" src="libs/html5shiv/html5shiv.min.js"></script>
+		<![endif]-->
+	<!-- 字体图标js，兼容低版本浏览器，不需要时可不引用 -->
+	<!--[if lte IE 7]>
+			<script type="text/javascript" src="libs/spice/js/jquery.spice.ie7.js"></script>
+		<![endif]-->
+
+
+	<script type="text/javascript" src="js/common.js"></script>
+	<!-- 公共 JS 部分结束 -->
+
+	<script type="text/javascript" src="js/faq.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+
+
+
+		<div class="header-fixed">
+			<!-- 顶部公共条 -->
+			<div class="top-nav none-sm">
+				<div class="header-top float-clearfix">
+
+					<!-- 给这个标签添加class(is-logged) 显示已登录结构、样式 -->
+					<div class="header-top-container">
+						<ul>
+							<!-- <li class="language">
+									<a class="is-active" href="">中文</a>
+									<span>/</span>
+									<a class="" href="">English</a>
+								</li> -->
+							<li class="">
+								<a href="">订单追踪<i class="icon-new icon-order-tracking"></i></a>
+							</li>
+							<li class="mail-subscription">
+								<a href="">邮件订阅<i class="icon-new icon-mail"></i></a>
+							</li>
+							<li class="service">
+								<a href="">
+									在线客服<i class="icon-new icon-service"></i>
+								</a>
+							</li>
+							<li class="login-box">
+								<a href="">
+									登录<i class="icon-new icon-login"></i>
+								</a>
+							</li>
+							<li class="logged-box">
+								<a href="">
+									Cruze<i class="icon-new icon-login"></i>
+								</a>
+								<div class="sub-menu">
+									<ul>
+										<li>
+											<a href="myaccount-personal-information.html">个人信息</a>
+										</li>
+										<li>
+											<a href="">我的积分</a>
+										</li>
+										<li>
+											<a href="">我的优惠券</a>
+										</li>
+										<li>
+											<a href="">退出</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 订阅成功请加class: mail-subscription-success -->
+				<div class="mail-subscription-content">
+					<div>
+						<div class="mail-subscription-main">
+							<div class="callout-bars float-clearfix">
+								<div class="callout-bar">
+									<i class="icon icon-callout-1"></i>
+									<span>订阅邮件以了解最新动态</span>
+								</div>
+								<div class="callout-bar">
+									<i class="icon icon-callout-2"></i>
+									<span>在下次购物中享受15%的折扣</span>
+								</div>
+								<div class="callout-bar">
+									<i class="icon icon-callout-3"></i>
+									<span>独家的优惠和推送</span>
+								</div>
+							</div>
+							<div class="mail-subscription-form float-clearfix">
+								<div class="form-group">
+									<label class="control-label">电子邮箱 <span class="star-red">*</span></label>
+									<!-- 如错误请在input上加class="gl-form-item--error" -->
+									<div class="form-input-new gl-form-item">
+										<input placeholder="" type="text">
+										<span class="gl-form-message">抱歉，您无法订阅两次。您输入的邮箱已订阅过邮件。</span>
+										<div class="form-input-text">仅供第一次注册</div>
+									</div>
+
+								</div>
+								<div class="form-group form-group-choice">
+									<label class="control-label">性别 <span class="star-red">*</span></label>
+									<div class="form-choice-btn float-clearfix">
+										<div class="form-radio float-clearfix">
+											<div>
+												<input type="radio" id="group1" checked name="group1">
+												<label for="group1">男子</label>
+											</div>
+											<div>
+												<input type="radio" id="group2" name="group1">
+												<label for="group2">女子</label>
+											</div>
+										</div>
+										<div class="form-checkbox">
+											<label>
+												<input type="checkbox">
+												<i class="icon-tick"></i>我已满18岁 <span class="star-red">*</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group form-group-btn">
+									<!-- 加class:is-disabled为不可点效果，
+										 删class:is-disabled为可点效果 -->
+									<a class="gl-cta gl-cta--primary">订阅
+										<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span>
+									</a>
+								</div>
+
+							</div>
+							<div class="mail-subscription-statement">
+								<span>注册阿迪达斯邮箱，特色的独家推送，最新的商品信息，最新活动的新闻以及其他资讯。详情参见我们的<a href="">隐私条款</a>。</span>
+							</div>
+						</div>
+
+						<!-- 成功模块 -->
+						<div class="mail-subscription-success-main">
+							<h2><i class="icon icon-success"></i>邮件订阅成功</h2>
+							<P>您将收到订阅成功的确认邮件。</P>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- 顶部导航部分 -->
+			<header class="header">
+				<div class="header-container float-clearfix">
+					<nav class="nav-bar">
+						<div class="header-left">
+							<a class="m-menu events-m-menu none block-sm">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+							<div class="m-menu-language select-box none">
+								<div class="dropdown events-form-select">
+									<a class="btn">
+										<span class="dropdown-text">中|<span>EN</span></span>
+										<span class="dropdown-text-cn">中|<span>EN</span></span>
+										<span class="dropdown-text-en"><span>中</span>|EN</span>
+									</a>
+									<select>
+										<option value="中|EN" data-val="cn">中</option>
+										<option value="中|EN" data-val="en">EN</option>
+									</select>
+								</div>
+							</div>
+							<h1 class="navbar-header inline-block">
+								<a href="/">
+									<img src="images/logo.png" title="" class="logo" alt="" />
+									<!-- 新样式 -->
+									<!-- <span class="icon icon-adidas icon-a-font"></span> -->
+								</a>
+							</h1>
+
+							<!-- 导航改版新增结构 -->
+							<div class="mob-menu-top events-menu-top none block-sm">
+								<div class="menu-top-content">
+									<i class="icon icon-login"></i>
+									<!-- 未登录显示 开发自行判断 -->
+									<div class="menu-top-login">
+										<a href="">登录</a>
+										<span>|</span>
+										<a href="">注册</a>
+									</div>
+									<!-- 登录显示 开发自行判断-->
+									<div class="menu-top-my">
+										<a>Vivan</a>
+										<span>|</span>
+										<a href="">我的账户</a>
+									</div>
+								</div>
+								<a class="m-menu events-m-menu">
+									<span></span>
+									<span></span>
+									<span></span>
+								</a>
+							</div>
+							<div class="navbar-menu events-header-scroll inline-block">
+								<div class="scroller-wrap">
+									<div class="menu-box">
+										<div class="menu-box-bg"></div>
+										<ul class="nav nav-pills events-menus-nav float-clearfix">
+											<li>
+												<a>
+													<div class="mod-newlabel-parent">男子
+														<!-- <span class="mod-newlabel mod-newlabel-stair">NEW</span> -->
+													</div>
+													<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+												</a>
+												<!-- 新加跳转结构 -->
+												<div class="href-address none block-sm">
+													<a href=""></a>
+												</div>
+												<div class="sub-menu">
+													<ul class="sub-menu-ul float-clearfix">
+														<li class="latest-activities">
+															<p class="sub-menu-title">
+																最新活动
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+																<span class="mod-newlabel mod-newlabel-second">NEW</span>
+															</p>
+															<ul class="three-menu none-sm">
+																<li class="none block-sm">
+																	<a href="">全部男子产品</a>
+																</li>
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部男子产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">新品上市<span class="mod-newlabel mod-newlabel-three">NEW</span></a>
+																</li>
+																<!-- <li class="iterm-line"><span>&nbsp;</span></li> -->
+																<li>
+																	<a href="list.html">创作你的专属EQT</a>
+																</li>
+																<li>
+																	<a href="list.html">跑步|逆境开练 <span class="mod-newlabel mod-newlabel-three">HOT</span></a>
+																</li>
+																<li>
+																	<a href="list.html">Originals|原创 发掘未知</a>
+																</li>
+																<li>
+																	<a href="list.html">adidas neo|生来好动</a>
+																</li>
+																<!-- <li class="iterm-line"><span>&nbsp;</span></li> -->
+																<li>
+																	<a href="list.html">miadidas 个性化定制</a>
+																</li>
+																<!-- <li class="iterm-line"><span>&nbsp;</span></li> -->
+																<li class="discount-iterm">
+																	<a href="list.html">折扣专区</a>
+																</li>
+															</ul>
+															<ul class="three-menu-new three-menu float-clearfix">
+																<li>
+																	<a href="list.html">全部男子产品</a>
+																	<a href="list.html">新品上市<span class="mod-newlabel mod-newlabel-three">NEW</span></a>
+																</li>
+																<li>
+																	<a href="list.html">创作你的专属EQT</a>
+																	<a href="list.html">跑步|逆境开练</a>
+																</li>
+																<li>
+																	<a href="list.html">Originals|原创 发掘未知</a>
+																	<a href="list.html">adidas neo|生来好动</a>
+																</li>
+																<li>
+																	<a href="list.html">miadidas 个性化定制</a>
+																	<a href="list.html" class="discountred">折扣专区</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<p class="sub-menu-title" href="list.html">
+																鞋类
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</p>
+															<ul class="three-menu none-sm">
+																<li class="none block-sm">
+																	<a href="">全部鞋类产品</a>
+																</li>
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部男子鞋</span></a>
+																</li>
+																<li>
+																	<a href="list.html">Originals</a>
+																</li>
+																<li>
+																	<a href="list.html">adidas neo</a>
+																</li>
+																<li>
+																	<a href="list.html">足球</a>
+																</li>
+																<li>
+																	<a href="list.html">篮球</a>
+																</li>
+																<li>
+																	<a href="list.html">训练</a>
+																</li>
+																<li>
+																	<a href="list.html">跑步</a>
+																</li>
+																<li>
+																	<a href="list.html">户外</a>
+																</li>
+																<li>
+																	<a href="list.html">网球</a>
+																</li>
+																<li>
+																	<a href="list.html">miadidas 个性化定制</a>
+																</li>
+															</ul>
+															<ul class="three-menu-new three-menu float-clearfix">
+																<li>
+																	<a href="list.html">全部男子产品</a>
+																	<a href="list.html">新品上市<span class="mod-newlabel mod-newlabel-three">NEW</span></a>
+																</li>
+																<!-- <li>
+																	</li> -->
+																<li>
+																	<a href="list.html">创作你的专属EQT</a>
+																	<a href="list.html">跑步|逆境开练</a>
+																</li>
+																<!-- <li>
+																	</li> -->
+																<li>
+																	<a href="list.html">Originals|原创 发掘未知</a>
+																	<a href="list.html">adidas neo|生来好动</a>
+																</li>
+																<!-- <li>
+																	</li> -->
+																<li>
+																	<a href="list.html">miadidas 个性化定制</a>
+																	<a href="list.html" class="discountred">折扣专区</a>
+																</li>
+																<!-- <li>
+																	</li> -->
+															</ul>
+														</li>
+														<li>
+															<p class="sub-menu-title" href="list.html">
+																服饰类
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</p>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部男子服饰</span></a>
+																</li>
+																<li>
+																	<a href="list.html">紧身裤</a>
+																</li>
+																<li>
+																	<a href="list.html">短袖上衣</a>
+																</li>
+																<li>
+																	<a href="list.html">长袖上衣</a>
+																</li>
+																<li>
+																	<a href="list.html">茄克/外套</a>
+																</li>
+																<li>
+																	<a href="list.html">下装</a>
+																</li>
+																<li>
+																	<a href="list.html">棉服/羽绒服</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<p class="sub-menu-title" href="list.html">
+																附配件类
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</p>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部男子配件</span></a>
+																</li>
+																<li>
+																	<a href="list.html">袜子</a>
+																</li>
+																<li>
+																	<a href="list.html">帽子/手套/围巾</a>
+																</li>
+																<li>
+																	<a href="list.html">背包/拎包/肩包/电脑包</a>
+																</li>
+																<li>
+																	<a href="list.html">手表</a>
+																</li>
+																<li>
+																	<a href="list.html">球类</a>
+																</li>
+																<li>
+																	<a href="list.html">其他配附件</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<p class="sub-menu-title" href="list.html">
+																运动分类
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</p>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部男子运动</span></a>
+																</li>
+																<li>
+																	<a href="list.html">adidas athletics</a>
+																</li>
+																<li>
+																	<a href="list.html">足球</a>
+																</li>
+																<li>
+																	<a href="list.html">篮球</a>
+																</li>
+																<li>
+																	<a href="list.html">训练</a>
+																</li>
+																<li>
+																	<a href="list.html">跑步</a>
+																</li>
+																<li>
+																	<a href="list.html">户外</a>
+																</li>
+																<li>
+																	<a href="list.html">网球</a>
+																</li>
+																<li>
+																	<a href="list.html">游泳</a>
+																</li>
+																<li>
+																	<a href="list.html">高尔夫</a>
+																</li>
+															</ul>
+														</li>
+														<li class="none block-sm">
+															<a class="sub-menu-title" href="list.html">
+																男子
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<a href="landing-page-women.html">
+													<div class="mod-newlabel-parent">女子</div>
+													<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+												</a>
+												<!-- 新加跳转结构 -->
+												<div class="href-address none block-sm">
+													<a href=""></a>
+												</div>
+												<div class="sub-menu">
+													<ul class="sub-menu-ul float-clearfix">
+														<li class="latest-activities">
+															<p class="sub-menu-title" href="list.html">
+																最新活动
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</p>
+															<ul class="three-menu none-sm">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部女子产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">新品上市</a>
+																</li>
+																<!-- <li class="iterm-line"><span>&nbsp;</span></li> -->
+																<li>
+																	<a href="list.html">创作你的专属EQT</a>
+																</li>
+																<li>
+																	<a href="list.html">跑步|逆境开练</a>
+																</li>
+																<li>
+																	<a href="list.html">Originals|原创 发掘未知</a>
+																</li>
+																<li>
+																	<a href="list.html">adidas neo|生来好动</a>
+																</li>
+																<!-- <li class="iterm-line"><span>&nbsp;</span></li> -->
+																<li>
+																	<a href="list.html">miadidas 个性化定制</a>
+																</li>
+																<!-- <li class="iterm-line"><span>&nbsp;</span></li> -->
+																<li class="discount-iterm">
+																	<a href="list.html">折扣专区</a>
+																</li>
+															</ul>
+															<ul class="three-menu-new three-menu float-clearfix">
+																<li>
+																	<a href="list.html">全部女子产品</a>
+																	<a href="list.html">新品上市</a>
+																</li>
+																<li>
+																	<a href="list.html">创作你的专属EQT</a>
+																	<a href="list.html">跑步|逆境开练</a>
+																</li>
+																<li>
+																	<a href="list.html">Originals|原创 发掘未知</a>
+																	<a href="list.html">adidas neo|生来好动</a>
+																</li>
+																<li>
+																	<a href="list.html">miadidas 个性化定制</a>
+																	<a href="list.html" class="discountred">折扣专区</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<p class="sub-menu-title" href="list.html">
+																鞋类
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</p>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部女子鞋</span></a>
+																</li>
+																<li>
+																	<a href="list.html">Originals</a>
+																</li>
+																<li>
+																	<a href="list.html">adidas neo</a>
+																</li>
+																<li>
+																	<a href="list.html">足球</a>
+																</li>
+																<li>
+																	<a href="list.html">篮球</a>
+																</li>
+																<li>
+																	<a href="list.html">训练</a>
+																</li>
+																<li>
+																	<a href="list.html">跑步</a>
+																</li>
+																<li>
+																	<a href="list.html">户外</a>
+																</li>
+																<li>
+																	<a href="list.html">网球</a>
+																</li>
+																<li>
+																	<a href="list.html">miadidas 个性化定制</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<p class="sub-menu-title" href="list.html">
+																服饰类
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</p>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部女子服饰</span></a>
+																</li>
+																<li>
+																	<a href="list.html">紧身裤</a>
+																</li>
+																<li>
+																	<a href="list.html">短袖上衣</a>
+																</li>
+																<li>
+																	<a href="list.html">长袖上衣</a>
+																</li>
+																<li>
+																	<a href="list.html">茄克/外套</a>
+																</li>
+																<li>
+																	<a href="list.html">下装</a>
+																</li>
+																<li>
+																	<a href="list.html">棉服/羽绒服</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<p class="sub-menu-title" href="list.html">
+																附配件类
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</p>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部女子配件</span></a>
+																</li>
+																<li>
+																	<a href="list.html">袜子</a>
+																</li>
+																<li>
+																	<a href="list.html">帽子/手套/围巾</a>
+																</li>
+																<li>
+																	<a href="list.html">背包/拎包/肩包/电脑包</a>
+																</li>
+																<li>
+																	<a href="list.html">手表</a>
+																</li>
+																<li>
+																	<a href="list.html">球类</a>
+																</li>
+																<li>
+																	<a href="list.html">其他配附件</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<p class="sub-menu-title" href="list.html">
+																运动分类
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</p>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部女子运动</span></a>
+																</li>
+																<li>
+																	<a href="list.html">adidas athletics</a>
+																</li>
+																<li>
+																	<a href="list.html">足球</a>
+																</li>
+																<li>
+																	<a href="list.html">篮球</a>
+																</li>
+																<li>
+																	<a href="list.html">训练</a>
+																</li>
+																<li>
+																	<a href="list.html">跑步</a>
+																</li>
+																<li>
+																	<a href="list.html">户外</a>
+																</li>
+																<li>
+																	<a href="list.html">网球</a>
+																</li>
+																<li>
+																	<a href="list.html">游泳</a>
+																</li>
+																<li>
+																	<a href="list.html">高尔夫</a>
+																</li>
+															</ul>
+														</li>
+														<li class="none block-sm">
+															<a class="sub-menu-title" href="list.html">
+																女子
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<a href="list.html">
+													<div class="mod-newlabel-parent">童装</div>
+													<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+												</a>
+												<div class="sub-menu">
+													<ul class="sub-menu-ul float-clearfix">
+														<li class="latest-activities">
+															<p class="sub-menu-title" href="list.html">
+																最新活动
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</p>
+															<ul class="three-menu none-sm">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部婴童产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">新品上市</a>
+																</li>
+																<!-- <li class="iterm-line"><span>&nbsp;</span></li> -->
+																<li>
+																	<a href="list.html">运动表现</a>
+																</li>
+																<!-- <li class="iterm-line"><span>&nbsp;</span></li> -->
+																<li class="discount-iterm">
+																	<a href="list.html">折扣专区</a>
+																</li>
+															</ul>
+															<ul class="three-menu-new three-menu float-clearfix">
+																<li>
+																	<a href="list.html">全部童装产品</a>
+																	<a href="list.html">新品上市</a>
+																</li>
+																<li>
+																	<a href="list.html">创作你的专属EQT</a>
+																	<a href="list.html">跑步|逆境开练</a>
+																</li>
+																<li>
+																	<a href="list.html">Originals|原创 发掘未知</a>
+																	<a href="list.html">adidas neo|生来好动</a>
+																</li>
+																<li>
+																	<a href="list.html">miadidas 个性化定制</a>
+																	<a href="list.html" class="discountred">折扣专区</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<p class="sub-menu-title" href="list.html">
+																大童（8-12岁）
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</p>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部大童（8-12岁）产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">男大童：服装</a>
+																</li>
+																<li>
+																	<a href="list.html">女大童：服装</a>
+																</li>
+																<li>
+																	<a href="list.html">男大童：鞋类</a>
+																</li>
+																<li>
+																	<a href="list.html">女大童：鞋类</a>
+																</li>
+																<li>
+																	<a href="list.html">男大童：箱包/附配件</a>
+																</li>
+																<li>
+																	<a href="list.html">女大童：箱包/附配件</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<p class="sub-menu-title" href="list.html">
+																小童（4-8岁）
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</p>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部小童（4-8岁）产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">男小童：服装</a>
+																</li>
+																<li>
+																	<a href="list.html">女小童：服装</a>
+																</li>
+																<li>
+																	<a href="list.html">男小童：鞋类</a>
+																</li>
+																<li>
+																	<a href="list.html">女小童：鞋类</a>
+																</li>
+																<li>
+																	<a href="list.html">男小童：箱包/附配件</a>
+																</li>
+																<li>
+																	<a href="list.html">女小童：箱包/附配件</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<p class="sub-menu-title" href="list.html">
+																婴幼儿（0-4岁）
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</p>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部婴幼儿（0-4岁）产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">男婴童：服装</a>
+																</li>
+																<li>
+																	<a href="list.html">女婴童：服装</a>
+																</li>
+																<li>
+																	<a href="list.html">男婴童：鞋类</a>
+																</li>
+																<li>
+																	<a href="list.html">女婴童：鞋类</a>
+																</li>
+																<li>
+																	<a href="list.html">男婴童：箱包/附配件</a>
+																</li>
+																<li>
+																	<a href="list.html">女婴童：箱包/附配件</a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="nav-menu-delimiter"><span></span></li>
+											<li class="nav-menu-sports font-weight">
+												<a href="list.html">
+													<div class="mod-newlabel-parent">运动</div>
+													<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+												</a>
+												<div class="sub-menu">
+													<ul class="sub-menu-ul float-clearfix">
+														<li>
+															<!-- <a class="sub-menu-title" href="list.html">
+																	<i class="icon icon-black-logo"></i>
+																	足球
+																	<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+																</a> -->
+															<a class="sub-menu-title" href="list.html">
+																<i class="icon icon-clover-logo"></i>
+																originals
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</a>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html">
+																		<img src="images/blank.gif" lazysrc="../static/images/common/motion-img1.jpg" />
+																	</a>
+																</li>
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部足球产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">足球鞋</a>
+																</li>
+																<li>
+																	<a href="list.html">足球服饰</a>
+																</li>
+																<li>
+																	<a href="list.html">附配件</a>
+																</li>
+																<li class="iterm-line"><span>&nbsp;</span></li>
+																<li>
+																	<a href="list.html">曼联</a>
+																</li>
+																<li>
+																	<a href="list.html">AC米兰</a>
+																</li>
+																<li>
+																	<a href="list.html">拜仁</a>
+																</li>
+																<li>
+																	<a href="list.html">切尔西</a>
+																</li>
+																<li>
+																	<a href="list.html">尤文图斯</a>
+																</li>
+																<li>
+																	<a href="list.html">皇马</a>
+																</li>
+																<li class="iterm-line"><span>&nbsp;</span></li>
+																<li>
+																	<a href="list.html">Blue blast</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a class="sub-menu-title" href="list.html">
+																<i class="icon icon-black-logo"></i>
+																跑步
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</a>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html">
+																		<img src="images/blank.gif" lazysrc="../static/images/common/motion-img2.jpg" />
+																	</a>
+																</li>
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部跑步产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">跑步鞋</a>
+																</li>
+																<li>
+																	<a href="list.html">跑步服饰</a>
+																</li>
+																<li>
+																	<a href="list.html">附配件</a>
+																</li>
+																<li class="iterm-line"><span>&nbsp;</span></li>
+																<li>
+																	<a href="list.html">PUREBOOST</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a class="sub-menu-title" href="list.html">
+																<i class="icon icon-black-logo"></i>
+																篮球
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</a>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html">
+																		<img src="images/blank.gif" lazysrc="../static/images/common/motion-img3.jpg" />
+																	</a>
+																</li>
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部篮球产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">篮球鞋</a>
+																</li>
+																<li>
+																	<a href="list.html">篮球服饰</a>
+																</li>
+																<li>
+																	<a href="list.html">附配件</a>
+																</li>
+																<li class="iterm-line"><span>&nbsp;</span></li>
+																<li>
+																	<a href="list.html">Dame3</a>
+																</li>
+																<li>
+																	<a href="list.html">Harden Vol.1</a>
+																</li>
+																<li>
+																	<a href="list.html">世界杯<span class="mod-newlabel mod-newlabel-three">HOT</span></a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a class="sub-menu-title" href="list.html">
+																<i class="icon icon-black-logo"></i>
+																训练
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</a>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html">
+																		<img src="images/blank.gif" lazysrc="../static/images/common/motion-img4.jpg" />
+																	</a>
+																</li>
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部训练产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">训练鞋</a>
+																</li>
+																<li>
+																	<a href="list.html">训练服饰</a>
+																</li>
+																<li>
+																	<a href="list.html">附配件</a>
+																</li>
+																<li class="iterm-line"><span>&nbsp;</span></li>
+																<li>
+																	<a href="list.html">Climazone</a>
+																</li>
+																<li>
+																	<a href="list.html">techfit</a>
+																</li>
+																<li>
+																	<a href="list.html">Never done</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a class="sub-menu-title" href="list.html">
+																<i class="icon icon-black-terrex"></i>
+																户外
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</a>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html">
+																		<img src="images/blank.gif" lazysrc="../static/images/common/motion-img4.jpg" />
+																	</a>
+																</li>
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部户外产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">训练鞋</a>
+																</li>
+																<li>
+																	<a href="list.html">训练服饰</a>
+																</li>
+																<li>
+																	<a href="list.html">附配件</a>
+																</li>
+																<li class="iterm-line"><span>&nbsp;</span></li>
+																<li>
+																	<a href="list.html">Climazone</a>
+																</li>
+																<li>
+																	<a href="list.html">techfit</a>
+																</li>
+																<li>
+																	<a href="list.html">Never done</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a class="sub-menu-title" href="list.html">
+																其它运动
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</a>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">adidas athletics</a>
+																</li>
+																<li>
+																	<a href="list.html">网球</a>
+																</li>
+																<li>
+																	<a href="list.html"><i class="icon icon-terrex"></i>户外</a>
+																</li>
+																<li>
+																	<a href="list.html">高尔夫</a>
+																</li>
+																<li>
+																	<a href="list.html">游泳</a>
+																</li>
+															</ul>
+														</li>
+														<li class="more-btn">
+															<a class="sub-menu-title" href=""><span>更多运动<i class="icon icon-more-down"></i></span><span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span></a>
+
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="nav-menu-brand nav-menu-sports font-weight">
+												<a href="list.html">
+													<div class="mod-newlabel-parent">品牌</div>
+													<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+												</a>
+												<div class="sub-menu sub-menu-brand">
+													<ul class="sub-menu-ul float-clearfix">
+														<li>
+															<a class="sub-menu-title" href="list.html">
+																<img class="menu-title-img" src="../static/images/common/menu-title-img1.png" />
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</a>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html">
+																		<img src="images/blank.gif" lazysrc="../static/images/common/motion-img1.jpg" />
+																	</a>
+																</li>
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部足球产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">足球鞋</a>
+																</li>
+																<li>
+																	<a href="list.html">足球服饰</a>
+																</li>
+																<li>
+																	<a href="list.html">附配件</a>
+																</li>
+																<li class="iterm-line"><span>&nbsp;</span></li>
+																<li>
+																	<a href="list.html">曼联</a>
+																</li>
+																<li>
+																	<a href="list.html">AC米兰</a>
+																</li>
+																<li>
+																	<a href="list.html">拜仁</a>
+																</li>
+																<li>
+																	<a href="list.html">切尔西</a>
+																</li>
+																<li>
+																	<a href="list.html">尤文图斯</a>
+																</li>
+																<li>
+																	<a href="list.html">皇马</a>
+																</li>
+																<li class="iterm-line"><span>&nbsp;</span></li>
+																<li>
+																	<a href="list.html">Blue blast</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a class="sub-menu-title" href="list.html">
+																<img class="menu-title-img" src="../static/images/common/menu-title-img2.png" />
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</a>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html">
+																		<img src="images/blank.gif" lazysrc="../static/images/common/motion-img2.jpg" />
+																	</a>
+																</li>
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部跑步产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">跑步鞋</a>
+																</li>
+																<li>
+																	<a href="list.html">跑步服饰</a>
+																</li>
+																<li>
+																	<a href="list.html">附配件</a>
+																</li>
+																<li class="iterm-line"><span>&nbsp;</span></li>
+																<li>
+																	<a href="list.html">PUREBOOST</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a class="sub-menu-title" href="list.html">
+																<img class="menu-title-img" src="../static/images/common/menu-title-img3.png" />
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</a>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html">
+																		<img src="images/blank.gif" lazysrc="../static/images/common/motion-img3.jpg" />
+																	</a>
+																</li>
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部篮球产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">篮球鞋</a>
+																</li>
+																<li>
+																	<a href="list.html">篮球服饰</a>
+																</li>
+																<li>
+																	<a href="list.html">附配件</a>
+																</li>
+																<li class="iterm-line"><span>&nbsp;</span></li>
+																<li>
+																	<a href="list.html">Dame3</a>
+																</li>
+																<li>
+																	<a href="list.html">Harden Vol.1</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a class="sub-menu-title" href="list.html">
+																<img class="menu-title-img" src="../static/images/common/menu-title-img4.png" />
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</a>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html">
+																		<img src="images/blank.gif" lazysrc="../static/images/common/motion-img4.jpg" />
+																	</a>
+																</li>
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部训练产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">训练鞋</a>
+																</li>
+																<li>
+																	<a href="list.html">训练服饰</a>
+																</li>
+																<li>
+																	<a href="list.html">附配件</a>
+																</li>
+																<li class="iterm-line"><span>&nbsp;</span></li>
+																<li>
+																	<a href="list.html">Climazone</a>
+																</li>
+																<li>
+																	<a href="list.html">techfit</a>
+																</li>
+																<li>
+																	<a href="list.html">Never done</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a class="sub-menu-title" href="list.html">
+																<img class="menu-title-img" src="../static/images/common/menu-title-img5.png" />
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</a>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html">
+																		<img src="images/blank.gif" lazysrc="../static/images/common/motion-img4.jpg" />
+																	</a>
+																</li>
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">训练鞋</a>
+																</li>
+																<li>
+																	<a href="list.html">训练服饰</a>
+																</li>
+																<li>
+																	<a href="list.html">附配件</a>
+																</li>
+																<li class="iterm-line"><span>&nbsp;</span></li>
+																<li>
+																	<a href="list.html">Climazone</a>
+																</li>
+																<li>
+																	<a href="list.html">techfit</a>
+																</li>
+																<li>
+																	<a href="list.html">Never done</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a class="sub-menu-title" href="list.html">
+																其它运动
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</a>
+															<ul class="three-menu">
+																<li>
+																	<a href="list.html">adidas athletics</a>
+																</li>
+																<li>
+																	<a href="list.html">网球</a>
+																</li>
+																<li>
+																	<a href="list.html"><i class="icon icon-terrex"></i>户外</a>
+																</li>
+																<li>
+																	<a href="list.html">高尔夫</a>
+																</li>
+																<li>
+																	<a href="list.html">游泳</a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<!-- <li class="nav-menu-delimiter none-sm"><span></span></li> -->
+											<li class="nav-menu-miadidas font-weight">
+												<a href="landing-page-women.html">
+													<div class="mod-newlabel-parent">miadidas定制</div>
+													<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+												</a>
+												<div class="sub-menu">
+													<ul class="sub-menu-ul float-clearfix">
+														<li>
+															<a class="sub-menu-title" href="list.html">
+																热门款式
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</a>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>查看全部miadidas定制产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">mi Superstar</a>
+																</li>
+																<li>
+																	<a href="list.html">mi Stan Smith</a>
+																</li>
+																<li>
+																	<a href="list.html">mi Tubular</a>
+																</li>
+																<li>
+																	<a href="list.html">mi Gazelle</a>
+																</li>
+																<li>
+																	<a href="list.html">mi D Rose 7</a>
+																</li>
+																<li>
+																	<a href="list.html">mi Dame 3</a>
+																</li>
+																<li>
+																	<a href="list.html">mi adizero adios 3</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a class="sub-menu-title" href="list.html">
+																男子
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</a>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部男子miadidas定制产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">Originals</a>
+																</li>
+																<li>
+																	<a href="list.html">跑步</a>
+																</li>
+																<li>
+																	<a href="list.html">篮球</a>
+																</li>
+																<li>
+																	<a href="list.html">Adilette</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a class="sub-menu-title" href="list.html">
+																女子
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</a>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部女子miadidas定制产品</span></a>
+																</li>
+																<li>
+																	<a href="list.html">Originals</a>
+																</li>
+																<li>
+																	<a href="list.html">跑步</a>
+																</li>
+																<li>
+																	<a href="list.html">篮球</a>
+																</li>
+																<li>
+																	<a href="list.html">Adilette</a>
+																</li>
+															</ul>
+														</li>
+														<li class="item-line-bottom">
+															<a class="sub-menu-title" href="">
+																<i class="icon icon-personalise"></i>个性印制产品
+																<span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span>
+															</a>
+															<ul class="three-menu">
+																<li class="none block-sm"><a href="">全部个性印制产品</a></li>
+																<li class="all-product-new none-sm">
+																	<a href="">
+																		<img src="images/blank.gif" lazysrc="https://img.adidas.com.cn/resources/2017/7/6/14993276214719318.jpg" />
+
+																		<i class="icon https://img.adidas.com.cn/resources/2017/7/6/14993276214719318.jpg"></i>
+																	</a>
+																</li>
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>全部个性印制产品</span></a>
+																</li>
+																<li class=""><a href="">足球个性印制产品</a></li>
+																<li class=""><a href="">Orignials个性印制产品</a></li>
+															</ul>
+														</li>
+
+														<li>
+															<a class="" href="list.html">
+																<img src="images/blank.gif" lazysrc="../static/images/common/img_header_370.png" />
+
+															</a>
+															<ul class="three-menu">
+																<li class="all-product-new none-sm">
+																	<a href="list.html"><span>查看全部miadidas定制产品</span></a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="nav-menu-sale">
+												<a href="landing-page-women.html">
+													<div class="mod-newlabel-parent">折扣</div>
+													<!-- <span class="menu-icon-box e-menu-icon-box"><i class="icon icon-arrow-down icon-a-font"></i></span> -->
+												</a>
+											</li>
+										</ul>
+										<ul class="mob-nav-iterm">
+											<!-- <li>
+													<a href="">
+														<i class="icon icon-login"></i>登录
+													</a>
+												</li> -->
+											<li>
+												<a href="tel:3100-0496">
+													<i class="icon-new icon-phone"></i>3100-0496
+												</a>
+											</li>
+											<!-- 新增在线客服 -->
+											<li>
+												<a href="">
+													<i class="icon-new icon-service"></i>在线客服
+												</a>
+											</li>
+											<li>
+												<a href="mail-subscription.html">邮件订阅</a>
+											</li>
+											<!-- <li class="mob-language">
+													<a class="is-active" href="">中文</a>
+													<span></span>
+													<a href="">English</a>
+												</li> -->
+										</ul>
+									</div>
+								</div>
+								<div class="header-mask e-header-mask none block-sm"></div>
+							</div>
+							<div class="navbar-menu-background events-header-scroll-background">
+
+							</div>
+						</div>
+						<ul class="header-right">
+							<li class="header-search">
+								<a class="m-search none block-sm">
+									<i class="icon icon-search-m"></i>
+									<!-- 新样式 -->
+									<!-- <i class="icon icon-search icon-search-m icon-a-font"></i> -->
+								</a>
+								<div class="form-search">
+									<input type="text" placeholder="搜索" />
+									<a href="search.html"><i class="icon icon-search icon-a-font"></i></a>
+									<a class="search-clear eventssearch-clear"><i class="icon icon-search-clear"></i></a>
+								</div>
+
+								<div class="search-box">
+									<div class="search-before-content float-clearfix">
+										<div class="search-word">
+											<p class="title">搜索推荐</p>
+											<ul>
+												<li>
+													<a href="">生来好动</a>
+												</li>
+												<li>
+													<a href="">Originals</a>
+												</li>
+												<li>
+													<a href="">跑步</a>
+												</li>
+												<li>
+													<a href="">个性化定制</a>
+												</li>
+											</ul>
+										</div>
+										<div class="search-word">
+											<a class="search-delete event-search-delete">
+												<i class="icon-new icon-search-delete" onclick="delCookie('recommendedSearchKey','')"></i>
+											</a>
+											<p class="title">搜索记录</p>
+											<ul>
+												<li>
+													<a href="">DEERUPT RUNNER 经典鞋</a>
+												</li>
+												<li>
+													<a href="">NMD_R1 PK</a>
+												</li>
+												<li>
+													<a href="">Short</a>
+												</li>
+												<li>
+													<a href="">NMD</a>
+												</li>
+												<li>
+													<a href="">J EQT SHORTS 短裤</a>
+												</li>
+												<li>
+													<a href="">SUPERSTAR</a>
+												</li>
+												<li>
+													<a href="">MINI</a>
+												</li>
+												<li>
+													<a href="">个性定制</a>
+												</li>
+												<li>
+													<a href="">CLOUDFOAM ULTIMATE</a>
+												</li>
+												<li>
+													<a href="">运动裤</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="search-after-content">
+										<div class="search-product">
+											<p class="title">产品</p>
+											<div class="goods-box">
+												<div class="goods-item float-clearfix">
+													<a href="pdp.html">
+														<img src="../static/images/common/search-img1.jpg" alt="" />
+														<div class="product">
+															<span>三叶草 女子 FLASHBACK W 经典鞋</span>
+															<span>运动表现</span>
+															<span class="goods-price">¥799<del class="original-price">HK$1,399</del></span>
+															<div class="goods-star-box">
+																<div class="star-box-gyi">
+																	<span class="star-yellow-box" style="width:100%">
+																		<i class="icon icon-star-yellow"></i>
+																	</span>
+																	<i class="icon icon-star-gray"></i>
+																</div>
+																<span>共36条评论</span>
+															</div>
+														</div>
+													</a>
+												</div>
+												<div class="goods-item float-clearfix">
+													<a href="pdp.html">
+														<img src="../static/images/common/search-img1.jpg" alt="" />
+														<div class="product">
+															<span>三叶草 女子 FLASHBACK W 经典鞋</span>
+															<span>运动表现</span>
+															<span class="goods-price price-single">¥799</span>
+															<div class="goods-star-box">
+																<div class="star-box-gyi">
+																	<span class="star-yellow-box" style="width:90%">
+																		<i class="icon icon-star-yellow"></i>
+																	</span>
+																	<i class="icon icon-star-gray"></i>
+																</div>
+																<span>共36条评论</span>
+															</div>
+														</div>
+													</a>
+												</div>
+												<div class="goods-item float-clearfix">
+													<a href="pdp.html">
+														<img src="../static/images/common/search-img1.jpg" alt="" />
+														<div class="product">
+															<span>三叶草 女子 FLASHBACK W 经典鞋</span>
+															<span>运动表现</span>
+															<span class="goods-price price-single">¥799</span>
+															<div class="goods-star-box">
+																<div class="star-box-gyi">
+																	<span class="star-yellow-box" style="width:100%">
+																		<i class="icon icon-star-yellow"></i>
+																	</span>
+																	<i class="icon icon-star-gray"></i>
+																</div>
+																<span>共36条评论</span>
+															</div>
+														</div>
+													</a>
+												</div>
+												<div class="goods-item float-clearfix">
+													<a href="pdp.html">
+														<img src="../static/images/common/search-img1.jpg" alt="" />
+														<div class="product">
+															<span>三叶草 女子 FLASHBACK W 经典鞋</span>
+															<span>运动表现</span>
+															<span class="goods-price price-single">¥799</span>
+															<div class="goods-star-box">
+																<div class="star-box-gyi">
+																	<span class="star-yellow-box" style="width:80%">
+																		<i class="icon icon-star-yellow"></i>
+																	</span>
+																	<i class="icon icon-star-gray"></i>
+																</div>
+																<span>共36条评论</span>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="search-word">
+											<p class="title">关键词</p>
+											<ul>
+												<li>
+													<a href="http://www.baidu.com">NMD</a>
+												</li>
+												<li>
+													<a href="http://www.baidu.com">NMD R1</a>
+												</li>
+												<li>
+													<a href="http://www.baidu.com">NMD XR1</a>
+												</li>
+												<li>
+													<a href="http://www.baidu.com">NMD TRAIL</a>
+												</li>
+											</ul>
+											<div class="search-banner">
+												<a href="">
+													<img src="../static/images/common/search-banner.png" />
+													<p>ORIGINALS BY MINI RODINI</p>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<!-- 如果购物车有数量 需要添加 class "header-cart-has" -->
+							<li class="header-cart">
+								<a href="shoppingcart.html" value="0">
+									<i class="icon-new icon-cart"></i>
+									<span>22</span>
+								</a>
+
+								<div class="minicart-box none-sm">
+									<div class="mincart-head">
+										<div class="left">
+											<div class="checkbox e-checkbox e-minicart-checkbox-select-all">
+												<i class="icon icon-checked-min-cart icon-a-font icon-checked"></i>
+												<label>全选</label>
+											</div>
+											<p class="shop-num-box">购物袋 共 <span class="shop-num">8</span> 件商品</p>
+										</div>
+										<div class="right">
+											<a href="#">展开购物袋</a>
+										</div>
+
+									</div>
+									<div class="mincart-content">
+										<div class="tinyscrollbar events-mincart-tinyscrollbar">
+											<div class="viewport">
+												<div class="overview">
+													<ul>
+														<li>
+															<div class="checkbox e-checkbox">
+																<i class="icon icon-checked-min-cart icon-a-font icon-checked is-disabled"></i>
+															</div>
+															<div class="mincart-item float-clearfix">
+																<a class="mincart-img">
+																	<img src="../static/images/common/pic-shoes2x.jpg">
+																</a>
+																<div class="mincart-detail">
+																	<a class="mincart-name">三叶草 男女 STAN AMITH BOOST 经典跑步鞋</a>
+																	<p class="mincart-color">颜色:
+																		<span>黄</span>
+																	</p>
+																	<p class="mincart-size">尺码:
+																		<span>42</span>
+																	</p>
+																	<p class="">左脚文字:
+																		<span>asfd</span>
+																	</p>
+																	<p class="">右脚文字:
+																		<span>asdfaa</span>
+																	</p>
+																	<p class="">定制费:
+																		<span>50</span>
+																	</p>
+																	<div class="calculate-num e-min-cart-calculate-num">
+																		<a class="btn btn-minus events-minus"><i class="icon icon-mincart-minus"></i></a>
+																		<input type="text" value="" class="form-input events-input" />
+																		<a class="btn btn-plus events-plus"><i class="icon icon-mincart-plus"></i></a>
+																	</div>
+
+																	<div class="price-item">
+																		<!--折扣结构
+																						<span class="goods-price">HK$799<del class="original-price">HK$1,099</del></span> -->
+																		<span class="goods-price price-single">HK$799</span>
+																	</div>
+																	<a class="mincart-del events-mincart-del">删除</a>
+																</div>
+																<div class="info-stock">暂时缺货</div>
+															</div>
+														</li>
+														<li>
+															<div class="checkbox e-checkbox">
+																<i class="icon icon-checked-min-cart icon-a-font icon-checked is-disabled"></i>
+															</div>
+															<div class="mincart-item float-clearfix">
+																<a class="mincart-img">
+																	<img src="../static/images/common/pic-shoes2x.jpg">
+																</a>
+																<div class="mincart-detail">
+																	<a class="mincart-name">三叶草 男女 STAN AMITH BOOST 经典跑步鞋</a>
+																	<p class="mincart-color">颜色:
+																		<span>黄</span>
+																	</p>
+																	<p class="mincart-size">尺码:
+																		<span>42</span>
+																	</p>
+																	<div class="calculate-num e-min-cart-calculate-num">
+																		<a class="btn btn-minus events-minus"><i class="icon icon-mincart-minus"></i></a>
+																		<input type="text" value="" class="form-input events-input" />
+																		<a class="btn btn-plus events-plus"><i class="icon icon-mincart-plus"></i></a>
+																	</div>
+																	<div class="price-item">
+																		<span class="goods-price">HK$799
+																			<del class="original-price">HK$1,099</del>
+																		</span>
+																	</div>
+																	<a class="mincart-del events-mincart-del">删除</a>
+																</div>
+																<div class="info-stock">已下架</div>
+															</div>
+														</li>
+														<li>
+															<div class="checkbox e-checkbox">
+																<i class="icon icon-checked-min-cart icon-a-font icon-checked"></i>
+															</div>
+															<div class="mincart-item float-clearfix">
+																<a class="mincart-img">
+																	<img src="../static/images/common/pic-shoes2x.jpg">
+																</a>
+																<div class="mincart-detail">
+																	<a class="mincart-name">三叶草 男女 STAN AMITH BOOST 经典跑步鞋</a>
+																	<p class="mincart-color">颜色:
+																		<span>黄</span>
+																	</p>
+																	<p class="mincart-size">尺码:
+																		<span>42</span>
+																	</p>
+																	<div class="calculate-num e-min-cart-calculate-num">
+																		<a class="btn btn-minus events-minus"><i class="icon icon-mincart-minus"></i></a>
+																		<input type="text" value="" class="form-input events-input" />
+																		<a class="btn btn-plus events-plus"><i class="icon icon-mincart-plus"></i></a>
+																	</div>
+																	<div class="price-item">
+																		<span class="goods-price price-single">HK$799</span>
+																	</div>
+																	<a class="mincart-del events-mincart-del">删除</a>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="checkbox e-checkbox">
+																<i class="icon icon-checked-min-cart icon-a-font icon-checked"></i>
+															</div>
+															<div class="mincart-item float-clearfix">
+																<a class="mincart-img">
+																	<img src="../static/images/common/pic-shoes2x.jpg">
+																</a>
+																<div class="mincart-detail">
+																	<a class="mincart-name">三叶草 男女 STAN AMITH BOOST 经典跑步鞋</a>
+																	<p class="mincart-color">颜色:
+																		<span>黄</span>
+																	</p>
+																	<p class="mincart-size">尺码:
+																		<span>42</span>
+																	</p>
+																	<div class="calculate-num e-min-cart-calculate-num">
+																		<a class="btn btn-minus events-minus"><i class="icon icon-mincart-minus"></i></a>
+																		<input type="text" value="" class="form-input events-input" />
+																		<a class="btn btn-plus events-plus"><i class="icon icon-mincart-plus"></i></a>
+																	</div>
+																	<div class="price-item">
+																		<span class="goods-price price-single">HK$799</span>
+																	</div>
+																	<a class="mincart-del events-mincart-del">删除</a>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="scrollbar">
+												<div class="track">
+													<div class="thumb">
+														<div class="end"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="mincart-total">
+										<span>总金额：</span>
+										<span>¥3,299.00</span>
+									</div>
+									<!-- 如需显示按钮下面提示文案，在class 上加 is-error即可
+											不显示 删除 is-error -->
+									<div class="mincart-btn is-error">
+										<a class="gl-cta gl-cta--primary btn-blue gl-cta--center">去结算<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span>
+										</a>
+										<div class="msg-block">
+											<span>购物车中含有无法结算的商品，请编辑购物车后结算</span>
+										</div>
+									</div>
+								</div>
+
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+		</div>
+
+		<!-- 内容部分 -->
+		<section class="container">
+			<article class="article faq-article article-faq-width">
+				<div class="search-page-content">
+					<!-- 模块一 -->
+					<div class="help-container help-categories-content">
+						<!-- 面包屑 -->
+						<div class="help-content">
+							<div class="breadcrumb">
+								<ul class="list-inline">
+									<li>
+										<a href="/" class="reture-text"> <i class="icon icon-reture"></i>
+											返回
+										</a>
+									</li>
+									<li class="vertical-line none-sm">|</li>
+									<li class="none-sm">
+										<a href="/">首页</a>
+									</li>
+									<li class="slash none-sm">/</li>
+									<li class="hele-core none-sm">帮助中心</li>
+								</ul>
+							</div>
+							<!-- 使用什么快递配送 -->
+							<div class="contentasset-container">
+								<div class="contentasset border-bot-none">
+									<div class="service-cont">
+										<h5>1.適用性及條款接受</h5>
+										<ul class="contentasset-cont-box pb-0">
+											<li>
+												以下條款及條件（這些“條款及條件”）使用於：
+												<p class="num-pos"><span>a.</span>使用和進入任何位於，由我們的母公司及/或子公司所擁有或代表、及/或代表愛廸達香港有限公司（統稱為“adidas”，“我們”或“我們的”及其語法衍生物須據此解釋）所營運，在www.adidas.com.hk和任何後繼網站（以下簡稱“ 本網站”）的網上商店的資訊，圖片，文件，資料及／或其他服務（“服務”）；</p>
+												<p class="num-pos"><span>b.</span>銷售及購買adidas品牌的產品（“本產品”）；</p>
+
+											</li>
+											<li>在使用網站前，請仔細閱讀這些條款及條件。透過進入或使用本網站，表明您已同意及接受（閣下會被視為已同意及接受）這些條款及條件。條款可能會在任何時間不經通知地修改，並於公佈在平台之時起生效。每次使用網站時，將適用這些使用條款的最新版本。您應該檢查使用條款的日期（如上所示），並查看自上次造訪網站以來所做的任何更改。 藉由繼續進入或使用本網站，即表示你已同意接受修訂版條款。</li>
+											<li>如果您並不同意這些條款，您應停止進入或使用本網站。透過進入或使用本網站，您代表並保證（i）您有足夠的法律年齡或其他法律行為能力，合法同意這些條款及條件 及（ii）您已閱讀，明白並同意受這些條款所約束（iii）您將根據適用的法律使用該網站。透過造訪網站，您也承認某些內容可能不適合 18 歲以下的使用者。</li>
+										</ul>
+									</div>
+									<div class="service-cont">
+										<h5>2.網站上的資訊</h5>
+										<ul class="contentasset-cont-box pb-0">
+											<li>產品說明
+												<span>本網站所描述或描繪的產品和服務的所有描述、圖片、參考、功能、內容、規格、產品和價格，若有更改恕不另行通知。某些重量、尺寸和類似的描述僅為相似值，是為了方便參考而提供。我們盡一切努力盡量準確顯示產品的特性，包括適用的顏色;但是，您看到的實際顏色將取決於設備（包括電腦、手機、平板電腦或其他設備，統稱為“設備”），我們無法保證您的設備能準確顯示適用的顏色。網站上特定時間顯示的任何產品或服務並不代表或保證這些產品或服務在任何時候皆可用。透過購買我們在本網站上提供的產品或服務（“交易”和統稱為“交易”），表示作為適用交易其中一部分所訂購的產品將按照所有適用的法律進行使用。無論是否事先通知，我們都保留權利，可限制現有數量或停止任何產品或服務；禁止任何用戶進行任何或所有交易; 與／或拒絕向任何使用者提供任何產品或服務。</span>
+											</li>
+											<li>外部連結免責聲明
+												<span>如果本網站包含指向互聯網上其他網站的連結，adidas 在此明確聲明，對連結網頁的佈局或內容概無影響力，也不對其負責。此類網站連結僅為您的方便而設。 adidas不對任何其他網站，或任何在此類網站上的內容，材料或其他信息，或您使用此類網站所可能獲得的結果表示認可，保證或作出任何陳述。如果您決定要從此網站透過連結進入其他網站，您是自主決定這樣做的，並將承擔一切風險。在進入、使用、向這些網站提交信息以及允許兒童瀏覽此類網站之前，您應仔細閱讀並理解與任何鏈接網站相關的政策和條件。<br>
+													我們的私隱、安全和Cookie政策（“私隱政策”）並不適用不適用於在外部網站上或透過外部網站收集以及處理您的個人資訊。</span>
+											</li>
+										</ul>
+									</div>
+									<div class="service-cont">
+										<h5>3.身體活動</h5>
+										<p>本網站可能包含推廣身體活動的功能。 請在參與任何身體活動前考慮其中包含的風險並諮詢您的醫療專業人士。 對於您使用或不能使用本網站而可能導致的任何傷害或損害不承擔任何責任。</p>
+									</div>
+									<div class="service-cont">
+										<h5>4.知識產權</h5>
+										<ul class="contentasset-cont-box pb-0">
+											<li>商標
+												<span>本網站上使用的所有商標，商品名稱，品牌名稱，標誌，產品名稱和標題,無論是已註冊或未經註冊,（統稱為“商標”）均為adidas或第三方商標，註冊和/或獲許可的商標或商號持有人所擁有。 本商標受商標、版權及類其他知識產權的保障。 您不得以全部或局部形式使用、模仿，展示或複製任何此類商標，因為這可能構成對相關所有人權利的侵犯。</span>
+											</li>
+											<li>設計，圖像和內容所有權
+												<span>網站上的所有設計、文字、檔案、電影、音樂和／或服務以及精選系列和相關產品，以及所有軟體規格、原始碼、軟體和所有此網站上的素材（統稱為“內容“ ），都受到版權法的保護，並歸 adidas和／或供應商或分包商所有。 本內容是在香港和其他國家的版權法例下的共同作品，受適用的世界版權法例和條約保護。</span>
+											</li>
+											<li>使用限制
+												<span>您只能基於非商業用途，於向我們訂購，或使用本網站作為購物資源，或其他個人用途，下載或列印本網站的部分內容。您不可在非上述用途之下，以其他方式使用本網站的資訊和素材(包含但不限於商標和內容)，包括：複製、編輯、發布。如果您想要使用本網站的素材或資訊(包括但不限於商標和內容)在其他用途上，您必須事先獲得我們的書面同意。</span>
+											</li>
+
+										</ul>
+									</div>
+									<div class="service-cont">
+										<h5>5.私隱，保安和COOKIE政策</h5>
+										<p>adidas會收集和處理此網站訪客的個人數據。所有個人數據之處理將會謹遵相關法規以及私隱政策。私隱政策應構成本條款的一部分。</p>
+									</div>
+									<div class="service-cont">
+										<h5>6.您提供/提交的資訊</h5>
+										<ul class="contentasset-cont-box pb-0">
+											<li>除了在<a href="">私隱政策</a>中提及的資訊外，所有您以任何格式和任何方式傳送或發布到此網站的素材、資訊、建議、意見、概念、知識、技術、問題、留言和任何其他對話或內容（"使用者提交資訊"）(i) 將被視為非機密、非個人和非屬於您或任何人，並且 (ii) 可能會被 adidas 或其母公司或子公司以任何用途傳播或使用，且 (a) 不會支付您或任何人或 (b) 通知您或任何人。您一旦提交資訊，即表示給予 adidas 全球性、不可撤銷、無版權、永久、可交易和再許可的權利，以對您的使用者提交資訊進行複製、公布、交易、修改、創作、改編、出版、公開呈現和展示、發行、聯合與在許可，且可以基於任何用途進行上述行動，並得以選擇是否須經您或其他人的授權（"使用者提交資訊授權"）。adidas 可以，但沒有義務，監控或查看任何使用者提交資訊。adidas 沒有義務使用、回覆、查看或回應任何使用者提交資訊。adidas 並不會為您的資訊或網站訪客提供的素材之可信度負責。網站訪客所表達的意見純屬提交意見本人之個人意見，不代表 adidas 立場。adidas 保有權利（但沒有義務）移除任何或所有使用者提交資訊，包括被 adidas 判定為不恰當或不被接受的內容。如您選擇透過在網站上公開任何可識別您個人身份之資訊或其他資訊，則應自行承擔如此行為之風險。</li>
+											<li>透過送出使用者提交資訊，即表示您保證 (i) 您是這些使用者提交資訊的所有人與得利者，或者您必須取得使用者提交資訊授權，且獲得許可，可以使用這些資訊，(ii) 這些使用者提交資訊和 adidas 從其獲得的使用者提交資訊以及基於這些資訊所採取的行動，不會違反法令或侵犯所有權或其他任何權利，包括但不限於，專利、商標、商業機密、著作權、商標、宣傳、私隱和合約權利等，並且 (iii) 您的使用者提交資訊沒有，且不應該包含任何軟體病毒、網絡爬蟲、蠕蟲、商業宣傳、連鎖信、大量發送郵件或任何形式的垃圾郵件，或任何其他於條款和條件中禁止的內容。</li>
+											<li>我們不能保證使用者提交資訊不會丟失或受到損壞，也不能保證您可以取回您的使用者提交資訊。</li>
+
+										</ul>
+									</div>
+									<div class="service-cont">
+										<h5>7.使用限制</h5>
+										<ul class="contentasset-cont-box pb-0">
+											<li>禁止行為
+												<span>當瀏覽及參與本網站，進入和使用這些功能時，您必須保持禮貌、理性和尊重的態度，並且遵守所有相關法律、規定和準則，以及提交真實且無誤導性的資訊。舉例來說，您不可：要求或以任何其他方式取得、獲得或儲存其他使用者的個人資訊、密碼、帳戶資訊或任何其他資訊；存取或使用他人的帳戶；提供不實的使用者提交資訊；修改、編輯、引用或「摹擬」任何內容；略過我們的網站首頁，在我們的網站建立連結；使用任何資訊採礦、機器人或類似的資訊收集和自動化工具來連結其他網站；拒絕、中斷或以任何其他方式讓任何人無法使用網站或干擾任何使用者的網站體驗，包含但不限於：以任何方式中斷使用者的即時交易；干擾或中斷網站或伺服器或網站的網絡連線、不服從任何網站連線網路的要求、流程、政策或準則；編輯、引用、再授權、翻譯、販售、逆向破解或分析任何網站的部分；或企圖在網站上（或任何其他部分）獲得未經授權的存取。<br>
+													上述限制行為僅作為示例列出，並不意味著完整或詳盡。</span>
+											</li>
+											<li>提交資訊限制
+												<span>若 adidas 合理認為您違反了或可能違反相關限制，除了 adidas 依法可執行任何補救措施之外，adidas 也可能採取其他必要行動來矯正或防止違反限制的行為發生，包括和不限於立即從網站上移除相關素材。在法律的要求下或在adidas的自主方向，adidas 將全力配合執法單位或遵循法院命令或官方要求或指示（在每種情況下的主管機構）揭露任何刊登素材者之身份資訊的命令。</span>
+											</li>
+											<li><b>賠償</b>
+												<span><b>您同意為（1）您的使用者提交資訊或您的進入或使用本網站；（II）您違反這些條款和條件（包括但不限於上述限制條款）的行為; （III）您侵犯任何第三方權利的行為; 或（IV）您違反任何適用法律，規則，規例，或任何主管當局的指令及條例，對ADIDAS及其子公司，ADIDAS及其子公司的董事，高級職員，員工和代理人進行辯護，賠償，以免其遭受任何損失，責任，索賠和費用損失。</b></span>
+											</li>
+
+										</ul>
+									</div>
+									<div class="service-cont">
+										<h5>8.銷售條款</h5>
+										<ul class="contentasset-cont-box pb-0">
+											<li>資格標準
+												<span>您可以通過我們的訪客結賬功能以註冊用戶或訪客的身份訂購商品。 您需要一個電子郵件地址和一個手機號碼來下訂單，您可能需要將瀏覽器設置為接受cookie和彈出視窗，以便能夠使用本網站的所有功能，包括添加產品到 您的購物車並提交訂單。</span>
+											</li>
+											<li>建立賬戶
+												<span>然而，惟有滿 18 歲的使用者可以建立帳戶。如要在網站上購買商品／服務以及存取／使用部份功能，您可能必須建立並使用帳戶。除了您的姓名和聯絡資訊之外，您還必須提供與您帳戶相關的有效的信用卡號、帳單地址以及相關的帳單資訊。當您註冊帳戶時，您必須 (i) 提供正確、真實的資訊，並且 (ii) 於必要時隨時更新這些資訊，以保持您註冊資訊正確和真實。對於由您提供的任何不正確或不完整信息所可能引起的任何損失或損害，您應負上全部負責。一旦註冊帳戶，即表示您保證您有權提供您於註冊帳戶時提供的所有資訊。您有責任維護您帳戶資訊和密碼安全，並且限制他人取得這些資訊或使用您的電腦。所有活動，包括但不限於通過您的帳戶或密碼使用本網站購買的所有產品和服務，均由您自行承擔責任。在您提供任何個人資料給我們之前，請確保您詳閱並了解我們的私隱政策。</span>
+											</li>
+										</ul>
+									</div>
+									<div class="service-cont">
+										<h5>9.訂購商品</h5>
+										<ul class="contentasset-cont-box pb-0">
+											<li>商品供應
+												<span>本網站上的所有資訊僅為要约邀请，而非要約或單方合約。 您同意，您的訂單為您提出的按照使用條款購買你訂單中所列產品的要約。</span>
+											</li>
+											<li>貨幣
+												<span>所有價格均以港幣（"港元"）顯示及收費。</span>
+											</li>
+											<li>服務地區
+												<span>網站上的訂購和寄送僅適用於某些地區和地區的範圍，即中華人民共和國的香港特別行政區（“香港”）及澳門特別行政區（“澳門”）。 如果adidas無法執行訂單，adidas將會盡快通知您。</span>
+											</li>
+											<li>數量限制及不得購買任何産品進行轉售
+												<span>僅接受一般個人訂購數量的訂單。本網站僅供adidas直接向最終消費者銷售產品，因此嚴禁購買任何産品進行轉售。購買產品進行轉售是指向其他（消費者，企業或任何第三方）轉售或打算向他人轉售產品的人購買產品。如果adidas認為您參與了購買産品進行轉售的活動，adidas保留對您採取任何行動的權利，包括但不限於限制您的銷售，取消您的訂單和/或暫停或關閉您的帳戶。</span>
+											</li>
+											<li>確認和接受
+												<span>當您送出訂單之後，我們會傳送收到您訂單的電子郵件（“訂單確認”）給您。這並不表示我們已經接受您的訂單。除非直至（i）您訂購的產品已經出貨，並且（ii）我們已傳送電子郵件給您確認產品已出貨（"出貨確認"），才表示我們接受了您的訂單。</span>
+											</li>
+											<li>庫存限制
+												<span>網站上的產品都是有庫存且可以馬上出貨的。任何無庫存的尺寸都會標示為缺貨。當客戶同時訂購產品時，可能會發生庫存問題。若我們無法寄出您已訂購的產品，我們可能會取消您的部份訂購，並退款給您，或不收取該產品的費用。我們會盡可能維持庫存正確數量。但有時還是難免會出錯。若您想找的產品顯示缺貨，您可以利用「尋找專門店」向您附近的 adidas分店查詢庫存，或者，我們也會定期為網上商店補貨，您可以過一陣子再回到網上商店查看庫存。</span>
+											</li>
+											<li>取消訂單
+												<span>若您送出了錯誤的訂單，或想要在出貨前取消您的訂單，請立即透過我們的在線聊天服務、致電（852）3100 0496或發送電子郵件至：<a href="">OnlineShopHK@adidas.com</a>聯繫adidas的客戶服務， 我們將盡合理的努力考慮您的取消訂單請求，並竭誠為您提供協助。。由於adidas向來以快速出貨為首要目標，因此，您可以取消訂單的時間並不多。</span>
+											</li>
+											<li>不得變更
+												<span>請注意，一旦您送出訂單之後，我們不能進行也不接受任何的變更 （包括送貨地址、尺寸、顏色）。</span>
+											</li>
+											<li>拒絕訂單之權利
+												<span>處理網站上的訂單與否，得視實際供應情況而定。我們保留基於任何原因而拒絕您訂單之權利。我們同時也保留在下列情況之下（恕不詳列），傳送通知給您並取消訂單之權利，且無義務為任何因您訂單被取消而產生的損壞或其他費用負責：</span>
+												<p class="num-pos"><span>a.</span>產品缺貨；</p>
+												<p class="num-pos"><span>b.</span>您的帳單資料錯誤或無法驗證；</p>
+												<p class="num-pos"><span>c.</span>您的訂單被我們的安全系統標示為不正常的訂購或被認為可能是詐騙；</p>
+												<p class="num-pos"><span>d.</span>我們無法送貨到您提供的地址；</p>
+												<p class="num-pos"><span>e.</span>我們認為您未滿18歲；</p>
+												<p class="num-pos"><span>f.</span>我們認為您是經銷商；</p>
+												<p class="num-pos"><span>g.</span>在本網站上價格顯示的錯誤；</p>
+												<p class="num-pos"><span>h.</span>在本網站訊息中出現拼寫錯誤，定價或其他錯誤或過失的情況；或源於出乎我們可以掌控的情況或事件。</p>
+											</li>
+										</ul>
+									</div>
+									<div class="service-cont">
+										<h5>10. 付款</h5>
+										<ul class="contentasset-cont-box pb-0">
+											<li>付款方式
+												<span>您可以使用結帳頁面所指定的付款方式付款。若您持有促銷代碼，請於結帳頁面中的「促銷折扣」欄位中輸入並按一下「使用」。使用前，請檢查促銷代碼的有效期限。請注意，同一筆訂單不得使用超過一個促銷代碼。不是所有產品及並非所有銷售的產品均適用於使用促銷代碼。</span>
+											</li>
+											<li>貨到付款服務
+												<span>貨到付款服務僅適用於位於香港的客戶。<br>
+													如果您選擇了付款方式“貨到付款服務”，則必須在收到產品並簽署發貨確認
+													單之前全額支付您的貨件確認單上的港幣訂單金額。 只有在付款後才能打開包
+													裹並檢查您的物品。</span>
+											</li>
+											<li>資料檢查
+												<span>支付過程中，adidas 可能會檢查您的信用記錄。根據其結果，adidas 可能會更改、調整或拒絕訂單與／或選定的支付方式。在大多數情況下，adidas 會建議您選擇其他支付方式。我們的客戶服務團隊將不會得知信用檢查的結果。</span>
+											</li>
+											<li>運費
+												<span>您同意承擔交付您訂購的產品的運費，包括承運人的費用。 運費取決於產品配送的地點，具體如下：<br>
+													- 每張訂單將收取50港元，並將在結賬頁面一起計算</span>
+											</li>
+											<li>總價格
+												<span>在結帳頁面上顯示的總價格包括運費（如適用）。此總價格將記錄於訂單確認頁。如果使用信用卡支付，整筆訂單的總價格將列於銀行結單上。</span>
+											</li>
+											<li>價格變更
+												<span>產品的價格會顯示在網站上。價格可能會時常變動，但不會影響訂單確認頁上已確認的任何訂單。</span>
+											</li>
+											<li>保留擁有權
+												<span>任何從本網站上購買的產品，在於網站上完成付款流程並出貨到承運人(定義如下)之前，仍被視為 adidas 所有的產權。</span>
+											</li>
+										</ul>
+									</div>
+									<div class="service-cont">
+										<h5> 11. 運送</h5>
+										<ul class="contentasset-cont-box pb-0">
+											<li>運送
+												<span>您訂購的產品將會透過由 adidas的指定承運人，順豐速運（“承運人”）配送至您提供或選擇的送貨地址（視情況而定）。 您同意通過本網站訂購的所有產品均由本承運人發貨。</span>
+											</li>
+											<li>標準運送時間
+												<span>一般來說，交貨時間約為任何訂單下的產品發貨後的2至4個營業日。 請注意，我們無法，也不接受將產品出貨至郵政信箱的訂單。 確實的配送時間將根據所選的區域或地區而有所不同。 我們並不在公眾假期出貨。 就本條款而言，“營業日”指不包括星期日及公眾假期及任何熱帶氣旋警告信號為8號或以上的日子，或在香港發出黑色暴雨警告信號，或在澳門於上午9時至下午5時之間的任何時間發出類似影響的惡劣天氣警告的日子。</span>
+											</li>
+											<li>瑕疵
+												<span>如果所交付的產品有明顯的材料或生產缺陷，包括運輸造成的損壞，請立即以電子郵件或電話通知我們此類缺陷。不這樣做並不會影響您的合法權益。</span>
+											</li>
+											<li>產品的產權轉移
+												<span>您所訂購的產品的產權將在交付給承運人時轉移給您。 一旦產品的產權轉移給您時，產品損壞或丟失的所有風險將轉移給您。 如果您未能收貨或承運人未能將產品配送，產品的風險仍會轉移給您，同時，我們有權向您收取我們因此而要墊付的附加存儲費用或交付費用。</span>
+											</li>
+
+										</ul>
+									</div>
+									<div class="service-cont">
+										<h5>12. 促銷折扣</h5>
+										<p>促銷折扣不得轉讓，亦不得兌現。每張訂單只可以使用一組促銷代碼。每組促銷代碼的條款和條件可能不同，我們保留不接受或給予任何優惠券、優惠代碼、促銷代碼或類似促銷之優惠的權利。若客戶使用未經授權的促銷代碼，則我們保留取消訂單的權利。</p>
+									</div>
+									<div class="service-cont">
+										<h5>13. 產品退貨</h5>
+										<ul class="contentasset-cont-box pb-0">
+											<li>沒有質量問題的退貨
+												<span>對於在本網站購買的產品，您可以在產品單據之日起十四（14）天內（根據物流單據上之日期）申請退貨。 請注意，我們只接受退回的產品符合“退貨條件”且不屬於下述“退貨排除”的退貨。</span>
+												<span>此退貨規則適用於減價商品和促銷商品。</span>
+											</li>
+											<li>存在質量問題的退貨
+												<span>對於在本網站購買存在質量問題的產品，您可以在購買之日起一個月內申請退貨。我們的政策是為了滿足下述“退貨條件”，而質量問題將由我們的售後服務中心驗證。</span>
+												<span>請注意：</span>
+												<p class="num-pos"><span>a.</span>脫線，散口邊（在服裝上常見），由不同的顯示器所造成的色差（不同的顯示器， 色差的現象是難以避免的），產品的厚度，運行線程，手感等細節，均無法識別作為質量問題。</p>
+												<p class="num-pos"><span>b.</span>由於風格、顏色和主觀偏好等原因而退貨並不是具有質量問題的產品的退貨。</p>
+												<p class="num-pos"><span>c.</span>因不當使用或清洗造成的損壞，或因您自己的修改或其他人為因素而造成的損壞並不屬於質量問題。</p>
+												<p class="num-pos"><span></span>如果產品在購買時明確標明有缺陷，此類缺陷視將不被視為質量問題，
+													及不接受退貨。</p>
+												<p class="num-pos"><span>e.</span>在選擇尺寸時，請參考尺寸表並選擇適合您的尺寸。客戶服務團隊只能提
+													供建議，並不能作為您最終購買決策的依據。如果您由於尺寸問題而退
+													貨，這並不是產品質量問題的退貨。</p>
+												<p class="num-pos"><span>f.</span>產品的尺寸規格應以實際產品為準。
+												</p>
+											</li>
+											<li>退貨條件
+												<p class="num-pos"><span>a.</span>產品在退貨期內;</p>
+												<p class="num-pos"><span>b.</span>產品處於原始狀態（例如，產品保持完整，未使用，未洗滌或未修改，產品
+													上沒有污漬或化妝品），和產品的轉售條件並未受影響;</p>
+												<p class="num-pos"><span>c.</span>產品外包裝完好（包括塑料袋或包裝盒，請不要在我們的鞋盒上直接粘貼任何膠帶或標籤，請將鞋盒放進另一個盒子或包裝袋內），產品配件，說明書，吊牌， 標籤等都應該保留;</p>
+												<p class="num-pos"><span>d.</span>如果產品/包裹內含額外禮品（購物贈品），請一併退回禮品。 禮品需要被保持在收到時的狀態。 如果禮品無法被退回，我們有權要求您根據我們所標明禮品的價格支付禮品價格。</p>
+
+											</li>
+
+											<li>不適用退貨條件：
+												<p class="num-pos"><span>a.</span>不是透過網站銷售的產品，即adidas香港官方網上商店;</p>
+												<p class="num-pos"><span>b.</span>沒有質量問題的定制產品;</p>
+												<p class="num-pos"><span>c.</span>沒有質量問題的內衣，襪子，泳裝及精選限量版產品;</p>
+												<p class="num-pos"><span>d.</span>在產品經使用、清洗、加工（例如：修改尺寸）、弄髒或損壞，標識被切割，以及其他不在轉售條件下商品;</p>
+												<p class="num-pos"><span>e.</span>遺失了購買時發出的電子發票或訂單號碼</p>
+												<p class="num-pos"><span>f.</span>逾越退貨期的訂單;</p>
+												<p class="num-pos"><span>g.</span>購買時明確標明有缺陷的產品，然後因產品缺陷為由而退貨; 以及其他根據適用法律，消費者無權退貨的情況。</p>
+												<span>請注意，您只能對在本網站上購買的產品進行網上退貨。 您無法在adidas門市商店退回您在網站上購買的產品，反之亦然。</span>
+											</li>
+											<li>退貨流程
+												<span>請參閱幫助中心或聯繫我們的客戶服務部門了解具體的退貨程序，這些構成本條款的一部分。</span>
+												<span>當退回產品時，請在交貨單中註明退貨原因，以便及時處理。 如果發貨單丟失，請準備一張白紙，並填寫您的姓名，訂單號碼，產品編號，數量和原因。 您還需要指明與退貨產品相關的產品編號、顏色、尺寸和其他信息。</span>
+											</li>
+											<li>退貨和郵寄說明
+												<span>請注意，我們只接受經順豐速運的退貨。 經普通郵件、掛號郵件和快遞的退貨均不會被接受。 如果沒有質量問題的退貨，郵費將由您承擔。</span>
+												<span>為了保護您發送的產品的安全，請務必選擇允許我們打開包裝並檢查產品的快遞公司。</span>
+												<span>我們建議您確保您的包裹安全返回給我們，並要求您向快遞公司申報產品的總價值，以便如果在運輸途中丟失或損壞時您能受到完全的保護。 如果您選擇不確保或申報所退回的產品的總價值，您將對運輸過程中產品的任何損失或損壞負責。 我們對退貨時對產品損壞或丟失的任何風險概不負則。</span>
+
+											</li>
+											<li>退款時間
+												<span>對於退回的產品，一旦我們確認符合退貨條件和要求，我們將在收到退回產品後的7-10個工作日內退還實際購買金額，但是：</span>
+												<p class="num-pos"><span>a.</span>如果您退回的產品是與其他產品一起購買以享受我們的促銷或優惠，我們有權扣除部分退款金額;</p>
+												<p class="num-pos"><span>b.</span>如果您退回的產品是與其他商品一起購買以享受免運費優惠，我們有權從您的退款金額中扣除運費。</p>
+												<span>收到退款的時間取決於不同的退款方式。 實際退款款項到達您帳戶所需的時間取決於不同的銀行或支付平台的運營。 最多可能需要10-15個工作日。</span>
+												<span>如果退貨不符合退貨條件或要求，我們將與您聯繫並將產品退還給您，其費用將由您承擔。</span>
+											</li>
+										</ul>
+									</div>
+									<div class="service-cont">
+										<h5><b>14.免責聲明</b></h5>
+										<p><b>本網站及透過本網站所提供的所有產品或服務皆以「原樣」供應，並不包含任何形式的明示、暗示或保證。您同意必須自行評估與承擔所有使用本網站可能產生的任何風險，包括但不限於，任何透過本網站所獲得之素材的準確度、完整性和可用性。adidas 與其子公司、供應商和服務供應商於法律允許的最大範圍內，不為從本網站上獲得之產品或服務提供保證（包含但不限於第三方產品和服務），包括：適銷性、特定用途之效果、不侵權以及所有權保證。</b></p>
+									</div>
+									<div class="service-cont">
+										<h5><b>15. 責任限制</b></h5>
+										<p><b>ADIDAS與其子公司、供應商或服務供應商皆不為因任何合約、疏忽、嚴格規定責任或其他理論所造成之任何直接、間接、相關、特殊、懲戒性或懲罰性損害負責，包括但不限於，您因使用本網站而造成的利益、使用、數據損害或其他無形資產損失，或您所提供資訊之安全性損失；或第三方在未經授權且有事先或沒有事先通知的情況下截取資訊而造成的損失。特別聲明（但不限於）ADIDAS 或其子公司、供應商或服務供應商將不會對任何由於您使用 ADIDAS 或任何第三方刊登在本網站之內容所產生的損失負責,除非這種損失是由ADIDAS任何有意的不當行為所造成的。您個人可以停用本網站做為您對網站不滿意之補救措施。無論是由於合約、民事侵權行為（包括但不限於疏忽）或其他方面的損害、丟失行為結果，ADIDAS 與其子公司、供應商或服務供應商的最大承擔賠償將不超過港幣 400 元。</b></p>
+										<span>雖然我們會盡全力維護本網站及其營運伺服器的可用性和安全性，但我們無法保證網站能保有絕對的安全性、完整性或正確性，或網站的使用不會受到干擾。本網站可能包含不正確、錯誤以及違反或牴觸這些條款和條件的素材。除此之外，第三方可能會未經授權修改本網站。若您發現任何未經授權的第三方修改本網站，請傳送有問題之素材說明以及 URL 連結或出現該素材之網站位置到：OnlineShopHK@adidas.com與我們聯絡。</span>
+										<span>某些司法管轄區不允許限制或排除特定擔保，或排除或限制特定損害賠償。若您為該轄區之居民，其有關的限制或例外可能不適用於您。</span>
+									</div>
+									<div class="service-cont">
+										<h5><b>16. 終止</b></h5>
+										<p>adidas 保有權利停用或終止您的帳戶（並且刪除該帳戶的個人資料與任何相關內容），或隨時根據任何原因或不需任何原因停止或終止您使用本網站。我們有權隨時變更、暫停或停止所有本網站之任何部份，以及本網站提供之任何產品和服務，恕不另行通知。在您帳戶終止之前，透過您帳戶所進行的任何訂購以及相關費用，都必須由您個人全權負責。我們將不會為您或任何第三方行為負任何責任。</p>
+										<span>為了能確保這些條款和條件的效力，終止之後仍適用且須遵守這些條款和條件。</span>
+									</div>
+									<div class="service-cont">
+										<h5>17. 補充說明</h5>
+										<ul class="contentasset-cont-box pb-0">
+											<li>聯絡資訊
+												<span>若您針對這些條款和條件或本網站有任何疑問，請直接聯絡：<a href="">OnlineShopHK@adidas.com</a></span>
+											</li>
+											<li>條款和條件變更
+												<span>若 adidas 決定變更此條款和條件，我們將會在本網站上刊登變更過後的條款和條件。建議您可以定期查看，以了解是否有所變更。</span>
+											</li>
+											<li>管轄法律和管轄權
+												<span>此條款和條件受香港法律約束保障。<br>針對此條款和條件的任何爭議或相關問題，將由香港法院進行裁決。</span>
+											</li>
+											<li>個別合約商
+												<span>此條款和條件並不，也不應被解釋為您與 adidas之間建立任何合夥、合資、聘僱、代理或加盟關係。</span>
+											</li>
+											<li>分割
+												<span>如果本條款和條件的任何條款被認定違法、無效或因任何原因無法執行，該條款將被視為可與此條款和條件分割之部份，不影響任何其餘條款的有效性和可執行性。</span>
+											</li>
+											<li>指定
+												<span>未經我們明確的事先書面同意，您不得指定、轉讓或再許可您在本條款和條件下的任何或全部權利或義務。</span>
+											</li>
+											<li>不可抗力
+												<span>若由於任何超出我們合理控制範圍內之因素（包含但不限於包括但不限於戰爭，恐怖襲擊，罷工，火災，爆炸，洪水，地震或其他自然災害）而無法履行此條款和條件中之任何責任或義務，我們將不負任何責任。</span>
+											</li>
+											<li>完整協議
+												<span>此條款和條件以及此處提及之所有相關政策，構成您與 adidas 之間之完整協議，此協議將取代您與 adidas 之間事先或同時所達成的任何書面或口頭協議或理解。</span>
+											</li>
+											<li>語言
+												<span>如英文版與中文版有任何不一致或含糊之處，概以英文版本為準。</span>
+											</li>
+											<li>第三方權利
+												<span>任何人均無權根據香港法例第623章《合約（第三者權利）條例》強制執行本條款及條件的任何條款或享有任何條款中的利益。</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 模块二 -->
+					<div class="help-myaccount help-container">
+						<div class="help-myaccount-box float-clearfix">
+							<div class="help-myaccount-left">
+								<div class="contentasset">
+									<h2>如何查询我的订单？</h2>
+									<div class="help-myaccount-text">
+										<p>如果您已经是adidas官方商城会员：</p>
+										<p>您可以登录您的账户，并且点击“订单信息”中的“订单历史记录”进行查询，并跟踪您的订单状态。如果您没有创建过adidas官方商城账户：您可以查看您在付款后收到的adidas官方商城发送给您的电子邮件，并且通过电子邮件内的信息到adidas官方商城查看您的订单进度。</p>
+									</div>
+									<div class="help-myaccount-buttons">
+										<a class="gl-cta color-bright-blue gl-cta--primary gl-cta--full-width">登录<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+										<a class="gl-cta color-bright-blue gl-cta--primary gl-cta--full-width">ORDER TRACKER<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+									</div>
+								</div>
+							</div>
+							<div class="help-myaccount-right">
+								<div class="customer-care-first">
+									<div class="contentasset">
+										<h2>找不到您要问的问题？</h2>
+										<h3>咨询客服</h3>
+									</div>
+									<div class="help-myaccount-support none-sm">
+										<p class="help-myaccount-support-tit">客服服务时间：</p>
+										<p class="help-myaccount-support-tiem">周一至周日：9:30AM-20:00PM</p>
+									</div>
+									<div class="help-myaccount-text">
+										<div>
+											<span class="help-myaccount-icon">
+												<a href="tel:400-999-5999" style="display: block; font-size: 0;">
+													<i class="icon icon-tel"></i>
+												</a>
+											</span>
+											<span class="help-myaccount-cont">
+												<a>客服电话： 400-999-5999</a>
+												<p class="none block-sm">周一至周日：9:30-20:00</p>
+											</span>
+										</div>
+										<div>
+											<span class="help-myaccount-icon"><i class="icon icon-chat-80"></i></span>
+											<span class="help-myaccount-cont">
+												<a>在线客服live</a>
+												<p class="none block-sm">周一至周日：9:30-20:00</p>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<!-- 底部导航部分 -->
+		<footer class="footer">
+			<div class="back-top events-backtop none block-sm"><i class="icon icon-a-font icon-back-top"></i>回到頂部</div>
+			<div class="footer-top">
+				<div class="footer-top-container float-clearfix">
+					<ul class="none-sm">
+						<li>
+							<p>
+
+								<span>联系我们</span>
+							</p>
+						</li>
+						<li>
+							<p>
+								<i class="icon icon-contact-us-service"></i>
+								<span>在线客服</span>
+							</p>
+							<p class="remarks">(仅支持中文)</p>
+						</li>
+						<li>
+							<p>
+								<i class="icon icon-contact-us-tel"></i>
+								<span>400-999-5999</span>
+							</p>
+							<p class="remarks">(仅支持中文)</p>
+						</li>
+						<li>
+							<a href="">
+								<p>
+									<i class="icon icon-contact-us-email"></i>
+									<a>service@adidas.com</a>
+								</p>
+								<p class="remarks">(中英文均支持)</p>
+							</a>
+						</li>
+						<li>
+							<p><i class="icon icon-contact-us-time"></i><span>9:30-22:00</span></p>
+						</li>
+						<li class="order-tracking"><a href=""><i class="icon-new icon-order"></i>订单追踪</a></li>
+					</ul>
+					<ul class="none block-sm">
+						<!-- 添加 is-logged 显示已登录状态 -->
+						<li class="is-login">
+							<a href="#"><i class="icon-new icon-login"></i>登入</a>
+							<a href="#"><i class="icon-new icon-login"></i><span>凯文</span></a>
+						</li>
+						<li>
+							<a href="#"><i class="icon-new icon-cart"></i>您的購物袋</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+
+
+			<div class="footer-cont">
+				<div class="footer-cont-top none-sm float-clearfix">
+					<ul>
+						<li class="title">产品</li>
+						<li><a href="#">鞋类</a></li>
+						<li><a href="#">服装</a></li>
+						<li><a href="#">配件</a></li>
+						<li><a href="#">新品上市</a></li>
+					</ul>
+					<ul>
+						<li class="title">运动</li>
+						<li><a href="#">跑步</a></li>
+						<li><a href="#">训练</a></li>
+						<li><a href="#">足球</a></li>
+						<li><a href="#">篮球</a></li>
+						<li><a href="#">户外</a></li>
+					</ul>
+					<ul>
+						<li class="title"><a>帮助中心</a></li>
+						<li><a href="#">尺码表</a></li>
+						<li><a href="#">adiCLUB会员</a></li>
+						<li><a href="#">门店查询</a></li>
+						<li><a href="#">关于我们</a></li>
+						<li><a href="#">企业社会责任</a></li>
+						<li><a href="#">Confirmed app</a></li>
+					</ul>
+					<ul>
+						<li class="title">网站政策</li>
+						<li><a href="">使用条款</a></li>
+						<li><a href="">隐私声明</a></li>
+						<li><a href="">物流配送规则</a></li>
+						<li><a href="">退货规则</a></li>
+						<li><a href="">定制和印制服务条款</a></li>
+						<li><a href="">adiCLUB会员规则</a></li>
+					</ul>
+					<ul class="footer-share">
+						<li class="title">关注我们</li>
+						<li><a href="#"><i class="icon-new icon-facebook"></i></a></li>
+						<li>
+							<a class="events-wechat-code"><i class="icon-new icon_instagram"></i></a>
+							<!-- <div class="wechat-code-box">
+									<div>
+										<img src="images/wechat-img-1.jpg" />
+										<p>关注阿迪达斯<br/>官方网上商城</p>
+									</div>
+									<div>
+										<img src="images/wechat-img-1-add.png" />
+										<p>即刻扫码官方微信<br/>享受更多贴心服务</p>
+									</div>
+								</div> -->
+						</li>
+					</ul>
+					<ul class="footer-Payment-method">
+						<li class="title li-block">我们接受下列付款方式：</li>
+						<li class="pay-mathod-item"><span class="visa-update"><img src="images/check/visa@2x.png" /></span></li>
+						<li class="pay-mathod-item"><span class="icon-new icon-mastercard-index"></span></li>
+						<li class="pay-mathod-item"><span class="icon-new icon-delivery-index"></span></li>
+						<li class="pay-mathod-item"><span class="icon-new icon-alipay-index"></span></li>
+					</ul>
+					<ul class="footer-group-purchase footer-Payment-method none-sm">
+						<li class="title">企业团购热线：</li>
+						<li class="title">021-2525 6881</li>
+						<li class="title">企业团购邮箱：</li>
+						<li class="title">adidas.b2b@adidas.com</li>
+						<li class="title">（仅限采购金额10万以上）</li>
+					</ul>
+				</div>
+				<div class="footer-cont-top none block-sm float-clearfix">
+					<ul>
+						<li><a href="">幫助中心</a></li>
+						<li><a href="">adiCLUB會員</a></li>
+						<li><a href="">門店查詢</a></li>
+						<li><a href="">訂單追蹤</a></li>
+						<li><a href="">企業團購</a></li>
+						<li><a href="">在線客服</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-cont-country none block-sm">
+				<div class="footer-cont-country-icon">
+					<a class="events-country country-icon"><i class="icon icon-china"></i><span>中國</span><i class="icon icon-arrow-down icon-a-font"></i></a>
+				</div>
+			</div>
+			<div class="footer-cont-bottom">
+				<div class="float-clearfix">
+					<ul class="footer-cont-left">
+						<li class="footer-language">
+							<!-- <i class="icon icon-china"></i> -->
+							<a class="events-country"> <img src="images/check/nationalflag.png" /><span>中國</span></a>
+							<div class="none block-sm">
+								<a onclick="window.open ('https://care60.live800.com/live800/chatClient/chatbox.jsp?companyID=80001164&amp;configID=636&amp;lan=zh&amp;tm=1489566278790', 'newwindow', 'height=600, width=700, toolbar =no, menubar=no, scrollbars=no, resizable=no, location=no, status=no')" href=""> <i class="icon icon-online-service"></i>在线客服 </a>
+							</div>
+						</li>
+						<li class="footer-contact float-clearfix">
+							<div>
+								<i class="icon icon-contact-us-email"></i><a href="mailto:onlineShopHK@adidas.com">onlineShopHK@adidas.com</a>
+							</div>
+							<div>
+								<i class="icon icon-contact-us-tel"></i><span>3100-0496</span>
+							</div>
+						</li>
+						<li><a href="help-pp.html">隱私政策</a></li>
+						<li><a href="help-law.html">法律條款</a></li>
+						<li class="none-sm"><a href="help-package.html">货物所有权转移</a></li>
+						<li class="none-sm"><a href="help-sitemap.html">网站地图</a></li>
+					</ul>
+					<ul class="footer-cont-left mob-cont-record none block-sm">
+						<li><a href=""><i class="icon icon-ebs2"></i>蘇公網安備 32059002001401號</a></li>
+						<li><a href=""><i class="icon icon-ebs1"></i>江蘇工商</a></li>
+					</ul>
+					<ul class="footer-cont-right">
+						<li>蘇ICP備14048805號-1&nbsp;<a href="http://odr.jsdsgsxt.gov.cn:8081/mbm/entweb/elec/certView.shtml?siteId=bcf44f76c12e4a5588ae114fa1d6d0c9" class="none-sm"><i class="icon icon-ebs1"></i></a></li>
+						<li>© 2017 adidas</li>
+						<li class="none-sm"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32059002001401"><i class="icon icon-ebs2"></i>&nbsp;&nbsp;苏公网安备 32059002001401号</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<!-- 团购弹层 -->
+		<script id="group-purchase-dialog" type="text/template">
+			<div class="dialog">
+					<div class="dialog-container notice-container">
+						<h4 class="notice-font">企业团购</h4>
+						<div class="group-purchase-content customized-dialog-content">
+							<div>
+								<p><span>企业团购热线及邮箱</span></p>
+								<p><span>团购热线：</span><a>021-2525 6881</a></p>
+								<p><span>团购邮箱：</span>adidas.b2b@adidas.com</p>
+								<p>仅限采购金额10万以上</p>
+							</div>
+						</div>
+					</div>
+					<div class="dialog-close-box"><i class="icon icon-close dialog-close"></i></div>
+				</div>
+			</script>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

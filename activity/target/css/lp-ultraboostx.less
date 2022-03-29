@@ -1,0 +1,130 @@
+@charset "UTF-8";
+.article {
+	.ultraboostx-banner {
+		position: relative;
+		img {
+			width: 100%;
+		}
+		.ultraboostx-btn {
+			position: absolute;
+			left: 26.8%;
+			top: 56.6%;
+		}
+	}
+	.ultraboostx-md-banner {
+		max-width: 986px;
+		margin: 0 auto;
+		padding-top: 22px;
+	}
+	.ultraboostx-see-more {
+		max-width: 990px;
+		margin: 0 auto;
+		padding-top: 42px;
+	}
+	
+}
+.goods-list{
+    max-width: 986px;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-left: 14px;
+    padding-bottom: 30px;
+    font-size: 0;
+    .goods-item{
+        display: inline-block;
+        width: 240px;
+        padding-right: 10px;
+        margin: 0 0 12px;
+        .thumbnail{
+            position: relative;
+            z-index: 4;
+            padding: 0;
+            background: #fff;
+            border-radius: 0;
+            img{
+                border-radius: 0;
+            }
+            >a{
+                position: relative;
+                padding: 0;
+            }
+            .goods-box{
+                padding: 10px 5px 5px;
+                >a{
+                    width: 100%;
+                    padding: 0;
+                }
+                .goods-title{
+                    font-size: 12px;
+                    min-height: 32px;
+                    max-height: 32px;
+                    line-height: 16px;
+                    padding-right: 10px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+                .goods-bottom{
+                    padding-top: 12px;
+                    line-height: 14px;
+                    >span{
+                        &.goods-price{
+                            font-size: 14px;
+                            color: #C53622;
+                            font-weight: bold;
+                            &.price-single {
+                                color: #000;
+                            }
+                            del {
+                                font-size: 14px;
+                                color: #5E686E;
+                                margin-left: 6px;
+                                font-weight: normal;
+                            }
+                        }
+                    }
+        
+                }
+            }
+            &:hover{
+                    box-shadow: 1px 2px 5px 0 rgba(136, 136, 136, 0.5);
+                
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+	.article {
+		.ultraboostx-md-banner {
+			max-width: 750px;
+			padding-top: 16px;
+		}
+		.ultraboostx-see-more {
+			max-width: 750px;
+			padding-top: 28px;
+		}
+	}
+}
+@media screen and (max-width: 1024px){
+    .goods-list{
+        padding-top: 16px;
+        padding-right: 14px;
+        max-width: 750px;
+        .goods-item{
+            width: 50%;
+            .thumbnail{
+                img{
+                    width: 100%;
+                }
+                .goods-box{
+                    margin-top: 14px;
+                    border-top: 1px dotted #8d8d8d;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no" />
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit" />
+	<meta name="MobileOptimized" content="320" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta content="telephone=no" name="format-detection" />
+
+	<title>登录</title>
+
+	<!-- 公共 CSS 部分开始 -->
+	<link rel="stylesheet" href="libs/spice/css/spice.css" />
+	<!-- 字体图标样式，不需要时可不引用 -->
+	<link rel="stylesheet" href="libs/spice/css/spice.icon.css" />
+	<!--[if lt IE 9]>
+			<link rel="stylesheet" href="libs/spice/css/spice.ie8.css" />
+		<![endif]-->
+	<!--[if lte IE 7]>
+			<link rel="stylesheet" href="libs/spice/css/spice.ie7.css" />
+		<![endif]-->
+	<link rel="stylesheet" href="libs/spice/js/cloudzoom/css/cloudzoom.css" />
+	<link rel="stylesheet" href="libs/spice/js/tinyscrollbar/css/tinyscrollbar.css" />
+	<link rel="stylesheet" href="libs/spice/js/datetime/css/datetime.css" />
+	<link rel="stylesheet" href="libs/slider/jquery-ui.css" />
+	<link rel="stylesheet" href="libs/swiper/css/swiper.min.css" />
+	<!-- 自定义 CSS -->
+	<link rel="stylesheet" href="css/common.css" />
+	<!-- 自定义 CSS end -->
+	<!-- 公共 CSS 部分结束 -->
+
+
+	<link rel="stylesheet" href="css/login.css" />
+	<!-- 公共 JS 部分开始 -->
+	<script type="text/javascript" src="libs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="libs/iscroll/iscroll.js"></script>
+	<script type="text/javascript" src="libs/handlebars/handlebars-v4.0.5.js"></script>
+	<script type="text/javascript" src="libs/spice/js/jquery.spice.js"></script>
+	<script type="text/javascript">
+		(function($) {
+			$.spice.init({
+				throttleTime: 100,
+				debounceTime: 300
+			});
+		})(jQuery);
+	</script>
+	<script type="text/javascript" src="libs/spice/js/jquery.spice.tools.js"></script>
+	<script type="text/javascript" src="libs/spice/js/checkBox/jquery.checkBox.js"></script>
+	<script type="text/javascript" src="libs/spice/js/lazyLoad/jquery.lazyLoad.js"></script>
+	<script type="text/javascript" src="libs/velocity/velocity.js"></script>
+	<script type="text/javascript" src="libs/spice/js/kvScroll/jquery.kvScroll.js"></script>
+	<script type="text/javascript" src="libs/spice/js/dropdown/jquery.dropdown.js"></script>
+	<script type="text/javascript" src="libs/spice/js/cloudzoom/jquery.cloudzoom.js"></script>
+	<script type="text/javascript" src="libs/spice/js/tinyscrollbar/jquery.tinyscrollbar.js"></script>
+	<script type="text/javascript" src="libs/spice/js/placeholder/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="libs/spice/js/citySelect/json/area.zh.js"></script>
+	<script type="text/javascript" src="libs/spice/js/citySelect/jquery.citySelect.js"></script>
+	<script type="text/javascript" src="libs/spice/js/calculateNum/jquery.calculateNum.js"></script>
+	<script type="text/javascript" src="libs/spice/js/checkBox/jquery.checkBox.js"></script>
+	<script type="text/javascript" src="libs/spice/js/searchBox/jquery.searchBox.js"></script>
+	<script type="text/javascript" src="libs/spice/js/ymdSelect/jquery.ymdSelect.js"></script>
+	<script type="text/javascript" src="libs/slider/jquery-ui.js"></script>
+	<script type="text/javascript" src="libs/swiper/js/swiper.min.js"></script>
+	<script type="text/javascript" src="libs/spice/js/starRank/jquery.starRank.js"></script>
+	<script type="text/javascript" src="libs/spice/js/messageLimit/jquery.messageLimit.js"></script>
+	<!--[if lt IE 9]>
+			<script type="text/javascript" src="libs/respond/respond.min.js"></script>
+			<script type="text/javascript" src="libs/html5shiv/html5shiv.min.js"></script>
+		<![endif]-->
+	<!-- 字体图标js，兼容低版本浏览器，不需要时可不引用 -->
+	<!--[if lte IE 7]>
+			<script type="text/javascript" src="libs/spice/js/jquery.spice.ie7.js"></script>
+		<![endif]-->
+
+
+	<script type="text/javascript" src="js/common.js"></script>
+	<!-- 公共 JS 部分结束 -->
+
+	<script type="text/javascript" src="js/login.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<!-- 顶部导航部分 -->
+		<header class="header-simple">
+			<div class="header-container float-clearfix">
+				<a href="/">
+					<img src="images/logo.png">
+					<!-- 新样式 -->
+					<!-- <span class="icon icon-adidas icon-a-font"></span> -->
+				</a>
+				<div class="header-simple-right">
+					<span class="none block-sm">
+						<a href="">
+							<span class="icon icon-phone icon-a-font"></span>
+						</a>
+					</span>
+					<span>
+						<a href="">
+							<span>在线客服</span><i class="icon icon-service"></i>
+						</a>
+					</span>
+					<span class="none-sm">400-999-5999 <span>(仅支持中文)</span></span>
+					<span class="none-sm">9:30-20:00</span>
+				</div>
+			</div>
+		</header>
+
+		<!-- 内容部分 -->
+		<section class="container container-simple">
+
+			<article class="article article-login login-bg">
+				<!--不同状态 加不同的class 如：
+						3次出验证码加calss：login-verification 。
+						验证码成功删calss：login-verification ，
+						加class：login-verification-success 。 -->
+				<div class="login-content float-clearfix hyper-launch-login login-verification">
+					<div class="login-left">
+						<p class="login-title">由于系统升级，2017年8月1日前已注册用户首次登录需要重置密码，给您带来不便敬请谅解。</p>
+
+						<div class="login-box show-mobb">
+							<h4 class="float-clearfix fontw-b"><span>用户</span>登录 <i class="icon icon-login-detial"></i></h4>
+							<div class="login-detial login-error">
+								<p class="login-title">由于系统升级，2017年8月1日前已注册用户首次登录需要重置密码，给您带来不便敬请谅解。</p>
+								<div class="form-input">
+									<input type="text" placeholder="邮箱/手机号" />
+									<a class="login-clears e-login-clears none"><i class="icon icon-clears "></i></a>
+									<div class="msg-block">
+										<i class="icon msg-icon"></i>
+										<span>请输入正确的邮箱地址</span>
+									</div>
+								</div>
+								<div class="form-input">
+									<input type="text" placeholder="密码" />
+									<a class="login-clears e-login-clears none"><i class="icon icon-clears "></i></a>
+									<div class="msg-block">
+										<i class="icon msg-icon"></i>
+										<span>密码错误</span>
+									</div>
+								</div>
+								<!-- <div class="form-input form-input-code ww-100">
+										<input type="text" placeholder="输入图片上的验证码"/>
+										<div class="code-img float-clearfix">
+											<img src="images/login/CAPTCHA.png" alt="" />
+											<a>换一个</a>
+										</div>
+										<div class="msg-block">
+											<i class="icon msg-icon"></i>
+											<span>验证码错误</span>
+										</div>
+									</div> -->
+								<div class="form-input-code">
+									<a class="gl-cta gl-cta--primary gl-cta--center btn-blue">点击进行验证</a>
+									<!-- 验证成功按钮，验证成功显示 -->
+									<a class="btn btn-verification-success"><i class="icon icon-success1"></i></a>
+								</div>
+								<div class="login-remeber">
+									<label class="form-remeber dis-in-b">
+										<i class="icon icon-checked"></i>记住我的信息
+									</label>
+								</div>
+								<div class="login-btn float-clearfix">
+									<!-- 如果是登录状态需要加 span （第一个） 登录中动态则不需要（第二个） -->
+									<a class="btn btn-blue gl-cta gl-cta--primary gl-cta--center color-bright-blue" href="checkout-member.html">登录<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+									<a class="gl-cta gl-cta--primary gl-cta--center visitor" href="checkout-member.html">以访客身份结算<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+									<!-- <a href="" class="visitor"><span>以访客身份结算</span></a> -->
+									<a href="" class="forget">忘记密码？</a>
+								</div>
+
+								<div class="third-party-login">
+									<p class="third-tit">使用其他方式登录</p>
+									<ul class="list-inline">
+										<li><a href="#"><i class="icon icon-qq"></i></a></li>
+										<li><a href="#"><i class="icon icon-weixin"></i></a></li>
+										<li><a href="#"><i class="icon icon-alipay"></i></a></li>
+										<li><a href="#"><i class="icon icon-weibo"></i></a></li>
+									</ul>
+									<p class="third-tit-bottom">* 已绑定微信adiCLUD会员卡的会员，可通过微信直接登录</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="login-right">
+						<div class="login-box show-mobb">
+							<h4 class="float-clearfix fontw-b">创建账户<i class="icon icon-login-detial"></i></h4>
+							<div class="login-detial">
+								<p class="login-right-tlt">注册用户并完善个人信息，即可享受账户的好处：</p>
+								<div class="regist-inner">
+									<div>
+										<i class="icon icon-conform"></i>
+										<span>只需1分钟即可完成创建</span>
+									</div>
+									<div>
+										<i class="icon icon-conform"></i>
+										<span>安全快捷支付订单</span>
+									</div>
+									<div>
+										<i class="icon icon-conform"></i>
+										<span>随时跟踪订单状态</span>
+									</div>
+									<div>
+										<i class="icon icon-conform"></i>
+										<span>即时收到打折优惠及新品发布信息</span>
+									</div>
+								</div>
+
+								<!-- 注意！！！因login-right-explain无法按照设计稿适配pc、mobile 所以需要两套结构 -->
+								<div class="login-right-explain none-sm">
+									<p>消费即可获得积分，累计一定积分可自动兑换优惠券。</p>
+									<p>现评论所购商品，更可获奖励积分！</p>
+									<p>更多会员权益等您发现！</p>
+								</div>
+								<div class="login-btn float-clearfix">
+									<a class="btn btn-blue gl-cta gl-cta--primary gl-cta--center color-bright-blue" href="">注册<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+									<!-- <a class="btn btn-blue btn-have-arrow"><span>注册</span></a> -->
+								</div>
+								<!-- 注意！！！因login-right-explain无法按照设计稿适配pc、mobile 所以需要两套结构 -->
+								<div class="login-right-explain none block-sm">
+									<p>消费即可获得积分，累计一定积分可自动兑换优惠券。</p>
+									<p>现评论所购商品，更可获奖励积分！</p>
+									<p>更多会员权益等您发现！</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</article>
+
+		</section>
+
+		<!-- 底部导航部分 -->
+		<footer class="footer">
+			<div class="back-top events-backtop none block-sm"><i class="icon icon-a-font icon-back-top"></i>回到顶部</div>
+
+			<div class="footer-cont-bottom">
+				<div class="footer-cont-simple float-clearfix">
+					<ul class="footer-cont-left mob-cont-record none block-sm">
+						<li><a href=""><i class="icon icon-ebs2"></i>苏公网安备 32059002001401号</a></li>
+						<li><a href=""><i class="icon icon-ebs1"></i>江苏工商</a></li>
+					</ul>
+					<ul class="footer-cont-right">
+						<li>苏ICP备14048805号-1&nbsp;<a href="http://odr.jsdsgsxt.gov.cn:8081/mbm/entweb/elec/certView.shtml?siteId=bcf44f76c12e4a5588ae114fa1d6d0c9" class="none-sm"><i class="icon icon-ebs1"></i></a></li>
+						<li>© 2017 adidas</li>
+						<li class="none-sm"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32059002001401"><i class="icon icon-ebs2"></i>&nbsp;&nbsp;苏公网安备 32059002001401号</a></li>
+						<!-- <li class="xs-show"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32059002001401"><i class="icon icon-ebs1"></i></a></li> -->
+					</ul>
+					<!-- <ul class="footer-cont-right">
+							<li><a href="">苏公网安备 32059002001401号</a></li>
+							<li>© 2016 adidas</li>
+						</ul> -->
+				</div>
+			</div>
+		</footer>
+
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

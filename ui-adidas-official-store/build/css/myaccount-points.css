@@ -1,0 +1,115 @@
+@charset "UTF-8";
+.center-banner {
+  margin: 20px 0;
+}
+.center-banner img {
+  width: 100%;
+}
+.myaccount-right-content {
+  /*空页面*/
+}
+.myaccount-right-content .myaccount-right-tit h3 {
+  height: 40px;
+}
+.myaccount-right-content.my-points-empty .points-item-empty {
+  padding: 20px 0  0;
+}
+.myaccount-right-content.my-points-empty .points-item-empty p {
+  font-size: 14px;
+  color: #000;
+  line-height: 14px;
+  margin-bottom: 10px;
+}
+.myaccount-right-content.my-points-empty .points-item-empty p a {
+  text-decoration: underline;
+}
+.myaccount-right-content.my-points-empty .points-item-empty .btn-blue {
+  width: 230px;
+  height: 42px;
+  line-height: 42px;
+  margin-top: 10px;
+}
+.myaccount-right-content .points-item-box .points-item-tit {
+  font-size: 14px;
+  color: #000000;
+  line-height: 55px;
+}
+.myaccount-right-content .points-item-box .points-item-tit span {
+  font-weight: 700;
+}
+.myaccount-right-content .points-item-box .points-item-cont .points-item-cont-tb {
+  border-top: 1px dotted #C8CBCC;
+  width: 100%;
+}
+.myaccount-right-content .points-item-box .points-item-cont .points-item-cont-tb tr {
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+  border-bottom: 1px dotted #C8CBCC;
+}
+.myaccount-right-content .points-item-box .points-item-cont .points-item-cont-tb tr th {
+  font-weight: 700;
+  background: #F9F9F9;
+  line-height: 42px;
+}
+.myaccount-right-content .points-item-box .points-item-cont .points-item-cont-tb tr td {
+  line-height: 44px;
+}
+.myaccount-right-content .points-item-box .myaccount-paging {
+  margin-bottom: 26px;
+}
+.myaccount-right-content .points-item-box .points-item-tips {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.myaccount-right-content .points-item-box .points-item-tips a {
+  text-decoration: underline;
+}
+@media (max-width: 1024px) {
+  .center-banner {
+    margin: 0;
+  }
+  .center-banner img {
+    width: 100%;
+  }
+  .myaccount-right-content {
+    /*空页面*/
+  }
+  .myaccount-right-content .myaccount-right-tit h3 {
+    height: auto;
+  }
+  .myaccount-right-content .points-item-box .points-item-tit {
+    font-size: 12px;
+    padding: 0 20px;
+    line-height: 1;
+  }
+  .myaccount-right-content .points-item-box .points-item-tit p {
+    margin: 10px 0 20px;
+  }
+  .myaccount-right-content .points-item-box .points-item-tit p a {
+    text-decoration: underline;
+  }
+  .myaccount-right-content .points-item-box .points-item-cont .points-item-cont-tb tr th {
+    line-height: 37px;
+    font-size: 12px;
+  }
+  .myaccount-right-content .points-item-box .points-item-cont .points-item-cont-tb tr td {
+    line-height: 45px;
+    font-size: 12px;
+  }
+  .myaccount-right-content.my-points-empty .points-item-empty {
+    padding: 0 20px;
+  }
+  .myaccount-right-content.my-points-empty .points-item-empty p {
+    font-size: 12px;
+    padding: 0;
+  }
+  .myaccount-right-content.my-points-empty .points-item-empty p a {
+    font-size: 12px;
+  }
+  .myaccount-right-content.my-points-empty .points-item-empty .btn-blue {
+    width: 100%;
+    font-size: 16px;
+    margin: 20px 0 16px;
+  }
+}

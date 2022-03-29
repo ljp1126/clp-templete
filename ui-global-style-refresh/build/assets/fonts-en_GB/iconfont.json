@@ -1,0 +1,114 @@
+{
+  "id": "1703081",
+  "name": "adi",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15071751",
+      "name": "email",
+      "font_class": "email",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "15071752",
+      "name": "Facebook",
+      "font_class": "Facebook",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "15071753",
+      "name": "Whatsapp",
+      "font_class": "Whatsapp",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "14356683",
+      "name": "whatsapp",
+      "font_class": "whatsapp",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "13681715",
+      "name": "iPhone",
+      "font_class": "Fill",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "13638607",
+      "name": "icon_delete_16",
+      "font_class": "icon_delete_",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "13638575",
+      "name": "arrow_up_mob@1x",
+      "font_class": "arrow_up_mobx",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "13638523",
+      "name": "sign in",
+      "font_class": "signin",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "13590853",
+      "name": "icon-bag20x20",
+      "font_class": "icon-bagx",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "13590729",
+      "name": "订单",
+      "font_class": "dingdan",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "13590730",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "13590731",
+      "name": "邮件",
+      "font_class": "youjian",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "13590732",
+      "name": "Group",
+      "font_class": "Group",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "13590733",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "13590735",
+      "name": "adi logo",
+      "font_class": "adilogo",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    }
+  ]
+}

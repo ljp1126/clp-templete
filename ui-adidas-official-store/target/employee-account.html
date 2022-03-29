@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" type="text/css" href="css/myaccount-memeber.css">
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="js/myaccount-memeber.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+
+			<!-- 内容部分 -->
+			<section class="container">
+
+				<article class="article article-breadcrumb-common-width none-sm">
+					<div class="breadcrumb">
+						<ul class="list-inline">
+							<li><a href="#"><i class="icon icon-round-lightgray-lefts"></i>返回</a></li>
+							<li class="divider">丨</li>
+							<li><a href="/">首页</a></li>
+							<li class="divider">/</li>
+							<li><a href="/">我的账户</a></li>
+						</ul>
+					</div>
+				</article>
+
+				<!-- 模块二 -->
+				<article class="article article-my-width">
+
+					<div class="my-content-box float-clearfix">
+						<!-- 左 导航 -->
+						<%include _includes/empolyeeaccount-left-nav.html %>
+
+						<!-- 右 内容 -->
+						<div class="myaccount-right">
+							<div class="myaccount-rig-left float-clearfix">
+								<div class="myaccount-box memeber">
+									<div class="memeber-box memeber-information">
+										<div class="myaccount-tit float-clearfix">
+											<h3>您好！James</h3>
+											<div>
+												<span>不是James？</span>
+												<a>退出</a>
+											</div>
+										</div>
+
+										<div class="ed-memeber-info">
+											<p><strong>员工工号：1112563</strong>感谢您成为我们的员工！</p>
+											<div class="empolyee-ed float-clearfix">
+												<ul>
+													<li class="float-left">
+														<a href="">
+															<span>本月总额度</span>
+															<span>3000.00</span>
+														</a>
+													</li>
+													<li class="float-left">
+														<a href="">
+															<span>本月可用额度</span>
+															<strong>25890.00</strong>
+															<i class="icon icon-round-gray-rights"></i>
+														</a>
+													</li>
+												</ul>
+											</div>
+                                        </div>
+
+                                        <div class="employee-hot-recommend">
+                                            <h3>员工内购热门推荐</h3>
+                                            <div class="row">
+                                                <div class="col-12-3 col-sm-12-6">
+                                                    <a href="#">
+                                                        <img class="events-changeSrc" src="images/blank.gif"
+                                                            data-image='{"standard":{"high":"", "normal":"../static/images/employee-account/banner-1-p.png"},
+                                                            "medium":{"high":"", "normal":"../static/images/employee-account/banner-1-m.png"},
+                                                            "small":{"high":"", "normal":"../static/images/employee-account/banner-1-m.png"}}'
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <div class="col-12-3 col-sm-12-6">
+                                                    <a href="#">
+                                                        <img class="events-changeSrc" src="images/blank.gif"
+                                                            data-image='{"standard":{"high":"", "normal":"../static/images/employee-account/banner-2-p.png"},
+                                                            "medium":{"high":"", "normal":"../static/images/employee-account/banner-2-m.png"},
+                                                            "small":{"high":"", "normal":"../static/images/employee-account/banner-2-m.png"}}'
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <div class="col-12-3 col-sm-12-6">
+                                                    <a href="#">
+                                                        <img class="events-changeSrc" src="images/blank.gif"
+                                                            data-image='{"standard":{"high":"", "normal":"../static/images/employee-account/banner-1-p.png"},
+                                                            "medium":{"high":"", "normal":"../static/images/employee-account/banner-1-m.png"},
+                                                            "small":{"high":"", "normal":"../static/images/employee-account/banner-1-m.png"}}'
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <div class="col-12-3 col-sm-12-6">
+                                                    <a href="#">
+                                                        <img class="events-changeSrc" src="images/blank.gif"
+                                                            data-image='{"standard":{"high":"", "normal":"../static/images/employee-account/banner-2-p.png"},
+                                                            "medium":{"high":"", "normal":"../static/images/employee-account/banner-2-m.png"},
+                                                            "small":{"high":"", "normal":"../static/images/employee-account/banner-2-m.png"}}'
+                                                        />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+									</div>
+
+									<div class="memeber-box memeber-order">
+										<div class="myaccount-tit float-clearfix">
+											<h3>官网订单</h3>
+											<div>
+												<a>查看全部订单<i class="icon icon-round-gray-rights"></i></a>
+											</div>
+										</div>
+
+										<div class="memeber-order-info myaccount-right-content">
+											<ul class="goods-item-box">
+												<!-- 不同状态的订单，在此加不同的class，如待支付加class='goods-item-stay-pay' -->
+												<li class="goods-item-info goods-item-stay-pay float-clearfix">
+													<div class="info-wrapper">
+														<p class="order-info">
+															<span>
+																<span>下单时间：&nbsp;</span>2017.4.25 10:30:30
+															</span>
+															<span class="mob-block">
+																<span>订单编号：&nbsp;</span>AD123456789
+															</span>
+															<strong class="pull-right">待支付</strong>
+														</p>
+														<p class="order-info employee-order-info">
+															<span class="mob-margin">
+																共&nbsp;<strong>1</strong>&nbsp;件商品<span class="none-sm">，</span>
+															</span>
+															<span>
+																<span>订单金额：&nbsp;</span><strong>￥999.00</strong>
+															</span>
+														</p>
+													</div>
+													<!-- mobile 定制结构 -->
+													<!-- <div class="mob-miadidas none block-sm">
+														<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p>
+													</div> -->
+													<div class="product-show">
+														<div class="product-info">
+															<div class="thumbnail float-clearfix">
+															    <a href="">
+															        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+															        <!-- 小图标 笔A -->
+															        <i class="icon icon-personalise"></i>
+															    </a>
+															    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+															    <div class="desc">
+															    	<p>颜色：<span>黄</span></p>
+															    	<p>尺码：<span>41</span></p>
+															    	<p>姓名：<span>Curze</span></p>
+															    	<p>号码：<span>10</span></p>
+															    	<p>徽章：<span>REAL Club World Cup badge</span></p>
+															    	<!-- <p>左脚文字：<span>james</span></p>
+															    	<p>右脚文字：<span>james</span></p> -->
+															    	<div class="Price-item">
+																		<span class="employee-red">-40% 员工折扣</span>
+																		<span class="float-clearfix" style="width:0;height:0;font-size:0;"></span>
+																    	<span class="Price-text">价格：</span>
+																    	<span class="goods-price">￥799<del class="original-price">￥1,099</del></span>
+																    	<span>&nbsp;&nbsp;x&nbsp;</span>
+																    	<span>1</span>
+																    </div>
+															    	<p>定制费：<span>50</span></p>
+															    	<!-- <p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p> -->
+															    </div>
+															</div>
+														</div>
+														<div class="jumpbtn employee-details">
+															<!-- 倒计时加class（count-down） -->
+															<!--<div class="count-down">
+																<a class="btn btn-blue btn-have-arrow payment-button">
+																	<span>立即支付&nbsp;<label class="count-down-text">30:00</label></span>
+																</a>
+															</div>-->
+															<div class="">
+																<a class="btn btn-white btn-have-arrow btn-white-details"><span>查看详情</span></a>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<!-- <div class="memeber-img row">
+                                        <div class="col-10-5 col-sm-10-10">
+                                            <img class="events-changeSrc" src="images/blank.gif"
+                                                data-image='{"standard":{"high":"", "normal":"../static/images/common/img-BANNER.png"},
+                                                "medium":{"high":"", "normal":"../static/images/common/banner@2x.jpg"},
+                                                "small":{"high":"", "normal":"../static/images/common/banner@2x.jpg"}}'
+                                            />
+                                        </div>
+                                        <div class="col-10-5 col-sm-10-10">
+                                            <img class="events-changeSrc" src="images/blank.gif"
+                                                data-image='{"standard":{"high":"", "normal":"../static/images/common/img-BANNER.png"},
+                                                "medium":{"high":"", "normal":"../static/images/common/banner@2x.jpg"},
+                                                "small":{"high":"", "normal":"../static/images/common/banner@2x.jpg"}}'
+                                            />
+                                        </div>
+									</div> -->
+
+									<div class="">
+										<div class="style-guess-you-Iike myaccount-might-like">
+											<h3>您可能也喜欢</h3>
+											<!-- 本月主推 -->
+											<%include _includes/guess-you-Iike.html %>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+
+				</article>
+
+			</section>
+
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+
+		</div>
+	</body>
+</html>

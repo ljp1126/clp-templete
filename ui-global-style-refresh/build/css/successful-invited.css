@@ -1,0 +1,295 @@
+@charset "UTF-8";
+.container {
+  padding-top: 80px;
+  min-height: 395px;
+  padding-bottom: 70px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.btn {
+  height: 42px;
+  line-height: 42px;
+}
+.article-nav {
+  width: 100%;
+  max-width: 990px;
+  margin: 20px auto 0;
+}
+.article-nav li i {
+  margin-right: 3px;
+}
+.divider {
+  margin: 0 8px;
+}
+.login-bg {
+  padding: 0;
+  width: 100%;
+  max-width: 990px;
+  margin-top: 30px;
+}
+.login-bg .login-content .login-left {
+  float: left;
+  max-width: 510px;
+  width: 55.4%;
+  padding-right: 1%;
+  border-right: 1px solid #EBEBEB;
+  min-height: 270px;
+}
+.login-bg .login-content .login-left .success-box h4.tit {
+  font-size: 24px;
+  color: #000000;
+  line-height: 24px;
+  font-family: "AdiHaus-Regular", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+  margin-bottom: 42px;
+}
+.login-bg .login-content .login-left .success-box .coupons-img {
+  position: relative;
+  max-width: 366px;
+  padding-left: 113px;
+}
+.login-bg .login-content .login-left .success-box .coupons-img .right-con {
+  position: relative;
+  height: 71px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 2px 0 rgba(204, 204, 204, 0.5), 0 1px 6px 0 rgba(204, 204, 204, 0.5);
+}
+.login-bg .login-content .login-left .success-box .coupons-img .right-con .coupons-price.watermelom {
+  color: #FF5C57;
+  position: absolute;
+  overflow: hidden;
+  left: 4%;
+  top: 50%;
+  margin-top: -19px;
+  line-height: 1;
+}
+.login-bg .login-content .login-left .success-box .coupons-img .right-con .coupons-price.watermelom span {
+  float: left;
+  font-size: 30px;
+  line-height: 1.3;
+  font-weight: bold;
+}
+.login-bg .login-content .login-left .success-box .coupons-img .right-con .coupons-price.watermelom .percent-box {
+  float: left;
+  height: 32px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0 2px 0;
+  margin-left: 4px;
+}
+.login-bg .login-content .login-left .success-box .coupons-img .right-con .coupons-price.watermelom .percent-box p.sign {
+  font-size: 15px;
+}
+.login-bg .login-content .login-left .success-box .coupons-img .right-con .coupons-price.watermelom .percent-box p.txt-en {
+  font-size: 9px;
+}
+.login-bg .login-content .login-left .success-box .coupons-img .right-con .p-box {
+  position: absolute;
+  top: 50%;
+  left: 30.89%;
+  font-size: 11px;
+  color: #000000;
+  margin-top: -8px;
+}
+.login-bg .login-content .login-left .success-box .coupons-img .coupon-bgbox {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  height: 71px;
+  width: 93px;
+}
+.login-bg .login-content .login-left .success-box .coupons-img .coupon-bgbox .coupon-title {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-bg .login-content .login-left .success-box .coupons-img .coupon-bgbox .coupon-title p {
+  font-weight: bolder;
+  font-family: initial;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 12px;
+}
+.login-bg .login-content .login-left .success-box .coupons-img .coupon-bgbox .coupon-title .type {
+  padding-left: 8px;
+  text-align: center;
+  margin-top: 8px;
+  letter-spacing: 8px;
+}
+.login-bg .login-content .login-left .success-box .login-btn {
+  margin-top: 45px;
+  text-align: center;
+}
+.login-bg .login-content .login-left .success-box .login-btn .btn {
+  max-width: 410px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+.login-bg .login-content .login-left .success-box .tips-text {
+  margin-top: 20px;
+  max-width: 410px;
+}
+.login-bg .login-content .login-left .success-box .tips-text p {
+  text-align: center;
+  font-size: 12px;
+  color: #FF6D6D;
+}
+.login-bg .login-content .login-right {
+  float: right;
+  max-width: 380px;
+  width: 40.5%;
+}
+.login-bg .login-content .login-right .login-box h4 {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.login-bg .login-content .login-right .login-right-tlt {
+  font-size: 14px;
+  color: #000000;
+  line-height: 14px;
+  font-family: "AdiHaus-Regular", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+}
+.login-bg .login-content .login-right .regist-inner {
+  margin: 43px 0 20px;
+}
+.login-bg .login-content .login-right .regist-inner div {
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  margin-bottom: 14px;
+  position: relative;
+}
+.login-bg .login-content .login-right .regist-inner div span {
+  vertical-align: top;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 32px;
+  font-family: "AdiHaus-Regular", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+}
+.login-bg .login-content .login-right .regist-inner div .icon {
+  font-size: 20px;
+  vertical-align: baseline;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.login-bg .login-content .login-right .login-right-explain {
+  margin-bottom: 20px;
+}
+.login-bg .login-content .login-right .login-right-explain p {
+  font-size: 12px;
+  color: #333333;
+  line-height: 18px;
+}
+@media (max-width: 1023px) {
+  .container {
+    min-height: 312px;
+    padding-bottom: 30px;
+  }
+  .account-coupon {
+    width: 100%;
+  }
+  .account-coupon img {
+    width: 100%;
+  }
+  .login-bg {
+    max-width: 100%;
+    margin-top: 30px;
+    padding: 0;
+  }
+  .login-bg .login-content .login-left {
+    max-width: 100%;
+    width: 100%;
+    padding-right: 0;
+    border-right: none;
+    float: none;
+  }
+  .login-bg .login-content .login-left .success-box h4.tit {
+    padding: 0 14px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .login-bg .login-content .login-left .success-box .coupons-img {
+    padding: 0 10px 0 103px;
+    max-width: 100%;
+  }
+  .login-bg .login-content .login-left .success-box .coupons-img .right-con {
+    position: relative;
+    height: 71px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px 0 rgba(204, 204, 204, 0.5), 0 1px 6px 0 rgba(204, 204, 204, 0.5);
+  }
+  .login-bg .login-content .login-left .success-box .coupons-img .right-con .coupons-price.watermelom {
+    color: #FF5C57;
+    position: absolute;
+    overflow: hidden;
+    left: 4%;
+    top: 50%;
+    margin-top: -19px;
+    line-height: 1;
+  }
+  .login-bg .login-content .login-left .success-box .coupons-img .right-con .coupons-price.watermelom span {
+    float: left;
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: bold;
+  }
+  .login-bg .login-content .login-left .success-box .coupons-img .right-con .coupons-price.watermelom .percent-box {
+    float: left;
+    height: 32px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0 2px 0;
+    margin-left: 4px;
+  }
+  .login-bg .login-content .login-left .success-box .coupons-img .right-con .coupons-price.watermelom .percent-box p.sign {
+    font-size: 15px;
+  }
+  .login-bg .login-content .login-left .success-box .coupons-img .right-con .coupons-price.watermelom .percent-box p.txt-en {
+    font-size: 9px;
+  }
+  .login-bg .login-content .login-left .success-box .coupons-img .right-con .p-box {
+    position: absolute;
+    top: 50%;
+    left: 30.89%;
+    font-size: 11px;
+    color: #000000;
+    margin-top: -8px;
+  }
+  .login-bg .login-content .login-left .success-box .coupons-img .coupon-bgbox {
+    left: 10px;
+  }
+  .login-bg .login-content .login-left .success-box .login-btn {
+    margin-top: 45px;
+    padding: 0 20px;
+    max-width: 100%;
+  }
+  .login-bg .login-content .login-left .success-box .tips-text {
+    padding: 0 20px;
+    max-width: none;
+  }
+  .login-bg .login-content .login-left .success-box .tips-text p {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}

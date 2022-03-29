@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <%include _includes/meta.html %>
+        <title></title>
+        <%include _includes/css.html %>
+            <!-- <link rel="stylesheet" type="text/css" href="css/adiclub.css"> -->
+            <%include _includes/js.html %>
+                <!-- <script type="text/javascript" src="js/adiclub.js"></script> -->
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <%include _includes/modules/header.html %>
+            <!-- 内容部分 -->
+            <section class="container">
+
+                
+              <style>
+                .article {
+                    position: relative;
+                }
+
+                .article>img {
+                  width: 100%;
+                }
+
+                .link-1 {
+                  position: absolute;
+                  width: 20%;
+                  height: 12%;
+                  left: 12%;
+                  bottom: 32%;
+                }
+
+                .link-13 {
+                  left: 0;
+                  bottom: 1%;
+                  width: 100%;
+                  height: 10%;
+                  z-index: 55;
+                }
+
+                .article-video-top .video-wrapper {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  cursor: pointer;
+                }
+                .video-box .video-content {
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  top: 0;
+                  left: 0;
+                }
+
+                .video-content .video {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  visibility: hidden;
+                }
+
+                .video-box.is-play .video-wrapper .video-content .video {
+                  visibility: visible;
+                }
+
+                .article-video1 .e-play-videoTwo {
+                  position: relative;
+                }
+
+                .article-video2 .e-play-videoTwo {
+                  position: relative;
+                  display: flex;
+                  justify-content: flex-end;
+                }
+
+                .article-video1 .e-play-videoTwo iframe,
+                .article-video2 .e-play-videoTwo iframe {
+                    display: none;
+                }
+
+                .article-video1 .e-play-videoTwo iframe,
+                .article-video2 .e-play-videoTwo iframe,
+                .article-video1 .video-click,
+                .article-video2 .video-click {
+                  position: absolute;
+                  left: 36.5%;
+                  height: 47%;
+                  top: 43%;
+                  width: 50.5%;
+                }
+
+                .article-video2 .e-play-videoTwo iframe,
+                .article-video2 .video-click {
+                  top: 38%;
+                  height: 41%;
+                }
+
+                @media (max-width: 1024px) {
+
+                  .link-1 {
+                    width: 55%;
+                    left: 20%;
+                    bottom: 54%;
+                  }
+
+                  .link-13 {
+                    left: 0;
+                    bottom: 1%;
+                    width: 100%;
+                    height: 10%;
+                  }
+
+                  .article-video2 .e-play-videoTwo {
+                    position: relative;
+                    display: block;
+                  }
+
+                  .article-video1 .e-play-videoTwo iframe,
+                  .article-video2 .e-play-videoTwo iframe,
+                  .article-video1 .video-click,
+                  .article-video2 .video-click {
+                    top: 59%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 91%;
+                    height: 35%;
+                  }
+
+                  .article-video2 .e-play-videoTwo iframe,
+                  .article-video2 .video-click {
+                    top: 52%;
+                    height: 31%;
+                  }
+                }
+              </style>   
+              <article class="article"> 
+                <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                  &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/thr/thr-pc-hk-001.jpg&quot;},
+                  &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/thr/thr-mob-hk-001.jpg&quot;},
+                  &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/thr/thr-mob-hk-001.jpg&quot;}}"> 
+              </article> 
+              <article class="article article-video article-video1"> 
+                <div class="video-wrapper e-play-videoTwo"> 
+                  <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/thr/thr-pc-hk-002.jpg&quot;},
+                    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/thr/thr-mob-hk-002.jpg&quot;},
+                    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/thr/thr-mob-hk-002.jpg&quot;}}"> 
+                  <div class="video-click"></div> 
+                  <iframe width="1280" height="720" src="https://www.youtube.com/embed/kNWI1IZ3NG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> 
+                </div> 
+              </article> 
+              <article class="article article-video article-video2"> 
+                <div class="video-wrapper e-play-videoTwo"> 
+                  <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/thr/thr-pc-hk-003.jpg&quot;},
+                    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/thr/thr-mob-hk-003.jpg&quot;},
+                    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/thr/thr-mob-hk-003.jpg&quot;}}"> 
+                  <div class="video-click"></div> 
+                  <iframe width="1280" height="720" src="https://www.youtube.com/embed/QQzvSR_U14s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> 
+                </div> 
+                <a class="link-1 link-13" href="https://www.adidas.com.hk/training"></a> 
+              </article>
+              <script type="text/javascript">
+                  $(function () {
+                    // 换图 + 懒加载
+                    $.spice.lazyLoad('img[lazysrc]', {
+                        attr: 'lazysrc'
+                    });
+                    $.spice.tools.changeImageSrc({
+                        callBack: function (img, self) {
+                            $.spice.lazyLoad('img[lazysrc]', {
+                                attr: self.opt.lazyData,
+                                prestrain: 1
+                            });
+                        }
+                    });
+
+                    $('.article-video').tap(function () {
+                      $(this).find('iframe').show()
+                    });
+
+                    // var indexVedio = document.querySelector(".e-play-videoTwo");
+                    // indexVedio.onclick = function () {
+                    //     indexVedio.innerHTML = "<iframe width=100%  height='682' src='https://www.youtube.com/embed/SJFmEb7FoqQ?rel=0&autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>";
+                    // }
+
+                    var loadImgFun_index = function(imgArr, fn) {
+                      var loadImgLen = 0,
+                        errImgLen = 0;
+                      var imgdefereds = [];
+                      $(imgArr).each(function() {
+                        var defered = $.Deferred();
+                        $(this)
+                          .on("load", function() {
+                            defered.resolve();
+                            loadImgLen++;
+                          })
+                          .on("error", function() {
+                            defered.resolve();
+                            errImgLen++;
+                          });
+                        if (this.complete)
+                          setTimeout(function() {
+                            defered.resolve();
+                          }, 200);
+                        imgdefereds.push(defered);
+                      });
+                      $.when.apply(null, imgdefereds).done(function() {
+                        if (fn && $.isFunction(fn)) {
+                          fn();
+                        }
+                      });
+                    };
+
+                    // 视频1自动播放
+                    $(".e-video").each(function(index, el) {
+                      $(el).addClass("home-video");
+                      var videoCode ='';
+                      if ($(window).width() >1024) {
+                        videoCode =$(".video-code",el).data("video-code-pc")
+                      } else {
+                        videoCode =$(".video-code",el).data("video-code-mob")
+                      }
+                      console.log('videoCode: ', videoCode);
+                      var videoId = "home_video_" + index;
+                      loadImgFun_index($(".video-code img", el), function() {});
+                      var bannerVideoId = videoCode;
+                      var url = base + "/indexCCVideo.json";
+                      var data = loxia.syncXhrGet(url, {
+                        'bannerVideoId': bannerVideoId
+                      });
+                      var videoUrl = data.mp4VideoUrl;
+                      // var videoUrl="https://cm15-c110-3.play.bokecc.com/flvs/ca/QxG2o/yEbPjZbLNf-20.mp4?t=1646989200&key=7B220EB58E3E7009BF11C4CF9139AAF8&tpl=10"
+                      var html = '<video class="video" id="' +
+                        videoId +
+                        '"  webkit-playsinline="true" playsInline="true" autoplay="autoplay" loop="loop" muted><source src="' +
+                        videoUrl +
+                        '" ></source></video>';
+                      $(".video-content", el).html(html);
+                      var _parent_article = $(this).parents(".article-video-top")
+                      console.log('_parent_article: ', _parent_article);
+                      if (!_parent_article.hasClass("is-play")) {
+                        _parent_article.addClass("is-play");
+                      }
+                    });
+                    
+                    var videoElement = document.getElementById("home_video_0");
+                    document.body.addEventListener('mousedown',function(){
+                      videoElement.muted=false;
+                      videoElement.volume=0.3;
+                    },true);
+                    // window.addEventListener('scroll',function(){
+                    // 	videoElement.muted=false;
+                    // 	videoElement.volume=0.3;
+                    // },true);
+
+                    $(".e-play-video-new").on("tap", function() {
+                      var _parent_article = $(this).parents(".article-video-top"),
+                        _video_s = $(this).parents(".article-video-top").find(".video"),
+                        _video = $(this)
+                        .parents(".article-video-top")
+                        .find(".video");
+                      _parent_article.toggleClass("is-play");
+
+                      if (_parent_article.hasClass("is-play")) {
+                        for (var i = 0; i < _video_s.length; i++) {
+                          _video_s.eq(i)[0].pause();
+                        }
+                        _video[0].play();
+                        _video[0].addEventListener("ended", function() {
+                          this.play();
+                        });
+                      } else {
+                        _video[0].pause();
+                      }
+                    });
+                  });
+              </script>  
+
+
+
+            </section>
+
+            <%include _includes/modules/footer-no-back-top.html %>
+                <!-- 公共部分放最下，如回到顶部，弹出层等 -->
+    </div>
+</body>
+
+</html>

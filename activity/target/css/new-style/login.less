@@ -1,0 +1,845 @@
+@charset "UTF-8";
+.container{
+	padding-top: 90px;
+}
+.container-simple {
+    padding-top: 0;
+}
+.gl-form-item {
+    margin-bottom: 20px;
+    .gl-form-message {
+        display: none;
+    }
+}
+
+.list-inline {
+    .payment-facebook {
+		width: 100%;
+        a.btn-facebook {
+			width: 100%;
+			height: 42px;
+			line-height: 44px;
+			background: #17478C;
+			font-size: 18px;
+			color: #FFFFFF !important;
+			text-align: center;
+			padding: 0 15px;
+            i {
+			   color: #fff;
+			   font-size: 24px;
+			   line-height: 26px;
+			   vertical-align: middle;
+			}
+			&:hover{
+				color: #fff;
+			}
+        }
+    }
+}
+
+.login-detial {
+    .login-btn {
+        .resetpassword {
+            text-align: center;
+            display: block;
+        }
+    }
+}
+
+.login-bg {
+    .login-content {
+        .login-right {
+            .regist-inner {
+                div {
+                    .icon {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .login-box {
+            h4 {
+                .icon {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+// 手机区域下拉
+.login-bg {
+	.login-content {
+		.login-box {
+			.add-area-code{
+				.area-code-login{
+					display: block;
+
+				}
+				input{
+					padding-left:98px;
+				}
+
+			}
+		}
+	}
+}
+
+.area-code-login {
+    cursor: pointer;
+    display:none;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    z-index: 1;
+    .select-box{
+        .dropdown {
+            .tinyscrollbar {
+                .viewport {
+                    .overview {
+                        ul {
+                            li {
+                                a{
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+	.dropdown{
+		.btn{
+			border: 0;
+			height: 38px;
+			line-height: 38px;
+			background: none;
+			&:hover{
+				background: none;
+			}
+		}
+	}
+	.dropdown.is-open{
+		.btn{
+			border: 0;
+		}
+		.sub-menu{
+            width: 180px;
+			top: 38px;
+			border: 1px solid #C8CBCC;
+            left: -1px;
+            .viewport .overview>ul>li{
+                padding-left: 5px;
+            }
+		}
+	}
+}
+//面包屑
+.login-tit-new{
+    .list-inline{
+        li{
+            &:first-child {
+                a{
+                    .icon-login-left{
+                       vertical-align: initial;
+                    }
+                }
+            }
+        }
+    }
+}
+.all-step{
+    ul{
+        li{
+            i{
+                font-size: 20px;
+            }
+        }
+    }
+}
+//绑定手机号
+.login-bg {
+    &.login-bg-new {
+        .login-content {
+            .login-box {
+                //登录第二步
+                .box-w50-new {
+                    >div {
+                        >span {
+                            &.gl-form-message {
+                                font-size: 14px;
+                                font-weight: 700;
+                                margin: 5px 0 0;
+                                color: #e63f3f;
+                                display: none;
+                            }
+                        }
+                    }
+                     @import "new-style/common/dropdown.less";
+                    .select-box{
+                        .dropdown{
+                            .btn{
+                                height: 40px;
+                                line-height: 38px;
+                            }
+                        }
+                    }
+                }
+                .box-w33,.box-w50-2{
+                    //年月日 /省市区
+                    .form-selects{
+                         @import "new-style/common/dropdown.less";
+
+                    }
+                }
+                //同意条款
+                .login-remeber{
+                    &.gl-form-item{
+                        .form-remeber{
+							font-size: 14px;
+                            input{
+								vertical-align: middle;
+								margin: -2px 6px 0 0;
+                            }
+                        }
+                    }
+                }
+                //完善信息-》个人信息
+                .step-login-ty{
+                    .ziliao{
+                        p{
+                            margin-bottom: 16px;
+                        }
+                    }
+                    .login-btn{
+                        .gl-cta--primary{
+                            margin: 0 auto;
+                        }
+                    }
+                }
+                //按钮
+                .login-btn{
+                    .gl-cta--primary{
+                        height: 42px;
+                        margin: 20px 0 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+//确认非本人弹层
+.notoneself-box{
+    .dialog-scroll-container .dialog{
+        .dialog-container{
+            .not-oneself-box{
+                >div{
+                    a{
+                        min-height: 42px;
+                        height: 42px;
+                        line-height: 42px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+//hyper-launch-login.html
+.login-verification{
+    .login-left{
+        .login-btn{
+            .color-bright-blue{
+                background: #C8CBCC !important;
+            }
+        }
+    }
+}
+
+.login-bg{
+	.login-content{
+		.login-box{
+			.form-input-code a{
+				border-radius: 0;
+			}
+			.login-remeber{
+				.form-remeber{
+					font-size: 14px;
+					i{
+						margin-top: -2px;
+					}
+				}
+			}
+			.see-btn{
+				min-width: 44px;
+				height: 40px;
+				line-height: 40px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				padding: 0;
+				text-align: center;
+				i{
+					vertical-align: middle;
+				}
+			}
+			.form-text-gray{
+				p{
+					font-size: 14px;
+					color: #888888;
+					line-height: 14px;
+					margin: 10px 0;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.login-bg{
+		.login-content{
+			.login-box{
+				.login-btn{
+					.visitor{
+						background: transparent;
+						letter-spacing: 0;
+						span{
+							display: none;
+
+						}
+					}
+				}
+
+			}
+		}
+
+	}
+}
+@media (max-width: 1023px) {
+	.container {
+		padding-top: 52px;
+	}
+	.container-simple {
+		padding-top: 0;
+	}
+    .login-bg {
+        .login-content {
+            .login-box {
+                h4 {
+                    .icon {
+                        display: block;
+                        float: right;
+                    }
+                }
+            }
+        }
+	}
+	.area-code-login{
+		.iScrollVerticalScrollbar.iScrollLoneScrollbar{
+			width: 0 !important;
+			background: none !important;
+		}
+	}
+	.login-bg{
+		.login-content{
+			.login-box{
+				.login-btn{
+					.visitor{
+						display: inline-flex;
+						span{
+							&:after{
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+//employee-login start
+.list-inline li:first-child a .icon-login-left.icon-arrow-left-circle {
+    margin-top: 0px;
+}
+.icon-new-login.is-active.icon-checked:before {
+    margin-top: 1px;
+}
+.all-step ul li span {
+    line-height: 23px;
+}
+.login-box{
+    .login-error{
+        .login-btn{
+            .color-bright-blue{
+                background: #C8CBCC !important;
+            }
+        }
+    }
+}
+
+
+
+//8-15 登陆注册流程修改
+.login-bg{
+    .login-content{
+        .login-box{
+            a{
+                display: inline-block;
+                h4{
+                    font-size: 22px;
+                    line-height: 22px;
+                    padding-bottom: 14px;
+                    margin-bottom: 20px;
+                    border-bottom: 2px solid #C8CBCC;
+					color: #C8CBCC;
+					&.login-detial-border-none{
+						border: 0;
+						color: #000;
+						padding:0 !important;
+						text-align: left;
+					}
+                }
+                .login-detial-border{
+                    border-bottom: 2px solid #000000;
+                    color: #000000;
+                    font-weight: 700;
+                }
+
+
+                &:hover{
+                    color: #000;
+                }
+            }
+            .login-detial{
+                .form-input-mobile-number-code{
+                    display: block !important;
+                    // position: relative;
+                    .acquire-code{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 14px;
+                        width: 95px;
+                        text-align: center;
+                        background-color: #000;
+                        color: #fff;
+                    }
+                }
+                .login-detial-mobile-option{
+                    div{
+                        &:nth-child(2){
+                            display: none;
+                        }
+                        &:nth-child(3){
+                            display: none;
+                        }
+                        &:nth-child(4){
+                            display: none;
+                        }
+                    }
+
+                }
+                .is-mobile-option{
+                    div{
+                         &:nth-child(1){
+                            display: none;
+                        }
+                        &:nth-child(2){
+                            display: block;
+                        }
+                        &:nth-child(3){
+                            display: block;
+                        }
+                        &:nth-child(4){
+                            display: block;
+                        }
+                    }
+                    .login-remeber-bottom{
+                        margin-bottom: 15px;
+                    }
+                    .login-remeber-size{
+                        font-size: 14px;
+                        color: #000000;
+                        margin-bottom: 20px;
+                    }
+                }
+                .login-btn{
+                    .forget-mobile{
+                        display: none;
+                    }
+				}
+
+			}
+
+        }
+        .login-box-content{
+            font-size: 0;
+            a{
+				h4{
+					text-align: center;
+				}
+                &:first-child{
+                    width: 50%;
+                }
+                &:last-child{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+.login-bg{
+    .login-content{
+        .login-right{
+            // max-width: 410px;
+			// width: auto;
+			.login-right-tlt{
+				font-size: 14px;
+			}
+            .regist-inner{
+                div{
+                    span{
+						font-weight: 400;
+                        font-size: 14px;
+                        font-family: @fonts-AdiHaus-Regular,@fonts-common-suffix;
+					}
+					.icon{
+						margin-right: 6px;
+					}
+                }
+            }
+        }
+        .login-box{
+            .login-remeber{
+                .form-remeber{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+//8-15 登陆注册流程修改 end
+
+//8-15 登陆注册流程修改 mob
+@media (max-width: 1024px){
+    .login-bg{
+       .hyper-launch-login{
+            .login-box{
+                .login-btn{
+                    .forget{
+                        font-size: 14px;
+                        color: #000000;
+                    }
+                }
+            }
+       }
+        .login-content{
+            .login-box{
+                .login-detial{
+                    .login-btn{
+                        .forget-mobile{
+                            display: inline-block;
+                        }
+
+
+                    }
+                }
+                a{
+                    h4{
+                        border-width: 0;
+                    }
+                    .login-detial-border{
+                        border-width: 0;
+                    }
+                }
+                .login-box-content{
+                    padding: 0 20px;
+                    a{
+                        h4{
+                            font-size: 18px;
+							padding-left: 0;
+							border-bottom: 2px solid #C8CBCC;
+							&.login-detial-border-none{
+								margin: 30px 0 20px;
+
+							}
+						}
+						.login-detial-border {
+							border-bottom: 2px solid #000000;
+							color: #000000;
+							font-weight: 700;
+						}
+                        &:first-child{
+                            // display: none;
+                        }
+                        &:last-child{
+                            h4{
+
+                            }
+                        }
+                    }
+
+                }
+            }
+       }
+    }
+    .login-bg{
+        .login-content{
+            .login-box{
+                .third-party-login{
+					margin-top: 24px;
+					.list-inline{
+						.payment-facebook{
+							a.btn-facebook{
+
+							}
+						}
+					}
+                }
+            }
+        }
+    }
+    .login-bg{
+        .login-content{
+            .login-box{
+                .login-btn{
+                    .forget{
+                        color: #000000;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .login-bg{
+        .login-content{
+            .login-box{
+                a{
+                    h4{
+                        padding-bottom: 7px;
+                        margin-bottom: 10px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    // .login-bg{
+    //     .login-content{
+    //         .login-detial{
+    //             > *{
+    //                 margin: 0 30px 10px;
+    //             }
+    //         }
+    //     }
+    // }
+    .login-bg{
+        .hyper-launch-login{
+            .login-box{
+                .form-input-mobile-number-width{
+                    // margin: 0 0 16px 30px;
+                }
+            }
+        }
+    }
+    .login-bg{
+        .login-content{
+            .login-box{
+                .form-input-code{
+                    // padding-right: 60px;
+                }
+            }
+        }
+    }
+    .login-bg{
+        .login-content{
+            .login-box{
+                .form-input-mobile-number-width{
+                    // margin: 0 0 16px 30px;
+                    &.daojishi{
+                        .code-img{
+                            // right: 61px;/
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // .form-input-mobile-margin{
+    //     margin-left: 15px !important;
+    //     margin-right: 15px !important;
+    // }
+    // .login-bg{
+    //     .login-content{
+    //         .login-box-content{
+    //             a{
+    //                 &:first-child{
+    //                     width: 70%;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    .login-bg{
+        .login-content{
+            .login-box{
+                .login-detial{
+                    .is-mobile-option{
+                        .login-remeber-size{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+ //8-15 登陆注册流程修改 mob end
+
+ // 员工登陆按钮 滑过文字消失
+.article-flrs2{
+    .login-content{
+        .login-box{
+            .login-btn{
+                .btn-blue{
+                    &:hover{
+                        color: #98989a;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.login-bg{
+    .login-content{
+        .login-box{
+            a{
+                &:hover{
+                    color: #98989a;
+                }
+            }
+        }
+    }
+}
+
+ //adiCLUB会员相关权益 修改
+@media (max-width: 1023px) {
+    .login-bg{
+        .login-content{
+            .login-right{
+				max-width: 100%;
+				width: 100%;
+                .login-box{
+                    h4{
+                        text-transform: none;
+                        .icon-substract{
+                            &:before{
+                                content: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.gl-input__label{
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #888888;
+    position: absolute;
+    pointer-events: none;
+    text-transform: uppercase;
+    left: 11px;
+    top: 14px;
+    transition: all .2s ease;
+}
+.gl-input__label--hoisted{
+    font-size: 12px;
+    top:-8px;
+    left: 17px;
+    margin-top: 0;
+    padding: 2px 5px 1px;
+    background-color: #fff;
+}
+
+//蓝色字体变黑加下划线
+.login-bg{
+    .login-content{
+        .login-box{
+            .login-btn{
+                .visitor{
+                    color: #000;
+                    text-decoration: underline;
+                    &:hover{
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+.login-bg{
+    .login-content{
+        .login-box{
+            .login-btn{
+                .forget{
+                    color: #000;
+                    text-decoration: underline;
+                    &:hover{
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+.login-bg{
+    .login-content{
+        .login-box{
+            .form-input-code{
+                .code-img{
+                    > a{
+                        color: #000;
+                        text-decoration: underline;
+                        &:hover{
+                            color: #000;
+                        }
+                    }
+                }
+                &.daojishi{
+                    .code-img{
+                        a{
+                            text-decoration: none;
+                            &:hover{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.article-forget-password{
+    .login-content{
+        .login-box{
+            .login-btn{
+                .btn{
+                    &.gl-cta--primary-light{
+                        display: inline-flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

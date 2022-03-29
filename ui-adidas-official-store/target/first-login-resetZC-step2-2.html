@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title>登录</title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" href="css/login.css" />
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="js/login.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+			<!-- 内容部分 -->
+			<section class="container">
+
+				<article class="article article-nav">
+					<div class="login-tit">
+						<ul class="list-inline">
+							<li><a href="#"><i class="icon icon-login-left"></i>返回</a></li>
+							<li class="divider">|</li>
+							<li><a href="/">登录 | 注册</a></li>
+							<li class="divider">/</li>
+							<li><a href="/">注册</a></li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="article all-step all-step-2">
+					<ul class="float-clearfix">
+						<li class="color000"><i class="icon icon-ok-login"></i>验证您的手机号</li>
+						<li class="active"><span>2</span>完善信息并注册成功</li>
+					</ul>
+				</article>
+				
+				<article class="article article-flrs2 login-bg-b login-bg">
+					<div class="login-content float-clearfix">
+						<div class="login-left">
+							<div class="login-box">
+								<h4 class="float-clearfix fontw-b" style="width: 148%;">完善你的信息</i>
+									<p class="fontw-normol ww-65 superstyle">亲爱的用户，建议您完善您的adiCLUB账户信息以便我们为您提供更好的服务体验。</p>
+								</h4> 
+
+								<h4 class="small-h4 fontw-b">个人信息</h4>
+								
+								<div class="step-login-ty">
+									<div class="ziliao mb0">
+										<p class="not-me none block-sm">如是您本人，请完善以下信息。如非您本人<a href="#">请点击此处</a></p>
+										<p><span>姓名：</span>James</p>
+										<p><span>性别：</span>男</p>
+										<p><span>生日：</span>1983.3.21</p>
+										<p class="mb15"><span>省市/城市：</span>上海 上海市</p>
+										<p class="not-me none-sm">如是您本人，请完善以下信息。如非您本人<a href="#">请点击此处</a></p>
+									</div>
+									<div class="notne-show">
+										<div class="box-w50 float-clearfix">
+											<div class="form-input">
+												<span>姓名</span>
+												<input type="text" placeholder=""/>
+												<div class="msg-block">
+													<i class="icon msg-icon"></i>
+													<span>请输入正确的邮箱地址</span>
+												</div>
+											</div>
+											<div>
+												<span>性别</span>
+												<div class="select-box">
+													<div class="dropdown none-sm events-dropdown">
+														<a class="btn">
+															<span class="dropdown-text">请选择</span>
+															<span class="dropdown-icon"><i class="icon icon-caret"></i></span>
+														</a>
+														<div class="sub-menu tinyscrollbar" style="display: none;">
+															<div class="viewport">
+																<div class="overview" style="margin-top: -240px;">
+																	<ul>
+																		<li>
+																			<a>男</a>
+																		</li>
+																		<li>
+																			<a>女</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<div class="scrollbar" style="height: 160px;">
+																<div class="track" style="height: 160px;">
+																	<div class="thumb" style="margin-top: 96px; height: 64px;">
+																		<div class="end"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="dropdown none block-sm events-form-select">
+														<a class="btn">
+															<span class="dropdown-text color888">请选择</span>
+															<span class="dropdown-icon"><i class="icon icon-caret"></i></span>
+														</a>
+														<select>
+															<option value="">请选择</option>
+															<option value="男">男</option>
+															<option value="女">女</option>
+														</select>
+													</div>
+													<div class="msg-block">
+														<i class="icon msg-icon"></i>
+														<span>邮箱格式错误，请重新输入</span>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="box-w33 float-clearfix">
+											<!--pc年月日联动-->
+											<div class="row form-selects form-select-box events-ymd-simulation">
+												<div class="col-12-4 l-1">
+													<span>生日</span>
+													<div class="form-select">
+														<a class="btn events-ymd-text">
+														    <span class="dropdown-text color000">请选择</span>
+														    <span class="dropdown-icon">
+														        <i class="icon icon-caret"></i>
+														    </span>
+														</a>
+														<div class="sub-menu tinyscrollbar">
+														    <div class="viewport">
+														        <div class="overview">
+														            <ul class="events-ymd-content">
+														                <li><a>示例文字</a></li>
+														                <li><a>示例文字</a></li>
+														                <li><a>2</a></li>
+														                <li><a>3</a></li>
+														            </ul>
+														        </div>
+														    </div>
+														    <div class="scrollbar">
+														        <div class="track">
+														            <div class="thumb">
+														                <div class="end"></div>
+														            </div>
+														        </div>
+														    </div>
+														</div>
+														<div class="msg-block">
+															<i class="icon msg-icon"></i>
+															<span>格式错误，请重新输入</span>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-12-4 m-2">
+													<span>&nbsp;</span>
+													<div class="form-select">
+														<a class="btn events-ymd-text">
+														    <span class="dropdown-text color000">请选择</span>
+														    <span class="dropdown-icon">
+														        <i class="icon icon-caret"></i>
+														    </span>
+														</a>
+														<div class="sub-menu tinyscrollbar">
+														    <div class="viewport">
+														        <div class="overview">
+														            <ul class="events-ymd-content">
+														                <li><a>示例文字</a></li>
+														                <li><a>示例文字</a></li>
+														                <li><a>2</a></li>
+														                <li><a>3</a></li>
+														            </ul>
+														        </div>
+														    </div>
+														    <div class="scrollbar">
+														        <div class="track">
+														            <div class="thumb">
+														                <div class="end"></div>
+														            </div>
+														        </div>
+														    </div>
+														</div>
+														<div class="msg-block">
+															<i class="icon msg-icon"></i>
+															<span>格式错误，请重新输入</span>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-12-4 r-3">
+													<span>&nbsp;</span>
+													<div class="form-select">
+														<a class="btn events-ymd-text">
+														    <span class="dropdown-text color000">请选择</span>
+														    <span class="dropdown-icon">
+														        <i class="icon icon-caret"></i>
+														    </span>
+														</a>
+														<div class="sub-menu tinyscrollbar">
+														    <div class="viewport">
+														        <div class="overview">
+														            <ul class="events-ymd-content">
+														                <li><a>示例文字</a></li>
+														                <li><a>示例文字</a></li>
+														                <li><a>2</a></li>
+														                <li><a>3</a></li>
+														            </ul>
+														        </div>
+														    </div>
+														    <div class="scrollbar">
+														        <div class="track">
+														            <div class="thumb">
+														                <div class="end"></div>
+														            </div>
+														        </div>
+														    </div>
+														</div>
+														<div class="msg-block">
+															<i class="icon msg-icon"></i>
+															<span>格式错误，请重新输入</span>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!--mob年月日联动
+											<div class="row form-selects form-select-box none block-sm events-ymd-simulation">
+												<div class="form-selects row events-ymd-default">
+													<div class="col-12-6">
+														<div class="form-select">
+															<a class="btn">
+																<span class="dropdown-text">请选择</span>
+															    <span class="dropdown-icon">
+															        <i class="icon icon-caret"></i>
+															    </span>
+															</a>
+															<select>
+																<option value="">请选择</option>
+															</select>
+															<div class="msg-block">
+																<i class="icon msg-icon"></i>
+																<span>格式错误，请重新输入</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-12-6">
+														<div class="form-select">
+															<a class="btn">
+																<span class="dropdown-text">请选择</span>
+															    <span class="dropdown-icon">
+															        <i class="icon icon-caret"></i>
+															    </span>
+															</a>
+															<select>
+																<option value="">请选择</option>
+															</select>
+															<div class="msg-block">
+																<i class="icon msg-icon"></i>
+																<span>格式错误，请重新输入</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>-->
+										</div>
+
+										<div class="form-group box-w50-2 mb40">
+											<!--pc端省市区联动-->
+											<div class="row form-selects form-select-box events-city-simulation">
+												<div class="col-12-6 l-1">
+													<span>省份/城市</span>
+													<div class="form-select">
+														<a class="btn events-city-text">
+														    <span class="dropdown-text">请选择</span>
+														    <span class="dropdown-icon">
+														        <i class="icon icon-caret"></i>
+														    </span>
+														</a>
+														<div class="sub-menu tinyscrollbar">
+														    <div class="viewport">
+														        <div class="overview">
+														            <ul class="events-city-content">
+														                <li><a>示例文字</a></li>
+														                <li><a>示例文字</a></li>
+														                <li><a>2</a></li>
+														                <li><a>3</a></li>
+														            </ul>
+														        </div>
+														    </div>
+														    <div class="scrollbar">
+														        <div class="track">
+														            <div class="thumb">
+														                <div class="end"></div>
+														            </div>
+														        </div>
+														    </div>
+														</div>
+														<div class="msg-block">
+															<i class="icon msg-icon"></i>
+															<span>格式错误，请重新输入</span>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-12-6 r-2">
+													<span>&nbsp;</span>
+													<div class="form-select">
+														<a class="btn events-city-text">
+														    <span class="dropdown-text">请选择</span>
+														    <span class="dropdown-icon">
+														        <i class="icon icon-caret"></i>
+														    </span>
+														</a>
+														<div class="sub-menu tinyscrollbar">
+														    <div class="viewport">
+														        <div class="overview">
+														            <ul class="events-city-content">
+														                <li><a>示例文字</a></li>
+														                <li><a>示例文字</a></li>
+														                <li><a>2</a></li>
+														                <li><a>3</a></li>
+														            </ul>
+														        </div>
+														    </div>
+														    <div class="scrollbar">
+														        <div class="track">
+														            <div class="thumb">
+														                <div class="end"></div>
+														            </div>
+														        </div>
+														    </div>
+														</div>
+														<div class="msg-block">
+															<i class="icon msg-icon"></i>
+															<span>格式错误，请重新输入</span>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!--mob端省市区联动
+											<div class="row form-selects form-select-box none block-sm events-city-simulation">
+												<div class="form-selects row events-city-default">
+													<div class="col-12-6">
+														<div class="form-select">
+															<a class="btn">
+																<span class="dropdown-text">请选择</span>
+															    <span class="dropdown-icon">
+															        <i class="icon icon-caret"></i>
+															    </span>
+															</a>
+															<select>
+																<option value="">请选择</option>
+															</select>
+															<div class="msg-block">
+																<i class="icon msg-icon"></i>
+																<span>格式错误，请重新输入</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-12-6">
+														<div class="form-select">
+															<a class="btn">
+																<span class="dropdown-text">请选择</span>
+															    <span class="dropdown-icon">
+															        <i class="icon icon-caret"></i>
+															    </span>
+															</a>
+															<select>
+																<option value="">请选择</option>
+															</select>
+															<div class="msg-block">
+																<i class="icon msg-icon"></i>
+																<span>格式错误，请重新输入</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>-->
+										</div>
+									</div>
+								</div>
+
+								<h4 class="small-h4 fontw-b">账户信息</h4>
+								<div class="login-detial">
+									<span class="mb10">电子邮箱 <span class="none-sm color888">（电子邮箱将作为您找回密码的重要途径请谨慎填写）</span></span>
+									<div class="form-input">
+										<input type="password" placeholder="至少8个字符，必须包含英文和数字"/>
+										<div class="msg-block">
+											<i class="icon msg-icon"></i>
+											<span>密码错误</span>
+										</div>
+									</div>
+									<span class="mb10">密码</span>
+									<div class="form-input">
+										<input type="password" placeholder="至少8个字符，必须包含英文和数字"/>
+										<div class="msg-block">
+											<i class="icon msg-icon"></i>
+											<span>密码错误</span>
+										</div>
+									</div>
+									<span class="mb10">确认密码</span>
+									<div class="form-input mb40">
+										<input type="password" placeholder=""/>
+										<div class="msg-block">
+											<i class="icon msg-icon"></i>
+											<span>密码错误</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="step-login-ty">
+									<div class="login-remeber login-remeber20">
+										<label class="form-remeber">
+											<i class="icon icon-checked is-active"></i>订阅adidas最新资讯和新品通知
+										</label>
+									</div>
+									<div class="login-remeber">
+										<label class="form-remeber">
+											<i class="icon icon-checked is-active"></i>我已阅读并同意adidas商城<a href="#">隐私政策</a>和<a href="#">使用条款</a>
+										</label>
+									</div>
+									<div class="login-remeber">
+										<label class="form-remeber">
+											<i class="icon icon-checked is-active"></i>我已阅读并同意<a href="#">adiCLUB会员相关条款</a>
+										</label>
+									</div>
+									<div class="login-btn float-clearfix">
+										<a class="btn btn-blue btn-have-arrow"><span>注册</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+	
+			</section>
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		</div>
+	</body>
+</html>

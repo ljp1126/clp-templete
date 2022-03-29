@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<%include _includes/meta.html %>
+		<title>lp-nmd</title>
+		<%include _includes/css.html %>
+		<!-- <link rel="stylesheet" href="css/lp-nmd.css" /> -->
+		<%include _includes/js.html %>
+		<!-- <script type="text/javascript" src="js/lp-nmd.js"></script> -->
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+			<section class="container">
+				<style> 
+
+					.article {
+					position: relative;
+					}
+					.article > img {
+					width: 100%;
+					}
+					.article .lp-link {
+					position: absolute;
+					z-index: 1;
+					}
+					.lp-nmd-3 .lp-link {
+					width: 37%;
+					height: 94%;
+					top: 0;
+					left: 32%;
+					}
+					.lp-nmd-4 .lp-link {
+					width: 11%;
+					height: 86%;
+					top: 0;
+					}
+					.lp-nmd-4 .lp-link-1 {
+					left: 26.8%;
+					}
+					.lp-nmd-4 .lp-link-2 {
+					left: 44.5%;
+					}
+					.lp-nmd-4 .lp-link-3 {
+					left: 62.5%;
+					}
+					.lp-nmd-6 .lp-link {
+					width: 37%;
+					height: 94%;
+					top: 0;
+					left: 32%;
+					}
+					.lp-nmd-7 .lp-link {
+					width: 11%;
+					height: 86%;
+					top: 0;
+					}
+					.lp-nmd-7 .lp-link-1 {
+					left: 26.8%;
+					}
+					.lp-nmd-7 .lp-link-2 {
+					left: 44.5%;
+					}
+					.lp-nmd-7 .lp-link-3 {
+					left: 62.5%;
+					}
+					.lp-nmd-8 {
+					padding: 0 20px;
+					}
+					.lp-nmd-8 > ul {
+					font-size: 0;
+					text-align: center;
+					max-width: 843px;
+					margin: 0 auto;
+					}
+					.lp-nmd-8 > ul > li {
+					position: relative;
+					display: inline-block;
+					vertical-align: top;
+					width: calc(50% - 17px);
+					}
+					.lp-nmd-8 > ul > li:first-child {
+					margin-right: 34px;
+					}
+					.lp-nmd-8 > ul > li > img {
+					width: 100%;
+					}
+					.lp-nmd-8 > ul > li .btn-component {
+					position: absolute;
+					bottom: 18px;
+					left: 0;
+					right: 0;
+					}
+					.lp-nmd-8 > ul > li .btn-component h4 {
+					color: #fff;
+					font-size: 36px;
+					font-weight: bold;
+					text-transform: uppercase;
+					font-family: "adihdb", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+					text-shadow: 0 3px 7px #000000;
+					margin-bottom: 8px;
+					}
+					.lp-nmd-8 > ul > li .btn-component .btn {
+					min-width: 178px;
+					}
+					.lp-nmd-10 {
+					padding: 0 20px;
+					}
+					.lp-nmd-10 > ul {
+					font-size: 0;
+					text-align: center;
+					max-width: 1097px;
+					margin: 0 auto;
+					}
+					.lp-nmd-10 > ul > li {
+					position: relative;
+					display: inline-block;
+					width: calc(25% - 10px);
+					vertical-align: top;
+					margin-left: 12px;
+					}
+					.lp-nmd-10 > ul > li:first-child {
+					margin-left: 0;
+					}
+					.lp-nmd-10 > ul > li > img {
+					width: 100%;
+					}
+					.lp-nmd-10 > ul > li .btn-component h4 {
+					font-size: 26px;
+					font-weight: bold;
+					text-transform: uppercase;
+					font-family: "adihdb", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+					margin-top: 30px;
+					margin-bottom: 15px;
+					}
+					.lp-nmd-10 > ul > li .btn-component .btn {
+					min-width: 178px;
+					}
+					.lp-nmd-11 {
+					text-align: center;
+					padding-bottom: 93px;
+					}
+					.lp-nmd-11 .btn {
+					min-width: 245px;
+					}
+					@media (max-width: 1024px) {
+					.lp-nmd-3 .lp-link {
+						width: 80%;
+						height: 80%;
+						top: 10%;
+						left: 12%;
+					}
+					.lp-nmd-4 .lp-link {
+						width: 25%;
+					}
+					.lp-nmd-4 .lp-link-1 {
+						left: 6.8%;
+					}
+					.lp-nmd-4 .lp-link-2 {
+						left: 40%;
+					}
+					.lp-nmd-4 .lp-link-3 {
+						left: 72.5%;
+					}
+					.lp-nmd-6 .lp-link {
+						width: 80%;
+						height: 80%;
+						top: 10%;
+						left: 12%;
+					}
+					.lp-nmd-7 .lp-link {
+						width: 25%;
+					}
+					.lp-nmd-7 .lp-link-1 {
+						left: 6.8%;
+					}
+					.lp-nmd-7 .lp-link-2 {
+						left: 40%;
+					}
+					.lp-nmd-7 .lp-link-3 {
+						left: 72.5%;
+					}
+					.lp-nmd-8 > ul > li .btn-component {
+						position: static;
+					}
+					.lp-nmd-8 > ul > li .btn-component h4 {
+						font-size: 36px;
+						text-shadow: none;
+						color: #000000;
+						margin-top: 40px;
+						margin-bottom: 16px;
+					}
+					.lp-nmd-8 > ul > li .btn-component .btn {
+						width: 178px;
+						margin: 0 auto;
+					}
+					.lp-nmd-10 > ul > li {
+						width: calc(50% - 8px);
+						margin-left: 0;
+						padding-bottom: 62px;
+					}
+					.lp-nmd-10 > ul > li:nth-child(odd) {
+						margin-right: 16px;
+					}
+					.lp-nmd-10 > ul > li:nth-child(3),
+					.lp-nmd-10 > ul > li:nth-child(4) {
+						padding-bottom: 0;
+					}
+					.lp-nmd-10 > ul > li .btn-component h4 {
+						font-size: 32px;
+						margin-top: 28px;
+						margin-bottom: 14px;
+					}
+					}
+					@media (max-width: 768px) {
+					.lp-nmd-8 > ul > li .btn-component h4 {
+						font-size: 18px;
+						margin-top: 20px;
+						margin-bottom: 8px;
+					}
+					.lp-nmd-8 > ul > li .btn-component .btn {
+						width: 110px;
+						min-width: 0;
+						font-size: 12px;
+						height: 30px;
+						line-height: 30px;
+					}
+					.lp-nmd-8 > ul > li .btn-component .btn span:after {
+						top: 0;
+					}
+					.lp-nmd-10 > ul > li {
+						width: calc(50% - 4px);
+						padding-bottom: 31px;
+					}
+					.lp-nmd-10 > ul > li:nth-child(odd) {
+						margin-right: 8px;
+					}
+					.lp-nmd-10 > ul > li .btn-component h4 {
+						font-size: 16px;
+						margin-top: 14px;
+						margin-bottom: 7px;
+					}
+					.lp-nmd-10 > ul > li .btn-component .btn {
+						width: 110px;
+						min-width: 0;
+						font-size: 12px;
+						height: 30px;
+						line-height: 30px;
+					}
+					.lp-nmd-10 > ul > li .btn-component .btn span:after {
+						top: 0;
+					}
+					.lp-nmd-11 .btn {
+						min-width: 180px;
+						font-size: 12px;
+						height: 30px;
+						line-height: 30px;
+					}
+					.lp-nmd-11 .btn span:after {
+						top: 0;
+					}
+					}
+
+
+				</style>
+
+				<article class="article lp-nmd-1">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-nmd/pic-p-1.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-nmd/pic-p-1.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-nmd/pic-m-1.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-nmd/pic-m-1.jpg"}}'
+					/>
+				</article>
+
+				<article class="article lp-nmd-2">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-nmd/pic-p-2.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-nmd/pic-p-2.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-nmd/pic-m-2.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-nmd/pic-m-2.jpg"}}'
+					/>
+				</article>
+
+				<article class="article lp-nmd-3">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-nmd/pic-p-3.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-nmd/pic-p-3.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-nmd/pic-m-3.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-nmd/pic-m-3.jpg"}}'
+					/>
+					
+					<a href="https://www.adidas.com.cn/item/CQ2012" target="_blank" class="lp-link lp-link-1"></a>
+				</article>
+
+				<article class="article lp-nmd-4">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-nmd/pic-p-4.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-nmd/pic-p-4.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-nmd/pic-m-4.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-nmd/pic-m-4.jpg"}}'
+					/>
+					
+					<a href="https://www.adidas.com.cn/item/CE1680" target="_blank" class="lp-link lp-link-1"></a>
+					<a href="https://www.adidas.com.cn/item/CE2282" target="_blank" class="lp-link lp-link-2"></a>
+					<a href="https://www.adidas.com.cn/item/CY7377" target="_blank" class="lp-link lp-link-3"></a>
+				</article>
+
+				<article class="article lp-nmd-5">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-nmd/pic-p-5.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-nmd/pic-p-5.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-nmd/pic-m-5.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-nmd/pic-m-5.jpg"}}'
+					/>
+				</article>
+
+				<article class="article lp-nmd-6">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-nmd/pic-p-6.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-nmd/pic-p-6.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-nmd/pic-m-6.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-nmd/pic-m-6.jpg"}}'
+					/>
+					
+					<a href="https://www.adidas.com.cn/item/CQ2412" target="_blank" class="lp-link lp-link-1"></a>
+				</article>
+
+				<article class="article lp-nmd-7">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-nmd/pic-p-7.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-nmd/pic-p-7.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-nmd/pic-m-7.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-nmd/pic-m-7.jpg"}}'
+					/>
+					
+					<a href="https://www.adidas.com.cn/item/CE1594" target="_blank" class="lp-link lp-link-1"></a>
+					<a href="https://www.adidas.com.cn/item/CE1605" target="_blank" class="lp-link lp-link-2"></a>
+					<a href="https://www.adidas.com.cn/item/CV5818" target="_blank" class="lp-link lp-link-3"></a>
+				</article>
+
+				<article class="article lp-nmd-8">
+					<ul>
+						<li>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-nmd/a-8/pic-p-1.jpg"
+								data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-nmd/a-8/pic-p-1.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-nmd/a-8/pic-m-1.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-nmd/a-8/pic-m-1.jpg"}}'
+							/>
+
+							<div class="btn-component">
+								<h4>NMD_男子</h4>
+								<a href="https://www.adidas.com.cn/men_originals_nmd" target="_blank" class="btn btn-white btn-have-arrow none-sm"><span>立即选购</span></a>
+								<a href="https://www.adidas.com.cn/men_originals_nmd" target="_blank" class="btn btn-black btn-have-arrow none block-sm"><span>立即选购</span></a>
+							</div>
+						</li>
+						<li>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-nmd/a-8/pic-p-2.jpg"
+								data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-nmd/a-8/pic-p-2.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-nmd/a-8/pic-m-2.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-nmd/a-8/pic-m-2.jpg"}}'
+							/>
+
+							<div class="btn-component">
+								<h4>NMD_女子</h4>
+								<a href="https://www.adidas.com.cn/women_originals_nmd" target="_blank" class="btn btn-white btn-have-arrow none-sm"><span>立即选购</span></a>
+								<a href="https://www.adidas.com.cn/women_originals_nmd" target="_blank" class="btn btn-black btn-have-arrow none block-sm"><span>立即选购</span></a>
+							</div>
+						</li>
+					</ul>
+				</article>
+
+				<article class="article lp-nmd-9">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-nmd/pic-p-9.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-nmd/pic-p-9.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-nmd/pic-m-9.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-nmd/pic-m-9.jpg"}}'
+					/>
+
+					<!-- <a href="#" target="_blank" class="lp-link lp-link-1"></a> -->
+				</article>
+
+				<article class="article lp-nmd-10">
+					<ul>
+						<li>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-nmd/a-10/pic-p-1.jpg"
+								data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-nmd/a-10/pic-p-1.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-nmd/a-10/pic-m-1.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-nmd/a-10/pic-m-1.jpg"}}'
+							/>
+
+							<div class="btn-component">
+								<h4>EQT系列</h4>
+								<a href="https://www.adidas.com.cn/originals_eqt" target="_blank" class="btn btn-black btn-have-arrow"><span>立即选购</span></a>
+							</div>
+						</li>
+						<li>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-nmd/a-10/pic-p-2.jpg"
+								data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-nmd/a-10/pic-p-2.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-nmd/a-10/pic-m-2.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-nmd/a-10/pic-m-2.jpg"}}'
+							/>
+
+							<div class="btn-component">
+								<h4>Adicolor系列</h4>
+								<a href="https://www.adidas.com.cn/originals_adicolor" target="_blank" class="btn btn-black btn-have-arrow"><span>立即选购</span></a>
+							</div>
+						</li>
+						<li>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-nmd/a-10/pic-p-3.jpg"
+								data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-nmd/a-10/pic-p-3.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-nmd/a-10/pic-m-3.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-nmd/a-10/pic-m-3.jpg"}}'
+							/>
+
+							<div class="btn-component">
+								<h4>Superstar系列</h4>
+								<a href="https://www.adidas.com.cn/originals_superstar" target="_blank" class="btn btn-black btn-have-arrow"><span>立即选购</span></a>
+							</div>
+						</li>
+						<li>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-nmd/a-10/pic-p-4.jpg"
+								data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-nmd/a-10/pic-p-4.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-nmd/a-10/pic-m-4.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-nmd/a-10/pic-m-4.jpg"}}'
+							/>
+
+							<div class="btn-component">
+								<h4>Tubular系列</h4>
+								<a href="https://www.adidas.com.cn/originals_tubular" target="_blank" class="btn btn-black btn-have-arrow"><span>立即选购</span></a>
+							</div>
+						</li>
+					</ul>
+				</article>
+
+				<article class="article lp-nmd-11">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-nmd/pic-p-11.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-nmd/pic-p-11.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-nmd/pic-m-11.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-nmd/pic-m-11.jpg"}}'
+					/>
+
+					<a href="https://www.adidas.com.cn/originals_all" target="_blank" class="btn btn-black btn-have-arrow"><span>选购所有originals商品</span></a>
+				</article>
+
+				<script type="text/javascript">
+					$(function() {
+						// 换图 + 懒加载
+						$.spice.lazyLoad('img[lazysrc]', {
+							attr: 'lazysrc'
+						});
+						$.spice.tools.changeImageSrc({
+							callBack: function(img, self) {
+								$.spice.lazyLoad('img[lazysrc]', {
+									attr: self.opt.lazyData,
+									prestrain: 1
+								});
+							}
+						});
+
+					});
+				</script>
+			</section>
+			<%include _includes/modules/footer.html %>
+		</div>
+	</body>
+
+</html>

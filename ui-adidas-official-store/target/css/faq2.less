@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+.article-faq-width{
+	width: 100%;
+	max-width: 1920px;
+	.search-page-content{
+    	.help-container{
+			max-width: 950px;
+			margin: 0 auto;
+    	}
+    	//面包屑
+		.breadcrumb{
+			margin:22px 0 41px;
+			.list-inline{
+				li{
+					height: 14px;
+					line-height: 14px;
+					a{
+						font-size: 14px;
+						line-height: 14px;
+						height: 14px;
+						.icon-reture{
+							width: 14px;
+							height: 14px;
+							margin-right: 5px;
+							vertical-align: text-bottom;
+						}
+						&.reture-text{
+							font-weight: bold;
+						}
+					}
+					&.slash{
+						margin: 0 5px;
+					}
+					&.vertical-line{
+						margin: 0 12px;
+					}
+					&.hele-core{
+						color: #888888;
+					}
+				}
+			}
+		}
+		//为什么订单取消
+		.contentasset-container{
+			.contentasset{
+				h2{
+					font-size: 24px;
+					line-height: 24px;
+					margin-bottom: 20px;
+				}
+				.contentasset-cont{
+					border-top: 1px solid #C8CBCC;
+					padding: 20px 0 37px;
+					p{
+						font-size: 12px;
+						line-height: 22px;
+					}
+					.contentasset-box{
+						li{
+							font-size: 12px;
+							line-height: 22px;
+						}
+					}
+				}
+			}
+		}
+		//如何查询订单
+		.help-myaccount{
+			border-top: 1px solid #e3e5e5;
+		    border-bottom: 1px solid #e3e5e5;
+		    position: relative;
+		    margin-bottom: 50px;
+		    .help-myaccount-box{
+				.help-myaccount-left{
+					padding: 22px 0;
+					float: left;
+					width: 50%;
+					height: 338px;
+					padding-right: 23px;
+					.contentasset{
+						h2{
+							margin-bottom: 15px;
+							font-size: 24px;
+							line-height: 24px;
+						}
+						.help-myaccount-text{
+							font-size:12px;
+							line-height: 22px;
+							margin-bottom: 22px;
+						}
+						.help-myaccount-buttons{
+							width: 36.4%;
+							max-width: 270px;
+							a{
+								font-size: 16px;
+								display: block;
+								&:nth-child(1){
+									margin-bottom: 20px;
+								}
+							}
+						}
+					}
+				}
+				.help-myaccount-right{
+					padding: 22px 0;
+					float: right;
+					width: 50%;
+					background: #F9F9F9;
+					height: 338px;
+					padding-left: 19px;
+					.customer-care-first{
+						.contentasset{
+							h2{
+								font-size: 18px;
+								margin-bottom: 10px;
+							}
+							h3{
+								font-size: 36px;
+								font-weight: bold;
+								line-height: 36px;
+								margin-bottom: 20px;
+							}
+						}
+						.help-myaccount-support{
+							padding: 17px 0;
+							border-top: 1px dotted #e3e5e5;
+		    				border-bottom: 1px dotted #e3e5e5;
+		    				p{
+		    					font-size: 16px;
+		    					line-height: 16px;
+		    					&.help-myaccount-support-tit{
+									margin-bottom: 14px;
+		    					}
+		    					&.help-myaccount-support-tiem{
+		    						font-size: 14px;
+									color: #888888;
+									line-height: 14px;
+		    					}
+		    				}
+						}
+						.help-myaccount-text{
+							padding: 20px 0;
+							div{
+								height: 50px;
+								line-height:auto;
+								margin-bottom: 0;
+								span{
+									display: inline-block;
+									vertical-align: middle;
+									margin-right: 0;
+									i{
+										width: 50px;
+										height: 50px;
+									}
+									&.help-myaccount-icon{
+										width: 50px;
+										height: 50px;
+										margin-right: 20px;
+									}
+									&.help-myaccount-cont{
+										vertical-align: middle;
+										a{
+											height: 50px;
+											font-size: 18px;
+											line-height: 50px;
+											&:hover{
+												color: #000;
+											}
+										}
+										p{}
+									}
+								}
+								&:nth-child(1){
+									margin-bottom: 10px;
+								}
+							}
+						}
+					}
+				}
+		    }
+		}
+	}
+}
+
+
+@media (max-width:1024px){
+	.article-faq-width{
+		width: 100%;
+		.search-page-content{
+	    	.help-container{
+	    		width: 100%;
+	    		padding: 0 20px;
+				max-width: 100%;
+	    	}
+	    	//面包屑
+				.breadcrumb{
+					margin:30px 0 30px;
+					.list-inline{
+						li{
+							a{
+								.icon-reture{
+									width: 15px;
+								}
+								&.reture-text{}
+							}
+							&.slash{}
+							&.vertical-line{}
+							&.hele-core{}
+						}
+					}
+				}
+				//为什么订单取消
+				.contentasset-container{
+					.contentasset{
+						h2{
+							margin-bottom: 30px;
+						}
+						.contentasset-cont{
+							border-top: 1px dotted #C8CBCC;
+							padding: 20px 0 20px;
+							p{
+								font-size: 14px;
+								line-height: 24px;
+							}
+							.contentasset-box{
+								li{
+									font-size: 14px;
+									line-height: 24px;
+								}
+							}
+						}
+					}
+				}
+			//如何查询订单
+			.help-myaccount{
+				border-top: none;
+			    border-bottom: none;
+			    position: relative;
+			    margin: 0;
+			    padding: 0;
+			    .help-myaccount-box{
+
+					.help-myaccount-left{
+						border-top: 1px dotted #e3e5e5;
+						margin: 0 20px;
+						padding: 30px 10px 30px 0px;
+						width:90%;
+						height: 100%;
+						.contentasset{
+							h2{
+								line-height: 24px;
+							}
+							.help-myaccount-text{
+								font-size:14px;
+								line-height: 14px;
+								margin-bottom: 14px;
+								p{
+									font-size:14px;
+									line-height: 28px;
+								}
+							}
+							.help-myaccount-buttons{
+								width: 100%;
+								max-width: 100%;
+								a{
+									display: block;
+									&:nth-child(1){
+										margin-bottom: 10px;
+									}
+								}
+							}
+						}
+					}
+					.help-myaccount-right{
+						margin: 0 ;
+						padding: 30px 0;
+						float: right;
+						width: 100%;
+						background: #F9F9F9;
+						height: 100%;
+						padding-left: 20px;
+						.customer-care-first{
+							.contentasset{
+								text-align: center;
+								h2{
+									font-size: 14px;
+									line-height: 14px;
+									margin-bottom: 20px;
+								}
+								h3{
+									font-size: 24px;
+									font-weight: bold;
+									line-height: 24px;
+									margin-bottom: 30px;
+
+								}
+							}
+							.help-myaccount-support{
+							}
+							.help-myaccount-text{
+								padding: 0;
+								div{
+									height: 60px;
+									line-height:auto;
+									margin-bottom: 0;
+									span{
+										display: inline-block;
+										vertical-align: middle;
+										margin-right: 0;
+										i{
+											width: 50px;
+											height: 50px;
+										}
+										&.help-myaccount-icon{
+											width: 50px;
+											height: 50px;
+											margin-right: 20px;
+										}
+										&.help-myaccount-cont{
+											vertical-align: middle;
+											a{
+												height: 26px;
+												font-size: 18px;
+												line-height: 26px;
+												margin-bottom: 0px;
+											}
+											p{
+												height: 20px;
+												font-size: 12px;
+												line-height: 20px;
+											}
+										}
+									}
+									&:nth-child(1){
+										margin-bottom: 10px;
+									}
+								}
+							}
+						}
+					}
+			    }
+			}
+		}
+	}
+
+}

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%include _includes/meta.html %>
+        <title>runner</title>
+        <%include _includes/css.html %>
+            <!-- <link rel="stylesheet" href="css/lp-messi.css" /> -->
+            <%include _includes/js.html %>
+</head>
+
+<body>
+    <div id="wrapper">
+        <%include _includes/modules/header.html %>
+            <section class="container">
+                <style>
+                    .article {
+                        position: relative;
+                    }
+
+                    .article>img {
+                        width: 100%;
+                    }
+
+                    .article .link {
+                        position: absolute;
+                        width: 10%;
+                        height: 4%;
+                        top: 60%;
+                        left: 76.5%;
+                    }
+
+                    .article-video1 {
+                        cursor: pointer;
+                    }
+
+                    .video-box {
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                    }
+
+                    .video-box .video-content {
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                    }
+
+                    .video-wrapper img {
+                        z-index: 10;
+                    }
+
+                    .video-box .video-content .video {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        visibility: hidden;
+                    }
+
+                    .article-video1.is-play .video-box .video-content .video {
+                        visibility: visible;
+                    }
+
+                    .article-video1.is-play .video-box .video-code img {
+                        visibility: hidden;
+                    }
+
+                    .article-video-auto .video-box {
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                    }
+					.w1539{
+						max-width: 1539px;
+						margin: 0 auto;
+					}
+
+                    .article-product .swiper-container {
+                        max-width: 1420px;
+                        margin: 0 auto;
+                    }
+
+                    .article-product {
+                        position: relative;
+                        padding: 0% 13%;
+                        margin-bottom: 150px;
+                    }
+                    .article-product:before{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        height: 36%;
+                        background: #b2bdb9;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    .swiper-button-prev {
+                        background-image: url(../static/images/lp-rfs/cn/lf.png) !important;
+                        width: 45px;
+                        height: 86px;
+                        background-size: 45px 86px;
+                        left: 5%;
+                        top: 34%;
+                    }
+
+                    .swiper-button-next {
+                        background-image: url(../static/images/lp-rfs/cn/rt.png) !important;
+                        width: 45px;
+                        height: 86px;
+                        background-size: 45px 86px;
+                        top: 34%;
+                        right: 5%;
+                    }
+
+                    .btn-box {
+                        margin-top: 120px;
+                        text-align: center;
+                    }
+                    .mt100{
+                        margin-top: 100px;
+                    }
+
+                    @media (max-width: 1024px) {
+                        .article-video-auto .video-box {
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            left: 0%;
+                            top: 0%;
+                        }
+                        .article-product {
+                            padding: 0;
+                            padding-left: 15px;
+                            margin-bottom: 35px;
+                        }
+                        .swiper-button-prev,
+                        .swiper-button-next {
+                            display: none;
+                        }
+                        .btn-box {
+                            margin-top: 28px;
+                        }
+                        .mt100{
+                            margin-top: 20px;
+                        }
+                    }
+                </style>
+
+                <!-- 视频模块 -->
+                <article class="article article-video1 video-box2 article-video">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-rfs/cn/pc_01.jpg"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-rfs/cn/mob_01.jpg"},
+                        "small":{"high":"", "normal":"../static/images/lp-rfs/cn/mob_01.jpg"}}'
+                    />
+                    <div class="section-content e-play-video  pc-mob-video">
+                        <div class="video-box e-home-video e-play-video-new">
+                            <div class="video-content"></div>
+                            <a class="video-bg-wrapper" href="JavaScript:void(0);">
+                                <span class="video-code" data-video-code="C779875D16AEFEBE9C33DC5901307461">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="article w1539">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-rfs/cn/pc_02.jpg"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-rfs/cn/mob_02.jpg"},
+                        "small":{"high":"", "normal":"../static/images/lp-rfs/cn/mob_02.jpg"}}'
+                    />
+                </article>
+                <article class="article article-video-auto article-video1 article-bottom w1539">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-rfs/cn/pc_03.jpg"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-rfs/cn/mob_03.jpg"},
+                        "small":{"high":"", "normal":"../static/images/lp-rfs/cn/mob_03.jpg"}}'
+                    />
+                    <div class="section-content e-play-video  pc-mob-video">
+                        <div class="video-box e-home-video">
+                            <div class="video-content"></div>
+                            <a class="video-bg-wrapper" href="JavaScript:void(0);">
+                                <span class="video-code" data-video-code="937E64B89EBC60C99C33DC5901307461">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                </article>
+                <article class="article w1539">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-rfs/cn/pc_04.jpg"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-rfs/cn/mob_04.jpg"},
+                        "small":{"high":"", "normal":"../static/images/lp-rfs/cn/mob_04.jpg"}}'
+                    />
+                </article>
+                <article class="article w1539">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-rfs/cn/pc_05.jpg"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-rfs/cn/mob_05.jpg"},
+                        "small":{"high":"", "normal":"../static/images/lp-rfs/cn/mob_05.jpg"}}'
+                    />
+                </article>
+                <article class="article w1539">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-rfs/cn/pc_06.jpg"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-rfs/cn/mob_06.jpg"},
+                        "small":{"high":"", "normal":"../static/images/lp-rfs/cn/mob_06.jpg"}}'
+                    />
+                </article>
+                <article class="article w1539">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-rfs/cn/pc_07.jpg"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-rfs/cn/mob_07.jpg"},
+                        "small":{"high":"", "normal":"../static/images/lp-rfs/cn/mob_07.jpg"}}'
+                    />
+                </article>
+                <article class="article w1539">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-rfs/cn/pc_08.jpg"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-rfs/cn/mob_08.jpg"},
+                        "small":{"high":"", "normal":"../static/images/lp-rfs/cn/mob_08.jpg"}}'
+                    />
+                </article>
+                <article class="article w1539">
+                    <img src="../s" data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-rfs/cn/pc_09.jpg"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-rfs/cn/mob_09.jpg"},
+                        "small":{"high":"", "normal":"../static/images/lp-rfs/cn/mob_09.jpg"}}'
+                    />
+                </article>
+                <article class="article w1539">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-rfs/cn/pc_10.jpg"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-rfs/cn/mob_10.jpg"},
+                        "small":{"high":"", "normal":"../static/images/lp-rfs/cn/mob_10.jpg"}}'
+                    />
+				</article>
+				<article class="article w1539">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-rfs/cn/pc_11.jpg"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-rfs/cn/mob_11.jpg"},
+                        "small":{"high":"", "normal":"../static/images/lp-rfs/cn/mob_11.jpg"}}'
+                    />
+				</article>
+				<article class="article w1539">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-rfs/cn/pc_12.jpg"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-rfs/cn/mob_12.jpg"},
+                        "small":{"high":"", "normal":"../static/images/lp-rfs/cn/mob_12.jpg"}}'
+                    />
+				</article>
+				<article class="article mt100">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-rfs/cn/pc_13.jpg"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-rfs/cn/mob_13.jpg"},
+                        "small":{"high":"", "normal":"../static/images/lp-rfs/cn/mob_13.jpg"}}'
+                    />
+                </article>
+                <article class="article article-product">
+                    <div class="product-swiper">
+                        <div class="swiper-container swiper-1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="">
+                                        <img lazysrc="../static/images/lp-rfs/cn/sw_01.jpg" src="https://www.adidas.com.hk/images/blank.gif"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="">
+                                        <img lazysrc="../static/images/lp-rfs/cn/sw_02.jpg" src="https://www.adidas.com.hk/images/blank.gif"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="">
+                                        <img lazysrc="../static/images/lp-rfs/cn/sw_03.jpg" src="https://www.adidas.com.hk/images/blank.gif"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="">
+                                        <img lazysrc="../static/images/lp-rfs/cn/sw_04.jpg" src="https://www.adidas.com.hk/images/blank.gif"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="">
+                                        <img lazysrc="../static/images/lp-rfs/cn/sw_05.jpg" src="https://www.adidas.com.hk/images/blank.gif"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="">
+                                        <img lazysrc="../static/images/lp-rfs/cn/sw_06.jpg" src="https://www.adidas.com.hk/images/blank.gif"
+                                            alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="btn-box btn-box3">
+                            <a class="btn  btn1 btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow"
+                                target="_blank" href="">shop essentials<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span>
+                                </a>
+                        </div>
+                    </div>
+                </article>
+                <script type="text/javascript">
+                    $(function () {
+                        // 换图 + 懒加载
+                        $.spice.lazyLoad('img[lazysrc]', {
+                            attr: 'lazysrc'
+                        });
+                        $.spice.tools.changeImageSrc({
+                            callBack: function (img, self) {
+                                $.spice.lazyLoad('img[lazysrc]', {
+                                    attr: self.opt.lazyData,
+                                    prestrain: 1
+                                });
+                            }
+                        });
+                        var swiper1 = new Swiper('.swiper-1', {
+                            slidesPerView: 3,
+                            spaceBetween: 17,
+                            prevButton: '.product-swiper .swiper-button-prev',
+                            nextButton: '.product-swiper .swiper-button-next',
+                            initialSlide: 0,
+                            breakpoints: {
+                                1024: {
+                                    slidesPerView: 1.2,
+                                }
+                            }
+                        });
+                        var loadImgFun_index = function (imgArr, fn) {
+                            // 图片加载fun
+                            var loadImgLen = 0,
+                                errImgLen = 0
+                            var imgdefereds = [];
+                            $(imgArr).each(function () {
+                                var defered = $.Deferred();
+                                $(this).on('load', function () {
+                                    defered.resolve();
+                                    loadImgLen++
+                                }).on('error', function () {
+                                    defered.resolve();
+                                    errImgLen++
+                                })
+                                if (this.complete) setTimeout(function () {
+                                    defered.resolve();
+                                }, 200);
+                                imgdefereds.push(defered);
+                            })
+                            $.when.apply(null, imgdefereds).done(function () {
+                                if (fn && $.isFunction(fn)) {
+                                    fn()
+                                }
+                            });
+                        }
+
+                        //自动播放视频
+
+                        $('.e-home-video').each(function (index, el) {
+                            $(el).parents('.article').addClass('home-video')
+                            var videoCode = $('.video-code', el).data('video-code'),
+                                videoId = 'home_video_' + index;
+                            loadImgFun_index($('.video-code img', el), function () {
+                                $('.video-content', el).show().css({
+                                    'height': $('.video-code img', el).outerHeight(true)
+                                })
+                                $('.video-code img', el).css({
+                                    'visibility': 'hidden'
+                                })
+                            })
+                            // 开发需要打开此代码---开始
+                            var bannerVideoId = videoCode;
+                            var url = base + "/indexCCVideo.json";
+                            var data = loxia.syncXhrGet(url, {
+                                'bannerVideoId': bannerVideoId
+                            });
+                            var videoUrl = data.mp4VideoUrl;
+                            // 开发需要打开此代码---结束
+
+                            // 下面的videoUrl为前端静态视频地址（静态页面的video路径 ，开发需注释掉）
+                            // var videoUrl = 'https://cm11-c110-2.play.bokecc.com/flvs/ca/QxIzd/uvUsVoW47n-30.mp4?t=1601713532&key=82C932E9B66BA17C54B96B9DFB4A0D03&tpl=10';
+                            var html = '<video class="video" id="' + videoId + '" preload="meta" webkit-playsinline="true" playsInline="true" muted><source src="' + videoUrl + '" ></source></video>';
+                            $('.video-content', el).html(html);
+
+                        })
+                        var windowTop = 0;
+                        var $homeVideo = $(".home-video"),
+                            v_offTop = [],
+                            v_Height = [];
+                        var getVideoSize = $.spice.throttle(function () {
+                            v_offTop = [];
+                            v_Height = [];
+                            $homeVideo.each(function (index, el) {
+                                var _this_OT = $(el).offset().top,
+                                    _this_HT = $(el).outerHeight(true);
+                                v_offTop.push(_this_OT);
+                                v_Height.push(_this_HT);
+                            })
+                        }, 300);
+                        $(window).on('scroll', function () {
+                            var _mobVideo = $(".pc-mob-video");
+                            if (!_mobVideo.length > 0 && $.spice.getWindowWidth() < 768) {
+                                return;
+                            }
+                            var $scrollTop = $(this).scrollTop(),
+                                headerBannerboxH = 0,
+                                wH = $(this).outerHeight(true),
+                                $header = $('.header-fixed'),
+                                headerH = $header.outerHeight(true);
+                            getVideoSize();
+                            if ($(".header-banner-box").hasClass('header-banner-show')) {
+                                headerBannerboxH = $(".header-banner-box").outerHeight(true);
+                            } else {
+                                headerBannerboxH = 0;
+                            }
+                            headerH = headerH + headerBannerboxH;
+
+                            // 视频播放
+                            $('#home_video_1')[0].play();
+                            $('#home_video_1').parents('.article-video1').addClass('is-play');
+                            $('#home_video_1')[0].addEventListener("ended", function() {
+                                this.play();
+                            });
+                            $(".e-play-video-new").on("tap", function () {
+                                var _parent_article = $(this).parents(".article-video"),
+                                    _video_s = $(this).parents(".article-video").find(".video"),
+                                    _video = $(this)
+                                        .parents(".article-video")
+                                        .find(".video");
+                                _parent_article.toggleClass("is-play");
+                                if (_parent_article.hasClass("is-play")) {
+                                    for (var i = 0; i < _video_s.length; i++) {
+                                        _video_s.eq(i)[0].pause();
+                                    }
+                                    _video[0].play();
+                                    _video[0].addEventListener("ended", function () {
+                                        this.play();
+                                    });
+                                } else {
+                                    _video[0].pause();
+                                }
+                            });
+
+                        }).trigger('scroll');
+
+
+                    });
+                </script>
+            </section>
+            <%include _includes/modules/footer.html %>
+    </div>
+</body>
+
+</html>

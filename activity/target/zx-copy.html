@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%include _includes/meta.html %>
+	<title>salah</title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" href="css/lp-messi.css" /> -->
+	<%include _includes/js.html %>
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+
+
+			<style>
+				.article {
+					position: relative;
+				}
+
+				.article>img {
+					width: 100%;
+				}
+
+				.row-clp {
+					display: flex;
+					padding: 20px 14px;
+				}
+
+				.letter-item {
+					width: 25%;
+					padding: 0 12px;
+					margin: 23px 0;
+				}
+
+				.article-video1 {
+					cursor: pointer;
+				}
+
+				.row-clp>div img {
+					width: 100%;
+				}
+
+				.article-video1 .video-wrapper .video-content {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					left: 0;
+				}
+
+				.article-video1.video-box .video-wrapper .video-content {
+					position: absolute;
+					height: 100%;
+					width: 94%;
+					left: 3%;
+					z-index: 1;
+				}
+
+				.video-wrapper img {
+					z-index: 10;
+				}
+
+				.video-wrapper .swiper-btn {
+					left: 50%;
+					transform: translateX(-50%);
+					top: 54%;
+					z-index: 10;
+					padding: 0 10px;
+				}
+
+				.article-video1 .video-wrapper .video-content .video {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					visibility: hidden;
+				}
+
+				.article-video1.is-play .video-wrapper .video-content .video {
+					visibility: visible;
+				}
+
+				.article-video1.is-play .video-wrapper .video-code img {
+					visibility: hidden;
+				}
+
+				.swiper-btn {
+					position: absolute;
+					top: 58%;
+					left: 13%;
+				}
+
+				.video-wrapper .swiper-btn-bottom {
+					top: 74%;
+					text-align: center;
+					width: 100%;
+				}
+
+				.video-wrapper .swiper-btn-bottom p {
+					margin-bottom: 15px;
+					line-height: 26px;
+					font-size: 16px;
+				}
+
+				.video-wrapper .swiper-btn-bottom h5 {
+					line-height: 25px;
+					font-size: 30px;
+					margin-bottom: 15px;
+				}
+
+				.video-text {
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					width: 94%;
+					left: 3%;
+					right: 0;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					overflow: hidden;
+				}
+
+				.video-text a {
+					display: inherit;
+				}
+
+				.article-padd {
+					padding: 0 2.7%;
+				}
+
+				.swiper-btn.link-kv {
+					top: 65%;
+					left: auto;
+					left: 12%;
+				}
+
+				@media (max-width: 1024px) {
+					.letter-item {
+						width: 25%;
+					}
+
+					.swiper-btn.link-kv {
+						right: 7%;
+						top: 61%;
+					}
+
+					.article-video1-mob .video-wrapper .video-content .video {
+						height: auto;
+					}
+
+					.video-wrapper .swiper-btn.swiper-btn-bottom {
+						top: 70%;
+					}
+				}
+
+				@media (max-width: 768px) {
+					.row-clp {
+						padding: 20px 8px;
+					}
+
+					.letter-item {
+						width: 50%;
+					}
+
+					.row-clp>div {
+						margin: 8px 0;
+					}
+
+					.article-video1.video-box .video-wrapper .video-content {
+						position: absolute;
+						height: 100%;
+						width: 93.5%;
+						left: 3.3%;
+					}
+
+					.video-wrapper .swiper-btn {
+						top: 64%;
+					}
+
+				}
+
+				@media (max-width: 767px) {
+					.swiper-btn {
+						position: absolute;
+						top: 87%;
+						left: 4%;
+					}
+
+					.letter-item {
+						width: 100%;
+					}
+
+					.swiper-btn.link-kv {
+						top: 84%;
+						left: 4%;
+					}
+				}
+			</style>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/pc_01.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/mob_01.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/mob_01.jpg&quot;}}">
+			</article>
+			<!-- 视频模块 -->
+			<article class="article article-video1 video-box2 e-play-video pc-mob-video">
+				<div class="video-wrapper e-home-video">
+					<div class="video-content"></div>
+					<a class="video-play" href="javascript:void(0)"> <span class="video-code" data-video-code="3A7A4D6355C630809C33DC5901307461"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                     &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/pc_02.jpg&quot;},
+                     &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/mob_02.jpg&quot;},
+                     &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/mob_02.jpg&quot;}}"> </span> </a>
+					<div class="video-text">
+						<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+							&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/video-text_02.png&quot;},
+							&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/mob-text_02.png&quot;},
+							&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/mob-text_02.png&quot;}}">
+					</div>
+					<div class="swiper-btn">
+						<a class="btn btn-have-opacity gl-cta-height gl-cta-color-white gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="https://www.adidas.com.hk/A-ZX">SHOP ALL<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+					</div>
+				</div>
+			</article>
+			<article class="article article-video1 video-box2 e-play-video pc-mob-video none-sm" style="margin-top: 20px;">
+				<div class="video-wrapper e-home-video">
+					<div class="video-content"></div>
+					<a class="video-play" href="javascript:void(0)"> <span class="video-code" data-video-code="3FCF6EB5B5241F3B13358DE27D943A99"> <img src="https://img.adidas.com.hk/resources/2020/KV/NOV/AZX/B/321.png?version=000000"> </span> </a>
+					<div class="swiper-btn swiper-btn-bottom">
+						<h5>ZX 8000 WOTHERSPOON</h5>
+						<p>For planet Earth and its colourful creativity-a ZX 8000 update by legendary Sean Wotherspoon.</p>
+						<a class="btn btn-have-opacity gl-cta-height gl-cta-color-white gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="https://www.adidas.com.hk/item/GZ3088">SHOP NOW<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+					</div>
+				</div>
+			</article>
+			<article class="article article-video1 article-video1-mob video-box2 e-play-video pc-mob-video none block-sm">
+				<div class="video-wrapper e-home-video">
+					<div class="video-content"></div>
+					<a class="video-play" href="javascript:void(0)"> <span class="video-code" data-video-code="3FCF6EB5B5241F3BFC9558351D509E7C"> <img src="https://img.adidas.com.hk/resources/2020/KV/NOV/AZX/B/123.png?version=000000"> </span> </a>
+					<div class="swiper-btn swiper-btn-bottom">
+						<h5>ZX 8000 WOTHERSPOON</h5>
+						<p>For planet Earth and its colourful creativity-a ZX 8000 update by legendary Sean Wotherspoon.</p>
+						<a class="btn btn-have-opacity gl-cta-height gl-cta-color-white gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="https://www.adidas.com.hk/item/GZ3088">SHOP NOW<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"> </span></a>
+					</div>
+				</div>
+			</article>
+			<article class="article">
+				<div class="row row-clp">
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item article-video1 video-box e-play-video pc-mob-video">
+						<div class="video-wrapper e-home-video">
+							<div class="video-content"></div>
+							<a class="video-play" href="javascript:void(0)"> <span class="video-code" data-video-code="A844F62F6DC1E25D9C33DC5901307461"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/A-p.jpg&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/A-p.jpg&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/A-m.jpg&quot;}}"> </span> </a>
+							<div class="video-text">
+								<a href="https://www.adidas.com.hk/item/FX8593"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/new-now.png&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/new-now.png&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/mob-now1_055.png&quot;}}"> </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item article-video1 video-box e-play-video pc-mob-video">
+						<div class="video-wrapper e-home-video">
+							<div class="video-content"></div>
+							<a class="video-play" href="javascript:void(0)"> <span class="video-code" data-video-code="2370AFB3FCE542AE9C33DC5901307461"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+								&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/B-p.jpg&quot;},
+								&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/B-p.jpg&quot;},
+								&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/B-m.jpg&quot;}}"> </span> </a>
+							<div class="video-text">
+								<a href="https://www.adidas.com.hk/item/FY8852"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/new-now.png&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/new-now.png&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/mob-now1_055.png&quot;}}"> </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item article-video1 video-box e-play-video pc-mob-video">
+						<div class="video-wrapper e-home-video">
+							<div class="video-content"></div>
+							<a class="video-play" href="javascript:void(0)"> <span class="video-code" data-video-code="D59FC64C9CF5B8099C33DC5901307461"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/C-p.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/C-p.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/C-m.jpg&quot;}}"> </span> </a>
+							<div class="video-text">
+								<a href="https://www.adidas.com.hk/item/FX9966"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/new-now.png&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/new-now.png&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/mob-now1_055.png&quot;}}"> </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item article-video1 video-box e-play-video pc-mob-video">
+						<div class="video-wrapper e-home-video">
+							<div class="video-content"></div>
+							<a class="video-play" href="javascript:void(0)"> <span class="video-code" data-video-code="53E6DB9317A1C4709C33DC5901307461"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+			&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/D-p.jpg&quot;},
+			&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/D-p.jpg&quot;},
+			&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/D-m.jpg&quot;}}"> </span> </a>
+							<div class="video-text">
+								<a href="https://www.adidas.com.hk/item/FX8528"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										  &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/new-now.png&quot;},
+										  &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/new-now.png&quot;},
+										  &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/mob-now1_055.png&quot;}}"> </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item">
+						<div class="letter-img">
+							<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+								&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/E-p.jpg&quot;},
+								&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/E-p.jpg&quot;},
+								&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/E-m.jpg&quot;}}">
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item">
+						<div class="letter-img">
+							<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+								&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/F-p.jpg&quot;},
+								&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/F-p.jpg&quot;},
+								&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/F-m.jpg&quot;}}">
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item">
+						<div class="letter-img">
+							<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+								&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/G-p.jpg&quot;},
+								&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/G-p.jpg&quot;},
+								&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/G-m.jpg&quot;}}">
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item">
+						<div class="letter-img">
+							<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+								&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/H-p.jpg&quot;},
+								&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/H-p.jpg&quot;},
+								&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/H-m.jpg&quot;}}">
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item">
+						<div class="letter-img">
+							<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+								&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/I-p.jpg&quot;},
+								&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/I-p.jpg&quot;},
+								&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/I-m.jpg&quot;}}">
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item article-video1 video-box e-play-video pc-mob-video">
+						<div class="video-wrapper e-home-video">
+							<div class="video-content"></div>
+							<a class="video-play" href="javascript:void(0)"> <span class="video-code" data-video-code="6C9A56BA70413AAC9C33DC5901307461"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/J-p.jpg&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/J-p.jpg&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/J-m.jpg&quot;}}"> </span></a>
+							<div class="video-text">
+								<a href="https://www.adidas.com.hk/item/FZ0345"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/new-now.png&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/new-now.png&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/mob-now1_055.png&quot;}}"> </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item">
+						<div class="letter-img">
+							<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+								&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/K-p.jpg&quot;},
+								&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/K-p.jpg&quot;},
+								&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/K-m.jpg&quot;}}">
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item article-video1 video-box e-play-video pc-mob-video">
+						<div class="video-wrapper e-home-video">
+							<div class="video-content"></div>
+							<a class="video-play" href="javascript:void(0)"> <span class="video-code" data-video-code="10C1D0FB2BD35C089C33DC5901307461"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+								&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/L-p.jpg&quot;},
+								&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/L-p.jpg&quot;},
+								&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/L-m.jpg&quot;}}"> </span></a>
+							<div class="video-text">
+								<a href="https://www.adidas.com.hk/item/FZ3482"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/new-now.png&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/new-now.png&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/mob-now1_055.png&quot;}}"> </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item article-video1 video-box e-play-video pc-mob-video">
+						<div class="video-wrapper e-home-video">
+							<div class="video-content"></div>
+							<a class="video-play" href="javascript:void(0)"> <span class="video-code" data-video-code="5244CF125BECF0C59C33DC5901307461"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+								&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/M-p.jpg&quot;},
+								&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/M-p.jpg&quot;},
+								&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/M-m.jpg&quot;}}"> </span></a>
+							<div class="video-text">
+								<a href="https://www.adidas.com.hk/item/FZ4888"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/new-now.png&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/new-now.png&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/mob-now1_055.png&quot;}}"> </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item article-video1 video-box e-play-video pc-mob-video">
+						<div class="video-wrapper e-home-video">
+							<div class="video-content"></div>
+							<a class="video-play" href="javascript:void(0)"> <span class="video-code" data-video-code="181810EE947BC0289C33DC5901307461"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/N-p.jpg&quot;},&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/N-p.jpg&quot;},&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/N-m.jpg&quot;}}"> </span></a>
+							<div class="video-text">
+								<a href="https://www.adidas.com.hk/item/FY5167"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/new-now.png&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/new-now.png&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/mob-now1_055.png&quot;}}"> </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item">
+						<div class="letter-img">
+							<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+								&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/O-p.jpg&quot;},
+								&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/O-p.jpg&quot;},
+								&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/O-m.jpg&quot;}}">
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item">
+						<div class="letter-img">
+							<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+								&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/P-p.jpg&quot;},
+								&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/P-p.jpg&quot;},
+								&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/P-m.jpg&quot;}}">
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item">
+						<div class="letter-img">
+							<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+								&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/Q-p.jpg&quot;},
+								&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/Q-p.jpg&quot;},
+								&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/Q-m.jpg&quot;}}">
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item article-video1 video-box e-play-video pc-mob-video">
+						<div class="video-wrapper e-home-video">
+							<div class="video-content"></div>
+							<a class="video-play" href="javascript:void(0)"> <span class="video-code" data-video-code="119FADD76283EEC79C33DC5901307461"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/Q-p.jpg&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/Q-p.jpg&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/Q-m.jpg&quot;}}"> </span> </a>
+							<div class="video-text">
+								<a href="https://www.adidas.com.hk/item/FW1485"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/new-now.png&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/new-now.png&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/mob-now1_055.png&quot;}}"> </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item article-video1 video-box e-play-video pc-mob-video">
+						<div class="video-wrapper e-home-video">
+							<div class="video-content"></div>
+							<a class="video-play" href="javascript:void(0)"> <span class="video-code" data-video-code="28ED38A3DB48E7909C33DC5901307461"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/S-p.jpg&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/S-p.jpg&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/S-m.jpg&quot;}}"> </span> </a>
+							<div class="video-text">
+								<a href="https://www.adidas.com.hk/item/FW6092"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/new-now.png&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/new-now.png&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/mob-now1_055.png&quot;}}"> </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item article-video1 video-box e-play-video pc-mob-video">
+						<div class="video-wrapper e-home-video">
+							<div class="video-content"></div>
+							<a class="video-play" href="https://www.adidas.com.hk/item/FW6092"> <span class="video-code" data-video-code="5508A3EFA61BF8460498CE5AAF1F53F5"> 
+								<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/T-p.jpg&quot;},&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/T-p.jpg&quot;},&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/T-m.jpg&quot;}}">
+							</span> </a>
+							<div class="video-text">
+								<a href="https://www.adidas.com.hk/item/FZ4645"> 
+									<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/new-now.png&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/new-now.png&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/mob-now1_055.png&quot;}}"> 
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item">
+						<div class="letter-img">
+							<a href=""> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/AZX/CLP/U-p-en.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/AZX/CLP/U-p-en.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/AZX/CLP/U-m-en.jpg&quot;}}"> </a>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item article-video1 video-box e-play-video pc-mob-video">
+						<div class="video-wrapper e-home-video">
+							<div class="video-content"></div>
+							<a class="video-play" href="https://www.adidas.com.hk/item/FW6092"> <span class="video-code" data-video-code="5508A3EFA61BF846B463AB73BD4C026B"> 
+								<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/V-p.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/V-p.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/V-m.jpg&quot;}}">
+							</span> </a>
+							<div class="video-text">
+								<a href="https://www.adidas.com.hk/item/FZ4410"> 
+									<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/new-now.png&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/new-now.png&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/mob-now1_055.png&quot;}}"> 
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item article-video1 video-box e-play-video pc-mob-video">
+						<div class="video-wrapper e-home-video">
+							<div class="video-content"></div>
+							<a class="video-play" href="https://www.adidas.com.hk/item/FW6092"> <span class="video-code" data-video-code="3FCF6EB5B5241F3BB463AB73BD4C026B"> 
+								<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/W-p.jpg&quot;},&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/W-p.jpg&quot;},&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/W-m.jpg&quot;}}">
+							</span> </a>
+							<div class="video-text">
+								<a href="https://www.adidas.com.hk/item/GZ3088">
+									<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/new-now.png&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/new-now.png&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/mob-now1_055.png&quot;}}"> 
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item article-video1 video-box e-play-video pc-mob-video">
+						<div class="video-wrapper e-home-video">
+							<div class="video-content"></div>
+							<a class="video-play" href="javascript:void(0)"> <span class="video-code" data-video-code="9AE46E535FF33F109C33DC5901307461"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+								&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/X-p.jpg&quot;},
+								&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/X-p.jpg&quot;},
+								&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/X-m.jpg&quot;}}"> </span> </a>
+							<div class="video-text">
+								<a href="https://www.adidas.com.hk/item/G55409"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/new-now.png&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/new-now.png&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/mob-now1_055.png&quot;}}"> </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item article-video1 video-box e-play-video pc-mob-video">
+						<div class="video-wrapper e-home-video">
+							<div class="video-content"></div>
+							<a class="video-play" href=""> <span class="video-code" data-video-code="5508A3EFA61BF8463F35109F9F77F2A8">
+								<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/Y-p.jpg&quot;},&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/Y-p.jpg&quot;},&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/Y-m.jpg&quot;}}"> 
+							</span> </a>
+							<div class="video-text">
+								<a href="https://www.adidas.com.hk/item/FZ4402">
+									<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+										&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/new-now.png&quot;},
+										&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/new-now.png&quot;},
+										&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/mob-now1_055.png&quot;}}"> 
+									</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 col-xs-12-12 letter-item article-video1 video-box e-play-video pc-mob-video">
+						<div class="video-wrapper e-home-video">
+							<div class="video-content"></div>
+							<a class="video-play" href=""> <span class="video-code" data-video-code="A57166C3C2B853F3F3342D97BB1D6DF8">
+								<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/Z-p.jpg&quot;},&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/Z-p.jpg&quot;},&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/Z-m.jpg&quot;}}"> 
+							</span> </a>
+							<div class="video-text">
+								<a href="https://www.adidas.com.hk/item/GZ7286"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/new-now.png&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUN/A-ZX/en/new-now.png&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/A-ZX/mob-now1_055.png&quot;}}"> </a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</article>
+			<script type="text/javascript">
+				$(function() {
+					// 换图 + 懒加载
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+					var loadImgFun_index = function(imgArr, fn) {
+						// 图片加载fun
+						var loadImgLen = 0,
+							errImgLen = 0
+						var imgdefereds = [];
+						$(imgArr).each(function() {
+							var defered = $.Deferred();
+							$(this).on('load', function() {
+								defered.resolve();
+								loadImgLen++
+							}).on('error', function() {
+								defered.resolve();
+								errImgLen++
+							})
+							if (this.complete) setTimeout(function() {
+								defered.resolve();
+							}, 200);
+							imgdefereds.push(defered);
+						})
+						$.when.apply(null, imgdefereds).done(function() {
+							if (fn && $.isFunction(fn)) {
+								fn()
+							}
+						});
+					}
+					// 视频
+
+					//自动播放视频
+
+					$('.e-home-video').each(function(index, el) {
+						$(el).parents('.article-video1').addClass('home-video')
+						var videoCode = $('.video-code', el).data('video-code'),
+							videoId = 'home_video_' + index;
+						loadImgFun_index($('.video-code img', el), function() {
+							$('.video-content', el).show().css({
+								'height': $('.video-code img', el).outerHeight(true)
+							})
+							$('.video-code img', el).css({
+								'visibility': 'hidden'
+							})
+						})
+						// 开发需要打开此代码---开始
+						var bannerVideoId = videoCode;
+						var url = base + "/indexCCVideo.json";
+						var data = loxia.syncXhrGet(url, {
+							'bannerVideoId': bannerVideoId
+						});
+						var videoUrl = data.mp4VideoUrl;
+						// 开发需要打开此代码---结束
+
+						// 下面的videoUrl为前端静态视频地址（静态页面的video路径 ，开发需注释掉）
+						//var videoUrl = 'https://cm15-c110-2.play.bokecc.com/flvs/ca/QxIfw/uFgMEhjlED-90.mp4?t=1599025201&key=9F16F6AD7E86350154E9C9169078ABBB&tpl=10';
+						var html = '<video class="video" id="' + videoId + '" preload="meta" webkit-playsinline="true" playsInline="true" muted><source src="' + videoUrl + '" ></source></video>';
+						$('.video-content', el).html(html);
+
+					})
+					var windowTop = 0;
+					var $homeVideo = $(".home-video"),
+						v_offTop = [],
+						v_Height = [];
+					var getVideoSize = $.spice.throttle(function() {
+						v_offTop = [];
+						v_Height = [];
+						$homeVideo.each(function(index, el) {
+							var _this_OT = $(el).offset().top,
+								_this_HT = $(el).outerHeight(true);
+							v_offTop.push(_this_OT);
+							v_Height.push(_this_HT);
+						})
+					}, 300);
+					$(window).on('scroll', function() {
+						var _mobVideo = $(".pc-mob-video");
+						if (!_mobVideo.length > 0 && $.spice.getWindowWidth() < 768) {
+							return;
+						}
+						var $scrollTop = $(this).scrollTop(),
+							headerBannerboxH = 0,
+							wH = $(this).outerHeight(true),
+							$header = $('.header-fixed'),
+							headerH = $header.outerHeight(true);
+						getVideoSize();
+						if ($(".header-banner-box").hasClass('header-banner-show')) {
+							headerBannerboxH = $(".header-banner-box").outerHeight(true);
+						} else {
+							headerBannerboxH = 0;
+						}
+						headerH = headerH + headerBannerboxH;
+
+						// 视频播放
+						for (var i = 0; i < $homeVideo.length; i++) {
+							if ($scrollTop > (v_offTop[i] - headerBannerboxH - wH) && $scrollTop < (v_offTop[i] - headerH - 24)) {
+								// console.log("第", i, '个视频进入');
+								if (!$homeVideo.eq(i).hasClass('is-play')) {
+									$homeVideo.eq(i).addClass('is-play').removeClass("is-pause");
+									$('#home_video_' + i)[0].play();
+									$('#home_video_' + i)[0].addEventListener('canplaythrough', function() {
+										console.log('视频准备就绪，开始播放');
+										this.play()
+									});
+									$('#home_video_' + i)[0].addEventListener('ended', function() {
+										this.play()
+									});
+								}
+							} else if ($scrollTop > (v_offTop[i] + v_Height[i] - headerH - 24)) {
+								// console.log("第", i, '个离开');
+								$homeVideo.eq(i).addClass('is-pause').removeClass("is-play");
+								$('#home_video_' + i)[0].pause();
+							}
+						}
+
+					}).trigger('scroll');
+				});
+			</script>
+
+
+
+		</section>
+		<%include _includes/modules/footer.html %>
+
+	</div>
+</body>
+
+</html>

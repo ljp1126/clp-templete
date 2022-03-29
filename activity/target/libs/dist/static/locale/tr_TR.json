@@ -1,0 +1,61 @@
+{
+  "general": {
+    "today": "Bugün",
+    "month": {
+      "0": "Ocak",
+      "1": "Şubat",
+      "2": "Mart",
+      "3": "Nisan",
+      "4": "Mayıs",
+      "5": "Haziran",
+      "6": "Temmuz",
+      "7": "Ağustos",
+      "8": "Eylül",
+      "9": "Ekim",
+      "10": "Kasım",
+      "11": "Aralık"
+    },
+    "ordinal": {
+      "st": "",
+      "nd": "",
+      "rd": "",
+      "th": ""
+    },
+    "launchDate": "8 Haziran, 2018",
+    "endDate": "8 Temmuz, 2018",
+    "error": "Bir sorun var. Lütfen daha sonra tekrar dene."
+  },
+  "teaser": {
+    "distance": {
+      "top": "Toplamda",
+      "amount": "8.403.081",
+      "label": "km koşarak katkıda bulundu"
+    },
+    "members": {
+      "top": "8 Haziran'dan 8 Temmuz'a",
+      "amount": "744,440",
+      "label": "dünya çapında koşucu"
+    },
+    "intro": {
+      "label01": "Her dakika, bir kamyon dolusu plastik malzeme okyanuslara dökülüyor.",
+      "label02": "Artık buna bir son vermeliyiz!",
+      "label03": "Hemen bu harekete katıl!"
+    },
+    "cta": {
+      "label01": "Her km fark yaratır",
+      "label02": "Nasıl katkıda bulunacağını öğren"
+    },
+    "end": {
+      "label01": "Dünyanın her yerinden koşucular, Run for the Oceans'ın sonucu etkileyen başarısına katkıda bulunmak için bir araya geldi.<br />Kilometrelerce koşarak farkındalığı artıran ve Parley Ocean Plastic Programına destek olan herkese ",
+      "label02": "Teşekkür ediyoruz!"
+    }
+  },
+  "preLoader": {
+    "title": "Okyanuslar İçin Koş",
+    "subtitle": "yükleniyor"
+  },
+  "app": {
+    "name": "Okyanuslar İçin Koş",
+    "slug": "parley-ss18-rfto"
+  }
+}

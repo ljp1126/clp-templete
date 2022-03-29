@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="21px" viewBox="0 0 13 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+  <title>price-handle</title>
+  <desc>Created with Sketch.</desc>
+  <defs></defs>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="price-handle">
+      <g id="Combined-Shape">
+        <g id="path-1-link" fill-rule="nonzero" fill="#000000">
+          <path d="M0,6.34883721 C0,2.84247124 2.91014912,0 6.5,0 C10.0898508,0 13,2.84247124 13,6.34883721 C13,7.03041917 13,9.574232 13,10.255814 C13,12.5933913 10.8333334,16.1747866 6.5,21 C2.16666667,16.1747866 0,12.5933913 0,10.255814 C0,9.574232 0,7.03041917 0,6.34883721 Z" id="path-1"></path>
+        </g>
+        <g id="path-1-link" fill="#616363">
+          <path d="M0,6.34883721 C0,2.84247124 2.91014912,0 6.5,0 C10.0898508,0 13,2.84247124 13,6.34883721 C13,7.03041917 13,9.574232 13,10.255814 C13,12.5933913 10.8333334,16.1747866 6.5,21 C2.16666667,16.1747866 0,12.5933913 0,10.255814 C0,9.574232 0,7.03041917 0,6.34883721 Z" id="path-1"></path>
+        </g>
+      </g>
+      <rect id="Rectangle" fill="#9A9B9B" fill-rule="nonzero" x="4" y="6.34883721" width="5" height="1"></rect>
+      <rect id="Rectangle-Copy" fill="#9A9B9B" fill-rule="nonzero" x="4" y="8.30232558" width="5" height="1"></rect>
+      <rect id="Rectangle-Copy-2" fill="#9A9B9B" fill-rule="nonzero" x="4" y="10.255814" width="5" height="1"></rect>
+    </g>
+  </g>
+</svg>

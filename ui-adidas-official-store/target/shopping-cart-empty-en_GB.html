@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" type="text/css" href="css/shopping-cart-en_GB.css">
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="js/shopping-cart.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+			<!-- 内容部分 -->
+			<section class="container">
+				<article class="article article-shopping-cart article-shopping-cart-empty">
+					<div class="shopping-cart-content float-clearfix">
+						<div class="shopping-cart-left">
+							<div>
+								<div class="cart-title">
+									<h3>购物袋空</h3>
+								</div>
+								<div class="cart-empty">
+									<p>您的购物袋内没有商品。<span class="m-continue-shop">点击这里 <a href="#">继续购物</a>。</span></p>
+									<a class="btn btn-blue btn-have-arrow"><span>Cart.continue Shop</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="shopping-cart-right">
+							<div class="cart-help">
+								<p>帮助？</p>
+								<ul>
+									<li>
+										<a href="#">关于订单</a>
+									</li>
+									<li>
+										<a href="#">验收验货</a>
+									</li>
+									<li>
+										<a href="#">物流配送</a>
+									</li>
+									<li>
+										<a href="#">售后服务</a>
+									</li>
+								</ul>
+							</div>
+							<div  class="cart-payment-method">
+								<p>我们接受下列付款方式</p>
+								<ul class="float-clearfix">
+									<li>
+										<i class="icon icon-cart-alipay"></i>
+									</li>
+									<li>
+										<i class="icon icon-cart-wechat"></i>
+									</li>
+									<li>
+										<i class="icon icon-online-pay"></i>
+									</li>
+									<li>
+										<i class="icon icon-cash-on-delivery"></i>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="article article-guess-you-Iike article-cart-empty-guess-you-like">
+					<div class="style-guess-you-Iike you-might-like">
+						<h3>您可能也喜欢</h3>
+						<!-- 本月主推 -->
+						<%include _includes/guess-you-Iike.html %>
+					</div>
+				</article>
+			</section>
+
+			<%include _includes/modules/footer-no-back-top.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+		</div>
+	</body>
+</html>

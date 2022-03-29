@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" type="text/css" href="css/adiclub.css"> -->
+	<%include _includes/js.html %>
+	<!-- <script type="text/javascript" src="js/adiclub.js"></script> -->
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+			<style>
+				.article,
+				.article-top {
+					position: relative;
+				}
+
+				.article img {
+					width: 100%;
+					height: auto;
+				}
+
+				.fixed-top {
+					position: fixed;
+					z-index: 8;
+					left: 0;
+					top: 50%;
+					transform: translateY(-56%);
+				}
+
+				.fixed-top ul li {
+					width: 109px;
+					position: relative;
+					cursor: pointer;
+				}
+
+				.fixed-top ul li:after {
+					content: "";
+					position: absolute;
+					display: block;
+					width: 100%;
+					height: 100%;
+					left: 0;
+					top: 0;
+					background: rgba(0, 0, 0, 0.55);
+				}
+
+				.fixed-top ul li.is-show:after {
+					background: none;
+				}
+
+				.article-video .video-wrapper {
+					position: absolute;
+					cursor: pointer;
+				}
+
+				.video-box .video-content {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					top: 0;
+					left: 0;
+				}
+
+				.video-content .video {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					visibility: hidden;
+				}
+
+				.video-box.is-play .video-wrapper .video-content .video {
+					visibility: visible;
+				}
+
+				.pro-main-last{
+					position: absolute;
+					width: 100%;
+					top: 8%;
+					left: 50%;
+					transform: translate(-50%,0);
+				}
+				.swiper-container-main .swiper-slide img {
+					width: 100%;
+				}
+
+				.swiper-center-main .swiper-wrapper{
+					align-items: flex-end;
+				}
+
+				.swiper-center-main .swiper-slide{
+					width: 32% !important;
+					transform: scale(.9);
+					transform-origin:bottom;
+				}
+				.swiper-center-main .swiper-slide.swiper-slide-active {
+					transform: scale(1);
+				}
+				.swiper-pagination1{
+					text-align: center;
+					left: 50%;
+					top: 131%;
+					transform: translate(-50%,0);
+				}
+				.swiper-pagination1 .swiper-pagination-bullet{
+					width: 16px;
+					height: 16px;
+					border-radius: 0;
+					background: #fff;
+					opacity: 1;
+					margin-right: 10px;
+				}
+				.swiper-pagination1 .swiper-pagination-bullet.swiper-pagination-bullet-active{
+					background: #000;
+				}
+				.pro-main-last .swiper-button-prev {
+					background-image: url(https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/left_mob.png) !important;
+					width: 68px;
+					height: 68px;
+					background-size: 68px 68px;
+					left: 26%;
+				}
+
+				.pro-main-last  .swiper-button-next {
+					background-image: url(https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/right_mob.png) !important;
+					width: 68px;
+					height: 68px;
+					background-size: 68px 68px;
+					right: 26%;
+				}
+				.btn-link-box{
+					width: 378px;
+					margin: 0 auto;
+					position: absolute;
+					top: 110%;
+					left: 50%;
+					transform: translateX(-50%);
+					text-align: center;
+				}
+				.pro1-link{
+					position: absolute;
+					display: flex;
+					width: 35%;
+					height: 85%;
+					top: 10%;
+					left: 67.5%;
+					transform: translateX(-50%);
+				}
+				.pro1-link-left{
+					left:32%;
+				}
+				.pro1-link a{
+					width: 100%;
+					height: 100%;
+				}
+				@media (max-width:1023px) {
+					.article-video .video-wrapper {
+						bottom: 0%;
+						width: 100%;
+						height:96%;
+					}
+
+					.pro1-link{
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left:0;
+						transform: none;
+					}
+					.pro1-link-left{
+						left:0;
+					}
+				}
+			</style>
+			<!-- pc 左边fixed导航 -->
+			<!-- <div class="none-sm fixed-top e-fixed-scroll">
+				<ul>
+					<li date-index="article-offset1">
+						<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/left1.jpg" alt="">
+					</li>
+					<li date-index="article-offset2">
+						<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/left2.jpg" alt="">
+					</li>
+					<li date-index="article-offset3">
+						<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/left3a.jpg" alt="">
+					</li>
+					<li date-index="article-offset4">
+						<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/left4.jpg" alt="">
+					</li>
+					<li date-index="article-offset5">
+						<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/left5.jpg" alt="">
+					</li>
+				</ul>
+			</div> -->
+			<article class="article" >
+				<img lazysrc="https://img.adidas.com.cn/images/blank.gif" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/pc_01.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/mob_01.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/mob_01.jpg&quot;}
+				}">
+			</article>
+			<!-- 视频模块 -->
+			<article class="article article-video video-box none block-sm">
+				<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/mob_02.jpg" src="https://img.adidas.com.cn/images/blank.gif">
+				<div class="video-wrapper e-video e-play-video-new">
+					<div class="video-content"></div>
+					<a class="video-play" href="javascript:void(0)">
+						<span class="video-code" data-video-code="6D6EF3EEE055369A9C33DC5901307461">
+							<img  src="https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/mob_02.jpg">
+						</span>
+					</a>
+				</div>
+			</article>
+			<article class="article" id="article-offset1">
+				<img lazysrc="https://img.adidas.com.cn/images/blank.gif" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/pc_02.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/mob_03.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/mob_03.jpg&quot;}
+				}">
+				<div class="pro1-link">
+					<a href="https://www.adidas.com.hk/item/FY3140"></a>
+				</div>
+			</article>
+			<article class="article" id="article-offset2">
+				<img lazysrc="https://img.adidas.com.cn/images/blank.gif" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/pc_03.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/mob_04.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/mob_04.jpg&quot;}
+				}">
+				<div class="pro1-link pro1-link-left">
+					<a href="https://www.adidas.com.hk/item/FY3143"></a>
+				</div>
+			</article>
+			<article class="article" id="article-offset3">
+				<img lazysrc="https://img.adidas.com.cn/images/blank.gif" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/pc_04.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/mob_05.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/mob_05.jpg&quot;}
+				}">
+				<div class="pro1-link">
+					<a href="https://www.adidas.com.hk/item/FZ3092"></a>
+				</div>
+			</article>
+			<article class="article" id="article-offset4">
+				<img lazysrc="https://img.adidas.com.cn/images/blank.gif" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/pc_05.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/mob_06.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/mob_06.jpg&quot;}
+				}">
+				<div class="pro1-link pro1-link-left">
+					<a href="https://www.adidas.com.hk/item/FZ3090"></a>
+				</div>
+			</article>
+			<article class="article" id="article-offset5">
+				<img lazysrc="https://img.adidas.com.cn/images/blank.gif" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/pc_06.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/mob_07.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/mob_07.jpg&quot;}
+				}">
+				<div class="pro1-link">
+					<a href="https://www.adidas.com.hk/item/FZ3091"></a>
+				</div>
+			</article>
+			<!-- pc 轮播 -->
+			<article class="article none-sm">
+				<img lazysrc="https://img.adidas.com.cn/resources/activePage/2020/11/cb/pc_07.jpg" src="https://img.adidas.com.cn/images/blank.gif">
+				<div class="pro-main-last">
+					<div class="swiper-container swiper-center-main">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/img1.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/img2.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/img3.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/img4.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/img5.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination swiper-pagination1"></div>
+					<div class="swiper-button-next swiper-button-next1"></div>
+					<div class="swiper-button-prev swiper-button-prev1"></div>
+					<!-- 轮播 敬请期待按钮 -->
+					<div class="btn-link-box">
+						<a href="https://www.adidas.com.hk/cyberpunk_2077/all">
+							<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/btn.png" alt="">
+						</a>
+					</div>
+				</div>
+			</article>
+			<article class="article none block-sm">
+				<a href="https://www.adidas.com.hk/cyberpunk_2077/all">
+					<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/NOV/CyberPunk2077/clp/cn/mob_08.jpg" src="https://img.adidas.com.cn/images/blank.gif">
+				</a>
+			</article>
+			<script type="text/javascript">
+				$(function () {
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function (img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+					// var target_height;
+					// $('.e-fixed-scroll li').on('tap', function () {
+					// 	var target = $(this).attr('date-index');
+					// 	console.log(target,'target')
+					// 	$(this).addClass('is-show').siblings().removeClass('is-show')
+					// 	target_height = $('#' + target).offset().top - 200;
+					// 	$(document).scrollTop(target_height);
+					// })
+					
+					var SwiperBig1 = new Swiper('.swiper-center-main', {
+						slidesPerView: 'auto',
+						loop: true,
+						centeredSlides: true,
+						paginationClickable: true,
+						spaceBetween: 150,
+						paginationClickable: true,
+						buttonClickable: true,
+						prevButton: '.swiper-button-prev',
+						nextButton: '.swiper-button-next',
+						initialSlide: 0,
+						pagination : '.swiper-pagination1',
+					})
+					var loadImgFun_index = function (imgArr, fn) {
+						var loadImgLen = 0,
+							errImgLen = 0;
+						var imgdefereds = [];
+						$(imgArr).each(function () {
+							var defered = $.Deferred();
+							$(this)
+								.on("load", function () {
+									defered.resolve();
+									loadImgLen++;
+								})
+								.on("error", function () {
+									defered.resolve();
+									errImgLen++;
+								});
+							if (this.complete)
+								setTimeout(function () {
+									defered.resolve();
+								}, 200);
+							imgdefereds.push(defered);
+						});
+						$.when.apply(null, imgdefereds).done(function () {
+							if (fn && $.isFunction(fn)) {
+								fn();
+							}
+						});
+					};
+					$(".e-video").each(function (index, el) {
+						$(el).addClass("home-video");
+						var videoCode = $(".video-code", el).data("video-code"),
+							videoId = "home_video_" + index;
+						loadImgFun_index($(".video-code img", el), function () { });
+						var bannerVideoId = videoCode;
+						var url = base + "/indexCCVideo.json";
+						var data = loxia.syncXhrGet(url, {
+							'bannerVideoId': bannerVideoId
+						});
+						var videoUrl = data.mp4VideoUrl;
+						var html = '<video class="video" id="' +
+							videoId +
+							'"  webkit-playsinline="true" playsInline="true"><source src="' +
+							videoUrl +
+							'" ></source></video>';
+						$(".video-content", el).html(html);
+					});
+					$(".e-play-video-new").on("tap", function () {
+						var _parent_article = $(this).parents(".article-video"),
+							_video_s = $(this).parents(".article-video").find(".video"),
+							_video = $(this)
+								.parents(".article-video")
+								.find(".video");
+						_parent_article.toggleClass("is-play");
+						if (_parent_article.hasClass("is-play")) {
+							for (var i = 0; i < _video_s.length; i++) {
+								_video_s.eq(i)[0].pause();
+							}
+							_video[0].play();
+							_video[0].addEventListener("ended", function () {
+								this.play();
+							});
+						} else {
+							_video[0].pause();
+						}
+					});
+				});
+			</script>
+		</section>
+		<%include _includes/modules/footer-no-back-top.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

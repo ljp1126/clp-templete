@@ -1,0 +1,980 @@
+@charset "UTF-8";
+// 公共方法
+@import "common/utilities.less";
+// 公共变量、样式
+@import "common/variables.less";
+
+.container{
+    position: relative;
+    background: #8a0f00;
+}
+
+.article{
+    font-size: 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    >img{
+        width: 100%;
+    }
+    
+    .box{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        // pointer-events: none;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.article-fixed-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.link {
+	position: absolute;
+	// background: rgb(255, 0, 0);
+	// opacity: 0.4;
+}
+
+.article-2 {
+	.link-0 {
+		top: 15.03%;
+		left: 22.94%;
+		width: 26.69%;
+		height: 61.45%;
+	}
+
+	.link-1 {
+		top: 15.8%;
+		left: 50.5%;
+		width: 26.54%;
+		height: 61.45%;
+	}
+
+	.link-2 {
+		top: 80.96%;
+		left: 22.88%;
+		width: 12.85%;
+		height: 11.73%;
+	}
+
+	.link-3 {
+		top: 81.73%;
+		left: 36.66%;
+		width: 12.93%;
+		height: 11.17%;
+	}
+
+	.link-4 {
+		top: 81.73%;
+		left: 50.39%;
+		width: 12.78%;
+		height: 11.17%;
+	}
+
+	.link-5 {
+		top: 80.96%;
+		left: 64.28%;
+		width: 12.78%;
+		height: 11.73%;
+	}
+}
+
+.article-3 {
+	.link-0 {
+		top: 15.95%;
+		left: 22.89%;
+		width: 18.02%;
+		height: 83.85%;
+	}
+	.link-1 {
+		top: 16.34%;
+		left: 41.9%;
+		width: 16.2%;
+		height: 38.52%;
+	}
+	.link-2 {
+		top: 15.95%;
+		left: 60.23%;
+		width: 15.82%;
+		height: 40.08%;
+	}
+	.link-3 {
+		top: 60.7%;
+		left: 42.13%;
+		width: 15.74%;
+		height: 37.35%;
+	}
+	.link-4 {
+		top: 61.28%;
+		left: 60.46%;
+		width: 15.29%;
+		height: 37.55%;
+	}
+}
+
+.article-4 {
+	.link-0 {
+		top: 0.63%;
+		left: 23.04%;
+		width: 17.34%;
+		height: 44.12%;
+	}
+	.link-1 {
+		top: 1.47%;
+		left: 41.14%;
+		width: 17.41%;
+		height: 43.91%;
+	}
+	.link-2 {
+		top: 0%;
+		left: 59.16%;
+		width: 17.72%;
+		height: 90.97%;
+	}
+	.link-3 {
+		top: 47.27%;
+		left: 22.97%;
+		width: 17.41%;
+		height: 42.23%;
+	}
+	.link-4 {
+		top: 47.48%;
+		left: 41.67%;
+		width: 16.2%;
+		height: 43.7%;
+	}
+	.link-5 {
+		top: 92.23%;
+		left: 22.97%;
+		width: 54.22%;
+		height: 7.14%;
+	}
+}
+
+.article-5 {
+	.link-0 {
+		top: 10.36%;
+		left: 23.04%;
+		width: 35.97%;
+		height: 27.85%;
+	}
+	.link-1 {
+		top: 10.62%;
+		left: 59.54%;
+		width: 17.19%;
+		height: 27.46%;
+	}
+	.link-2 {
+		top: 39.38%;
+		left: 23.42%;
+		width: 35.29%;
+		height: 26.17%;
+	}
+	.link-3 {
+		top: 38.99%;
+		left: 59.09%;
+		width: 17.41%;
+		height: 26.55%;
+	}
+	.link-4 {
+		top: 67.23%;
+		left: 59.16%;
+		width: 17.49%;
+		height: 27.46%;
+	}
+	.link-5 {
+		top: 67.88%;
+		left: 23.88%;
+		width: 16.5%;
+		height: 26.42%;
+	}
+	.link-6 {
+		top: 67.75%;
+		left: 41.22%;
+		width: 16.88%;
+		height: 27.07%;
+	}
+	.link-7 {
+		top: 95.21%;
+		left: 23.04%;
+		width: 54.14%;
+		height: 4.79%;
+	}
+}
+
+.article-6 {
+	.link-0 {
+		top: 4.17%;
+		left: 23.04%;
+		width: 53.76%;
+		height: 15.64%;
+	}
+	.link-1 {
+		top: 20.28%;
+		left: 23.27%;
+		width: 17.41%;
+		height: 24.1%;
+	}
+	.link-2 {
+		top: 20.05%;
+		left: 41.37%;
+		width: 17.41%;
+		height: 24.68%;
+	}
+	.link-3 {
+		top: 20.74%;
+		left: 59.47%;
+		width: 17.49%;
+		height: 23.87%;
+	}
+	.link-4 {
+		top: 45.54%;
+		left: 23.5%;
+		width: 17.19%;
+		height: 24.1%;
+	}
+	.link-5 {
+		top: 45.89%;
+		left: 41.44%;
+		width: 17.34%;
+		height: 23.52%;
+	}
+	.link-6 {
+		top: 45.89%;
+		left: 59.47%;
+		width: 16.88%;
+		height: 23.41%;
+	}
+	.link-7 {
+		top: 71.15%;
+		left: 23.42%;
+		width: 17.19%;
+		height: 23.75%;
+	}
+	.link-8 {
+		top: 71.84%;
+		left: 41.37%;
+		width: 17.41%;
+		height: 23.41%;
+	}
+	.link-9 {
+		top: 72.31%;
+		left: 59.77%;
+		width: 16.96%;
+		height: 22.36%;
+	}
+	.link-10 {
+		top: 95.37%;
+		left: 22.74%;
+		width: 54.45%;
+		height: 4.52%;
+	}
+}
+
+.article-7 {
+	.link-0 {
+		top: 4.27%;
+		left: 23.04%;
+		width: 53.69%;
+		height: 15.24%;
+	}
+	.link-1 {
+		top: 21.25%;
+		left: 23.42%;
+		width: 16.88%;
+		height: 23.09%;
+	}
+	.link-2 {
+		top: 21.71%;
+		left: 41.75%;
+		width: 16.88%;
+		height: 22.52%;
+	}
+	.link-3 {
+		top: 22.29%;
+		left: 60.15%;
+		width: 16.43%;
+		height: 22.06%;
+	}
+	.link-4 {
+		top: 46.42%;
+		left: 23.35%;
+		width: 16.81%;
+		height: 22.98%;
+	}
+	.link-5 {
+		top: 46.65%;
+		left: 41.37%;
+		width: 16.88%;
+		height: 23.21%;
+	}
+	.link-6 {
+		top: 47.58%;
+		left: 59.85%;
+		width: 16.58%;
+		height: 22.4%;
+	}
+	.link-7 {
+		top: 71.82%;
+		left: 23.5%;
+		width: 16.65%;
+		height: 22.52%;
+	}
+	.link-8 {
+		top: 72.52%;
+		left: 41.67%;
+		width: 16.65%;
+		height: 21.82%;
+	}
+	.link-9 {
+		top: 72.75%;
+		left: 60.15%;
+		width: 16.27%;
+		height: 21.48%;
+	}
+	.link-10 {
+		top: 95.61%;
+		left: 23.04%;
+		width: 53.84%;
+		height: 4.04%;
+	}
+}
+
+.article-8 {
+	.link-0 {
+		top: 4.61%;
+		left: 23.19%;
+		width: 53.54%;
+		height: 15.69%;
+	}
+	.link-1 {
+		top: 21.22%;
+		left: 23.04%;
+		width: 17.79%;
+		height: 23.41%;
+	}
+	.link-2 {
+		top: 21.34%;
+		left: 41.44%;
+		width: 17.03%;
+		height: 23.18%;
+	}
+	.link-3 {
+		top: 22.26%;
+		left: 59.47%;
+		width: 17.19%;
+		height: 22.15%;
+	}
+	.link-4 {
+		top: 46.02%;
+		left: 23.35%;
+		width: 16.88%;
+		height: 23.76%;
+	}
+	.link-5 {
+		top: 46.48%;
+		left: 41.52%;
+		width: 17.03%;
+		height: 23.18%;
+	}
+	.link-6 {
+		top: 46.02%;
+		left: 59.47%;
+		width: 17.03%;
+		height: 23.53%;
+	}
+	.link-7 {
+		top: 70.93%;
+		left: 23.5%;
+		width: 16.43%;
+		height: 23.3%;
+	}
+	.link-8 {
+		top: 71.4%;
+		left: 42.66%;
+		width: 14.98%;
+		height: 23.41%;
+	}
+	.link-9 {
+		top: 71.51%;
+		left: 59.92%;
+		width: 16.2%;
+		height: 22.95%;
+	}
+	.link-10 {
+		top: 95.62%;
+		left: 22.81%;
+		width: 54.22%;
+		height: 4.27%;
+	}
+}
+
+.article-9 {
+	.link-0 {
+		top: 4.49%;
+		left: 22.97%;
+		width: 53.76%;
+		height: 15.67%;
+	}
+	.link-1 {
+		top: 20.97%;
+		left: 23.27%;
+		width: 17.26%;
+		height: 24.08%;
+	}
+	.link-2 {
+		top: 21.08%;
+		left: 41.29%;
+		width: 17.19%;
+		height: 23.39%;
+	}
+	.link-3 {
+		top: 21.54%;
+		left: 59.85%;
+		width: 16.58%;
+		height: 23.04%;
+	}
+	.link-4 {
+		top: 46.66%;
+		left: 23.42%;
+		width: 16.88%;
+		height: 23.16%;
+	}
+	.link-5 {
+		top: 46.31%;
+		left: 41.29%;
+		width: 17.03%;
+		height: 23.5%;
+	}
+	.link-6 {
+		top: 46.77%;
+		left: 59.62%;
+		width: 16.81%;
+		height: 22.81%;
+	}
+	.link-7 {
+		top: 70.97%;
+		left: 23.27%;
+		width: 17.11%;
+		height: 23.27%;
+	}
+	.link-8 {
+		top: 71.31%;
+		left: 41.29%;
+		width: 17.03%;
+		height: 22.93%;
+	}
+	.link-9 {
+		top: 71.54%;
+		left: 59.62%;
+		width: 16.65%;
+		height: 23.16%;
+	}
+	.link-10 {
+		top: 95.51%;
+		left: 22.97%;
+		width: 53.99%;
+		height: 4.26%;
+	}
+}
+
+.article-10 {
+	.link-0 {
+		top: 25.33%;
+		left: 23.27%;
+		width: 11.94%;
+		height: 40%;
+	}
+	.link-1 {
+		top: 29.33%;
+		left: 36.58%;
+		width: 8.29%;
+		height: 34.67%;
+	}
+	.link-2 {
+		top: 32%;
+		left: 46.69%;
+		width: 7%;
+		height: 34.67%;
+	}
+	.link-3 {
+		top: 29.33%;
+		left: 54.52%;
+		width: 6.01%;
+		height: 34.67%;
+	}
+	.link-4 {
+		top: 32%;
+		left: 62.28%;
+		width: 6.16%;
+		height: 33.33%;
+	}
+	.link-5 {
+		top: 34.67%;
+		left: 70.04%;
+		width: 6.54%;
+		height: 33.33%;
+	}
+}
+
+
+
+@media (max-width: 1024px){
+	.article-2 {
+        .link-0 {
+            top: 14.66%;
+            left: 3.02%;
+            width: 45.41%;
+            height: 19.92%;
+        }
+        .link-1 {
+            top: 14.66%;
+            left: 51.93%;
+            width: 45.29%;
+            height: 19.92%;
+        }
+        .link-2 {
+            top: 44.36%;
+            left: 3.02%;
+            width: 45.17%;
+            height: 19.92%;
+        }
+        .link-3 {
+            top: 43.61%;
+            left: 51.57%;
+            width: 45.89%;
+            height: 21.05%;
+        }
+        .link-4 {
+            top: 73.31%;
+            left: 2.78%;
+            width: 45.41%;
+            height: 20.68%;
+        }
+        .link-5 {
+            top: 73.68%;
+            left: 51.81%;
+            width: 45.53%;
+            height: 19.92%;
+        }
+    }
+    
+    .article-3 {
+        .link-0 {
+            top: 9%;
+            left: 2.9%;
+            width: 46.98%;
+            height: 60.52%;
+        }
+        .link-1 {
+            top: 9.35%;
+            left: 50.48%;
+            width: 46.26%;
+            height: 29.7%;
+        }
+        .link-2 {
+            top: 39.65%;
+            left: 50.72%;
+            width: 45.65%;
+            height: 29.78%;
+        }
+        .link-3 {
+            top: 69.96%;
+            left: 3.02%;
+            width: 46.5%;
+            height: 29.61%;
+        }
+        .link-4 {
+            top: 70.3%;
+            left: 50.6%;
+            width: 46.26%;
+            height: 29.09%;
+        }
+    }
+    .article-4 {
+        .link-0 {
+            top: 0.09%;
+            left: 2.9%;
+            width: 45.89%;
+            height: 30.42%;
+        }
+        .link-1 {
+            top: 31.12%;
+            left: 3.14%;
+            width: 46.01%;
+            height: 30.16%;
+        }
+        .link-2 {
+            top: 0.35%;
+            left: 50.36%;
+            width: 46.14%;
+            height: 61.1%;
+        }
+        .link-3 {
+            top: 61.89%;
+            left: 2.9%;
+            width: 46.62%;
+            height: 29.9%;
+        }
+        .link-4 {
+            top: 62.06%;
+            left: 50.6%;
+            width: 46.14%;
+            height: 29.55%;
+        }
+        .link-5 {
+            top: 92.31%;
+            left: 3.14%;
+            width: 93.6%;
+            height: 7.6%;
+        }
+    }
+    .article-5 {
+        .link-0 {
+            top: 6.92%;
+            left: 3.02%;
+            width: 46.62%;
+            height: 21.65%;
+        }
+        .link-1 {
+            top: 6.92%;
+            left: 50.6%;
+            width: 46.38%;
+            height: 21.9%;
+        }
+        .link-2 {
+            top: 29.2%;
+            left: 3.02%;
+            width: 94.08%;
+            height: 21.46%;
+        }
+        .link-3 {
+            top: 50.97%;
+            left: 3.38%;
+            width: 45.77%;
+            height: 21.4%;
+        }
+        .link-4 {
+            top: 50.84%;
+            left: 50.24%;
+            width: 47.1%;
+            height: 21.9%;
+        }
+        .link-5 {
+            top: 72.93%;
+            left: 3.26%;
+            width: 46.26%;
+            height: 21.27%;
+        }
+        .link-6 {
+            top: 73.05%;
+            left: 50.24%;
+            width: 46.01%;
+            height: 21.15%;
+        }
+        .link-7 {
+            top: 94.51%;
+            left: 2.78%;
+            width: 94.08%;
+            height: 5.36%;
+        }
+    }
+    .article-6 {
+        .link-0 {
+            top: 2.86%;
+            left: 3.26%;
+            width: 93.72%;
+            height: 8.39%;
+        }
+        .link-1 {
+            top: 11.42%;
+            left: 3.02%;
+            width: 46.14%;
+            height: 20.46%;
+        }
+        .link-2 {
+            top: 11.36%;
+            left: 50.6%;
+            width: 45.89%;
+            height: 20.58%;
+        }
+        .link-3 {
+            top: 32.6%;
+            left: 3.26%;
+            width: 45.77%;
+            height: 20.17%;
+        }
+        .link-4 {
+            top: 32.72%;
+            left: 50.48%;
+            width: 46.38%;
+            height: 19.93%;
+        }
+        .link-5 {
+            top: 53.54%;
+            left: 3.38%;
+            width: 46.01%;
+            height: 19.93%;
+        }
+        .link-6 {
+            top: 53.72%;
+            left: 50.97%;
+            width: 45.53%;
+            height: 19.69%;
+        }
+        .link-7 {
+            top: 74.12%;
+            left: 3.26%;
+            width: 45.77%;
+            height: 20.11%;
+        }
+        .link-8 {
+            top: 74.18%;
+            left: 50.72%;
+            width: 45.65%;
+            height: 20.05%;
+        }
+        .link-9 {
+            top: 94.77%;
+            left: 3.14%;
+            width: 93.6%;
+            height: 5%;
+        }
+    }
+    .article-7 {
+        .link-0 {
+            top: 2.5%;
+            left: 3.02%;
+            width: 93.36%;
+            height: 8.46%;
+        }
+        .link-1 {
+            top: 11.26%;
+            left: 3.02%;
+            width: 46.38%;
+            height: 20.55%;
+        }
+        .link-2 {
+            top: 11.61%;
+            left: 50.48%;
+            width: 45.89%;
+            height: 20.01%;
+        }
+        .link-3 {
+            top: 31.98%;
+            left: 3.14%;
+            width: 45.77%;
+            height: 20.43%;
+        }
+        .link-4 {
+            top: 32.16%;
+            left: 50.48%;
+            width: 46.26%;
+            height: 20.55%;
+        }
+        .link-5 {
+            top: 53.13%;
+            left: 3.26%;
+            width: 46.5%;
+            height: 20.61%;
+        }
+        .link-6 {
+            top: 53.37%;
+            left: 50.36%;
+            width: 46.26%;
+            height: 20.19%;
+        }
+        .link-7 {
+            top: 74.03%;
+            left: 3.02%;
+            width: 46.14%;
+            height: 20.43%;
+        }
+        .link-8 {
+            top: 74.09%;
+            left: 50.48%;
+            width: 46.14%;
+            height: 20.43%;
+        }
+        .link-9 {
+            top: 94.7%;
+            left: 3.14%;
+            width: 93.84%;
+            height: 5.3%;
+        }
+    }
+    .article-8 {
+        .link-0 {
+            top: 2.57%;
+            left: 3.02%;
+            width: 94.32%;
+            height: 8.59%;
+        }
+        .link-1 {
+            top: 11.34%;
+            left: 3.02%;
+            width: 46.01%;
+            height: 20.17%;
+        }
+        .link-2 {
+            top: 11.34%;
+            left: 50.6%;
+            width: 45.65%;
+            height: 20.35%;
+        }
+        .link-3 {
+            top: 31.86%;
+            left: 3.02%;
+            width: 45.77%;
+            height: 20.82%;
+        }
+        .link-4 {
+            top: 32.16%;
+            left: 50.6%;
+            width: 45.41%;
+            height: 20.35%;
+        }
+        .link-5 {
+            top: 53.16%;
+            left: 3.62%;
+            width: 45.41%;
+            height: 20.23%;
+        }
+        .link-6 {
+            top: 53.52%;
+            left: 50.72%;
+            width: 45.65%;
+            height: 20.17%;
+        }
+        .link-7 {
+            top: 73.93%;
+            left: 3.62%;
+            width: 45.65%;
+            height: 20.35%;
+        }
+        .link-8 {
+            top: 74.16%;
+            left: 50.36%;
+            width: 46.01%;
+            height: 20.41%;
+        }
+        .link-9 {
+            top: 94.75%;
+            left: 3.02%;
+            width: 94.2%;
+            height: 5.01%;
+        }
+    }
+    .article-9 {
+        .link-0 {
+            top: 2.27%;
+            left: 2.9%;
+            width: 93.96%;
+            height: 8.44%;
+        }
+        .link-1 {
+            top: 11.37%;
+            left: 3.74%;
+            width: 45.29%;
+            height: 20.05%;
+        }
+        .link-2 {
+            top: 11.43%;
+            left: 50.6%;
+            width: 45.53%;
+            height: 19.75%;
+        }
+        .link-3 {
+            top: 32.38%;
+            left: 3.86%;
+            width: 45.29%;
+            height: 20.05%;
+        }
+        .link-4 {
+            top: 32.91%;
+            left: 51.21%;
+            width: 44.44%;
+            height: 19.39%;
+        }
+        .link-5 {
+            top: 53.14%;
+            left: 3.62%;
+            width: 45.53%;
+            height: 20.29%;
+        }
+        .link-6 {
+            top: 53.26%;
+            left: 51.09%;
+            width: 44.81%;
+            height: 19.93%;
+        }
+        .link-7 {
+            top: 74.15%;
+            left: 4.11%;
+            width: 44.2%;
+            height: 19.81%;
+        }
+        .link-8 {
+            top: 75.04%;
+            left: 51.57%;
+            width: 44.2%;
+            height: 19.03%;
+        }
+        .link-9 {
+            top: 94.73%;
+            left: 3.14%;
+            width: 93.72%;
+            height: 5.09%;
+        }
+    }
+    .article-10 {
+        .link-0 {
+            top: 12.9%;
+            left: 5.56%;
+            width: 36.84%;
+            height: 14.84%;
+        }
+        .link-1 {
+            top: 12.26%;
+            left: 57.49%;
+            width: 26.93%;
+            height: 15.16%;
+        }
+        .link-2 {
+            top: 38.06%;
+            left: 5.92%;
+            width: 19.08%;
+            height: 14.84%;
+        }
+        .link-3 {
+            top: 39.03%;
+            left: 57.73%;
+            width: 22.83%;
+            height: 14.52%;
+        }
+        .link-4 {
+            top: 64.19%;
+            left: 5.68%;
+            width: 18.84%;
+            height: 13.87%;
+        }
+        .link-5 {
+            top: 64.84%;
+            left: 57.73%;
+            width: 20.17%;
+            height: 12.26%;
+        }
+    }
+    
+}

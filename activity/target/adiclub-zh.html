@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" type="text/css" href="css/adiclub.css"> -->
+	<%include _includes/js.html %>
+	<!-- <script type="text/javascript" src="js/adiclub.js"></script> -->
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+
+			<style>
+				.article {
+					position: relative;
+				}
+				.btn-mar{
+					margin-bottom: 80px;
+    				text-align: center;
+				}
+				.article .btn1 {
+					position: absolute;
+					top: 60%;
+					left: 50%;
+					transform: translate(-50%);
+					text-transform: none;
+				}
+
+				.article .btn2 {
+					position: absolute;
+					top: 60%;
+					left: 55.5%;
+					text-transform: none;
+				}
+
+				.article .tab-content {
+					border-top: 1px #ebeeef solid;
+					margin-bottom: 4px;
+				}
+
+				.article .tab-content ul {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+
+				.article .tab-content ul li {
+					cursor: pointer;
+					width: 10%;
+					text-align: center;
+					font-size: 14px;
+					font-weight: bold;
+					padding: 30px 0 25px 0;
+				}
+
+				.article .tab-content ul li.is-active {
+					border-bottom: 2px solid #000;
+				}
+
+				.article.article-swiper {
+					padding-left: 30px;
+				}
+				.article.article-swiper2 {
+					margin-bottom: 60px;
+				}
+				.article.article-swiper2 .swiper-slide p{
+					margin-top: 15px;
+					font-size: 14px;
+					line-height: 22px;
+				}
+				.article.article-swiper2 .swiper-slide span{
+					margin-top: 15px;
+					font-size: 12px;
+					line-height: 22px;
+				}
+				.article .swiper-container {
+					width: 100%;
+				}
+				.link{
+					position: absolute;
+				}
+				.link-new1{
+					width: 45%;
+					left: 5%;
+					top: 2%;
+					height: 86%;
+				}
+				.link-new2{
+					width: 45%;
+					left: 50%;
+					top: 2%;
+					height: 86%;
+				}
+				@media (max-width: 1024px) {
+					.article .tab-content ul li {
+						width: 33%;
+					}
+
+					.article.article-swiper {
+						padding-left: 5%;
+					}
+
+					.article .btn1 {
+						top: 62%;
+					}
+
+					.article .btn2 {
+						top: 80%;
+						left: 50%;
+						transform: translate(-50%);
+					}
+					.link-new1{
+						width: 50%;
+						left: 0;
+						top: 0;
+						height: 90%;
+					}
+					.link-new2{
+						width: 50%;
+						left:50%;
+						top: 0;
+						height: 90%;
+					}
+					.article.article-swiper2 .swiper-slide p{
+						font-size: 12px;
+					}
+				}
+			</style>
+			<article class="article">
+				<img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+						 &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/pc_01111.jpg&quot;},
+						 &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob_01111.jpg&quot;},
+						 &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob_01111.jpg&quot;}}">
+			</article>
+			<article class="article">
+				<img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+						 &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/pc_02.jpg&quot;},
+						 &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob_02.jpg&quot;},
+						 &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob_02.jpg&quot;}}">
+				<a class="btn1  btn btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="https://www.adidas.com.hk/member/login">加入 adiClUB<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+			</article>
+			<article class="article">
+				<div class="tab-content">
+					<ul>
+						<li class="is-active" data-sign="tab1">THE STAGES</li>
+						<li data-sign="tab2">THE LINEUP</li>
+					</ul>
+				</div>
+			</article>
+			<article class="article">
+				<img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/1.gif&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob-1.gif&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob-1.gif&quot;}}">
+			</article>
+			<article class="article" id="tab1">
+				<img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+						 &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/pc_04.jpg&quot;},
+						 &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob_04.jpg&quot;},
+						 &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob_04.jpg&quot;}}">
+			</article>
+			<article class="article">
+				<img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/2.gif&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob-2.gif&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob-2.gif&quot;}}">
+			</article>
+			<article class="article">
+				<img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+					   &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/pc_06.jpg&quot;},
+					   &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob_06.jpg&quot;},
+					   &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob_06.jpg&quot;}}">
+			</article>
+			<article class="article">
+				<img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+					   &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/3.gif&quot;},
+					   &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob-3.gif&quot;},
+					   &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob-3.gif&quot;}}">
+			</article>
+			<article class="article">
+				<img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/pc_08.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob_08.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob_08.jpg&quot;}}">
+			</article>
+			<article class="article article-swiper" id="tab2">
+				<img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+					  &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/title.jpg&quot;},
+					  &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/title-mob.jpg&quot;},
+					  &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/title-mob.jpg&quot;}}">
+				<div class="swiper-container swiper-container-img">
+					<div class="swiper-wrapper ">
+						<div class="swiper-slide">
+							<a href="#"> <img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+										 &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_1.jpg&quot;},
+										 &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_1.jpg&quot;},
+										 &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_1.jpg&quot;}}"> </a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"> <img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+										 &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_2.jpg&quot;},
+										 &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_2.jpg&quot;},
+										 &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_2.jpg&quot;}}"> </a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"> <img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+										 &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_3.jpg&quot;},
+										 &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_3.jpg&quot;},
+										 &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_3.jpg&quot;}}"> </a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"> <img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+									  &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_4.jpg&quot;},
+									  &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_4.jpg&quot;},
+									  &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_4.jpg&quot;}}"> </a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"> <img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+									   &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_5.jpg&quot;},
+									   &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_5.jpg&quot;},
+									   &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_5.jpg&quot;}}"> </a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"> <img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+									  &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_6.jpg&quot;},
+									  &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_6.jpg&quot;},
+									  &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mineup_6.jpg&quot;}}"> </a>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="article">
+				<img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/pc-new_02.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob-new_02.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob-new_02.jpg&quot;}}">
+				<a class="btn2  btn btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="https://www.adidas.com.hk/member/login">加入 adiClUB<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+			</article>
+			<article class="article">
+				<img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/pc-new_03.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob-new_03.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/cn/mob-new_03.jpg&quot;}}">
+				<a href="https://www.adidas.com.hk/promotions_tnc_adiCLUBweek" class="link link-new1"></a>
+				<a href="https://www.adidas.com.hk/promotions_tnc_SHOES_CLEANING " class="link link-new2"></a>
+			</article>
+			<article class="article  btn-mar">
+				<a class="btn btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="https://www.adidas.com.hk/adiclub_week/all ">adiCLUB 會員限定商品列表<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+			</article>
+			<article class="article article-swiper article-swiper2" id="tab3">
+				<div class="swiper-container swiper-container-club">
+					<div class="swiper-wrapper ">
+						<div class="swiper-slide">
+							<a href="https://www.adidas.com.hk/item/EH2967">
+								 <img src="https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/EH2967.jpg">
+								 
+							</a>
+							<p>PREDATOR MUTATOR 20+  PAUL POGBA 偏硬地足球球靴</p>
+							<span>HKD:2399.00</span>
+						</div>
+						<div class="swiper-slide">
+							<a href="https://www.adidas.com.hk/item/EH2971">
+								<img src="https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/EH2971.jpg">
+						   </a>
+						   <p>PREDATOR 20.1 PAUL POGBA 訓練鞋</p>
+						   <span>HKD:1299.00</span>
+						</div>
+						<div class="swiper-slide">
+							<a href="https://www.adidas.com.hk/item/FW9831">
+								<img src="https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/FW9831.jpg">
+							   </a>
+							   <p>NINJA ZX TORSION 運動鞋</p>
+								<span>HKD:1399.00</span>
+						</div>
+						<div class="swiper-slide">
+							<a href="https://www.adidas.com.hk/item/FW5957">
+								<img src="https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/FW5957.jpg">
+							   </a>
+							   <p>NINJA ZX TORSION 運動鞋</p>
+								<span>HKD:1399.00</span>
+						</div>
+						<div class="swiper-slide">
+							<a href="https://www.adidas.com.hk/item/FY0179">
+								<img src="https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/FY0179.jpg">
+							   </a>
+							   <p>NINJA NITE JOGGER 運動鞋</p>
+								<span>HKD:999.00</span>
+						</div>
+						<div class="swiper-slide">
+							<a href="https://www.adidas.com.hk/item/FY0152">
+								<img src="https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/FY0152.jpg">
+							   </a>
+							   <p>ZX CARBON 運動鞋</p>
+								<span>HKD:1899.00</span>
+						</div>
+						<div class="swiper-slide">
+							<a href="https://www.adidas.com.hk/item/FY4286">
+								<img src="https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/FY4286.jpg">
+							   </a>
+							   <p>ULTRA4D 運動鞋</p>
+								<span>HKD:1799.00</span>
+						</div>
+						<div class="swiper-slide">
+							<a href="https://www.adidas.com.hk/item/FI0716">
+								<img src="https://img.adidas.com.hk/resources/2020/KV/OCT/adiCLUB_week/FI0716.jpg">
+							   </a>
+							   <p>保羅普巴連帽衛衣</p>
+								<span>HKD:499.00</span>
+						</div>
+					</div>
+				</div>
+			</article>
+			
+			<script type="text/javascript">
+				$(function() {
+					// 换图 + 懒加载
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+
+					$('.tab-content li').on('tap', function() {
+						var target = $(this).attr('data-sign');
+						$(this).addClass('is-active').siblings().removeClass('is-active')
+						target_height = $('#' + target).offset().top - 20;
+						$("html,body").animate({
+							scrollTop: target_height
+						}, 500);
+					})
+
+					var swiper1 = new Swiper('.swiper-container-img', {
+						slidesPerView: 4.5,
+						spaceBetween: 30,
+						loop: true,
+						loopAdditionalSlid: 1,
+						breakpoints: {
+							1024: {
+								slidesPerView: 1.5,
+								loopAdditionalSlid: 1,
+							}
+						}
+					});
+
+					var swiperPro = new Swiper('.swiper-container-club', {
+						slidesPerView: 4.5,
+						spaceBetween: 30,
+						loop: true,
+						loopAdditionalSlid: 1,
+						breakpoints: {
+							1024: {
+								slidesPerView: 1.5,
+								loopAdditionalSlid: 1,
+							}
+						}
+					});
+				});
+			</script>
+		</section>
+
+		<%include _includes/modules/footer-no-back-top.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

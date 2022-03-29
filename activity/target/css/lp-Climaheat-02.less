@@ -1,0 +1,478 @@
+@charset "utf-8";
+
+.article{
+    position: relative;
+    >img{
+        width: 100%;
+    }
+}
+
+.link{
+    position: absolute;
+    z-index: 1;
+    // background: rgba(0, 0, 0, .4);
+}
+
+img{
+    width: 100%;
+}
+
+.article-font{
+    width: 90%;
+    margin: 0 auto;
+    .article-font-box{
+        text-align: center;
+        margin: 90px 0 100px;
+        h1{
+            font-weight: 700;
+            font-size: 34px;
+            margin-bottom: 14px;
+        }
+        h3{
+            letter-spacing: 3px;
+            margin-bottom: 50px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 46px;
+            letter-spacing: 2.5px;
+        }
+    }
+}
+
+.article-fixed{
+    .article-fixed-bg{
+        position: relative;
+        height: 50px;
+        width: 100%;
+    }
+    .article-fixed-size{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        height: 50px;
+        text-align: center;
+        a{
+            display: inline-block;
+            border: 3px solid #000;
+            color: #000;
+            height: 44px;
+            line-height: 44px;
+            width: 250px;
+            font-size: 28px;
+            box-sizing: content-box;
+            text-align: center;
+            font-weight: bold;
+            &:nth-child(1){
+                margin-right: 25px;
+            }
+            &:nth-child(2){
+                margin-left: 25px;
+            }
+        }
+        .active{
+            background: #000;
+            color: #fff;
+        }
+        &.article-fixed-size-fix{
+            position: fixed;
+            z-index: 5;
+            background: #fff;
+            transition: top .3s;
+        }
+    }
+    
+}
+
+.article-video{
+    .link-01{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.swiper-button-prev1{
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+
+}
+.swiper-button-next1{
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+
+}
+
+.article-carousel{
+    margin-bottom: 13vh;
+    .swiper-container-kv-02,
+    .swiper-container-kv{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .swiper-wrapper{
+            .swiper-slide{
+                .btn{
+                    position: absolute;
+                    bottom: 2%;
+                    left: 63%;
+                    height: 44px;
+                    line-height: 44px;
+                }
+            }
+        }
+        .swiper-button-prev{
+            background: url(https://img.adidas.com.cn/resources/activePage/NOV/winterjacket/img-p-left.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 84px;
+            height: 152px;
+            background-size: 84px 152px;
+            left: 15%;
+        }
+        .swiper-button-next{
+            background: url(https://img.adidas.com.cn/resources/activePage/NOV/winterjacket/img-p-right.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 84px;
+            height: 152px;
+            background-size: 84px 152px;
+            right: 15%;
+        }
+        .swiper-button-prev1{
+            background: url(https://img.adidas.com.cn/resources/activePage/NOV/winterjacket/img-p-left.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 84px;
+            height: 152px;
+            background-size: 84px 152px;
+            left: 15%;
+            top: 50%;
+        }
+        .swiper-button-next1{
+            background: url(https://img.adidas.com.cn/resources/activePage/NOV/winterjacket/img-p-right.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 84px;
+            height: 152px;
+            background-size: 84px 152px;
+            right: 15%;
+            top: 50%;
+        }
+    }
+    .swiper-container-kv-woman{
+        .swiper-wrapper{
+            .swiper-slide{
+                .btn{
+                    left: 28.5%;
+                }
+            }
+        }
+    }
+}
+
+.article-foots{
+    margin-bottom: 15vh;
+    .article-foots-box{
+        width: 82.9%;
+        margin: 0 auto;
+        font-size: 0;
+        .article-foots-content{
+            position: relative;
+            display: inline-block;
+            width: 23%;
+            margin-right: 2.66666666666%;
+            .box-shade{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: none;
+                .box-shade-bg{
+                    width: 100%;
+                    height: 100%;
+                    background: #000;
+                    opacity: 0.6;
+                }
+                .box-shade-item{
+                    position: absolute;
+                    font: 16px/30px "";
+                    text-align: center;
+                    left: 50%;
+                    top: 50%;
+                    box-sizing: border-box;
+                    transform: translate(-50%, -50%);
+                    .box-shade-text{
+                        display: inline-block;
+                        letter-spacing: 5px;
+                        font-size: 30px;
+                        color: #FFFFFF;
+                        white-space: nowrap;
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+                    }
+                    .btn{
+                        height: 44px;
+                        line-height: 44px;
+                    }
+                }
+            }
+            a{
+               &:hover{
+                   .box-shade{
+                       display: block;
+                   }
+               } 
+            }
+            &:nth-child(4){
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.article-banner-01{
+    .link-001{
+        top: 13%;
+        left: 0;
+        height: 86%;
+        width: 100%;
+    }
+    margin-bottom: 5vh;
+}
+.article-banner-02{
+    .link-002{
+        width: 52%;
+        left: 24%;
+        height: 100%;
+        top: 0;
+    }
+    margin-bottom: 12vh;
+}
+.article-banner-03{
+    .link-003{
+        top: 13%;
+        left: 10%;
+        width: 80%;
+        height: 86%;
+    }
+    margin-bottom: 5vh;
+}
+.article-banner-04{
+    .link-004{
+        top: 0%;
+        left: 24%;
+        width: 52%;
+        height: 100%;
+    }
+    margin-bottom: 12vh;
+}
+.article-foot-banner{
+    margin-bottom: 5vh;
+}
+
+@media (max-width: 1024px){
+    .article-font{
+        width: 100%;
+        margin: 0 auto;
+        .article-font-box{
+            text-align: center;
+            margin: 30px 0 40px;
+            h1{
+                font-weight: 700;
+                font-size: 20px;
+                margin-bottom: 14px;
+            }
+            h3{
+                font-size: 15px;
+                letter-spacing: 1px;
+                margin-bottom: 30px;
+                font-weight: 700;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 26px;
+                letter-spacing: 0.5px;
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+    .article-fixed{
+        .article-fixed-bg{
+            height: 40px;
+        }
+        .article-fixed-size{
+            height: 40px;
+            a{
+                height: 36px;
+                width: 140px;
+                font-size: 18px;
+                border: 2px solid #000;
+                line-height: 36px;
+                &:nth-child(1){
+                    margin-right: 15px;
+                }
+                &:nth-child(2){
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+    .article-carousel{
+        .swiper-container-kv-02,
+        .swiper-container-kv{
+            .swiper-wrapper{
+                .swiper-slide{
+                    .btn{
+                        left: 14%;
+                        height: 36px;
+                        line-height: 36px;
+                        font-size: 14px;
+                        min-width: 120px;
+                        span{
+                            &:after{
+                                top: 1px;
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper-button-prev{
+                background: url(https://img.adidas.com.cn/resources/activePage/NOV/winterjacket/img-m-left.png);
+                width: 44px;
+                height: 79px;
+                background-size: 44px 79px;
+                left: 1%;
+            }
+            .swiper-button-next{
+                background: url(https://img.adidas.com.cn/resources/activePage/NOV/winterjacket/img-m-right.png);
+                width: 44px;
+                height: 79px;
+                background-size: 44px 79px;
+                right: 1%;
+            }
+            .swiper-button-prev1{
+                background: url(https://img.adidas.com.cn/resources/activePage/NOV/winterjacket/img-m-left.png);
+                width: 44px;
+                height: 79px;
+                background-size: 44px 79px;
+                left: 0.5%;
+            }
+            .swiper-button-next1{
+                background: url(https://img.adidas.com.cn/resources/activePage/NOV/winterjacket/img-m-right.png);
+                width: 44px;
+                height: 79px;
+                background-size: 44px 79px;
+                right: 0.5%;
+            }
+        }
+        .swiper-container-kv-woman{
+            .swiper-wrapper{
+                .swiper-slide{
+                    .btn{
+                        left: 56%;
+                    }
+                }
+            }
+        }
+    }
+    .article-foots{
+        .article-foots-box{
+            width: 87.2%;
+            .article-foots-content{
+                width: 47.5%;
+                margin-right: 5%;
+                margin-bottom: 5%;
+                .box-shade{
+                    display: block;
+                    .box-shade-bg{
+                    }
+                    .box-shade-item{
+                        .box-shade-text{
+                            font-size: 18px;
+                        }
+                        .btn{
+                            height: 36px;
+                            line-height: 36px;
+                            font-size: 14px;
+                            min-width: 120px;
+                            span{
+                                &:after{
+                                    top: 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    margin-right: 0;
+                }
+                &:nth-child(4){
+                    margin-right: 0;
+                }
+                a{
+                    &:hover{
+                        .box-shade{
+                            display: block;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+    .article-banner-01{
+        .link-001{
+            top: 7%;
+            left: 0;
+            height: 92%;
+            width: 100%;
+        }
+        margin-bottom: 5vh;
+    }
+    .article-banner-02{
+        .link-002{
+            width: 100%;
+            left: 0;
+            height: 100%;
+            top: 0;
+        }
+        margin-bottom: 10vh;
+    }
+    .article-banner-03{
+        .link-003{
+            top: 9%;
+            left: 0;
+            width: 100%;
+            height: 90%;
+        }
+        margin-bottom: 5vh;
+    }
+    .article-banner-04{
+        .link-004{
+            top: 0%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        margin-bottom: 0vh;
+    }
+    .article-foot-banner{
+        margin-bottom: 0vh;
+    }
+}

@@ -1,0 +1,578 @@
+@charset "utf-8";
+@import "common/variables.less";
+
+.article{
+	position: relative;
+    >img{
+        width: 100%;
+	}
+}
+
+.link{
+    position: absolute;
+    z-index: 1;
+    // background: rgba(0, 0, 0, .4);
+}
+
+//头部
+.article-top{
+	>a{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.nav-panal{
+	.top-btn-cta{
+		position: absolute;
+		width: 100%;
+		bottom: 0%;
+		left: 0;
+
+		.top-btn-content{
+			position: relative;
+			margin: 0 auto;
+			width: 100%;
+
+			.link{
+				top: 0;
+				width: 19.4%;
+				height: 100%;
+				&:nth-child(1){
+					left: 28%;
+				}
+				&:nth-child(2){
+					right: 28%;
+				}
+			}
+			>img{
+				width: 100%;
+			}
+		}
+
+		&.nav-fixed{
+			width: 100%;
+			position: fixed;
+			left: 0;
+			z-index: 2;
+		}
+	}
+
+}
+
+
+//视屏
+.article-video{
+	.link-one{
+		width: 68%;
+		height: 84%;
+		position: absolute;
+		bottom: 0%;
+		left: 16%;
+	}
+}
+//男子
+.article-man, .article-woman{
+	.rotate-box{
+		width: 12.5%;
+		position: absolute;
+		z-index: 1;
+		animation: rotate 5s infinite;
+
+		>img {
+			width: 100%;
+		}
+
+		@keyframes rotate {
+			from {
+				transform:rotate(0deg);
+			}
+			to {
+				transform:rotate(360deg);
+			}
+		}
+
+		&.rotate-box-1{
+			top: 41.3%;
+			left: 21%;
+			animation-delay: 0.5s;
+		}
+		&.rotate-box-2{
+			top: 43.5%;
+			left: 67.5%;
+			animation-delay: 0.7s;
+		}
+		&.rotate-box-3{
+			top: 76.5%;
+			left: 63.7%;
+			animation-delay: 0.9s;
+		}
+
+
+		&.rotate-box-4{
+			top: 20.5%;
+			left: 21%;
+			animation-delay: 0.5s;
+		}
+		&.rotate-box-5{
+			top: 23.5%;
+    		left: 67.5%;
+			animation-delay: 0.7s;
+		}
+		&.rotate-box-6{
+			top: 68%;
+    		left: 64%;
+			animation-delay: 0.9s;
+		}
+	}
+}
+//男子鞋
+.article-man-shoes, .article-woman-shoes{
+	div{
+		position: absolute;
+		width: 16.5%;
+		height: 49%;
+		top: 15%;
+		left: 13.5%;
+		a{
+			position: absolute;
+			bottom: 7%;
+			left: 50%;
+			-ms-transform:translateX(-50%);
+			-moz-transform:translateX(-50%);
+			-webkit-transform:translateX(-50%);
+			-o-transform:translateX(-50%);
+			transform:translateX(-50%);
+			width: 70%;
+		}
+		.link-one{
+			width: 95%;
+			height: 76%;
+			bottom: 20%;
+		}
+	}
+	.btn-two{
+		left: 32.4%;
+	}
+	.btn-three{
+		left: 51.2%;
+	}
+	.btn-four{
+		left: 70.1%;
+	}
+	.btn-white{
+		height: 26px;
+    	line-height: 26px;
+	}
+	.link-two{
+		width: 25.5%;
+		height: 6.5%;
+		position: absolute;
+		bottom: 18.5%;
+		left: 37.3%;
+	}
+	.btn-m-two{
+		position: absolute;
+		width: 25.5%;
+		height: 44px;
+		line-height: 40px;
+		bottom: 18.5%;
+		left: 37.3%;
+		background: transparent;
+		border: 2px solid #ccc;
+		color: #fff;
+		font-size: 18px;
+		.btn-have-arrow.btn-white span:after{
+			background-position: -120px -20px;
+		}
+	}
+}
+
+//女子鞋
+.article-woman-shoes{
+	div{
+		height: 53%;
+		top: 16%;
+		left: 13.5%;
+	}
+	.link-two{
+		bottom: 12.6%;
+	}
+	.btn-m-two{
+		bottom: 12.6%;
+	}
+}
+
+
+//更多跑步推荐
+.article-more-running,
+.article-running-costume{
+	.link-one, .link-two{
+		position: absolute;
+		width: 16.3%;
+    	height: 38.3%;;
+	}
+	.link-one{
+		top: 7%;
+	}
+	.link-two{
+		top: 49.9%;
+	}
+	.link-01, .link-05{
+		left: 16%;
+	}
+	.link-02, .link-06{
+		left: 33.2%;
+	}
+	.link-03, .link-07{
+		left: 50.5%;
+	}
+	.link-04, .link-08{
+		left: 67.7%;
+	}
+	.link-three{
+		position: absolute;
+		width: 17%;
+		height: 5%;
+		bottom: 0%;
+		left: 32.6%;
+	}
+	.link-three-1{
+		left: 50.5%;
+	}
+	.btn-m-two{
+		position: absolute;
+		width: 17%;
+		height: 44px;
+		bottom: 0%;
+		// left: 32.6%;
+		line-height: 40px;
+		background: transparent;
+		border: 2px solid #ccc;
+		color: #fff;
+		font-size: 18px;
+		.btn-have-arrow.btn-white span:after{
+			background-position: -120px -20px;
+		}
+	}
+}
+
+//跑步服饰推荐
+.article-running-costume{
+	.link-one, .link-two{
+    	height: 35%;
+	}
+	.link-one{
+		top: 13%;
+	}
+	.link-two{
+		top: 53%;
+	}
+	.link-07{
+		left: 50%;
+	}
+	.link-08{
+		left: 67.1%;
+	}
+
+}
+
+//底部
+.article-series{
+	a{
+		width: 15%;
+		height: 59%;
+		position: absolute;
+		top: 19%;
+		left: 11.6%;
+	}
+	.link-01{
+		left: 27%;
+	}
+	.link-02{
+		left: 42.5%;
+	}
+	.link-03{
+		left: 58%;
+	}
+	.link-04{
+		left: 73.5%;
+	}
+
+}
+
+.link-add-1,
+.link-add-2{
+	z-index: 2;
+}
+.link-add-1{
+	width: 62%;
+    height: 57%;
+    top: 39%;
+    left: 20%;
+}
+.link-add-2{
+	width: 62%;
+    height: 80%;
+    top: 17%;
+    left: 20%;
+}
+
+@media (max-width: 1024px){
+	.nav-panal{
+		.top-btn-cta{
+			.top-btn-content{
+				.link{
+					top: 0;
+					width: 44.6%;
+					height: 100%;
+					&:nth-child(1){
+						left: 4%;
+					}
+					&:nth-child(2){
+						right: 4%;
+					}
+				}
+			}
+		}
+	}
+
+	.article-video{
+		.link-one{
+			width: 90.5%;
+    		height: 86%;
+			left: 5%;
+		}
+	}
+
+	.article-man,
+	.article-woman{
+		.rotate-box{
+			width: 31%;
+
+			&.rotate-box-1{
+				top: 37.7%;
+    			left: 8.3%;
+				animation-delay: 0.5s;
+			}
+			&.rotate-box-2{
+				top: 30%;
+    			left: 63.5%;
+				animation-delay: 0.7s;
+			}
+			&.rotate-box-3{
+				top: 76.5%;
+    			left: 66.7%;
+				animation-delay: 0.9s;
+			}
+
+
+			&.rotate-box-4{
+				top: 20.8%;
+    			left: 8%;
+				animation-delay: 0.5s;
+			}
+			&.rotate-box-5{
+				top: 10.6%;
+    			left: 63.5%;
+				animation-delay: 0.7s;
+			}
+			&.rotate-box-6{
+				top: 69.8%;
+    			left: 67%;
+				animation-delay: 0.9s;
+			}
+		}
+	}
+
+	//男鞋
+	.article-man-shoes{
+		> a{
+			position: absolute;
+			width: 42.2%;
+			height: 36.2%;
+		}
+		.link-m-one{
+			top: 7%;
+    		left: 6%;
+		}
+		.link-m-two{
+			top: 7%;
+    		left: 54.5%;
+		}
+		.link-m-three{
+			top: 47.2%;
+    		left: 6%;
+		}
+		.link-m-four{
+			top: 47.2%;
+			left: 54.5%;
+		}
+		.link-two{
+			bottom: 5.6%;
+			left: 17.5%;
+			width: 65%;
+			height: 4.7%;
+		}
+	}
+
+	//女鞋
+	.article-woman-shoes{
+		> a{
+			position: absolute;
+			width: 42.2%;
+			height: 35.9%;
+		}
+		.link-m-one{
+			top: 7%;
+    		left: 6%;
+		}
+		.link-m-two{
+			top: 7%;
+    		left: 54.5%;
+		}
+		.link-m-three{
+			top: 47%;
+    		left: 6%;
+		}
+		.link-m-four{
+			top: 47%;
+			left: 54.5%;
+		}
+		.link-two{
+			bottom: 6.5%;
+			left: 17.5%;
+			width: 65%;
+			height: 4.7%;
+		}
+	}
+
+	//更多跑步推荐
+	.article-more-running{
+		.link-one, .link-two{
+			width: 44%;
+			height: 21.4%;
+		}
+		.link-01{
+			left: 5%;
+		    top: 3.2%;
+		}
+		.link-02{
+			left: 51%;;
+		    top: 3.2%;
+		}
+		.link-03{
+			left: 5%;
+		    top: 26.4%;
+		}
+		.link-04{
+			left: 51%;
+    		top: 26.4%;
+		}
+		.link-05{
+			left: 5%;
+    		top: 50%;
+		}
+		.link-06{
+			left: 51%;
+    		top: 50%;
+		}
+		.link-07{
+			left: 5%;
+    		top: 73.3%;
+		}
+		.link-08{
+			left: 51%;
+    		top: 73.3%;
+		}
+	}
+	//跑步服饰推荐
+	.article-running-costume{
+		.link-one, .link-two{
+			width: 44%;
+			height: 21.4%;
+		}
+		.link-01{
+			left: 5%;
+		    top: 6.2%;
+		}
+		.link-02{
+			left: 51%;;
+		    top:  6.2%;
+		}
+		.link-03{
+			left: 5%;
+		    top: 29%;
+		}
+		.link-04{
+			left: 51%;
+    		top: 29%;
+		}
+		.link-05{
+			left: 5%;
+    		top: 52%;
+		}
+		.link-06{
+			left: 51%;
+    		top: 52%;
+		}
+		.link-07{
+			left: 5%;
+    		top: 74.3%;
+		}
+		.link-08{
+			left: 51%;
+    		top: 74.3%;
+		}
+		.link-three{
+			width: 43%;
+			height: 2.3%;
+			left: 5.6%;
+		}
+		.link-three-1{
+			left: 51.5%;
+		}
+
+	}
+
+	//底部
+	.article-series{
+		.link-two{
+			top: 8.7%;
+    		height: 16.2%;
+			left: 2.4%;
+			width: 95%;
+		}
+		.link-01{
+			top: 26.8%;
+		}
+		.link-02{
+			top: 44.5%;
+		}
+		.link-03{
+			top: 62.2%;
+		}
+		.link-04{
+			top:79.9%
+		}
+
+	}
+
+
+	.link-add-1{
+		width: 90%;
+		height: 70%;
+		top: 29%;
+		left: 7%;
+	}
+	.link-add-2{
+		width: 91%;
+		height: 92%;
+		top: 7%;
+		left: 6%;
+	}
+
+}

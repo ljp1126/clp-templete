@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<%include _includes/meta.html %>
+		<title>lp-deerupt-campaign</title>
+		<%include _includes/css.html %>
+		<%include _includes/js.html %>
+		<!-- <script type="text/javascript" src="js/lp-shhm.js"></script> -->
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+			<section class="container">
+				<style>
+					.article {
+						position: relative;
+					}
+					
+					.article>img {
+						width: 100%;
+					}
+					
+					.link {
+						position: absolute;
+						z-index: 1;
+					}
+					
+					.w-1074 {
+						max-width: 1074px;
+						margin: 0 auto;
+					}
+					
+					.w-1440 {
+						max-width: 1440px;
+						margin: 0 auto;
+					}
+					
+					.shhm-nav-box {
+						width: 100%;
+						background: #fff;
+						z-index: 2;
+					}
+					
+					.shhm-nav-box .shhm-nav {
+						padding: 20px 0 20px;
+						text-align: center;
+						font-size: 0;
+					}
+					
+					.shhm-nav-box .shhm-nav a {
+						position: relative;
+						display: inline-block;
+						font-size: 28px;
+						color: #000;
+						height: 54px;
+						line-height: 52px;
+						width: 19.54%;
+						border: 1px solid #000;
+					}
+					
+					.shhm-nav-box .shhm-nav a:nth-child(2) {
+						margin: 0 4.14%;
+					}
+					
+					.shhm-nav-box .shhm-nav a:after {
+						position: absolute;
+						display: none;
+						content: "";
+						width: 0;
+						height: 0;
+						left: 50%;
+						margin-left: -12px;
+						bottom: -15px;
+						border-right: 12px solid transparent;
+						border-top: 15px solid #2d5797;
+						border-left: 12px solid transparent;
+					}
+					
+					.shhm-nav-box .shhm-nav a:hover,
+					.shhm-nav-box .shhm-nav a.is-active {
+						color: #fff;
+						background-color: #2d5797;
+						border-color: #2d5797;
+					}
+					
+					.shhm-nav-box .shhm-nav a:hover:after,
+					.shhm-nav-box .shhm-nav a.is-active:after {
+						display: block;
+					}
+					
+					.shhm-nav-box.nav-fixed {
+						position: fixed;
+						top: 0;
+						left: 0;
+					}
+					
+					.link-video {
+						width: 6%;
+						height: 19.5%;
+						left: 45.5%;
+						top: 41.5%;
+					}
+					
+					.pro-list-wrap .btn-box {
+						padding-top: 30px;
+						text-align: center;
+					}
+					
+					.mb120 {
+						margin-bottom: 120px;
+					}
+					
+					.btn-men {
+						width: 252px;
+						font-size: 18px;
+					}
+					
+					.btn-men .btn-have-arrow.btn-white span:after {
+						background-position: -120px -20px;
+					}
+					
+					.com-box {
+						text-align: center;
+					}
+					
+					.com-box h2 {
+						font-size: 48px;
+						font-weight: 700;
+						color: #000;
+						padding-bottom: 48px;
+					}
+					
+					.link-00 {
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+					}
+					
+					.link-1 {
+						top: 30.16%;
+						left: 4.59%;
+						width: 22.11%;
+						height: 59.27%;
+					}
+					
+					.link-2 {
+						top: 30.16%;
+						left: 27.61%;
+						width: 21.97%;
+						height: 59.27%;
+					}
+					
+					.link-3 {
+						top: 30.16%;
+						left: 50.63%;
+						width: 21.91%;
+						height: 59.27%;
+					}
+					
+					.link-4 {
+						top: 30.16%;
+						left: 73.57%;
+						width: 21.97%;
+						height: 59.27%;
+					}
+					
+					.link-5 {
+						top: 11.30%;
+						left: 4.80%;
+						width: 29.69%;
+						height: 41.58%;
+					}
+					
+					.link-6 {
+						top: 11.19%;
+						left: 35.61%;
+						width: 29.42%;
+						height: 41.79%;
+					}
+					
+					.link-7 {
+						top: 11.19%;
+						left: 66.20%;
+						width: 29.14%;
+						height: 41.36%;
+					}
+					
+					.link-8 {
+						top: 54.58%;
+						left: 4.80%;
+						width: 29.69%;
+						height: 39.66%;
+					}
+					
+					.link-9 {
+						top: 54.80%;
+						left: 35.61%;
+						width: 29.62%;
+						height: 39.34%;
+					}
+					
+					.link-10 {
+						top: 55.01%;
+						left: 66.34%;
+						width: 29.14%;
+						height: 39.66%;
+					}
+					
+					@media (max-width: 1024px) {
+						.shhm-nav-box .shhm-nav {
+							padding: 20px 14px 20px;
+						}
+						.shhm-nav-box .shhm-nav a {
+							width: 26%;
+							font-size: 24px;
+							height: 45px;
+							line-height: 43px;
+						}
+						.shhm-nav-box .shhm-nav a:after {
+							margin-left: -8px;
+							bottom: -11px;
+							border-right: 8px solid transparent;
+							border-top: 10px solid #2d5797;
+							border-left: 8px solid transparent;
+						}
+						.shhm-nav-box .shhm-nav a:hover,
+						.shhm-nav-box .shhm-nav a.is-active {
+							color: #fff;
+							background-color: #2d5797;
+							border-color: #2d5797;
+						}
+						.shhm-nav-box .shhm-nav a:hover:after,
+						.shhm-nav-box .shhm-nav a.is-active:after {
+							display: block;
+						}
+						.link-video {
+							width: 14%;
+							height: 22%;
+							left: 43%;
+							top: 37.5%;
+						}
+						.pro-list-wrap .btn-box {
+							padding-top: 30px;
+							text-align: center;
+						}
+						.mb120 {
+							margin-bottom: 54px;
+						}
+						.link-1,
+						.link-2,
+						.link-3,
+						.link-4 {
+							width: 45%;
+							height: 37.27%;
+						}
+						.link-1,
+						.link-2 {
+							top: 23.5%;
+						}
+						.link-1,
+						.link-3,
+						.link-5 {
+							left: 4%;
+						}
+						.link-2,
+						.link-4 {
+							left: 51%;
+						}
+						.link-3,
+						.link-4 {
+							top: 63.16%;
+						}
+						.link-5,
+						.link-6,
+						.link-7,
+						.link-8,
+						.link-9,
+						.link-10 {
+							width: 45%;
+							height: 26%;
+						}
+						.link-5,
+						.link-6 {
+							top: 16.3%;
+						}
+						.link-6,
+						.link-10,
+						.link-9 {
+							left: 51%;
+						}
+						.link-7,
+						.link-10 {
+							top: 71.19%;
+						}
+						.link-7,
+						.link-8 {
+							left: 3%;
+						}
+						.link-8,
+						.link-9 {
+							top: 44%;
+						}
+						.pro-list-tit {
+							width: 100%;
+						}
+						.btn-box>img {
+							width: 100%;
+						}
+						.btn-box>a {
+							opacity: 0;
+							width: 34.5%;
+							height: 76%;
+							position: absolute;
+							top: 34%;
+							left: 33%;
+							z-index: 1;
+							font-size: 0;
+						}
+					}
+					
+					@media (max-width: 767px) {
+						.shhm-nav-box .shhm-nav a {
+							font-size: 18px;
+							height: 42px;
+							line-height: 40px;
+						}
+					}
+					
+					@media (max-width: 500px) {
+						.shhm-nav-box .shhm-nav a {
+							font-size: 14px;
+							height: 36px;
+							line-height: 34px;
+						}
+					}
+					
+					.more-commodity-article .product-list .product-list-cont .list-item {
+						margin: 0 0 32px;
+					}
+					/*mi adizero adios-轮播*/
+					.article-adizero .adizero-text-wrapper {
+						position: absolute;
+						width: 28.1%;
+						top: 34.65%;
+						left: 21.9%;
+					}
+					
+					.article-adizero .adizero-text-wrapper .e-adizero-text-scroll {
+						overflow: hidden;
+					}
+					
+					.article-adizero .adizero-text-wrapper .e-adizero-text-scroll .swiper-slide {
+						background-color: white;
+					}
+					
+					.article-adizero .adizero-text-wrapper .btn {
+						position: absolute;
+						left: 0;
+						top: 61%;
+						height: 44px;
+						line-height: 44px;
+						z-index: 2;
+						min-width: 162px;
+					}
+					
+					.article-adizero .adizero-img-wrapper {
+						position: absolute;
+						width: 27.7%;
+						left: 50%;
+						top: 10%;
+						overflow: hidden;
+					}
+					
+					.article-adizero .adizero-img-wrapper .e-adizero-img-scroll {
+						position: relative;
+						overflow: hidden;
+						padding-bottom: 50px;
+					}
+					
+					.article-adizero .adizero-img-wrapper .e-adizero-img-scroll .swiper-pagination-bullet {
+						width: 13px;
+						height: 13px;
+						margin: 0 10px;
+					}
+					
+					.article-adizero .adizero-img-wrapper .e-adizero-img-scroll .swiper-pagination-bullet.swiper-pagination-bullet-active {
+						background-color: black;
+					}
+					
+					@media screen and (max-width: 1024px) {
+						.article-adizero .adizero-img-wrapper {
+							width: 100%;
+							left: 0;
+							top: 23.5%;
+						}
+						.article-adizero .adizero-img-wrapper .e-adizero-img-scroll {
+							padding-bottom: 0;
+						}
+						.article-adizero .adizero-img-wrapper .e-adizero-img-scroll .swiper-pagination-bullet {
+							width: 8px;
+							height: 8px;
+							margin: 0 5px;
+							background-color: white;
+							opacity: .4;
+						}
+						.article-adizero .adizero-img-wrapper .e-adizero-img-scroll .swiper-pagination-bullet.swiper-pagination-bullet-active {
+							opacity: 1;
+							background-color: white;
+						}
+					}
+				</style>
+
+				<!--kv-->
+				<article class="article">
+					<img src="images/blank.gif" lazysrc="null" data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-shhm/kv-p.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-shhm/kv-m.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-shhm/kv-m.jpg"}}' />
+					<a target="_blank" href="https://www.adidas.com.cn/running_apr_halfmarathon" class="link link-00"></a>
+				</article>
+				<!--mi adizero adios-轮播-->
+				<article class="article article-adizero">
+					<img src="images/blank.gif" lazysrc="null" data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-shhm/adizero-img-b.png"},
+						"medium":{"high":"",  "normal":"../static/images/lp-shhm/adizero-img-m.png"},
+						"small":{"high":"", "normal":"../static/images/lp-shhm/adizero-img-m.png"}}' />
+					<div class="adizero-text-wrapper none-sm">
+						<div class="e-adizero-text-scroll">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<img src="../static/images/lp-shhm/adizero-kv-text-1.png" />
+								</li>
+								<li class="swiper-slide">
+									<img src="../static/images/lp-shhm/adizero-kv-text-2.png" />
+								</li>
+								<li class="swiper-slide">
+									<img src="../static/images/lp-shhm/adizero-kv-text-3.png" />
+								</li>
+								<li class="swiper-slide">
+									<img src="../static/images/lp-shhm/adizero-kv-text-4.png" />
+								</li>
+							</ul>
+						</div>
+						<a target="_blank" href="https://www.adidas.com.cn/item/CM7430" class="btn btn-black btn-have-arrow">
+							<span>立即选购</span>
+						</a>
+					</div>
+					<div class="adizero-img-wrapper">
+						<div class="e-adizero-img-scroll">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<a target="_blank" href="https://www.adidas.com.cn/item/CM7430">
+										<img src="images/blank.gif" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-shhm/adizero-kv-b-1.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-shhm/adizero-kv-m-1.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-shhm/adizero-kv-m-1.jpg"}}' />
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a target="_blank" href="https://www.adidas.com.cn/item/CM7430">
+										<img src="images/blank.gif" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-shhm/adizero-kv-b-2.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-shhm/adizero-kv-m-2.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-shhm/adizero-kv-m-2.jpg"}}' />
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a target="_blank" href="https://www.adidas.com.cn/item/CM7430">
+										<img src="images/blank.gif" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-shhm/adizero-kv-b-3.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-shhm/adizero-kv-m-3.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-shhm/adizero-kv-m-3.jpg"}}' />
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a target="_blank" href="https://www.adidas.com.cn/item/CM7430">
+										<img src="images/blank.gif" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-shhm/adizero-kv-b-4.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-shhm/adizero-kv-m-4.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-shhm/adizero-kv-m-4.jpg"}}' />
+									</a>
+								</li>
+							</ul>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</article>
+				<!--tab-->
+				<article class="article-shhm-nav">
+					<div class="shhm-nav-box e-shhm-nav-box">
+						<div class="shhm-nav w-1074">
+							<a href="javascript:void(0);" class="is-active" data-text="man">男子跑步</a>
+							<a href="javascript:void(0);" data-text="woman">女子跑步</a>
+							<a href="javascript:void(0);" data-text="children">儿童跑步</a>
+						</div>
+					</div>
+				</article>
+				<!--视频-->
+				<article class="article">
+					<img src="images/blank.gif" lazysrc="null" data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-shhm/video-bg-p.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-shhm/video-bg-m.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-shhm/video-bg-m.jpg"}}' />
+					<a href="javascript:void(0)" class="e-lp-video-btn link link-video" data-video-code="9F6CD0CE10FC31B29C33DC5901307461"></a>
+				</article>
+				<!--文字-->
+				<article class="article">
+					<img src="images/blank.gif" lazysrc="null" data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-shhm/text-p.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-shhm/text-m.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-shhm/text-m.jpg"}}' />
+				</article>
+				<!--男子跑步-->
+				<article class="article article-man">
+					<img src="images/blank.gif" lazysrc="null" data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-shhm/men-p.gif"},
+								"medium":{"high":"",  "normal":"../static/images/lp-shhm/men-m.gif"},
+								"small":{"high":"", "normal":"../static/images/lp-shhm/men-m.gif"}}' />
+				</article>
+				<!-- 更多男子跑步鞋推荐 铺品 -->
+				<!-- 更多男子跑步鞋推荐 铺品 end -->
+				<article class="article">
+					<div class="pro-list-wrap w-1074">
+						<div class="btn-box">
+							<img class="none block-sm" src="../static/images/lp-shhm/men1-btn-m.jpg" />
+							<a target="_blank" href="https://www.adidas.com.cn/men_running" class="btn btn-black btn-have-arrow btn-men">
+								<span>更多男子跑步鞋推荐</span>
+							</a>
+						</div>
+					</div>
+				</article>
+				<!-- 更多男子跑步服饰推荐 铺品 -->
+				<!-- 更多男子跑步服饰推荐 铺品 end -->
+				<article class="article">
+					<div class="pro-list-wrap w-1074">
+						<div class="btn-box mb120">
+							<img class="none block-sm" src="../static/images/lp-shhm/men2-btn-m.jpg" />
+							<a target="_blank" href="" class="btn btn-black btn-have-arrow btn-men">
+								<span>更多男子跑步服饰推荐</span>
+							</a>
+						</div>
+					</div>
+				</article>
+				<!-- 更多男子训练服饰推荐 铺品 -->
+				<!-- 更多男子训练服饰推荐 铺品 end -->
+				<article class="article">
+					<div class="pro-list-wrap w-1074">
+						<div class="btn-box mb120">
+							<img class="none block-sm" src="../static/images/lp-shhm/men2-btn-m.jpg" />
+							<a target="_blank" href="https://www.adidas.com.cn/men_training" class="btn btn-black btn-have-arrow btn-men">
+								<span>更多男子训练服饰推荐</span>
+							</a>
+						</div>
+					</div>
+				</article>
+				<!--女子跑步-->
+				<article class="article article-woman">
+					<img src="images/blank.gif" lazysrc="null" data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-shhm/women-p.gif"},
+								"medium":{"high":"",  "normal":"../static/images/lp-shhm/women-m.gif"},
+								"small":{"high":"", "normal":"../static/images/lp-shhm/women-m.gif"}}' />
+				</article>
+				<!-- 更多女子跑步鞋推荐 铺品 -->
+				<!-- 更多女子跑步鞋推荐 铺品 end -->
+				<article class="article">
+					<div class="pro-list-wrap w-1074">
+						<div class="btn-box">
+							<img class="none block-sm" src="../static/images/lp-shhm/women-btn-m.jpg" />
+							<a target="_blank" href="https://www.adidas.com.cn/women_running" class="btn btn-black btn-have-arrow btn-men">
+								<span>更多女子跑步鞋推荐</span>
+							</a>
+						</div>
+					</div>
+				</article>
+				<!-- 更多女子跑步服饰推荐 铺品 -->
+				<!-- 更多女子跑步服饰推荐 铺品 end -->
+				<article class="article">
+					<div class="pro-list-wrap w-1074">
+						<div class="btn-box">
+							<img class="none block-sm" src="../static/images/lp-shhm/women-btn-m.jpg" />
+							<a target="_blank" href="" class="btn btn-black btn-have-arrow btn-men">
+								<span>更多女子跑步服饰推荐</span>
+							</a>
+						</div>
+					</div>
+				</article>
+				<!--儿童跑步-->
+				<article class="article article-children"></article>
+				<!-- 更多儿童跑步鞋推荐 铺品 -->
+				<!-- 更多儿童跑步鞋推荐 铺品 end -->
+				<article class="article">
+					<div class="pro-list-wrap w-1074">
+						<div class="btn-box">
+							<img class="none block-sm" src="../static/images/lp-shhm/children-btn-m.jpg" />
+							<a target="_blank" href="https://www.adidas.com.cn/search?pf=25-160%2C25-220%2C24-250%2C24-239%2C24-39%2C27-118&pr=-&fo=p25%2Cp25%2Cp24%2Cp24%2Cp24%2Cp27&pn=1&pageSize=120&p=%E7%94%B7%E7%AB%A5-%E5%A5%B3%E7%AB%A5-%E5%A4%A7%E7%AB%A5%EF%BC%888-14%E5%B2%81%EF%BC%89-%E5%B0%8F%E7%AB%A5%EF%BC%884-8%E5%B2%81%EF%BC%89-%E5%A9%B4%E7%AB%A5%EF%BC%880-4%E5%B2%81%EF%BC%89-%E8%B7%91%E6%AD%A5&isSaleTop=false" class="btn btn-black btn-have-arrow btn-men">
+								<span>更多儿童跑步鞋推荐</span>
+							</a>
+						</div>
+					</div>
+				</article>
+				<!-- 更多儿童跑步服饰推荐 铺品 -->
+				<!-- 更多儿童跑步服饰推荐 铺品 end -->
+				<article class="article">
+					<div class="pro-list-wrap w-1074">
+						<div class="btn-box">
+							<img class="none block-sm" src="../static/images/lp-shhm/children-btn-m.jpg" />
+							<a target="_blank" href="https://www.adidas.com.cn/search?pf=25-160%2C25-220%2C24-250%2C24-239%2C24-39%2C27-118&pr=-&fo=p25%2Cp25%2Cp24%2Cp24%2Cp24%2Cp27&pn=1&pageSize=120&p=%E7%94%B7%E7%AB%A5-%E5%A5%B3%E7%AB%A5-%E5%A4%A7%E7%AB%A5%EF%BC%888-14%E5%B2%81%EF%BC%89-%E5%B0%8F%E7%AB%A5%EF%BC%884-8%E5%B2%81%EF%BC%89-%E5%A9%B4%E7%AB%A5%EF%BC%880-4%E5%B2%81%EF%BC%89-%E8%B7%91%E6%AD%A5&isSaleTop=false" class="btn btn-black btn-have-arrow btn-men">
+								<span>更多儿童跑步服饰推荐</span>
+							</a>
+						</div>
+					</div>
+				</article>
+				<article class="article com-box w-1440">
+					<img class="com-tit" src="images/blank.gif" lazysrc="null" data-image='{
+									"standard":{"high":"", "normal":"../static/images/lp-shhm/com1-tit-p.jpg"},
+									"medium":{"high":"",  "normal":"../static/images/lp-shhm/com1-tit-m.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-shhm/com1-tit-m.jpg"}}' />
+					<img src="images/blank.gif" lazysrc="null" data-image='{
+									"standard":{"high":"", "normal":"../static/images/lp-shhm/com1-p.jpg"},
+									"medium":{"high":"",  "normal":"../static/images/lp-shhm/com1-m.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-shhm/com1-m.jpg"}}' />
+					<a target="_blank" href="https://www.adidas.com.cn/running_ultraboost" class="link link-1"></a>
+					<a target="_blank" href="https://www.adidas.com.cn/running_pureboost" class="link link-2"></a>
+					<a target="_blank" href="https://www.adidas.com.cn/running_alphabounce" class="link link-3"></a>
+					<a target="_blank" href="https://www.adidas.com.cn/running_customise_segment" class="link link-4"></a>
+				</article>
+				<article class="article com-box w-1440">
+					<img src="images/blank.gif" lazysrc="null" data-image='{
+									"standard":{"high":"", "normal":"../static/images/lp-shhm/com2-tit-p.jpg"},
+									"medium":{"high":"",  "normal":"../static/images/lp-shhm/com2-tit-m.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-shhm/com2-tit-m.jpg"}}' />
+					<img src="images/blank.gif" lazysrc="null" data-image='{
+									"standard":{"high":"", "normal":"../static/images/lp-shhm/com2-p.jpg"},
+									"medium":{"high":"",  "normal":"../static/images/lp-shhm/com2-m.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-shhm/com2-m.jpg"}}' />
+					<a target="_blank" href="https://www.adidas.com.cn/men_running_shoes_segment" class="link link-5"></a>
+					<a target="_blank" href="https://www.adidas.com.cn/search?pf=25-40%2C25-60%2C25-60%2C27-118&cf=2-9&pr=-&fo=p25%2Cp25%2Cp27%2Cc2&pn=1&pageSize=120&c=%E6%9C%8D%E8%A3%85&p=%E7%94%B7%E5%AD%90-%E4%B8%AD%E6%80%A7-%E8%B7%91%E6%AD%A5&isSaleTop=false" class="link link-6"></a>
+					<a target="_blank" href="https://www.adidas.com.cn/search?pf=27-118&cf=2-10&pr=-&fo=p27%2Cc2&pn=1&pageSize=120&c=%E7%AE%B1%E5%8C%85%2F%E9%99%84%E9%85%8D%E4%BB%B6&p=%E8%B7%91%E6%AD%A5&isSaleTop=false" class="link link-7"></a>
+					<a target="_blank" href="https://www.adidas.com.cn/women_running_shoes_segment" class="link link-8"></a>
+					<a target="_blank" href="https://www.adidas.com.cn/search?pf=25-82%2C25-60%2C25-60%2C27-118&cf=2-9&pr=-&fo=p25%2Cp25%2Cp27%2Cc2&pn=1&pageSize=120&c=%E6%9C%8D%E8%A3%85&p=%E5%A5%B3%E5%AD%90-%E4%B8%AD%E6%80%A7-%E8%B7%91%E6%AD%A5&isSaleTop=false" class="link link-9"></a>
+					<a target="_blank" href="https://www.adidas.com.cn/search?pf=27-118&pr=-&fo=p27&pn=1&pageSize=120&p=%E8%B7%91%E6%AD%A5&isSaleTop=false" class="link link-10"></a>
+				</article>
+
+				<script id="video-dialog" type="text/template">
+					<div class="dialog">
+						<div class="dialog-container">
+							<div class="loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+							<div class="video-content">
+
+							</div>
+						</div>
+						<i class="icon icon-close dialog-close">&times;</i>
+					</div>
+				</script>
+
+				<script type="text/javascript">
+					$(function() {
+						// 换图 + 懒加载
+						$.spice.lazyLoad('img[lazysrc]', {
+							attr: 'lazysrc'
+						});
+						$.spice.tools.changeImageSrc({
+							callBack: function(img, self) {
+								$.spice.lazyLoad('img[lazysrc]', {
+									attr: self.opt.lazyData,
+									prestrain: 1
+								});
+							}
+						});
+
+						// 视频
+						$('.e-lp-video-btn').on('tap', function(e) {
+							e.preventDefault();
+							var _this = $(this),
+								videoCode = _this.data('videoCode');
+
+							openVideo(videoCode, 'true');
+						});
+						// 视频 end
+
+						// mobile header 滚动效果
+						var windowTopHeaderLP = 0,
+							navSwitchFlag = false;
+						$(window).on('scroll.headerScrollLP', function() {
+							var scrolls = $(this).scrollTop(),
+								$shhmNav = $('.e-shhm-nav-box'),
+								shhmNavFlagOffsetTop = Math.floor($shhmNav.parents('.article-shhm-nav').offset().top),
+								shhmNavH = $shhmNav.outerHeight(true),
+								$header = $('.header-fixed'),
+								headerH = $header.outerHeight(true),
+								footerOffsetTop = Math.floor($('.footer').offset().top),
+								headerbannerH = $('.header-banner-box').outerHeight(true),
+								headerBanner = $('.header-banner-box').hasClass('header-banner-show')
+
+							if(scrolls >= windowTopHeaderLP) {
+								windowTopHeaderLP = scrolls;
+								if((scrolls - 1) >= shhmNavH) {
+									$shhmNav.addClass('nav-fixed').css({
+										'top': 0
+									})
+									$('.article-shhm-nav').css({
+										'height': $shhmNav.outerHeight(true)
+									})
+								}
+								if((scrolls - 1) >= footerOffsetTop - window.innerHeight) {
+									$shhmNav.addClass('none')
+								}
+
+							} else {
+								windowTopHeaderLP = scrolls;
+								if (headerBanner === true) {
+									headerH = $header.outerHeight(true) + headerbannerH;
+								} else {
+									headerH = $header.outerHeight(true)
+								}
+								$shhmNav.addClass('nav-fixed').css({
+									'top': headerH
+								})
+
+								if((scrolls - 1) <= shhmNavFlagOffsetTop) {
+									$shhmNav.removeClass('nav-fixed').css({
+										'top': ''
+									})
+									$('.article-shhm-nav').css({
+										'height': ''
+									})
+								} else {
+									if((scrolls - 1) <= footerOffsetTop - window.innerHeight) {
+										$shhmNav.removeClass('none')
+									}
+								}
+
+							}
+
+							if(!navSwitchFlag) {
+								$.each(['.article-man', '.article-woman', '.article-children'], function(index, el) {
+									var elOffsetTop = Math.floor($(el).offset().top)
+									if(scrolls >= elOffsetTop - shhmNavH - 100) {
+										$('.e-shhm-nav-box .shhm-nav > a:eq(' + index + ')').addClass('is-active').siblings().removeClass('is-active')
+
+									}
+									// return false;
+								})
+							}
+
+						}).trigger('scroll.headerScrollLP');
+						// mobile header 滚动效果 end
+
+						// 锚点
+						$('.e-shhm-nav-box a').on('tap', function() {
+							var _this = $(this),
+								_thisData = _this.data('text'),
+								$articleMap = $('.article-' + _thisData),
+								articleMapOffsetTop = Math.floor($articleMap.offset().top),
+								$shhmNavBox = _this.parents('.shhm-nav-box');
+
+							navSwitchFlag = true;
+
+							_this.addClass('is-active').siblings().removeClass('is-active');
+							$('html,body').animate({
+								'scrollTop': (_thisData === 'children') ? (articleMapOffsetTop - $shhmNavBox.outerHeight(true)) : (articleMapOffsetTop - $shhmNavBox.outerHeight(true) - 100)
+							}, 400, function() {
+								var scrollTopNew = (_thisData === 'children') ? (Math.floor($articleMap.offset().top) - $shhmNavBox.outerHeight(true)) : (Math.floor($articleMap.offset().top) - $shhmNavBox.outerHeight(true) - 100)
+								$('html,body').scrollTop(scrollTopNew)
+
+								navSwitchFlag = false;
+							})
+						})
+						//adizero adios-轮播
+						var adizeroTextScroll = new Swiper(".article-adizero .e-adizero-text-scroll", {
+								slidesPerView: "auto",
+								effect: 'fade',
+								simulateTouch: false
+							}),
+							adizeroImgScroll = new Swiper(".article-adizero .e-adizero-img-scroll", {
+								slidesPerView: "auto",
+								loop: true,
+								autoplay: 2500,
+								autoplayDisableOnInteraction: false,
+								pagination: '.swiper-pagination',
+								paginationClickable: true,
+								onSlideChangeStart: function(swiper) {
+									adizeroTextScroll.slideTo(swiper.realIndex, 0);
+								}
+							});
+					});
+				</script>
+			</section>
+			<%include _includes/modules/footer.html %>
+		</div>
+	</body>
+
+</html>

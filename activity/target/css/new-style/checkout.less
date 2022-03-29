@@ -1,0 +1,783 @@
+@charset "utf-8";
+
+/*支付方式*/
+.payment-method-content {
+
+	.payment-method-item {
+		div {
+			input {
+				height: 0;
+			}
+
+			label {
+				img {
+					height: 24px;
+				}
+
+			}
+
+		}
+	}
+
+
+}
+
+.checkout-pay-content {
+	.view-detail-mes {
+		margin-top: 30px;
+
+	}
+
+	.submit-button-box {
+		padding: 0 21px;
+		width: 270px;
+		font-size: 16px;
+	}
+}
+
+.relevant-description {
+	>div {
+		padding: 15px;
+	}
+}
+
+.address-form-box {
+	.add-address-btn {
+		>a {
+			font-weight: 500;
+		}
+	}
+
+	.checked-select-con {
+		.checked-select {
+			span {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+.submit-button-box {
+	.gl-cta {
+		font-weight: 500;
+	}
+}
+
+.order-summary-box {
+	.coupon-box .coupon-box-top {
+		.coupon-msg {
+			font-size: 12px;
+			margin: 10px 0;
+			color: #888;
+		}
+	}
+
+	.check-product-list {
+		.viewport {
+			.thumbnail {
+				.summary-list-box {
+
+					.gift-item,
+					.summary-list-item {
+						.summary-list-right {
+							a {
+								line-height: 14px;
+							}
+
+							p {
+								&.miadidas-customized {
+									.icon-customize:before {
+										left: 1px;
+										top: 4px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.coupon-box {
+		.coupon-content {
+			.coupon-select {
+				.dropdown {
+					.sub-menu {
+						border: 1px solid #000;
+						border-top: 0px solid #000;
+
+						.viewport {
+							.overview {
+								ul {
+									li {
+										&.is-active {
+											a {
+												.icon-checked {
+													&:before {
+														margin-top: -34px;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.customized-prompt-text {
+		>div {
+			.icon-prompt {
+				font-size: 16px;
+				color: #5BC2E7;
+			}
+		}
+	}
+}
+
+.delivery-address {
+	.delivery-address-bottom {
+		a {
+			&.is-open {
+				.icon-caret {
+					&:before {
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
+	}
+}
+
+//hyper-launch-checkout-confirmed.html
+.checkout-pay-content {
+	.checkout-pay-confirmed {
+		.submit-button-box {
+			padding: 0;
+			width: 270px;
+		}
+	}
+}
+
+@media (max-width: 1023px) {
+	.none-sm {
+		display: none !important;
+		visibility: hidden;
+	}
+
+	.block-sm {
+		display: block !important;
+		visibility: visible;
+	}
+
+	.float-left-sm {
+		float: left;
+	}
+
+	.float-clearfix-sm {
+		clear: both !important
+	}
+
+	.header-simple {
+		.icon-adidas {
+			font-size: 44px;
+			height: 48px;
+		}
+	}
+
+	.wx-hint .e-close-btn .icon-close {
+		&:before {
+			display: none;
+		}
+	}
+
+	/*支付方式*/
+	.payment-method-content {
+
+		.payment-method-item {
+			padding-left: 0;
+
+		}
+
+	}
+
+	.checkout-pay-content {
+		.submit-button-box {
+			padding: 0 21px;
+			width: 100%;
+
+			.gl-cta__icon {
+				background: none;
+			}
+		}
+
+		.view-detail-mes {
+			.successfully-detail {
+				font-size: 13px;
+
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.icon-radio {
+		&:before {
+			width: 14px;
+			height: 14px;
+			border: 1px solid currentColor;
+			margin-top: -1px;
+		}
+	}
+
+	.icon-checked {
+		border: 1px solid #98989a;
+	}
+
+	.active,
+	.is-active {
+
+		&.icon-radio,
+		.icon-radio {
+			&:before {
+				border-width: 5px;
+			}
+		}
+
+		&.icon-checked,
+		.icon-checked {
+			border-color: #000;
+			font-size: 12px;
+		}
+	}
+
+	.checkout-new-container {
+		.payment-method-new {
+			.checked-select-con {
+				.icon-checked {
+					width: 16px;
+					height: 16px;
+					margin-top: -2px;
+
+					&:before {
+						width: 14px;
+						height: 14px;
+						margin-top: 0px;
+					}
+				}
+			}
+
+			.distribution-way-info {
+				i {
+					font-size: 12px;
+				}
+			}
+		}
+
+		.order-summary-box {
+			.checked-select-con {
+				.icon-checked {
+					width: 16px;
+					height: 16px;
+					margin-top: 0;
+
+					&:before {
+						width: 14px;
+						height: 14px;
+						margin-top: -4px;
+					}
+				}
+			}
+		}
+
+		.delivery-address-box,
+		.distribution-way-box {
+
+			.address-info,
+			.distribution-way-info {
+				i {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+	.address-form-dialog {
+		.dialog-container {
+			.address-form-container {
+				.form-group {
+					.checked-select {
+						span {
+							font-size: 14px;
+						}
+
+						.icon {
+							width: 20px;
+							height: 20px;
+						}
+
+						&.active,
+						&.is-active {
+							.icon-checked {
+								&:before {
+									width: 18px;
+									height: 18px;
+									margin-top: -2px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//hyper-launch-checkout-confirmed.html
+	.checkout-pay-content {
+		.checkout-pay-confirmed {
+			.submit-button-box {
+				width: 100%;
+			}
+		}
+	}
+
+	.empty-address {
+		.address-form-container {
+			.form-group {
+				.checked-select {
+					i {
+						top: -3px !important;
+
+						&:before {
+							margin-top: 1px;
+						}
+					}
+
+					span {
+						margin: 0 0 0 6px;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+//checkout 优惠券模块样式优化  AD2-1581 8-13
+.order-summary-box {
+	.coupon-box {
+		.coupon-content {
+			.coupon-select {
+				.dropdown {
+					.sub-menu {
+						.viewport {
+							.overview {
+								ul {
+									padding: 8px 0 20px;
+
+									li {
+										height: 42px;
+										line-height: 42px;
+
+										// margin-bottom: 14px;
+										a {
+											div {
+												display: inline-block;
+												vertical-align: middle;
+												width: 180px;
+
+												span {
+													// display: inline-block;
+													line-height: 12px;
+													float: left;
+													font-size: 12px;
+													font-family: "PingFangSC-Regular", "adihrg", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+
+													&:nth-child(1) {
+														margin-bottom: 4px;
+														color: #000000;
+													}
+
+													&:nth-child(2) {
+														color: #888888;
+													}
+												}
+											}
+
+											i {
+												margin-top: 0;
+											}
+										}
+
+										&.is-active {
+											a {
+												.icon-checked {
+													&:before {
+														margin-top: -45px;
+													}
+												}
+											}
+										}
+									}
+
+									li {
+										&.coupon-btn {
+											margin: 20px 0 0;
+											height: 32px;
+											line-height: 32px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//checkout 优惠券模块样式优化  end
+
+.dialog-payment {
+	.dialog-scroll-container {
+		.dialog {
+			.dialog-container {
+				.dialog-btn-wrap {
+					.btn-black {
+						background: #ffffff;
+						color: #000000;
+						border: 1px solid #000000;
+					}
+				}
+			}
+		}
+	}
+}
+
+.select-payment-dialog {
+	.dialog-container {
+		.select-payment-container {
+			>ul {
+				>li {
+					span {
+						.icon {
+							vertical-align: initial;
+
+							&:before {
+								font-size: 17px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1023px) {
+
+	.checkout-new-coupon-code-dialog .is-active .icon-new-circle-check,
+	.select-payment-dialog .is-active .icon-new-circle-check {
+		background: transparent !important;
+
+		&:before {
+			content: "\E81B";
+		}
+	}
+
+	.checkout-new-coupon-code-dialog {
+		.dialog-scroll-container {
+			.dialog-scroll {
+				>div {
+					.dialog {
+						.dialog-container {
+							.coupon-code-content {
+								.coupons {
+									.coupon-box {
+										.coupons-item {
+											.coupon-item-box {
+												.icon-new-circle-check {
+													&:before {
+														font-size: 17px;
+													}
+												}
+											}
+										}
+									}
+
+									.no-coupon {
+										.icon-new-circle-check {
+											&:before {
+												font-size: 17px;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//7-13 checkout地址逻辑优化
+.delivery-address {
+	.payment-method-con {
+		margin-bottom: 20px;
+
+		.order-title {
+			display: inline-block;
+		}
+
+		.delivery-address-top {
+			display: inline-block;
+			float: right;
+			margin-top: 6px;
+
+			.add-address-link {
+				&:hover {
+					color: #0280C3;
+				}
+			}
+		}
+	}
+}
+
+.address-form-box {
+	.form-group {
+		.control-label {
+			.font-icon-red {
+				color: red;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+@media (max-width:1023px) {
+	.address-form-dialog {
+		.dialog-container {
+			.address-form-container {
+				.form-group {
+					.control-label {
+						.font-icon-red {
+							color: red;
+							display: inline-block;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.empty-address {
+		.address-form-container {
+			margin-top: -20px;
+		}
+	}
+
+	.font-icon-red {
+		display: inline-block;
+		color: red;
+	}
+}
+
+.payment-method {
+	.order-title-bottom {
+		margin-bottom: 0;
+	}
+}
+
+.events-add-address-btn {
+	background: initial !important;
+	background-color: initial !important;
+}
+
+//checkout地址逻辑优化 end
+
+
+.checkout-new-coupon-code-dialog {
+	.dialog-scroll-container {
+		.dialog-scroll {
+			>div {
+				.dialog {
+					.dialog-container {
+						.title {
+							.coupon-tab {
+								span {
+									&.is-active {
+										&:after {
+											background: #000000;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//头部在线客服
+.header-simple {
+	.header-container {
+		.header-simple-right {
+			>span {
+				a {
+					color: #000000;
+				}
+			}
+		}
+	}
+}
+
+.btn-black {
+	&:hover {
+		background: #000000;
+	}
+}
+
+//AD2-1851  按钮样式修改
+@media (max-width:1023px) {
+	.checkout-pay-content {
+		.view-detail-mes {
+			.successfully-detail {
+				background: #000;
+			}
+		}
+	}
+}
+
+.header-simple {
+	.header-container {
+		.header-simple-right {
+			>span {
+				a {
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}
+
+//蓝色字体变黑加下划线
+.order-help-box {
+	.help-link {
+		a {
+			color: #000;
+			text-decoration: underline;
+
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+}
+
+.submit-button-box {
+	>div {
+		a {
+			color: #000;
+			text-decoration: underline;
+
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+}
+
+.delivery-address {
+	.delivery-address-top {
+		.add-address-link {
+			color: #000;
+			text-decoration: underline;
+
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+
+	.add-address-list {
+		.distribution-list {
+			.edit-box {
+				.edit-button {
+					color: #000;
+					text-decoration: underline;
+
+					&:hover {
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+}
+
+.checkout-pay-content {
+	.view-detail-mes {
+		.view-detail {
+
+			// color: #000;
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+}
+
+.evaluation-integral {
+	>p {
+		a {
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+}
+
+.checkout-pay-content {
+	.wechat-code {
+		.wechat-text {
+			.other-method {
+				color: #000;
+				text-decoration: underline;
+
+				&:hover {
+					color: #000;
+				}
+			}
+		}
+	}
+}
+
+.address-form-box {
+	.add-address-btn {
+		>.color-bright-blue {
+			border: 1.01565px solid #000;
+		}
+	}
+}
+
+.address-form-box {
+	.add-address-btn {
+		.event-save-return {
+			&:hover {
+				background: #fff;
+			}
+		}
+	}
+}

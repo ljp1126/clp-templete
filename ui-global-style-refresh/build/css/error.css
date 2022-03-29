@@ -1,0 +1,48 @@
+.container {
+  padding-top: 0px;
+  position: relative;
+  min-height: 680px;
+  background-color: #eaede4;
+}
+.container .article-traffic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .article-traffic .sale-content {
+  margin-bottom: 12%;
+}
+.container .article-traffic .sale-content .text-box h3 {
+  font-size: 24px;
+  letter-spacing: 10px;
+  font-weight: bold;
+  padding: 0 0 0 20px;
+  line-height: 30px;
+  color: #000;
+  text-align: center;
+}
+.container .article-traffic .sale-content .text-box p {
+  font-size: 20px;
+  padding: 34px 0 0px;
+  color: #333;
+  line-height: 32px;
+  max-width: 100%;
+  text-align: center;
+}
+.container .article-traffic .sale-content .btn-box {
+  margin-top: 50px;
+  text-align: center;
+}
+.container .article-traffic .sale-content .btn-box .btn {
+  width: 200px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 16px;
+  margin: 0 auto;
+}
+.container .article-traffic .sale-content .btn-box .btn:hover {
+  background: #000;
+}
+.container .article-traffic .sale-content .btn-box .btn span:after {
+  top: -1px;
+}

@@ -1,0 +1,194 @@
+@charset "utf-8";
+.banner-show {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.banner-show .invite-img img {
+  width: 100%;
+}
+.memeber-box {
+  margin-bottom: 50px;
+}
+.memeber-box .activity-rules {
+  max-width: 934px;
+  width: 100%;
+  margin: 0 auto 40px;
+}
+.memeber-box .activity-rules .tit {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+.memeber-box .activity-rules .rules-con p {
+  font-size: 16px;
+  color: #333333;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+.memeber-box .activity-rules .rules-con p:nth-child(1) {
+  line-height: 24px;
+}
+.memeber-box .activity-rules .rules-con p:last-child {
+  margin-bottom: 0;
+}
+.memeber-box .activity-rules .new-invite-rules {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+.memeber-box .activity-rules .new-invite-rules .rules-title {
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.memeber-box .activity-rules .new-invite-rules .rule-list {
+  margin: 0 auto;
+  font-weight: bold;
+}
+.memeber-box .activity-rules .new-invite-rules .rule-list td {
+  padding: 20px 30px;
+  line-height: 20px;
+  border: 1px solid #000;
+}
+.memeber-box .activity-rules .new-invite-rules .rule-list td p {
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+.memeber-box .activity-rules .new-invite-rules .rule-list .rules-title td {
+  background-color: #000;
+  color: #fff;
+}
+.memeber-box .share-way {
+  max-width: 934px;
+  width: 100%;
+  margin: 0 auto 24px;
+}
+.memeber-box .share-way .tit {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 16px;
+}
+.memeber-box .share-way ul {
+  font-size: 0;
+}
+.memeber-box .share-way ul li {
+  display: inline-block;
+  margin-right: 24px;
+  cursor: pointer;
+}
+.memeber-box .share-way ul li:last-child {
+  margin-right: 0;
+}
+.memeber-box .share-way ul li i {
+  font-style: normal !important;
+  color: #000;
+  font-size: 40px;
+}
+.shareLink .dialog-scroll-container .dialog {
+  overflow: hidden;
+  border: none;
+  max-width: 483px;
+}
+.shareLink .dialog-scroll-container .dialog .dialog-container {
+  padding: 32px 24px 24px;
+}
+.shareLink .dialog-scroll-container .dialog .dialog-container .title {
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.shareLink .dialog-scroll-container .dialog .dialog-container .txt-info {
+  background: #F4F4F4;
+  min-height: 114px;
+  padding: 16px;
+}
+.shareLink .dialog-scroll-container .dialog .dialog-container .txt-info p {
+  font-size: 16px;
+  color: #666666;
+}
+.shareLink .dialog-scroll-container .dialog .dialog-container .copyLink {
+  display: block;
+  margin-top: 24px;
+  text-decoration: underline;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 12px;
+}
+@media (max-width: 1023px) {
+  .container {
+    padding-top: 50px;
+  }
+  .banner-show {
+    margin-bottom: 43px;
+  }
+  .memeber-box {
+    margin-bottom: 46px;
+  }
+  .memeber-box .activity-rules {
+    margin-bottom: 56px;
+    padding: 0 20px;
+  }
+  .memeber-box .activity-rules .tit {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .memeber-box .activity-rules .rules-con p {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  .memeber-box .activity-rules .rules-con p:nth-child(1) {
+    line-height: 20px;
+  }
+  .memeber-box .share-way {
+    margin-bottom: 0;
+    padding: 0 20px;
+  }
+  .memeber-box .share-way .tit {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .shareLink .dialog-scroll-container .dialog {
+    overflow: hidden;
+    border: none;
+    max-width: 343px;
+    border-radius: 8px;
+    margin: 0;
+  }
+  .shareLink .dialog-scroll-container .dialog .dialog-container {
+    background: #FFFFFF;
+    padding: 44px 20px 27px;
+  }
+  .shareLink .dialog-scroll-container .dialog .dialog-container .title {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .shareLink .dialog-scroll-container .dialog .dialog-container .txt-info {
+    min-height: 118px;
+    padding: 15px 10px;
+  }
+  .shareLink .dialog-scroll-container .dialog .dialog-container .copyLink {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 373px) {
+  .shareLink .dialog-scroll-container .dialog {
+    max-width: 300px;
+  }
+  .shareLink .dialog-scroll-container .dialog .dialog-container {
+    background: #FFFFFF;
+    padding: 40px 16px 26px;
+  }
+  .shareLink .dialog-scroll-container .dialog .dialog-container .title {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .shareLink .dialog-scroll-container .dialog .dialog-container .txt-info {
+    min-height: 118px;
+    padding: 15px 10px;
+  }
+  .shareLink .dialog-scroll-container .dialog .dialog-container .copyLink {
+    margin-top: 20px;
+  }
+}

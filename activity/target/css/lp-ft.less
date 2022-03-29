@@ -1,0 +1,194 @@
+.article {
+	position: relative;
+
+	img {
+		width: 100%;
+		display: block;
+	}
+	.btn{
+		position: absolute;
+		min-width: auto;
+	}
+
+	.gif1{
+		position: absolute;
+		width:100%;
+		top:0;
+	}
+
+	.gif-v{
+		z-index: 1;
+	}
+	.gif2{
+		position: absolute;
+		width:50.25%;
+		top:19%;
+
+	}
+	.mob-shoes{
+		display: none;
+	}
+	.mob-text{
+		display: none;
+	}
+
+	.gif3{
+		position: absolute;
+bottom: 43%;
+left: 0%;
+width: 42.1%;
+	}
+
+	.gif4{
+		position: absolute;
+     bottom: 18%;
+     left: 10.9%;
+     width: 52%;
+	}
+}
+.article-product{
+	background-image: url('../static/images/lp-ft/pc-9.jpg');
+	background-size: contain;
+	.lp-product{
+		display: none;
+		&.active{
+			display: block
+		}
+	}
+}
+
+.section-link-3{
+	.btn{
+		bottom: 18%;
+       left: 72%;
+	}
+}
+
+
+.section-link-re{
+	.btn{
+        left:78%;
+        bottom:11%;
+	}
+}
+
+.section-link-6{
+	.btn{
+		bottom:6%;
+		left:46%;
+	}
+}
+
+.section-link-7{
+    .btn-one{
+		bottom:24%;
+       left: 36%;
+	}
+    .item-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width:30%;
+        left:50%;
+        transform: translate(-50%);
+        bottom: 0;
+    }
+	.btn1{
+
+        position: relative;
+        margin-right: 140px;
+
+	}
+
+    .btn2{
+        position: relative;
+
+	}
+
+}
+
+@media (max-width:768px) {
+	.article-product{
+		background-image: url('../static/images/lp-ft/mob-9.jpg');
+	}
+
+	.article {
+		.btn{
+			position: absolute;
+		}
+		.gif2{
+			position: absolute;
+			top: 0;
+			width:100%;
+		}
+		.mob-shoes{
+			display: block;
+			position: absolute;
+			top: 35%;
+			z-index: 2;
+		}
+
+		.gif3{
+	       position: absolute;
+		   bottom:2%;
+		   height: 34%;
+          width: 85%;
+
+		}
+
+		.mob-text{
+            display: block;
+            position: absolute;
+            bottom: 7%;
+            left: 43%;
+            width: 50%;
+            z-index: 2;
+		}
+
+		.gif4{
+			position: absolute;
+ 		   bottom:29%;
+ 		   width:92%;
+		   right: 0;
+		}
+
+	}
+
+
+	.section-link-3{
+		.btn{
+			bottom:5%;
+			left:33%;
+		}
+	}
+
+	.section-link-re{
+		.btn{
+            display:none;
+		}
+	}
+
+	.section-link-6{
+		.btn{
+			bottom:2%;
+			left:33%;
+		}
+	}
+
+	.section-link-7{
+        .btn-one{
+			bottom: 10%;
+            left: 59%;
+		}
+       .btn1{
+           position: relative;
+           margin-right: 25px;
+       }
+       .btn2{
+           position: relative;
+       }
+	}
+
+
+}

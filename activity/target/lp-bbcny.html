@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+	<style>
+	.container img {
+	  display: block;
+	  width: 100%;
+	}
+	.pic-p {
+	  position: relative;
+	}
+	.pic-p > a {
+	  position: absolute;
+	}
+	.video-lists {
+	  max-width: 1300px;
+	  margin: 0 auto;
+	}
+	.video-lists .video-wrap {
+	  position: relative;
+	  text-align: center;
+	}
+	.video-lists .video-cursor {
+	  position: absolute;
+	  left: 50%;
+	  top: 38.8%;
+	  width: 12.5%;
+	  height: 22.2%;
+	  display: block;
+	  border-radius: 50%;
+	  -webkit-transform: translateX(-50%);
+	  -ms-transform: translateX(-50%);
+	  transform: translateX(-50%);
+	}
+	.video-lists > .video-wrap {
+	  float: left;
+	  width: 75.076923%;
+	}
+	.video-lists .video-right {
+	  float: right;
+	  width: 24.461538%;
+	}
+	.video-lists .video-right .video-wrap {
+	  width: 100%;
+	}
+	.video-lists .video-right .video-wrap:nth-child(2) {
+	  margin: 1.4% 0;
+	}
+	.video-lists .video-right .video-wrap .video-cursor {
+	  width: 17%;
+	  height: 29%;
+	  top: 35%;
+	}
+	.a1 {
+	  top: 8%;
+	  left: 22.8%;
+	  width: 11%;
+	  height: 81%;
+	}
+	.a2 {
+	  top: 8%;
+	  left: 37%;
+	  width: 11%;
+	  height: 81%;
+	}
+	.a3 {
+	  top: 8%;
+	  left: 51.63%;
+	  width: 11%;
+	  height: 81%;
+	}
+	.a4 {
+	  top: 8%;
+	  left: 66%;
+	  width: 11%;
+	  height: 81%;
+	}
+	.a-class {
+	  position: absolute;
+	  width: 12px;
+	  height: 12px;
+	  right: 3%;
+	}
+	#a1 {
+	  top: -10%;
+	}
+	#a2 {
+	  top: -18%;
+	}
+	#a3 {
+	  top: -12%;
+	}
+	#a4 {
+	  top: -18%;
+	}
+	.scale-pc {
+	  overflow: hidden;
+	}
+	.scale-pc > div {
+	  overflow: hidden;
+	  float: left;
+	}
+	.scale-pc .pc-left {
+	  width: 44.635416666666666%;
+	}
+	.scale-pc .pc-left div {
+	  float: left;
+	  overflow: hidden;
+	}
+	.scale-pc .pc-left .left1 {
+	  width: 62.31038506%;
+	}
+	.scale-pc .pc-left .left2 {
+	  width: 37.689614935822635%;
+	}
+	.scale-pc .pc-right {
+	  width: 55.36458333333333%;
+	}
+	.scale-pc-4 .pc-mid {
+	  width: 29.322916666666665%;
+	}
+	.scale-pc-4 .pc4-right {
+	  width: 26.04166666666667%;
+	}
+	.lp-nav {
+	  /* position: absolute; */
+	  width: 100%;
+	  z-index: 2;
+	}
+	.lp-fixed-nav {
+	  position: fixed;
+	  top: 80px;
+	  z-index: 10;
+	}
+	.link-1 {
+	  top: 26.48%;
+	  left: 16.42%;
+	  width: 23.07%;
+	  height: 42.55%;
+	}
+	.link-2 {
+	  top: 9.84%;
+	  left: 43.15%;
+	  width: 18.22%;
+	  height: 32.71%;
+	}
+	.link-3 {
+	  top: 10.56%;
+	  left: 63.56%;
+	  width: 19.08%;
+	  height: 31.26%;
+	}
+	.link-4 {
+	  top: 45.88%;
+	  left: 43.15%;
+	  width: 17.15%;
+	  height: 41.97%;
+	}
+	.link-5 {
+	  top: 45.59%;
+	  left: 65.69%;
+	  width: 16.36%;
+	  height: 43.85%;
+	}
+	.link-6 {
+	  top: 74.24%;
+	  left: 17.82%;
+	  width: 20.74%;
+	  height: 7.81%;
+	}
+	.link-7 {
+	  top: 35.57%;
+	  left: 17.55%;
+	  width: 21.01%;
+	  height: 27.61%;
+	}
+	.link-8 {
+	  top: 5.18%;
+	  left: 44.5%;
+	  width: 15%;
+	  height: 30.49%;
+	}
+	.link-9 {
+	  top: 5.18%;
+	  left: 66%;
+	  width: 15%;
+	  height: 30.11%;
+	}
+	.link-10 {
+	  top: 37.68%;
+	  left: 44.5%;
+	  width: 15%;
+	  height: 27.71%;
+	}
+	.link-11 {
+	  top: 37.01%;
+	  left: 66%;
+	  width: 15%;
+	  height: 28.38%;
+	}
+	.link-12 {
+	  top: 68.36%;
+	  left: 44.5%;
+	  width: 15%;
+	  height: 28.48%;
+	}
+	.link-13 {
+	  top: 80.92%;
+	  left: 17.95%;
+	  width: 20.74%;
+	  height: 4.99%;
+	}
+	.link-14 {
+	  top: 30.97%;
+	  left: 18.15%;
+	  width: 20.21%;
+	  height: 37%;
+	}
+	.link-15 {
+	  top: 7.25%;
+	  left: 44.5%;
+	  width: 15%;
+	  height: 41.74%;
+	}
+	.link-16 {
+	  top: 8.05%;
+	  left: 66%;
+	  width: 15%;
+	  height: 40.27%;
+	}
+	.link-17 {
+	  top: 52.21%;
+	  left: 44.5%;
+	  width: 15%;
+	  height: 38.52%;
+	}
+	.link-18 {
+	  top: 51.41%;
+	  left: 66%;
+	  width: 15%;
+	  height: 39.87%;
+	}
+	.link-19 {
+	  top: 78%;
+	  left: 18.02%;
+	  width: 20.5%;
+	  height: 6%;
+	}
+	.link-20 {
+	  top: 24.39%;
+	  left: 16.02%;
+	  width: 22.81%;
+	  height: 51.93%;
+	}
+	.link-21 {
+	  top: 22.98%;
+	  left: 44.35%;
+	  width: 15.69%;
+	  height: 55.61%;
+	}
+	.link-22 {
+	  top: 22.11%;
+	  left: 66%;
+	  width: 15%;
+	  height: 54.74%;
+	}
+	.link-23 {
+	  top: 82.28%;
+	  left: 39.63%;
+	  width: 20.55%;
+	  height: 8.77%;
+	}
+	.hidden {
+	  display: none;
+	}
+	@media screen and (max-width: 1024px) {
+	  .video-lists {
+		max-width: 100%;
+	  }
+	  .video-lists > .video-wrap {
+		float: none;
+		width: 100%;
+	  }
+	  .video-lists .video-right {
+		float: none;
+		width: 100%;
+		padding: 0 0.3%;
+		overflow: hidden;
+	  }
+	  .video-lists .video-right .video-wrap {
+		float: left;
+		width: 33.33%;
+		padding: 0.65% 0.3% 0;
+	  }
+	  .video-lists .video-right .video-wrap:nth-child(2) {
+		width: 33.34%;
+		margin: 0;
+	  }
+	  .video-lists .video-right .video-wrap .video-cursor {
+		top: 36%;
+	  }
+	  .lp-fixed-nav {
+		top: 59px;
+	  }
+	  .a1 {
+		top: 10%;
+		left: 2.8%;
+		width: 20%;
+	  }
+	  .a2 {
+		top: 10%;
+		left: 27%;
+		width: 20%;
+	  }
+	  .a3 {
+		top: 10%;
+		left: 52.63%;
+		width: 20%;
+	  }
+	  .a4 {
+		top: 10%;
+		left: 77%;
+		width: 20%;
+	  }
+	  #a1,
+	  #a2,
+	  #a3,
+	  #a4 {
+		top: -15%;
+	  }
+	  .link-1 {
+		top: 8.27%;
+		left: 23.43%;
+		width: 52.82%;
+		height: 22.58%;
+	  }
+	  .link-2 {
+		top: 36.26%;
+		left: 5.52%;
+		width: 42.81%;
+		height: 22%;
+	  }
+	  .link-3 {
+		top: 36.26%;
+		left: 51.52%;
+		width: 42.81%;
+		height: 22%;
+	  }
+	  .link-4 {
+		top: 64%;
+		left: 5.52%;
+		width: 40.81%;
+		height: 30%;
+	  }
+	  .link-5 {
+		top: 64%;
+		left: 52.52%;
+		width: 40.81%;
+		height: 31%;
+	  }
+	  .link-6m {
+		top: 73%;
+		left: 23.52%;
+		width: 53%;
+		height: 20%;
+	  }
+	  .link-7 {
+		top: 5.57%;
+		left: 29.55%;
+		width: 40%;
+		height: 17%;
+	  }
+	  .link-8 {
+		top: 25.18%;
+		left: 11.5%;
+		width: 32%;
+		height: 21.5%;
+	  }
+	  .link-9 {
+		top: 25.18%;
+		left: 56.5%;
+		width: 32%;
+		height: 21.5%;
+	  }
+	  .link-10 {
+		top: 50.18%;
+		left: 11.5%;
+		width: 32%;
+		height: 21.5%;
+	  }
+	  .link-11 {
+		top: 50.18%;
+		left: 56.5%;
+		width: 32%;
+		height: 21.5%;
+	  }
+	  .link-12 {
+		top: 76.18%;
+		left: 11.5%;
+		width: 32%;
+		height: 21.5%;
+	  }
+	  .link-13m {
+		top: 72.18%;
+		left: 23.5%;
+		width: 53%;
+		height: 19.5%;
+	  }
+	  .link-14 {
+		top: 8.57%;
+		left: 28.55%;
+		width: 42%;
+		height: 21%;
+	  }
+	  .link-15 {
+		top: 32.5%;
+		left: 11.5%;
+		width: 32%;
+		height: 29.5%;
+	  }
+	  .link-16 {
+		top: 32.5%;
+		left: 56.5%;
+		width: 32%;
+		height: 29.5%;
+	  }
+	  .link-17 {
+		top: 66%;
+		left: 11.5%;
+		width: 32%;
+		height: 29.5%;
+	  }
+	  .link-18 {
+		top: 66%;
+		left: 56.5%;
+		width: 32%;
+		height: 29.5%;
+	  }
+	  .link-19m {
+		top: 72%;
+		left: 23.5%;
+		width: 53%;
+		height: 20.5%;
+	  }
+	  .link-20 {
+		top: 9.39%;
+		left: 19%;
+		width: 61%;
+		height: 27%;
+	  }
+	  .link-21 {
+		top: 39.98%;
+		left: 10.35%;
+		width: 34.69%;
+		height: 35.61%;
+	  }
+	  .link-22 {
+		top: 39.98%;
+		left: 56.5%;
+		width: 34.69%;
+		height: 35.61%;
+	  }
+	  .link-23 {
+		top: 84%;
+		left: 23.63%;
+		width: 52.5%;
+		height: 6.5%;
+	  }
+	}
+
+	.article{
+		position: relative;
+	}
+	.blank-img img{
+		width: 100%;
+	}
+	.conten-box{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	#wrapper{
+		overflow: hidden;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+			<!-- 胜利之兆 -->
+			<article class="article article1" style="overflow: hidden;">
+				<div>
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-bbcny/banner1.jpg"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/banner1.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-bbcny/banner1-m.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-bbcny/banner1-m.jpg"}}' 
+					/>
+						
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-bbcny/banner2.jpg"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/banner2.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-bbcny/banner2-m.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-bbcny/banner2-m.jpg"}}' 
+					/>
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-bbcny/banner3.jpg"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/banner3.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-bbcny/banner3-m.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-bbcny/banner3-m.jpg"}}' 
+					/>
+				</div>
+			</article>
+			<!-- 精彩片段 -->
+			<article class="article article2" style="overflow: hidden;">
+				<img src="images/blank.gif"
+					lazysrc="../static/images/lp-bbcny/banner4.jpg"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/banner4.jpg"},
+					"medium":{"high":"", "normal":"../static/images/lp-bbcny/banner4-m.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-bbcny/banner4-m.jpg"}}' 
+				/>
+
+				<div class="video-lists float-clearfix">
+					<div class="video-wrap">
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-bbcny/v-poster1.jpg"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/v-poster1.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-bbcny/v-poster1-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-bbcny/v-poster1-m.jpg"}}' 
+						/>
+
+						<a class="video-cursor e-lp-video-btn" data-video-code="5228167CB0DDF76E9C33DC5901307461"></a>
+					</div>
+					<div class="video-right">
+						<div class="video-wrap">
+							<img src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/v-poster2.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-bbcny/v-poster2-m.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-bbcny/v-poster2-m.jpg"}}' 
+							/>
+							<a class="video-cursor e-lp-video-btn" data-video-code="9B09CCB5894E6F549C33DC5901307461"></a>
+						</div>
+						<div class="video-wrap">
+							<img src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/v-poster3.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-bbcny/v-poster3-m.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-bbcny/v-poster3-m.jpg"}}' 
+							/>
+							<a class="video-cursor e-lp-video-btn" data-video-code="40FC5BF9C45FCFB49C33DC5901307461"></a>
+						</div>
+						<div class="video-wrap">
+							<img src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/v-poster4.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-bbcny/v-poster4-m.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-bbcny/v-poster4-m.jpg"}}' 
+							/>
+							<a class="video-cursor e-lp-video-btn" data-video-code="40FC5BF9C45FCFB49C33DC5901307461"></a>
+						</div>
+					</div>
+				</div>
+			</article>
+			<!-- 义 -->
+			<article class="article article3" style="overflow: hidden;">
+				<img class="blank-img" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/blank/article3.png"},
+					"medium":{"high":"", "normal":"../static/images/lp-bbcny/blank/article3-m.png"},
+					"small":{"high":"", "normal":"../static/images/lp-bbcny/blank/article3-m.png"}}' 
+				/>
+				<div class="conten-box">
+					<div class="pic-p lp-nav">
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-bbcny/banner5.jpg"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/banner5.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-bbcny/banner5-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-bbcny/banner5-m.jpg"}}' 
+						/>
+						<a class="a1"></a>
+						<a class="a2"></a>
+						<a class="a3"></a>
+						<a class="a4"></a>
+					</div>
+					<div class="pic-p">
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-bbcny/banner6.jpg"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/banner6.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-bbcny/banner6-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-bbcny/banner6-m.jpg"}}' 
+						/>
+						<span class="a-class" id="a1"></span>
+					</div>
+					<div class="scale-box">
+						<div class="scale-pc none-sm">
+							<div class="pc-left events-scale">
+								<div class="left1">
+									<img src="../static/images/lp-bbcny/big1-pc1.jpg" />
+								</div>
+								<div class="left2">
+									<img src="../static/images/lp-bbcny/big1-pc2.jpg" />
+									<img src="../static/images/lp-bbcny/big1-pc3.jpg" />
+								</div>
+							</div>
+							<div class="pc-right">
+								<img src="../static/images/lp-bbcny/big1-pc-right.jpg" />
+							</div>
+						</div>
+						<img class="none block-sm" src="../static/images/lp-bbcny/banner7-m.jpg" />
+					</div>
+					<!-- 系列推荐 -->
+					<div class="pic-p">
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-bbcny/pro1.jpg"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/pro1.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-bbcny/pro1-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-bbcny/pro1-m.jpg"}}' 
+						/>
+						<a href="https://www.adidas.com.cn/item/AH2117" class="link-1"></a>
+						<a href="https://www.adidas.com.cn/item/AC8407" class="link-2"></a>
+						<a href="https://www.adidas.com.cn/item/AC7826" class="link-3"></a>
+						<a href="https://www.adidas.com.cn/item/CG0877" class="link-4"></a>
+						<a href="https://www.adidas.com.cn/item/CG0880" class="link-5"></a>
+						<a href="https://www.adidas.com.cn/basketball_jamesharden" class="link-6 none-sm"></a>
+					</div>
+					<div class="pic-p none block-sm">
+						<img src="../static/images/lp-bbcny/pro1-banner-m.jpg" alt="">
+						<a href="https://www.adidas.com.cn/basketball_jamesharden" class="link-6m"></a>
+					</div>
+				</div>
+			</article>
+			<!-- 忠 -->
+			<article class="article article4" style="overflow: hidden;">
+				<img class="blank-img" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/blank/article4.png"},
+					"medium":{"high":"", "normal":"../static/images/lp-bbcny/blank/article4-m.png"},
+					"small":{"high":"", "normal":"../static/images/lp-bbcny/blank/article4-m.png"}}' 
+				/>
+
+				<div class="conten-box">
+					<div class="pic-p">
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-bbcny/banner8.jpg"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/banner8.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-bbcny/banner8-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-bbcny/banner8-m.jpg"}}' 
+						/>
+						<span class="a-class" id="a2"></span>
+					</div>
+					<div class="scale-box">
+						<div class="scale-pc none-sm">
+							<div class="pc-left events-scale">
+								<div class="left1">
+									<img src="../static/images/lp-bbcny/big2-pc1.jpg" />
+								</div>
+								<div class="left2">
+									<img src="../static/images/lp-bbcny/big2-pc2.jpg" />
+									<img src="../static/images/lp-bbcny/big2-pc3.jpg" />
+								</div>
+							</div>
+							<div class="pc-right">
+								<img src="../static/images/lp-bbcny/big2-pc-right.jpg" />
+							</div>
+						</div>
+						<img class="none block-sm" src="../static/images/lp-bbcny/banner9-m.jpg" />
+					</div>
+					<!-- 系列推荐 -->
+					<div class="pic-p">
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-bbcny/pro2.jpg"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/pro2.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-bbcny/pro2-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-bbcny/pro2-m.jpg"}}' 
+						/>
+						<a href="https://www.adidas.com.cn/item/CQ0846" class="link-7"></a>
+						<a href="https://www.adidas.com.cn/item/CG0873" class="link-8"></a>
+						<a href="https://www.adidas.com.cn/item/CG0869" class="link-9"></a>
+						<a href="https://www.adidas.com.cn/item/CG0870" class="link-10"></a>
+						<a href="https://www.adidas.com.cn/item/CG0872" class="link-11"></a>
+						<a href="https://www.adidas.com.cn/item/CG0867" class="link-12"></a>
+						<a href="https://www.adidas.com.cn/basketball_derrickrose" class="link-13 none-sm"></a>
+					</div>
+					<div class="pic-p none block-sm">
+						<img src="../static/images/lp-bbcny/pro2-banner-m.jpg" alt="">
+						<a href="https://www.adidas.com.cn/basketball_derrickrose" class="link-13m"></a>
+					</div>
+				</div>
+			</article>
+			<!-- 信 -->
+			<article class="article article5" style="overflow: hidden;">
+				<img class="blank-img" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/blank/article5.png"},
+					"medium":{"high":"", "normal":"../static/images/lp-bbcny/blank/article5-m.png"},
+					"small":{"high":"", "normal":"../static/images/lp-bbcny/blank/article5-m.png"}}' 
+				/>
+
+				<div class="conten-box">
+					<div class="pic-p">
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-bbcny/banner10.jpg"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/banner10.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-bbcny/banner10-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-bbcny/banner10-m.jpg"}}' 
+						/>
+						<span class="a-class" id="a3"></span>
+					</div>
+					<div class="scale-box">
+						<div class="scale-pc none-sm">
+							<div class="pc-left events-scale">
+								<div class="left1">
+									<img src="../static/images/lp-bbcny/big3-pc1.jpg" />
+								</div>
+								<div class="left2">
+									<img src="../static/images/lp-bbcny/big3-pc2.jpg" />
+									<img src="../static/images/lp-bbcny/big3-pc3.jpg" />
+								</div>
+							</div>
+							<div class="pc-right">
+								<img src="../static/images/lp-bbcny/big3-pc-right.jpg" />
+							</div>
+						</div>
+						<img class="none block-sm" src="../static/images/lp-bbcny/banner11.jpg" />
+					</div>
+					<!-- 系列推荐 -->
+					<div class="pic-p">
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-bbcny/pro3.jpg"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/pro3.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-bbcny/pro3-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-bbcny/pro3-m.jpg"}}' 
+						/>
+						<a href="https://www.adidas.com.cn/item/CQ0469" class="link-14"></a>
+						<a href="https://www.adidas.com.cn/item/CG0876" class="link-15"></a>
+						<a href="https://www.adidas.com.cn/item/CG0875" class="link-16"></a>
+						<a href="https://www.adidas.com.cn/item/CZ1342" class="link-17"></a>
+						<a href="https://www.adidas.com.cn/item/CY9078" class="link-18"></a>
+						<a href="https://www.adidas.com.cn/basketball_damianlillard" class="link-19 none-sm"></a>
+					</div>
+					<div class="pic-p none block-sm">
+						<img src="../static/images/lp-bbcny/pro3-banner-m.jpg" alt="">
+						<a href="https://www.adidas.com.cn/basketball_damianlillard" class="link-19m"></a>
+					</div>
+				</div>
+
+			</article>
+			<!-- 信 -->
+			<article class="article article6" style="overflow: hidden;">
+				<img class="blank-img" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/blank/article6.png"},
+					"medium":{"high":"", "normal":"../static/images/lp-bbcny/blank/article6-m.png"},
+					"small":{"high":"", "normal":"../static/images/lp-bbcny/blank/article6-m.png"}}' 
+				/>
+
+				<div class="conten-box">
+					<div class="pic-p">
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-bbcny/banner12.jpg"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/banner12.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-bbcny/banner12-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-bbcny/banner12-m.jpg"}}' 
+						/>
+						<span class="a-class" id="a4"></span>
+					</div>
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-bbcny/banner13.jpg"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/banner13.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-bbcny/banner13-m.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-bbcny/banner13-m.jpg"}}' 
+					/>
+					<!-- 系列推荐 -->
+					<div class="pic-p">
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-bbcny/pro4.jpg"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/pro4.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-bbcny/pro4-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-bbcny/pro4-m.jpg"}}' 
+						/>
+						<a href="https://www.adidas.com.cn/item/CG4812" class="link-20"></a>
+						<a href="https://www.adidas.com.cn/item/CZ1343" class="link-21"></a>
+						<a href="https://www.adidas.com.cn/item/CG0868" class="link-22"></a>
+						<a href="https://www.adidas.com.cn/basketball_cny" class="link-23"></a>
+					</div>
+				</div>
+			</article>
+
+			<article class="article article7" style="overflow: hidden;">
+				<img src="images/blank.gif"
+					lazysrc="../static/images/lp-bbcny/pro5.jpg"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-bbcny/pro5.jpg"},
+					"medium":{"high":"", "normal":"../static/images/lp-bbcny/pro5-m.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-bbcny/pro5-m.jpg"}}' 
+				/>
+				<a href="https://www.adidas.com.cn/basketball_dame4_customise" class="link-001"></a>
+
+				<style>
+					.article7{
+						position: relative;
+					}
+					.link-001{
+						width: 25%;
+						height: 20%;
+						position: absolute;
+						top: 31.5%;
+						left: 26%;
+					}
+
+
+					@media screen and (max-width: 1024px){
+						.link-001{
+							width: 26%;
+							height: 22%;
+							top: 42.5%;
+							left: 20%;
+						}
+					}
+				</style>
+			</article>
+		</section>
+
+		<%include _includes/modules/footer-no-back-top.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		<!-- 视频弹层 -->
+		<script id="video-dialog" type="text/template">
+			<div class="dialog">
+				<div class="dialog-container">
+					<div class="loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+					<div class="video-content">
+
+					</div>
+				</div>
+				<i class="icon icon-close dialog-close">&times;</i>
+			</div>
+		</script>
+	</div>
+<script type="text/javascript">
+$(function() {
+	// 换图 + 懒加载
+	$.spice.lazyLoad('img[lazysrc]', {
+		attr: 'lazysrc'
+	});
+	$.spice.tools.changeImageSrc({
+		callBack: function(img, self) {
+			$.spice.lazyLoad('img[lazysrc]', {
+				attr: self.opt.lazyData,
+				prestrain: 1
+			});
+		}
+	});
+
+
+	// 视频点击
+	$('.e-lp-video-btn').on('tap', function(e) {
+		e.preventDefault();
+		var _this = $(this),
+			videoCode =_this.data('videoCode');
+
+		openVideo(videoCode, 'true');
+	});
+
+	// 放大
+	$('.events-scale img').on('mouseenter', function() {
+		$(this).css({ 'transition': 'transform 7.5s linear', 'transform': 'scale(1.3)' });
+		$(this).parent().parent().find('i').css({ 'transition': 'transform 1s linear', 'transform': 'rotate(180deg)' })
+	})
+
+	// 复原
+	$('.events-scale img').on('mouseleave', function() {
+		$(this).css({ 'transition': 'none', 'transform': 'none'});
+		$(this).parent().parent().find('i').css({ 'transition': 'transform 1s linear', 'transform': 'rotate(-180deg)'});
+	})
+
+	//吸顶悬浮窗
+	// $(window).scroll(function () {
+	// 	 var  lpNav = $(".lp-nav"),
+	// 	  	  lpNavTop1 = $(".lp-nav").offset().top,
+	// 	  	  lpNavTop2 = $(".lp-nav").next('div').offset().top,
+	// 	  	  footerTop = $('.footer').offset().top,
+	// 	  	  val = $(window).scrollTop();
+
+	// 	  	 if(val>=lpNavTop1){
+	// 	  	 	lpNav.addClass('lp-fixed-nav');
+	// 	  	 }
+	// 	  	 if(val<lpNavTop2){
+	// 	  	 	lpNav.removeClass('lp-fixed-nav');
+	// 	  	 }
+	// 	  	 if(val>=footerTop-$(window).height()){
+	// 				  lpNav.removeClass('lp-fixed-nav');
+	// 	  	 }
+	// })
+	
+		$('.lp-nav a').on('tap', function () {
+			var _this = $(this),
+				id = _this.attr('class').replace('a', ''),
+				offsetTop = $('#a' + id).offset().top;
+
+			$('html,body').animate({
+				scrollTop: offsetTop - $('.lp-nav').outerHeight(true)
+			}, 500);
+
+			return false;
+		});
+
+		$(window).on('scroll.adicolorNav', function() {
+			var windowScrollTop = $(window).scrollTop(),
+				headerH = $('.header-fixed').outerHeight(true),
+				$adicolorNav = $('.lp-nav'),
+				adicolorNavOffsetTop = $adicolorNav.parent().offset().top,
+				$footer = $('.footer'),
+				footerOffsetTop = $footer.offset().top;
+
+
+			if (windowScrollTop >= adicolorNavOffsetTop) {
+				$adicolorNav.addClass('lp-fixed-nav').css({
+					top: headerH-1,
+				});
+
+				$adicolorNav.parent().css({
+					'padding-top': $adicolorNav.outerHeight(true) + 1,
+				});
+				
+				if(windowScrollTop >= footerOffsetTop - $(window).height()){
+					$adicolorNav.addClass('none')
+				}else{
+					$adicolorNav.removeClass('none')
+				}
+			}else{
+				$adicolorNav.removeClass('lp-fixed-nav').css({
+					top: '',
+				});
+
+				$adicolorNav.parent().css({
+					'padding-top': '',
+				});
+			}
+
+			// 滚动页面，联动nav end
+
+
+		}).trigger('scroll.adicolorNav');
+
+});
+</script>
+</body>
+</html>

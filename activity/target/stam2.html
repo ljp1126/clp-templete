@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" type="text/css" href="css/adiclub.css"> -->
+	<%include _includes/js.html %>
+	<!-- <script type="text/javascript" src="js/adiclub.js"></script> -->
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+			<style>
+				.container.wx,
+				.container.app {
+					padding: 0 !important;
+				}
+
+				.article {
+					position: relative;
+				}
+
+				.article img {
+					width: 100%;
+					height: auto;
+					cursor: pointer;
+				}
+
+				.article-video .video-wrapper {
+					position: absolute;
+					width: 80%;
+					height: 100%;
+					left: 50%;
+					top:0;
+					transform: translateX(-50%);
+					cursor: pointer;
+				}
+
+				.video-box .video-content {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					top: 0;
+					left: 0;
+				}
+
+				.video-content .video {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					visibility: hidden;
+				}
+
+				.video-box.is-play .video-wrapper .video-content .video {
+					visibility: visible;
+				}
+				.link-pro{
+					position: absolute;
+					width: 80%;
+					height: 100%;
+					bottom: 0;
+					left: 50%;
+					transform: translateX(-50%);
+					display:flex;
+					justify-content: center;
+					flex-wrap: wrap;
+				}
+				.link-pro a{
+					width: 50%;
+					height: 100%;
+				}
+				.link-pro-3 a{
+					width: 33%;
+				}
+				@media (max-width:1024px) {
+					.article-video .video-wrapper {
+						width: 82%;
+					}
+					.swiper-box {
+						position: absolute;
+						width: 100%;
+						left: 0%;
+						top: 0;
+					}
+					.swiper-main{
+						width: 100%;
+					}
+					.swiper-main .swiper-slide{
+						padding: 0 5%;
+					}
+					.swiper-main .link{
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+					}
+
+					.swiper-button-prev {
+						background-image: url(https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/left.png) !important;
+						width: 18px;
+						height: 47px;
+						background-size: 18px 47px;
+						left: 7%;
+					}
+
+					.swiper-button-next {
+						background-image: url(https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/right.png) !important;
+						width: 18px;
+						height: 47px;
+						background-size: 18px 47px;
+						right: 7%;
+					}
+					.link-pro a{
+						width: 100%;
+						height: 50%;
+					}
+					
+				}
+			</style>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+				"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/pc-final_01.jpg"},
+				"medium":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob-final_01.jpg"},
+				"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob-final_01.jpg"}}' />
+			</article>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+				"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/pc-final_02.jpg"},
+				"medium":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob-final_02.jpg"},
+				"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob-final_02.jpg"}}' />
+			</article>
+			<article class="article article-video video-box none-sm">
+				<img lazysrc="https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/pc-final_03.jpg" src="https://img.adidas.com.cn/images/blank.gif" />
+				<div class="video-wrapper e-video e-play-video-new">
+					<div class="video-content"></div>
+					<a class="video-play" href="javascript:void(0)">
+						<span class="video-code" data-video-code="3193548E37FF12ED9C33DC5901307461"></span>
+					</a>
+				</div>
+			</article>
+			<article class="article article-video video-box none block-sm">
+				<img lazysrc="https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob-final_03.jpg" src="https://img.adidas.com.cn/images/blank.gif" />
+				<div class="video-wrapper e-video e-play-video-new">
+					<div class="video-content"></div>
+					<a class="video-play" href="javascript:void(0)">
+						<span class="video-code" data-video-code="444FFA90E0A130F19C33DC5901307461"></span>
+					</a>
+				</div>
+			</article>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/pc-final_04.jpg"},
+					"medium":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob-final_04.jpg"},
+					"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob-final_04.jpg"}}' />
+					<div class="link-pro">
+						<a href="https://www.adidas.com.hk/item/FX5502"></a>
+						<a href="https://www.adidas.com.hk/item/GV9800"></a>
+					</div>
+			</article>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/pc-final_05.jpg"},
+					"medium":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob-final_05.jpg"},
+					"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob-final_05.jpg"}}' />
+					<div class="link-pro">
+						<a href="https://www.adidas.com.hk/item/FX5679"></a>
+						<a href="https://www.adidas.com.hk/item/ FX5674"></a>
+					</div>
+			</article>
+			<article class="article none-sm">
+				<img lazysrc="https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/pc-final_06.jpg" src="https://img.adidas.com.cn/images/blank.gif" />
+				<div class="link-pro link-pro-3">
+					<a href="https://www.adidas.com.hk/item/FX5501"></a>
+					<a href="https://www.adidas.com.hk/item/FX5680"></a>
+					<a href="https://www.adidas.com.hk/item/FX5652"></a>
+				</div>
+			</article>
+			<article class="article article-swiper none block-sm">
+					<img lazysrc="https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob-final_06.jpg" src="https://img.adidas.com.cn/images/blank.gif" />
+				<div class="swiper-box">
+					<div class="swiper-container swiper-main">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="https://www.adidas.com.hk/item/FX5501"><img src="https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob1_06.png" />
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="https://www.adidas.com.hk/item/FX5680"><img src="https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob2_06.png" />
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="https://www.adidas.com.hk/item/FX5652"><img src="https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob3_06.png" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</article>
+			<article class="article ">
+				<a href="https://www.adidas.com.hk/stansmith/primegreen/all">
+					<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/pc-final_07.jpg"},
+					"medium":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob-final_07.jpg"},
+					"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob-final_07.jpg"}}' />
+				</a>
+			</article>
+			<article class="article ">
+				
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+				"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/pc-final_08.jpg"},
+				"medium":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob-final_08.jpg"},
+				"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/JAN/stan_smith/CLP-1/new/mob-final_08.jpg"}}' />
+			
+			</article>
+			<script type="text/javascript">
+				$(function() {
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+					var SwiperMain1 = new Swiper('.swiper-main', {
+						loop: true,
+						centeredSlides: false,
+						prevButton: '.swiper-button-prev',
+						nextButton: '.swiper-button-next',
+					})
+					var loadImgFun_index = function(imgArr, fn) {
+						var loadImgLen = 0,
+							errImgLen = 0;
+						var imgdefereds = [];
+						$(imgArr).each(function() {
+							var defered = $.Deferred();
+							$(this)
+								.on("load", function() {
+									defered.resolve();
+									loadImgLen++;
+								})
+								.on("error", function() {
+									defered.resolve();
+									errImgLen++;
+								});
+							if (this.complete)
+								setTimeout(function() {
+									defered.resolve();
+								}, 200);
+							imgdefereds.push(defered);
+						});
+						$.when.apply(null, imgdefereds).done(function() {
+							if (fn && $.isFunction(fn)) {
+								fn();
+							}
+						});
+					};
+					$(".e-video").each(function(index, el) {
+						$(el).addClass("home-video");
+						var videoCode = $(".video-code", el).data("video-code"),
+							videoId = "home_video_" + index;
+						loadImgFun_index($(".video-code img", el), function() {});
+						var bannerVideoId = videoCode;
+						var url = base + "/indexCCVideo.json";
+						var data = loxia.syncXhrGet(url, {
+							'bannerVideoId': bannerVideoId
+						});
+						var videoUrl = data.mp4VideoUrl;
+						var html = '<video class="video" id="' +
+							videoId +
+							'"  webkit-playsinline="true" playsInline="true"><source src="' +
+							videoUrl +
+							'" ></source></video>';
+						$(".video-content", el).html(html);
+					});
+					$(".e-play-video-new").on("tap", function() {
+						var _parent_article = $(this).parents(".article-video"),
+							_video_s = $(this).parents(".article-video").find(".video"),
+							_video = $(this)
+							.parents(".article-video")
+							.find(".video");
+						_parent_article.toggleClass("is-play");
+						if (_parent_article.hasClass("is-play")) {
+							for (var i = 0; i < _video_s.length; i++) {
+								_video_s.eq(i)[0].pause();
+							}
+							_video[0].play();
+							_video[0].addEventListener("ended", function() {
+								this.play();
+							});
+						} else {
+							_video[0].pause();
+						}
+					});
+				});
+			</script>
+		</section>
+
+		<%include _includes/modules/footer-no-back-top.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

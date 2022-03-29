@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* 模块一 */
+.article-employee-discounts-width {
+  max-width: 930px;
+  padding: 0;
+}
+/* 模块二*/
+.article-employee-discounts {
+  max-width: 930px;
+  padding-bottom: 50px;
+}
+.article-employee-discounts h3 {
+  font-size: 24px;
+  line-height: 24px;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 28px;
+}
+.article-employee-discounts h4 {
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ba021f;
+}
+.article-employee-discounts h5 {
+  font-size: 14px;
+  line-height: 12px;
+  font-weight: bold;
+}
+.article-employee-discounts p {
+  font-size: 12px;
+  line-height: 20px;
+}
+.article-employee-discounts ul a {
+  text-decoration: underline;
+}
+.article-employee-discounts ul span {
+  font-weight: bold;
+}
+.article-employee-discounts ul li:first-child {
+  padding-bottom: 11px;
+}
+.article-employee-discounts ul li:nth-child(2) {
+  padding-bottom: 10px;
+}
+.article-employee-discounts ul li:nth-child(3) {
+  padding-bottom: 8px;
+}
+.article-employee-discounts ul li:nth-child(4) {
+  padding-bottom: 13px;
+}
+.article-employee-discounts .employee-discounts-rule h4 {
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .article-employee-discounts {
+    margin: 0 20px;
+    padding-bottom: 36px;
+  }
+  .article-employee-discounts h3 {
+    text-align: left;
+    padding: 30px 0 20px 0;
+  }
+  .article-employee-discounts h5 {
+    padding: 20px 0 15px 0 !important;
+  }
+  .article-employee-discounts p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .article-employee-discounts .statement p:last-child {
+    padding-top: 0px;
+  }
+}

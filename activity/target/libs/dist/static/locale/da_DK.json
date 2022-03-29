@@ -1,0 +1,61 @@
+{
+  "general": {
+    "today": "I dag",
+    "month": {
+      "0": "Januar",
+      "1": "Februar",
+      "2": "Marts",
+      "3": "April",
+      "4": "Maj",
+      "5": "Juni",
+      "6": "Juli",
+      "7": "August",
+      "8": "September",
+      "9": "Oktober",
+      "10": "November",
+      "11": "December"
+    },
+    "ordinal": {
+      "st": "ST",
+      "nd": "ND",
+      "rd": "RD",
+      "th": "TH"
+    },
+    "launchDate": "8. juni, 2018",
+    "endDate": "8. juli, 2018",
+    "error": "Ups, der gik noget galt.  Prøv igen senere."
+  },
+  "teaser": {
+    "distance": {
+      "top": "Bidrog",
+      "amount": "8.403.081",
+      "label": "kilometer i alt"
+    },
+    "members": {
+      "top": "Fra den 8. juni til den 8. juli",
+      "amount": "744,440",
+      "label": "løbere verden over"
+    },
+    "intro": {
+      "label01": "Hvert minut ender, hvad der svarer til en skraldebils indhold af plastikaffald, i havene.",
+      "label02": "Det skal stoppe.",
+      "label03": "Vær med i bevægelsen nu!"
+    },
+    "cta": {
+      "label01": "Hver kilometer gælder",
+      "label02": "Find ud af, hvordan du kan gøre en forskel herunder"
+    },
+    "end": {
+      "label01": "I hele verden gik folk sammen for at gøre Run for the Oceans til en altomstyrtende succes.<br />Til alle, som løb mange kilometer, skabte opmærksomhed og hjalp med at støtte Parley Plastic Program.",
+      "label02": "Tak!"
+    }
+  },
+  "preLoader": {
+    "title": "Løb for havene",
+    "subtitle": "indlæser"
+  },
+  "app": {
+    "name": "Løb for havene",
+    "slug": "parley-ss18-rfto"
+  }
+}

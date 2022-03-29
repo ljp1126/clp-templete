@@ -1,0 +1,1664 @@
+@charset "utf-8";
+// 公共方法
+@import "common/utilities.less";
+.icon-round-gray-rights{
+    vertical-align: sub;
+}
+.jumpbtn-icon{
+    width: 18px;
+    height: 18px;
+    background-position: -1px -343px;
+    vertical-align: sub;
+    margin-left: 5px;
+}
+.modify-icon{
+    background-position: -30px -344px;
+    margin-left: 5px;
+}
+.myaccount-like-box{
+    padding-top: 20px;
+}
+
+@media (max-width:1024px),
+screen and (-webkit-min-device-pixel-ratio:2),
+screen and (min--moz-device-pixel-ratio:2),
+screen and (-o-min-device-piratio:200/100),
+screen and (min-device-pixel-ratio:2) {
+    .icon-round-gray-rights{
+        width: 16px;
+        height: 16px;
+        background-position: -285px -219px;
+    }
+    .jumpbtn-icon{
+        background-position: -259px -219px;
+    }
+    .modify-icon{
+        background-position: -260px -266px;
+    }
+    .icon-prompt-dialog{
+        width: 16px;
+        height:16px;
+        background-position:-289px -266px;
+    }
+}
+.myaccount-box{
+
+    .memeber-box{
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 2px;
+        padding: 20px;
+        margin-bottom: 20px;
+
+        .myaccount-tit{
+            padding-bottom: 20px;
+            border-bottom: 1px solid #C8CBCC;
+            margin-bottom: 20px;
+            color: #000000;
+            h3{
+                float: left;
+                font-size: 20px;
+                line-height: 20px;
+                font-weight: bold;
+
+                span{
+                    font-size: 14px;
+                    color: #888888;
+                    line-height: 14px;
+                    font-weight: normal;
+                    margin-left: 10px;
+                }
+            }
+            div{
+                float: right;
+                font-size: 14px;
+                line-height: 18px;
+
+                a{
+                   color: #000000;
+                   overflow: hidden;
+
+                   .icon-round-gray-rights{
+                       margin-left: 5px;
+                   }
+                }
+            }
+        }
+    }
+}
+
+//账户首页
+.memeber{
+    .memeber-information{
+        .paging{
+            float: right;
+        }
+
+        //员工账户
+        .ed-memeber-info{
+            p{
+                font-size: 16px;
+                margin-bottom: 20px;
+                strong{
+                    font-size: 16px;
+                }
+            }
+            .quota-time{
+                font-size: 12px;
+                color: #888888;
+                line-height: 14px;
+                margin-top: 10px;
+            }
+            .empolyee-ed{
+                ul{
+                    li{
+                        display: inline-block;
+                        background: #F9F9F9;
+                        width: 50%;
+                        padding: 15px 10px;
+                        font-size: 14px;
+                        line-height: 20px;
+                        position: relative;
+                        &:first-child{
+                            border-right: 2px #fff solid;
+                        }
+                        a{
+
+                            &:hover{
+                                color: #000;
+                            }
+                            .icon-round-gray-rights{
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                right: 20px;
+                            }
+                        }
+                        span{
+                            display: block;
+
+                            &:last-child{
+                                color: #888888;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        .employee-quota{
+            margin-bottom:20px;
+            border-top: 1px solid #C8CBCC;
+            padding-top:18px;
+            p{
+                font-size: 14px;
+                color: #000000;
+                line-height: 14px;
+                font-weight: bold;
+                margin-bottom: 14px;
+            }
+            ul{
+                li{
+                    height: 40px;
+                    line-height: 14px;
+                    background: #F2F2F2;
+                    border-bottom: 1px #fff solid;
+                    &:first-child{
+                        background: #C8CBCC;
+                    }
+                    >div{
+                        float: left;
+                        width: 25%;
+                        display:block;
+                        text-align: center;
+                        padding: 12px 0;
+                        font-size: 12px;
+                        &:last-child{
+                            a{
+                                color: #0287CD;
+                                line-height: 12px;
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .memeber-info{
+            font-size: 14px;
+            color: #000000;
+            line-height: 24px;
+            .member-card{
+                position: relative;
+                margin-bottom: 14px;
+                width: 250px;
+                .member-card-text{
+                    position: absolute;
+                    left: 0;
+                    bottom: 34px;
+                    color: #fff;
+                    width: 100%;
+                    line-height: 14px;
+                    &.color-black{
+                        color: #000;
+                    }
+                    p{
+                        float: left;
+                        font-size: 14px;
+                        margin-left: 10px;
+                        &:last-child{
+                            font-size: 12px;
+                            float: right;
+                            margin: 0 10px 0 0;
+                        }
+                    }
+                }
+            }
+            .prompt-tit{
+                font-size: 14px;
+                color: #666;
+                line-height: 18px;
+                margin: 2px 0 10px 0;
+            }
+            p{
+                span{
+                    font-weight: bold;
+                    color: #0287CD;
+                    text-decoration: underline;
+                }
+
+                &.memeber-bold{
+                    span{
+                        color: #000;
+                        font-size: 14px;
+                        display: inline-block;
+                        text-decoration: underline;
+                    }
+                }
+                &:last-child{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    .memeber-order{
+        .myaccount-tit{
+            margin-bottom: 0px;
+            h3{
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: normal;
+            }
+            div{
+                line-height: 18px;
+            }
+        }
+
+        .info-wrapper{
+            .order-info{
+                font-size: 14px;
+                color: #000000;
+                line-height: 14px;
+                margin-bottom: 12px;
+
+                strong{
+                    font-weight: normal !important;
+                }
+
+                &:last-child{
+                    span{
+                        font-weight: bold !important;
+                    }
+                }
+            }
+
+        }
+
+//      没有订单
+        .memeber-order-info-no{
+            margin-top: 20px;
+            >p{
+                font-size: 14px;
+                color: #000000;
+                line-height: 14px;
+            }
+
+            .btn{
+                display: none;
+            }
+        }
+    }
+    .memeber-img{
+        margin-bottom: 40px;
+
+        >div{
+            &:first-child{
+                padding-right: 5px;
+            }
+            &:last-child{
+                padding-left: 5px;
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+//个人信息
+.personal-info{
+
+    .myaccount-data{
+        .personal-data{
+            p{
+                font-size: 14px;
+                color: #000000;
+                line-height: 16px;
+                margin-bottom: 14px;
+                position: relative;
+                padding: 0 0 0 116px;
+                min-height: 16px;
+                span{
+                    display: inline-block;
+                    min-width: 90px;
+                    position: absolute;
+                    left: 0;
+                    &:nth-child(2){
+                        position: static;
+                    }
+                }
+            }
+            .personal-tlt{
+                margin-top: 20px;
+                margin-bottom: 0px;
+                padding: 0;
+            }
+            .modify{
+                font-size: 14px;
+                color: #0286CD;
+                line-height: 16px;
+                margin-top: 5px;
+                display: inline-block;
+
+                i{
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    vertical-align: bottom;
+                }
+            }
+            .btn{
+                margin-top: 40px;
+                width: 260px;
+                height: 42px;
+                line-height: 42px;
+            }
+        }
+
+        .personal-data-modify{
+            display: none;
+            .eye-view {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 40px;
+                width: 40px;
+                display: none;
+                z-index: 1;
+                i{
+                    margin: 10px 0 0 5px;
+                }
+                &.eye-hide{
+                    i{
+                        margin: 10px 0 0 5px;
+                    }
+                }
+            }
+            .form-group{
+                max-width: 430px;
+                margin-bottom: 16px;
+
+                &:first-child{
+                    margin-top:20px ;
+                }
+                .form-input{
+                    &.is-error{
+                       .eye-view{
+                        display: none !important;
+                       }
+                    }
+                }
+                .control-label{
+                    font-size: 14px;
+                    span{
+                        color: #888;
+                    }
+                }
+                .placeholder-txt{
+                    display: none;
+                }
+
+                .form-selects{
+                    margin: 0 -7px;
+
+                    >div{
+                        padding:0 7px;
+                    }
+
+                    .form-select,.dropdown{
+                        width: 100%;
+                    }
+                }
+            }
+            .form-group-btn{
+                margin-top: 40px;
+
+                .btn{
+                    height: 42px;
+                    line-height: 42px;
+                }
+                .btn-black{
+                    float: left;
+                    width: 170px;
+                }
+                .btn-blue{
+                    float: right;
+                    width: 170px;
+                }
+
+                .form-remeber{
+                    display: block;
+                    font-size: 12px;
+                    line-height: 24px;
+                    margin-bottom: 20px;
+
+                    .icon-checked{
+                        vertical-align: bottom;
+                        margin-right: 10px;
+                    }
+                }
+
+                .small-tips{
+
+                    .msg-block{
+                        display: none;
+                        background: rgba(0,0,0,0.50);
+                        border-radius: 4px;
+                        font-size: 12px;
+                        line-height: 25px;
+                        position: relative;
+                        margin-bottom: 25px;
+                        margin-top: -10px;
+                        background: transparent;
+                        padding: 0;
+                        span{
+                            color: #FFFFFF;
+                            color: #000;
+                            background: #DEF3FA;
+                            padding: 0 10px;
+                            border-radius: 4px;
+                            display: inline-block;
+                            line-height: 25px;
+                        }
+
+                        &:after{
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            border: none;
+                            border-bottom: 5px solid rgba(0,0,0,0.50);
+                            border-left: 5px solid transparent;
+                            border-right: 5px solid transparent;
+                            border-bottom: 5px solid #DEF3FA;
+                            width: 0;
+                            height: 0;
+                            top: -5px;
+                            left: 9px;
+                            zoom: 1;
+                            vertical-align: middle;
+                            z-index: 3;
+                        }
+                    }
+
+                    &.tips-active{
+                        .msg-block{
+                            display: block;
+                        }
+                    }
+
+                }
+            }
+
+            .personal-btn{
+                margin-top: 30px;
+            }
+            .gender{
+                margin-right: -1px;
+                a{
+                    float: left;
+                    width: 50%;
+                    text-align: center;
+                    line-height: 38px;
+                    background: #FFFFFF;
+                    border: 1px solid #C8CBCC;
+                    font-size: 14px;
+                    color: #C8CBCC;
+                    letter-spacing: 0;
+
+                    &:last-child{
+                        margin-left: -1px;
+                    }
+
+                    &.active{
+                        border: 2px solid #000000;
+                        line-height: 36px;
+                        position:relative;
+                        color: #000000;
+                    }
+                }
+            }
+
+//          爱好
+            .form-group-hobby{
+                width: 100%;
+                max-width: 100%;
+                margin-bottom: 6px;
+
+                .form-remeber{
+                    float: left;
+                    line-height: 24px;
+                    margin-right: 20px;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    cursor: pointer;
+
+                    .icon-checked{
+                        vertical-align: bottom;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+@media (max-width: 1024px){
+
+.myaccount-box{
+    width: 100%;
+    max-width: 100%;
+
+    .memeber-box{
+        border:none;
+        padding: 0;
+
+        .myaccount-tit{
+            padding:20px 20px;
+
+            h3{
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: bold;
+                max-width: 54.5%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            div{
+                font-size: 12px;
+                line-height: 20px;
+                max-width: 45%;
+                height: 20px;
+                a{
+                    font-weight: bold;
+                    display: inline-block;
+                }
+                span{
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: inline-block;
+                    max-width: 74%;
+                }
+            }
+            .myaccount-tit-con{
+                max-width: 100%;
+                /*white-space: normal;*/
+            }
+        }
+    }
+}
+//账户首页
+    .memeber{
+
+        .memeber-information{
+            //员工账号
+            .ed-memeber-info{
+                p{
+                    font-size: 14px;
+                    padding: 0 20px;
+                    strong{
+                        margin-right: 14px;
+                    }
+                }
+                .empolyee-ed{
+                    ul{
+                        li{
+                            a{
+
+                            }
+                            span{
+                            }
+                        }
+                    }
+                }
+            }
+            .employee-quota{
+                p{
+                    margin-left: 20px;
+                }
+                ul{
+                    li{
+                        height: 38px;
+                        padding:0 10px;
+                        >div{
+                            width:28%;
+                            &:nth-child(2){
+                                width:38%;
+                            }
+                            &:nth-child(3){
+                                width:24%;
+                            }
+                            &:last-child{
+                                width: 10%;
+                                a{
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .myaccount-tit{
+
+                div{
+                    a{
+                       color: #0b8ace;
+                    }
+                }
+            }
+            .memeber-info{
+                padding: 0 20px;
+                margin-top: 40px;
+
+                .member-card{
+                    margin: 0 auto 4px;
+                }
+                .prompt-tit{
+                    font-size: 12px;
+                    margin: 2px 0 8px 0;
+                }
+                p{
+                    span{
+                        font-weight: bold;
+
+                    }
+
+                    &.memeber-bold{
+                        span{
+                            font-size: 14px;
+                            vertical-align: bottom;
+                        }
+                    }
+                    &:last-child{
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+        .memeber-order{
+            border-top: 1px solid #C8CBCC;
+
+            .myaccount-tit{
+                border-bottom: 1px dashed #C8CBCC;
+
+                h3{
+
+                }
+                div{
+                    font-size: 14px;
+                }
+            }
+
+            .info{
+                padding-left: 20px;
+                padding-right: 20px;
+                border-bottom: 1px solid #C8CBCC;
+            }
+
+
+            .info-wrapper{
+
+
+                .order-info{
+                    font-size: 12px;
+                    line-height: 12px;
+                    margin-bottom: 0px;
+
+                    strong{
+                        margin-bottom: 10px;
+                    }
+
+                    &:first-child{
+                        strong{
+                            display: block;
+                        }
+                    }
+
+                    &:last-child{
+                        span{
+                            font-weight: bold !important;
+                        }
+                    }
+                }
+
+            }
+
+            //      没有订单
+            .memeber-order-info-no{
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-bottom: 40px;
+
+                >p{
+
+                }
+
+                .btn{
+                    display: block;
+                    margin-top: 30px;
+                }
+            }
+        }
+
+        .memeber-img{
+            margin-bottom: 40px;
+
+            >div{
+                &:first-child{
+                    padding-right: 0;
+                    padding-bottom: 10px;
+                }
+                &:last-child{
+                    padding-left: 0;
+                }
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+
+    //个人信息
+    .personal-info{
+        padding: 0 20px;
+        .memeber-box{
+            .myaccount-tit{
+                border-bottom: none;
+                padding-left: 0;
+                padding-right: 0;
+                margin-bottom: 0;
+
+                h3{
+                    span{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .myaccount-data{
+            .personal-data{
+                p{
+                    padding: 0 0 0 108px;
+                    span{
+                        min-width: 108px;
+                    }
+                }
+                .personal-tlt{
+                    margin-top: 20px;
+                    margin-bottom: 0px;
+                }
+                .modify{
+                    text-decoration: underline;
+                    i{
+
+                    }
+                }
+                .btn{
+                    width: 100%;
+                }
+            }
+
+            .personal-data-modify{
+                display: none;
+
+                .form-group{
+                    max-width: 100%;
+
+                    &:first-child{
+
+                    }
+
+                    .control-label{
+                    }
+
+                    .form-selects{
+                        margin: 0 -5px;
+
+                        >div{
+                            padding:0 5px;
+                        }
+
+                        .form-select,.dropdown{
+
+                        }
+                    }
+                }
+                .form-group-btn{
+
+
+                    .btn-black{
+                        float: none;
+                        width: 100%;
+
+                    }
+                    .btn-blue{
+                        float: none;
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+
+                    .form-remeber{
+                        display: block;
+                        font-size: 12px;
+                        line-height: 20px;
+                        margin-bottom: 20px;
+
+                        .icon-checked{
+                            vertical-align: bottom;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    &.account-btn{
+                        margin-top: 30px;
+                    }
+                }
+                .gender{
+
+                    a{
+
+
+                        &:last-child{
+
+                        }
+
+                        &.active{
+
+                        }
+                    }
+                }
+
+    //          爱好
+                .form-group-hobby{
+                    font-size: 0;
+                    .form-remeber{
+                        float: none;
+                        display: inline-block;
+                        vertical-align: top;
+                        position: relative;
+                        padding-left: 30px;
+                        line-height: 20px;
+                        font-size: 14px;
+                        width: 33.333%;
+                        margin-right: 0;
+
+                        .icon-checked{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                }
+
+                .form-group-hobby-yingyue{
+
+                    .form-remeber{
+                        width: 33.3333%;
+
+                        .icon-checked{
+
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+
+//  提示弹窗
+    .tipsActive-dialog{
+        .dialog-scroll-container{
+            .dialog{
+                background: none;
+                border-radius: 8px;
+                overflow: hidden;
+                border: none;
+                max-width: 294px;
+
+                .dialog-container{
+                    background: rgba(0,0,0,0.50);
+                    border-radius: 8px;
+                    padding: 10px 50px;
+
+                    p{
+                        font-size: 14px;
+                        color: #FFFFFF;
+                        line-height: 20px;
+                        padding-left: 21px;
+                        position: relative;
+
+                        i{
+                            position: absolute;
+                            top:2px;
+                            left:0;
+                        }
+                    }
+                }
+
+                .dialog-close{
+                    display: none;
+                }
+            }
+
+        }
+
+    }
+
+
+}
+@media (max-width: 440px){
+    //个人信息
+    .personal-info{
+        .placeholder-place{
+           input{
+               &::-webkit-input-placeholder {
+                    font-size: 0;
+               }
+               &::-moz-placeholder {
+                    font-size: 0;
+               }
+               &:-ms-input-placeholder {
+                    font-size: 0;
+               }
+               &:-moz-placeholder {
+                    font-size: 0;
+               }
+            }
+        }
+        .myaccount-data{
+            .personal-data-modify{
+                .form-group{
+                    .placeholder-txt{
+                        position: absolute;
+                        display: inline-block;
+                        left: 11px;
+                        top: 13px;
+                        color: #888;
+                        .font-under-12-left(11);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 374px){
+
+    //个人信息
+    .personal-info{
+        .myaccount-data{
+
+
+            .personal-data-modify{
+    //          爱好
+                .form-group-hobby{
+
+                    .form-remeber{
+                        width: 33.3333%;
+
+                        .icon-checked{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .memeber-box .myaccount-tit h3 span{
+        overflow: auto;
+        margin-left: 0px !important;
+    }
+}
+/*订单列表*/
+@import "modules/goods-item-en_GB.less";
+
+.myaccount-right-content .goods-item-box .goods-item-info {
+    border-bottom: 0px dotted #C8CBCC;
+    padding: 20px 0 0;
+}
+@media (max-width: 1024px){
+    .myaccount-right-content .goods-item-box .goods-item-info {
+        padding: 20px 20px 15px;
+        border-bottom: 1px solid #C7CBCC;
+    }
+}
+
+
+
+
+@media (max-width: 550px){
+    .form-input{
+        input{
+            &::-webkit-input-placeholder {
+				font-size: 12px;
+			}
+
+			&::-moz-placeholder {
+				font-size: 12px;
+			}
+
+			&:-ms-input-placeholder {
+				font-size: 12px;
+			}
+
+			&:-moz-placeholder {
+				font-size: 12px;
+			}
+        }
+    }
+}
+
+
+// 员工账户的banner修改
+    .employee-hot-recommend{
+        >h3{
+            font-weight: bold;
+            font-size: 16px;
+            color: #000000;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        >div{
+            width: calc(~'100% + 10px');
+            left: -5px;
+            >div{
+                padding: 0 5px;
+                >a{
+                    display: block;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1024px){
+        .employee-hot-recommend{
+            padding: 0 15px 0 20px;
+            >h3{}
+            >div{
+                width: 100%;
+                left: 0;
+                >div{
+                    padding: 0 5px 0 0;
+                    margin-bottom: 5px;
+                    img{}
+                }
+            }
+        }
+    }
+
+// 员工账户的banner修改 end
+
+
+
+// myaccount-memeber 改版
+@media (max-width: 1024px){
+	.myaccount-right{
+		.myaccount-rig-left{
+			.myaccount-box{
+				.memeber-information{
+					margin-bottom: 0;
+					.myaccount-tit{
+						border-bottom: none;
+						margin-bottom: 0;
+						padding: 15px 20px 10px 20px;
+						>h3{
+							font-weight: normal;
+						}
+						>div{
+							span{}
+							a{
+
+							}
+						}
+					}
+					.memeber-info-m{
+						font-size: 0;
+						margin-top: 0;
+						margin-bottom: 10px;
+						.member-card,
+						.memeber-level{
+							display: inline-block;
+							vertical-align: top;
+						}
+
+
+						.member-card{
+							width: 100px;
+							margin: 0;
+							.member-card-text{
+								width: 100%;
+								bottom: 23px;
+								p{
+									.font-under-12-left(5);
+									// font-size: 5px;
+									margin: 0;
+									position: absolute;
+									top: 0;
+
+									&:first-child{
+										left: 5px;
+									}
+									&:last-child{
+										right: 5px;
+										-webkit-transform-origin-x: 100%;
+									}
+								}
+							}
+						}
+						.memeber-level{
+							width: calc(~'100% - 100px');
+							padding-left: 15px;
+							>p{
+								font-size: 12px;
+								color: #999999;
+								letter-spacing: 0;
+								line-height: 14px;
+								span{
+									color: #000000;
+									text-decoration: none;
+									font-weight: normal;
+								}
+
+								&:first-child{
+									span{
+										text-decoration: underline;
+									}
+								}
+								&:last-child{
+									margin-top: 5px;
+								}
+							}
+						}
+
+						.integral{
+							p{
+								font-size: 12px;
+								color: #999999;
+								letter-spacing: 0;
+								line-height: 12px;
+								margin-top: 0;
+							}
+						}
+					}
+
+					.already-owned{
+						font-size: 0;
+						text-align: center;
+						border: 1px solid #DDDDDD;
+						border-left: 0;
+						border-right: 0;
+
+						li{
+							padding: 10px 0;
+							position: relative;
+							width: 50%;
+							display: inline-block;
+							vertical-align: top;
+
+							font-size: 12px;
+							color: #000000;
+							letter-spacing: 0;
+							line-height: 12px;
+							// cursor: pointer;
+
+							a{
+								color: #000000;
+							}
+
+							&:first-child{
+								&:after{
+									content: '';
+									width: 1px;
+									height: 16px;
+									background: #DDDDDD;
+
+									position: absolute;
+									right: 0;
+									top: 8px;
+								}
+							}
+
+							span{
+								color: #999999;
+							}
+						}
+					}
+				}
+
+				.myaccount-memeber-nav-m{
+					.left-nav-item{
+						display: block;
+						position: static;
+						ul{
+							padding: 5px 20px;
+							li{
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+
+				.memeber-order{
+					.myaccount-tit{
+						border-bottom: 1px solid #F0F0F0;
+						padding: 10px 20px;
+						>h3{
+							font-size: 14px;
+							color: #000000;
+							line-height: 14px;
+						}
+						>div{
+							height: auto;
+							height: inherit;
+							line-height: normal;
+							>a{
+								font-size: 12px;
+								color: #999999;
+								line-height: 12px;
+								font-weight: normal;
+								display: block;
+								.icon{}
+							}
+						}
+					}
+
+					.memeber-order-info{
+						.goods-item-box{
+							.goods-item-info{
+								padding: 0;
+								.info-wrapper{
+									padding: 10px 20px 0 20px;
+									.order-info{
+										margin-bottom: 10px;
+										line-height: 12px;
+										>span{
+											line-height: 12px;
+											&.mob-block{
+												margin-top: 9px;
+											}
+										}
+										.pull-right{
+											font-weight: bold !important;
+											font-size: 12px;
+											color: #000000;
+											line-height: 12px;
+											margin-bottom: 0;
+										}
+									}
+								}
+								.product-show{
+									padding-top: 0;
+									.product-info{
+										background: #F9F9F9;
+										padding: 10px 20px;
+										.product-info-link{
+
+										}
+										.thumbnail{
+											padding-left: 90px;
+											>a{
+												margin-right: 10px;
+											}
+											>h4{
+												font-size: 12px;
+												color: #000000;
+												line-height: 14px;
+												margin-bottom: 10px;
+												font-weight: bold;
+											}
+											.desc{
+												>p{
+													margin-top: 0;
+													margin-bottom: 8px;
+
+													&:last-child{
+														margin-bottom: 0;
+													}
+												}
+												.Price-item{
+													margin-top: 0;
+													margin-bottom: 7px;
+													span{
+														.original-price{}
+													}
+												}
+											}
+										}
+									}
+									.order-info-m{
+										padding: 10px 20px;
+										text-align: right;
+
+										font-size: 12px;
+										color: #000000;
+										line-height: 12px;
+									}
+									.jumpbtn{
+										text-align: right;
+										margin-top: 0;
+										padding-top: 0;
+										border-top: none;
+										margin-bottom: 10px;
+										padding-right: 20px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// myaccount-memeber 改版 end
+
+
+//完善信息增加50积分
+.myaccount-box{
+    .memeber-box{
+        .myaccount-tit{
+            h3{
+                .myaccount-tit-award-new{
+                    font-size: 12px;
+                    color: #2A2A2A;
+                    a{
+                        color: #000000;
+                            text-decoration: underline;
+                        &:hover{
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+        } 
+    } 
+} 
+@media (max-width: 1024px){
+    .personal-info{
+        .memeber-box{
+            .myaccount-tit-award{
+                font-size: 12px;
+                color: #888888;
+                padding-bottom: 20px;
+            }
+            .myaccount-tit-new{
+                padding-bottom: 10px; 
+            }
+        } 
+    } 
+    .myaccount-box{
+        .memeber-box{
+            .myaccount-tit{
+                h3{
+                    .myaccount-tit-award-new{
+                        margin-left: 0px;
+                        font-size: 12px;
+                        color: #3F3F3F;
+                        padding-top: 10px;
+                        a{
+                            color: #000000;
+                            &:hover{
+                                color: #000000;
+                            }
+                        }
+                    }
+                }
+            } 
+        } 
+    } 
+}
+//完善信息增加50积分 end
+
+
+//7-2 新增添加邮箱
+.is-disabled{
+    	// cursor: default !important;
+		color: #fff !important;
+		background: #C8CBCC !important;
+		border-color: #C8CBCC !important;
+		opacity: 1;
+		-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+.personal-info{
+    .myaccount-data{
+        .personal-data{
+            p{
+                .personal-data-mail{
+                    &:hover{
+                        color: #000000;
+                    }
+                    text-decoration: underline;
+                }
+            }
+        } 
+    } 
+} 
+.dialog-opacity{
+    .dialog-scroll-container{
+        .dialog{
+            width: 100%;
+            min-width: 480px;
+            margin: 0;
+            .rule-main{
+                h4{
+                    border-bottom: 0px solid #C8CBCC;
+                    text-align: center;
+                    font-size: 18px;
+                    color: #000000;
+                    line-height: 18px;
+                    margin: 30px 0 25px;
+                }
+                .form-group-mail{
+                    .form-input{
+                        width: 100%;
+                        max-width: 334px;
+                        margin: 0 auto;
+                        .form-input-code{
+                            font-size: 14px;
+                            color: #FFFFFF;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            background: #000000;
+                            line-height: 40px;
+                            min-width: 122px;
+                            text-align: center;
+                        }
+                    }
+                    .form-input-mail{
+                        margin-bottom: 20px;
+                    }
+                    .form-input-verify{
+                        margin-bottom: 30px;
+                        p{
+                            padding: 10px 0 0 0;
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    }
+                    .form-input-btn{
+                        text-align: center;
+                        .btn{
+                            width: 100%;
+                            max-width: 334px;
+                            height: 42px;
+                            line-height: 42px;
+                        }
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+            .dialog-close{
+                position: absolute;
+                top: 3px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    } 
+}
+@media (max-width: 1024px){
+    .dialog-opacity{
+        .dialog-scroll-container{
+            .dialog-scroll{
+                width: 100%;
+                .dialog{
+                    min-width: inherit;
+                    .rule-main{
+                        .form-group-mail{
+                            .form-input{
+                                max-width: inherit;
+                                width: 89.3%;
+                            }
+                            .form-input-btn{
+                                max-width: inherit;
+                                width: 89.3%;
+                                margin: 0 auto;
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//新增添加邮箱 end
+
+//7-3 新增设置密码
+.rule-dialog-password{
+    .dialog-scroll-container{
+        .dialog{
+            .dialog-container{
+                .rule-main{
+                    h4{}
+                    .personal-data-modify{
+                        .form-group{
+                            width: 100%;
+                            max-width: 335px;
+                            margin: 0 auto;
+                            .control-label{
+                                font-size: 14px;
+                                color: #000000;
+                            }
+                            .eye-view{
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                height: 40px;
+                                width: 40px;
+                                display: none;
+                                z-index: 1;
+                                i{
+                                    margin: 10px 0 0 5px;
+                                }
+                            }
+                            .btn-password{
+                                width: 100%;
+                            }
+                        }
+                        .form-group-password{
+                            margin-bottom: 20px;
+                        }
+                        .form-group-affirm{
+                            margin-bottom: 30px;
+                        }
+                        .form-group-save{
+                            margin-bottom: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+} 
+@media (max-width: 1024px){
+    .rule-dialog-password{
+        .dialog-scroll-container{
+            .dialog{
+                .dialog-container{
+                    .rule-main{
+                        h4{
+                            margin: 34px 0 24px;
+                        }
+                        .personal-data-modify{
+                            .form-group-save{
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//新增设置密码 end
+
+//9-4  同步样式
+.personal-info{
+    .myaccount-data{
+        .personal-data-modify{
+            .personal-btn{
+                max-width: 355px;
+            }
+            .form-group{
+                max-width: 355px;
+            }
+        }
+    }
+} 
+
+
+//样式同步
+.myaccount-box{
+    .memeber-box{
+        .myaccount-tit{
+            .myaccount-tit-con{
+                font-family: "adineueproblack", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+            }
+            h3{
+                font-family: "adineueproblack", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+            }
+        }
+    }
+}
+
+//样式修改
+@media (max-width: 1024px){
+    .personal-info{
+        .memeber-box{
+            .myaccount-tit{
+                h3{
+                    span{
+                        display: block;
+                        margin-left: 0px;
+                        white-space: initial;
+                    }
+                }
+            }
+        }
+    }
+
+    .myaccount-box{
+        .memeber-box{
+            .myaccount-tit{
+                h3{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

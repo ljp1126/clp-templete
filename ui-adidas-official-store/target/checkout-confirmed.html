@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>订单提价成功</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" href="css/checkout.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/checkout.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-simple.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+			<div class="order-submit-content checkout-pay-content float-clearfix">
+				<!-- order-content-left 开始 -->
+				<div class="order-content-left checkout-pay-confirmed">
+					<div class="payment-module checkout-pay payment-method">
+						<h2 class="order-title">订单提交成功</h2>
+						<div class="order-detail-box">
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">订单编号：</dt>
+								<dd class="order-detail-text">AD2748596038</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">订单金额：</dt>
+								<dd class="order-detail-text">￥3,299.00</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">收&nbsp;&nbsp;货&nbsp;&nbsp;人：</dt>
+								<dd class="order-detail-text">James</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">联系方式：</dt>
+								<dd class="order-detail-text">13855962542</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">配送地址：</dt>
+								<dd class="order-detail-text">上海市静安区万荣路1268号市北高新云立方B栋</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">配送方式：</dt>
+								<dd class="order-detail-text">普通快递</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">发票类型：</dt>
+								<dd class="order-detail-text">普通发票（电子）</dd>
+								<dd class="order-detail-text order-detail-text-invoice">*电子发票将以短信形式发送至您订单收件人手机</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">发票抬头：</dt>
+								<dd class="order-detail-text">上海宝尊电子商务有限公司</dd>
+							</dl>
+							<span class="order-detail-text order-reminder">*因订单内有订制商品，需3-5个工作日发货</span>
+						</div>
+					</div>
+
+					<div class="order-line"></div>
+
+					<div class="payment-method">
+						<h2 class="order-title">支付方式</h2>
+						<div class="order-detail-box order-detail-info-box">
+							<dl class="order-detail-info">
+								<dt class="order-detail-title">在线支付：</dt>
+								<dd class="order-detail-text">
+									<img src="images/check/icon_alipay@2x.png" height="22" width="60" alt="">
+								</dd>
+							</dl>
+						</div>
+					</div>
+
+					<!-- 价格区域 -->
+					<div class="price-box none block-sm">
+						<div class="detail-mes order-detail-box">
+							<dl class="detail-mes-item order-detail-info float-clearfix">
+								<dt class="order-detail-title">商品金额</dt>
+								<dd class="order-detail-text">￥8215.00</dd>
+							</dl>
+							<dl class="detail-mes-item order-detail-info float-clearfix">
+								<dt class="order-detail-title">优惠金额</dt>
+								<dd class="order-detail-text">-￥15.00</dd>
+							</dl>
+							<dl class="detail-mes-item order-detail-info float-clearfix">
+								<dt class="order-detail-title">运费</dt>
+								<dd class="order-detail-text">免费</dd>
+							</dl>
+						</div>
+						<div class="detail-mes all-detail-money">
+							<dl class="detail-mes-item order-detail-info float-clearfix">
+								<dt class="order-detail-title">订单总计</dt>
+								<dd class="order-detail-text">¥8215.00</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- 支付按钮 -->
+					<div class="submit-button-box">
+						<!--<a class="payment-btn button">立即支付<i class="icon arrow-right"></i></a>-->
+						<a class="btn btn-blue btn-have-arrow payment-button event-payment"><span>立即支付</span></a>
+					</div>
+				</div>
+				<!-- order-content-left 结束 -->
+
+				<!-- order-content-right 开始 -->
+				<div class="order-content-right">
+					<div class="common-payment">
+					    <!-- 公共右 订单详情 -->
+						<%include _includes/checkout-modules/order-summary.html %>
+						
+						<!-- 公共右 帮助 -->
+					    <%include _includes/checkout-modules/help.html %>
+					    
+					    <!-- 公共右 支付方式 -->
+					    <%include _includes/checkout-modules/other-payment-method.html %>
+					</div>
+				</div>
+				<!-- order-content-right 结束 -->
+			</div>
+			<!-- order-submit-content 结束 -->
+		</section>
+
+		<%include _includes/modules/footer-simple.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+</html>

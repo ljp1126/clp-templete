@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>抽奖活动</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/lp-lottery.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/lp-lottery.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-draw.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+
+			<article class="article start-draw-inner">
+                <img src="images/blank.gif"
+                    data-image='{
+                    "standard":{"high":"", "normal":"../static/images/lp-lottery/img-01.jpg"},
+                    "medium":{"high":"",  "normal":"../static/images/lp-lottery/img-01.jpg"},
+                    "small":{"high":"", "normal":"../static/images/lp-lottery/img-01.jpg"}}'
+				/>
+				<img src="images/blank.gif" class="draw-handle absolute extract-row"
+					data-image='{
+					"standard":{"high":"", "normal":"../static/images/lp-lottery/img-04.png"},
+					"medium":{"high":"",  "normal":"../static/images/lp-lottery/img-04.png"},
+					"small":{"high":"", "normal":"../static/images/lp-lottery/img-04.png"}}' />
+				<a class="extract-row absolute btn-login-handle e-draw-handle"></a>
+				<!-- 登陆注册弹层 -->
+				<img src="images/blank.gif" class="draw-handle absolute none login-register-tamplate"
+					data-image='{
+					"standard":{"high":"", "normal":"../static/images/lp-lottery/img-05.png"},
+					"medium":{"high":"",  "normal":"../static/images/lp-lottery/img-05.png"},
+					"small":{"high":"", "normal":"../static/images/lp-lottery/img-05.png"}}' />
+				<span class="btn-close e-close-login-register none login-register-tamplate"></span>
+				<a class="none login-register-tamplate absolute btn-login-handle-01"></a>
+				<a class="none login-register-tamplate absolute btn-login-handle-02"></a>
+				<img src="../static/images/lp-lottery/img-17.png" class="start-draw-inner-size absolute">
+			</article>
+
+			<article class="article footer-draw-inner">
+                <img src="images/blank.gif"
+                    data-image='{
+                    "standard":{"high":"", "normal":"../static/images/lp-lottery/img-02.jpg"},
+                    "medium":{"high":"",  "normal":"../static/images/lp-lottery/img-02.jpg"},
+                    "small":{"high":"", "normal":"../static/images/lp-lottery/img-02.jpg"}}'
+                />
+
+                <a class="view-the-rules e-link-handle"></a>
+			</article>
+
+		</section>
+
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+		<!-- 查看活动规则  -->
+		<script id="active-regular" type="text/template">
+			<div class="dialog">
+				<div class="dialog-container">
+					<div class="scroll">
+						<div class="scroller-wrap">
+							<img src="../static/images/lp-lottery/img-14.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<span class="btn-close"></span>
+			</div>
+		</script>
+
+	</div>
+</body>
+</html>

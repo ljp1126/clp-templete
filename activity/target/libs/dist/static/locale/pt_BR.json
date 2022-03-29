@@ -1,0 +1,61 @@
+{
+  "general": {
+    "today": "Hoje",
+    "month": {
+      "0": "Janeiro",
+      "1": "Fevereiro",
+      "2": "Março",
+      "3": "Abril",
+      "4": "Maio",
+      "5": "Junho",
+      "6": "Julho",
+      "7": "Agosto",
+      "8": "Setembro",
+      "9": "Outubro",
+      "10": "Novembro",
+      "11": "Dezembro"
+    },
+    "ordinal": {
+      "st": "ST",
+      "nd": "ND",
+      "rd": "RD",
+      "th": "TH"
+    },
+    "launchDate": "8 de junho de 2018",
+    "endDate": "8 de julho de 2018",
+    "error": "Ops, ocorreu um erro. Tente novamente mais tarde."
+  },
+  "teaser": {
+    "distance": {
+      "top": "Contribuição",
+      "amount": "8.403.081",
+      "label": "total kms corridos"
+    },
+    "members": {
+      "top": "de 8 de junho a 8 de julho",
+      "amount": "744,440",
+      "label": "Corredores ao redor do mundo"
+    },
+    "intro": {
+      "label01": "A cada minuto, o equivalente a um caminhão de plástico é despejado nos oceanos.",
+      "label02": "Isso precisa acabar.",
+      "label03": "Faça parte do movimento agora!"
+    },
+    "cta": {
+      "label01": "Cada km conta",
+      "label02": "Veja abaixo como fazer sua parte."
+    },
+    "end": {
+      "label01": "Indivíduos do mundo inteiro se uniram para fazer com que a Run for the Oceans fosse um sucesso.<br />À todos vocês que contribuiram com quilômetros, ajudando na conscientização, ou apoiando o programa Parley for the Oceans: ",
+      "label02": "muito obrigado!"
+    }
+  },
+  "preLoader": {
+    "title": "Run for the Oceans",
+    "subtitle": "carregando"
+  },
+  "app": {
+    "name": "Run for the Oceans",
+    "slug": "parley-ss18-rfto"
+  }
+}

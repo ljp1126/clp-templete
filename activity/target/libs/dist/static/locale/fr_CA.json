@@ -1,0 +1,61 @@
+{
+  "general": {
+    "today": "Aujourd'hui ",
+    "month": {
+      "0": "Janvier",
+      "1": "Février",
+      "2": "Mars",
+      "3": "Avril",
+      "4": "Mai",
+      "5": "Juin",
+      "6": "Juillet",
+      "7": "Août",
+      "8": "Septembre",
+      "9": "Octobre",
+      "10": "Novembre",
+      "11": "Décembre"
+    },
+    "ordinal": {
+      "st": "ER",
+      "nd": "N/A",
+      "rd": "N/A",
+      "th": "N/A"
+    },
+    "launchDate": "8 juin 2018",
+    "endDate": "8 juillet 2018\t",
+    "error": "Oups! Une erreur s'est produite. Veuillez réessayer plus tard."
+  },
+  "teaser": {
+    "distance": {
+      "top": "Contribué",
+      "amount": "8.403.081",
+      "label": "kilométrage couru en tout"
+    },
+    "members": {
+      "top": "Du 8 juin au 8 juillet",
+      "amount": "744,440",
+      "label": "coureurs dans le monde"
+    },
+    "intro": {
+      "label01": "Chaque minute, l'équivalent d'une benne à camion de plastique se retrouve dans l'océan.",
+      "label02": "Il faut que ça cesse.",
+      "label03": "Joignez-vous au mouvement! "
+    },
+    "cta": {
+      "label01": "Chaque kilomètre compte",
+      "label02": "Voyez ci-dessous comment contribuer "
+    },
+    "end": {
+      "label01": "Venus du monde entier, des individus se sont réunis pour faire de Run for the Oceans un vrai facteur de changement.<br />À tous ceux qui ont couru des kilomètres, qui ont passé le mot et appuyé le programme Parley Ocean Plastic.",
+      "label02": "Merci!"
+    }
+  },
+  "preLoader": {
+    "title": "Run for the Oceans",
+    "subtitle": "téléchargement"
+  },
+  "app": {
+    "name": "Run for the Oceans",
+    "slug": "parley-ss18-rfto"
+  }
+}

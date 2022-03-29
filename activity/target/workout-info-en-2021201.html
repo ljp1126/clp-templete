@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+			<!-- <link rel="stylesheet" type="text/css" href="css/adiclub.css"> -->
+			<%include _includes/js.html %>
+				<!-- <script type="text/javascript" src="js/adiclub.js"></script> -->
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+			<!-- 内容部分 -->
+			<section class="container">
+				<style>
+					.article {
+						position: relative;
+					}
+
+					.article>img {
+						width: 100%;
+					}
+
+          .youtubeInfo {
+            position: absolute;
+            top: 25%;
+            margin: 0 auto;
+            width: 100%;
+            height: 59%;
+            display: flex;
+            justify-content: center;
+            
+          }
+          .videoImg {
+            position: absolute;
+            top: 25%;
+            width: 100%;
+            height: 59%;
+            display: flex;
+            justify-content: center;
+            z-index: 5;
+          }
+          .videoImg img {
+            width: 70%;
+            height: 100%;
+            cursor: pointer;
+          }
+
+          .link-mtss1 {
+            width: 30%;
+            height: 73%;
+            display: inline-block;
+            position: absolute;
+            top: 20%;
+            left: 17%;
+          }
+          .link-mtss2 {
+            width: 30%;
+            height: 73%;
+            display: inline-block;
+            position: absolute;
+            top: 20%;
+            right: 17%;
+          }
+
+          .topLink {
+            position: absolute;
+            top: 29%;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            height: 12%;
+          }
+          .topLink .link{
+            display: inline-block;
+            width: 18%;
+            height: 100%;
+          }
+          .centerLink {
+            position: absolute;
+            top: 65%;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            height: 12%;
+          }
+          .centerLink .link{
+            display: inline-block;
+            width: 18%;
+            height: 100%;
+          }
+          .bottomLink {
+            position: absolute;
+            bottom: 6%;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            height: 10%;
+          }
+          .bottomLink .link{
+            display: inline-block;
+            width: 40%;
+            height: 100%;
+          }
+
+					@media (max-width: 1024px) {
+            .videoImg {
+              top: 28%;
+              height: 53%;
+            }
+            .videoImg img {
+              width: 100%;
+            }
+            .youtubeInfo {
+              top: 28%;
+              height: 53%;
+            }
+            .youtubeInfo iframe {
+              width: 100%;
+            }
+            .link-mtss1 {
+              width: 45%;
+              left: 3%;
+            }
+            .link-mtss2 {
+              width: 45%;
+              right: 3%;
+            }
+            
+            .topLink {
+              top: 5%;
+              height: 30%;
+            }
+            .topLink .link{
+              width: 50%;
+              height: 50%;
+            }
+            .centerLink {
+              top: 45%;
+              height: 46%;
+            }
+            .centerLink .link{
+              width: 50%;
+              height: 33.3%;
+            }
+            .bottomLink {
+              bottom: 2%;
+              height: 5%;
+            }
+            .bottomLink .link{
+              width: 72%;
+              height: 100%;
+            }
+					}
+				</style>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/pckv.png&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/mobkv.png&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/mobkv.png&quot;}}">
+				</article>
+        <article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/pc-en-01.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/mob-en-01.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/mob-en-01.jpg&quot;}}">
+
+          <div class="videoImg">
+            <img src="https://img.adidas.com.cn/images/blank.gif"
+              data-image="{
+                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/pc-video.png&quot;},
+                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/mob-video.png&quot;},
+                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/mob-video.png&quot;}}"> 
+          </div>
+                 
+
+          <div class="youtubeInfo">
+            <iframe 
+              width="70%" 
+              height="100%"
+              src="https://www.youtube.com/embed/vyacLnGeh_Q"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+				</article>
+        <article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/pc-en-02.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/mob-en-02.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/mob-en-02.jpg&quot;}}">
+				</article>
+        <article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/pc-en-03.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/mob-en-03.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/mob-en-03.jpg&quot;}}">
+
+          <div class="topLink">
+            <a class="link link-top1" href="https://www.adidas.com.hk/item/GX5588"></a>
+            <a class="link link-top2" href="https://www.adidas.com.hk/item/GX5587"></a>
+            <a class="link link-top4" href="https://www.adidas.com.hk/item/GX5590"></a>
+            <a class="link link-top5" href="https://www.adidas.com.hk/item/GX5591"></a>
+          </div>
+          <div class="centerLink">
+            <a class="link link-center1" href="https://www.adidas.com.hk/item/GX3061"></a>
+            <a class="link link-center2" href="https://www.adidas.com.hk/item/GX3062"></a>
+            <a class="link link-center3" href="https://www.adidas.com.hk/item/GX5459"></a>
+            <a class="link link-center4" href="https://www.adidas.com.hk/item/GX5460"></a>
+            <a class="link link-center5" href="https://www.adidas.com.hk/item/GZ0127"></a>
+          </div>
+          <div class="bottomLink">
+            <a class="link link-bottom1" href="https://www.adidas.com.hk/running/ultraboost22"></a>
+          </div>
+				</article>
+        <article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/pc-en-04.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/mob-en-04.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/DEC/workout_info/mob-en-04.jpg&quot;}}">
+
+          <a class="link link-mtss1" href="https://www.adidas.com.hk/running/women"></a>
+          <a class="link link-mtss2" href="https://www.adidas.com.hk/running/men"></a>
+				</article>
+
+
+				<script type="text/javascript">
+					$(function () {
+						// 换图 + 懒加载
+						$.spice.lazyLoad('img[lazysrc]', {
+							attr: 'lazysrc'
+						});
+						$.spice.tools.changeImageSrc({
+							callBack: function (img, self) {
+								$.spice.lazyLoad('img[lazysrc]', {
+									attr: self.opt.lazyData,
+									prestrain: 1
+								});
+							}
+						});
+            
+					});
+          $('.videoImg').click(function () {
+            console.log(666)
+            $('.videoImg').hide();
+          });
+          
+				</script>
+			</section>
+
+			<%include _includes/modules/footer-no-back-top.html %>
+				<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

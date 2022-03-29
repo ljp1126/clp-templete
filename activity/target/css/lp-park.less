@@ -1,0 +1,56 @@
+.article {
+	position: relative;
+
+	img {
+		width: 100%;
+	}
+
+	.btn {
+		min-width: auto;
+	}
+
+
+    .btn2{
+		position: absolute;
+    left: 56.8%;
+    top: 69%;
+
+    }
+
+    .btn3{
+		height: 3%;
+		left: 56%;
+		bottom: 24%;
+		position: absolute;
+		width: 12%;
+    }
+}
+
+
+
+@media(max-width:768px) {
+	.article {
+
+		.info{
+			display: flex;
+			justify-content: center; /* 水平居中 */
+		    align-items: center;     /* 垂直居中 */
+		}
+
+        .btn2{
+            left: auto;
+            top:78%;
+        }
+
+        .btn3{
+			height: 5%;
+			left: 50%;
+			bottom: 20%;
+			transform: translateX(-50%);
+			width: 27%;
+        }
+
+	}
+
+
+}

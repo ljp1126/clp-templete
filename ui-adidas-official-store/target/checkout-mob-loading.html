@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" href="css/checkout.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/checkout.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-simple.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+			<article class="article">
+				<div class="checkout-loading-box">
+					<div class="checkout-loading-img"><img src="images/icon-loading.gif" /></div>
+					<div class="checkout-loading-text">
+						<h4>订单正在提交中，请您耐心等待</h4>
+						<p>付款完成前请不要关闭此页面，<br/>否则支付将无法完成。</p>
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<%include _includes/modules/footer-simple-no-back-top.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,409 @@
+
+.list-inline li a i{
+    margin-right: 5px;
+}
+.personal-info .myaccount-data .personal-data-modify .form-group-btn{
+    .gl-cta{
+        width: 170px;
+        height: 42px;
+        line-height: 42px;
+        font-size: 18px;
+        display: block;
+        text-align: center;
+    }
+    .btn-preservation{
+        float: right;
+    }
+    .btn-cancel{
+        float: left;
+    }
+}
+
+.personal-info .myaccount-data .personal-data{
+    .btn-modify{
+        margin-top: 40px;
+        width: 260px;
+        height: 42px;
+        line-height: 42px;
+        font-size: 18px;
+    }
+}
+
+.myaccount-right{
+    .myaccount-box{
+        .paging{
+            .left-arrow{
+                .icon-arrow-left{
+                    width: 26px;
+                    height: 26px;
+                    background: none;
+                    line-height: 26px;
+                    border: 1px solid #D9DCDD;
+                    text-align: center;
+                }
+            }
+            .right-arrow{
+                .icon-arrow-right{
+                    width: 26px;
+                    height: 26px;
+                    background: none;
+                    line-height: 26px;
+                    border: 1px solid #D9DCDD;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1023px) {
+    .personal-info .myaccount-data .personal-data-modify .form-group-btn{
+        .gl-cta{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    .personal-info .myaccount-data .personal-data{
+        .btn-modify{
+            width: 100%;
+        }
+    }
+}
+
+.myaccount-box{
+    .memeber-box{
+        .myaccount-tit{
+            padding-bottom: 0px;
+        }
+    }
+}
+.employee-hot-recommend{
+    > .row{
+        display: flex;
+    }
+}
+
+//蓝色字体变黑加下划线
+.memeber{
+    .memeber-information{
+        .employee-quota{
+            ul{
+                li{
+                    > div{
+                        &:last-child{
+                            a{
+                                color: #000;
+                                text-decoration: underline;
+                                &:hover{
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .memeber{
+        .memeber-information{
+            .myaccount-tit{
+                div{
+                    a{
+                        color: #000;
+                        text-decoration: underline;
+                        &:hover{
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.memeber{
+    .memeber-information{
+        .memeber-info{
+            p{
+                span{
+                    color: #000;
+                    text-decoration: underline;
+                    &:hover{
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.personal-info{
+    .myaccount-data{
+        .personal-data{
+            .modify{
+                color: #000;
+                text-decoration: underline;
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+//完善信息增加50积分
+.myaccount-box{
+    .memeber-box{
+        .myaccount-tit{
+            h3{
+                .myaccount-tit-award-new{
+                    font-size: 12px;
+                    color: #2A2A2A;
+                    a{
+                        color: #000000;
+                            text-decoration: underline;
+                        &:hover{
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+        } 
+    } 
+} 
+@media (max-width: 1023px){
+    .personal-info{
+        .memeber-box{
+            .myaccount-tit-award{
+                font-size: 12px;
+                color: #888888;
+                padding-bottom: 20px;
+            }
+            .myaccount-tit-new{
+                padding-bottom: 10px; 
+            }
+        } 
+    } 
+    .myaccount-box{
+        .memeber-box{
+            .myaccount-tit{
+                h3{
+                    margin-bottom: 0;
+                    .myaccount-tit-award-new{
+                        margin-left: 0px;
+                        font-size: 12px;
+                        color: #3F3F3F;
+                        padding-top: 10px;
+                        a{
+                            color: #000000;
+                            &:hover{
+                                color: #000000;
+                            }
+                        }
+                    }
+                }
+            } 
+        } 
+    } 
+    .personal-info{
+        .memeber-box{
+            .myaccount-tit{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .myaccount-right-content{
+        .goods-item-box{
+            .goods-item-info{
+                .jumpbtn{
+                    .btn{
+                        &.payment-button{
+                            span{
+                                &:after{
+                                    top: -2px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//完善信息增加50积分 end
+
+@media (max-width:1023px),
+screen and (-webkit-min-device-pixel-ratio:2),
+screen and (min--moz-device-pixel-ratio:2),
+screen and (-o-min-device-piratio:200/100),
+screen and (min-device-pixel-ratio:2) {
+    
+}
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2){
+	.myaccount-right-content{
+        .goods-item-box{
+            .goods-item-info{
+                .jumpbtn{
+                    .btn{
+                        &.payment-button{
+                            span{
+                                &:after{
+                                    top: 2px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){
+	.myaccount-right-content{
+        .goods-item-box{
+            .goods-item-info{
+                .jumpbtn{
+                    .btn{
+                        &.payment-button{
+                            span{
+                                &:after{
+                                    top: 2px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+@media (device-height:667px) and (-webkit-min-device-pixel-ratio:2){
+	.myaccount-right-content{
+        .goods-item-box{
+            .goods-item-info{
+                .jumpbtn{
+                    .btn{
+                        &.payment-button{
+                            span{
+                                &:after{
+                                    top: 2px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+ @media (device-height:736px) and (-webkit-min-device-pixel-ratio:2){
+	.myaccount-right-content{
+        .goods-item-box{
+            .goods-item-info{
+                .jumpbtn{
+                    .btn{
+                        &.payment-button{
+                            span{
+                                &:after{
+                                    top: 2px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+ @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3){
+	.myaccount-right-content{
+        .goods-item-box{
+            .goods-item-info{
+                .jumpbtn{
+                    .btn{
+                        &.payment-button{
+                            span{
+                                &:after{
+                                    top: 2px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

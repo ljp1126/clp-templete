@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<%include _includes/meta.html %>
+	<title>guest-order-process</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/guest-order-process.css">
+	<link rel="stylesheet" type="text/css" href="css/guest-order-goods-return.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/myaccount-returns.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<%include _includes/modules/header.html %>
+	<!-- header of end -->
+
+	<div class="container">
+		<!-- 模块一 -->
+		<article class="article article-breadcrumb-common-width none-sm artical-title">
+			<div class="breadcrumb">
+				<ul class="list-inline">
+					<li><a href="#"> <i class="icon icon-round-lightgray-lefts"></i>返回</a></li>
+					<li class="divider">丨</li>
+					<li><a href="/">首页</a></li>
+					<li class="divider">/</li>
+					<li><a href="/">访客订单详情</a></li>
+					<li class="divider">/</li>
+					<li><a href="/">我的退单</a></li>
+				</ul>
+			</div>
+		</article>
+
+		<!-- 模块二 -->
+		<article class="article article-my-width artical-content">
+			<div class="my-content-box float-clearfix">				
+				<!-- 右内容 -->
+				<div class="myaccount-right">
+					<div class="myaccount-rig-left float-clearfix">
+						<div class="myaccount-right-content myaccount-orders-details">
+							<div class="myaccount-right-tit float-clearfix my-return-order">
+								<p>kevin@gmail.com</p>
+								<h3>我的退单</h3>
+								<div class="return-order">
+									<a href="#">返回订单详情<i class="icon icon-round-gray-rights"></i></a>
+								</div>
+							</div>
+							
+							
+							<!-- 进度条 不同状态加不同class：
+								正常不加class 。
+								成功状态加class：adopt ， 删class：current 。
+								处理中状态加class：current 。
+								*另原点击切换效果js被隐藏了，因为这进度条没有这效果。
+								如需看不同状态下的内容，后端自行到 myaccount-returns.js 里最后面找js显示看不同状态的样式
+							-->
+							<div class="progressbar">
+								<div class="progress-item adopt">
+									<i class="progress-icon">1
+										<div class="check-img"></div>
+									</i>
+									<span class="none-sm">客服审核中</span>
+									<span class="none block-sm">审核中</span>
+								</div>
+								<div class="progress-item current ">
+									<i class="progress-icon">2<span class="check-img"></span></i>
+									<span class="none-sm">审核通过，待退货</span>
+									<span class="none block-sm">待退货</span>
+								</div>
+								<div class="progress-item ">
+									<i class="progress-icon">3<span class="check-img"></span></i>
+									<span class="none-sm">退货收到，待退款</span>
+									<span class="none block-sm">待退款</span>
+								</div>
+								<div class="progress-item">
+									<i class="progress-icon">4<span class="check-img"></span></i>
+									<span>退款处理完成</span>
+								</div>
+							</div>
+							<div class="return-details-box">
+								
+							
+								<div class="return-details-cont ">
+									<!-- 退货状态 -->
+									<div class="return-details">
+										<div class="return-item">
+											<label class="return-text">退货状态：</label>
+											<div class="return-info">
+												<div class="top-text-box">
+													<span class="service-text">客服审核中,</span>请在审核通过后再将商品寄回
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 结束 -->
+									<!--  -->
+									<ul class="list" id="list">
+										<li class="list-item">
+											<label class="label">申请时间：</label>
+											<span class="label-text">2016-04-27 10:05:36</span>
+										</li>
+										<li class="list-item">
+											<label class="label">退单编号：</label>
+											<span class="label-text">AD124356789</span>
+										</li>
+										<li class="list-item">
+											<label class="label">订单编号：</label>
+											<span class="label-text"><a>AD124356789</a></span>
+										</li>
+										<li class="list-item">
+											<label class="label">退货原因：</label>
+											<span class="label-text">商品质量问题，其他</span>
+										</li>
+										<li class="list-item">
+											<label class="label">退货说明：</label>
+											<span class="label-text">尺码不合适，偏大</span>
+										</li>
+										<li class="list-item">
+											<label class="label">上传凭证</label>
+											<div class="img-box">
+												<div class="img-list">
+													<img src="images/blank.gif" data-image='{
+														"standard":{"high":"", "normal":"../static/images/common/example1.jpg"}
+														,"medium":{"high":"", "normal":"../static/images/common/example1@2x.jpg"}
+														,"small":{"high":"", "normal":"../static/images/common/example1@2x.jpg"}
+													}' alt="" width="60" height="60" />
+												</div>
+												<div class="img-list">
+													<img src="images/blank.gif" data-image='{
+														"standard":{"high":"", "normal":"../static/images/common/example1.jpg"}
+														,"medium":{"high":"", "normal":"../static/images/common/example1@2x.jpg"}
+														,"small":{"high":"", "normal":"../static/images/common/example1@2x.jpg"}
+													}' alt="" width="60" height="60" />
+												</div>
+											
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="return-details-cont none">
+									<!-- 退货状态 -->
+									<div class="return-details">
+										<div class="return-item">
+											<label class="return-text">退货状态：</label>
+											<div class="return-info">
+												<div class="top-text-box none-sm">
+													<p class="service-text">客服审核通过</p>
+													<p>请将需要退货的商品寄至如下地址</p>
+												</div>
+			
+												<div class="top-text-box none block-sm">
+													<span class="service-text">客服审核通过,</span>
+													请将需要退货的商品寄至如下地址,并在退货面单上标明退货编码，发票请一起寄回。
+												</div>
+												<div class="address-box">
+													<div><label>退货地址：</label><span>上海市徐汇区淮海中路999号，200031</span></div>
+													<div><label>联系人：   </label><span>阿迪达斯退货组</span></div>
+													<div><label>联系电话：</label><span class="tel">400-999-5999</span></div>
+												</div>
+												<ul class="order-box">
+													<li class="none-sm">并在退货面单上标明退货编码，发票请一起寄回。</li>
+													<li>为了加快您的退款时效，请您在退回运单上填写订单号并将商品送货单与退货商品一并退回，谢谢！</li>
+												</ul>
+											</div>
+										</div>
+										<div class="return-item">
+											<label class="return-text">物流状态：</label>
+											<div class="return-info" id="return-state">
+												<span class="discript-txt" id="discript">
+												准确的物流信息可加快您的退款时效，请务必准确填写并提交，谢谢！</span>
+												<p class="over-add none" id="over-add">已填写物流信息</p>
+												<ul id="company-box" class="company-box"></ul>
+											</div>
+											<form id="form" class="returns-form">
+												<div class="form-group">
+													<label class="control-label">快递公司：</label>
+													<div class="form-input select-box col-10-4 col-sm-12-12">
+														<div class="dropdown events-form-select">
+															<a class="btn">
+																<span class="dropdown-text" id="company">请选择快递公司</span>
+																<span class="dropdown-icon"><i class="icon icon-caret"></i></span>
+															</a>
+															<select>
+																<option value="">请选择</option>
+																<option value="上海市">上海市</option>
+																<option value="北京市">北京市</option>
+																<option value="广东省">广东省</option>
+																<option value="内蒙古自治区">内蒙古自治区</option>
+																<option value="浙江省" disabled="">浙江省</option>
+																<option value="黑龙江省">黑龙江省</option>
+																<option value="广东省2">广东省2</option>
+																<option value="广东省3">广东省3</option>
+																<option value="广东省4">广东省4</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label">快递单号：</label>
+													<div class="form-input col-10-4 col-sm-12-12">
+														<input type="text" id="number" placeholder="请填写快递单号" />
+													</div>
+												</div>
+												<div class="form-group">
+													<a class="btn btn-blue event-submit col-10-4 col-sm-12-12"><span>提交</span></a>
+												</div>
+											</form>
+										</div>
+									</div>
+									<!-- 结束 -->
+									<!--  -->
+									<ul class="list" id="list">
+										<li class="list-item">
+											<label class="label">申请时间：</label>
+											<span class="label-text">2016-04-27 10:05:36</span>
+										</li>
+										<li class="list-item">
+											<label class="label">退单编号：</label>
+											<span class="label-text">AD124356789</span>
+										</li>
+										<li class="list-item">
+											<label class="label">订单编号：</label>
+											<span class="label-text"><a>AD124356789</a></span>
+										</li>
+										<li class="list-item">
+											<label class="label">退货原因：</label>
+											<span class="label-text">商品质量问题，其他</span>
+										</li>
+										<li class="list-item">
+											<label class="label">退货说明：</label>
+											<span class="label-text">尺码不合适，偏大</span>
+										</li>
+										<li class="list-item">
+											<label class="label">上传凭证：</label>
+											<div class="img-box">
+												<div class="img-list">
+													<img src="images/blank.gif" data-image='{
+														"standard":{"high":"", "normal":"../static/images/common/example1.jpg"}
+														,"medium":{"high":"", "normal":"../static/images/common/example1@2x.jpg"}
+														,"small":{"high":"", "normal":"../static/images/common/example1@2x.jpg"}
+													}' alt="" width="60" height="60" />
+												</div>
+												<div class="img-list">
+													<img src="images/blank.gif" data-image='{
+														"standard":{"high":"", "normal":"../static/images/common/example1.jpg"}
+														,"medium":{"high":"", "normal":"../static/images/common/example1@2x.jpg"}
+														,"small":{"high":"", "normal":"../static/images/common/example1@2x.jpg"}
+													}' alt="" width="60" height="60" />
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="return-details-cont none">
+									<!-- 退货状态 -->
+									<div class="return-details">
+										<div class="return-item">
+											<label class="return-text">退货状态：</label>
+											<div class="return-info">
+												<div class="top-text-box">已收到退货商品，<span class="service-text">等待退款</span></div>
+												
+											</div>
+										</div>
+										
+									</div>
+									<!-- 结束 -->
+									<!--  -->
+									<ul class="list" id="list">
+										<li class="list-item">
+											<label class="label">申请时间：</label>
+											<span class="label-text">2016-04-27 10:05:36</span>
+										</li>
+										<li class="list-item">
+											<label class="label">退单编号：</label>
+											<span class="label-text">AD124356789</span>
+										</li>
+										<li class="list-item">
+											<label class="label">订单编号：</label>
+											<span class="label-text"><a>AD124356789</a></span>
+										</li>
+										<li class="list-item">
+											<label class="label">退货原因：</label>
+											<span class="label-text">商品质量问题，其他</span>
+										</li>
+										<li class="list-item">
+											<label class="label">退货说明：</label>
+											<span class="label-text">尺码不合适，偏大</span>
+										</li>
+										<li class="list-item">
+											<label class="label">上传凭证：</label>
+											<div class="img-box">
+												<div class="img-list">
+													<img src="images/blank.gif" data-image='{
+														"standard":{"high":"", "normal":"../static/images/common/example1.jpg"}
+														,"medium":{"high":"", "normal":"../static/images/common/example1@2x.jpg"}
+														,"small":{"high":"", "normal":"../static/images/common/example1@2x.jpg"}
+													}' alt="" width="60" height="60" />
+												</div>
+												<div class="img-list">
+													<img src="images/blank.gif" data-image='{
+														"standard":{"high":"", "normal":"../static/images/common/example1.jpg"}
+														,"medium":{"high":"", "normal":"../static/images/common/example1@2x.jpg"}
+														,"small":{"high":"", "normal":"../static/images/common/example1@2x.jpg"}
+													}' alt="" width="60" height="60" />
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="return-details-cont none">
+									<!-- 退货状态 -->
+									<div class="return-details">
+										<div class="return-item">
+											<label class="return-text">退货状态：</label>
+											<div class="return-info">
+												<div class="top-text-box">
+													<span class="service-text">退款处理完成</span>您的退款将按原路返回，具体退款周期可能受银行，支付机构等相关因素影响。
+												</div>
+												
+											</div>
+										</div>
+										
+									</div>
+									<!-- 结束 -->
+									<!--  -->
+									<ul class="list" id="list">
+										<li class="list-item">
+											<label class="label">申请时间：</label>
+											<span class="label-text">2016-04-27 10:05:36</span>
+										</li>
+										<li class="list-item">
+											<label class="label">退单编号：</label>
+											<span class="label-text">AD124356789</span>
+										</li>
+										<li class="list-item">
+											<label class="label">订单编号：</label>
+											<span class="label-text"><a>AD124356789</a></span>
+										</li>
+										<li class="list-item">
+											<label class="label">退货原因：</label>
+											<span class="label-text">商品质量问题，其他</span>
+										</li>
+										<li class="list-item">
+											<label class="label">退货说明：</label>
+											<span class="label-text">尺码不合适，偏大</span>
+										</li>
+										<li class="list-item">
+											<label class="label">上传凭证：</label>
+											<div class="img-box">
+												<div class="img-list">
+													<img src="images/blank.gif" data-image='{
+														"standard":{"high":"", "normal":"../static/images/common/example1.jpg"}
+														,"medium":{"high":"", "normal":"../static/images/common/example1@2x.jpg"}
+														,"small":{"high":"", "normal":"../static/images/common/example1@2x.jpg"}
+													}' alt="" width="60" height="60" />
+												</div>
+												<div class="img-list">
+													<img src="images/blank.gif" data-image='{
+														"standard":{"high":"", "normal":"../static/images/common/example1.jpg"}
+														,"medium":{"high":"", "normal":"../static/images/common/example1@2x.jpg"}
+														,"small":{"high":"", "normal":"../static/images/common/example1@2x.jpg"}
+													}' alt="" width="60" height="60" />
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="goods-item-box progress-goods-item">
+										
+									<!-- 如果是退单流程的商品列，需要加上class “progress-goods-item” -->
+		
+									<div class="goods-item-info goods-return-order goods-item-stay-pay goods-item-prepared float-clearfix">
+										<div class="order-list-num none block-sm">订单编号：<a>AD1234567890</a></div>
+
+										<div class="product-show">
+											<div class="list-of-goods float-clearfix">
+												<p>商品</p>	
+												<p>购买数量</p>	
+												<p>退货数量</p>	
+												<p>商品总额</p>	
+
+											</div>
+											
+											
+											<div class="product-list-item">
+												<div class="product-info product-info-width">
+													<div class="thumbnail float-clearfix">
+													<div></div>
+													    <a href="">
+												        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+												        <!-- 小图标 笔A -->
+												       <!-- <i class="icon icon-personalise"></i>-->
+													    </a>
+													    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+													    
+													    <div class="desc">
+													    	<p class="number">BB0008</p>
+													    	
+													    	<div class="size float-clearfix">
+													    		<p>颜色：<span>黄</span></p>
+													    		<p>尺码：<span>41</span></p>
+													    	</div>
+													    	
+													    	<p>价格：<span>￥799</span></p>
+													    	  	
+													    </div>
+													    <div class="quantity-purchased"><label>购买数量：</label>2</div>
+													    <div class="returns-num">
+													    	<label>退货数量：</label>2
+													    </div>
+													    <div class="Price-item">
+													    	<label>商品总额：</label>	
+													    	<p class="goods-price-total">￥1,998.00</p>
+													    </div>
+													</div>
+												</div>
+							
+											</div>											
+
+										</div>
+
+										
+									</div>
+
+									<div class="footer-order-price">
+										<div class="order-price-classify remove-order-price-bodder">
+							                <div class="product-price float-clearfix">
+							                	<p class="tit">共 2 件退货商品</p>
+							                    <span class="deductible-amount">已扣除优惠金额：</span>
+							                    <span>￥400.00</span>
+							                </div>
+							                <div class="product-price float-clearfix product-price-blod">
+							                    <span>运费：</span>
+							                    <span>￥10.00</span>
+							                </div>
+							                <div class="product-price float-clearfix product-price-blod">
+							                    <span>退款总计：</span>
+							                    <span class="text-bold">¥1,598.00</span>
+							                </div>
+
+							                <div class="point-total product-price float-clearfix none">
+							                    <span>预计返还积分：</span>
+							                    <span>110分</span>
+							                </div>
+							            
+							            </div>
+									</div>
+									
+									
+								</div>
+
+							</div>
+
+
+
+
+
+
+						</div>
+					</div>
+				</div>
+				<!-- 右内容结束 -->
+			</div>
+		</article>
+
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+	<!-- container of end -->
+</div>
+</body>
+</html>

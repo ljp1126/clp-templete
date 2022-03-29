@@ -1,0 +1,403 @@
+@charset "utf-8";
+
+/*添加地址*/
+.address-form-box{
+    width: 500px;
+    .form-group, .checked-select-con, .add-address-btn{
+        float: left;
+    }
+    .form-group{
+        margin-bottom: 20px;
+        .control-label {
+            margin-bottom: 6px;
+            font-size: 14px;
+            span{
+                color: #888;
+            }
+        }
+        &:nth-of-type(1){
+            width: 160px;
+        }
+        &:nth-of-type(2){
+            width: 260px;
+            margin-left: 15px;
+        }
+        &:nth-of-type(3){
+             width: 100%;
+        }
+        &:nth-of-type(4){
+             width: 180px;
+        }
+        &:nth-of-type(5){
+             width: 240px;
+             margin-left: 15px;
+        }
+        .form-select-box{
+            width: 435px;
+            .col-12-4{
+                float: left;
+                padding-left: 15px;
+                &:nth-child(1){
+                   padding-left: 0px;
+                }
+            }
+            .col-12-12{
+                margin-top: 10px;
+            }
+            .form-select{
+                width: 100%;
+                .sub-menu{
+                    top: 40px;
+                }
+            }
+        }
+    }
+    .checked-select-con{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .add-address-btn{
+        width: 100%;
+        >a{
+            font-size: 16px;
+            height: 40px;
+            line-height: 40px;
+        }
+        .btn-black{
+            width: 150px;
+            margin: 0 12px 0 0;
+        }
+        .btn-blue{
+            width: 270px;
+        }
+    }
+
+}
+.address-form-content{
+    margin: 0;
+    >.viewport {
+        height: auto;
+    }
+    >.scrollbar{
+        display: none;
+    }
+    .address-full{
+        display: none;
+    }
+}
+
+@media (max-width:1024px){
+
+    /*添加地址*/
+    .address-form-box{
+        width: 100%;
+        padding: 0 20px;
+        .form-group, .checked-select-con, .add-address-btn{
+            float: none;
+        }
+        .form-group{
+            margin-bottom: 16px;
+            .control-label {
+                margin-bottom: 10px;
+                span{
+                    color: #000;
+                }
+            }
+            &:nth-of-type(1){
+                width: 100%;
+            }
+            &:nth-of-type(2){
+                width: 100%;
+                margin-left: 0px;
+            }
+            &:nth-of-type(3){
+                 width: 100%;
+            }
+            &:nth-of-type(4){
+                 width: 100%;
+            }
+            &:nth-of-type(5){
+                 width: 100%;
+                 margin-left: 0px;
+            }
+            .form-select-box{
+                width: 100%;
+                .col-12-4{
+                    float: left;
+                    padding-left: 10px;
+                    &:nth-child(1){
+                       padding-left: 0px;
+                    }
+                }
+                .form-select{
+                    width: 100%;
+                    .sub-menu{}
+                }
+            }
+        }
+        .checked-select-con{
+            margin-bottom: 20px;
+            width: 100%;
+            padding: 4px 0;
+        }
+        .add-address-btn{
+            width: 100%;
+            >a{
+                font-size: 16px;
+                height: 40px;
+                line-height: 40px;
+            }
+            .btn-black{
+                width: 150px;
+                margin: 0 12px 0 0;
+            }
+            .btn-blue{
+                width: 270px;
+            }
+        }
+
+    }
+
+    .address-form-content{
+        margin: 0;
+        .scrollbar{
+            &.scrollbar-show{
+                display: none;
+                right: 0;
+            }
+        }
+        .address-form-title{
+            padding:48px 0 0;
+            position: relative;
+            .form-title-fixed{
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 50px;
+                width: 100%;
+                z-index: 8;
+                background: #fff;
+                border-bottom: 1px solid #C8CBCC;
+            }
+            h4{
+                font-size: 18px;
+                line-height: 50px;
+                font-weight: bold;
+                padding: 0px 20px;
+            }
+            .address-form-close{
+                position: absolute;
+                right: 4px;
+                top: 8px;
+                display: block;
+                padding: 10px;
+                width: 32px;
+                height: 32px;
+                padding: 0px;
+            }
+            p{
+                padding: 18px 20px;
+                font-size: 14px;
+                line-height: 16px;
+                color: #0087D3;
+                border-bottom: 1px solid #C8CBCC;
+                cursor: pointer;
+                &.address-toplimit{
+                    color: #888;
+                    cursor: default;
+                }
+                i{
+                    width: 14px;
+                    height: 14px;
+                    vertical-align: middle;
+                    margin: -4px 10px 0 0;
+                }
+                .icon-add-address{
+                    background-position: -20px -300px;
+                }
+                .icon-add-address-toplimit{
+                    background-position: 0px -300px;
+                }
+            }
+        }
+        .address-form-box {
+            .add-address-btn{
+                .btn-black{
+                    width: 100%;
+                }
+                .btn-gradient-blue{
+                    width: 100%;
+                }
+                /*.btn-black{
+                    display: none;
+                    text-indent: -9999px;
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    width: 40px;
+                    height: 40px;
+                    min-width: 20px;
+                    background: #fff;
+                    padding: 10px;
+                    margin: 0;
+                    z-index: 99;
+                    &:after{
+                        content: '';
+                        background: url(../images/icon@2x.png);
+                        background-size: 500px;
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        background-position: -127px -13px;
+                        position: absolute;
+                        right: 0;
+                        top: 10px;
+
+                    }
+                }*/
+            }
+
+        }
+        .address-full{
+            display: block;
+            font-size: 14px;
+            color: #000;
+            font-weight: bold;
+            line-height: 16px;
+            text-align: center;
+            padding: 6px 0 0;
+            i{
+                vertical-align: middle;
+                margin: -2px 7px 0 0;
+            }
+        }
+        .mob-address-list-content{
+            padding: 18px 0 0;
+            >p{
+                font-size: 14px;
+                color: #000;
+                line-height: 16px;
+                border-bottom: 0px solid #C8CBCC;
+                padding:0 20px 17px;
+                /*font-weight: bold;*/
+            }
+            .mob-address-list{
+                position: relative;
+                .distribution-list{
+                    position: relative;
+                    border-bottom: 1px solid #C8CBCC;
+                    padding: 15px 15px 15px 51px;
+                    >i{
+                        position: absolute;
+                        top: 16px;
+                        left: 18px;
+                        margin-top: -11px;
+                        margin-top: 0px;
+                    }
+                    .distribution-list-box{
+                        p{
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: block;
+                            font-size: 14px;
+                            line-height: 22px;
+                            &.address-name{
+                                span{
+                                    display: none;
+                                }
+                                span.sm-show{
+                                    display: none;
+                                }
+                                .mob-default{
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    .edit-box{
+                        position: absolute;
+                        top: 0px;
+                        right: -160px;
+                        z-index: 5;
+                        height: 101%;
+                        border-bottom: 1px solid #C8CBCC;
+                        span{
+                            display: none;
+                        }
+                        a{
+                            width: 80px;
+                            display: block;
+                            height: 100%;
+                            text-align: center;
+                            float: left;
+                            padding-top: 25%;
+                            padding-top: 38.5%;
+                            color: #BA021F;
+                            color: #000;
+                            font-size: 14px;
+                            background: #E9E9E9;
+                            &.event-delect{
+                                background: #D9002A;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    &.is-active{
+                        background: #F7F7F7;
+                    }
+                }
+
+            }
+            .address-form-close{
+                text-align: center;
+                width: 100%;
+                height: 70px;
+                font-size: 14px;
+                color: #0087D3;
+                letter-spacing: 0;
+                line-height: 70px;
+                background: #fff;
+                display: block;
+            }
+
+        }
+    }
+    .order-submit-member-content{
+        .event-address-box{
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            z-index: 10;
+            overflow: hidden;
+            overflow-y: auto;
+            min-width: 320px;
+        }        
+    }
+    .order-submit-content .order-content-left{
+        .address-box-dialog{
+            .address-form-box{
+                display: none;
+                padding: 18px 20px 30px;
+                border-bottom: 1px solid #C8CBCC;
+                .add-address-btn{
+                    padding: 6px 0 0;
+                    .btn-black{
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+                    .btn-gradient-blue{
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+}

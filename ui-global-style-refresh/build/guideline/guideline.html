@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no" />
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit" />
+	<meta name="MobileOptimized" content="320" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta content="telephone=no" name="format-detection" />
+	<title></title>
+
+	<!-- 公共 CSS 部分开始 -->
+	<link rel="stylesheet" href="../libs/spice/css/spice.css" />
+	<!-- 字体图标样式，不需要时可不引用 -->
+	<link rel="stylesheet" href="../libs/spice/css/spice.icon.css" />
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="../libs/spice/css/spice.ie8.css" />
+	<![endif]-->
+	<!--[if lte IE 7]>
+	<link rel="stylesheet" href="../libs/spice/css/spice.ie7.css" />
+	<![endif]-->
+
+	<link rel="stylesheet" href="../libs/spice/js/tinyscrollbar/css/tinyscrollbar.css" />
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<!-- 公共 CSS 部分结束 -->
+
+	<link rel="stylesheet" href="../libs/highlight/styles/codepen-embed.css" />
+	<link rel="stylesheet" href="../libs/highlight/styles/github.css" />
+	<link rel="stylesheet" href="guideline.css" />
+
+	<!-- 公共 JS 部分开始 -->
+	<script type="text/javascript" src="../libs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../libs/iscroll/iscroll.js"></script>
+	<script type="text/javascript" src="../libs/spice/js/jquery.spice.js"></script>
+	<script type="text/javascript" src="../libs/spice/js/jquery.spice.tools.js"></script>
+	<script type="text/javascript" src="../libs/spice/js/placeholder/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="../libs/swiper/js/swiper.min.js"></script>
+	<script type="text/javascript" src="../libs/spice/js/dropdown/jquery.dropdown.js"></script>
+	<script type="text/javascript" src="../libs/spice/js/tinyscrollbar/jquery.tinyscrollbar.js"></script>
+	<script type="text/javascript">
+		(function($){
+			$.spice.init({
+				throttleTime: 100
+				, debounceTime: 300
+			});
+		})(jQuery);
+	</script>
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="../libs/respond/respond.min.js"></script>
+	<script type="text/javascript" src="../libs/html5shiv/html5shiv.min.js"></script>
+	<![endif]-->
+	<!-- 字体图标js，兼容低版本浏览器，不需要时可不引用 -->
+	<!--[if lte IE 7]>
+	<script type="text/javascript" src="../libs/spice/js/jquery.spice.ie7.js"></script>
+	<![endif]-->
+	<!-- 公共 JS 部分结束 -->
+
+	<script type="text/javascript" src="../libs/highlight/highlight.pack.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="guideline.js"></script>
+
+</head>
+<body>
+	<div id="wrapper">
+		<!-- 顶部导航部分 -->
+		<header class="header" id="header"></header>
+
+		<!-- 内容部分 -->
+		<section class="container">
+			<article class="article gl-content-grid float-clearfix">
+				<div class="gl-grid-left none-xs">
+					<aside>
+						<h5>组件</h5>
+						<ul class="nav">
+							<li data="gl-color">
+								<a>颜色</a>
+							</li>
+							<li data="gl-link">
+								<a>icon</a>
+							</li>
+							<li data="gl-btn">
+								<a>按钮</a>
+							</li>
+							<li data="gl-form">
+								<a>表单</a>
+							</li>
+							<li data="gl-dropdown">
+								<a>Dropdown</a>
+							</li>
+							<li data="gl-icon">
+								<a>单选按钮</a>
+							</li>
+						</ul>
+					</aside>
+				</div>
+				<div class="gl-grid-right">
+					<div>
+
+						<h5 id="gl-color">颜色</h5>
+						<h5 style="color: red;">THEMED COLORS</h5>
+						<div class="row color">
+							<div class="col-12-2">
+								<span class="color-primary"></span>
+								<span>#000000</span>
+								<span>.color-primary</span>
+							</div>
+						</div>
+						<h5 style="color: red;">GLOBAL COLORS</h5>
+						<div class="row color">
+							<div class="col-12-2">
+								<span class="color-white"></span>
+								<span>#ffffff</span>
+								<span>.color-white</span>
+							</div>
+							<div class="col-12-2">
+								<span class="color-light-grey"></span>
+								<span>#ebedee</span>
+								<span>.color-light-grey</span>
+							</div>
+							<div class="col-12-2">
+								<span class="color-medium-grey"></span>
+								<span>#d9dcdd</span>
+								<span>.color-medium-grey</span>
+							</div>
+							<div class="col-12-2">
+								<span class="color-dark-grey"></span>
+								<span>#98989a</span>
+								<span>.color-dark-grey</span>
+							</div>
+							<div class="col-12-2">
+								<span class="color-black"></span>
+								<span>#000000</span>
+								<span>.color-black</span>
+							</div>
+						</div>
+						<h5 style="color: red;">BRAND COLORS</h5>
+						<div class="row color">
+							<div class="col-12-2">
+								<span class="color-red"></span>
+								<span>#e63f3f</span>
+								<span>.color-red</span>
+							</div>
+							<div class="col-12-2">
+								<span class="color-shock-pink"></span>
+								<span>#da1a7b</span>
+								<span>.color-shock-pink</span>
+							</div>
+							<div class="col-12-2">
+								<span class="color-shock-lime"></span>
+								<span>#2ada71</span>
+								<span>.color-shock-lime</span>
+							</div>
+							<div class="col-12-2">
+								<span class="color-shock-yellow"></span>
+								<span>#ede734</span>
+								<span>.color-shock-yellow</span>
+							</div>
+							<div class="col-12-2">
+								<span class="color-hi-res-aqua"></span>
+								<span>#00a2a2</span>
+								<span>.color-hi-res-aqua</span>
+							</div>
+							<div class="col-12-2">
+								<span class="color-bright-blue"></span>
+								<span>#0071ae</span>
+								<span>.color-bright-blue</span>
+							</div>
+						</div>
+						<h5 style="color: red;">VALIDATION COLORS</h5>
+						<div class="row color">
+							<div class="col-12-2">
+								<span class="color-validation-error"></span>
+								<span>#e63f3f</span>
+								<span>.color-validation-error</span>
+							</div>
+							<div class="col-12-2">
+								<span class="color-validation-success"></span>
+								<span>#00aa55</span>
+								<span>.color-validation-success</span>
+							</div>
+						</div>
+
+						<h5 id="gl-link">icon</h5>
+						<p style="color: red;">
+							<a href="https://toolkit-adidas-group.netlify.com/adidas/icons">https://toolkit-adidas-group.netlify.com/adidas/icons</a>
+						</p>
+
+						<div><br/><br/><br/></div>
+
+						<h5 id="gl-btn">按钮</h5>
+						<div class="row font-text-center btn-box">
+							<div class="col-12-3">
+								<p>
+									<a class="gl-cta gl-cta--primary">primary
+										<span class="icon-arrow-right-long icon--size-l gl-cta__icon"></span>
+									</a>
+								</p>
+							</div>
+							<div class="col-12-3">
+								<a class="gl-cta gl-cta--primary gl-cta--primary-light">Primary Light
+									<span class="icon-arrow-right-long icon--size-l gl-cta__icon"></span>
+								</a>
+							</div>
+							<div class="col-12-3">
+								<a class="gl-cta gl-cta--primary gl-cta--full-width">Primary full width
+									<span class="icon-arrow-right-long icon--size-l gl-cta__icon"></span>
+								</a>
+							</div>
+							<div class="col-12-3">
+								<a class="gl-cta gl-cta--secondary">Secondary</a>
+							</div>
+							<div class="col-12-3">
+								<a class="gl-cta gl-cta--secondary gl-cta--secondary-light">Secondary light</a>
+							</div>
+							<div class="col-12-3">
+								<a class="gl-cta gl-cta--tertiary gl-cta--tertiary-light">
+									<span class="gl-cta-content">Tertiary light</span>
+								</a>
+							</div>
+							<div class="col-12-3">
+								<a class="gl-link" href="#">This is a link</a>
+							</div>
+							<div class="col-12-3">
+								<a class="gl-link gl-link--light" href="#">This is a link</a>
+							</div>
+							<div class="col-12-3">
+								<div class="gl-cta gl-cta--primary gl-cta--loading">Primary</div>
+							</div>
+							<div class="col-12-3">
+								<div class="gl-cta gl-cta--secondary gl-cta--loading">Secondary</div>
+							</div>
+							<div class="col-12-3">
+								<div class="gl-cta gl-cta--icon gl-cta--loading"></div>
+							</div>
+							<div class="col-12-3">
+								<div class="gl-cta gl-cta-paypal"></div>
+							</div>
+							<div class="col-12-3">
+								<a class="gl-cta gl-cta--icon">
+									<span class="icon-bag icon--size-m"></span>
+								</a>
+							</div>
+						</div>
+						<div><br/><br/><br/></div>
+
+						<h5 id="gl-form">表单</h5>
+						<div class="row font-text-left input-box">
+							<div class="col-10-4">
+								<h5>默认状态</h5>
+								<div class="">
+									<label class="control-label"></label>
+									<div>
+										<input placeholder="Address line 1" class="" type="text">
+										<span>Hint text, should provide helpful guidance.</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-10-1"></div>
+							<div class="col-10-4">
+								<h5>错误状态</h5>
+								<div class="">
+									<label class="control-label"></label>
+									<div>
+										<input placeholder="Address line 1" class="error" type="text">
+										<span>Hint text, should provide helpful guidance.</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-10-1"></div>
+
+						<div class="col-10-4">
+							<div class="">
+								<label class="control-label"></label>
+								<div>
+									<textarea placeholder="Textarea with error" rows="5" class=""></textarea>
+									<label></label>
+								</div>
+							</div>
+						</div>
+						<div class="col-10-1"></div>
+						<div class="col-10-4">
+							<div class="">
+								<label class="control-label"></label>
+								<div>
+									<textarea placeholder="Textarea with error" rows="5" class="error"></textarea>
+									<label></label>
+								</div>
+							</div>
+						</div>
+						<div class="col-10-1"></div>
+						</div>
+						<div><br/><br/><br/></div>
+
+						<h5 id="gl-dropdown">Dropdown</h5>
+						<div class="row font-text-center btn-box">
+							<div class="col-12-4">
+								<div>
+									<div class="gl-dropdown error">
+										<div class="gl-dropdown__select">Address line 1</div>
+										<div class="gl-dropdown__options">
+											<div class="gl-dropdown__option">Address</div>
+										</div>
+									</div>
+									<div class="message error">Error text, should say what is wrong in the field.</div>
+								</div>
+							</div>
+							<div class="col-12-1"></div>
+
+							<div class="col-12-4">
+								<div class="select-box select-unified">
+									<div class="dropdown events-dropdown gl-dropdown error">
+										<a class="btn gl-dropdown__select">
+											<span class="dropdown-text">最新</span>
+											<span class="dropdown-icon"><i class="icon icon-caret"></i></span>
+										</a>
+										<div class="sub-menu tinyscrollbar gl-dropdown__options">
+											<div class="viewport">
+												<div class="overview">
+													<ul>
+														<li class="gl-dropdown__option is-active">
+															<a>最新<i class="icon icon-selected"></i></a>
+														</li>
+														<li class="gl-dropdown__option">
+															<a>价格从低到高<i class="icon icon-selected"></i></a>
+														</li>
+														<li class="gl-dropdown__option">
+															<a>价格从高到低<i class="icon icon-selected"></i></a>
+														</li>
+														<li class="gl-dropdown__option">
+															<a>价格从高到低<i class="icon icon-selected"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="scrollbar none">
+												<div class="track">
+													<div class="thumb">
+														<div class="end"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="msg-block">
+										<i class="icon msg-icon"></i>
+										<span>邮箱格式错误，请重新输入</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-12-1"></div>
+
+						</div>
+						<div class="row font-text-center btn-box">
+							<div class="col-12-4">
+								<div class="select-box">
+									<div class="dropdown none-sm events-dropdown">
+										<a class="btn">
+											<span class="dropdown-text">请选择</span>
+											<span class="dropdown-icon"><i class="icon icon-caret"></i></span>
+										</a>
+										<div class="sub-menu tinyscrollbar">
+											<div class="viewport">
+												<div class="overview">
+													<ul>
+														<li>
+															<a>请选择</a>
+														</li>
+														<li>
+															<a>上海市</a>
+														</li>
+														<li>
+															<a>北京市</a>
+														</li>
+														<li>
+															<a>广东省</a>
+														</li>
+														<li>
+															<a>内蒙古自治区</a>
+														</li>
+														<li class="is-disabled">
+															<a>浙江省</a>
+														</li>
+														<li>
+															<a>黑龙江省</a>
+														</li>
+														<li>
+															<a>广东省2</a>
+														</li>
+														<li>
+															<a>广东省3</a>
+														</li>
+														<li>
+															<a>广东省4</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="scrollbar none">
+												<div class="track">
+													<div class="thumb">
+														<div class="end"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown none block-sm events-form-select">
+										<a class="btn">
+											<span class="dropdown-text">请选择</span>
+											<span class="dropdown-icon"><i class="icon icon-caret"></i></span>
+										</a>
+										<select>
+											<option value="">请选择</option>
+											<option value="上海市">上海市</option>
+											<option value="北京市">北京市</option>
+											<option value="广东省">广东省</option>
+											<option value="内蒙古自治区">内蒙古自治区</option>
+											<option value="浙江省" disabled>浙江省</option>
+											<option value="黑龙江省">黑龙江省</option>
+											<option value="广东省2">广东省2</option>
+											<option value="广东省3">广东省3</option>
+											<option value="广东省4">广东省4</option>
+										</select>
+									</div>
+									<div class="msg-block">
+										<i class="icon msg-icon"></i>
+										<span>邮箱格式错误，请重新输入</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div><br/><br/><br/></div>
+
+						<h5 id="gl-icon">单选按钮</h5>
+                        <div class="row font-text-left">
+							<div class="col-12-12">
+								<div>
+									<div>
+										<input type="radio" id="Yes_group2" name="group2">
+										<label for="Yes_group2">Yes</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-12-12">
+								<div>
+									<div>
+										<input type="radio" id="No_group2" name="group2">
+										<label for="No_group2">No</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-12-12">
+								<div>
+									<div>
+										<input type="radio" id="Maybe_group2" name="group2">
+										<label for="Maybe_group2">Maybe</label>
+									</div>
+									<div class="message error">Error text, should say what is wrong in the field.</div>
+								</div>
+							</div>
+						</div>
+						<div><br/><br/><br/></div>
+
+						<h5 id="">复选按钮</h5>
+                        <div class="row font-text-left">
+							<div class="col-12-12">
+									<div>
+										<label>
+											<input type="checkbox">
+											<i class="icon-tick"></i>Still awesome?
+										</label>
+										<div class="message error">Error text, should say what is wrong in the field.</div>
+									</div>
+							</div>
+						</div>
+						<div><br/><br/><br/></div>
+
+
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<!-- 底部导航部分 -->
+		<footer class="footer" id="footer"></footer>
+	</div>
+	<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

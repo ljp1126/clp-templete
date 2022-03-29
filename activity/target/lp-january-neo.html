@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<%include _includes/meta.html %>
+		<title>lp-january-neo</title>
+		<%include _includes/css.html %>
+		<!-- <link rel="stylesheet" href="css/lp-january-neo.css" /> -->
+		<%include _includes/js.html %>
+		<!-- <script type="text/javascript" src="js/lp-january-neo.js"></script> -->
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+			<section class="container">
+				<style> 
+					.container {
+					background: #e4e5ea;
+					padding: 0 20px;
+					}
+					.article {
+					position: relative;
+					max-width: 1720px;
+					margin: 0 auto;
+					}
+					.article > img {
+					width: 100%;
+					}
+					.article .lp-link {
+					position: absolute;
+					z-index: 1;
+					}
+					.lp-january-neo-2 .lp-link {
+					width: 28%;
+					height: 32%;
+					right: 13%;
+					}
+					.lp-january-neo-2 .lp-link-1 {
+					top: 27%;
+					}
+					.lp-january-neo-2 .lp-link-2 {
+					top: 62%;
+					}
+					.lp-january-neo-3 .lp-link {
+					width: 28%;
+					height: 36%;
+					left: 13%;
+					}
+					.lp-january-neo-3 .lp-link-1 {
+					top: 7%;
+					}
+					.lp-january-neo-3 .lp-link-2 {
+					top: 49%;
+					}
+					.lp-january-neo-4 .lp-link {
+					width: 28%;
+					height: 40%;
+					right: 12%;
+					}
+					.lp-january-neo-4 .lp-link-1 {
+					top: 0;
+					}
+					.lp-january-neo-4 .lp-link-2 {
+					top: 51%;
+					}
+					.lp-january-neo-5 .lp-link {
+					width: 28%;
+					height: 34%;
+					left: 14%;
+					}
+					.lp-january-neo-5 .lp-link-1 {
+					top: 9%;
+					}
+					.lp-january-neo-5 .lp-link-2 {
+					top: 47%;
+					}
+					.lp-january-neo-6 .lp-link {
+					width: 28%;
+					height: 24%;
+					right: 13%;
+					}
+					.lp-january-neo-6 .lp-link-1 {
+					top: 35%;
+					}
+					.lp-january-neo-6 .lp-link-2 {
+					top: 66%;
+					}
+					.lp-january-neo-7 .lp-link {
+					width: 28%;
+					height: 39%;
+					left: 13%;
+					}
+					.lp-january-neo-7 .lp-link-1 {
+					top: 5%;
+					}
+					.lp-january-neo-7 .lp-link-2 {
+					top: 49%;
+					}
+					.lp-january-neo-8 .lp-link {
+					width: 28%;
+					height: 36%;
+					right: 16%;
+					top: 4%;
+					}
+					.lp-january-neo-10 .lp-link {
+					width: 34%;
+					height: 100%;
+					top: 0;
+					}
+					.lp-january-neo-10 .lp-link-1 {
+					left: 14%;
+					}
+					.lp-january-neo-10 .lp-link-2 {
+					right: 14%;
+					}
+					.lp-january-neo-12 .lp-link {
+					width: 34%;
+					height: 100%;
+					top: 0;
+					}
+					.lp-january-neo-12 .lp-link-1 {
+					left: 14%;
+					}
+					.lp-january-neo-12 .lp-link-2 {
+					right: 14%;
+					}
+					.lp-january-neo-14 .lp-link {
+					width: 34%;
+					height: 100%;
+					top: 0;
+					}
+					.lp-january-neo-14 .lp-link-1 {
+					left: 14%;
+					}
+					.lp-january-neo-14 .lp-link-2 {
+					right: 14%;
+					}
+					.lp-january-neo-16 {
+					background: #fff;
+					padding-bottom: 63px;
+					}
+					.lp-january-neo-16 > ul {
+					font-size: 0;
+					max-width: 1366px;
+					margin: 0 auto;
+					text-align: center;
+					}
+					.lp-january-neo-16 > ul > li {
+					display: inline-block;
+					width: 25%;
+					position: relative;
+					padding: 0 21px;
+					}
+					.lp-january-neo-16 > ul > li > img {
+					width: 100%;
+					}
+					.lp-january-neo-16 > ul > li .btn-component {
+					position: absolute;
+					bottom: 17px;
+					left: 21px;
+					right: 21px;
+					z-index: 1;
+					}
+					.lp-january-neo-16 > ul > li .btn-component .btn {
+					min-width: 178px;
+					}
+					@media (max-width: 1024px) {
+					.container {
+						padding: 0;
+					}
+					.article {
+						max-width: 100%;
+					}
+					.lp-january-neo-2 .lp-link {
+						right: 7%;
+					}
+					.lp-january-neo-2 .lp-link-1 {
+						top: 30%;
+					}
+					.lp-january-neo-2 .lp-link-2 {
+						top: 64%;
+					}
+					.lp-january-neo-3 .lp-link {
+						height: 40%;
+						left: 11.5%;
+					}
+					.lp-january-neo-3 .lp-link-1 {
+						top: 2%;
+					}
+					.lp-january-neo-3 .lp-link-2 {
+						top: 47%;
+					}
+					.lp-january-neo-4 .lp-link {
+						right: 7.7%;
+					}
+					.lp-january-neo-4 .lp-link-1 {
+						top: 5%;
+					}
+					.lp-january-neo-4 .lp-link-2 {
+						top: 50%;
+					}
+					.lp-january-neo-5 .lp-link {
+						height: 38%;
+						left: 9%;
+					}
+					.lp-january-neo-5 .lp-link-1 {
+						top: 9%;
+					}
+					.lp-january-neo-5 .lp-link-2 {
+						top: 51%;
+					}
+					.lp-january-neo-6 .lp-link {
+						height: 34%;
+						right: 7%;
+					}
+					.lp-january-neo-6 .lp-link-1 {
+						top: 27%;
+					}
+					.lp-january-neo-6 .lp-link-2 {
+						top: 63%;
+					}
+					.lp-january-neo-7 .lp-link {
+						height: 43%;
+						left: 8%;
+					}
+					.lp-january-neo-7 .lp-link-1 {
+						top: 0;
+					}
+					.lp-january-neo-7 .lp-link-2 {
+						top: 46%;
+					}
+					.lp-january-neo-8 .lp-link {
+						height: 43%;
+						right: 15%;
+						top: 2%;
+					}
+					.lp-january-neo-10 .lp-link {
+						width: 38%;
+					}
+					.lp-january-neo-10 .lp-link-1 {
+						left: 10%;
+					}
+					.lp-january-neo-10 .lp-link-2 {
+						right: 10%;
+					}
+					.lp-january-neo-12 .lp-link {
+						width: 42%;
+					}
+					.lp-january-neo-12 .lp-link-1 {
+						left: 7%;
+					}
+					.lp-january-neo-12 .lp-link-2 {
+						right: 7%;
+					}
+					.lp-january-neo-14 .lp-link {
+						width: 38%;
+					}
+					.lp-january-neo-14 .lp-link-1 {
+						left: 10%;
+					}
+					.lp-january-neo-14 .lp-link-2 {
+						right: 10%;
+					}
+					.lp-january-neo-16 {
+						padding: 0 50px;
+						padding-bottom: 60px;
+					}
+					.lp-january-neo-16 > ul {
+						max-width: 100%;
+					}
+					.lp-january-neo-16 > ul > li {
+						width: 50%;
+						padding: 6px;
+					}
+					}
+					@media (max-width: 768px) {
+					.lp-january-neo-16 {
+						padding: 0 25px;
+						padding-bottom: 30px;
+					}
+					.lp-january-neo-16 > ul > li {
+						padding: 3px;
+					}
+					.lp-january-neo-16 > ul > li .btn-component {
+						left: 0;
+						right: 0;
+					}
+					.lp-january-neo-16 > ul > li .btn-component .btn {
+						min-width: 114px;
+						height: 30px;
+						line-height: 30px;
+						font-size: 12px;
+					}
+					.lp-january-neo-16 > ul > li .btn-component .btn span:after {
+						top: 0;
+					}
+					}
+
+				</style>
+
+				<article class="article lp-january-neo-1">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-january-neo/pic-p-1.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-january-neo/pic-p-1.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-january-neo/pic-m-1.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-january-neo/pic-m-1.jpg"}}'
+					/>
+				</article>
+
+				<article class="article lp-january-neo-2">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-january-neo/pic-p-2.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-january-neo/pic-p-2.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-january-neo/pic-m-2.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-january-neo/pic-m-2.jpg"}}'
+					/>
+
+					<a href="https://www.adidas.com.cn/item/CV6903" target="_blank" class="lp-link lp-link-1"></a>
+					<a href="https://www.adidas.com.cn/item/CZ1707" target="_blank" class="lp-link lp-link-2"></a>
+				</article>
+
+				<article class="article lp-january-neo-3">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-january-neo/pic-p-3.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-january-neo/pic-p-3.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-january-neo/pic-m-3.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-january-neo/pic-m-3.jpg"}}'
+					/>
+					
+					<a href="https://www.adidas.com.cn/item/CZ4366" target="_blank" class="lp-link lp-link-1"></a>
+					<a href="https://www.adidas.com.cn/item/CZ1663" target="_blank" class="lp-link lp-link-2"></a>
+				</article>
+
+				<article class="article lp-january-neo-4">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-january-neo/pic-p-4.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-january-neo/pic-p-4.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-january-neo/pic-m-4.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-january-neo/pic-m-4.jpg"}}'
+					/>
+					
+					<a href="https://www.adidas.com.cn/item/CZ1710" target="_blank" class="lp-link lp-link-1"></a>
+					<a href="https://www.adidas.com.cn/item/CV6921" target="_blank" class="lp-link lp-link-2"></a>
+				</article>
+
+				<article class="article lp-january-neo-5">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-january-neo/pic-p-5.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-january-neo/pic-p-5.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-january-neo/pic-m-5.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-january-neo/pic-m-5.jpg"}}'
+					/>
+					
+					<a href="https://www.adidas.com.cn/item/CV7340" target="_blank" class="lp-link lp-link-1"></a>
+					<a href="https://www.adidas.com.cn/item/CV9253" target="_blank" class="lp-link lp-link-2"></a>
+				</article>
+
+				<article class="article lp-january-neo-6">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-january-neo/pic-p-6.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-january-neo/pic-p-6.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-january-neo/pic-m-6.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-january-neo/pic-m-6.jpg"}}'
+					/>
+					
+					<a href="https://www.adidas.com.cn/item/CV8991" target="_blank" class="lp-link lp-link-1"></a>
+					<a href="https://www.adidas.com.cn/item/CV9001" target="_blank" class="lp-link lp-link-2"></a>
+				</article>
+
+				<article class="article lp-january-neo-7">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-january-neo/pic-p-7.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-january-neo/pic-p-7.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-january-neo/pic-m-7.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-january-neo/pic-m-7.jpg"}}'
+					/>
+					
+					<a href="https://www.adidas.com.cn/item/CV8996" target="_blank" class="lp-link lp-link-1"></a>
+					<a href="https://www.adidas.com.cn/item/CV9009" target="_blank" class="lp-link lp-link-2"></a>
+				</article>
+
+				<article class="article lp-january-neo-8">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-january-neo/pic-p-8.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-january-neo/pic-p-8.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-january-neo/pic-m-8.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-january-neo/pic-m-8.jpg"}}'
+					/>
+					<a href="https://www.adidas.com.cn/item/CV9276" target="_blank" class="lp-link lp-link-1"></a>
+				</article>
+
+				<article class="article lp-january-neo-9">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-january-neo/pic-p-9.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-january-neo/pic-p-9.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-january-neo/pic-m-9.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-january-neo/pic-m-9.jpg"}}'
+					/>
+				</article>
+
+				<article class="article lp-january-neo-10">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-january-neo/pic-p-10.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-january-neo/pic-p-10.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-january-neo/pic-m-10.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-january-neo/pic-m-10.jpg"}}'
+					/>
+
+					<a href="https://www.adidas.com.cn/item/DB1540" target="_blank" class="lp-link lp-link-1"></a>
+					<a href="https://www.adidas.com.cn/item/DB1688" target="_blank" class="lp-link lp-link-2"></a>
+				</article>
+
+				<article class="article lp-january-neo-11">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-january-neo/pic-p-11.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-january-neo/pic-p-11.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-january-neo/pic-m-11.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-january-neo/pic-m-11.jpg"}}'
+					/>
+				</article>
+
+				<article class="article lp-january-neo-12">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-january-neo/pic-p-12.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-january-neo/pic-p-12.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-january-neo/pic-m-12.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-january-neo/pic-m-12.jpg"}}'
+					/>
+					
+					<a href="https://www.adidas.com.cn/item/DB0892" target="_blank" class="lp-link lp-link-1"></a>
+					<a href="https://www.adidas.com.cn/item/CG5800" target="_blank" class="lp-link lp-link-2"></a>
+				</article>
+
+				<article class="article lp-january-neo-13">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-january-neo/pic-p-13.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-january-neo/pic-p-13.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-january-neo/pic-m-13.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-january-neo/pic-m-13.jpg"}}'
+					/>
+				</article>
+
+				<article class="article lp-january-neo-14">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-january-neo/pic-p-14.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-january-neo/pic-p-14.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-january-neo/pic-m-14.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-january-neo/pic-m-14.jpg"}}'
+					/>
+
+					<a href="https://www.adidas.com.cn/item/DB1227" target="_blank" class="lp-link lp-link-1"></a>
+					<a href="https://www.adidas.com.cn/item/DB0113" target="_blank" class="lp-link lp-link-2"></a>
+				</article>
+
+				<article class="article lp-january-neo-15">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-january-neo/pic-p-15.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-january-neo/pic-p-15.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-january-neo/pic-m-15.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-january-neo/pic-m-15.jpg"}}'
+					/>
+				</article>
+
+				<article class="article lp-january-neo-16">
+					<ul>
+						<li>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-january-neo/neo/pic-p-1.jpg"
+								data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-january-neo/neo/pic-p-1.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-january-neo/neo/pic-m-1.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-january-neo/neo/pic-m-1.jpg"}}'
+							/>
+
+							<div class="btn-component">
+								<a href="https://www.adidas.com.cn/men_adidasneo_shoes" target="_blank" class="btn btn-white btn-have-arrow"><span>选购男子鞋类</span></a>
+							</div>
+						</li>
+						<li>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-january-neo/neo/pic-p-2.jpg"
+								data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-january-neo/neo/pic-p-2.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-january-neo/neo/pic-m-2.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-january-neo/neo/pic-m-2.jpg"}}'
+							/>
+
+							<div class="btn-component">
+								<a href="https://www.adidas.com.cn/men_adidasneo_clothing" target="_blank" class="btn btn-white btn-have-arrow"><span>选购男子服饰</span></a>
+							</div>
+						</li>
+						<li>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-january-neo/neo/pic-p-3.jpg"
+								data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-january-neo/neo/pic-p-3.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-january-neo/neo/pic-m-3.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-january-neo/neo/pic-m-3.jpg"}}'
+							/>
+								
+							<div class="btn-component">
+								<a href="https://www.adidas.com.cn/women_adidasneo_shoes" target="_blank" class="btn btn-white btn-have-arrow"><span>选购女子鞋类</span></a>
+							</div>
+						</li>
+						<li>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-january-neo/neo/pic-p-4.jpg"
+								data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-january-neo/neo/pic-p-4.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-january-neo/neo/pic-m-4.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-january-neo/neo/pic-m-4.jpg"}}'
+							/>
+							
+							<div class="btn-component">
+								<a href="https://www.adidas.com.cn/women_adidasneo_clothing" target="_blank" class="btn btn-white btn-have-arrow"><span>选购女子服饰</span></a>
+							</div>
+						</li>
+					</ul>
+				</article>
+
+
+				<script type="text/javascript">
+					$(function() {
+						// 换图 + 懒加载
+						$.spice.lazyLoad('img[lazysrc]', {
+							attr: 'lazysrc'
+						});
+						$.spice.tools.changeImageSrc({
+							callBack: function(img, self) {
+								$.spice.lazyLoad('img[lazysrc]', {
+									attr: self.opt.lazyData,
+									prestrain: 1
+								});
+							}
+						});
+
+					});
+
+				</script>
+			</section>
+			<%include _includes/modules/footer.html %>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+.article-mail-subscription .mail-subscription-content {
+  background: #fff;
+  display: block;
+  padding: 30px 0 60px;
+}
+.article-mail-subscription .mail-subscription-content.mail-subscription-success {
+  background: #E2FFD9;
+  height: 310px;
+}
+@media (max-width: 1024px) {
+  .article-mail-subscription .mail-subscription-content {
+    background: #fff;
+    display: block;
+    padding: 30px 0 60px;
+  }
+  .article-mail-subscription .mail-subscription-content .mail-subscription-main {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .article-mail-subscription .mail-subscription-content .mail-subscription-main .callout-bars {
+    display: none;
+  }
+  .article-mail-subscription .mail-subscription-content .mail-subscription-main > h3 {
+    font-size: 20px;
+    color: #000;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-weight: bold;
+  }
+  .article-mail-subscription .mail-subscription-content .mail-subscription-main .mail-subscription-form .form-group {
+    padding: 0 0 30px;
+    width: 100%;
+  }
+  .article-mail-subscription .mail-subscription-content .mail-subscription-main .mail-subscription-form .form-group.form-group-choice {
+    padding: 0;
+  }
+  .article-mail-subscription .mail-subscription-content .mail-subscription-main .mail-subscription-form .form-group.form-group-choice .form-choice-btn .form-choice-btn-radio {
+    margin: 0;
+    width: 50%;
+  }
+  .article-mail-subscription .mail-subscription-content .mail-subscription-main .mail-subscription-form .form-group.form-group-choice .form-choice-btn .form-choice-btn-checked {
+    padding: 12px 0 20px;
+    width: 100%;
+  }
+  .article-mail-subscription .mail-subscription-content .mail-subscription-main .mail-subscription-form .form-group.form-group-btn {
+    padding: 0;
+  }
+  .article-mail-subscription .mail-subscription-content .mail-subscription-main .mail-subscription-form .form-group.form-group-btn a {
+    width: 100%;
+    font-size: 16px;
+  }
+  .article-mail-subscription .mail-subscription-content .mail-subscription-main .mail-subscription-form .form-group .form-input {
+    width: 100%;
+  }
+  .article-mail-subscription .mail-subscription-content .mail-subscription-main .mail-subscription-statement {
+    padding: 0px;
+    line-height: 16px;
+  }
+  .article-mail-subscription .mail-subscription-content.mail-subscription-success .mail-subscription-success-main h2 {
+    font-size: 24px;
+    line-height: 26px;
+    padding: 80px 0 20px;
+    font-weight: normal;
+  }
+  .article-mail-subscription .mail-subscription-content.mail-subscription-success .mail-subscription-success-main h2 .icon-success {
+    margin: -6px 10px 0 0px;
+  }
+  .article-mail-subscription .mail-subscription-content.mail-subscription-success .mail-subscription-success-main P {
+    font-size: 14px;
+  }
+}

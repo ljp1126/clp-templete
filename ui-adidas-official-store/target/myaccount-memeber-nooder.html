@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" type="text/css" href="css/myaccount-memeber.css">
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="js/myaccount-memeber.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+
+			<!-- 内容部分 -->
+			<section class="container">
+				<article class="article article-breadcrumb-common-width none-sm">
+					<div class="breadcrumb">
+						<ul class="list-inline">
+							<li><a href="#"><i class="icon icon-round-lightgray-lefts"></i>返回</a></li>
+							<li class="divider">丨</li>
+							<li><a href="/">首页</a></li>
+							<li class="divider">/</li>
+							<li><a href="/">我的账户</a></li>
+						</ul>
+					</div>
+				</article>
+				
+				<!-- 模块二 -->
+				<article class="article article-my-width">
+					<div class="my-content-box float-clearfix">
+						<!-- 左 导航 -->
+						<%include _includes/myaccount-left-nav.html %>
+						
+						<!-- 右 内容 -->
+						<div class="myaccount-right">
+							<div class="myaccount-rig-left float-clearfix">
+								<div class="myaccount-box memeber">
+									<div class="memeber-box memeber-information">
+										<div class="myaccount-tit float-clearfix">
+											<h3>您好！James</h3>
+											<div>
+												<span>不是James？</span>
+												<a>退出</a>
+											</div>
+										</div>
+										
+										<div class="memeber-info">
+											<div class="member-card">
+												<div class="member-card-text">
+													<p>0020 8888 888</p>
+													<p>新标会员</p>
+												</div>
+											<img class="events-changeSrc" src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"images/about/vip-1.png"},
+							"medium":{"high":"", "normal":"images/about/vip-1@2x.png"},
+							"small":{"high":"", "normal":"images/about/vip-1@2x.png"}
+					}' />
+											</div>
+											<p class="memeber-bold">您当前的会员等级：<span>铜牌会员</span></p>
+											<p>您的会籍有效期：至2017年7月31日</p>
+											<p>目前的积分 <span>82</span> 分    拥有 <span>3</span> 张可用优惠券。</p>
+										</div>
+									</div>
+									
+									<div class="memeber-box memeber-order">
+										<div class="myaccount-tit float-clearfix">
+											<h3>官网订单</h3>
+											<div>
+												<a>查看全部订单<i class="icon icon-round-gray-rights"></i></a>
+											</div>
+										</div>
+										
+										<div class="memeber-order-info myaccount-right-content">
+											<div class="memeber-order-info-no">
+												<p>您还没有任何官网订单。</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="memeber-img">
+										<img class="events-changeSrc" src="images/blank.gif" 
+						data-image='{"standard":{"high":"", "normal":"images/myaccount/img-BANNER.png"},
+						"medium":{"high":"", "normal":"../static/images/common/banner@2x.jpg"},
+						"small":{"high":"", "normal":"../static/images/common/banner@2x.jpg"}}' />
+									</div>
+									
+									<div class="">
+										<div class="style-guess-you-Iike myaccount-might-like">
+											<h3>您可能也喜欢</h3>
+											<!-- 本月主推 -->
+											<%include _includes/guess-you-Iike.html %>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+
+					</div>
+					
+					
+					
+				</article>
+
+			</section>
+
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%include _includes/meta.html %>
+	<title>originals_goofy</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" href="css/lp-messi.css" />
+	<%include _includes/js.html %>
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+			<style>
+				.article,
+				.article-top {
+					position: relative;
+				}
+
+				.article img {
+					width: 100%;
+					height: auto;
+				}
+
+				.swiper-container-main .swiper-slide {
+					text-align: center;
+					padding: 0;
+				}
+
+				.swiper-container-main .swiper-slide img {
+					width: 100%;
+				}
+
+				.swiper-button-prev {
+					background-image: url(https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/left.png) !important;
+					width: 51px;
+					height: 23px;
+					background-size: 51px 23px;
+					left: -140px;
+				}
+
+				.swiper-button-next {
+					background-image: url(https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/right.png) !important;
+					width: 51px;
+					height: 23px;
+					background-size: 53px 23px;
+					right: -140px;
+				}
+
+
+				.pro-main {
+					position: absolute;
+					width: 72.5%;
+					top: 32%;
+					left: 50%;
+					transform: translate(-50%, 0);
+				}
+
+				.link {
+					position: absolute;
+				}
+
+
+
+				article img {
+					width: 100%;
+				}
+
+				.front_img,
+				.filter_img {
+					position: relative;
+				}
+
+				.link-bg {
+					width: 44%;
+					height: 86%;
+				}
+
+				.pop-1 .link-bg {
+					top: 5%;
+					left: 53.5%;
+				}
+
+				.filter_img {
+					display: none;
+					position: absolute;
+					width: 100%;
+					top: 0;
+					left: 0;
+				}
+				.pop-1 .link1 {
+					width: 37%;
+					height: 85%;
+					left: 13%;
+					top: 6%;
+				}
+
+				.pop-2 .link-bg {
+					left: 3.5%;
+					top: 5%;
+				}
+
+				.b-link .b-link1 {
+					width: 30%;
+					height: 76%;
+					left: 19%;
+					top: 15%;
+				}
+
+				.b-link .b-link2 {
+					width: 30%;
+					height: 76%;
+					left: 51%;
+					top: 15%;
+				}
+
+				.swiper-button-prev.swiper-button-disabled {
+					opacity: 0;
+				}
+
+				@media (max-width:1024px) {
+
+
+					.pro-main {
+						width: 90%;
+						top: 38%;
+					}
+
+					.swiper-button-next {
+						width: 23px;
+						height: 10px;
+						background-size: 23px 10px;
+						right: -2%;
+						top: 91.5%;
+					}
+
+					.swiper-button-prev {
+						width: 23px;
+						height: 10px;
+						background-size: 23px 10px;
+						left: -2%;
+						top: 91.5%;
+					}
+
+					.go-filter {
+						width: 100%;
+						height: 48%;
+					}
+
+				
+					.link-bg {
+						width: 100%;
+						height: 41%;
+					}
+
+					.pop-1 .link-bg,
+					.pop-2 .link-bg {
+						top: 54%;
+						left: 0;
+					}
+					.b-link .b-link1 {
+						width: 46%;
+						height: 89%;
+						left: 4%;
+						top: 4%;
+					}
+
+					.b-link .b-link2 {
+						width: 46%;
+						height: 89%;
+						left: 50%;
+						top: 4%;
+					}
+				}
+			</style>
+			<article class="article">
+				<a href="https://www.adidas.com.hk/originals_sustainability" target="_blank">
+					<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/pc_01.jpg" src="https://img.adidas.com.hk/images/blank.gif" data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/pc_01.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/mob_01.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/mob_01.jpg&quot;}
+					}">
+				</a>
+			</article>
+			<article class="article">
+				<img lazysrc="https://img.adidas.com.hk/images/blank.gif" src="https://img.adidas.com.hk/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/pc_02.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/mob_02.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/mob_02.jpg&quot;}
+				}">
+				<div class="pro-main">
+					<div class="swiper-container swiper-container-main">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="https://www.adidas.com.hk/item/FW2292" target="_blank">
+									<img  src="https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/shop_01.png">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="https://www.adidas.com.hk/item/FW2361" target="_blank">
+									<img  src="https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/shop_02.png">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="https://www.adidas.com.hk/item/FW4145" target="_blank">
+									<img  src="https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/shop_03.png">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="https://www.adidas.com.hk/item/FV0534" target="_blank">
+									<img  src="https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/shop_04.png">
+								</a>
+							</div>
+
+
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</article>
+			<article class="article pop pop-1">
+				<div class="front_img">
+					<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/pc_03.jpg" src="https://img.adidas.com.hk/images/blank.gif" data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/pc_03.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/mob_03.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/mob_03.jpg&quot;}
+					}">
+					
+					<a href="https://www.adidas.com.hk/item/FW2292" target="_blank" class="link link-bg"></a>
+				</div>
+				
+			</article>
+			<article class="article pop pop-2">
+				<div class="front_img">
+					<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/pc_04.jpg" src="https://img.adidas.com.hk/images/blank.gif" data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/pc_04.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/mob_04.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/mob_04.jpg&quot;}
+					}">
+					
+					<a href="https://www.adidas.com.hk/item/FW2293" target="_blank" class="link link-bg"></a>
+				</div>
+				
+			</article>
+			<article class="article pop pop-1">
+				<div class="front_img">
+					<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/pc_05.jpg" src="https://img.adidas.com.hk/images/blank.gif" data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/pc_05.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/mob_05.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/mob_05.jpg&quot;}
+					}">
+					
+					<a href="https://www.adidas.com.hk/item/FU9787" target="_blank" class="link link-bg"></a>
+				</div>
+				
+			</article>
+			<article class="article pop pop-2">
+				<div class="front_img">
+					<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/pc_06.jpg" src="https://img.adidas.com.hk/images/blank.gif" data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/pc_06.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/mob_06.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/mob_06.jpg&quot;}
+					}">
+					
+					<a href="https://www.adidas.com.hk/item/FY2826" target="_blank" class="link link-bg"></a>
+				</div>
+				
+			</article>
+			
+			<article class="article">
+				<div class="article b-link">
+					<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/pc_07.jpg" src="https://img.adidas.com.hk/images/blank.gif" data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/pc_07.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/mob_07.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/PRIMEGREEN/CLP/mob_07.jpg&quot;}
+					}">
+					<a href="https://www.adidas.com.hk/originals_sustainability_clothing" class="link b-link1"></a>
+					<a href="https://www.adidas.com.hk/originals_sustainability_shoes" class="link b-link2"></a>
+				</div>
+			</article>
+			<script type="text/javascript">
+				$(function() {
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+					$('.swiper-container-main').each(function(index, el) {
+						$(this).addClass('swiper-container-main' + '-' + index);
+						$(this).siblings('.swiper-button-next').addClass('swiper-button-next' + index);
+						$(this).siblings('.swiper-button-prev').addClass('swiper-button-prev' + index);
+						var newSwiper;
+						if ($('.swiper-container-main').length) {
+							newSwiper = new Swiper(el, {
+								loop: true,
+								autoplay: 2500,
+								speed: 1000,
+								nextButton: '.swiper-button-next' + index,
+								prevButton: '.swiper-button-prev' + index,
+								lazyLoading: true,
+								lazyLoadingInPrevNext: true,
+								slidesPerView: 3,
+								spaceBetween: '8%',
+								breakpoints: {
+									768: {
+										slidesPerView: 2,
+										spaceBetween: 20,
+									}
+								}
+							});
+						}
+					})
+					
+				})
+			</script>
+
+		</section>
+		<%include _includes/modules/footer.html %>
+	</div>
+</body>
+
+</html>

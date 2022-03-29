@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="44" viewBox="0 0 60 44">
+    <defs>
+        <filter id="a" width="118.8%" height="118.8%" x="-9.4%" y="-9.4%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.232393569 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <circle id="b" cx="16" cy="16" r="16"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(2 7)">
+        <rect width="47" height="30" fill="#D8D8D8" rx="3"/>
+        <path fill="#606060" d="M0 5h47v7H0z"/>
+        <path fill="#FFF" d="M29 16h13v7H29z"/>
+        <path fill="#EDEDED" d="M3 16h30v7H3z"/>
+        <g filter="url(#a)" transform="translate(23 3)">
+            <mask id="c" fill="#fff">
+                <use xlink:href="#b"/>
+            </mask>
+            <use fill="#D8D8D8" xlink:href="#b"/>
+            <rect width="51" height="30" x="-25" y="-2" fill="#D8D8D8" mask="url(#c)" rx="3"/>
+            <path fill="#606060" d="M-25 2h51v7h-51z" mask="url(#c)"/>
+            <path fill="#FFF" d="M11 13h11v7H11z" mask="url(#c)"/>
+            <path fill="#EDEDED" d="M-21 13H9v7h-30z" mask="url(#c)"/>
+            <rect width="51" height="30" x="-25" y="-2" fill="#D8D8D8" mask="url(#c)" rx="3"/>
+            <path fill="#606060" d="M-7 0h38v9H-7z" mask="url(#c)"/>
+            <path fill="#EDEDED" d="M-20 13H7v11h-27a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1z" mask="url(#c)"/>
+        </g>
+        <path fill="#FFF" d="M29 16h18a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H29V16z"/>
+        <path fill="#000" d="M33.202 23.95v-4.74L32 20.254v-1.16l1.202-1.044h1.077v5.9h-1.077zm2.809 0v-.97l2.204-2.56c.111-.127.19-.243.237-.348a.885.885 0 0 0 .07-.365c0-.22-.06-.399-.182-.534-.122-.136-.299-.203-.53-.203a.932.932 0 0 0-.262.037.61.61 0 0 0-.398.356.917.917 0 0 0-.062.36h-1.077c0-.27.046-.512.137-.724.091-.213.218-.394.381-.543.163-.15.354-.263.572-.34.218-.077.454-.116.708-.116.26 0 .5.04.721.12.221.08.41.194.568.34.158.146.28.326.369.539.088.212.132.451.132.716 0 .144-.013.273-.041.386a1.552 1.552 0 0 1-.12.327 1.837 1.837 0 0 1-.199.311c-.08.102-.17.211-.27.327l-1.649 1.915h2.28v.97H36.01zM44 22.243c0 .293-.05.55-.15.77-.099.222-.234.406-.405.552-.172.146-.37.255-.597.327a2.372 2.372 0 0 1-.72.108c-.244 0-.477-.033-.701-.1a1.71 1.71 0 0 1-.597-.31 1.54 1.54 0 0 1-.418-.539 1.893 1.893 0 0 1-.166-.791h1.077c.006.132.03.247.075.344a.687.687 0 0 0 .427.381c.096.03.197.045.302.045a.8.8 0 0 0 .572-.21c.15-.142.224-.345.224-.61 0-.249-.072-.446-.216-.593-.143-.146-.348-.22-.613-.22h-.158v-.936h.158c.265 0 .456-.07.572-.211a.8.8 0 0 0 .174-.526c0-.249-.072-.437-.216-.564a.739.739 0 0 0-.505-.19.725.725 0 0 0-.51.186c-.135.124-.208.3-.22.526h-1.077c.006-.265.057-.501.153-.708a1.613 1.613 0 0 1 .954-.858c.218-.077.451-.116.7-.116.26 0 .5.041.72.124.222.083.412.2.573.348.16.15.284.328.373.535.088.207.132.435.132.684 0 .32-.065.576-.195.766-.13.19-.291.339-.484.444.21.11.39.272.538.484.15.213.224.499.224.858z"/>
+        <circle cx="39" cy="19" r="16" stroke="#FFF"/>
+    </g>
+</svg>

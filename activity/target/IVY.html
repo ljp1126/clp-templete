@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" type="text/css" href="css/adiclub.css"> -->
+	<%include _includes/js.html %>
+	<!-- <script type="text/javascript" src="js/adiclub.js"></script> -->
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+
+			<style>
+				.article {
+					position: relative;
+				}
+
+				.article img {
+					width: 100%;
+				}
+
+				.video-box {
+					cursor: pointer;
+				}
+
+				.video-wrapper {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					top: 0;
+					left: 0;
+					
+				}
+
+				.video-box .video-content {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					top: 0;
+					left: 0;
+				}
+
+				.video-content .video {
+					width: 100%;
+					object-fit: cover;
+					visibility: hidden;
+				}
+
+				.video-box.is-play .video-wrapper .video-content .video {
+					visibility: visible;
+				}
+
+				@media (max-width: 1024px) {
+					.video-content .video {
+						height: 100%;
+					}
+				}
+			</style>
+			<article class="article">
+				<img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/IVY/CLP/pc_01.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/IVY/CLP/mob_01.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/IVY/CLP/mob_01.jpg&quot;}}">
+			</article>
+
+			<article class="article article-video video-box none-sm">
+				<img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/IVY/CLP/pc_02.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/IVY/CLP/mob_02.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/IVY/CLP/mob_02.jpg&quot;}}">
+				<div class="video-wrapper e-video e-play-video-new none-sm">
+					<div class="video-content"></div>
+					<a class="video-play" href="javascript:void(0)"> <span class="video-code" data-video-code="A273A302DA173E979C33DC5901307461"> 
+						<img src="https://img.adidas.com.hk/resources/2020/KV/OCT/IVY/CLP/pc_02.jpg" >
+					</a>
+				</div>
+				
+			</article>
+			<article class="article article-video video-box none block-sm">
+				<img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/IVY/CLP/pc_02.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/IVY/CLP/mob_02.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/IVY/CLP/mob_02.jpg&quot;}}">
+				<div class="video-wrapper e-video e-play-video-new ">
+					<div class="video-content"></div>
+					<a class="video-play" href="javascript:void(0)"> <span class="video-code" data-video-code="0FB52A427064670F9C33DC5901307461"> 
+						<img src="https://img.adidas.com.hk/resources/2020/KV/OCT/IVY/CLP/mob_02.jpg">
+					</a>
+				</div>
+			</article>
+			<article class="article">
+				<img src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/IVY/CLP/pc_03.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/IVY/CLP/mob_03.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/OCT/IVY/CLP/mob_03.jpg&quot;}}">
+			</article>
+			<script type="text/javascript">
+				$(function() {
+					// 换图 + 懒加载
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+
+					var loadImgFun_index = function(imgArr, fn) {
+						var loadImgLen = 0,
+							errImgLen = 0;
+						var imgdefereds = [];
+						$(imgArr).each(function() {
+							var defered = $.Deferred();
+							$(this)
+								.on("load", function() {
+									defered.resolve();
+									loadImgLen++;
+								})
+								.on("error", function() {
+									defered.resolve();
+									errImgLen++;
+								});
+							if (this.complete)
+								setTimeout(function() {
+									defered.resolve();
+								}, 200);
+							imgdefereds.push(defered);
+						});
+						$.when.apply(null, imgdefereds).done(function() {
+							if (fn && $.isFunction(fn)) {
+								fn();
+							}
+						});
+					};
+					$(".e-video").each(function(index, el) {
+						$(el).addClass("home-video");
+						var videoCode = $(".video-code", el).data("video-code"),
+							videoId = "home_video_" + index;
+						loadImgFun_index($(".video-code img", el), function() {});
+						var bannerVideoId = videoCode;
+						var url = base + "/indexCCVideo.json";
+						var data = loxia.syncXhrGet(url, {
+							'bannerVideoId': bannerVideoId
+						});
+						var videoUrl = data.mp4VideoUrl;
+						var html = '<video class="video" id="' +
+							videoId +
+							'"  webkit-playsinline="true" playsInline="true"><source src="' +
+							videoUrl +
+							'" ></source></video>';
+						$(".video-content", el).html(html);
+					});
+					$(".e-play-video-new").on("tap", function() {
+						var _parent_article = $(this).parents(".article-video"),
+							_video_s = $(this).parents(".article-video").find(".video"),
+							_video = $(this)
+							.parents(".article-video")
+							.find(".video");
+						_parent_article.toggleClass("is-play");
+						if (_parent_article.hasClass("is-play")) {
+							for (var i = 0; i < _video_s.length; i++) {
+								_video_s.eq(i)[0].pause();
+							}
+							_video[0].play();
+							_video[0].addEventListener("ended", function() {
+								this.play();
+							});
+						} else {
+							_video[0].pause();
+						}
+					});
+				});
+			</script>
+		</section>
+
+		<%include _includes/modules/footer-no-back-top.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,926 @@
+<html>
+<head>
+	<%include _includes/meta.html %>
+	<title>campaign</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+
+		<style type="text/css">
+		.hover-scale {
+			clear: both;
+			overflow: hidden;
+			margin-bottom: 95px;
+		}
+
+		.hover-scales {
+			clear: both;
+			overflow: hidden;
+			margin-bottom: 70px;
+		}
+		
+		.hover-scale .box-left {
+			float: left;
+			width: 50%;
+		}
+		.hover-scale .box-left-7-4-03{
+			margin-right: -0.01%;
+		}
+		.hover-scale .box-left .show-left {
+			float: left;
+			width: 50%;
+		}
+
+		.hover-scale .box-left .show-right {
+			float: left;
+			width: 50%;
+		}
+
+		.hover-scale .box-left .show-left img,
+		.hover-scale .box-left .show-right img {
+			width: 100%;
+		}
+
+		.hover-scale .box-right {
+			float: left;
+			width: 50%;
+		}
+
+		.hover-scale .box-right .buy-btn {
+			position: relative;
+		}
+
+		.hover-scale .box-right .buy-btn .btn {
+			position: absolute;
+			left: 50%;
+			bottom: 36%;
+			width: 284px;
+			font-size: 22px;
+			margin-left: -142px;
+			font-size: 18px;
+			background: rgba(255, 255, 255, 0.8);
+		}
+
+		.hover-scale .box-right .buy-btn .btn span::after{
+			top: 3px;
+		}
+
+		.hover-scale .box-right .show-right {
+			clear: both;
+			overflow: hidden;
+		}
+
+		.hover-scale .box-right .buy-btn a {
+			bottom: 6%;
+		}
+
+		.hover-scale .box-right .show-right .show-right-top {
+			float: left;
+			width: 50.1%;
+		}
+
+		.hover-scale .box-right .show-right .show-right-bottom {
+			float: left;
+			width: 49.9%;
+		}
+
+		.hover-scale .box-right .buy-btn img,
+		.hover-scale .box-right .show-right .show-right-top img,
+		.hover-scale .box-right .show-right .show-right-bottom img {
+			width: 100%;
+		}
+
+		.hover-scale .box-left .shoe-7-4-01{
+			width: 49.27%;
+		}
+
+		.hover-scale .box-left .shoe-7-4-02{
+			width: 50.73%;
+		}
+
+		.section-campaign {
+			margin-bottom: 100px;
+		}
+
+		.section-campaign .scroll .scroll-btn-next,
+		.section-campaign .scroll .scroll-btn-prev {
+			padding: 0;
+			margin-top: -42px;
+		}
+
+		.section-campaign .scroll .scroll-btn-next {
+			right: 47px;
+		}
+
+		.section-campaign .scroll .scroll-btn-prev {
+			left: 47px;
+		}
+
+		.section-campaign .scroll .scroll-btn-next a,
+		.section-campaign .scroll .scroll-btn-prev a {
+			text-indent: -9999px;
+		}
+
+		.section-campaign .scroll .scroll-btn-next a i,
+		.section-campaign .scroll .scroll-btn-prev a i {
+			display: inline-block;
+			background: url(https://img.adidas.com.cn/images/icon.png);
+			width: 42px;
+			height: 76px;
+		}
+
+		.section-campaign .scroll .scroll-btn-prev a i {
+			background-position: -568px -50px;
+		}
+
+		.section-campaign .scroll .scroll-btn-next a i {
+			background-position: -620px -50px;
+		}
+
+		.section-campaign li .btn {
+			position: absolute;
+			top: 85%;
+			left: 50%;
+			transform: translateX(-50%);
+			min-width: 180px;
+		}
+
+		.article-swiper-swift {
+			position: relative;
+			margin-bottom: 75px;
+		}
+
+		.article-swiper-swift .swiper-container {
+			position: relative;
+		}
+
+		.article-swiper-swift .swiper-container .swiper-wrapper {
+			width: 64%;
+			height: auto;
+			position: relative;
+		}
+
+		.article-swiper-swift .swiper-container .swiper-wrapper .swiper-slide {
+			height: auto;
+		}
+
+		.article-swiper-swift .swiper-container .swiper-wrapper .swiper-slide>a {
+			cursor: default;
+		}
+
+		.article-swiper-swift .swiper-container .swiper-wrapper .content-text {
+			/* position: absolute;
+			bottom: 7%;
+			left: 50%;
+			margin-left: -105px;
+			text-align: center; */
+		}
+
+		.article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn {
+			margin-top: 0;
+			width: 210px;
+			font-size: 24px;
+		}
+
+		.article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn span:after {
+			top: 7px;
+		}
+
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn {
+			width: 64%;
+			left: 18%;
+			position: absolute;
+			top: 50%;
+			z-index: 0;
+		}
+
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn .swiper-button-disabled {
+			opacity: 0;
+		}
+
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev,
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+			width: 33px;
+			height: 63px;
+			margin-top: -32px;
+			background-image: none;
+			overflow: hidden;
+		}
+
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev {
+			left: -47px;
+		}
+
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+			right: -47px;
+		}
+
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev .icon-action-sports-arrow-l {
+			display: block;
+			width: 33px;
+			height: 63px;
+			background: url(https://img.adidas.com.cn/images/icon.png);
+			background-position: -676px -454px;
+		}
+
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next .icon-action-sports-arrow-r {
+			display: block;
+			width: 33px;
+			height: 63px;
+			background: url(https://img.adidas.com.cn/images/icon.png);
+			background-position: -790px -454px;
+		}
+		.article-grieshoch{
+			text-align: center;
+		}
+		.article-grieshoch .grieshoch-box{
+			position: relative;
+			width: 32%;
+			/* margin-right: 1.33%; */
+			display: inline-block;
+		}
+		.article-grieshoch .grieshoch-box:nth-child(1){
+			margin-right: 0.665%;
+		}
+		.article-grieshoch .grieshoch-box:nth-child(2){
+			margin-left: 0.665%;
+		}
+		.article-grieshoch .grieshoch-box-no{
+			margin-right: 0;
+		}
+		.article-grieshoch .grieshoch-bg{
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+			background: rgba(0,0,0,0);
+			content: "";
+			transition: all .5s ease-in-out;
+		}
+		.article-grieshoch .grieshoch-box a:hover .grieshoch-bg{
+			background: rgba(0,0,0,.2);
+		}
+		.article-grieshoch .grieshoch-box a .grieshoch-btn{
+			position: absolute;
+			top: 57%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100%; 
+			text-align: center;
+			z-index: 10;
+		}
+		.article-grieshoch .grieshoch-box a .grieshoch-btn p{
+			font-family: "adineueprobold", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+			text-align: center;
+			font-size: 36px;
+			color: #ffffff;
+			font-weight: 700;
+			margin-bottom: 18px;
+		}
+		.article-grieshoch .grieshoch-box a .grieshoch-btn span{
+			height: 44px;
+    		line-height: 44px;
+		}
+		.article-grieshoch .grieshoch-box a .grieshoch-btn span:hover{
+			background: rgba(255, 255, 255, 1);
+		}
+		.article-swiper-swift .swiper-container .swiper-wrapper .swiper-slide .btn{
+			position: absolute;
+			top: 79%;
+			left: 50%;
+			transform: translateX(-50%);
+			min-width: 180px;
+			font-size: 18px;
+		}
+		.article-swiper-swift .swiper-container .swiper-wrapper .swiper-slide .btn span:after{
+			top: 4px;
+		}
+		.article-foot{
+			position: relative;
+		}
+		.article-foot img{
+			width: 100%;
+		}
+		.article-foot .btn-7-9-01{
+			position: absolute;
+			top: 46%;
+			left: 50%;
+			transform: translateX(-50%);
+			min-width: 180px;
+			background: rgba(255, 255, 255, 0.8);
+		}
+		@media screen and (max-width: 1024px) {
+			.hover-scale {
+				margin-bottom: 25px;
+			}
+			.hover-scale .box-left,
+			.hover-scale .box-right {
+				width: 100%;
+			}
+			.hover-scale .box-left .show-left,
+			.hover-scale .box-left .show-right {
+				width: 50%;
+			}
+			.hover-scale .box-right .buy-btn .btn {
+				font-size: 16px;
+				width: 226px;
+				margin-left: -113px;
+				height: 40px;
+				line-height: 40px;
+			}
+			.hover-scale .box-right .show-right .show-right-top {
+				width: 50%;
+			}
+			.hover-scale .box-right .show-right .show-right-bottom {
+				width: 50%;
+			}
+			.hover-scale .box-right .show-right .show-right-top-new {
+				width: 50.2%;
+			}
+			.hover-scale .box-right .show-right .show-right-bottom-new {
+				width: 49.8%;
+			}
+			.section-campaign {
+				margin-bottom: 35px;
+			}
+			.section-campaign .scroll .scroll-btn-next {
+				right: 16px;
+				margin-top: -15px;
+			}
+			.section-campaign .scroll .scroll-btn-prev {
+				left: 16px;
+				margin-top: -15px;
+			}
+			.section-campaign .scroll .scroll-btn-next a i,
+			.section-campaign .scroll .scroll-btn-prev a i {
+				width: 15px;
+				height: 30px;
+				background-size: 15px 30px;
+			}
+			.section-campaign .scroll .scroll-btn-next a i,
+			.section-campaign .scroll .scroll-btn-prev a i {
+				width: 24px;
+				height: 40px;
+				background-size: 500px;
+			}
+			.section-campaign .scroll .scroll-btn-prev a i {
+				background-position: -283px -24px;
+			}
+			.section-campaign .scroll .scroll-btn-next a i {
+				background-position: -309px -24px;
+			}
+			.section-campaign li img {
+				width: 100%;
+			}
+			.section-campaign li .btn {
+				top: auto;
+				right: 5%;
+				width: 90%;
+				bottom: 5%;
+				height: 40px;
+				line-height: 40px;
+				min-width: 143px;
+				font-size: 16px;
+			}
+			.hover-scale .box-left .shoe-7-4-01{
+				width: 49.27%;
+			}
+
+			.hover-scale .box-left .shoe-7-4-02{
+				width: 50.73%;
+			}
+			.hover-scale .box-left .shoe-7-4-01{
+				width: 49.37%;
+			}
+			.hover-scale .box-left .shoe-7-4-02{
+				width: 50.63%;
+			}
+			.article-grieshoch{
+				margin-bottom: 25px;
+			}
+			.article-grieshoch .grieshoch-box{
+				width: 48.5%;
+				margin-right: 2%;
+				margin-bottom: 2%;
+			}
+			.article-grieshoch .grieshoch-box img{
+				width: 100%;
+			}
+			.article-grieshoch .grieshoch-box:nth-child(2n){
+				margin-right: 0;
+			}
+			.article-grieshoch .grieshoch-box a .grieshoch-btn{
+				top: 63%;
+			}
+			.article-grieshoch .grieshoch-box a .grieshoch-btn p{
+				font-size: 24px;
+    			margin-bottom: 5px;
+			}
+			.article-grieshoch .grieshoch-box a .grieshoch-btn span{
+				height: 40px;
+				line-height: 40px;
+				font-size: 16px;
+			}
+			.article-grieshoch .grieshoch-box:nth-child(1){
+				margin-right: 1%;
+			}
+			.article-grieshoch .grieshoch-box:nth-child(2){
+				margin-left: 1%;
+			}
+			.hover-scale .box-right .buy-btn .btn{
+				bottom: 14%;
+				height: 40px;
+				line-height: 40px;
+				max-width: 143px;
+				left: 61%;
+			}
+			.article-swiper-swift{
+				margin-bottom: 35px;
+			}
+			.article-swiper-swift .swiper-container .swiper-wrapper .swiper-slide .btn{
+				height: 34px;
+				line-height: 34px;
+				font-size: 16px;
+				top: 66%;
+				max-width: 143px;
+				min-width: 143px !important;
+			}
+			.btn{
+				background: rgba(255, 255, 255, 0.8);
+			}
+			.article-swiper-swift .swiper-container .swiper-wrapper .content-text {
+				text-align: center;
+			}
+			.article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn{
+				position: static;
+				left: inherit;
+				transform: none;
+				/* background: rgba(255, 255, 255, 0.8); */
+			}
+			.article-foot .btn-7-9-01{
+				height: 40px;
+				line-height: 40px;
+				font-size: 16px;
+				top:  54%;
+				min-width: 150px;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.section-campaign li .btn{
+				bottom: 3%;
+				max-width: 100px;
+			}
+			.article-swiper-swift .swiper-container {
+				padding: 0px 35px 0px;
+			}
+			.article-swiper-swift .swiper-container .swiper-wrapper {
+				width: 100%;
+			}
+			.article-swiper-swift .swiper-container .swiper-wrapper .content-text {
+				bottom: 7%;
+				margin-left: -60px;
+				position: static;
+				margin: 24px auto 0;
+			}
+			.article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn {
+				width: 160px;
+				min-width: 160px;
+				font-size: 16px;
+				height: 40px;
+				line-height: 40px;
+				background: #262626;
+				opacity: 1;
+				color: #fff;
+			}
+			.article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn span:after {
+				top: 3px;
+				background-size: 500px;
+				background-position: -26px -18px !important;
+			}
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn {
+				z-index: 1;
+				width: 100%;
+				left: 0;
+			}
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev,
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+				width: 18px;
+				height: 34px;
+				margin-top: -40px;
+			}
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev {
+				left: 8px;
+			}
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+				right: 8px;
+			}
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev .icon-action-sports-arrow-l {
+				width: 18px;
+				height: 34px;
+				background: url(https://img.adidas.com.cn/images/icon@2x.png);
+				background-size: 500px;
+				background-position: -303px -652px;
+			}
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next .icon-action-sports-arrow-r {
+				width: 18px;
+				height: 34px;
+				background: url(https://img.adidas.com.cn/images/icon@2x.png);
+				background-size: 500px;
+				background-position: -275px -652px;
+			}
+			.article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn{
+				/* background: rgba(255, 255, 255, 0.8); */
+			}
+		}
+		@media screen and (max-width: 767px){
+			.article-grieshoch .grieshoch-box a .grieshoch-btn p{
+				font-size: 23px;
+			}
+		}
+		.article-foot{
+			margin-bottom: 30px;
+		}
+		img{
+			width: 100%;
+		}
+		.article-middle{
+			margin: 0 auto;
+			width: 90%;
+		}
+		.article-middle .middle-black {
+			color: white;
+			background-color: black;
+			font-family: "adineueproblack", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+			border: 4px solid #000;
+			padding: 10px;
+			font-size: 20px;
+			line-height: 22px;
+			letter-spacing: 0;
+			margin-bottom: 12px;
+			text-align: center;
+		}
+		.article-middle .middle-border{
+			font-size: 0;
+			text-align: center;
+		}
+		.article-middle .middle-border .middle-border-box{
+			width: 49.5%;
+			display: inline-block;
+		}
+		.article-middle .middle-border .middle-border-box .middle-border-black{
+			color: #000000;
+			background-color: white;
+			font-family: "adineueproblack", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+			border: 4px solid #000;
+			padding: 10px;
+			font-size: 20px;
+			line-height: 22px;
+			letter-spacing: 0;
+			text-align: center;
+			display: inline-block;
+			margin-bottom: 12px;
+			width: 100%;
+		}
+		.article-middle .middle-border .middle-border-box .middle-border-black-size{
+			font-size: 20px;
+			position: relative;
+			height: 335px;
+		}
+		.article-middle .middle-border .middle-border-box .middle-border-black-size p{
+			position: absolute;
+			text-align: center;
+			top: 49%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+			line-height: 40px;
+		}
+		.article-middle .middle-border .middle-border-black-01{
+			margin-right: 0.5%
+		}
+		.article-middle .middle-border .middle-border-black-02{
+			margin-left: 0.5%
+		}
+		@media screen and (max-width: 1024px){
+			.article-middle{
+				width: 95%;
+			}
+			.article-middle .middle-border .middle-border-box{
+				display: block;
+				width: 100%;
+			}
+			.article-middle .middle-border .middle-border-box .middle-border-black{
+				font-size: 16px;
+				line-height: 18px;
+			}
+			.article-middle .middle-border .middle-border-box .middle-border-black-size{
+				font-size: 16px;
+				height: 290px;
+			}
+		}
+		.article-header-middle .banner-iterm-video .video-content{
+			text-align: center;
+		}
+		@media screen and (max-width: 1024px){
+			.article-header-middle .banner-iterm-video .video-content video{
+				width: 100%;
+			}
+			.article-header-middle-mob{
+				position: relative;
+			}
+			.article-header-middle-mob a{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		</style>
+		<script type="text/javascript">
+			$(function () {
+				$.spice.kvScroll('.events-scroll-loop-campaign', {
+					type: 'scroll-loop',
+					autoPlay: true,
+					loop: true
+				});
+
+				// 视频
+				$('.e-lp-video-btn').on('tap', function (e) {
+					e.preventDefault();
+					var _this = $(this),
+						videoCode = _this.data('videoCode');
+
+					openVideo(videoCode, 'true');
+				});
+				// 视频 end
+
+				// 图片hover放大
+				$('.events-scale img').on('mouseenter', function() {
+					$(this).css({ 'transition': 'transform 7.5s linear', 'transform': 'scale(1.3)' });
+					$(this).parent().parent().find('i').css({ 'transition': 'transform 1s linear', 'transform': 'rotate(180deg)' })
+				});
+
+				// 图片hover复原
+				$('.events-scale img').on('mouseleave', function() {
+					$(this).css({ 'transition': 'none', 'transform': 'none'});
+					$(this).parent().parent().find('i').css({ 'transition': 'transform 1s linear', 'transform': 'rotate(-180deg)'});
+				}); 
+
+
+				// 图片hover放大  底部
+				$('.grieshoch-box a').on('mouseenter', function () {
+					$(this).children('img').css({ 'transition': 'transform 7.5s linear', 'transform': 'scale(1.3)' });
+					$(this).parent().parent().find('i').css({ 'transition': 'transform 1s linear', 'transform': 'rotate(180deg)' })
+					console.log(1)
+				});
+				// 图片hover复原 底部
+				$('.grieshoch-box a').on('mouseleave', function () {
+					$(this).children('img').css({ 'transition': 'none', 'transform': 'none' });
+					$(this).parent().parent().find('i').css({ 'transition': 'transform 1s linear', 'transform': 'rotate(-180deg)' });
+				});
+				
+
+				var swiper = new Swiper('.swiper-container-od-jacket', {
+					slidesPerView: 'auto',
+					loop: true,
+					centeredSlides: true,
+					paginationClickable: true,
+					spaceBetween: 64,
+					prevButton:'.swiper-button-prev1',
+					nextButton:'.swiper-button-next1',
+					initialSlide: 0
+				});
+				// var loadImgFun = function(imgArr, fn) {
+				// 	// 图片加载fun
+				// 	var loadImgLen = 0,
+				// 		errImgLen = 0
+
+				// 	var imgdefereds = [];
+				// 	$(imgArr).each(function() {
+				// 		var defered = $.Deferred();
+				// 		$(this).on('load', function() {
+				// 			defered.resolve();
+				// 			loadImgLen++
+				// 		}).on('error', function() {
+				// 			defered.resolve();
+				// 			errImgLen++
+				// 		})
+				// 		if (this.complete) setTimeout(function() {
+				// 			defered.resolve();
+				// 		}, 200);
+				// 		imgdefereds.push(defered);
+				// 	})
+				// 	$.when.apply(null, imgdefereds).done(function() {
+				// 		if (fn && $.isFunction(fn)) {
+				// 			fn()
+				// 		}
+				// 	});
+
+				// }
+				$('.e-banner-iterm-video').each(function (index, el) {
+						var videoCode = $('.video-code', el).data('video-code'),
+							videoId = 'banner-video-' + index;
+
+						// if ($.spice.getWindowWidth() > 1024) {
+							// loadImgFun($('.video-code img', el), function () {
+							// 	$('.video-content', el).show().css({
+							// 		'height': $('.video-code img', el).outerHeight(true)
+							// 	})
+							// 	$('.video-code img', el).css({
+							// 		'visibility': 'hidden'
+							// 	})
+							// })
+
+							// 请求视频源地址
+								var bannerVideoId = $('.video-code',el).attr('data-video-code');
+								var url = base + "/indexCCVideo.json";
+								var data = loxia.syncXhrGet(url, {
+								'bannerVideoId':bannerVideoId
+								});
+								var videoUrl = data.mp4VideoUrl;
+								// console.log(videoUrl)
+
+							// var videoUrl = 'https://cm14-ccm1-2.play.bokecc.com/flvs/ca/QxnS9/u1yBARtSf7-30.mp4?t=1541754682&key=0CBB76F170F3AEAD5C5B00027987AD7C';
+
+							$('.video-content', el).html('<video id="'+ videoId +'" src="'+ videoUrl +'" muted preload="meta"></video>');
+
+							$('#' + videoId)[0].play();
+
+							$('#' + videoId)[0].addEventListener('canplaythrough', function() {
+								console.log('视频准备就绪，开始播放');
+								this.play()
+							});
+
+							$('#' + videoId)[0].addEventListener('ended', function() {
+								this.play()
+							});
+						// }
+					})
+			});
+		</script>
+			<!-- 头部 -->
+			<article class="article-header-top">
+				<img class="" src="https://img.adidas.com.cn/images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/OCT/DAS/img-p-01.jpg"},
+						"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/OCT/DAS/img-m-01.jpg"},
+						"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/OCT/DAS/img-m-01.jpg"}
+				}' />
+			</article>
+			<article class="article-header-middle none-sm">
+				<div class="banner-iterm banner-iterm-video e-banner-iterm-video col-10-10">
+					<div class="video-content"></div>
+					<!-- <a href="www.baidu.com" target="_blank" class="clickskip"></a> -->
+					<a href="javascript:volid(0);" target="_blank">
+						<span class="video-code" data-video-code="6466B569ED4E21B79C33DC5901307461">
+						<!-- <img src="../static/images/common/img470_1.png" alt="" width="470" height="264" /><i class="icon icon-video-btn none-sm"></i></span> -->
+					</a>
+				</div>
+			</article>
+			<article class="article-header-middle none block-sm article-header-middle-mob">
+				<img src="https://img.adidas.com.cn/resources/activePage/OCT/DAS/img-m-03.jpg">
+				<a class="e-lp-video-btn link link-01" data-video-code="6466B569ED4E21B79C33DC5901307461"></a>
+			</article>
+			<article class="article-header-botttom">
+				<img class="" src="https://img.adidas.com.cn/images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/OCT/DAS/img-p-02.jpg"},
+						"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/OCT/DAS/img-m-02.jpg"},
+						"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/OCT/DAS/img-m-02.jpg"}
+				}' />
+			</article>
+			<!-- 中间 -->
+			<article class="article-middle">
+				<div class="middle-black">PROGRAMME</div>
+				<div class="middle-border">
+					<div class="middle-border-box middle-border-black-01">
+						<div class="middle-border-black">SHOWCASE X</div>
+						<div class="middle-border-black-size"><p>10月12日，星期五，7PM<br>BASE－上海市安福路322号</p></div>
+					</div>
+					<div class="middle-border-box middle-border-black-02">
+						<div class="middle-border-black">CITY COPA</div>
+						<div class="middle-border-black-size"><p>10月13日，星期六，12PM<br>大巴会合点（座位有限）<br>上海市安福路322号<br>滑板场地1：30PM起开放<br>万科·虹桥云</p></div>
+					</div>
+				</div>
+				<div class="middle-border">
+					<div class="middle-border-box middle-border-black-01">
+						<div class="middle-border-black">TOTE SCREEN-PRINTING</div>
+						<div class="middle-border-black-size"><p>10月14日，星期日，2PM<br>BASE－上海市安福路322号</p></div>
+					</div>
+					<div class="middle-border-box middle-border-black-02">
+						<div class="middle-border-black">SKATE TRIVIA NIGHT</div>
+						<div class="middle-border-black-size"><p>10月16日，星期二，7PM<br>BASE－上海市安福路322号云</p></div>
+					</div>
+				</div>
+				<div class="middle-border">
+					<div class="middle-border-box middle-border-black-01">
+						<div class="middle-border-black">SKATE MOVIE NIGHT</div>
+						<div class="middle-border-black-size"><p>10月17日，星期三，7PM<br>BASE－上海市安福路322号</p></div>
+					</div>
+					<div class="middle-border-box middle-border-black-02">
+						<div class="middle-border-black">ALLTIMERS LAUNCH</div>
+						<div class="middle-border-black-size"><p>10月19日，星期五，8PM<br>奢居会，上海市中山南路505弄13号楼7楼</p></div>
+					</div>
+				</div>
+				<div class="middle-border">
+					<div class="middle-border-box middle-border-box-03">
+						<div class="middle-border-black">CAMPUS WEAR TEST</div>
+						<div class="middle-border-black-size"><p>10月20日，星期六，12：30PM<br>BASE－上海市安福路322号</p></div>
+					</div>
+				</div>
+				
+			</article>
+			<!-- 底部 -->
+			<article class="article hover-scale">
+				<div class="box-left box-left-7-4-03">
+					<div class="show-left overflow-hidden events-scale shoe-7-4-01">
+						<a href="https://www.adidas.com.cn/skateboarding_3st?sp=SB-3ST" target="_blank">
+							<img class="" src="https://img.adidas.com.cn/images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-p-03.jpg"},
+									"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-m-03.jpg"},
+									"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-m-03.jpg"}
+							}' />
+						</a>
+					</div>
+					<div class="show-right shoe-7-4-02">
+						<div class="show-right-top overflow-hidden events-scale">
+							<a href="https://www.adidas.com.cn/item/DH6649" target="_blank">
+								<img class="" src="https://img.adidas.com.cn/images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-p-04.jpg"},
+										"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-m-04.jpg"},
+										"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-m-04.jpg"}
+								}' />
+							</a>
+						</div>
+						<div class="show-right-bottom overflow-hidden events-scale">
+							<a href="https://www.adidas.com.cn/item/DH3865" target="_blank">
+								<img class="" src="https://img.adidas.com.cn/images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-p-05.jpg"},
+										"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-m-05.jpg"},
+										"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-m-05.jpg"}
+								}' />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="box-right">
+					<div class="buy-btn">
+						<a href="https://www.adidas.com.cn/skateboarding_3st?sp=SB-3ST" target="_blank">
+							<img class="" src="https://img.adidas.com.cn/images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-p-06.jpg"},
+									"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-m-06.jpg"},
+									"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-m-06.jpg"}
+							}' />
+						</a>
+						<a href="https://www.adidas.com.cn/skateboarding_3st?sp=SB-3ST" class="btn btn-white btn-have-arrow" target="_blank">
+							<span>立即选购</span>
+						</a>
+					</div>
+					<div class="show-right">
+						<div class="show-right-top overflow-hidden events-scale">
+							<a href="https://www.adidas.com.cn/item/DH6644" target="_blank">
+								<img class="" src="https://img.adidas.com.cn/images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-p-07.jpg"},
+										"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-m-07.jpg"},
+										"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-m-07.jpg"}
+								}' />
+							</a>
+						</div>
+						<div class="show-right-bottom overflow-hidden events-scale">
+							<a href="https://www.adidas.com.cn/skateboarding_3st?sp=SB-3ST" target="_blank">
+								<img class="" src="https://img.adidas.com.cn/images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-p-08.jpg"},
+										"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-m-08.jpg"},
+										"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/skb/img-m-08.jpg"}
+								}' />
+							</a>
+						</div>
+					</div>
+				</div>
+			</article>
+
+		<script id="video-dialog" type="text/template">
+					<div class="dialog">
+						<div class="dialog-container">
+							<div class="loading-wrap"><img src="https://img.adidas.com.cn/images/loading.gif" height="32" width="32"></div>
+							<div class="video-content">
+
+							</div>
+						</div>
+						<i class="icon icon-close dialog-close">&times;</i>
+					</div>
+				</script>
+		</section>
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+	</div>
+</body>
+</html>

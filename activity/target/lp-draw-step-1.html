@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>抽奖活动</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/lp-draw-step-1.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/lp-draw-step-1.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-draw.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+
+			<article class="article start-draw-inner">
+				<div class="yyqx-bg-box e-yyqx-bg-box">
+					<% for (var i = 1; i < 4; i++){ %>
+						<img class="events-changeSrc block"
+							 src="images/blank.gif"
+							 data-image='{
+								 "standard":{"high":"", "normal":"../static/images/lp-draw-active-1/yyqx-bg-p-<%=[i] %>.png"},
+								 "medium":{"high":"",  "normal":"../static/images/lp-draw-active-1/yyqx-bg-m-<%=[i] %>.png"},
+								 "small":{"high":"", "normal":"../static/images/lp-draw-active-1/yyqx-bg-m-<%=[i] %>.png"}
+							 }'
+						/>
+					<% } %>
+				</div>
+				<img class="events-changeSrc"
+					 src="images/blank.gif"
+					 data-image='{
+						 "standard":{"high":"", "normal":"../static/images/lp-draw-active-1/yyqx-p.png"},
+						 "medium":{"high":"",  "normal":"../static/images/lp-draw-active-1/yyqx-m.png"},
+						 "small":{"high":"", "normal":"../static/images/lp-draw-active-1/yyqx-m.png"}
+					 }'
+				/>
+
+				<div class="ad-logo">
+					<img src="../static/images/lp-draw-active-1/logo-pc.png" alt="">
+				</div>
+				<a class="btn-base-green btn-start-handle e-start-handle">
+					<div class="loading">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					开始抽取<img src="../static/images/lp-draw-active-1/arrow.png"/>
+				</a>
+			</article>
+
+			<article class="article footer-draw-inner">
+				<img class="none-sm" src="../static/images/lp-draw-active-1/footer-bg.jpg" alt="" />
+				<img class="none block-sm" src="../static/images/lp-draw-active-1/footer-bg-m.jpg" alt="" />
+				<ul class="row footer-details-inner">
+					<li class="col-12-6 col-sm-12-12">
+						<div class="row">
+							<div class="col-12-5">
+								<img src="../static/images/lp-draw-active-1/parts-new.png" alt="" />
+							</div>
+							<div class="col-12-7 right-originals">
+								<p>易烊千玺与<span>adidas neo</span> <br />首次设计合作</p>
+								<p>1128份玺包 限量释出</p>
+								<a class="btn-base-green btn-link-handle e-link-handle">查看活动规则<img src="../static/images/lp-draw-active-1/arrow.png"/></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</article>
+		</section>
+
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+		<!-- 查看活动规则  -->
+		<script id="active-regular" type="text/template">
+			<div class="dialog">
+				<div class="dialog-container">
+					<div class="scroll">
+						<div class="scroller-wrap">
+							<p class="header-title"><img src="../static/images/lp-draw-active-1/logo.png" alt=""></p>
+							<p class="green title mt-50">玺包抽奖活动规则</p>
+							<p class="mt-90"><span class="green">活动日期：</span> 11月30日 - 12月4日</p>
+							<p class="green">活动详情：</p>
+							<p>活动为期5天，每天中奖名额为200份</p>
+							<p>adidas club会员登录后即可参与抽奖</p>
+							<p>每个账户只有一次中奖机会，每天可参与抽奖一次</p>
+							<p class="mt-90">未中奖的消费者会获得商城优惠码一份</p>
+							<p class="green">优惠券使用规则：</p>
+							<p>仅限用于购买adidasneo正价产品</p>
+							<p>特殊限量产品/联名款产品不可使用，详情请见产品描述</p>
+							<p>此类型券不可与其它优惠券同享</p>
+							<p>仅可在adidas.com.cn使用</p>
+							<p>袜子帽子等附配件产品不可使用</p>
+						</div>
+					</div>
+				</div>
+				<span class="btn-close"></span>
+			</div>
+		</script>
+
+		<!-- 点击开始抽取结果弹层 -->
+		<script id="extract-result" type="text/template">
+			<div class="dialog">
+				<div class="dialog-container">
+					<div class="scroll">
+						<div class="scroller-wrap">
+							<p class="green">恭喜你获得玺包</p>
+							<p>成为千玺的1128分之一</p>
+							<img src="../static/images/lp-draw-active-1/parts-new.png" alt="" width="70%">
+							<a class="btn-base-green btn-editor-handle e-editor-handle">填写信息<img src="../static/images/lp-draw-active-1/arrow.png"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</script>
+
+		<!-- 填写信息弹层 -->
+		<script id="editor-information" type="text/template">
+			<div class="dialog">
+				<div class="dialog-container">
+					<div class="scroll">
+						<div class="scroller-wrap">
+							<p class="mb-45"><span class="green mr-20">请留下你的信息</span>我们会把玺包寄给你</p>
+							<div class="form-input mb-20">
+								<label class="form-title">姓名</label>
+								<input type="text" placeholder="姓名为空请填写">
+								<div class="msg-block">
+									<i class="icon msg-icon"></i>
+									<span>请输入手机号码 </span>
+								</div>
+							</div>
+							<div class="form-input mb-20">
+								<label class="form-title">电话</label>
+								<input type="text" placeholder="电话为空请填写">
+								<div class="msg-block">
+									<i class="icon msg-icon"></i>
+									<span>请输入手机号码 </span>
+								</div>
+							</div>
+							<div class="form-input mb-40">
+								<label class="form-title">地址</label>
+								<input type="text" placeholder="地址为空请填写">
+								<div class="msg-block">
+									<i class="icon msg-icon"></i>
+									<span>请输入手机号码 </span>
+								</div>
+							</div>
+							<div class="checkbox-qx ">
+								<label class="form-remeber event-check-box">
+									<i class="icon-checked-qx "></i>我同意活动方可通过上述方式与我联系 并向我发送与活动相关的信息
+								</label>
+								<div class="msg-block">
+									<span>你忘记打钩啦</span>
+								</div>
+							</div>
+							<a class="btn-base-green btn-submit-handle e-submit-handle">提交<img src="../static/images/lp-draw-active-1/arrow.png"/></a>
+						</div>
+					</div>
+				</div>
+				<span class="btn-close"></span>
+			</div>
+		</script>
+
+		<!-- 填写完信息提交后弹层 -->
+		<script id="submit-result" type="text/template">
+			<div class="dialog">
+				<div class="dialog-container">
+					<div class="scroll">
+						<div class="scroller-wrap">
+							<img src="../static/images/lp-draw-active-1/parts-5.png" alt="">
+							<a href="" class="back-shopping"></a>
+						</div>
+					</div>
+				</div>
+				<span class="btn-close"></span>
+			</div>
+		</script>
+
+	</div>
+</body>
+</html>

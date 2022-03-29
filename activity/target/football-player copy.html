@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <%include _includes/meta.html %>
+        <title></title>
+        <%include _includes/css.html %>
+            <%include _includes/js.html %>
+                <!-- <link rel="stylesheet" href="css/clp-flashSale.css"> -->
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- 头部 -->
+        <%include _includes/modules/header.html %>
+            <!-- 內容 -->
+            <section class="container">
+                <style>
+                    .article {
+                        position: relative;
+                    }
+                    
+                    .article img {
+                        width: 100%;
+                        height: 100%;
+                        height: auto;
+                        cursor: pointer;
+                    }
+                    
+                    .article-swiper1 {
+                        background: #121212;
+                    }
+                    
+                    .article-swiper1 .swiper-box {
+                        width: 80%;
+                        padding: 50px 0;
+                        margin: 0 auto;
+                    }
+                    
+                    .swiper-main1 .swiper-slide {
+                        width: 19%;
+                        margin-right: 1%;
+                    }
+                    
+                    .swiper-button-prev {
+                        background: url(https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/left.png);
+                        width: 40px;
+                        height: 40px;
+                        background-size: 40px 40px;
+                        left: 5%;
+                        top: 35%;
+                    }
+                    
+                    .swiper-button-next {
+                        background: url(https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/right.png);
+                        width: 40px;
+                        height: 40px;
+                        background-size: 40px 40px;
+                        right: 5%;
+                        top: 35%;
+                    }
+                    
+                    .article-bg {
+                        background: #121212;
+                    }
+                    
+                    .scroller-cont {
+                        width: 67%;
+                        margin: 0 auto;
+                        padding: 5% 0;
+                    }
+                    
+                    .scroller-wrap {
+                        position: relative;
+                    }
+                    
+                    .scroller-wrap .link {
+                        position: absolute;
+                        width: 20%;
+                        height: 100%;
+                        top: 5px;
+                        cursor: pointer;
+                    }
+                    
+                    .link-1 {
+                        left: 0;
+                    }
+                    
+                    .link-2 {
+                        left: 20%;
+                    }
+                    
+                    .link-3 {
+                        left: 40%;
+                    }
+                    
+                    .link-4 {
+                        left: 61%;
+                    }
+                    
+                    .link-5 {
+                        left: 81%;
+                    }
+                    
+                    .player-box {
+                        width: 85%;
+                        margin: 0 auto;
+                    }
+                    
+                    .player-box .player-info {
+                        display: none;
+                        position: relative;
+                    }
+                    
+                    .player-box .player-info.active {
+                        display: block;
+                    }
+                    
+                    .mob-block {
+                        display: none;
+                    }
+                    
+                    @media (max-width: 1023px) {
+                        .player-box {
+                            width: 98%;
+                        }
+                        .scroller-cont {
+                            width: 92%;
+                            z-index: 5;
+                            overflow-x: auto;
+                        }
+                        .scroller-wrap {
+                            width: 200%;
+                            position: relative;
+                        }
+                        .scroller-cont::-webkit-scrollbar {
+                            width: 0;
+                        }
+                        .scroller-wrap::-webkit-scrollbar {
+                            width: 0;
+                        }
+                        .article-swiper1 .swiper-box {
+                            width: 100%;
+                        }
+                        .pc-block {
+                            display: none;
+                        }
+                        .mob-block {
+                            display: block;
+                        }
+                    }
+                </style>
+                <article class="article">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/pc_01.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/mob_01.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/mob_01.jpg&quot;}}">
+                </article>
+                <article class="article">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/pc_02.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/mob_02.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/mob_02.jpg&quot;}}">
+                </article>
+                <article class="article  article-bg pc-block">
+                    <div class="scroller-cont">
+                        <div class="scroller-wrap event-player">
+                            <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/title.png" alt="">
+                            <span class="link link-1" date-index="0"></span>
+                            <span class="link link-2" date-index="1"></span>
+                            <span class="link link-3" date-index="2"></span>
+                            <span class="link link-4" date-index="3"></span>
+                            <span class="link link-5" date-index="4"></span>
+                        </div>
+                    </div>
+                    <div class="player-box ">
+                        <div class="player-info active" date-index="0">
+                            <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/p1.png">
+                        </div>
+                        <div class="player-info" date-index="1">
+                            <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/p2.png">
+                        </div>
+                        <div class="player-info" date-index="2">
+                            <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/p3.png">
+                        </div>
+                        <div class="player-info" date-index="3">
+                            <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/p4.png">
+                        </div>
+                        <div class="player-info" date-index="4">
+                            <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/p5.png">
+                        </div>
+                    </div>
+                </article>
+                <article class="article  article-bg mob-block">
+                    <div class="scroller-cont">
+                        <div class="scroller-wrap event-player-mob">
+                            <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/title.png" alt="">
+                            <span class="link link-1" date-index="0"></span>
+                            <span class="link link-2" date-index="1"></span>
+                            <span class="link link-3" date-index="2"></span>
+                            <span class="link link-4" date-index="3"></span>
+                            <span class="link link-5" date-index="4"></span>
+                        </div>
+                    </div>
+                    <div class="player-box mob-player">
+                        <div class="player-info " date-index="0">
+                            <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/m1.png">
+                        </div>
+                        <div class="player-info" date-index="1">
+                            <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/m2.png">
+                        </div>
+                        <div class="player-info" date-index="2">
+                            <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/m3.png">
+                        </div>
+                        <div class="player-info" date-index="3">
+                            <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/m4.png">
+                        </div>
+                        <div class="player-info" date-index="4">
+                            <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/m5.png">
+                        </div>
+                    </div>
+                </article>
+                <article class="article">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/pc_04.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/mob_04.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/mob_04.jpg&quot;}}">
+                </article>
+                <article class="article article-swiper1">
+                    <div class="swiper-box">
+                        <div class="swiper-container swiper-main1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="https://www.adidas.com.hk/item/EJ8546">
+                                        <img src="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/pro1.png">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://www.adidas.com.hk/item/EH6104">
+                                        <img src="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/pro2.png">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://www.adidas.com.hk/item/FI6250">
+                                        <img src="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/pro3.png">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://www.adidas.com.hk/item/FH7620">
+                                        <img src="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/pro4.png">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://www.adidas.com.hk/item/GQ1193">
+                                        <img src="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/pro5.png">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://www.adidas.com.hk/item/FH7362">
+                                        <img src="https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/pro6.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev none-sm"></div>
+                        <div class="swiper-button-next none-sm"></div>
+                    </div>
+                </article>
+                <article class="article">
+                    <a href="https://www.adidas.com.hk/football">
+                        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                        &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/pc_06.jpg&quot;},
+                        &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/mob_06.jpg&quot;},
+                        &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/uefa_euro/CLP/cn/mob_06.jpg&quot;}}">
+                    </a>
+                </article>
+                <script type="text/javascript">
+                    $(function() {
+                        // 换图 + 懒加载
+                        $.spice.lazyLoad('img[lazysrc]', {
+                            attr: 'lazysrc'
+                        });
+                        $.spice.tools.changeImageSrc({
+                            callBack: function(img, self) {
+                                $.spice.lazyLoad('img[lazysrc]', {
+                                    attr: self.opt.lazyData,
+                                    prestrain: 1
+                                });
+                            }
+                        });
+                        if ($.spice.getWindowWidth() > 1024) {
+                            $('.event-player span').on('tap', function() {
+                                var $Tabitem = $(this).attr('date-index');
+                                $('.player-box .player-info').eq($Tabitem).addClass('active').siblings().removeClass('active');
+                            })
+                        } else {
+                            $('.event-player-mob span').on('tap', function() {
+
+                                var $Tabitem = $(this).attr('date-index');
+                                console.log($Tabitem)
+                                $('.mob-player .player-info').eq($Tabitem).addClass('active').siblings().removeClass('active');
+                            })
+                        }
+                        var SwiperMain1 = new Swiper('.swiper-main1', {
+                            slidesPerView: 4,
+                            spaceBetween: 10,
+                            nextButton: '.swiper-button-next',
+                            prevButton: '.swiper-button-prev',
+                            centeredSlides: false,
+                            breakpoints: {
+                                1024: {
+                                    slidesPerView: 1.5,
+                                    slidesOffsetBefore: 16,
+                                    slidesOffsetAfter: 16
+                                }
+                            }
+                        })
+
+                    });
+                </script>
+            </section>
+
+            <!-- 底部 -->
+            <%include _includes/modules/footer.html %>
+                <!-- 公共部分放最下，如回到顶部，弹出层等 -->
+    </div>
+</body>
+
+</html>

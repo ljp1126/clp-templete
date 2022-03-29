@@ -1,0 +1,695 @@
+@charset "UTF-8";
+/* 公共按钮 */
+.footabll-btn {
+    left: 0px;
+    width: 60%;
+    height: 46px;
+    line-height: 42px;
+    display: block;
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all ease-in-out .3s;
+    overflow: hidden;
+    span{
+    	width: 100%;
+    	display: block;
+    }
+}
+.footabll-btn:hover {
+  color: black;
+}
+.footabll-btn:hover:before {
+  background: white;
+  top: 0px;
+}
+.footabll-btn:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100px;
+  transition: all ease-in-out .3s;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  height: 100px;
+}
+.buttonslidewhite {
+  text-align: center;
+  color: white;
+  border: 2px solid;
+  height: 46px;
+  float: left;
+  margin-left: 1%;
+  padding: 1.5% 0px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all ease-in-out .3s;
+  font-size: 18px;
+  span{
+    	width: 100%;
+    	display: block;
+    }
+}
+.buttonslidewhite:after {
+  content: '';
+  display: block;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 100px;
+  left: 0px;
+  background: white;
+  height: 100%;
+  transition: all ease-in-out .3s;
+}
+.buttonslidewhite:after {
+  top: 0px;
+}
+.buttonslidewhite:hover:after {
+  transform: scale(0, 0);
+}
+.buttonslidewhite:hover {
+  color: white;
+}
+.buttonslidewhite {
+  color: black;
+  border-color: white;
+  margin-left: 0px;
+}
+.pos-ab{
+	position: absolute;
+}
+.football-width{
+	img{
+	    display: block;
+	}
+}
+/* 公共部分end */
+.football-width{
+	max-width:1920px;
+	margin: 0 auto;
+	.article{
+		// 模块一 banner
+		.football-page-content{
+			width: 100%;
+			height: 100%;
+			.banner-contanier{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				position: relative;
+				img{
+					width: 100%;
+					display: block;
+				}
+				.btn-1{
+					top: 60.3%;
+				    width: 17%;
+				    left: 41%;
+				}
+			}
+		}
+		//轮播
+		.events-scroll-football-kv{
+			.scroller-wrap{
+				ul{
+					li{
+						.scroll-container-wrap{
+							.scroll-component-content{
+								position: relative;
+								.scroll-background-image{
+									width: 100%;
+									height: 100%;
+									left: 0;
+									top:0;
+								}
+								.shoes{
+									width:39.5%;
+									height: 65.1%;
+									left: 14%;
+									top:23.3%;
+									&.frame{
+										left: 34%;
+										transition: left 2s;
+									}
+								}
+								.scroll-btn-cta{
+									width:34.5%;
+									height: 46px;
+									top:79.3%;
+									left:32.8%;
+									.buttonslidewhite{
+										display: block;
+										position: relative;
+									    overflow: hidden;
+									    z-index: 1;
+									    transition: all ease-in-out .3s;
+										display: block;
+										float: left;
+										width:49.3%;
+										margin-right:1.2%;
+									}
+									.buttonslide{
+										display: block;
+										position: relative;
+									    overflow: hidden;
+									    z-index: 1;
+									    transition: all ease-in-out .3s;
+										display: block;
+										float: left;
+										width:49.3%;
+									}
+								}
+								//了解更多内容块
+								.learn-more{
+								    position: fixed;
+								    top: 80px;
+								    left: 0%;
+								    width: 100%;
+								    height: 100%;
+								    z-index: 999;
+								    transform: scale(0,0);
+								    background: black;
+								    transition: all ease-in-out .4s;
+								    img{
+								    	width: 100%;
+								    }
+								    &.showPro{
+								    	transform: scale(1,1);
+								    }
+								    i{
+								    	background: url(../../static/images/lp-football/icon-close.png);
+								    	background-size: cover;
+								    	position: absolute;
+									    top: 1%;
+									    right: 20px;
+									    width: 58px;
+									    height: 58px;
+									   cursor: pointer;
+								    }
+								}
+								//轮播第二块文字
+								.text1{
+									width:34.4%;
+									left:10.5%;
+									top:16.3%;
+								}
+								//视频
+								.video-cont{
+									width:30%;
+									left:52.1%;
+									top:27.8%;
+									.football-video-btn{
+										background: url(../../static/images/lp-football/video-btn.png);
+										background-size: cover;
+										width: 114px;
+										height: 115px;
+										top:38%;
+										left: 36.3%;
+										cursor: pointer;
+									}
+								}
+								.btn-2{
+									width:18%;
+									max-width: 345px;
+									height: 76px;
+									line-height: 74px;
+									left:14.9%;
+									top:64%;
+
+								}
+								.text3{
+									width:34.3%;
+									left:54%;
+									top:15.4%;
+								}
+								.text4{
+									width:30.1%;
+									left:14.7%;
+									top:23.3%;
+								}
+								.btn-3{
+									width:18%;
+									max-width: 345px;
+									height: 76px;
+									line-height: 74px;
+									left:57.9%;
+									top:65.5%;
+
+								}
+							}
+						}
+					}
+				}
+			}
+			.scroll-btn-prev{
+				top:0;
+    			left: 30.2%;
+    			margin-top: -25px;
+    			padding: 0;
+    			a{
+					width: 100%;
+					height: 100%;
+					display:block;
+				}
+				i{
+					width: 73px;
+					height: 73px;
+					background: url(../../static/images/lp-football/icon-kv-left.png);
+					background-size: cover;
+					font-size: 0;
+					display: inline-block;
+				}
+			}
+			.scroll-btn-next{
+				top:0;
+				right: 30.2%;
+				margin-top: -25px;
+				padding: 0;
+				a{
+					width: 100%;
+					height: 100%;
+					display:block;
+				}
+				i{
+					font-size: 0;
+					width: 73px;
+					height: 73px;
+					background: url(../../static/images/lp-football/icon-kv-right.png);
+					background-size: cover;
+					font-size: 0;
+					display: inline-block;
+				}
+			}
+		}
+		//顶部固定条
+		.TopBar{
+			background: #000;
+			width: 100%;
+		    position: fixed;
+		    top: 68px;
+		    width: 100%;
+		    height: 80px;
+		    z-index: 88;
+		    display: none;
+			.controls{
+				margin: 0px;
+	    		padding: 0px;
+				li{
+				    margin-top: 0px;
+				  	position: absolute;
+				  	cursor: pointer;
+					&.prev-box{
+					    margin-left: -400px;
+					    left: 50%;
+					}
+					&.next-box{
+					    margin-right: -323px;
+					    right: 50%;
+					}
+				}
+				.maintext{
+				    position: absolute;
+				    color: white;
+				    top: 25px;
+				    width: 220px;
+				    z-index: 99999999;
+				    left: 50%;
+				    text-align: center;
+				    margin-left: -113px;
+				    display: none;
+				    margin-top: -.5%;
+
+					&:first-of-type{
+						display: block;
+					}
+				}
+			}
+		}
+		//微博微信分享
+		.footBox{
+			height: 90px;
+		    padding: 28px 0;
+		    background: #000;
+		    position: relative;
+		    .wrapper{
+		    	width: 950px;
+		    	margin: 0 auto;
+		    	.column{
+		    		color: #fff;
+    				font-size: 24px;
+    				.footWWNav{
+					    height: 90px;
+					    line-height: 90px;
+					    margin-top: -28px;
+					    .weibo-box{
+				    	    display: block;
+			    	        margin: 6px 15px 0 0;
+					    	i{
+					    		width: 30px;
+					    		height: 24px;
+					    		display: inline-block;
+					    		background: url(../images/icon.png);
+				    		    background-position: -60px -154px;
+					    	}
+					    }
+					    .weixin-box{
+					    	display: block;
+				    	    margin: 6px 0 0 0;
+					    	i{
+							   	width: 30px;
+					    		height: 24px;
+							    display: inline-block;
+							    background: url(../images/icon.png);
+							    background-position: -200px -154px;
+					    	}
+
+					    }
+    				}
+    				.footWWPop{
+					    background: #363738;
+					    position: absolute;
+					    z-index: 3;
+					    width: 100%;
+					    left: 0;
+					    height: 95px;
+					    top:-95px;
+					    .wrapper{
+					    	position: relative;
+					    	.img-box{
+					    		margin:14px 0;
+					    	}
+					    	.footAttentionTxt{
+							    line-height: 20px;
+    							margin: 14px 0 0 20px;
+    							.weiboLogo,span{
+								    font-size: 12px;
+								    color: #9a9b9b;
+								    display: block;
+								    .icon-weibo-small{
+										width:17px;
+										height: 13px;
+										display: inline-block;
+										vertical-align: middle;
+										margin-left: 4px;
+										background: url(../images/icon.png);
+										background-position: -144px -454px;
+								    }
+								    .icon-weixin-small{
+										width:17px;
+										height: 14px;
+										display: inline-block;
+										vertical-align: middle;
+										margin-left: 4px;
+										background: url(../images/icon.png);
+										background-position: -120px -454px;
+									}
+    							}
+    							.weiboLogo:after{
+								    width: 18px;
+								    height: 15px;
+								    display: inline-block;
+								    vertical-align: middle;
+								    margin: 0 0 0 5px;
+								    a{
+								    	display: block;
+										margin-top: 3px;
+								    }
+    							}
+					    	}
+					    }
+					    &.footPopWeibo{
+					    	display: none;
+					    	.wrapper{
+		    		    		&:after{
+		    						content: '';
+		    						width: 0;
+		    						height: 0;
+		    						position: absolute;
+		    					}
+		    					&:after{
+		    						border-top: 15px solid rgba(54,55,56,.8);
+		    						border-left: 15px solid transparent;
+		    						border-right: 15px solid transparent;
+		    						left: 0;
+		    						top: 95px;
+		    						z-index: 9;
+		    					}
+					    	}
+					    }
+
+						&.footPopWeixin{
+							display: none;
+							.wrapper{
+								padding-left: 20px;
+								&:after{
+									content: '';
+									width: 0;
+									height: 0;
+									position: absolute;
+								}
+								&:after{
+									border-top: 15px solid rgba(54,55,56,.8);
+									border-left: 15px solid transparent;
+									border-right: 15px solid transparent;
+									left:45px;
+									top: 95px;
+									z-index: 9;
+								}
+							}
+						}
+
+    				}
+		    	}
+		    }
+		}
+	}
+}
+
+@media screen and (max-width: 1024px){
+	/* 公共按钮 */
+		.footabll-btn {
+		    width: 34%;
+		    float: left;
+		    padding: 1.5% 0px;
+		   font-size: 11px;
+		   height: auto;
+		   line-height: 100%;
+		}
+		.buttonslidewhite {
+			height: auto;
+		    width: 34%;
+		    float: left;
+		    padding: 1% 0px;
+		    font-size: 11px;
+		}
+	/* 公共按钮  end*/
+	.football-width{
+		max-width:100%;
+		min-width: 320px;
+		.article{
+			// 模块一 banner
+			.football-page-content{
+				.banner-contanier{
+					.btn-1{
+						top: 62.7%;
+					    width: 17.2%;
+					    left: 40.6%;
+					}
+				}
+			}
+			//轮播
+			.events-scroll-football-kv{
+				.scroller-wrap{
+					ul{
+						li{
+							.scroll-container-wrap{
+								.scroll-component-content{
+									.scroll-background-image{
+									}
+									.choes{
+										width:39.5%;
+										height: 65.1%;
+										left: 16.9%;
+										top:23.3%;
+										transition: all ease-in-out 2s;
+									}
+									.scroll-btn-cta{
+										width:34.6%;
+										height: auto;
+										top:77.5%;
+										left:32.5%;
+										.buttonslidewhite{
+											width:49%;
+											margin-right:2%;
+										}
+										.buttonslide{
+											width:49%;
+										}
+									}
+									//了解更多内容块
+									.learn-more{
+									    top: 60px;
+									    i{
+									    	background-size: 100%;
+										    width: 29px;
+										    height: 29px;
+									    }
+									}
+									//轮播第二块文字
+									.text1{
+										width:35.3%;
+										left:6.8%;
+										top:21.2%;
+									}
+									//视频
+									.video-cont{
+										width:30%;
+										left:52%;
+										top:24.3%;
+										.football-video-btn{
+											background-size: 100%;
+											width: 45px;
+											height: 45px;
+											top:24.2%;
+											left: 40%;
+										}
+									}
+									.btn-2{
+										width:18.1%;
+										height:auto;
+										line-height: 100%;
+										left:13.9%;
+										top:64.9%;
+										padding: 1% 0;
+										span{
+											font-size: 12px;
+											transform: scale(0.5);
+										}
+									}
+									.text3{
+										width:34.1%;
+										left:54.3%;
+										top:17.8;
+									}
+									.text4{
+										width:30%;
+										left:14.8%;
+										top:21.8%;
+									}
+									.btn-3{
+										width:18.1%;
+										height:auto;
+										line-height: 100%;
+										left:57.9%;
+										top:60.5%;
+										padding: 1% 0;
+										span{
+											font-size: 12px;
+											transform: scale(0.5);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				.scroll-btn-prev{
+	    			left: 30.5%;
+	    			margin-top: -5%;
+					i{
+						width: 37px;
+						height: 37px;
+						background-size: 100%;
+					}
+				}
+				.scroll-btn-next{
+					right: 30.5%;
+					margin-top: -5%;
+					i{
+						width: 37px;
+						height: 37px;
+						background-size: 100%;
+					}
+				}
+			}
+			//顶部固定条
+			.TopBar{
+			    top: 60px;
+			    height: 34px;
+				.controls{
+					li{
+						height: 100%;
+					    margin-top: 0px;
+						&.prev-box{
+						    margin-left:0;
+						    left: 0%;
+						}
+						&.next-box{
+						    margin-right: 0;
+						    right: 0%;
+						}
+					}
+					.maintext{
+					    top: 5px;
+					    width: 34.6%;
+					    left:32.7%;
+					    margin-left: 0;
+					    height: 100%;
+
+					}
+				}
+			}
+			//微博微信分享
+			.footBox{
+			    .wrapper{
+			    	width: 80%;
+			    	margin: 0 auto;
+			    	.column{
+	    				.footWWNav{
+						    .weibo-box{
+						    	i{
+						    		width: 15px;
+						    		height: 12px;
+						    		display: inline-block;
+						    		background: url(../../target/images/icon@2x.png);
+					    		    background-position: -115px -608px;
+					    		    background-size: 500px;
+
+						    	}
+						    }
+						    .weixin-box{
+						    	i{
+								   width: 16px;
+						    		height: 12px;
+								    display: inline-block;
+								    background: url(../../target/images/icon@2x.png);
+								    background-position: -137px -608px;
+								    background-size: 500px;
+						    	}
+						    }
+	    				}
+	    				.footWWPop{
+	    					display: none;
+						    &.footPopWeibo{
+						    	display: none;
+						    }
+
+							&.footPopWeixin{
+								display: none;
+							}
+
+	    				}
+			    	}
+			    }
+			}
+		}
+	}
+}

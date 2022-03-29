@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <%include _includes/meta.html %>
+        <title></title>
+        <%include _includes/css.html %>
+            <!-- <link rel="stylesheet" type="text/css" href="css/adiclub.css"> -->
+            <%include _includes/js.html %>
+                <!-- <script type="text/javascript" src="js/adiclub.js"></script> -->
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <%include _includes/modules/header.html %>
+            <!-- 内容部分 -->
+            <section class="container">
+
+                <style>
+                    .article {
+                        position: relative;
+                    }
+
+                    .article>img {
+                        width: 100%;
+                    }
+
+                    .link-1 {
+                        position: absolute;
+                        width: 20%;
+                        height: 12%;
+                        left: 12%;
+                        bottom: 32%;
+                    }
+
+                    .article-video .video-wrapper0 {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        cursor: pointer;
+                    }
+
+                    .video-box .video-content0 {
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    .video-content0 .video {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        visibility: hidden;
+                    }
+
+                    .video-box.is-play .video-wrapper0 .video-content0 .video {
+                        visibility: visible;
+                    }
+
+                    .article-video1 .e-play-videoTwo iframe,
+                    .article-video2 .e-play-videoTwo iframe,
+                    .article-video3 .e-play-videoTwo iframe,
+                    .article-video4 .e-play-videoTwo iframe,
+                    .article-video5 .e-play-videoTwo iframe,
+                    .article-video6 .e-play-videoTwo iframe {
+                        display: none;
+                    }
+
+                    .article-video1 .e-play-videoTwo iframe,
+                    .article-video2 .e-play-videoTwo iframe,
+                    .article-video3 .e-play-videoTwo iframe,
+                    .article-video4 .e-play-videoTwo iframe,
+                    .article-video5 .e-play-videoTwo iframe,
+                    .article-video6 .e-play-videoTwo iframe,
+                    .article-video1 .video-click,
+                    .article-video2 .video-click,
+                    .article-video3 .video-click,
+                    .article-video4 .video-click,
+                    .article-video5 .video-click,
+                    .article-video6 .video-click {
+                        position: absolute;
+                        left: 20%;
+                        height: 92%;
+                        top: 5%;
+                        width: 19.2%;
+                    }
+
+                    .article-video2 .e-play-videoTwo iframe,
+                    .article-video2 .video-click {
+                        top: 3%;
+                        height: 93.5%;
+                        left: 60.8%;
+                    }
+
+                    .article-video3 .e-play-videoTwo iframe,
+                    .article-video3 .video-click {
+                        top: 2%;
+                        left: 19.8%;
+                        height: 92.3%;
+                    }
+
+                    .article-video4 .e-play-videoTwo iframe,
+                    .article-video4 .video-click {
+                        top: 27%;
+                        height: 71%;
+                        left: 60.8%;
+                    }
+
+                    .article-video5 .e-play-videoTwo iframe,
+                    .article-video5 .video-click {
+                        top: 3%;
+                        height: 94%;
+                        left: 20%;
+                    }
+
+                    .article-video6 .e-play-videoTwo iframe,
+                    .article-video6 .video-click {
+                        top: 2%;
+                        height: 87%;
+                        left: 60.8%;
+                    }
+
+                    .article-video1 .e-play-videoTwo iframe,
+                    .article-video2 .e-play-videoTwo iframe,
+                    .article-video3 .e-play-videoTwo iframe,
+                    .article-video4 .e-play-videoTwo iframe,
+                    .article-video5 .e-play-videoTwo iframe,
+                    .article-video6 .e-play-videoTwo iframe {
+                        width: 60%;
+                        left: 20%;
+                    }
+
+                    .box {
+                        /* position: absolute;
+                    top: 2%;
+                    left: 50%; */
+                        /* transform: translateX(-50%); */
+                        width: 60%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        height: 100%;
+                    }
+
+                    .box div {
+                        width: 33.33%;
+                        height: 50%;
+                        position: relative;
+
+                    }
+
+                    .box div.tips {
+                        overflow: auto;
+                    }
+
+                    .tips {
+                        position: absolute !important;
+                        width: 100% !important;
+                        height: auto !important;
+                        background: #fff;
+                        top: 0;
+                        left: 0;
+                        display: none;
+                        padding: 10px 15px;
+                        z-index: 99;
+                    }
+
+                    .box div .tips div {
+                        width: 100%;
+                        height: fit-content;
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                    }
+
+                    .tips .title {}
+
+                    @media (max-width: 1024px) {
+                        .link-1 {
+                            width: 55%;
+                            left: 20%;
+                            bottom: 54%;
+                        }
+
+                        .article-video1 .e-play-videoTwo iframe,
+                        .article-video2 .e-play-videoTwo iframe,
+                        .article-video3 .e-play-videoTwo iframe,
+                        .article-video4 .e-play-videoTwo iframe,
+                        .article-video5 .e-play-videoTwo iframe,
+                        .article-video6 .e-play-videoTwo iframe {
+                            top: 5%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 90%;
+                            height: 96%;
+                        }
+
+                        .article-video1 .e-play-videoTwo iframe,
+                        .article-video2 .e-play-videoTwo iframe,
+                        .article-video5 .e-play-videoTwo iframe {
+                            top: 2%;
+                        }
+
+                        .article-video3 .e-play-videoTwo iframe {
+                            height: 94.5%;
+                        }
+
+                        .article-video4 .e-play-videoTwo iframe {
+                            top: 17.8%;
+                            height: 80.3%;
+                        }
+
+                        .article-video6 .e-play-videoTwo iframe {
+                            height: 94%;
+                        }
+
+                        .box .tips {
+                            position: absolute;
+                            width: 100% !important;
+                            height: 100% !important;
+                            padding: 5px 2px;
+                        }
+
+                        .box .tips div {
+                            width: 100% !important;
+                        }
+
+                        .box {
+                            width: 100%;
+                            padding: 0 20px;
+                        }
+
+                        .box div {
+                            width: 50% !important;
+                        }
+
+                        .box div .tips div {
+                            font-size: 12px;
+                        }
+
+                        .tips.left {
+                            left: -80px;
+                        }
+                    }
+                </style>
+                <article class="article article-video video-box">
+                    <img src="https://img.adidas.com.cn/images/blank.gif"
+                        data-image="{
+                      &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/AUG/4D/CN/fwd-cn-pc-1.jpg&quot;},
+                      &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/AUG/4D/CN/fwd-cn-pc-1.jpg&quot;},
+                      &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/AUG/4D/CN/fwd-cn-pc-1.jpg&quot;}}" />
+
+                    <div class="video-wrapper0 e-video0 e-play-video-new1">
+                        <div class="video-content1">
+                            <!-- <iframe width=100%  height='741' src='https://www.youtube.com/watch?rel=0&amp&autoplay=1&v=fDEvW3iCv8k' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe> -->
+                        </div>
+                        <a class="video-play" href="javascript:void(0)">
+                            <span class="video-code" data-video-code="6416F34079F1BC53F3342D97BB1D6DF8"></span>
+                        </a>
+                    </div>
+                </article>
+                <article class="article article-video article-video1 video-box2">
+                    <div class="video-wrapper e-play-videoTwo">
+                        <img src="https://img.adidas.com.cn/images/blank.gif"
+                            data-image="{
+                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/en/pc_022.jpg&quot;},
+                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/en/mob_022.jpg&quot;},
+                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/en/mob_022.jpg&quot;}}">
+                        <div class="video-click"></div>
+                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/wdRqNup3cGc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </article>
+                <article class="article article-video article-video6 video-box2">
+                    <div class="video-wrapper e-play-videoTwo">
+                        <img src="https://img.adidas.com.cn/images/blank.gif"
+                            data-image="{
+                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/en/pc_077.jpg&quot;},
+                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/en/mob_077.jpg&quot;},
+                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/en/mob_077.jpg&quot;}}">
+                        <div class="video-click"></div>
+                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/L53y1dX9YuU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </article>
+                <article class="article"
+                    style="width: 100%;height: 100%;display: flex;justify-content: center;margin-bottom: 30px;">
+                    <div class="box">
+                        <div class="card">
+                            <img lazysrc="https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/en/08-1.png"
+                                src="https://img.adidas.com.cn/images/blank.gif">
+                            <div class="tips">
+                                <div>
+                                    Fong Shing Yee
+                                </div>
+                                <div>
+                                    Athletes have a shorter career than most. Fong Shing Yee had a later start than most
+                                    other athletes, but giving up has never been an option for him. He shows the world
+                                    that it’s possible for every athlete to reach the top.
+                                </div>
+                                <div>
+                                    Although a basketball veteran of 18 years, few know that Fong Shing Yee was a
+                                    football player before switching from the goal to the hoop in secondary school. The
+                                    power forward worked hard for his dreams despite his late start, and have assembled
+                                    a collection of awards and championships during his prolific career.
+                                </div>
+                                <div>
+                                    For the past 2 years, the pandemic has not only put a pause on our life, but also on
+                                    Hong Kong’s top basketball division. But nothing can stop Fong Shing Yee’s passion
+                                    for basketball. During his extended off-season, Fong kept training and kept learning
+                                    and kept exploring new possibilities in the game. At the age of 38, he has just
+                                    started the season in a brand new team. His goal? Reach peak form, get another
+                                    championship and end his career on the perfect note.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img lazysrc="https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/en/08-2.png"
+                                src="https://img.adidas.com.cn/images/blank.gif">
+                            <div class="tips">
+                                <div>
+                                    Jordan Lam Lok Kan
+                                </div>
+                                <div>
+                                    Athletes are no strangers to injuries and team changes. Jordan Lam shows the world
+                                    how opportunities can be created even when uncertainty clouds the future.
+                                </div>
+                                <div>
+                                    Sometimes luck can be every bit as important to athletes as ability. After finishing
+                                    his football trial in England, Jordan Lam returned to Hong Kong to begin his
+                                    professional career in 2017. Luck has not been on his side, however, as serious
+                                    injuries put him on the sideline and his team got disbanded. The series of
+                                    unfortunate events took a toll on his passion for the sport and made him feel lost.
+                                    But hitting bottom turned out to be the condition he needed to grow and change.
+                                </div>
+                                <div>
+                                    This season, the attacking midfielder has found a new number to wear and a new team
+                                    to call family. Proudly donning his new Number 7 jersey, Jordan shows us that
+                                    despite the hardships facing today’s football industry, opportunities always belong
+                                    to those who are willing to create them. Even if he has to play a new position, he
+                                    is prepared to give it everything he’s got.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img lazysrc="https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/en/08-3.png"
+                                src="https://img.adidas.com.cn/images/blank.gif">
+                            <div class="tips">
+                                <div>
+                                    Hanniel Chow
+                                </div>
+                                <div>
+                                    Through his own two feet, Hong Kong runner Hanniel Chow shows the world what he’s
+                                    made of — one race at a time.
+                                </div>
+                                <div>
+                                    Hanniel Chow wowed the crowd and made a name for himself with an impressive debut
+                                    marathon back in 2019. The pandemic has kept him from the podiums of local races
+                                    since then, but runners always find a way to get faster. This time, he is going to a
+                                    training camp in Kenya.
+                                </div>
+                                <div>
+                                    Injuries and no racing have made the past two years difficult for Chow, but nothing
+                                    stops him from going forward. Just last month in the USA, he achieved a new half
+                                    marathon personal best in a race thanks to a rigorous training regime. But like his
+                                    impressive marathon debut, he saw it as just a milestone in his running journey. The
+                                    world is his race course, and he’s running towards his goals one race at a time.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img lazysrc="https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/en/08-4.png"
+                                src="https://img.adidas.com.cn/images/blank.gif">
+                            <div class="tips">
+                                <div>
+                                    Leung Ka Hin
+                                </div>
+                                <div>
+                                    To many, academic success is the ticket to a bright future. To Leung Ka Hin,
+                                    however, the future looks very different. He shows the world how a young athlete
+                                    inspires the future generation.
+                                </div>
+                                <div>
+                                    Faced with a choice between studying and an athletic career, Leung Ka Hin chose the
+                                    path less taken. Having made his debut in Hong Kong’s top basketball division just 2
+                                    years ago, Leung decided to drop out of university this year to take on a brand new
+                                    challenge — professional basketball.
+                                </div>
+                                <div>
+                                    From playing student division to A1 division, the 21-year old student-turned
+                                    basketball star has already started his second professional season. It may seem an
+                                    unlikely path to success, but for Leung it’s the only path. When most people his age
+                                    think studying is the only worthwhile pursuit, he chose to take a chance. To give it
+                                    all to his basketball dreams. To get ready for when the time comes to break into the
+                                    next echelon of professional basketball.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img lazysrc="https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/en/08-5.png"
+                                src="https://img.adidas.com.cn/images/blank.gif">
+                            <div class="tips">
+                                <div>
+                                    Sun Ming Him
+                                </div>
+                                <div>
+                                    The football field is a place where dreams are made. Sun Ming Him shows the world
+                                    how he plans to turn the field into his own stage and unleash his brilliance.
+                                </div>
+                                <div>
+                                    From student division breakout star to 4-season veteran in the Hong Kong Premier
+                                    League, Sun Ming Him’s passion for football never stops burning. Since kindergarten,
+                                    Sun has been learning and growing with a football under his feet. Having left
+                                    countless footprints on the field, he still constantly pushes himself to become a
+                                    better player. He understands that to be cream of the crop, he needs to work extra
+                                    hard in order to reach world-class level in skills and fitness.
+                                </div>
+                                <div>
+                                    To him, getting into his best shape is the top mission. Because when the time comes,
+                                    that is how he can make the football field his canvas and unleash his true
+                                    brilliance.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img lazysrc="https://img.adidas.com.hk/resources/2021/SEP/impossible_is_nothing/en/08-6.png"
+                                src="https://img.adidas.com.cn/images/blank.gif">
+                            <div class="tips">
+                                <div>
+                                    Leanne Szeto
+                                </div>
+                                <div>
+                                    Every runner wants to run fast. Former professional triathlete Leanne Szeto wants to
+                                    show the world that every one can run far.
+                                </div>
+                                <div>
+                                    Leanne Szeto lets nothing stop her from moving forward in her sport. The pandemic,
+                                    however, made competing in local long distance triathlon races or training with
+                                    other athletes impossible. Not one to give up, she adapted to the situation by
+                                    giving herself a new goal. She put away the bike and chose to keep going on foot.
+                                    And now, she’s now going after the marathon.
+                                </div>
+                                <div>
+                                    Most triathlete-turned runners opt for shorter distances like 10k or half marathon.
+                                    Hungry for a challenge, Szeto went all the way and took on the full marathon. She
+                                    spends all her time off from work training in order to prepare for her upcoming
+                                    debut. Between a weekly regimen of 30+ hours consisting of 5am, lunch and after-work
+                                    sessions, she finds her marathon training even tougher than triathlon. She keeps
+                                    running towards her goal of sub3 or who knows, perhaps even the podium? You won’t
+                                    find her complaining. She’s too busy showing the world that every one can run far.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <script type="text/javascript">
+                    $(function () {
+                        // 换图 + 懒加载
+                        $.spice.lazyLoad('img[lazysrc]', {
+                            attr: 'lazysrc'
+                        });
+                        $.spice.tools.changeImageSrc({
+                            callBack: function (img, self) {
+                                $.spice.lazyLoad('img[lazysrc]', {
+                                    attr: self.opt.lazyData,
+                                    prestrain: 1
+                                });
+                            }
+                        });
+
+                        $('.article-video').tap(function () {
+                            $(this).find('iframe').show()
+                        });
+
+                        $(".card").tap(function () {
+                            // $('.tips').hide()
+                            if ($(this).children('.tips').css('display') == 'block') {
+                                $(this).children('.tips').hide()
+                            } else {
+                                $(this).children('.tips').show()
+                            }
+                        })
+
+                        // var indexVedio = document.querySelector(".e-play-videoTwo");
+                        // indexVedio.onclick = function () {
+                        //     indexVedio.innerHTML = "<iframe width=100%  height='682' src='https://www.youtube.com/embed/SJFmEb7FoqQ?rel=0&autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>";
+                        // }
+
+                        var loadImgFun_index = function (imgArr, fn) {
+                            var loadImgLen = 0,
+                                errImgLen = 0;
+                            var imgdefereds = [];
+                            $(imgArr).each(function () {
+                                var defered = $.Deferred();
+                                $(this)
+                                    .on("load", function () {
+                                        defered.resolve();
+                                        loadImgLen++;
+                                    })
+                                    .on("error", function () {
+                                        defered.resolve();
+                                        errImgLen++;
+                                    });
+                                if (this.complete)
+                                    setTimeout(function () {
+                                        defered.resolve();
+                                    }, 200);
+                                imgdefereds.push(defered);
+                            });
+                            $.when.apply(null, imgdefereds).done(function () {
+                                if (fn && $.isFunction(fn)) {
+                                    fn();
+                                }
+                            });
+                        };
+                        // 视频1自动播放
+                        $(".e-video0").each(function (index, el) {
+                            $(el).addClass("home-video");
+                            var videoCode = $(".video-code", el).data("video-code"),
+                                videoId = "home_video0_" + index;
+                            loadImgFun_index($(".video-code img", el), function () { });
+                            var bannerVideoId = videoCode;
+                            var url = base + "/indexCCVideo.json";
+                            var data = loxia.syncXhrGet(url, {
+                                'bannerVideoId': bannerVideoId
+                            });
+                            var videoUrl = data.mp4VideoUrl;
+                            // var videoUrl="https://cm15-c110-3.play.bokecc.com/flvs/ca/QxDEP/MaBAAuhdHl-30.mp4?t=1623549723&key=F17BC72A8745AD0551D123D085FF3517&tpl=10"
+                            var html = '<video class="video" id="' +
+                                videoId +
+                                '"  webkit-playsinline="true" playsInline="true" autoplay="autoplay" loop="loop" muted><source src="' +
+                                videoUrl +
+                                '" ></source></video>';
+                            $(".video-content0", el).html(html);
+                            var _parent_article = $(this).parents(".article-video")
+                            if (!_parent_article.hasClass("is-play")) {
+                                _parent_article.addClass("is-play");
+                            }
+                        });
+
+                    });
+                </script>
+            </section>
+
+            <%include _includes/modules/footer-no-back-top.html %>
+                <!-- 公共部分放最下，如回到顶部，弹出层等 -->
+    </div>
+</body>
+
+</html>

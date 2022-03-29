@@ -1,0 +1,12 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 100">
+  <defs>
+    <style>
+      .cls-1 { fill: #fff; }
+    </style>
+  </defs>
+  <title>
+    Artboard 10
+  </title>
+  <path class="cls-1" d="M79 50v-2H69v-8h-2v8H48v-8h-2v8H28v-8h-2v8H15v2h11v11H15v2h11v11H15v2h11v8h2v-8h18v8h2v-8h19v8h2v-8h10v-2H69V63h10v-2H69V50zM46 61H28V50h18zm0 2v11H28V63zm2 0h19v11H48zm0-2V50h19v11z"/>
+  <path class="cls-1" d="M81 7V1H64v6H31V1H14v6H1v92h92V7zM68 9.784V5h9v9h-9zm-50 0V5h9v9h-9zM89 95H5V30h84zM5 25V11h9v7h17v-7h33v7h17v-7h8v14z"/>
+</svg>

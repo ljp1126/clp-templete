@@ -1,0 +1,467 @@
+@charset "UTF-8";
+// 公共方法
+@import "common/utilities.less";
+// 公共变量、样式
+@import "common/variables.less";
+
+.article-eqt-two{
+	max-width: 1002px;
+	position: relative;
+	>img{
+		width: 100%;
+	}
+}
+
+.article-eqt-two-1{
+	.banner{
+		width: 76%;
+		position: absolute;
+		top: -12.5%;
+		left: 15.5%;
+		pointer-events: none;
+
+		img{
+			width: 100%;
+		}
+
+	}
+	.btn{
+		min-width: 112px;
+		height: 34px;
+		line-height: 34px;
+		font-size: 14px;
+		position: absolute;
+		right: 12.8%;
+		bottom: 0;
+
+		span{
+			&:after{
+				top: 1px;
+			}
+		}
+	}
+}
+
+.article-eqt-two-3{
+    .link-box{
+        a{
+            position: absolute;
+            z-index: 5;
+
+            &:nth-child(1){
+                top: 17%;
+                left: 0;
+                width: 37%;
+                height: 29%;
+            }
+            &:nth-child(2){
+                top: 33%;
+                left: 30%;
+                width: 42%;
+                height: 31%;
+            }
+            &:nth-child(3){
+                bottom: 13%;
+                right: 0;
+                width: 36%;
+                height: 32%;
+            }
+        }
+    }
+	.animation-box{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		-webkit-perspective: 1000px;
+		-moz-perspective: 1000px;
+		perspective: 1000px;
+
+		img{
+			position: absolute;
+		}
+
+		.animation-img{
+			opacity: 0;
+
+			
+			will-change: transform;
+		}
+		.animation-text{
+			opacity: 0;
+
+			
+		}
+
+
+		&.is-view{
+			.animation-img{
+				opacity: 1;
+				
+				-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateY(0);
+				-moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateY(0);
+				transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateY(0);
+
+				-webkit-transition: all 1s ease-in-out;
+				-o-transition: all 1s ease-in-out;
+				-moz-transition: all 1s ease-in-out;
+				transition: all 1s ease-in-out;
+			}
+			.animation-text{
+				opacity: 1;
+
+				-webkit-transition: all 1s ease-in-out;
+				-o-transition: all 1s ease-in-out;
+				-moz-transition: all 1s ease-in-out;
+				transition: all 1s ease-in-out;
+				will-change: transform;
+				transition-delay: 1s;
+			}	
+		}
+	}
+	
+	.animation-box-1{
+		.animation-img{
+			z-index: 3;
+			width: 36%;
+			top: 17.7%;
+			left: 0.6%;
+
+			-webkit-transform: rotateX(-40deg) rotateY(-25deg) rotateZ(0deg) translateY(300px);
+			-moz-transform: rotateX(-40deg) rotateY(-25deg) rotateZ(0deg) translateY(300px);
+			transform: rotateX(-40deg) rotateY(-25deg) rotateZ(0deg) translateY(300px);
+
+		}
+		
+		.animation-text{
+			z-index: 4;
+		}
+	}
+
+	.animation-box-2{
+		.animation-img{
+			z-index: 1;
+			width: 40.8%;
+			top: 33.7%;
+			left: 30.6%;
+
+			-webkit-transform: rotateX(-40deg) rotateY(0deg) rotateZ(0deg) translateY(300px);
+			-moz-transform: rotateX(-40deg) rotateY(0deg) rotateZ(0deg) translateY(300px);
+			transform: rotateX(-40deg) rotateY(0deg) rotateZ(0deg) translateY(300px);
+		}
+
+		.animation-text{
+			z-index: 2;
+		}
+	}
+
+	.animation-box-3{
+		.animation-img{
+			z-index: 2;
+			width: 35%;
+			top: 55.6%;
+			right: 0px;
+
+			-webkit-transform: rotateX(-40deg) rotateY(25deg) rotateZ(0deg) translateY(300px);
+			-moz-transform: rotateX(-40deg) rotateY(25deg) rotateZ(0deg) translateY(300px);
+			transform: rotateX(-40deg) rotateY(25deg) rotateZ(0deg) translateY(300px);
+		}
+
+		.animation-text{
+			z-index: 3;
+		}
+    }
+    
+    &.lh1{
+        .animation-box-1{
+            .animation-text{
+                width: 72%;
+                top: 13.1%;
+                left: 25.2%;
+            }
+        }
+    
+        .animation-box-2{
+            .animation-text{
+                width: 45%;
+                top: 24.5%;
+                left: 50%;
+            }
+        }
+    
+        .animation-box-3{
+            .animation-text{
+                width: 55.5%;
+                bottom: 16.5%;
+                left: 27%;
+            }
+        }
+    }
+
+    &.lh2{
+        .animation-box-1{
+            .animation-text{
+                width: 72%;
+                top: 14.1%;
+                left: 24.2%;
+            }
+        }
+    
+        .animation-box-2{
+            .animation-text{
+                width: 46.8%;
+                top: 24.5%;
+                left: 50.4%;
+            }
+        }
+    
+        .animation-box-3{
+            .animation-text{
+                width: 64.5%;
+                bottom: 16.5%;
+                left: 18%;
+            }
+        }
+    }
+
+    &.ym{
+        .animation-box-1{
+            .animation-text{
+                width: 70%;
+                top: 14.1%;
+                left: 27.2%;
+            }
+        }
+    
+        .animation-box-2{
+            .animation-text{
+                width: 48.8%;
+                top: 23.2%;
+                left: 47.6%;
+            }
+        }
+    
+        .animation-box-3{
+            .animation-text{
+                width: 43.3%;
+                bottom: 16.6%;
+                left: 39.2%;
+            }
+        }
+    }
+
+    &.fbb{
+        .animation-box-1{
+            .animation-text{
+                width: 75%;
+                top: 13.4%;
+                left: 21.5%;
+            }
+        }
+    
+        .animation-box-2{
+            .animation-text{
+                width: 46.6%;
+                top: 24.7%;
+                left: 46%;
+            }
+        }
+    
+        .animation-box-3{
+            .animation-text{
+                width: 42%;
+                bottom: 16.6%;
+                left: 39%;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 1024px){
+		
+	.article-eqt-two{
+		max-width: 100%;
+	}
+
+	.article-eqt-two-1{
+		.banner{
+			width: 100%;
+			top: -15%;
+			left: 0;
+		}
+		.btn{
+			font-size: 12px;
+			min-width: 100px;
+			height: 30px;
+			line-height: 30px;
+
+			right: 6.8%;
+			bottom: 0;
+
+			span{
+				&:after{
+					top: 0;
+				}
+			}
+		}
+	}
+
+	.article-eqt-two-3{
+        .link-box{
+            a{
+                &:nth-child(1){
+                    top: 19%;
+                    left: 0;
+                    width: 49%;
+                    height: 28%;
+                }
+                &:nth-child(2){
+                    top: 34%;
+                    left: 30%;
+                    width: 56%;
+                    height: 30%;
+                }
+                &:nth-child(3){
+                    bottom: 14%;
+                    right: 0;
+                    width: 47%;
+                    height: 30%;
+                }
+            }
+        }
+
+		.animation-box-1{
+			.animation-img{
+				width: 47.5%;
+				top: 19.7%;
+			}
+		}
+
+		.animation-box-2{
+			.animation-img{
+				width: 54.6%;
+				top: 34.9%;
+			}
+		}
+
+		.animation-box-3{
+			.animation-img{
+				width: 46.7%;
+				top: 56.3%;
+			}
+        }
+        
+        &.lh1{
+            .animation-box-1{
+                .animation-text{
+                    width: 77.3%;
+                    top: 14%;
+                    left: 20.6%;
+                }
+            }
+    
+            .animation-box-2{
+                .animation-text{
+                    width: 38.3%;
+                    top: 27%;
+                    left: 54%;
+                }
+            }
+    
+            .animation-box-3{
+                .animation-text{
+                    width: 64%;
+                    bottom: 20.7%;
+                    left: 18.6%;
+                }
+            }
+        }
+
+        &.lh2{
+            .animation-box-1{
+                .animation-text{
+                    width: 69.3%;
+                    top: 13.7%;
+                    left: 25.4%;
+                }
+            }
+    
+            .animation-box-2{
+                .animation-text{
+                    width: 38%;
+                    top: 27.5%;
+                    left: 54.2%;
+                }
+            }
+    
+            .animation-box-3{
+                .animation-text{
+                    width: 59%;
+                    bottom: 16.7%;
+                    left: 8.6%;
+                }
+            }
+        }
+
+        &.ym{
+            .animation-box-1{
+                .animation-text{
+                    width: 67.2%;
+                    top: 13.7%;
+                    left: 25.2%;
+                }
+            }
+    
+            .animation-box-2{
+                .animation-text{
+                    width: 47.9%;
+                    top: 27%;
+                    left: 49.4%;
+                }
+            }
+    
+            .animation-box-3{
+                .animation-text{
+                    width: 51%;
+                    bottom: 20%;
+                    left: 19%;
+                }
+            }
+        }
+
+
+        &.fbb{
+            .animation-box-1{
+                .animation-text{
+                    width: 70%;
+                    top: 13.2%;
+                    left: 25.2%;
+                }
+            }
+    
+            .animation-box-2{
+                .animation-text{
+                    width: 29.9%;
+                    top: 28%;
+                    left: 57.6%;
+                }
+            }
+    
+            .animation-box-3{
+                .animation-text{
+                    width: 50%;
+                    bottom: 20%;
+                    left: 22%;
+                }
+            }
+        }
+
+	}
+
+
+
+}

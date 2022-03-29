@@ -1,0 +1,514 @@
+@charset "utf-8";
+
+.article{
+    position: relative;
+    >img{
+        width: 100%;
+    }
+}
+
+.link{
+    position: absolute;
+    z-index: 1;
+    // background: rgba(0, 0, 0, .4);
+}
+
+img{
+    width: 100%;
+}
+
+.article-carousel{
+    .swiper-container-kv{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .swiper-button-prev{
+            background: url(https://img.adidas.com.cn/resources/activePage/NOV/climaheat/img-p-left.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 44px;
+            height: 78px;
+            background-size: 44px 78px;
+            left: 15%;
+            transform: translateY(-50%);
+        }
+        .swiper-button-next{
+            background: url(https://img.adidas.com.cn/resources/activePage/NOV/climaheat/img-p-right.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 44px;
+            height: 78px;
+            background-size: 44px 78px;
+            right: 15%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.article-video{
+    .link-01{
+        position: absolute;
+        top: 0%;
+        left: 19%;
+        width: 62%;
+        height: 100%;
+    }
+}
+
+.article-rotate{
+    .article-rotate-01{
+        width: 34%;
+        height: 50%;
+        top: 28%;
+        left: 34%;
+    }
+    .article-rotate-02{
+        width: 42%;
+        height: 48%;
+        top: 22%;
+        left: 29%;
+    }
+    .rotate-box{
+        width: 12.5%;
+		position: absolute;
+		z-index: 1;
+		animation: rotate 5s infinite;
+
+        @keyframes rotate {
+			from {
+				transform:rotate(0deg);
+			}
+			to {
+				transform:rotate(360deg);
+			}
+		}
+        &.rotate-box-1{
+			top: 23.1%;
+            left: 21.3%;
+            animation-delay: 0.5s;
+		}
+		&.rotate-box-2{
+			top: 33.5%;
+            left: 68.9%;
+			animation-delay: 0.7s;
+		}
+		&.rotate-box-3{
+			top: 68.3%;
+            left: 63.8%;
+			animation-delay: 0.9s;
+		}
+
+        &.rotate-box-4{
+			top: 23.1%;
+            left: 17.3%;
+            animation-delay: 0.5s;
+		}
+		&.rotate-box-5{
+			top: 20.7%;
+            left: 67.5%;
+			animation-delay: 0.7s;
+		}
+		&.rotate-box-6{
+			top: 63.3%;
+            left: 63.8%;
+			animation-delay: 0.9s;
+		}
+    }
+}
+
+.article-btn{
+    .btn{
+        height: 38px;
+        line-height: 38px;
+        font-size: 16px;
+    }
+    .article-btn-box{
+        position: absolute;
+        width: 23%;
+        height: 32.7%;
+        &.article-btn-box-01{
+            top: 3.3%;
+            left: 53.7%;
+            .link-02{
+                left: 50%;
+                transform: translateX(-50%);
+                top: 77%;
+            }
+        }
+        &.article-btn-box-02{
+            top: 56%;
+            left: 23.3%;
+            .link-03{
+                left: 50%;
+                transform: translateX(-50%);
+                top: 77.1%;
+            }
+        }
+    }
+    .link-04{
+        width: 38.5%;
+        height: 40.5%;
+        top: 0%;
+        left: 19.9%;
+    }
+    .link-05{
+        width: 38.5%;
+        height: 40.5%;
+        top: 48.2%;
+        left: 41.5%;
+    }
+    .article-btn-box2{
+        position: absolute;
+        width: 23.1%;
+        height: 31.5%;
+        &.article-btn-box-03{
+            top: 3.3%;
+            left: 53.7%;
+            .link-06{
+                top: 77%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &.article-btn-box-04{
+            top: 53.7%;
+            left: 19.8%;
+            .link-08{
+                top: 77%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    .link-07{
+        width: 38.5%;
+        height: 39.5%;
+        top: 0%;
+        left: 19.9%;
+    }
+    .link-09{
+        width: 38.5%;
+        height: 39.5%;
+        top: 46%;
+        left: 41.5%;
+    }
+}
+
+.hover-scale {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 25px;
+    .box-left{
+        float: left;
+        width: 50.1%;
+        .shoe-7-4-01{
+            width: 50%;
+        }
+        .show-left{
+            float: left;
+        }
+        .shoe-7-4-02{
+            float: left;
+            width: 50%;
+        }
+    }
+    .box-right{
+        float: left;
+        width: 49.9%;
+        position: relative;
+        .buy-btn{
+            position: relative;
+            .buy-btn-box{
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+                .btn{
+                    position: absolute;
+                    bottom: 20%;
+                    height: 38px;
+                    line-height: 38px;
+                    font-size: 16px;
+                    width: 160px;
+                    &.btn-10{
+                        left: 24%;
+                    }
+                    &.btn-11{
+                        right: 24%;
+                    }
+                }
+                
+            }
+        }
+        .show-right{
+            clear: both;
+            overflow: hidden;
+            .show-right-top{
+                float: left;
+                width: 50.11%;
+            }
+            .show-right-bottom{
+                float: left;
+                width: 49.89%;
+            }
+        }
+    }
+    .box-left-7-4-03{
+        margin-right: -0.01%;
+    }
+}
+
+.article-btn-foot{
+    text-align: center;
+    margin-bottom: 5vh;
+    .btn-12{
+        min-width: 160px;
+        letter-spacing: 5px;
+    }
+}
+
+.article-foot{
+    margin-bottom: 40px;
+    .foot-box{
+        width: 70.36%;
+        font-size: 0;
+        margin: 0 auto;
+        a{
+            display: inline-block;
+            width: 23%;
+            margin-right: 2.66666666%;
+            &:nth-child(4){
+                margin-right: 0%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .article-carousel{
+        .swiper-container-kv{
+            .swiper-button-prev{
+                background: url(https://img.adidas.com.cn/resources/activePage/NOV/climaheat/img-p-left.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 25px;
+                height: 45px;
+                background-size: 25px 45px;
+                left: 10%;
+                transform: translateY(-50%);
+            }
+            .swiper-button-next{
+                background: url(https://img.adidas.com.cn/resources/activePage/NOV/climaheat/img-p-right.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 25px;
+                height: 45px;
+                background-size: 25px 45px;
+                right: 10%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .article-video{
+        .link-01{
+            left: 5%;
+            width: 90%;
+        }
+    }
+    .article-rotate{
+        .article-rotate-01{
+            width: 70%;
+            height: 27%;
+            top: 44%;
+            left: 17%;
+        }
+        .article-rotate-02{
+            width: 66%;
+            height: 44%;
+            top: 37%;
+            left: 19%;
+        }
+        .rotate-box{
+            width: 31%;
+            &.rotate-box-1{
+                top: 28.1%;
+                left: 8.4%;
+            }
+            &.rotate-box-2{
+                top: 21.4%;
+                left: 60.5%;
+            }
+            &.rotate-box-3{
+                top: 70.8%;
+                left: 66.8%;
+            }
+
+            &.rotate-box-4{
+                top: 22.5%;
+                left: 8.3%;
+            }
+            &.rotate-box-5{
+                top: 14.7%;
+                left: 60.5%;
+            }
+            &.rotate-box-6{
+                top: 68.3%;
+                left: 66.8%;
+            }
+        }
+    }
+    .article-btn{
+        .btn{
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            min-width: 120px;
+            span{
+                &:after{
+                    top: 1px;
+                }
+            }
+        }
+        .article-btn-box{
+            width: 60%;
+            height: 25.2%;
+            &.article-btn-box-01{
+                top: 18.3%;
+                left: 35.7%;
+                .link-02{
+                    top: 76%;
+                }
+            }
+            &.article-btn-box-02{
+                top: 65%;
+                left: 4.3%;
+                .link-03{
+                    top: 75.1%;
+                }
+            }
+        }
+        .link-03{
+            top: 84%;
+            left: 18.3%;
+        }
+        .link-04{
+            left: 5%;
+            width: 73%;
+            height: 24%;
+        }
+        .link-05{
+            left: 21%;
+            width: 74%;
+            height: 23.5%;
+        }
+
+        .article-btn-box2{
+            width: 59.1%;
+            height: 25.5%;
+            &.article-btn-box-03{
+                top: 18.8%;
+                left: 36%;
+                .link-06{
+                    top: 76%;
+                }
+            }
+            &.article-btn-box-04{
+                top: 66.5%;
+                left: 4.8%;
+                .link-08{
+                    top: 76%;
+                }
+            }
+        }
+        .link-07{
+            width: 73.5%;
+            height: 24.5%;
+            top: 0%;
+            left: 4.9%;
+        }
+        .link-09{
+            width: 72.5%;
+            height: 24.5%;
+            top: 49%;
+            left: 21.5%;
+        }
+    }
+    .hover-scale{
+        .box-left,
+        .box-right{
+            width: 100%;
+        }
+        .box-left{
+            .shoe-7-4-01{
+                width: 50%;
+            }
+            .shoe-7-4-02{
+                width: 50%;
+            }
+        }
+        .box-right{
+            .buy-btn{
+                .buy-btn-box{
+                    .btn{
+                        bottom: 15%;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 14px;
+                        width: 115px;
+                        min-width: 115px;
+                        span{
+                            &:after{
+                                top: 1px;
+                            }
+                        }
+                        &.btn-10{
+                            left: 15%;
+                        }
+                        &.btn-11{
+                            right: 15%;
+                        }
+                    }
+                    
+                }
+            }
+            .show-right{
+                .show-right-top{
+                    width: 49.6%;
+                }
+                .show-right-bottom{
+                    width: 50.4%;
+                }
+            }
+        }
+    }     
+    .article-btn-foot{
+        .btn-12{
+            height: 38px;
+            line-height: 38px;
+            font-size: 16px;
+        }
+    }
+    .article-foot{
+        margin-bottom: 20px;
+        .foot-box{
+            width: 88.53%;
+            font-size: 0;
+            margin: 0 auto;
+            a{
+                display: inline-block;
+                width: 48%;
+                margin-right: 4%;
+                margin-bottom: 18px;
+                &:nth-child(2){
+                    margin-right: 0%;
+                }
+                &:nth-child(4){
+                    margin-right: 0%;
+                }
+            }
+        }
+    }
+}

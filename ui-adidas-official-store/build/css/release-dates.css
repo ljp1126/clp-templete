@@ -1,0 +1,271 @@
+@charset "UTF-8";
+.addi-brand .icon-logo-type {
+  height: 21px;
+  display: block;
+}
+.adidas-stella .icon-logo-type {
+  background: url(../images/common/logo-stella@2x.png) no-repeat;
+  background-size: 100%;
+  width: 173px;
+}
+.adidas-originals .icon-logo-type {
+  background: url(../images/common/logo-originals@2x.png) no-repeat;
+  background-size: 100%;
+  width: 22px;
+}
+.adidas-neo .icon-logo-type {
+  background: url(../images/common/logo-neo@2x.png) no-repeat;
+  background-size: 100%;
+  width: 135px;
+}
+.adidas-performance-athletics .icon-logo-type {
+  background: url(../images/common/logo-performance-athletics@2x.png) no-repeat;
+  background-size: 100%;
+  width: 32px;
+}
+.article-product-wall {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.article-product-wall > .title {
+  padding: 0 5px;
+  margin-top: 35px;
+}
+.article-product-wall > .title > h3 {
+  font-family: 'adihausBold', "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #000000;
+}
+.article-product-wall > .title > p {
+  font-size: 24px;
+  color: #000000;
+  margin-top: 37px;
+}
+.article-product-wall .product-container {
+  margin-top: 13px;
+}
+.article-product-wall .product-container > div {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.article-product-wall .product-container > div .thumbnail,
+.article-product-wall .product-container > div img {
+  border-radius: 0;
+}
+.article-product-wall .product-container > div .thumbnail {
+  padding: 0;
+  padding-bottom: 51px;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.article-product-wall .product-container > div .thumbnail .pro-big-img-box .addi-brand {
+  position: absolute;
+  top: 11px;
+  left: 13px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.article-product-wall .product-container > div .thumbnail .good-box {
+  padding: 0 15px;
+}
+.article-product-wall .product-container > div .thumbnail .good-box .release-info {
+  font-size: 14px;
+  color: #000000;
+  margin: 20px 0 12px 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #000000;
+}
+.article-product-wall .product-container > div .thumbnail .good-box .release-info > p {
+  float: left;
+}
+.article-product-wall .product-container > div .thumbnail .good-box .release-info > p span {
+  font-weight: bold;
+}
+.article-product-wall .product-container > div .thumbnail .good-box .release-info > .subscribe {
+  float: right;
+  position: relative;
+  top: -2px;
+}
+.article-product-wall .product-container > div .thumbnail .good-box .release-info > .subscribe span {
+  margin-right: 9px;
+}
+.article-product-wall .product-container > div .thumbnail .good-box .release-info > .subscribe span,
+.article-product-wall .product-container > div .thumbnail .good-box .release-info > .subscribe i {
+  vertical-align: middle;
+}
+.article-product-wall .product-container > div .thumbnail .good-box .release-info > .subscribe:hover {
+  color: #000;
+}
+.article-product-wall .product-container > div .thumbnail .good-box .goods-info span {
+  color: #000000;
+}
+.article-product-wall .product-container > div .thumbnail .good-box .goods-info span.name {
+  float: left;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  max-width: 67%;
+}
+.article-product-wall .product-container > div .thumbnail .good-box .goods-info span.price {
+  float: right;
+  font-size: 14px;
+}
+.article-product-wall .look-more {
+  text-align: center;
+}
+.article-product-wall .look-more .btn-have-arrow span:after {
+  background-position: -120px 0px;
+  top: 7px;
+}
+.article-introduce {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 50px 35px;
+  text-align: center;
+  color: #000000;
+}
+.article-introduce > h3 {
+  font-size: 36px;
+}
+.article-introduce > p {
+  font-size: 12px;
+  margin-top: 18px;
+  line-height: 17px;
+}
+.article-res-gallery-box {
+  margin-bottom: 55px;
+}
+@media (min-width: 1025px) {
+  .article-product-wall .product-container > div .thumbnail {
+    -webkit-transition: box-shadow 0.2s ease-in-out;
+    -moz-transition: box-shadow 0.2s ease-in-out;
+    -ms-transition: box-shadow 0.2s ease-in-out;
+    -o-transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  .article-product-wall .product-container > div .thumbnail:hover {
+    z-index: 1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  .article-product-wall .product-container > div .thumbnail:hover .pro-big-img-box .addi-brand {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media (max-width: 1024px) {
+  .article-product-wall > .title {
+    padding: 0 20px;
+    margin-top: 18px;
+  }
+  .article-product-wall > .title > h3 {
+    font-size: 24px;
+  }
+  .article-product-wall > .title > p {
+    font-size: 18px;
+    margin-top: 17px;
+  }
+  .article-product-wall .product-container {
+    margin-top: 22px;
+  }
+  .article-product-wall .product-container > div {
+    padding: 0;
+  }
+  .article-product-wall .product-container > div .thumbnail .good-box {
+    padding: 0 20px;
+  }
+  .article-product-wall .product-container > div .thumbnail .good-box .release-info {
+    margin: 14px 0 12px 0;
+  }
+  .article-product-wall .look-more {
+    padding: 0 20px;
+  }
+  .article-product-wall .look-more .btn-have-arrow {
+    min-width: 100%;
+    padding: 0 4px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .article-introduce {
+    padding: 45px 30px;
+  }
+  .article-introduce > h3 {
+    font-size: 24px;
+  }
+  .article-introduce > p {
+    margin-top: 25px;
+  }
+  .article-res-gallery-box {
+    margin-top: 5px;
+    margin-bottom: 48px;
+  }
+}
+.article-product-wall .product-container > div .thumbnail .good-box .release-info {
+  font-size: 16px;
+}
+.article-product-wall .product-container > div .thumbnail .good-box .release-info > .subscribe-no i {
+  display: none;
+}
+.article-product-wall .product-container > div .thumbnail .good-box .goods-info span.name {
+  font-size: 16px;
+}
+.article-product-wall .product-container > div .thumbnail .good-box .goods-info span.price {
+  font-size: 16px;
+}
+.article-product-wall .look-more-btn {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.article-product-wall > .look-more-size {
+  margin-top: 126px;
+  text-align: center;
+}
+.article-product-wall > .look-more-size > h3 {
+  font-size: 30px;
+  color: #000000;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.article-product-wall > .look-more-size p {
+  font-size: 14px;
+  color: #888888;
+  line-height: 14px;
+  margin-bottom: 40px;
+}
+.article-product-wall > .look-more-size .look-more-size-btn {
+  margin-bottom: 140px;
+}
+@media (max-width: 1024px) {
+  .article-product-wall > .look-more-size {
+    margin-top: 48px;
+    text-align: left;
+  }
+  .article-product-wall > .look-more-size > h3 {
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    line-height: 20px;
+    margin-bottom: 16px;
+    padding: 0 20px;
+  }
+  .article-product-wall > .look-more-size p {
+    padding: 0 20px;
+  }
+  .article-product-wall > .look-more-size .look-more-size-btn {
+    margin-bottom: 14%;
+    width: 89.3%;
+    margin: 0 20px;
+    height: 44px;
+    line-height: 44px;
+    margin-bottom: 80px;
+  }
+}

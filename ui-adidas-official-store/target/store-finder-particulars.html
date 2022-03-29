@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title>store-finder-particulars</title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" type="text/css" href="css/store-finder.css">
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="js/store-finder.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+
+			<!-- 内容部分 -->
+			<section class="container">
+				<!-- 模块一 -->
+				<article class="article article-list none-sm">
+					<div class="breadcrumb">
+						<ul class="list-inline">
+							<li><a href="#"><i class="icon icon-round-lightgray-lefts"></i>返回</a></li>
+							<li class="divider">丨</li>
+							<li><a href="/">首页</a></li>
+							<li class="divider">/</li>
+							<li><a href="/">门店查询</a></li>
+						</ul>
+					</div>
+				</article>
+
+				<!-- 模块三 -->
+				<article class="article article-list article-list-container">
+					
+					<div class="store-finder-box">
+						<div class="store-finder-cont float-clearfix">
+							<!--左 part start-->
+							<div class="sfcont-left-box none-sm">
+								<div class="store-search-box">
+									<div class="store-search-tit">门店查询</div>
+									<div class="store-search-cont">
+										<div class="store-search-condition">
+											<div class="form-group">
+												<!--pc端省市区联动-->
+												<div class="row form-selects form-select-box none-sm sfpc-select-city">
+													<div class="col-12-12">
+														<div class="form-select">
+															<a class="btn events-city-text">
+															    <span class="dropdown-text">请选择省份或地区</span>
+															    <span class="dropdown-icon">
+															        <i class="icon icon-caret"></i>
+															    </span>
+															</a>
+															<div class="sub-menu tinyscrollbar">
+															    <div class="viewport">
+															        <div class="overview">
+															            <ul class="events-city-content">
+															                <li><a>示例文字</a></li>
+															                <li><a>示例文字</a></li>
+															                <li><a>2</a></li>
+															                <li><a>3</a></li>
+															            </ul>
+															        </div>
+															    </div>
+															    <div class="scrollbar">
+															        <div class="track">
+															            <div class="thumb">
+															                <div class="end"></div>
+															            </div>
+															        </div>
+															    </div>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-12-12">
+														<div class="form-select">
+															<a class="btn events-city-text">
+															    <span class="dropdown-text">请选择城市</span>
+															    <span class="dropdown-icon">
+															        <i class="icon icon-caret"></i>
+															    </span>
+															</a>
+															<div class="sub-menu tinyscrollbar">
+															    <div class="viewport">
+															        <div class="overview">
+															            <ul class="events-city-content">
+															                <li><a>示例文字</a></li>
+															                <li><a>示例文字</a></li>
+															                <li><a>2</a></li>
+															                <li><a>3</a></li>
+															            </ul>
+															        </div>
+															    </div>
+															    <div class="scrollbar">
+															        <div class="track">
+															            <div class="thumb">
+															                <div class="end"></div>
+															            </div>
+															        </div>
+															    </div>
+															</div>
+														</div>
+													</div>
+
+												</div>
+
+												<!--mob端省市区联动-->
+												<div class="row form-selects form-select-box none block-sm sfmb-select-city">
+													<div class="col-12-6">
+														<div class="form-select">
+															<a class="btn">
+																<span class="dropdown-text">请选择</span>
+															    <span class="dropdown-icon">
+															        <i class="icon icon-caret"></i>
+															    </span>
+															</a>
+															<select>
+																<option value="">请选择</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-12-6">
+														<div class="form-select">
+															<a class="btn">
+																<span class="dropdown-text">请选择城市</span>
+															    <span class="dropdown-icon">
+															        <i class="icon icon-caret"></i>
+															    </span>
+															</a>
+															<select>
+																<option value="">请选择</option>
+															</select>
+														</div>
+													</div>
+												</div>
+
+											</div>
+											<div class="form-iline">
+												<div class="form-input">
+													<input type="text" placeholder="门店名称/门店地址"/>
+												</div>
+											</div>
+											
+										</div>
+										<dl class="store-search-type">
+											<dt>店铺类型</dt>
+											<dd><i class="icon icon-checked is-active"></i><i class="icon logo-ic logo-ic1"></i><span>运动表现</span></dd>
+											<dd><i class="icon icon-checked"></i><i class="icon logo-ic logo-ic1"></i><span>工厂折扣</span></dd>
+											<dd><i class="icon icon-checked"></i><i class="icon logo-ic logo-ic1"></i><span>鞋类专业</span></dd>
+											<dd><i class="icon icon-checked"></i><i class="icon logo-ic logo-ic2"></i><span>运动生活</span></dd>
+											<dd><i class="icon icon-checked"></i><i class="icon logo-ic logo-ic3"></i><span>三叶草</span></dd>
+											<dd><i class="icon icon-checked"></i><i class="icon logo-ic logo-ic1"></i><span>女子</span></dd>
+											<dd><i class="icon icon-checked"></i><i class="icon logo-ic logo-ic1"></i><span>旗舰店</span></dd>
+											<dd><i class="icon icon-checked"></i><i class="icon logo-ic logo-ic1"></i><span>童装</span></dd>
+											<dd><i class="icon icon-checked"></i><i class="icon logo-ic logo-ic1"></i>跑步专业</dd>
+										</dl>
+										<dl class="store-search-crumbs">
+											<dt>当前搜索条件<span>清除</span></dt>
+											<!-- <dd><i class="icon icon-clear"></i><label>区域：</label><span>上海 宝山</span></dd> -->
+											<dd><i class="icon icon-clear"></i><label>门店地址/门店：</label><span>黄河中路…</span></dd>
+											<dd><i class="icon icon-clear"></i><label>店铺类型：</label><span>运动表现</span></dd>
+										</dl>
+										<div class="store-search-btnbox">
+											<a class="btn btn-blue"><span>点击查看</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--左 part end-->	
+
+							<!--右 part start-->
+							<div class="sfcont-right-box">
+								<div class="sfcont-right-cont">
+									<div class="sf-particulars-tit">门店详情<div class="back-sf-list">返回门店查询列表<i class="icon"></i></div></div>
+									<div class="sf-particulars-box">
+										<div class="sf-img block-sm none">
+											<img src="images/myaccount/pic@2x.jpg" alt="">
+										</div>
+										<div class="sf-tit">adidas运动休闲NEO专卖店</div>
+										<div class="sf-particulars-cont">
+											<p class="twowords">
+												<label>地址：</label>
+												<span>上海 上海 上海市淮海中路999号上海环贸广场地下2层(LG2)278室</span>
+											</p>
+											<p class="twowords">
+												<label>电话：</label>
+												<span>021-54653299</span>
+											</p>
+											<p class="fourwords">
+												<label>营业时间：</label>
+												<span>周一至周四 9:00am - 10:00pm<br>周五至周日 9:00am - 11:00pm<span class="tips">(具体营业时间以门店为准)</span></span>
+											</p>
+											<!-- <p>
+												<label>分享门店至：</label>
+												<span><i class="icon weibo"></i></span>
+												<span><i class="icon weixin"></i></span>
+											</p> -->
+											<!-- 结构修改为下面div -->
+											<div class="share-box float-clearfix">
+												<label>分享门店至：</label>
+												<ul>
+													<li>
+														<a href=""><i class="icon weibo"></i></a>
+													</li>
+													<li class="share-wechat">
+														<a><i class="icon weixin"></i></a>
+														<div class="wechat-code-box">
+															<img src="images/wechat-img-1.jpg">
+															<p> 扫一扫分享门店</p>
+														</div>
+													</li>
+												</ul>
+											</div>										
+										</div>
+										<div class="sf-img none-sm">
+											<img src="images/myaccount/img395.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--右 part end-->		
+
+						</div>
+					</div>
+								
+				</article>
+
+			</section>
+
+			<%include _includes/modules/footer-no-back-top.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		</div>
+	</body>
+</html>

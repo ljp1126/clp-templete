@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <%include _includes/meta.html %>
+        <title></title>
+        <%include _includes/css.html %>
+            <!-- <link rel="stylesheet" type="text/css" href="css/adiclub.css"> -->
+            <%include _includes/js.html %>
+                <!-- <script type="text/javascript" src="js/adiclub.js"></script> -->
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <%include _includes/modules/header.html %>
+            <!-- 内容部分 -->
+            <section class="container">
+  
+  
+                
+          <style>
+            @charset "UTF-8";
+
+            body {
+              background: #FFFFFF;
+            }
+
+            .container {
+              padding-bottom: 0;
+            }
+
+            .article-adicolor-kv {
+              margin-bottom: 20px !important;
+            }
+
+            .article-adicolor-kv .swiper-block .swiper-container .swiper-wrapper {
+                padding-bottom: 40px;
+                
+              }
+
+            .article-adicolor-kv .swiper-container .swiper-pagination {
+                width: 100%;
+                left: 0;
+                bottom: 0;
+                z-index: 2;
+                
+              }
+
+              .article-swiper-swift2 .swiper-container .swiper-pagination {
+                right: 13%;
+                left: auto;
+              }
+
+              .article-adicolor-kv .swiper-pagination-bullet {
+                /* border: 2px #bbc8dc solid; */
+                /* width: 16px; */
+                /* height: 16px; */
+                opacity: 1;
+                position: relative;
+                width: 18px;
+                height: 1px;
+                background-color: #d91e2a;
+              }
+
+              /* .article-adicolor-kv .swiper-pagination-bullet::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 18px;
+                height: 4px;
+                display: block;
+                background-color: #d91e2a;
+                
+              } */
+
+              .article-adicolor-kv .swiper-pagination-bullet-active {
+                /* background: #bbc8dc; */
+                height: 4px;
+                border-radius: unset;
+              }
+
+            .article {
+                    position: relative;
+                }
+
+
+            .article-adicolor-kv {
+                    /* position: absolute; */
+                    /* top: 29%; */
+                    width: 80%;
+                    max-width: 1200px;
+                    box-sizing: border-box;
+                    /* left: 50%; */
+                    /* transform: translateX(-50%); */
+                    margin: 0 auto;
+                }
+
+                .article-adicolor-kv .swiper-block .swiper-slide {
+                    width: 23%;
+                    padding: 0 5px;
+                }
+
+                .article-adicolor-kv .swiper-button-prev,
+                .article-adicolor-kv .swiper-button-next {
+                    width: 54px;
+                    height: 54px;
+                    background: none;
+                    margin-top: -54px;
+                    border: 1px solid #000;
+                }
+
+                .article-adicolor-kv .swiper-button-prev:before,
+                .article-adicolor-kv .swiper-button-next:before,
+                .article-adicolor-kv .swiper-button-prev:after,
+                .article-adicolor-kv .swiper-button-next:after {
+                    content: '';
+                    width: 2px;
+                    height: 20px;
+                    background: #000;
+                    position: absolute;
+                }
+
+                .article-adicolor-kv .swiper-button-prev.swiper-button-disabled,
+                .article-adicolor-kv .swiper-button-next.swiper-button-disabled {
+                  display: none;
+                }
+
+                .article-adicolor-kv .swiper-button-prev.swiper-button-disabled:before,
+                .article-adicolor-kv .swiper-button-next.swiper-button-disabled:before,
+                .article-adicolor-kv .swiper-button-prev.swiper-button-disabled:after,
+                .article-adicolor-kv .swiper-button-next.swiper-button-disabled:after {
+                    background: #6f6969;
+                }
+
+                .article-adicolor-kv .swiper-button-prev {
+                    left: -6%;
+                }
+
+                .article-adicolor-kv .swiper-button-prev:before,
+                .article-adicolor-kv .swiper-button-prev:after {
+                    left: 24px;
+                }
+
+                .article-adicolor-kv .swiper-button-prev:before {
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    top: 9px;
+                }
+
+                .article-adicolor-kv .swiper-button-prev:after {
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    bottom: 9px;
+                }
+
+                .article-adicolor-kv .swiper-button-next {
+                    right: -6%;
+                }
+
+                .article-adicolor-kv .swiper-button-next:before,
+                .article-adicolor-kv .swiper-button-next:after {
+                    left: 24px;
+                }
+
+                .article-adicolor-kv .swiper-button-next:before {
+                    -webkit-transform: rotate(135deg);
+                    -moz-transform: rotate(135deg);
+                    -ms-transform: rotate(135deg);
+                    -o-transform: rotate(135deg);
+                    transform: rotate(135deg);
+                    top: 9px;
+                }
+
+                .article-adicolor-kv .swiper-button-next:after {
+                    -webkit-transform: rotate(-135deg);
+                    -moz-transform: rotate(-135deg);
+                    -ms-transform: rotate(-135deg);
+                    -o-transform: rotate(-135deg);
+                    transform: rotate(-135deg);
+                    bottom: 9px;
+                }
+
+            .swiper-big {
+              width: 66.66%;
+              margin: 0 auto;
+              padding-top: 10px;
+            }
+
+            .banner-site {
+              position: relative;
+              background: #fff;
+
+
+            }
+
+            .center-wrap {
+              width: 20%;
+              margin: 0 auto;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center;
+            }
+
+            .center-wrap h2 {
+              color: #000;
+              margin: 30px 0 16px;
+              font-size: 30px;
+              line-height: 28px;
+              font-weight: bold;
+            }
+
+            .center-wrap p {
+              color: #000;
+              font-size: 18px;
+              line-height: 24px;
+              margin-bottom: 18px;
+              font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+            }
+
+            .banner-site img {
+              width: 100%;
+            }
+
+            .email-site {
+              position: relative;
+              padding-top: 46px;
+              padding-bottom: 26px;
+            }
+
+            .email-sign .tit {
+              text-align: center;
+              font-size: 24px;
+              font-weight: bold;
+              color: #000000;
+              line-height: 24px;
+              margin-bottom: 30px;
+            }
+
+            .email-sign .login-box {
+              max-width: 600px;
+              margin: 0 auto 24px;
+              padding: 0 13.5px;
+            }
+
+            .email-sign .login-box .tips {
+              font-size: 12px;
+              font-weight: 400;
+              color: #888888;
+              line-height: 16px;
+              margin-top: 8px;
+            }
+
+            .email-sign .login-box .tips a {
+              color: #0286CD;
+              text-decoration: underline;
+            }
+
+            .form-input {
+              float: left;
+              width: 375px;
+              margin-right: 18px;
+            }
+
+            .form-input input {
+              width: 100%;
+              height: 42px;
+            }
+
+            .form-input .msg-block .msg-icon {
+              transition: all .2s ease;
+              display: block;
+              position: absolute;
+              right: 10px;
+              top: 12px;
+              cursor: pointer;
+            }
+
+            .gl-input__label {
+              font-size: 14px;
+              letter-spacing: 1px;
+              color: #888888;
+              position: absolute;
+              pointer-events: none;
+              text-transform: uppercase;
+              left: 11px;
+              top: 14px;
+              transition: all .2s ease;
+            }
+
+            .gl-input__label--hoisted {
+              font-size: 14px;
+              top: -8px;
+              left: 17px;
+              margin-top: 0;
+              padding: 2px 5px 1px;
+              background-color: #fff;
+            }
+
+            .subscribe-btn {
+              float: left;
+              width: 170px;
+            }
+
+            .subscribe-btn a {
+              width: 100%;
+              justify-content: center;
+              font-size: 16px;
+            }
+
+            .dialog-subscribte .dialog-scroll-container .dialog {
+              width: 483px;
+              padding: 54px 74px;
+            }
+
+            .dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box .tit {
+              font-size: 18px;
+              font-weight: bold;
+              color: #000000;
+              line-height: 18px;
+              margin-bottom: 10px;
+            }
+
+            .dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box p {
+              font-size: 14px;
+              color: #000;
+              font-weight: 400;
+              margin: 0;
+              margin-bottom: 12px;
+            }
+
+            .dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box p.email-address {
+              font-weight: 500;
+              margin-bottom: 40px;
+            }
+
+            .dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box .btn {
+              min-width: 135px;
+              width: 135px;
+              justify-content: center;
+              font-size: 16px;
+            }
+
+            .swiper-container .swiper-button {
+              position: absolute;
+              z-index: 20;
+              top: 46%;
+              width: 50px;
+              height: 50px;
+              text-align: center;
+              line-height: 46px;
+              border: 1px solid #000;
+              cursor: pointer;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              background-color: #fff;
+            }
+
+            .swiper-container .swiper-button-disabled {
+              display: none;
+            }
+
+            .swiper-container .swiper-button .icon-arrow-right-long::before {
+              font-size: 20px;
+            }
+
+            .swiper-container .swiper-button-prev-1 {
+              left: 0;
+              transform: rotate(180deg);
+            }
+
+            .swiper-container .swiper-button-next-1 {
+              right: 0;
+            }
+
+            .article-video .video-wrapper1 {
+              position: absolute;
+              width: 100%;
+              height: 78.3%;
+              top: 0;
+              left: 0;
+              cursor: pointer;
+            }
+
+            .video-box .video-content1 {
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              top: 0;
+              left: 0;
+            }
+
+            .video-content1 .video {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              visibility: hidden;
+            }
+
+            .video-box.is-play .video-wrapper .video-content1 .video {
+              visibility: visible;
+            }
+
+            .article-video {
+              position: relative;
+            }
+
+            @media screen and (max-width: 1024px) {
+
+              .article-adicolor-kv {
+                    width: 100%;
+                }
+
+              .article-adicolor-kv .swiper-block {
+                    /* top: 23%; */
+                    width: 100%;
+                    max-width: 100%;
+                }
+
+              .article-adicolor-kv .swiper-container .swiper-pagination{
+                width: 100%;
+                bottom: -3px;
+                left: 0;
+              }
+              .article-swiper-swift2 .swiper-container .swiper-pagination {
+                right: 3%;
+                left: auto;
+                top: 82%;
+              }
+
+
+              .swiper-big {
+                width: 98%;
+
+              }
+
+              .banner-site {
+                margin-bottom: 25px;
+              }
+
+              .email-site {
+                margin-bottom: 25px;
+                padding: 20px;
+              }
+
+              .container {
+                padding-bottom: 0;
+              }
+
+              .center-wrap {
+                width: 55%;
+
+              }
+
+              .center-wrap h2 {
+                font-size: 24px;
+              }
+
+              .center-wrap p {
+                font-size: 18px;
+
+              }
+
+              .email-sign .tit {
+                text-align: left;
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: normal;
+                margin-bottom: 15px;
+              }
+
+              .email-sign .login-box {
+                max-width: 100%;
+                padding: 0px;
+              }
+
+              .email-sign .login-box .tips {
+                margin-top: 11px;
+              }
+
+              .form-input {
+                float: none;
+                width: 100%;
+                margin-right: 0;
+              }
+
+              .form-input input {
+                height: 40px;
+              }
+
+              .form-input .msg-block .msg-icon {
+                right: 10px;
+                top: 12px;
+              }
+
+              .gl-input__label {
+                font-size: 14px;
+              }
+
+              .gl-input__label--hoisted {
+                font-size: 14px;
+              }
+
+              .subscribe-btn {
+                margin-top: 20px;
+                float: none;
+                width: 100%;
+              }
+
+              .subscribe-btn a {
+                width: 100%;
+                justify-content: center;
+              }
+
+              .dialog-subscribte .dialog-scroll-container .dialog {
+                width: 335px;
+                padding: 30px 18px 18px;
+                margin: 0;
+              }
+
+              .dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box .tit {
+                margin-bottom: 12px;
+              }
+
+              .dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box p {
+                font-size: 12px;
+                margin-bottom: 12px;
+              }
+
+              .dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box p.email-address {
+                font-weight: 700;
+                margin-bottom: 40px;
+              }
+            }
+
+            @media screen and (max-width: 350px) {
+              .dialog-subscribte .dialog-scroll-container .dialog {
+                width: 300px;
+                margin: 0;
+              }
+            }
+          </style> 
+        <script type="text/javascript">
+            document.title = 'adidas x IVY PARK | adidas (愛迪達)香港官方網上商店'
+            var reg = new RegExp("^\s*?(.+)@(.+?)\s*$");
+            var signUpUrl = base + "/signUp/signUp.json";
+            $(function () {
+
+              $('.form-group-mail').each(function (index, elm) {
+                moveUpInputLable($(elm).find('input'), $(elm).find('label'));
+              })
+
+              //邮箱验证
+              $("input").blur(function () {
+                validateEmail($(this));
+              })
+              // 清除input框内容
+              $('.form-group-mail .msg-icon').on('tap', function () {
+                $(this).parent('.msg-block').siblings('input').removeAttr('value');
+              })
+
+              $(".gl-input__field").focus(function () {
+                $(this).next($('.gl-input__label')).addClass('gl-input__label--hoisted');
+              }).blur(function () {
+                if ($(this).val() === 0) {
+                  $(this).next($('.gl-input__label')).removeClass('gl-input__label--hoisted');
+                }
+              });
+
+              var subscribteDialog = $.spice.dialog({
+                template: $('#subscribte-element').html()
+                , dialogClass: 'dialog-subscribte',
+                initEvent: function (e) {
+                  //弹出层初始化时需要做的事情，只会在创建弹出层的时候执行
+                  //如：初始化事件
+                  var dialog = e.data.dialog;
+                  $('.e-btncomplete', dialog.elem).on('tap', function () {
+                    dialog.hide();
+                  });
+                },
+              });
+              $('.subscribe-btn .btn').on('tap', function (e) {
+                e.preventDefault();
+                var _this = $(this),
+                  _thisParents = _this.parents('.float-clearfix').find('.form-group-mail'),
+                  emailObj = _thisParents.find('.gl-input__field');
+                if (!validateEmail(emailObj)) {
+                  return;
+                }
+                var result = loxia.syncXhrPost(signUpUrl, {
+                  email: emailObj.val().trim()
+                });
+                if (result.result) {
+                  clearError(_thisParents);
+                  subscribteDialog.elem.on('dialog.show-before', function () {
+                    $('.email-address').html(emailObj.val());
+                  });
+                  subscribteDialog.show();
+                } else {
+                  if (!result.resultMessage) {
+                    showError(_thisParents, "Sorry,system busy, please try again later");
+                  } else if (result.resultMessage.message === 'EMAIL_REPEAT_SIGN_UP') {
+                    showError(_thisParents, "The Email has been registered");
+                  } else if (result.resultMessage.message === 'EMAIL_PATTERN_ERROR') {
+                    showError(_thisParents, "Please enter a valid e-mail address");
+                  }
+                }
+              });
+
+            });
+
+            function validateEmail(emailObj) {
+              var _this = emailObj,
+                obj = _this.val().trim(),
+                _thisParents = _this.parents('.form-group-mail');
+              if (obj === '' || !reg.test(obj)) {
+                showError(_thisParents, "Please enter a valid e-mail address");
+                return false;
+              }
+              clearError(_thisParents);
+              return true;
+
+            }
+
+            function showError(obj, message) {
+              obj.addClass('is-error');
+              obj.addClass('mail-subscription-form');
+              obj.find('.msg-block span').html(message);
+            }
+
+            function clearError(obj) {
+              obj.removeClass('is-error');
+              obj.removeClass('mail-subscription-form');
+              obj.find('.msg-block span').html('');
+            }
+            function moveUpInputLable(input, label) {
+              if ("" != input.val()) {
+                label.removeClass();
+                label.addClass("gl-input__label gl-input__label--hoisted")
+              }
+            }
+          </script> 
+        <!-- 内容部分 -->   
+        <section class="container"> 
+        <!-- banner --> 
+        <article class="article article-video article-video1 video-box"> 
+        <img style="width: 100%;" src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                                        &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/1920-260.jpg&quot;},
+                                        &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/750-364.jpg&quot;},
+                                        &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/750-364.jpg&quot;}}"> 
+        <div class="video-wrapper e-video1 e-play-video-new1"> 
+        <div class="video-content1"> 
+        </div> 
+        </div> 
+        </article> 
+        <!-- 邮箱注册 --> 
+        <article class="email-site"> 
+        <div class="email-sign"> 
+        <h4 class="tit">Sign up for exclusive updates</h4> 
+        <div class="login-box"> 
+        <div class="float-clearfix"> 
+        <!-- 报错类名form-input加is-error  --> 
+        <div class="form-input form-group-mail"> 
+        <input type="text" class="gl-input__field gl-input__field-account"> 
+        <label class="gl-input__label"> <span>EMAIL ADDRESS</span> </label> 
+        <div class="msg-block"> 
+        <i class="icon msg-icon"></i> 
+        <span></span> 
+        </div> 
+        </div> 
+        <div class="subscribe-btn"> 
+        <!-- is-disabled is-error --> 
+        <a class="btn btn-blue icon-a-font gl-cta gl-cta--primary gl-cta--primary-light" href="javascript:void(0)">SIGN UP<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a> 
+        </div> 
+        </div> 
+        <p class="tips">By clicking SIGN UP, you have read and agreed to adidas <a href="https://www.adidas.com.hk/private_policy?locale=en_GB">Privacy Policy</a></p> 
+        </div> 
+        </div> 
+        </article> 
+        <article class="article article-adicolor-kv"> 
+        <div class="swiper-block"> 
+        <div class="swiper-container gallery-top swiper-jacket"> 
+        <div class="swiper-wrapper"> 
+        <div class="swiper-slide"> 
+        <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/1.png&quot;},
+                                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/1.png&quot;},
+                                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/1.png&quot;}}"> 
+        </div> 
+        <div class="swiper-slide"> 
+        <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                              &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/2.png&quot;},
+                              &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/2.png&quot;},
+                              &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/2.png&quot;}}"> 
+        </div> 
+        <div class="swiper-slide"> 
+        <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                              &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/3.png&quot;},
+                              &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/3.png&quot;},
+                              &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/3.png&quot;}}"> 
+        </div> 
+        <div class="swiper-slide"> 
+        <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                              &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/4.png&quot;},
+                              &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/4.png&quot;},
+                              &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/4.png&quot;}}"> 
+        </div> 
+        <div class="swiper-slide"> 
+        <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                              &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/5.png&quot;},
+                              &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/5.png&quot;},
+                              &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/5.png&quot;}}"> 
+        </div> 
+        </div> 
+        <div class="swiper-pagination"></div> 
+        </div> 
+        <div class="swiper-button-next none-sm"></div> 
+        <div class="swiper-button-prev none-sm"></div> 
+        </div> 
+        </article> 
+        <!-- banner --> 
+        <article class="banner-site"> 
+        <img class="events-changeSrc" src="https://img.adidas.com.hk/images/blank.gif" data-image="{&quot;standard&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/6.png&quot;,
+                                                              &quot;medium&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/6-1.png&quot;,
+                                                              &quot;small&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/6-1.png&quot;}"> 
+        </article> 
+        <article class="banner-site"> 
+        <img class="events-changeSrc" src="https://img.adidas.com.hk/images/blank.gif" data-image="{&quot;standard&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/7.png&quot;,
+                                                              &quot;medium&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/7-1.png&quot;,
+                                                              &quot;small&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/7-1.png&quot;}"> 
+        </article> 
+        <article class="banner-site"> 
+        <img class="events-changeSrc" src="https://img.adidas.com.hk/images/blank.gif" data-image="{&quot;standard&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/8.png&quot;,
+                                                              &quot;medium&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/8-1.png&quot;,
+                                                              &quot;small&quot;:&quot;https://img.adidas.com.hk/resources/2022/Feb/IVY/new/8-1.png&quot;}"> 
+        </article> 
+        <script>
+              $(function () {
+
+                // 换图 + 懒加载
+                $.spice.lazyLoad('img[lazysrc]', {
+                  attr: 'lazysrc'
+                });
+                $.spice.tools.changeImageSrc({
+                  callBack: function (img, self) {
+                    $.spice.lazyLoad('img[lazysrc]', {
+                      attr: self.opt.lazyData,
+                      prestrain: 1
+                    });
+                  }
+                });
+
+                var galleryTop = new Swiper('.gallery-top', {
+                      lazyLoading: true,
+                      watchSlidesVisibility: true,
+                      lazyLoadingOnTransitionStart: true,
+                      slidesPerView: 4.1,
+                      // centeredSlides: true,
+                      // paginationClickable: true,
+                      spaceBetween: 0,
+                      grabCursor: false,
+                      pagination: '.swiper-pagination',
+                      prevButton: '.swiper-button-prev',
+                      nextButton: '.swiper-button-next',
+                      breakpoints: {
+                          1023: {
+                              slidesPerGroup: 1,
+                              slidesPerView: 1.2,
+                              speed: 300
+                          }
+                      }
+                  });
+
+                  if ($.spice.getWindowWidth() <= 1024) {
+                      var galleryTop = new Swiper('.gallery-top1', {
+                          lazyLoading: true,
+                          watchSlidesVisibility: true,
+                          lazyLoadingOnTransitionStart: true,
+                          centeredSlides: false,
+                          paginationClickable: true,
+                          spaceBetween: 0,
+                          grabCursor: false,
+                          breakpoints: {
+                              1023: {
+                                  slidesPerGroup: 1,
+                                  slidesPerView: 1.2,
+                                  speed: 300
+                              }
+                          }
+                      });
+                  }
+                  
+                var loadImgFun_index = function (imgArr, fn) {
+                  var loadImgLen = 0,
+                    errImgLen = 0;
+                  var imgdefereds = [];
+                  $(imgArr).each(function () {
+                    var defered = $.Deferred();
+                    $(this)
+                      .on("load", function () {
+                        defered.resolve();
+                        loadImgLen++;
+                      })
+                      .on("error", function () {
+                        defered.resolve();
+                        errImgLen++;
+                      });
+                    if (this.complete)
+                      setTimeout(function () {
+                        defered.resolve();
+                      }, 200);
+                    imgdefereds.push(defered);
+                  });
+                  $.when.apply(null, imgdefereds).done(function () {
+                    if (fn && $.isFunction(fn)) {
+                      fn();
+                    }
+                  });
+                };
+                // 视频1自动播放
+                $(".e-video1").each(function (index, el) {
+                  $(el).addClass("home-video");
+                  var videoCode = '';
+                  if ($.spice.getWindowWidth() > 1024) {
+                    videoCode = $(".video-code", el).data("video-code-pc");
+                  } else {
+                    videoCode = $(".video-code", el).data("video-code-mob");
+                  }
+                  var videoId = "home_video1_" + index;
+                  loadImgFun_index($(".video-code img", el), function () { });
+                  var bannerVideoId = videoCode;
+                  var url = base + "/indexCCVideo.json";
+                  var data = loxia.syncXhrGet(url, {
+                      'bannerVideoId': bannerVideoId
+                  });
+                  var videoUrl = data.mp4VideoUrl;
+                  //var videoUrl = "https://cm15-c110-3.play.bokecc.com/flvs/ca/QxG9G/6dUK4AGucC-20.mp4?t=1645763411&key=67A76105B68F850022F160CF681B850D&tpl=10"
+                  var html = '<video class="video" id="' +
+                    videoId +
+                    '"  webkit-playsinline="true" playsInline="true" autoplay="autoplay" loop="loop" muted><source src="' +
+                    videoUrl +
+                    '" ></source></video>';
+                  $(".video-content1", el).html(html);
+                  var _parent_article = $(this).parents(".article-video")
+                  if (!_parent_article.hasClass("is-play")) {
+                    _parent_article.addClass("is-play");
+                  }
+                });
+
+                var videoElement = document.getElementById("home_video1_0");
+                document.body.addEventListener('mousedown', function () {
+                  videoElement.muted = false;
+                  videoElement.volume = 0.3;
+                }, true);
+
+                $(".e-play-video-new1").on("tap", function () {
+                  var _parent_article = $(this).parents(".article-video"),
+                    _video_s = $(this).parents(".article-video").find(".video"),
+                    _video = $(this)
+                      .parents(".article-video")
+                      .find(".video");
+                  _parent_article.toggleClass("is-play");
+
+                  var video2_2 = $(".e-play-video-new2").parents(".article-video").find(".video");
+                  var _parent_article2 = $(".e-play-video-new2").parents(".article-video");
+
+                  if (video2_2 && video2_2[0]) {
+                    _parent_article2 && _parent_article2.hasClass('is-play') && _parent_article2.removeClass('is-play')
+                    video2_2[0].pause()
+                  }
+
+                  if (_parent_article.hasClass("is-play")) {
+                    for (var i = 0; i < _video_s.length; i++) {
+                      _video_s.eq(i)[0].pause();
+                    }
+                    _video[0].play();
+                    _video[0].addEventListener("ended", function () {
+                      this.play();
+                    });
+                  } else {
+                    _video[0].pause();
+                  }
+                });
+              })                                            
+            </script> 
+        </section> 
+        <script id="subscribte-element" type="text/template">
+            <div class="dialog">
+                <div class="dialog-container">
+                    <div class="subscribte-box">
+                        <h5 class="tit">ALL DONE!</h5>
+                        <p>You will receive updates on the latest product launch from us through</p>
+                        <p class="email-address"></p>
+                        <a class="e-btncomplete btn btn-blue icon-a-font gl-cta gl-cta--primary gl-cta--primary-light">DONE<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+                    </div>
+                </div>
+                <i class="icon icon-close dialog-close">&times;</i>
+            </div>
+        </script>  
+
+          
+              
+            </section>
+
+            <%include _includes/modules/footer-no-back-top.html %>
+                <!-- 公共部分放最下，如回到顶部，弹出层等 -->
+    </div>
+</body>
+
+</html>

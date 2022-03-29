@@ -1,0 +1,417 @@
+.container-rOsfI30 {
+	display: inline-block;
+	vertical-align: middle
+}
+
+.app-eX7W9uA {
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	color: #fff
+}
+
+.app-eX7W9uA *,
+.app-eX7W9uA :after,
+.app-eX7W9uA :before {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	box-sizing: inherit
+}
+
+.webgl-2kBmGic {
+	position: fixed;
+	z-index: 1;
+	height: 100%
+}
+
+.page-holder-KzyNp8V {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2
+}
+
+body,
+html {
+	height: 100%
+}
+
+body {
+	width: 100%;
+	margin: 0
+}
+
+img {
+	display: block
+}
+
+#KM_COUNT_TYPE_B {
+	height: 100%
+}
+
+@font-face {
+	font-family: Adihaus-din;
+	src: url(../../../libs/dist/font/AdihausDIN-Bold.3f0410c.woff2) format("woff2"), url(../../../libs/dist/font/AdihausDIN-Bold.0c73088.woff) format("woff");
+	font-weight: 700;
+	font-style: normal
+}
+
+@font-face {
+	font-family: Adihaus-din;
+	src: url(../../../libs/dist/font/AdihausDIN-Regular.6de878f.woff2) format("woff2"), url(../../../libs/dist/font/AdihausDIN-Regular.4011716.woff) format("woff");
+	font-weight: 400;
+	font-style: normal
+}
+
+.copy,
+.heading {
+	padding: 0;
+	margin: 0
+}
+
+.text-reveal {
+	overflow: hidden;
+	display: block
+}
+
+.text-reveal * {
+	color: inherit;
+	font-weight: inherit!important;
+	font-family: inherit!important;
+	font-size: inherit!important;
+	line-height: inherit!important
+}
+
+.text-reveal .text-reveal-inner {
+	display: inline-block
+}
+
+.abs-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.abs-fill {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%
+}
+
+.bg-cover {
+	background-size: cover;
+	background-position: 50%;
+	background-repeat: no-repeat
+}
+
+.button {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	border-radius: 0;
+	position: relative;
+	display: inline-block;
+	background: transparent;
+	outline: 0;
+	text-decoration: none;
+	color: currentColor;
+	cursor: pointer;
+	overflow: visible;
+	text-align: center
+}
+
+.button.is-disabled {
+	cursor: default;
+	pointer-events: none
+}
+
+.is-submitting .button {
+	pointer-events: none
+}
+
+.teaser-hero-component-2nfOIPv {
+	font-size: 10px;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	color: #fff;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	text-align: center
+}
+
+.teaser-hero-component-2nfOIPv .introduction-text-DXLvBWL {
+	width: 850px;
+	max-width: 90%
+}
+
+.teaser-hero-component-2nfOIPv .counter-1CIJqQd {
+	text-align: center
+}
+
+.teaser-hero-component-2nfOIPv .date-23Nd1RW {
+	position: absolute;
+	top: 1.25em;
+	right: 1.25em;
+	bottom: auto;
+	left: auto;
+	font: 700 2.4em/1 Adihaus-din, Arial, sans-serif;
+	text-transform: uppercase
+}
+
+.teaser-hero-component-2nfOIPv .date-23Nd1RW sup {
+	font-size: .5em
+}
+
+.teaser-hero-component-2nfOIPv .logo-3TzAiNi {
+	position: absolute;
+	top: 4em;
+	left: 3em;
+	background: url(../../../libs/dist/image/logo-new.3df521e.png) no-repeat 50%;
+	height: 7em;
+	width: 17.5em;
+	background-size: contain
+}
+
+.teaser-hero-component-2nfOIPv .counter-wrapper-3-zrX2Q {
+	margin-top: 3.5em
+}
+
+.teaser-hero-component-2nfOIPv .counter-wrapper-3-zrX2Q .line-3VvNIVw {
+	height: 2px;
+	width: 6em;
+	background-color: hsla(0, 0%, 100%, .5);
+	display: inline-block;
+	margin: 0 auto
+}
+
+.teaser-hero-component-2nfOIPv .counter-wrapper-3-zrX2Q .heading-1M2hMGB {
+	text-transform: uppercase;
+	margin-top: 2em;
+	color: #fff;
+	font: 700 2em/1 Adihaus-din, Arial, sans-serif
+}
+
+@media (min-width:1360px) {
+	.teaser-hero-component-2nfOIPv {
+		font-size: 9.5px
+	}
+}
+
+@media (max-width:1359px) {
+	.teaser-hero-component-2nfOIPv {
+		font-size: 7.5px
+	}
+}
+
+@media (max-width:1023px) {
+	.teaser-hero-component-2nfOIPv {
+		font-size: 5px
+	}
+}
+
+@media (max-width:767px) {
+	.teaser-hero-component-2nfOIPv .logo-3TzAiNi {
+		height: 10em;
+		width: 24em
+	}
+	.teaser-hero-component-2nfOIPv .date-23Nd1RW {
+		font-size: 3.6em
+	}
+	.teaser-hero-component-2nfOIPv .date-23Nd1RW sup {
+		font-size: .5em
+	}
+}
+
+.counter-component-3VybuoB {
+	font-size: 10px;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	text-transform: uppercase
+}
+
+.counter-component-3VybuoB.center_right-3CWXfku {
+	transform-origin: top right;
+	text-align: right
+}
+
+.counter-component-3VybuoB .amount-1iQD_lJ {
+	font-size: 0;
+	overflow: hidden;
+	line-height: .8;
+	padding: 10px 10px 30px
+}
+
+.counter-component-3VybuoB .hidden-number-wAyJMOK {
+	visibility: hidden;
+	font-weight: inherit!important;
+	font-family: inherit!important;
+	font-size: inherit!important;
+	line-height: inherit!important
+}
+
+.counter-component-3VybuoB .slider-2RjXZ1Z {
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.counter-component-3VybuoB .value-1wQjXNA {
+	position: relative;
+	font: 700 100px/1.1 Adihaus-din, Arial, sans-serif;
+	display: inline-block;
+	margin-top: -20px
+}
+
+.counter-component-3VybuoB .value-1wQjXNA.is-decimal-3NQDxQQ {
+	top: 20px
+}
+
+.counter-component-3VybuoB .number-2WQTu4F {
+	margin-top: 20px;
+	font: 700 100px/1.1 Adihaus-din, Arial, sans-serif
+}
+
+.counter-component-3VybuoB .label-1Q2-C80 {
+	font: 700 2em/1 Adihaus-din, Arial, sans-serif;
+	color: #fff;
+	margin-bottom: 0
+}
+
+.counter-component-3VybuoB .large-3R7dgdD .number-2WQTu4F,
+.counter-component-3VybuoB .large-3R7dgdD .value-1wQjXNA {
+	font-size: 110px
+}
+
+.counter-component-3VybuoB .large-3R7dgdD .label-1Q2-C80 {
+	font-size: 2.33em;
+	margin-top: .5em
+}
+
+@media (min-width:1360px) {
+	.counter-component-3VybuoB {
+		font-size: 9.5px
+	}
+	.counter-component-3VybuoB .number-2WQTu4F,
+	.counter-component-3VybuoB .value-1wQjXNA {
+		font-size: 95px
+	}
+}
+
+@media (max-width:1359px) {
+	.counter-component-3VybuoB {
+		font-size: 7.5px
+	}
+	.counter-component-3VybuoB .number-2WQTu4F,
+	.counter-component-3VybuoB .value-1wQjXNA {
+		font-size: 75px
+	}
+}
+
+@media (max-width:1023px) {
+	.counter-component-3VybuoB {
+		font-size: 5px
+	}
+	.counter-component-3VybuoB .number-2WQTu4F,
+	.counter-component-3VybuoB .value-1wQjXNA {
+		font-size: 50px
+	}
+}
+
+@media (max-width:767px) {
+	.counter-component-3VybuoB .amount-1iQD_lJ {
+		padding: 5px 5px 15px
+	}
+	.counter-component-3VybuoB .number-2WQTu4F {
+		margin-top: 10px;
+		font-size: 40px
+	}
+	.counter-component-3VybuoB .value-1wQjXNA {
+		font-size: 40px;
+		margin-top: -10px
+	}
+	.counter-component-3VybuoB .value-1wQjXNA.is-decimal-3NQDxQQ {
+		top: 10px
+	}
+	.counter-component-3VybuoB .label-1Q2-C80 {
+		font-size: 1.8em
+	}
+	.counter-component-3VybuoB .large-3R7dgdD .number-2WQTu4F,
+	.counter-component-3VybuoB .large-3R7dgdD .value-1wQjXNA {
+		font-size: 70px
+	}
+	.counter-component-3VybuoB .large-3R7dgdD .label-1Q2-C80 {
+		font-size: 3.6em
+	}
+}
+
+.component-site-preloader-GOMuo1k {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 3;
+	overflow: hidden;
+	background: linear-gradient(45deg, #217088, #9ebcc1)
+}
+
+.center-content-3wOVbpg {
+	font: 400 4.8rem/1.16 Adihaus-din, Arial, sans-serif
+}
+
+.introduction-text-component-3J66tXE {
+	text-align: center
+}
+
+.introduction-text-component-3J66tXE .hidden-line {
+	display: none!important
+}
+
+.introduction-text-component-3J66tXE .copy-2jUKApt {
+	font: 700 2.2em/1.1 Adihaus-din, Arial, sans-serif;
+	text-transform: uppercase;
+	color: #fff
+}
+
+.introduction-text-component-3J66tXE .copy-2jUKApt * {
+	color: inherit;
+	font-weight: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit
+}
+
+.introduction-text-component-3J66tXE .copy-line-15tICuf:not(:first-child) {
+	margin-top: .5em
+}
+
+.introduction-text-component-3J66tXE .heading-fHMEzdV {
+	font: 700 2.2em/1.1 Adihaus-din, Arial, sans-serif;
+	text-transform: uppercase;
+	margin: 2em 0 0;
+	color: #fff
+}
+
+@media (max-width:767px) {
+	.introduction-text-component-3J66tXE {
+		font-size: 5px
+	}
+	.introduction-text-component-3J66tXE .copy-2jUKApt,
+	.introduction-text-component-3J66tXE .heading-fHMEzdV {
+		font-size: 2.2em
+	}
+}

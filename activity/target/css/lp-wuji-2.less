@@ -1,0 +1,825 @@
+@charset "utf-8";
+
+.article{
+    position: relative;
+    >img{
+        width: 100%;
+    }
+}
+
+.link{
+    position: absolute;
+    z-index: 1;
+    // background: rgba(0, 0, 0, .4);
+}
+
+img{
+    width: 100%;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(0, 10px);
+    }
+    40% {
+        transform: translate(0, 0);
+    }
+}
+
+.article-kv{
+    .kv-box{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 5%;
+        z-index: 5;
+        width: 6.61%;
+        .kv-box-img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            img{
+                animation: arrow 1.5s infinite;
+            }
+        }
+    }
+}
+
+.article-size{
+    .size-box{
+        width: 59.7%;
+        margin: 0 auto;
+        p{
+            font-size: 28px;
+            font-size: 1.75rem;
+            text-align: center;
+            line-height: 2.8125rem;
+            letter-spacing: 1px;
+            // font-family: "adihdb", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+        }
+    }
+}
+.article-hover{
+    font-size: 0;
+    margin-top: -10.13%;
+    width: 100%;
+    a{
+        display: inline-block;
+        // width: 25%;
+        font-size: 0;
+        // overflow: hidden;
+        div{
+        // overflow: hidden;
+
+        }
+        &:nth-child(1){
+            width: 29.5%;
+        }
+        &:nth-child(2){
+            width: 28.1%;
+            margin-left: -5.11%;
+        }
+        &:nth-child(3){
+            width: 27.9%;
+            margin-left: -5.2%;
+        }
+        &:nth-child(4){
+            width: 29.9%;
+            margin-left: -5.16%;
+        }
+    }
+}
+.article-carousel{
+    .carousel-box{
+        position: relative;
+        .link-01{
+            top: 69%;
+            left: 17.3%;
+            border: 2px solid #000000;
+            height: 44px;
+            line-height: 40px;
+            font-size: 18px;
+            overflow: initial;
+            padding: 0 10px 0 4px;
+           span{
+                &:after{
+                    background: url(https://img.adidas.com.cn/resources/activePage/SEP/WUJI/img-p-06.jpg);
+                    background-position: 0 0;
+                    width: 29px;
+                    height: 28px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -67%;
+                }
+           }
+        }
+        .btn{
+            &:hover{
+                span{
+                    &:after{
+                        right: -75%;
+                    }
+                }
+            }
+        }
+        .link-02{
+            width: 19%;
+            height: 51%;
+            top: 16%;
+            left: 17%;
+        }
+    }
+    .article-swiper-swift{
+        width: 36.9%;
+        position: absolute;
+        left: 47.9%;
+        top: 12.7%;
+        .swiper-container-od-jacket{
+            .swiper-wrapper{
+                .swiper-slide{
+                    position: relative;
+                    a{
+                        position: absolute;
+                        top: 0%;
+                        left: 0%;
+                        height: 66%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .action-sports-swiper-btn{
+            .swiper-button-prev{
+                background: url(https://img.adidas.com.cn/resources/activePage/SEP/WUJI/img-p-left.png);
+                width: 11px;
+                height: 20px;
+                top: 86%;
+                left: auto;
+                right: 22%;
+            }
+            .swiper-button-next{
+                background: url(https://img.adidas.com.cn/resources/activePage/SEP/WUJI/img-p-right.png);
+                width: 11px;
+                height: 20px;
+                top: 86%;
+                right: 17%;
+            }
+        }
+    }
+}
+.article-carousel-02{
+    .carousel-box{
+        .link-03{
+            top: 58%;
+            left: 62%;
+            border: 2px solid #000000;
+            height: 44px;
+            line-height: 40px;
+            font-size: 18px;
+            overflow: initial;
+            padding: 0 10px 0 4px;
+           span{
+                &:after{
+                    background: url(https://img.adidas.com.cn/resources/activePage/SEP/WUJI/img-p-06.jpg);
+                    background-position: 0 0;
+                    width: 29px;
+                    height: 28px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -67%;
+                }
+           }
+            &:hover{
+                span{
+                    &:after{
+                        right: -75%;
+                    }
+                }
+            }
+        }
+        .link-04{
+            width: 19%;
+            height: 47%;
+            top: 9%;
+            left: 62%;
+        }
+    }
+    .article-swiper-swift{
+        width: 37.1%;
+        position: absolute;
+        left: 10%;
+        top: 0%;
+        .swiper-container-od-jacket-1{
+            .swiper-wrapper{
+                .swiper-slide{
+                    position: relative;
+                    a{
+                        position: absolute;
+                        top: 10%;
+                        left: 0%;
+                        height: 71%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .action-sports-swiper-btn{
+            .swiper-button-prev11{
+                background: url(https://img.adidas.com.cn/resources/activePage/SEP/WUJI/img-p-left.png);
+                width: 11px;
+                height: 20px;
+                top: 86%;
+                left: auto;
+                right: 5%;
+            }
+            .swiper-button-next11{
+                background: url(https://img.adidas.com.cn/resources/activePage/SEP/WUJI/img-p-right.png);
+                width: 11px;
+                height: 20px;
+                top: 86%;
+                right: 0%;
+            }
+        }
+    }
+}
+.article-carousel-03{
+    .carousel-box{
+        .link-05{
+            top: 66%;
+            left: 17.3%;
+            border: 2px solid #000000;
+            height: 44px;
+            line-height: 40px;
+            font-size: 18px;
+            overflow: initial;
+            padding: 0 10px 0 4px;
+           span{
+                &:after{
+                    background: url(https://img.adidas.com.cn/resources/activePage/SEP/WUJI/img-p-06.jpg);
+                    background-position: 0 0;
+                    width: 29px;
+                    height: 28px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -67%;
+                }
+           }
+            &:hover{
+                span{
+                    &:after{
+                        right: -75%;
+                    }
+                }
+            }
+        }
+        .link-06{
+            width: 19%;
+            height: 60%;
+            top: 3%;
+            left: 17%;
+        }
+        .link-07{
+            width: 37%;
+            height: 66%;
+            top: 0%;
+            left: 48%;
+        }
+    }
+}
+.article-carousel-04{
+    .carousel-box{
+        .link-08{
+            top: 58%;
+            left: 62%;
+            border: 2px solid #000000;
+            height: 44px;
+            line-height: 40px;
+            font-size: 18px;
+            overflow: initial;
+            padding: 0 10px 0 4px;
+           span{
+                &:after{
+                    background: url(https://img.adidas.com.cn/resources/activePage/SEP/WUJI/img-p-06.jpg);
+                    background-position: 0 0;
+                    width: 29px;
+                    height: 28px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -67%;
+                }
+           }
+            &:hover{
+                span{
+                    &:after{
+                        right: -75%;
+                    }
+                }
+            }
+        }
+        .link-09{
+            width: 19%;
+            height: 47%;
+            top: 9%;
+            left: 62%;
+        }
+    }
+    .article-swiper-swift{
+        width: 37.1%;
+        position: absolute;
+        left: 10%;
+        top: 0%;
+        .swiper-container-od-jacket-2{
+            .swiper-wrapper{
+                .swiper-slide{
+                    position: relative;
+                    a{
+                        position: absolute;
+                        top: 10%;
+                        left: 0%;
+                        height: 71%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .action-sports-swiper-btn{
+            .swiper-button-prev111{
+                background: url(https://img.adidas.com.cn/resources/activePage/SEP/WUJI/img-p-left.png);
+                width: 11px;
+                height: 20px;
+                top: 86%;
+                left: auto;
+                right: 5%;
+            }
+            .swiper-button-next111{
+                background: url(https://img.adidas.com.cn/resources/activePage/SEP/WUJI/img-p-right.png);
+                width: 11px;
+                height: 20px;
+                top: 86%;
+                right: 0%;
+            }
+        }
+    }
+}
+
+.article-hover-2{
+    font-size: 0;
+    position: relative;
+    .hover-2-box{
+        width: 50%;
+        display: inline-block;
+        .box-02{
+            display: none;
+        }
+        &:hover{
+            .box-01{
+                display: none;
+            }
+            .box-02{
+                display: block;
+            }
+        }
+    }
+    .hover-2-size{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: 15px;
+        h2{
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 30px;
+            font-size: 40px;
+        }
+    }
+}
+.article-foot{
+    margin-bottom: 60px;
+    .foot-box{
+        width: 80%;
+        margin: 0 auto;
+        a{
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+            width: 33%;
+            .foot-box-bg{
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                padding: 10px;
+                .btn{
+                    border: 2px solid #fff;
+                    overflow: initial;
+                    padding: 0 10px 0 4px;
+                    position: absolute;
+                    bottom: 26%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: rgba(0, 0, 0, 0);
+                    color: #fff;
+                    height: 44px;
+                    line-height: 40px;
+                    span{
+                        &:after{
+                            background: url(https://img.adidas.com.cn/resources/activePage/SEP/WUJI/img-p-38.jpg);
+                            background-position: 0 0;
+                            width: 29px;
+                            height: 28px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: -67%;
+                        }
+                    }
+                    &:hover{
+                        span{
+                            &:after{
+                                right: -75%;
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover{
+                .foot-box-bg{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.article-goods{
+    .goods-box{
+            // padding: 0% 10%;
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+            margin-top: 10vh;
+        ul{
+            li{
+                text-align: center;
+                display: inline-block;
+                width: 30%;
+                padding: 0 60px 42px 60px;
+                margin-top: 10px;
+                position: relative;
+                margin-bottom: 44px;
+                &:hover{
+                    a{
+                        .goods-box-01{
+                            opacity: 0;
+                        }
+                        .goods-box-02{
+                            opacity: 1;
+                            margin-top: -15px;
+                        }
+                    }
+                }
+                a{
+                    .goods-box-01{
+                        transition: all .5s;
+                        -moz-transition: all .5s;
+                        -webkit-transition: all .5s;
+                        -o-transition: all .5s;
+                        p{
+                            font-size: 22px;
+                            color: #000;
+                            padding-top: 10px;
+                            font-weight: 700;
+                        }
+                    }
+                    .goods-box-02{
+                        // margin-top: -60px;
+                        position: relative;
+                        transition: all .5s;
+                        -moz-transition: all .5s;
+                        -webkit-transition: all .5s;
+                        -o-transition: all .5s;
+                        opacity: 0;
+                        position: absolute;
+                        left: 50%;
+                        top: 85%;
+                        transform: translateX(-50%);
+                        font-size: 18px;
+                        overflow: visible;
+                        .btn{
+                            border: 2px solid #000;
+                            overflow: initial;
+                            padding: 0 10px 0 4px;
+                            color: #000;
+                            height: 40px;
+                            line-height: 36px;
+                            span{
+                                &:after{
+                                    background: url(https://img.adidas.com.cn/resources/activePage/SEP/WUJI/img-p-06.jpg);
+                                    background-position: 0 0;
+                                    width: 29px;
+                                    height: 28px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    right: -67%;
+                                }
+                            }
+                            &:hover{
+                                span{
+                                    &:after{
+                                        right: -75%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .goods-box-02{
+        position: relative;
+        .link{
+            width: 35%;
+            height: 14%;
+            position: absolute;
+        }
+        .link-001{
+            top: 3%;
+            left: 10%;
+        }
+        .link-002{
+            top: 3%;
+            left: 55%;
+        }
+        .link-003{
+            top: 19%;
+            left: 10%;
+        }
+        .link-004{
+            top: 19%;
+            left: 55%;
+        }
+        .link-005{
+            top: 35%;
+            left: 10%;
+        }
+        .link-006{
+            top: 35%;
+            left: 55%;
+        }
+        .link-007{
+            top: 51%;
+            left: 10%;
+        }
+        .link-008{
+            top: 51%;
+            left: 55%;
+        }
+        .link-009{
+            top: 67%;
+            left: 10%;
+        }
+        .link-010{
+            top: 67%;
+            left: 55%;
+        }
+        .link-011{
+            top: 84%;
+            left: 10%;
+        }
+        .link-012{
+            top: 84%;
+            left: 55%;
+        }
+    }
+    .goods-size{
+        text-align: center;
+        .btn-01{
+            border: 2px solid #000;
+            overflow: initial;
+            padding: 0 10px 0 4px;
+            margin: 0 auto;
+            color: #000;
+            height: 44px;
+            line-height: 40px;
+            min-width: 280px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            span{
+                &:after{
+                    background: url(https://img.adidas.com.cn/resources/activePage/SEP/WUJI/img-p-06.jpg);
+                    background-position: 0 0;
+                    width: 29px;
+                    height: 28px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -90px;
+                }
+            }
+            &:hover{
+                span{
+                    &:after{
+                        right: -95px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1024px){
+    .article-kv{
+        .kv-box{
+            bottom: -1%;
+            width: 12.61%
+        }
+    }
+    .article-size{
+        .size-box{
+            width: 85%;
+            p{
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+    }
+    .article-hover{
+        a{
+            &:nth-child(1){
+                width: 29.5%;
+            }
+            &:nth-child(2){
+                width: 29.4%;
+                margin-left: -5.4%;
+            }
+            &:nth-child(3){
+                width: 29.4%;
+                margin-left: -5.4%;
+            }
+            &:nth-child(4){
+                width: 30.5%;
+                margin-left: -8%;
+            }
+        }
+    }
+    .article-carousel{
+        .article-swiper-swift{
+            width: 100%;
+            left: 0%;
+            top: 10%;
+            .swiper-container-od-jacket{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        a{
+                            left: 50%;
+                            height: 100%;
+                            width: 68%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+            }
+            .action-sports-swiper-btn{
+                .swiper-button-prev{
+                    width: 11px;
+                    height: 20px;
+                    right: 11%;
+                    // background: url(https://img.adidas.com.cn/resources/activePage/SEP/WUJI/img-m-left.png);
+                }
+                .swiper-button-next{
+                    width: 11px;
+                    height: 20px;
+                    right: 2%;
+                    // background: url(https://img.adidas.com.cn/resources/activePage/SEP/WUJI/img-m-right.png);
+                }
+            }
+        }
+        .carousel-box{
+            .link-02{
+                width: 87%;
+                height: 30%;
+                top: 60%;
+                left: 8%;
+            }
+        }
+    }
+    .article-carousel-02{
+        .article-swiper-swift{
+            width: 100%;
+            left: 0%;
+            .action-sports-swiper-btn{
+                .swiper-button-prev11{
+                    right: auto;
+                    left: 13%;
+                }
+                .swiper-button-next11{
+                    right: auto;
+                    left: 19%;
+                }
+            }
+            .swiper-container-od-jacket-1{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        a{
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .carousel-box{
+            .link{
+                width: 90%;
+                height: 31%;
+                top: 58%;
+                left: 7%;
+            }
+        }
+    }
+    .article-carousel-03{
+        .carousel-box{
+            .link-06{
+                width: 64%;
+                height: 47%;
+                top: 0%;
+                left: 16%;
+            }
+            .link-07{
+                width: 85%;
+                height: 35%;
+                top: 55%;
+                left: 8%;
+            }
+        }
+    }
+    .article-carousel-04{
+        .article-swiper-swift{
+            width: 100%;
+            left: 0%;
+            top: 4%;
+            .action-sports-swiper-btn{
+                .swiper-button-prev111{
+                    right: auto;
+                    left: 13%;
+                }
+                .swiper-button-next111{
+                    right: auto;
+                    left: 19%;
+                }
+            }
+            .swiper-container-od-jacket-2{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        a{
+                            height: 100%;
+                            top: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .carousel-box{
+            .link-09{
+                width: 90%;
+                height: 31%;
+                top: 58%;
+                left: 7%;
+            }
+        }
+    }
+    .article-hover-2{
+        .hover-2-box{
+            width: 49%;
+            &:nth-child(1){
+                margin-right: 2%;
+            }
+            &:hover{
+                .box-01{
+                    display: block;
+                }
+                .box-02{
+                    display: none;
+                }
+            }
+        }
+    }
+    .article-foot{
+        margin-bottom: 20px;
+        .foot-box{
+            width: 100%;
+            a{
+                width: 100%;
+                padding: 5px 15px;
+                &:hover{
+                    .foot-box-bg{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+}

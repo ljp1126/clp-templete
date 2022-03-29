@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>adidasneo</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+<body>
+<div id="wrapper">
+	<%include _includes/modules/header.html %>
+	<!-- 内容部分 -->
+	<section class="container">
+
+<style type="text/css">
+.action-branner{
+	position: relative;
+}
+.action-branner > img{
+	width: 100%;
+}
+.action-branner-auto{
+	text-align: center;
+	padding: 0 25px;
+	position: relative;
+}
+.action-branner-auto .btn-position{
+	position: absolute;
+	bottom: 110px;
+    left: 50%;
+    margin-left: -150px;
+}
+.action-branner-auto .btn-position a{
+    font-size: 16px;
+    width: 300px;
+}
+/*更多商品*/
+.parley-cont-width {
+  max-width: 950px;
+  margin: 0px auto 0;
+  padding-top: 0px;
+}
+.parley-cont-width .product-title {
+  margin: 0px 0 35px;
+}
+.parley-cont-width .product-title p {
+  font-size: 29px;
+  color: #000;
+  text-align: center;
+}
+.parley-cont-width.parley-cont-man {
+  padding-top: 0px;
+}
+.parley-cont-width.parley-cont-man .product-title {
+  margin: 30px 0 38px;
+}
+.parley-cont-width .product-list {
+  position: relative;
+}
+.parley-cont-width .product-list .product-list-cont {
+  width: 100%;
+}
+.parley-cont-width .product-list .product-list-cont .list-item {
+  max-width: 25%;
+  float: left;
+  position: relative;
+  padding: 0 5px;
+  margin: 0 0 40px;
+}
+.parley-cont-width .product-list .product-list-cont .list-item .thumbnail {
+  padding: 0;
+  background-color: #fff;
+  border-radius: 0;
+}
+.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .pro-big-img-box img {
+  border-radius: 0px;
+}
+.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .pro-big-img-box .addi-logo {
+  display: none;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .pro-big-img-box .addi-logo img {
+  max-height: 21px;
+  width: auto;
+}
+.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .goods-box {
+  padding: 10px 10px 17px 10px;
+}
+.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-title {
+  font-size: 12px;
+  color: #000;
+  line-height: 16px;
+  height: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-title p {
+  color: #333;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-title span {
+  color: #747474;
+}
+.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-bottom {
+  margin-top: 12px;
+  font-weight: bold;
+}
+.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-bottom .goods-price {
+  font-size: 12px;
+}
+.parley-cont-width .product-list .product-list-cont .list-item:hover .thumbnail {
+  box-shadow: 1px 2px 5px 0 rgba(136, 136, 136, 0.5);
+}
+.parley-cont-width .product-list .product-list-cont .list-item:hover .thumbnail .pro-big-img-box .addi-logo {
+  display: block;
+}
+.parley-cont-width .product-list .product-list-cont .list-item:hover .thumbnail .shopping-bag {
+  display: block;
+}
+.btn-more{
+	text-align: center;
+	margin: 5px 0 100px;
+}
+.btn-more a{
+	width: 320px;
+	max-width: 320px;
+}
+/*轮播*/
+.carousel-box{
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+}
+.carousel-box .swiper-container1 .swiper-button-prev{
+	top: -1%;
+    left: 29%;
+    background: url(../static/images/lp-eqt-aug17/icon-kv-left.png);
+    background-size: 80px;
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+}
+.carousel-box .swiper-container1 .swiper-button-next{
+    top: -1%;
+    right: 29%;
+    background: url(../static/images/lp-eqt-aug17/icon-kv-right.png);
+    background-size: 80px;
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+}
+.carousel-box .swiper-container1 .swiper-wrapper .swiper-slide{
+	text-align: center;
+}
+.carousel-box .swiper-container1 .swiper-wrapper .swiper-slide img{
+	width: 40%;
+	max-width: 750px;
+}
+.carousel-box .swiper-container1 .swiper-wrapper .swiper-slide .swiper-btn{
+	margin-top: 1%;
+}
+.wechat-dialog .dialog-scroll-container .dialog{
+	width: 800px;
+	height: 420px;
+	text-align: center;
+	max-width: 800px;
+    margin: 0;
+}
+.wechat-dialog .dialog-scroll-container .dialog .dialog-content p {
+	text-align: center;
+	margin-top: 50px;
+}
+.wechat-dialog .dialog-scroll-container .dialog .dialog-content p img{
+	width: 300px;
+}
+.article-swiper{
+	max-width: 1482px;
+	margin: 100px auto 60px;
+}
+.swiper-container2 {
+	overflow: hidden;
+	position: relative;
+}
+.swiper-container2 .swiper-btn{
+	position: absolute;
+	top: 65%;
+	left: 20px;
+}
+.swiper-container2 .swiper-slide{
+	padding: 0 20px;
+}
+.swiper-container2  .swiper-pagination2{
+	text-align: center;
+    padding: 0 20px 0 0;
+    position: static;
+    margin: 40px 0 0;
+    width: 51%;
+    float: right;
+}
+.swiper-container2  .swiper-pagination2 .swiper-pagination-bullet{
+	width: 14px;
+	height: 14px;
+	margin: 0 8px;
+}
+.swiper-container2  .swiper-pagination2 .swiper-pagination-bullet{
+	 background: #808080;
+	 opacity: 1;
+}
+.swiper-container2  .swiper-pagination2 .swiper-pagination-bullet-active {
+    background: #000;
+}
+
+@media (max-width:1024px) {
+	.action-branner-auto{
+		padding: 0;
+	}
+	.action-branner-auto .btn-position{
+		bottom: auto;
+		top: 80%;
+	}
+	.action-branner-auto .btn-position a{
+	    height: 42px;
+	    line-height: 42px;
+	}
+	/*更多商品*/
+	.parley-cont-width {
+		padding-top: 0px;
+	}
+	.parley-cont-width .product-title {
+		margin: 0px 0 15px;
+	}
+	.parley-cont-width .product-title p {
+		font-size: 18px;
+	}
+	.parley-cont-width.parley-cont-man {
+		padding-top: 0px;
+	}
+	.parley-cont-width.parley-cont-man .product-title {
+		margin: 14px 0 14px;
+	}
+	.parley-cont-width .product-list {
+		position: relative;
+		margin: 0px 17px 0;
+	}
+	.parley-cont-width .product-list .product-list-cont .list-item {
+		max-width: 50%;
+		margin-bottom: 22px;
+	}
+	.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .pro-big-img-box .addi-logo {
+		display: block;
+	}
+	.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .goods-box {
+		padding: 0;
+		margin-top: 0px;
+		padding-top: 3px;
+	}
+	.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .goods-box > p {
+		font-size: 12px;
+		line-height: 30px;
+	}
+	.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-title {
+		line-height: 18px;
+		height: 43px;
+		font-size: 12px;
+		border-top: 1px dotted #8d8d8d;
+		padding-top: 7px;
+	}
+	.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-title p {
+		color: #000;
+	}
+	.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-bottom {
+		margin-top: 7px;
+	}
+	.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-bottom .goods-price {
+		font-size: 12px;
+	}
+	.parley-cont-width .product-list .product-list-cont .list-item:hover .thumbnail {
+		box-shadow: none;
+	}
+	.btn-more {
+		margin: 15px 0 40px;
+	}
+	.btn-more a{
+		width: 100%;
+	}
+
+	/*轮播*/
+	.carousel-box{
+	    top: 40%;
+	}
+	.carousel-box .swiper-container1 .swiper-wrapper .swiper-slide img{
+		width: 100%;
+		max-width: 100%;
+	}
+	.carousel-box .swiper-container1 .swiper-button-prev{
+	    left: 8%;
+	}
+	.carousel-box .swiper-container1 .swiper-button-next{
+	    right: 8%;
+	}
+
+	.wechat-dialog .dialog-scroll-container .dialog{
+		width: 90%;
+	    height: auto;
+	    margin: 0 0 0 5%;
+	}
+	.wechat-dialog .dialog-scroll-container .dialog .dialog-content p {
+		margin-top: 0;
+    	padding: 30px 20px;
+	}
+	.wechat-dialog .dialog-scroll-container .dialog .dialog-content p img{
+		width: 100%;
+	}
+	.article-swiper{
+		margin: 0px auto 30px;
+	}
+	.swiper-container2 .swiper-slide{
+		padding: 0;
+	}
+	.swiper-container2 .swiper-pagination2{
+		text-align: center;
+	    padding: 0;
+	    position: absolute;
+	    margin: 0;
+	    width: 100%;
+	    float: none;
+	    bottom: 10px;
+	    z-index: 2;
+	}
+	.swiper-container2 .swiper-btn{
+		top: auto;
+    	left: 50%;
+    	bottom: 8%;
+    	margin-left: -72px; 
+	}
+	.swiper-container2 .swiper-btn .btn{
+		height: 40px;
+    	line-height: 40px;
+    	font-size: 16px;
+    	color: #000;
+    	background: #fff;
+	}
+	.swiper-container2 .swiper-btn .btn span:after {
+    	background-position: -286px -219px !important;
+	}
+	.swiper-container2 .swiper-pagination2 .swiper-pagination-bullet {
+	    opacity: 0.8;
+	    margin: 0 5px;
+	    width: 8px;
+	    height: 8px;
+	}
+	.swiper-container2 .swiper-pagination2 .swiper-pagination-bullet-active {
+	    background: #fff;
+	    opacity: 1;
+	}
+	.swiper-container2 img{
+	    width: 100%;
+	}
+
+}
+@media (max-width:520px) {
+	.carousel-box .swiper-container1 .swiper-button-prev{
+	    left: 8%;
+	    background-size: 50px;
+	    width: 50px;
+	    height: 50px;
+	}
+	.carousel-box .swiper-container1 .swiper-button-next{
+	    right: 8%;
+	    background-size: 50px;
+	    width: 50px;
+	    height: 50px;
+	}
+	.swiper-container2 .swiper-btn{
+	    bottom: 7%;
+	    margin-left: -55px;
+	}
+	.swiper-container2 .swiper-btn .btn{
+		height: 30px;
+    	line-height: 30px;
+    	font-size: 14px;
+	    min-width: 110px;
+	}
+	.swiper-container2 .swiper-pagination2 {
+	    bottom: 5px;
+	}
+}
+
+</style>
+<script type="text/javascript">
+$(function() {
+	/*轮播*/
+	var mySwiper = new Swiper('.events-swiper1', {
+		loop: true,
+		autoplay: 3000,
+		autoplayDisableOnInteraction: false,
+		speed:500,
+		slidesPerView : 1,
+		spaceBetween : 0,
+		observer: true,
+		observeParents: true,
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev'
+	});
+	$(".events-swiper1").mouseenter(function() {
+		mySwiper.stopAutoplay();
+	}).mouseleave(function() {
+		mySwiper.startAutoplay();
+	});
+
+	var mySwiper1 = new Swiper('.events-swiper2', {
+		pagination: '.swiper-pagination2',
+        slidesPerView: 'auto',
+        loop: true,
+        nested: true,
+        centeredSlides: true,
+        paginationClickable: true,
+        autoplay: 5000,
+	    initialSlide: 0
+	});
+	$(".events-swiper2").mouseenter(function() {
+		mySwiper1.stopAutoplay();
+	}).mouseleave(function() {
+		mySwiper1.startAutoplay();
+	});
+
+})
+</script>
+
+		<!-- 模块一 -->
+		<article class="article">
+			<!-- 轮播 -->
+			<div class="swiper-bg action-branner">
+				<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-pc-05.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-mob-05.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-mob-05.jpg"}
+				}' />
+				<div class="carousel-box">
+					<div class="swiper-container1 events-swiper1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="../static/images/lp-beijingmarathon/img-1.png" />
+								<div class="swiper-btn">
+									<a target="_target" href="https://www.adidas.com.cn/item/S82021" class="btn btn-white btn-have-arrow btn-have-opacity">
+										<span>立即购买</span>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="../static/images/lp-beijingmarathon/img-3.png" />
+								<div class="swiper-btn">
+									<a target="_target" href="https://www.adidas.com.cn/item/S82055" class="btn btn-white btn-have-arrow btn-have-opacity">
+										<span>立即购买</span>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="../static/images/lp-beijingmarathon/img-2.png" />
+								<div class="swiper-btn">
+									<a target="_target" href="https://www.adidas.com.cn/item/BA8842" class="btn btn-white btn-have-arrow btn-have-opacity">
+										<span>立即购买</span>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="../static/images/lp-beijingmarathon/img-4.png" />
+								<div class="swiper-btn">
+									<a target="_target" href="https://www.adidas.com.cn/item/S80682
+" class="btn btn-white btn-have-arrow btn-have-opacity">
+										<span>立即购买</span>
+									</a>
+								</div>
+							</div>					
+						</div>
+						<!-- 箭头 -->
+						<div class="swiper-button-prev swiper-button-white">
+							<!-- <i class="icon icon-action-sports-arrow-l"></i> -->
+							<!-- <span class="arrow"><</span> -->
+						</div>
+						<div class="swiper-button-next swiper-button-white">
+							<!-- <i class="icon icon-action-sports-arrow-r"></i> -->
+							<!-- <span class="arrow">></span> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="article">
+			<div class="action-branner-auto">
+				<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-pc-08.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-mob-08.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-mob-08.jpg"}
+				}' />
+			</div>
+		</article>
+		<article class="article">
+			<div class="action-branner">
+				<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-pc-09.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-mob-09.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-mob-09.jpg"}
+				}' />
+			</div>
+		</article>
+		<article class="article none-sm">
+			<div class="action-branner">
+				<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-pc-07.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-mob-07.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-mob-07.jpg"}
+				}' />
+			</div>
+		</article>
+
+		<article class="article article-swiper">
+			<div class="swiper-container2 events-swiper2">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-kv-01.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-kv-05.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-kv-05.jpg"}
+				}' />
+						<div class="swiper-btn">
+							<a target="_target" href="" class="btn btn-black btn-have-arrow">
+								<span>立即购买</span>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-kv-02.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-kv-06.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-kv-06.jpg"}
+				}' />
+						<div class="swiper-btn">
+							<a target="_target" href="" class="btn btn-black btn-have-arrow">
+								<span>立即购买</span>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-kv-03.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-kv-07.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-kv-07.jpg"}
+				}' />
+						<div class="swiper-btn">
+							<a target="_target" href="" class="btn btn-black btn-have-arrow">
+								<span>立即购买</span>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-kv-04.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-kv-08.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-kv-08.jpg"}
+				}' />
+						<div class="swiper-btn">
+							<a target="_target" href="" class="btn btn-black btn-have-arrow">
+								<span>立即购买</span>
+							</a>
+						</div>
+					</div>
+										
+				</div>
+				<div class="swiper-pagination2"></div>
+			</div>
+		</article>
+		<article class="article">
+			<div class="action-branner">
+				<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-pc-01.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-mob-01.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-mob-01.jpg"}
+				}' />
+			</div>
+		</article>
+		<article class="article">
+			<div class="action-branner-auto">
+				<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-pc-03.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-mob-03.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-beijingmarathon/marathon-mob-03.jpg"}
+				}' />
+			</div>
+		</article>
+		<article class="article parley-cont-width parley-cont-man">
+			<div class="product-list">
+				<div class="product-title">
+					<p>男女鞋类</p>
+				</div>
+				<div class="row product-list-cont float-clearfix">
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/S82021">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-beijingmarathon/marathon-pc-10.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">2 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/S82021" class="goods-title">
+									<p>UltraBOOST 跑步鞋</p>
+									<span>男子 运动表现 跑步</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,499</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/search?keyword=S82055">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-beijingmarathon/marathon-pc-11.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/search?keyword=S82055" class="goods-title">
+									<p>UltraBOOST w 跑步鞋</p>
+									<span>女子 运动表现 跑步</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,499</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BA8842">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-beijingmarathon/marathon-pc-12.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">2 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BA8842" class="goods-title">
+									<p>UltraBOOST 男子跑步鞋</p>
+									<span>男子 运动表现 跑步</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,399</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/S80682">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-beijingmarathon/marathon-pc-13.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/S80682" class="goods-title">
+									<p>UltraBOOST w 女子跑步鞋</p>
+									<span>女子 运动表现 跑步</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,399</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</article>
+		<article class="article parley-cont-width parley-cont-man">
+			<div class="product-list">
+				<div class="product-title">
+					<p>儿童产品</p>
+				</div>
+				<div class="row product-list-cont float-clearfix">
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CP9847">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-beijingmarathon/marathon-pc-14.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CP9847" class="goods-title">
+									<p>alphabounce StarWars j 儿童鞋</p>
+									<span>男童 运动表现 跑步</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥699</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BY2088">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-beijingmarathon/marathon-pc-15.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BY2088" class="goods-title">
+									<p>falcon elite 5 xj 儿童鞋</p>
+									<span>男童 运动表现 跑步</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥429</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CQ1749">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-beijingmarathon/marathon-pc-16.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">2 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CQ1749" class="goods-title">
+									<p>RapidaRun wide K 儿童鞋</p>
+									<span>女童 运动表现 跑步</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥499</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CP9847">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-beijingmarathon/marathon-pc-17.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CP9847" class="goods-title">
+									<p>RapidaRun K wide 儿童鞋</p>
+									<span>女童 运动表现 跑步</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥469</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CE6061">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-beijingmarathon/marathon-pc-18.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CE6061" class="goods-title">
+									<p>短袖T恤</p>
+									<span>女童 运动表现 训练</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥199</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CE9393">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-beijingmarathon/marathon-pc-19.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CE9393" class="goods-title">
+									<p>短袖T恤</p>
+									<span>女童 运动表现 训练</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥169</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CE8260">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-beijingmarathon/marathon-pc-20.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CE8260" class="goods-title">
+									<p>针织长裤</p>
+									<span>男童  运动表现  训练</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥369</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CE5893">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-beijingmarathon/marathon-pc-21.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CE5893" class="goods-title">
+									<p>梭织短裤</p>
+									<span>男童 运动表现 训练</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥229</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn-more">
+					<a target="_target" href="https://www.adidas.com.cn/kids_running_beijingmarathon?sp=RN-Beijing%20Marathon%20Kids" class="btn btn-black btn-have-arrow"><span>查看更多儿童产品</span></a>
+				</div>
+			</div>
+		</article>
+	</section>
+	<%include _includes/modules/footer.html %>
+	<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+</div>
+</body>
+</html>

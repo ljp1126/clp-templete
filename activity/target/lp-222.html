@@ -1,0 +1,209 @@
+<html>
+<head>
+	<%include _includes/meta.html %>
+	<title>originals-undefeated</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" href="css/lp-aa.css" />
+	<%include _includes/js.html %>
+	<script src="../dist/js/swiper.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+
+		<script type="text/javascript">
+			$(function () {
+				var swiper = new Swiper('.swiper-container', {
+					slidesPerView: 'auto',
+//					loop: true,
+					centeredSlides: true,
+					paginationClickable: true,
+					pagination: '.swiper-pagination',
+					prevButton:'.swiper-button-prev',
+					nextButton:'.swiper-button-next',
+					initialSlide: 0,
+					debugger: false,
+					paginationBulletRender: function (swiper, index, className) {
+					    return '<span class="swiper-pagination-bullet"><div><img class="none-sm" src="../static/images/ha/btn_0'+(index+1)+'.png" alt=""><img class="btnh none-sm" src="../static/images/ha/btnh_0'+(index+1)+'.png" alt=""><img  class="none block-sm" src="../static/images/ha/m-btn_0'+(index+1)+'.png" alt=""><img class="btnh none block-sm" src="../static/images/ha/m-btnh_0'+(index+1)+'.png" alt=""></div></span>'
+					},
+					onSlideChangeEnd:function(swiper){
+						console.log(swiper.activeIndex);
+
+						if(swiper.activeIndex==2){
+							$('.text').css({'left':'0'})
+						}
+					},
+				});
+
+				
+			});
+		</script>
+			<article class="article article-swiper-swift">
+				<div class="swiper-container swiper-container-horizontal">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide slide-box1">
+							<img class="" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/ha/kv-01.jpg"},
+									"medium":{"high":"", "normal":"../static/images/ha/m-kv-01.jpg"},
+									"small":{"high":"", "normal":"../static/images/ha/m-kv-01.jpg"}
+							}' />
+							<div class="slide-shopping">
+								<img class="" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/ha/kv-01.png"},
+										"medium":{"high":"", "normal":"../static/images/ha/m-kv-01.png"},
+										"small":{"high":"", "normal":"../static/images/ha/m-kv-01.png"}
+								}' />
+							</div>
+							<div class="slide-fig">
+								<div>
+									<img class="" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/ha/gif_01.gif"},
+											"medium":{"high":"", "normal":"../static/images/ha/m-gif_01.gif"},
+											"small":{"high":"", "normal":"../static/images/ha/m-gif_01.gif"}
+									}' />
+								</div>
+							</div>
+							<div class="slide-text">
+								<img class="" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/ha/text_01.png"},
+										"medium":{"high":"", "normal":"../static/images/ha/m-text_01.png"},
+										"small":{"high":"", "normal":"../static/images/ha/m-text_01.png"}
+								}' />
+								
+								<!-- 商品链接 -->
+								<a target="_blank" class="slide-link slide-link1" href="https://www.adidas.com.cn/item/CX4991"></a>
+								<a target="_blank" class="slide-link slide-link2" href="https://www.adidas.com.cn/item/CV6294"></a>
+								<a target="_blank" class="slide-link slide-link3" href="https://www.adidas.com.cn/item/CZ8955"></a>
+								<a target="_blank" class="slide-link slide-link4" href="https://www.adidas.com.cn/item/CX5008"></a>
+							</div>
+						</div>
+						<div class="swiper-slide slide-box2">
+							<img class="" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/ha/kv-02.jpg"},
+									"medium":{"high":"", "normal":"../static/images/ha/m-kv-02.jpg"},
+									"small":{"high":"", "normal":"../static/images/ha/m-kv-02.jpg"}
+							}' />
+							<div class="slide-shopping">
+								<img class="" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/ha/kv-02.png"},
+										"medium":{"high":"", "normal":"../static/images/ha/m-kv-02.png"},
+										"small":{"high":"", "normal":"../static/images/ha/m-kv-02.png"}
+								}' />
+							</div>
+							<div class="slide-fig">
+								<div>
+									<img class="" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/ha/gif_02.gif"},
+											"medium":{"high":"", "normal":"../static/images/ha/m-gif_02.gif"},
+											"small":{"high":"", "normal":"../static/images/ha/m-gif_02.gif"}
+									}' />
+								</div>
+							</div>
+							<div class="slide-text">
+								<img class="" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/ha/text_02.png"},
+										"medium":{"high":"", "normal":"../static/images/ha/m-text_02.png"},
+										"small":{"high":"", "normal":"../static/images/ha/m-text_02.png"}
+								}' />
+
+								<!-- 商品链接 -->
+								<a target="_blank" class="slide-link slide-link5" href="https://www.adidas.com.cn/item/CX5160"></a>
+								<a target="_blank" class="slide-link slide-link6" href="https://www.adidas.com.cn/item/CV5686"></a>
+								<a target="_blank" class="slide-link slide-link7" href="https://www.adidas.com.cn/item/DT2521"></a>
+								<a target="_blank" class="slide-link slide-link8" href="https://www.adidas.com.cn/item/CF0340"></a>
+							</div>
+						</div>
+						<div class="swiper-slide slide-box3">
+							<img class="" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/ha/kv-03.jpg"},
+									"medium":{"high":"", "normal":"../static/images/ha/m-kv-03.jpg"},
+									"small":{"high":"", "normal":"../static/images/ha/m-kv-03.jpg"}
+							}' />
+							<div class="slide-shopping">
+								<img class="" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/ha/kv-03.png"},
+										"medium":{"high":"", "normal":"../static/images/ha/m-kv-03.png"},
+										"small":{"high":"", "normal":"../static/images/ha/m-kv-03.png"}
+								}' />
+							</div>
+							<div class="slide-fig">
+								<div>
+									<img class="" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/ha/gif_03.gif"},
+											"medium":{"high":"", "normal":"../static/images/ha/m-gif_03.gif"},
+											"small":{"high":"", "normal":"../static/images/ha/m-gif_03.gif"}
+									}' />
+								</div>
+							</div>
+							<div class="slide-text">
+								<img class="" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/ha/text_03.png"},
+										"medium":{"high":"", "normal":"../static/images/ha/m-text_03.png"},
+										"small":{"high":"", "normal":"../static/images/ha/m-text_03.png"}
+								}' />
+
+								<!-- 商品链接 -->
+								<a target="_blank" class="slide-link slide-link9" href="https://www.adidas.com.cn/item/CX5153"></a>
+								<a target="_blank" class="slide-link slide-link10" href="https://www.adidas.com.cn/item/CV5481"></a>
+							</div>
+
+							
+						</div>
+						<div class="swiper-slide slide-box4">
+							<img class="" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/ha/kv-04.jpg"},
+									"medium":{"high":"", "normal":"../static/images/ha/m-kv-04.jpg"},
+									"small":{"high":"", "normal":"../static/images/ha/m-kv-04.jpg"}
+							}' />
+							<div class="slide-shopping">
+								<img class="" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/ha/kv-04.png"},
+										"medium":{"high":"", "normal":"../static/images/ha/m-kv-04.png"},
+										"small":{"high":"", "normal":"../static/images/ha/m-kv-04.png"}
+								}' />
+							</div>
+							<div class="slide-fig">
+								<div>
+									<img class="" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/ha/gif_04.gif"},
+											"medium":{"high":"", "normal":"../static/images/ha/m-gif_04.gif"},
+											"small":{"high":"", "normal":"../static/images/ha/m-gif_04.gif"}
+									}' />
+								</div>
+							</div>
+							<div class="slide-text">
+								<img class="" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/ha/text_04.png"},
+										"medium":{"high":"", "normal":"../static/images/ha/m-text_04.png"},
+										"small":{"high":"", "normal":"../static/images/ha/m-text_04.png"}
+								}' />
+								<!-- 商品链接 -->
+								<a target="_blank" class="slide-link slide-link11" href="https://www.adidas.com.cn/item/CX5022"></a>
+								<a target="_blank" class="slide-link slide-link12" href="https://www.adidas.com.cn/item/CV6293"></a>
+							</div>
+
+							
+						</div>
+					</div>
+					<!-- 箭头 -->
+					<div class="swiper-button-prev">
+						<i class="icon icon-action-sports-arrow-l"></i>
+					</div>
+					<div class="swiper-button-next">
+						<i class="icon icon-action-sports-arrow-r"></i>
+					</div>
+					
+				<!-- Swiper JS -->
+				<div class="text">
+					<img class="none-sm" src="../static/images/ha/text.png"/>
+					<div class="small-icon-contianer swiper-pagination">
+					</div>
+				</div>
+			</article>
+
+		</section>
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+</html>

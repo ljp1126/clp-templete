@@ -1,0 +1,84 @@
+<script id="checkout-new-coupon-code-dialog" type="text/template">
+    <div class="dialog">
+        <div class="dialog-container">
+            <div class="title">
+                <div class="dialog-close-box e-dialog-close">
+                    <i class="icon icon-dialog-back"></i>
+                </div>
+                <div class="coupon-tab">
+                    <span class="is-active">优惠券</span>
+                    <span>优惠码</span>
+                </div>
+            </div>
+            <div class="coupon-code-content">
+                <div class="coupons">
+                    <div class="no-coupon" coupon-data="不使用优惠券">
+                        不使用优惠券
+                        <i class="icon icon-new-circle-check"></i>
+                    </div>
+                    <div class="coupon-box">
+                        <div class="coupons-item" coupon-data="-100">
+                            <div class="coupon-item-box">
+                                <div class="num"><span class="mark">￥</span>100</div>
+                                <div class="coupon-info">
+                                    <p class="coupon-name">adiCLUB <span>生日礼券</span></p>
+                                    <p class="validity">有效期：2016·5·3 - 2016·10·8</p>
+                                </div>
+                                <i class="icon icon-new-circle-check"></i>
+                            </div>
+                        </div>
+                        <div class="coupons-item is-active" coupon-data="-50">
+                            <div class="coupon-item-box">
+                                <div class="num"><span class="mark">￥</span>50</div>
+                                <div class="coupon-info">
+                                    <p class="coupon-name">adiCLUB <span>生日礼券</span></p>
+                                    <p class="validity">有效期：2016·5·3 - 2016·10·8</p>
+                                </div>
+                                <i class="icon icon-new-circle-check"></i>
+                            </div>
+						</div>
+
+						<div class="coupons-item is-disabled" coupon-data="-50">
+                            <div class="coupon-item-box">
+                                <div class="num"><span class="mark">￥</span>50</div>
+                                <div class="coupon-info">
+                                    <p class="coupon-name">adiCLUB <span>生日礼券</span></p>
+                                    <p class="validity">有效期：2016·5·3 - 2016·10·8</p>
+                                </div>
+                                <i class="icon icon-new-circle-check"></i>
+                            </div>
+                        </div>
+					</div>
+
+					<div class="btn-cta">
+						<a class="btn btn-blue btn-have-arrow confirm-use-coupons e-confirm-use-coupons"><span>确认使用优惠券</span></a>
+					</div>
+
+                    <p class="coupons-info-tit">
+                        * 仅展示本订单可用优惠券
+                    </p>
+                </div>
+                <div class="codes">
+                    <!-- 输入代码-->
+                    <div class="form-input e-code-use">
+                        <input placeholder="请输入您的优惠码" type="text">
+                        <a class="btn btn-blue"><span>立即使用</span></a>
+                        <div class="msg-block">
+                            <i class="icon msg-icon"></i>
+                            <span>格式错误，请重新输入</span>
+                        </div>
+                    </div>
+                    <!-- 是否取消 -->
+                    <div class="form-input e-code-cancel">
+                        <input placeholder="" type="text" disabled value="满1000减50">
+                        <a class="btn btn-black"><span>取消</span></a>
+                        <div class="msg-block">
+                            <i class="icon msg-icon"></i>
+                            <span>格式错误，请重新输入</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

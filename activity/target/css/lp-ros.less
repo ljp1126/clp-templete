@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+.article{
+    position: relative;
+    >img{
+        width: 100%;
+    }
+}
+
+.link{
+    position: absolute;
+    z-index: 1;
+    // background: rgba(0, 0, 0, .4);
+}
+
+.article-02{
+    .article-02-fix{
+        position: absolute;
+        top: 0;
+        .link{
+            width: 9.2%;
+            height: 100%;
+            top: 0;
+        }
+        .ros-c-01{
+            left: 19%;
+        }
+        .ros-c-02{
+            left: 29.6%;
+        }
+        .ros-c-03{
+            left: 40.15%;
+        }
+        .ros-c-04{
+            left: 50.65%;
+        }
+        .ros-c-05{
+            left: 61.2%;
+        }
+        .ros-c-06{
+            left: 71.8%;
+        }
+    }
+    .article-fixed{
+        position: fixed;
+        z-index: 5;
+        width: 100%;
+        text-align: center;
+        background: #ffffff;
+        .article-02-fixs{
+            margin: 0 auto;
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            .article-02-fixs-a{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 50px;
+            }
+            .link{
+                width: 9.4%;
+            }
+            img{
+                height: 50px;
+            }
+            .ros-c-01{
+                left: 19%;
+            }
+            .ros-c-02{
+                left: 29.5%;
+            }
+            .ros-c-03{
+                left: 40%;
+            }
+            .ros-c-04{
+                left: 50.5%;
+            }
+            .ros-c-05{
+                left: 61.1%;
+            }
+            .ros-c-06{
+                left: 71.7%
+            }
+            // img{
+            //     height: 50px;
+            // }
+            // .ros-c-01{
+            //     left: 18.5%;
+            // }
+            // .ros-c-02{
+            //     left: 29%;
+            // }
+            // .ros-c-03{
+            //     left: 39.15%;
+            // }
+            // .ros-c-04{
+            //     left: 49.65%;
+            // }
+            // .ros-c-05{
+            //     left: 60%;
+            // }
+            // .ros-c-06{
+            //     left: 70.2%;
+            // }
+        }
+    }
+}
+.article-btn-01{
+    .article-03-cen{
+        text-align: center;
+        .btn{
+            min-width: 200px;
+            &:nth-child(1){
+                margin-right:25px; 
+            }
+        }
+    }
+}
+.article-btn-02{
+    text-align: center;
+    .btn{
+         min-width: 200px;
+    }
+}
+.article-btn-03{
+    text-align: center;
+    .btn{
+         min-width: 200px;
+    }
+}
+.article-btn-04{
+    margin-top: 50px;
+    .article-03-cen{
+        text-align: center;
+        .btn{
+            min-width: 200px;
+            &:nth-child(1){
+                margin-right:25px; 
+            }
+        }
+    }
+}
+.article-btn-05{
+    text-align: center;
+     .btn{
+            min-width: 200px;
+        }
+}
+.article-btn-06{
+    margin-top: 50px;
+    .article-03-cen{
+        text-align: center;
+        .btn{
+            min-width: 200px;
+            &:nth-child(1){
+                margin-right:25px; 
+            }
+        }
+    }
+}
+.article-sports {
+    margin-top: 88px;
+    img {
+        text-align: center;
+        width: 100%;
+    }
+    .link {
+        width: 16%;
+        height: 77%;
+        top: 0%;
+    }    
+    .link-01{
+        left: 16.5%;
+    }  
+    .link-02 {
+        left: 34.2%;
+    }
+    .link-03 {
+        left: 51.9%;
+    }
+    .link-04 {
+        left: 69.5%;
+    }
+}
+
+@media (max-width: 1024px){
+    .article-02{
+        .article-02-fix{
+            padding: 0;
+            .article-02-fixs{
+                .article-02-fixs-a{
+                    height: 32px;
+                    .link{
+                        width: 15.4%;
+                    }
+                }
+                img{
+                    height: auto;
+                }
+                .ros-c-01{
+                    left: 0%;
+                }
+                .ros-c-02{
+                    left: 17%;
+                }
+                .ros-c-03{
+                    left: 34.15%;
+                }
+                .ros-c-04{
+                    left: 50.65%;
+                }
+                .ros-c-05{
+                    left: 67.2%;
+                }
+                .ros-c-06{
+                left: 84.4%;
+                }
+            }
+            // .link{
+            //     width: 15.4%;
+            // }
+            // .ros-c-01{
+            //     left: 0%;
+            // }
+            // .ros-c-02{
+            //     left: 17%;
+            // }
+            // .ros-c-03{
+            //     left: 34.15%;
+            // }
+            // .ros-c-04{
+            //     left: 50.65%;
+            // }
+            // .ros-c-05{
+            //     left: 67.2%;
+            // }
+            // .ros-c-06{
+            //    left: 84.4%;
+            // }
+        }
+        .article-fixed{
+            padding: 10px 0;
+            background: #fff;
+        }
+    }
+    .article-sports{
+        .link {
+            width: 40%;
+            height: 40%;
+        }
+        .link-01 {
+            left: 8%;
+        }
+        .link-02 {
+            left: 52.2%;
+        }
+        .link-03 {
+            left: 8%;
+            top: 45%;
+        }
+        .link-04 {
+            left: 52.2%;
+            top: 45%;
+        }
+    } 
+    .article-btn-01{
+        .article-03-cen{
+            .btn{
+                min-width: 145px;
+                font-size: 14px;
+                height: 40px;
+                line-height: 40px;
+                span{
+                    &:after{
+                        top: 1px;
+                    }
+                }
+            }
+        }
+    }
+    .article-btn-02{
+        .btn{
+            min-width: 145px;
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+            span{
+                &:after{
+                    top: 1px;
+                }
+            }
+        }
+    }
+    .article-btn-03{
+        .btn{
+            min-width: 145px;
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+            span{
+                &:after{
+                    top: 1px;
+                }
+            }
+        }
+    }
+    .article-btn-04{
+        .article-03-cen{
+            .btn{
+                min-width: 145px;
+                font-size: 14px;
+                height: 40px;
+                line-height: 40px;
+                span{
+                    &:after{
+                        top: 1px;
+                    }
+                }
+            }
+        }
+    }
+    .article-btn-05{
+        .btn{
+            min-width: 145px;
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+            span{
+                &:after{
+                    top: 1px;
+                }
+            }
+        }
+    }
+    .article-btn-06{
+        .article-03-cen{
+            .btn{
+                min-width: 145px;
+                font-size: 14px;
+                height: 40px;
+                line-height: 40px;
+                span{
+                    &:after{
+                        top: 1px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+                   
+
+

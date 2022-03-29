@@ -1,0 +1,530 @@
+@charset "utf-8";
+@import "common/variables.less";
+
+.article{
+    position: relative;
+    >img{
+        width: 100%;
+    }
+}
+
+.link{
+    position: absolute;
+    z-index: 1;
+    // background: rgba(0, 0, 0, .4);
+}
+
+.article-two, .article-four, .article-six, .article-eight, .article-ten{
+    .football-content{
+        left: 0%;
+    }
+}
+.article-one{
+    .football-content{
+        top: 29%;
+    }
+}
+.article-two{
+    .football-content{
+        top: 21%;
+    }
+}
+.article-three{
+    .football-content{
+        top: 21%;
+    }
+}
+.article-four{
+    .football-content{
+        top: 14%;
+    }
+}
+.article-five{
+    .football-content{
+        top: 15%;
+    }
+}
+.article-six{
+    .football-content{
+        top: 16.5%;
+    }
+}
+.article-seven{
+    .football-content{
+        top: 17%;
+    }
+}
+.article-eight{
+    .football-content{
+        top: 17%;
+    }
+}
+.article-nine{
+    .football-content{
+        top: 14%;
+    }
+}
+.article-ten{
+    .football-content{
+        top: 15%;
+    }
+}
+.article-top{
+    .nav-panal{
+        .top-btn-cta{
+            position: absolute;
+            bottom: 5%;
+            left: 0;
+            width: 100%;
+            .top-btn-content{
+                position: relative;
+                margin: 0 auto;
+                width: 100%;
+                .link{
+                    width: 3.1%;
+                    height: 100%;
+                    span{
+                            width: 100%;
+                            height: 15%;
+                            background: #d24443;
+                            position: absolute;
+                            bottom: 0%;
+                        }
+                }
+                .link-one{
+                    left: 29.8%;
+                }
+                .link-two{
+                    left: 33.9%;
+                }
+                .link-three{
+                    left: 38%;
+                }
+                .link-four{
+                    left: 42.2%;
+                }
+                .link-five{
+                    left: 46.2%;
+                }
+                .link-six{
+                    left: 50.3%;
+                }
+                .link-seven{
+                    left: 54.5%;
+                }
+                .link-eight{
+                    left: 58.6%;
+                }
+                .link-nine{
+                    left: 62.7%;
+                }
+                .link-ten{
+                    left: 66.8%;
+                }
+            }
+        }
+        .nav-fixed{
+            width: 100%;
+            position: fixed;
+            left: 0;
+            z-index: 2;
+        }
+       
+    }
+}
+
+.article-img{
+    .headline-red{
+        position: absolute;
+        bottom: 5%;
+        left: 30%;
+        font-size: 26px;
+    }
+}
+.article{
+    div{
+        p{
+            // font-family: @fonts-adihrgit, @fonts-common-suffix;
+            text-indent:2em;
+        }
+    }
+    .football-content{
+        position: absolute;
+        width: 50%;
+        right: 0%;
+        padding: 0% 5%;
+        font-size: 20px;
+    }
+    .football-headline-01{
+        text-align: center;        
+        width: 80%;
+    }
+    .football-headline-01, .football-headline-02{
+        position: absolute;
+        left: 50%;
+        color: #d24443;
+        -ms-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .football-headline-01{
+        font-size: 52px;
+        top: -1%;
+        font-family: @fonts-adineueprolight, @fonts-common-suffix;
+    }
+    .football-headline-02{
+        font-size: 100px;
+        top: 2.5%;
+        font-family: @fonts-adineueprobold, @fonts-common-suffix;     
+    }
+}
+
+.article-one{
+    .football-headline-01{
+        top: 5%;
+    }
+    .football-headline-02{
+        top: 11%;
+    }
+}
+
+.article-foot{
+    div{    
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 24.9%;
+        height: 100%;
+        a{
+            position: absolute;
+            bottom: 15%;
+            left: 50%;
+            -ms-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+            height: 34px;
+            line-height: 34px;
+            width: 83%;
+            min-width: 175px;
+            max-width: 270px;
+        }
+    }
+    .foot-two{
+        left: 25%;
+    }
+    .foot-three{
+        left: 50%;
+    }
+    .foot-four{
+        left: 75%;
+    }
+
+   
+}
+
+
+@media (min-width: 1024px){
+    .article-one{
+        .football-content{
+            top: 43%;
+        }
+    }
+    .article-two{
+        .football-content{
+            top: 33%;
+        }
+    }
+    .article-three{
+        .football-content{
+            top: 35%;
+        }
+    }
+    .article-four{
+        .football-content{
+            top: 25%;
+        }
+    }
+    .article-five{
+        .football-content{
+            top: 25%;
+        }
+    }
+    .article-six{
+        .football-content{
+            top: 25.5%;
+        }
+    }
+    .article-seven{
+        .football-content{
+            top: 30%;
+        }
+    }
+    .article-eight{
+        .football-content{
+            top: 25%;
+        }
+    }
+    .article-nine{
+        .football-content{
+            top: 25%;
+        }
+    }
+    .article-ten{
+        .football-content{
+            top: 22%;
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .article{
+        span{
+            text-align: center;
+        }
+        .football-headline-01{
+            width: 80%;
+            top: 1%;
+        }
+        .football-content{
+            padding: 0% 7%;
+        }
+    }
+
+    .article-top{
+        .nav-panal{
+            .top-btn-cta{
+                .top-btn-content{
+                    .link{
+                        width: 7.1%;
+                        height: 100%;
+                    }
+                    .link-one{
+                        left: 4%;
+                    }
+                    .link-two{
+                        left: 13.3%;
+                    }
+                    .link-three{
+                        left: 22.8%;
+                    }
+                    .link-four{
+                        left: 32.3%;
+                    }
+                    .link-five{
+                        left: 41.7%;
+                    }
+                    .link-six{
+                        left: 51%;
+                    }
+                    .link-seven{
+                        left: 60.5%;
+                    }
+                    .link-eight{
+                        left: 70%;
+                    }
+                    .link-nine{
+                        left: 79.5%;
+                    }
+                    .link-ten{
+                        left: 89%;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .article-img .headline-red{
+        bottom: 0%;
+        left: 0%;
+        font-size: 17px;
+        padding: 0% 5%;
+    }
+
+    .article{
+        .football-content{
+            font-size: 14px;
+            width: auto;
+        }
+    } 
+
+    .article{
+        .football-headline-01{
+            font-size: 18px;
+        }
+        .football-headline-02{
+            font-size: 55px;
+            top: 3%
+        }
+    }
+
+    .article-one{
+        .football-headline-01{
+            top: 6%
+        }
+        .football-headline-02{
+            top: 8%
+        }
+        .football-content{
+            top: 41%;
+        }
+    }
+
+    .article-two{
+        .football-content{
+            top: 38%;
+        }
+    }
+    .article-three{
+        .football-content{
+            top: 46%;
+        }
+    }
+    .article-four{
+        .football-content{
+            top: 31%;
+        }
+    }
+    .article-five{
+        .football-content{
+            top: 33%;
+        }
+    }
+    .article-six{
+        .football-content{
+            top: 34%;
+        }
+    }
+    .article-seven{
+        .football-content{
+            top: 37%;
+        }
+    }
+    .article-eight{
+        .football-content{
+            top: 36%;
+        }
+    }
+    .article-nine{
+        .football-content{
+            top: 30%;
+        }
+    }
+    .article-ten{
+        .football-content{
+            top: 36.5%;
+        }
+    }
+    
+    .article-foot{
+        .link-01{
+            position: absolute;
+            top: 0%;
+            width: 49%;
+            height: 47.8%;
+        }
+        .link-two{
+            left: 49%;
+            width: 51%;
+        }
+        .link-three{
+            top: 47.8%;
+            height: 52%;
+        }
+        .link-four{
+            left: 49%;
+            top: 47.8%;
+            height: 52%;
+            width: 51%;
+        }
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1418px){
+    .article{
+        .football-headline-01{
+            font-size: 40px;
+        }
+        .football-headline-02{
+            font-size: 68px;
+            top: 3%;
+        }
+        .football-content{
+            font-size: 16px;
+        }
+    }
+    .article-img .headline-red{
+        font-size: 18px;
+    }
+    .article-one{
+        .football-headline-02{
+            top: 11%;
+        }
+    }
+    .article-two{
+        .football-headline-02{
+            top: 3.5%;
+        }
+    } 
+    
+}
+
+@media (min-width: 1418px){
+    .article-one{
+        .football-content{
+            top: 43%;
+        }
+    }
+    .article-two{
+        .football-content{
+            top: 33%;
+        }
+    }
+    .article-three{
+        .football-content{
+            top: 35%;
+        }
+    }
+    .article-four{
+        .football-content{
+            top: 31%;
+        }
+    }
+    .article-five{
+        .football-content{
+            top: 31%;
+        }
+    }
+    .article-six{
+        .football-content{
+            top: 27.5%;
+        }
+    }
+    .article-seven{
+        .football-content{
+            top: 32%;
+        }
+    }
+    .article-eight{
+        .football-content{
+            top: 29%;
+        }
+    }
+    // .article-nine{
+    //     .football-content{
+    //         top: 25%;
+    //     }
+    // }
+    .article-ten{
+        .football-content{
+            top: 34%;
+        }
+    }
+}

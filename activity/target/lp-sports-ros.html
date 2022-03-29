@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%include _includes/meta.html %>
+        <title>lp-deerupt-campaign</title>
+        <%include _includes/css.html %>
+        <%include _includes/js.html %>
+        <!-- <script type="text/javascript" src="libs/hotSpot/hotSpot.js"></script> -->
+</head>
+
+<body>
+    <div id="wrapper">
+        <%include _includes/modules/header.html %>
+            <section class="container">
+                <style>
+                    .article{
+                        position: relative;
+                    }
+                    .article img{
+                        text-align: center;
+                        width: 100%;
+                    }
+                    .article .link{
+                        width: 16%;
+                        height: 77%;
+                        top: 0%;
+                    }
+                    .article .link-01{
+                        left: 16.5%;
+                    }
+                    .article .link-02{
+                        left: 34.2%;
+                    }
+                    .article .link-03{
+                        left: 51.9%;
+                    }
+                    .article .link-04{
+                        left: 69.5%;
+                    }
+                    @media screen and (max-width: 1024px) {
+                        .article .link{
+                            width: 40%;
+                            height: 40%;
+                        }
+                        .article .link-01{
+                            left: 8%;
+                        }
+                        .article .link-02{
+                            left: 52.2%;
+                        }
+                        .article .link-03{
+                            left: 8%;
+                            top: 45%;
+                        }
+                        .article .link-04{
+                            left: 52.2%;
+                            top: 45%;
+                        }
+                    }
+                </style>
+
+                <article class="article article-sports">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="null" data-image='{
+							"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/MAY/ROS/img-pc-01.jpg"},
+							"medium":{"high":"",  "normal":"https://img.adidas.com.cn/resources/activePage/MAY/ROS/img-mob-01.jpg"},
+							"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/MAY/ROS/img-mob-01.jpg"}}' />
+
+                    <a href="https://www.adidas.com.cn/campaign/worldcup_ftw?a=1" target="_blank" class="link link-01 absolute"></a>
+                    <a href="https://www.adidas.com.cn/basketball_jamesharden" target="_blank" class="link link-02 absolute"></a>
+                    <a href="https://www.adidas.com.cn/training_all" target="_blank" class="link link-03 absolute"></a>
+                    <a href="https://www.adidas.com.cn/football_training_gift" target="_blank" class="link link-04 absolute"></a>
+                </article>
+
+            </section>
+            <%include _includes/modules/footer.html %>
+    </div>
+</body>
+<script>
+    $(function () {
+        // 换图 + 懒加载
+        $.spice.lazyLoad('img[lazysrc]', {
+            attr: 'lazysrc'
+        });
+        $.spice.tools.changeImageSrc({
+            callBack: function (img, self) {
+                $.spice.lazyLoad('img[lazysrc]', {
+                    attr: self.opt.lazyData,
+                    prestrain: 1
+                });
+            }
+        });
+    })
+</script>
+</html>

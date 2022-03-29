@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title>myaccout-points</title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" type="text/css" href="css/myaccount-orders.css">
+		<link rel="stylesheet" type="text/css" href="css/myaccount-points.css">
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="js/myaccount-orders.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+
+			<!-- 内容部分 -->
+			<section class="container">
+				<!-- 模块一 -->
+				<article class="article article-breadcrumb-common-width none-sm">
+					<div class="breadcrumb">
+						<ul class="list-inline">
+							<li><a href="#"><i class="icon icon-round-lightgray-lefts"></i>返回</a></li>
+							<li class="divider">丨</li>
+							<li><a href="/">首页</a></li>
+							<li class="divider">/</li>
+							<li><a href="/">我的账户</a></li>
+						</ul>
+					</div>
+				</article>
+
+				<!-- 模块二 -->
+				<article class="article article-my-width">
+					<div class="my-content-box float-clearfix">
+						<!-- 左 导航 -->
+						<%include _includes/myaccount-left-nav.html %>
+						
+						<!-- 右 内容 -->
+						<div class="myaccount-right">
+							<div class="myaccount-rig-left float-clearfix">
+								<div class="myaccount-right-content">
+									<div class="myaccount-right-tit float-clearfix">
+										<h3>我的积分: <span>0</span></h3>									
+									</div>
+									
+									<div class="points-item-box">
+										<div class="points-item-tit">铜牌/银座/金尊会员每累计500积分将自动转化为50元优惠券
+										<p class="block-sm none">了解更多会员规则及权益，请点击“<a>关于adiCLUB</a>”了解详情</div>
+
+										<div class="points-item-cont">
+
+											<table class="points-item-cont-tb">
+												<tr>
+													<th>日期</th>
+													<th>分类</th>
+													<th>积分</th>
+													<th>变动后可用积分</th>
+												</tr>
+												<tr>
+													<td>2015/12/21</td>
+													<td>积分获得</td>
+													<td>+100</td>
+													<td>100</td>
+												</tr>
+												<tr>
+													<td>2016/02/12</td>
+													<td>积分换券</td>
+													<td>+100</td>
+													<td>200</td>
+												</tr>
+												<tr>
+													<td>2016/03/12</td>
+													<td>退货积分冲销</td>
+													<td>-100</td>
+													<td>100</td>
+												</tr>
+												<tr>
+													<td>2016/04/01</td>
+													<td>积分获得</td>
+													<td>+100</td>
+													<td>200</td>
+												</tr>
+												<tr>
+													<td>2016/06/27</td>
+													<td>券积分返还</td>
+													<td>+100</td>
+													<td>300</td>
+												</tr>
+												<tr>
+													<td>2016/06/29</td>
+													<td>积分人工增加</td>
+													<td>+100</td>
+													<td>400</td>
+												</tr>
+												<tr>
+													<td>2016/07/18</td>
+													<td>积分人工减少</td>
+													<td>-100</td>
+													<td>300</td>
+												</tr>
+											</table>
+										</div>
+										<!-- 分页 -->
+										<div class="myaccount-paging paging none-sm">
+											<ul class="float-clearfix">
+												<li class="paging-tit">页数</li>
+												<li class="paging-select-wrapper">
+													<div class="select-box">
+														<div class="dropdown none-sm events-dropdown">
+															<a class="btn">
+																<span class="dropdown-text">1</span>
+																<span class="dropdown-icon"><i class="icon icon-caret"></i></span>
+															</a>
+															<div class="sub-menu tinyscrollbar">
+																<div class="viewport">
+																	<div class="overview">
+																		<ul>
+																			<li>
+																				<a>1</a>
+																			</li>
+																			<li>
+																				<a>2</a>
+																			</li>
+																			<li>
+																				<a>3</a>
+																			</li>
+																			<li>
+																				<a>4</a>
+																			</li>
+																	</div>
+																</div>
+																<div class="scrollbar none">
+																	<div class="track">
+																		<div class="thumb">
+																			<div class="end"></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="dropdown none block-sm events-form-select">
+															<a class="btn">
+																<span class="dropdown-text">1</span>
+																<span class="dropdown-icon"><i class="icon icon-caret"></i></span>
+															</a>
+															<select>
+																<option value="">请选择</option>
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+																<option value="4">4</option>
+															</select>
+														</div>
+													</div>
+												</li>
+												<li class="paging-total">/4</li>
+												<li class="left-arrow"><i class="icon icon-round-lightgray-leftm is-disabled"></i></li>
+												<li class="right-arrow"><i class="icon icon-round-lightgray-rightm"></i></li>
+											</ul>
+										</div>
+										<!-- 分页 end -->
+										<div class="points-item-tips none-sm">了解更多会员规则及权益，请点击“<a>关于adiCLUB</a>”了解详情</div>
+									</div>
+
+								</div>
+								<div class="center-banner">
+									<a href=""><img class="events-changeSrc" src="images/blank.gif" 
+						data-image='{"standard":{"high":"", "normal":"images/myaccount/img-BANNER.png"},
+						"medium":{"high":"", "normal":"../static/images/common/banner@2x.jpg"},
+						"small":{"high":"", "normal":"../static/images/common/banner@2x.jpg"}}' /></a>
+								</div>
+								<div class="myaccount-gallery-box">
+									<div class="style-guess-you-Iike myaccount-might-like">
+										<h3>您可能也喜欢</h3>
+										<!-- 您可能也喜欢 -->
+										<%include _includes/guess-you-Iike.html %>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>	
+				</article>
+			</section>
+
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+
+		</div>
+	</body>
+</html>

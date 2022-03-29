@@ -1,0 +1,303 @@
+@charset "UTF-8";
+.article{
+    .article-main{
+        max-width: 990px;
+        margin: 0 auto;
+    }
+}
+.article-school-kv {
+	.scroll-container {
+		.scroll-content-site-middle {
+			vertical-align: bottom;
+			.scroll-btn-component {
+				margin: 0 0 0 24.5%;
+				width: 230px;
+				text-align: center;
+				margin-bottom: 2.4%;
+			}
+		}
+	}
+	
+}
+.scroll-dots {
+		left: auto;
+		right: auto !important;
+		bottom: 11%;
+		z-index: 10;
+		padding: 10px 0;
+		background: rgba(0, 0, 0, 0.50);
+		border-radius: 15px;
+		a {
+			width: 5px;
+			height: 5px;
+			background: #C8CBCC;
+			/*margin: 0 4px;*/
+			border-radius: 50%;
+			&:first-child {
+				/*margin: 0 4px 0 8px;*/
+			}
+			&:last-child {
+				/*margin: 0 8px 0 4px;*/
+			}
+			&:hover {
+				background: #025F8E;
+			}
+			&.active {
+				background: #0286CD;
+			}
+		}
+	}
+	.scroll-btn-next,
+	.scroll-btn-prev {
+		cursor: pointer;
+		a {
+			text-indent: -9999px;
+			i {
+				display: inline-block;
+				background: url(../images/icon.png);
+				width: 42px;
+				height: 76px;
+			}
+		}
+	}
+	.scroll-btn-prev {
+		left: 18%;
+		a {
+			i {
+				background-position: -568px -50px;
+			}
+		}
+	}
+	.scroll-btn-next {
+		right: 18%;
+		a {
+			i {
+				background-position: -620px -50px;
+			}
+		}
+	}
+.article-school-content{
+	    .article-main{
+	        .scroll-btn-prev,.scroll-btn-next{
+	            display: none;
+	        }
+	    }
+	}
+.product-list{
+	position: relative;
+	.product-list-school{
+		width: 100%;
+		.list-item{
+//			width: 25%;
+		    min-height: 376px;
+		    padding-left: 10px;
+		    float: left;
+		    position: relative;
+			.thumbnail{
+			        padding: 0;
+                    background-color: #fff;
+                    border-radius: 0;
+				.pro-big-img-box{
+					img{
+						border-radius: 0px;
+					}
+					.addi-logo{
+				    	display:none;
+				    	position: absolute;
+				    	top: 12px;
+				    	left: 10px;
+				    	img{
+				    		max-height: 21px;
+				    		width: auto;
+				    	}
+				    }
+				}
+				.goods-box{
+					padding: 10px 10px 0 10px;
+					.goods-title{
+						font-size: 12px;
+					    color: #000;
+					    line-height: 16px;
+					    height: 44px;
+//					    padding-right: 15px;
+					    overflow: hidden;
+					    text-overflow: ellipsis;
+					    display: -webkit-box;
+					    -webkit-line-clamp: 2;
+					    -webkit-box-orient: vertical;
+						
+					}
+				}
+				.shopping-bag{
+				    padding: 0 10px;
+				    display: none;
+					.btn-gradient-blue{
+						width: 100%;
+					    height: 42px;
+					    line-height: 42px;
+					    margin: 20px 0 10px 0;					    
+					}
+					  
+				}
+			}						    
+		}
+		.list-item:hover{
+			.thumbnail{
+				    position: absolute;
+				    top: 0;
+				    left: 10px;
+				    z-index: 6;
+				    box-shadow: 1px 2px 6px 0 rgba(136, 136, 136, 0.5);
+				.pro-big-img-box{
+					img{
+						
+					}
+					.addi-logo{
+				    	display:block;				    	
+				    	img{
+				    		
+				    	}
+				    }
+				}
+				.goods-box{
+					.goods-title{
+						
+					}
+				}
+				.shopping-bag{
+				    display: block;
+                    .btn-gradient-blue{
+                                         
+                    }
+                      
+                }
+			}
+		}
+	}
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .school-img{
+        img{
+            width: 100%;
+        }
+    }
+.product-list{
+//  position: relative;
+    padding: 0 18px 0 8px;
+    .product-list-school{
+//      width: 100%;
+        .list-item{
+//          width: 25%;
+            min-height: 10px;
+//          padding-left: 3px;
+//          float: left;
+//          position: relative;
+            .thumbnail{
+//                  padding: 0;
+//                  background-color: #fff;
+//                  border-radius: 0;
+                .pro-big-img-box{
+                    a{
+                        img{
+//                      border-radius: 0px;
+                        min-height: 197px;
+                    }
+                    }
+                    
+                    .addi-logo{
+                        display:block;
+//                      position: absolute;
+                        top: 5px;
+                        left: 15px;
+                        img{
+//                          max-height: 21px;
+//                          width: auto;
+                        }
+                    }
+                }
+                .goods-box{
+                    padding: 10px 10px 0 10px;
+                        margin-top: 14px;
+    border-top: 1px dotted #8d8d8d;
+    text-align: center;
+                    .goods-title-mob{
+                        text-align: center;
+                        line-height: 16px;
+                        height: 44px;
+//                      padding-right: 15px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        span{
+                                             font-size: 12px;                        
+        transform: scale(0.75);
+                        color: #000;
+                        
+                        }
+       
+                        
+                    }
+                    .goods-bottom{
+                        padding-bottom: 17px;
+                        text-align: center;
+                    }
+                }
+                .shopping-bag{
+                    padding: 0 10px;
+                    display: none;
+                    .btn-gradient-blue{
+                        width: 100%;
+                        height: 42px;
+                        line-height: 42px;
+                        margin: 20px 0 10px 0;                      
+                    }
+                      
+                }
+            }                           
+        }  
+        .list-item:hover{
+            .thumbnail{
+                    position: relative;
+//                  top: 0;
+                    left: 0px;
+//                  z-index: 6;
+                    box-shadow: none;
+                .pro-big-img-box{
+                    img{
+                        
+                    }
+                    .addi-logo{
+                        display:block; 
+                        top: 5px;
+                        left: 15px;                     
+                        img{
+                            
+                        }
+                    }
+                }
+                .goods-box{
+                    .goods-title{
+                        
+                    }
+                }
+                .shopping-bag{
+                    display: none;
+                    .btn-gradient-blue{
+                                         
+                    }
+                      
+                }
+            }
+        }     
+    }
+}
+}
+@media (max-width: 768px) {
+	
+}

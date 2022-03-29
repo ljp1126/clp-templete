@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<%include _includes/meta.html %>
+		<title>lp-eqt-one</title>
+		<%include _includes/css.html %>
+		<!-- <link rel="stylesheet" href="css/lp-eqt-one.css" /> -->
+		<%include _includes/js.html %>
+		<!-- <script type="text/javascript" src="js/lp-eqt-one.js"></script> -->
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+			<section class="container">
+				<style> 
+                    .article {
+                    background: #eee;
+                    padding: 60px 20px;
+                    }
+                    .article ul {
+                    width: 100%;
+                    max-width: 960px;
+                    margin: 0 auto;
+                    font-size: 0;
+                    transition: all 0.3s ease-out;
+                    }
+                    .article ul li {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 25%;
+                    padding: 5px;
+                    }
+                    .article ul li a {
+                    display: block;
+                    }
+                    .article ul li a img {
+                    width: 100%;
+                    }
+                    @media (min-width: 1025px) {
+                    .article ul li a {
+                        transition: box-shadow 0.6s ease-out;
+                    }
+                    .article ul li:hover a {
+                        box-shadow: 2px 2px 12px 6px rgba(163, 163, 163, 0.5);
+                    }
+                    }
+                    @media (max-width: 768px) {
+                    .article {
+                        font-size: 0;
+                        padding: 0;
+                    }
+                    .article ul {
+                        font-size: 0;
+                    }
+                    .article ul li {
+                        font-size: 0;
+                        padding: 0;
+                        width: 50%;
+                        overflow: hidden;
+                    }
+                    .article ul li a {
+                        font-size: 0;
+                    }
+                    .article ul li img {
+                        width: calc(100% + 2px);
+                        position: relative;
+                    }
+                    .article ul li:nth-child(1),
+                    .article ul li:nth-child(3) {
+                        left: 1px;
+                    }
+                    .article ul li:nth-child(2),
+                    .article ul li:nth-child(4) {
+                        left: -1px;
+                    }
+                    }
+
+
+				</style>
+
+				<article class="article">
+					<ul class="e-eqt-one">
+						<li>
+							<a href="lp-eqt-two-lh2.html">
+								<img class="e-eqt-one-gif" 
+									src="https://img.adidas.com.cn/resources/2018/1/EQT/blank.png"
+									lazysrc="0"
+									data-image='{
+									"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/2018/1/EQT/pc-1.gif"},
+									"medium":{"high":"",  "normal":"https://img.adidas.com.cn/resources/2018/1/EQT/mob-1.gif"},
+									"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/2018/1/EQT/mob-1.gif"}}'
+								/>
+							</a>
+						</li>
+
+						<li>
+							<a href="lp-eqt-two-ym.html">
+								<img class="e-eqt-one-gif" 
+									src="https://img.adidas.com.cn/resources/2018/1/EQT/blank.png"
+									lazysrc="0"
+									data-image='{
+									"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/2018/1/EQT/pc-2.gif"},
+									"medium":{"high":"",  "normal":"https://img.adidas.com.cn/resources/2018/1/EQT/mob-2.gif"},
+									"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/2018/1/EQT/mob-2.gif"}}'
+								/>
+							</a>
+						</li>
+
+						<li>
+							<a href="lp-eqt-two-fbb.html">
+								<img class="e-eqt-one-gif" 
+									src="https://img.adidas.com.cn/resources/2018/1/EQT/blank.png"
+									lazysrc="0"
+									data-image='{
+									"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/2018/1/EQT/pc-3.gif"},
+									"medium":{"high":"",  "normal":"https://img.adidas.com.cn/resources/2018/1/EQT/mob-3.gif"},
+									"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/2018/1/EQT/mob-3.gif"}}'
+								/>
+							</a>
+						</li>
+
+						<li>
+							<a href="lp-eqt-two-lh1.html">
+								<img class="e-eqt-one-gif" 
+									src="https://img.adidas.com.cn/resources/2018/1/EQT/blank.png"
+									lazysrc="0"
+									data-image='{
+									"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/2018/1/EQT/pc-4.gif"},
+									"medium":{"high":"",  "normal":"https://img.adidas.com.cn/resources/2018/1/EQT/mob-4.gif"},
+									"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/2018/1/EQT/mob-4.gif"}}'
+								/>
+							</a>
+						</li>
+					</ul>
+				</article>
+
+				<script type="text/javascript">
+                    $(function() {
+
+        
+                        var $eqtOne = $('.e-eqt-one'),
+                            $li = $('li', $eqtOne),
+                            liLen = $li.length,
+                            loadImgFun = function(imgArr, fn) {
+                                // 图片加载fun
+                                console.log('开始加载图片...');
+                                var loadImgLen = 0,
+                                    errImgLen = 0
+
+                                var imgdefereds = [];
+                                $(imgArr).each(function() {
+                                    var defered = $.Deferred();
+                                    $(this).on('load', function() {
+                                        defered.resolve();
+                                        loadImgLen++
+                                    }).on('error', function() {
+                                        defered.resolve();
+                                        errImgLen++
+                                        $(this).remove();
+                                        console.log('有' + errImgLen + '个图片加载失败');
+                                    })
+                                    if (this.complete) setTimeout(function() {
+                                        defered.resolve();
+                                    }, 1000);
+                                    imgdefereds.push(defered);
+                                })
+                                $.when.apply(null, imgdefereds).done(function() {
+                                    setTimeout(function() {
+                                        if (fn && $.isFunction(fn)) {
+                                            fn()
+                                        }
+                                        console.log("imgArr.length", imgArr.length);
+                                        console.log("loadImgLen", loadImgLen);
+                                        console.log('errImgLen', errImgLen);
+                                        console.log('图片加载完成');
+                                    }, 0)
+                                });
+
+                            };
+
+                        // 自定义换图
+                        $.spice.tools.changeImageSrc({
+                            elem: 'img.e-eqt-one-gif[data-image]',
+                            callBack: function (elem) {
+                                var $elem = elem;
+                            }
+                        });
+
+                        var imgArrs = function () {
+                            var arr = [];
+                            $.each($li, function (i,e) {
+                                arr.push($('a>img', e)[0]);
+                            })
+                            return arr;
+                        };
+
+                        var timer = null,
+                            imgNumFlag = 0;
+                        loadImgFun(imgArrs(), function () {
+                            timer = setInterval(function () {
+                                var $img = $('li:eq('+ imgNumFlag +') .e-eqt-one-gif', $eqtOne);
+
+                                $img.attr('src', $img.attr('lazysrc'));
+
+                                imgNumFlag ++;
+                                
+                                if(imgNumFlag === 4){
+                                    clearInterval(timer);
+                                }
+                            }, 500);
+                        })
+
+
+                    });
+				</script>
+			</section>
+			<%include _includes/modules/footer.html %>
+		</div>
+	</body>
+
+</html>

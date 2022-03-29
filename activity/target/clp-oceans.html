@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+			<!-- <link rel="stylesheet" type="text/css" href="css/adiclub.css"> -->
+			<%include _includes/js.html %>
+				<!-- <script type="text/javascript" src="js/adiclub.js"></script> -->
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+			<!-- 内容部分 -->
+			<section class="container">
+				<style>
+					.article {
+						position: relative;
+					}
+
+					.article>img {
+						width: 100%;
+					}
+
+					.row-clp {
+						display: flex;
+						padding: 20px 14px;
+					}
+
+					.letter-item {
+						width: 25%;
+						padding: 0 12px;
+						margin: 23px 0;
+					}
+
+					.link1 {
+						position: absolute;
+						width: 25%;
+						height: 21%;
+						top: 1%;
+						left: 37.5%;
+					}
+
+					.link2 {
+						position: absolute;
+						width: 25%;
+						height: 12%;
+						top: 1%;
+						left: 37.5%;
+					}
+
+					.link3 {
+						position: absolute;
+						width: 25%;
+						height: 12%;
+						top: 1%;
+						left: 37.5%;
+					}
+
+					.pc-link1,
+					.pc-link2,
+					.pc-link3 {
+						position: absolute;
+						width: 22%;
+						height: 17%;
+						bottom: 9%;
+					}
+
+					.pc-link1 {
+						left: 16%;
+					}
+
+					.pc-link2 {
+						left: 39%;
+					}
+
+					.pc-link3 {
+						left: 62.2%;
+					}
+
+					@media (max-width: 1024px) {
+						.link1 {
+							position: absolute;
+							width: 66%;
+							height: 19%;
+							top: 4%;
+							left: 17.5%;
+						}
+
+						.link2 {
+							position: absolute;
+							width: 66%;
+							height: 14%;
+							top: 1%;
+							left: 17.5%;
+						}
+
+						.link3 {
+							position: absolute;
+							width: 66%;
+							height: 12%;
+							top: 1%;
+							left: 17.5%;
+						}
+
+						.mob-link1,
+						.mob-link2,
+						.mob-link3 {
+							position: absolute;
+							width: 74%;
+							height: 11%;
+							left: 13%;
+
+						}
+
+						.mob-link1 {
+							bottom: 32%;
+						}
+
+						.mob-link2 {
+							bottom: 17.5%;
+						}
+
+						.mob-link3 {
+							bottom: 3%;
+						}
+						.app{
+							position: absolute;
+							width: 32%;
+							height: 15%;
+							left: 17%;
+							bottom: 6%;
+						}
+						.google{
+							position: absolute;
+							width: 32%;
+							height: 15%;
+							left: 51%;
+							bottom: 6%;
+						}
+					}
+				</style>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/pc/pc_01.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_01.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_01.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/pc/pc_02.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_02.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_02.jpg&quot;}}">
+					<div class="none-sm">
+						<span class="pc-link1 tab" data-sign="pc-link1"></span>
+						<span class="pc-link2 tab" data-sign="pc-link2"></span>
+						<span class="pc-link3 tab" data-sign="pc-link3"></span>
+					</div>
+					<div class="none block-sm">
+						<span class="mob-link1 tab" data-sign="pc-link1"></span>
+						<span class="mob-link2 tab" data-sign="pc-link2"></span>
+						<span class="mob-link3 tab" data-sign="pc-link3"></span>
+					</div>
+				</article>
+				<article class="article" id="pc-link1">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+																											&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/pc/pc_03.jpg&quot;},
+																											&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_03.jpg&quot;},
+																											&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_03.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+																											&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/pc/pc_04.jpg&quot;},
+																											&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_04.jpg&quot;},
+																											&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_04.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/pc/pc_05.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_05.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_05.jpg&quot;}}">
+					<a class="link1"
+						href="https://www.runtastic.com/challenges/runtastic/rfto21/join?utm_source=adidas&utm_medium=website&utm_campaign=rfto21_aj&utm_content=CATLP_RU&utm_term=18-05-2021"></a>
+					<div class="none block-sm">
+						<a class="app" href="https://apps.apple.com/hk/app/id1035263816?ign-mpt=uo%3D4"></a>
+						<a class="google"
+							href="https://play.google.com/store/apps/details?id=com.runtastic.android.results.lite&referrer=adjust_reftag%3Dc4VFZBvVJNXXA%26utm_source%3DRuntastic"></a>
+					</div>
+				</article>
+				<article class="article" id="pc-link2">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/pc/pc_06.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_06.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_06.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/pc/pc_07.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_07.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_07.jpg&quot;}}">
+				</article>
+				<article class="article none-sm">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/pc/pc_08.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/pc/pc_09a.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_08.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_08.jpg&quot;}}">
+					<a class="link2"
+						href="https://www.runtastic.com/challenges/runtastic/rfto21/join?utm_source=adidas&utm_medium=website&utm_campaign=rfto21_aj&utm_content=CATLP_RU&utm_term=18-05-2021"></a>
+				</article>
+				<article class="article" id="pc-link3">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+					data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/pc/pc_10a.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_09.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_09.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/pc/pc_11.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_10.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/OCEAN/mob/mob_10.jpg&quot;}}">
+					<a class="link3" href="https://www.adidas.com.hk/primeblue/all"></a>
+				</article>
+
+
+				<script type="text/javascript">
+					$(function () {
+						// 换图 + 懒加载
+						$.spice.lazyLoad('img[lazysrc]', {
+							attr: 'lazysrc'
+						});
+						$.spice.tools.changeImageSrc({
+							callBack: function (img, self) {
+								$.spice.lazyLoad('img[lazysrc]', {
+									attr: self.opt.lazyData,
+									prestrain: 1
+								});
+							}
+						});
+						$('.tab').on('tap', function () {
+							var target = $(this).attr('data-sign');
+							target_height = $('#' + target).offset().top;
+							$("html,body").animate({
+								scrollTop: target_height
+							}, 500);
+						})
+					});
+</script>
+			</section>
+
+			<%include _includes/modules/footer-no-back-top.html %>
+				<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

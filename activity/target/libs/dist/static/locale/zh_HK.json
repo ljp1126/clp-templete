@@ -1,0 +1,61 @@
+{
+  "general": {
+    "today": "今日",
+    "month": {
+      "0": "一月",
+      "1": "二月",
+      "2": "三月",
+      "3": "四月",
+      "4": "五月",
+      "5": "六月",
+      "6": "七月",
+      "7": "八月",
+      "8": "九月",
+      "9": "十月",
+      "10": "十一月",
+      "11": "十二月"
+    },
+    "ordinal": {
+      "st": "",
+      "nd": "",
+      "rd": "",
+      "th": ""
+    },
+    "launchDate": "2018年6月8日",
+    "endDate": "2018年7月8日",
+    "error": "噢，發生錯誤。請稍後再試。"
+  },
+  "teaser": {
+    "distance": {
+      "top": "Contributed",
+      "amount": "8.403.081",
+      "label": "總跑步距離公里"
+    },
+    "members": {
+      "top": "由6月8日至7月8日",
+      "amount": "744.440",
+      "label": "環球跑手"
+    },
+    "intro": {
+      "label01": "地球上每分鐘都有一輛貨車量的塑膠廢料流入海洋。",
+      "label02": "這情況必須停止。",
+      "label03": "立即加入行動！"
+    },
+    "cta": {
+      "label01": "每公里都有特別意義",
+      "label02": "查看如何可作出貢獻"
+    },
+    "end": {
+      "label01": "來自世界各地的獨立跑手一同參與，令Run for the Oceans這活動獲得足以影響世界環境的成功。<br />致各位參與跑步活動、提升大眾關注及協助與支持Parley Ocean Plastic Program的人士⋯⋯ ",
+      "label02": "衷心感謝！"
+    }
+  },
+  "preLoader": {
+    "title": "Run for the Oceans",
+    "subtitle": "載入中"
+  },
+  "app": {
+    "name": "Run for the Oceans",
+    "slug": "parley-ss18-rfto"
+  }
+}

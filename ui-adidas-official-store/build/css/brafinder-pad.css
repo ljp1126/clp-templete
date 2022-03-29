@@ -1,0 +1,458 @@
+@charset "UTF-8";
+.article-shopping-assistant-header {
+  height: 67px;
+  line-height: 67px;
+  background: #000;
+  text-align: center;
+}
+.article-shopping-assistant-header .logo {
+  width: 60px;
+}
+.article-shopping-assistant-header .title {
+  font-size: 23px;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.article-shopping-assistant-tab {
+  height: 57px;
+  line-height: 57px;
+}
+.article-shopping-assistant-tab ul {
+  font-size: 0;
+  text-align: center;
+}
+.article-shopping-assistant-tab ul li {
+  display: inline-block;
+  font-size: 18px;
+  color: #929292;
+  font-weight: bold;
+  margin: 0 10px;
+}
+.article-shopping-assistant-tab ul li .triangle {
+  margin: 0 10px;
+}
+.article-shopping-assistant-tab ul li .triangle:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: inline-block;
+  overflow: hidden;
+  border: 6px solid transparent;
+  border-left-color: #929292;
+}
+.article-shopping-assistant-tab ul li.is-active {
+  color: #8bcbce;
+}
+.article-shopping-assistant-tab ul li:nth-child(odd) {
+  cursor: pointer;
+}
+.article-shopping-assistant-container {
+  background-image: url(../images/brafinder-pad/step-bg-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.article-shopping-assistant-container .step {
+  display: none;
+}
+.article-shopping-assistant-container .step .box {
+  text-align: center;
+}
+.article-shopping-assistant-container .step .box .top > h2 {
+  font-size: 31px;
+  color: #fff;
+}
+.article-shopping-assistant-container .step .box .top > h1 {
+  font-size: 40px;
+  color: #8bcbce;
+}
+.article-shopping-assistant-container .step .box .top > p {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 20px;
+  line-height: 24px;
+}
+.article-shopping-assistant-container .step.is-active {
+  display: block;
+}
+.article-shopping-assistant-container .step.step-1 .box {
+  max-width: 523px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 6px;
+}
+.article-shopping-assistant-container .step.step-1 .box .top > h2 {
+  font-size: 31px;
+  color: #fff;
+}
+.article-shopping-assistant-container .step.step-1 .box .top > h1 {
+  font-size: 40px;
+  color: #fff;
+}
+.article-shopping-assistant-container .step.step-1 .box .top > p {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 20px;
+  line-height: 24px;
+}
+.article-shopping-assistant-container .step.step-1 .box .type-option-box {
+  margin-top: 20px;
+}
+.article-shopping-assistant-container .step.step-1 .box .type-option-box .type-option {
+  margin-bottom: 10px;
+}
+.article-shopping-assistant-container .step.step-1 .box .type-option-box .type-option .title {
+  font-size: 24px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  position: relative;
+}
+.article-shopping-assistant-container .step.step-1 .box .type-option-box .type-option .content {
+  margin-top: 10px;
+}
+.article-shopping-assistant-container .step.step-1 .box .type-option-box .type-option .content ul {
+  font-size: 0;
+}
+.article-shopping-assistant-container .step.step-1 .box .type-option-box .type-option .content ul li {
+  display: inline-block;
+  margin: 0 25px;
+}
+.article-shopping-assistant-container .step.step-1 .box .type-option-box .type-option .content ul li .img-box img.hover {
+  display: none;
+}
+.article-shopping-assistant-container .step.step-1 .box .type-option-box .type-option .content ul li span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+.article-shopping-assistant-container .step.step-1 .box .type-option-box .type-option.is-active .title {
+  color: #82d0c5;
+}
+.article-shopping-assistant-container .step.step-1 .box .type-option-box .type-option.is-active .title:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #82d0c5;
+  height: 2px;
+  bottom: -2px;
+}
+.article-shopping-assistant-container .step.step-1 .box .type-option-box .type-option.is-active .content ul li .img-box img {
+  display: none;
+}
+.article-shopping-assistant-container .step.step-1 .box .type-option-box .type-option.is-active .content ul li .img-box img.hover {
+  display: inline-block;
+}
+.article-shopping-assistant-container .step.step-1 .box .type-option-box .type-option.is-active .content ul li span {
+  color: #82d0c5;
+}
+.article-shopping-assistant-container .step.step-2 .box {
+  max-width: 740px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content {
+  margin-top: 8px;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-title {
+  font-size: 0;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-title li {
+  font-size: 24px;
+  color: #777777;
+  display: inline-block;
+  width: 50%;
+  height: 63px;
+  line-height: 63px;
+  background: rgba(0, 0, 0, 0.2);
+  position: relative;
+  cursor: pointer;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-title li.is-active {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-title li.is-active:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #82d0c5;
+  height: 3px;
+  bottom: 0;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description {
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  padding-top: 50px;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description.is-active {
+  display: block;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description > h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description > p {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 47px;
+  line-height: 18px;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description > p span {
+  font-weight: bold;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description .size-select-content {
+  width: 232px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description .size-select-content .size-select-item {
+  float: left;
+  width: 108px;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description .size-select-content .size-select-item:last-child {
+  float: right;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description .size-select-content .size-select-item > p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description .size-select-content .size-select-item > p span {
+  font-size: 16px;
+  font-weight: normal;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description .size-select-content .size-select-item .size-selector-box {
+  display: inline-block;
+  margin-top: 5px;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description .size-select-content .size-select-item .size-selector-box .btn {
+  width: 100%;
+  line-height: 58px;
+  height: 58px;
+  background: #fff;
+  border-top: 1px solid #aeaeae;
+  display: block;
+  font-size: 14px;
+  color: #000;
+  padding: 0;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description .size-select-content .size-select-item .size-selector-box .btn .dropdown-text {
+  font-size: 27px;
+  padding-right: 0;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description .size-select-content .size-select-item .size-selector-box .btn .dropdown-text.is-empty {
+  position: relative;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description .size-select-content .size-select-item .size-selector-box .btn .dropdown-text.is-empty:after {
+  content: '';
+  width: 37px;
+  height: 7px;
+  background: #000;
+  position: absolute;
+  top: 26px;
+  left: 32px;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description .size-select-content .size-select-item .size-selector-box .btn .dropdown-icon {
+  right: 12px;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description .size-select-content .size-select-item .size-selector-box .btn .dropdown-icon:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: inline-block;
+  overflow: hidden;
+  border: 5px solid transparent;
+  border-top-color: #000000;
+  vertical-align: middle;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description .btn-calculation {
+  min-width: 328px;
+  height: 45px;
+  line-height: 45px;
+  margin-top: 27px;
+  margin-bottom: 30px;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description .btn-calculation span {
+  font-weight: bold;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description.description-knowsize {
+  padding-bottom: 210px;
+  margin-bottom: 147px;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description.description-knowsize > p {
+  margin-top: 17px;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description.description-knowsize > p:first-of-type {
+  margin-top: 47px;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description.description-knowsize .size-select-content {
+  margin-top: 37px;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description.description-knowsize .measurement-demonstration-img {
+  position: relative;
+  max-width: 553px;
+  margin: 0 auto;
+  margin-top: 43px;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description.description-knowsize .measurement-demonstration-img img {
+  width: 100%;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description.description-knowsize .measurement-demonstration-img p {
+  font-size: 24px;
+  color: #FFFFFF;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  line-height: 42px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description.description-knowsize .info {
+  font-size: 24px;
+  color: #fff;
+}
+.article-shopping-assistant-container .step.step-2 .box .size-content .size-tabs-content .size-description.description-knowsize .btn-calculation {
+  margin-top: 40px;
+}
+.article-shopping-assistant-container .step.step-3 {
+  background: rgba(0, 0, 0, 0.5);
+}
+.article-shopping-assistant-container .step.step-3 .box {
+  padding-top: 60px;
+  text-align: center;
+  display: none;
+}
+.article-shopping-assistant-container .step.step-3 .box.is-active {
+  display: block;
+}
+.article-shopping-assistant-container .step.step-3 .box .close-size {
+  font-size: 18px;
+  color: #8bcbce;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.article-shopping-assistant-container .step.step-3 .box .top > h1 {
+  margin-top: 8px;
+}
+.article-shopping-assistant-container .step.step-3 .box .top > p {
+  font-size: 24px;
+  margin-top: 36px;
+  line-height: 28px;
+}
+.article-shopping-assistant-container .step.step-3 .box .top .triangle {
+  display: inline-block;
+  margin-top: 15px;
+}
+.article-shopping-assistant-container .step.step-3 .box .top .triangle:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: inline-block;
+  overflow: hidden;
+  border: solid transparent;
+  border-top-color: #fff;
+  border-top-width: 14px;
+  border-right-width: 8px;
+  border-bottom-width: 6px;
+  border-left-width: 8px;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade {
+  margin-top: 40px;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade .range {
+  background: #000;
+  color: #fff;
+  padding: 24px 0;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade .range h1 {
+  font-size: 33px;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade .range p {
+  font-size: 27px;
+  margin-top: 6px;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade .recommend:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 10px;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade .recommend ul {
+  font-size: 0;
+  text-align: center;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade .recommend ul li {
+  display: inline-block;
+  position: relative;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade .recommend ul li img {
+  width: 100%;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade .recommend ul li .text {
+  width: 100%;
+  height: 88px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade .recommend ul li .text p {
+  color: #fff;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade .recommend ul li .text p:nth-child(1) {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade .recommend ul li .text p:nth-child(2) {
+  font-size: 15px;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade .recommend ul li .text p:nth-child(3) {
+  font-size: 20px;
+  margin-top: 6px;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade .recommend.recommend-2 ul li {
+  width: 50%;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade .recommend.recommend-3 ul li {
+  width: 33.333%;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade.high .recommend:before {
+  background: #e31a55;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade.medium .recommend:before {
+  background: #dbd74a;
+}
+.article-shopping-assistant-container .step.step-3 .box .grade.low .recommend:before {
+  background: #94cdc3;
+}
+.article-shopping-assistant-container .step.step-3 .code-box {
+  background-image: url(../images/brafinder-pad/step-3/code-box-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  color: #fff;
+  text-align: center;
+  padding: 77px 0 60px 0;
+}
+.article-shopping-assistant-container .step.step-3 .code-box > p {
+  font-size: 18px;
+}
+.article-shopping-assistant-container .step.step-3 .code-box img {
+  width: 245px;
+  margin-top: 30px;
+}
+.article-shopping-assistant-container .step.step-3 .code-box .info {
+  margin-top: 10px;
+}
+.article-shopping-assistant-container .step.step-3 .code-box .info p {
+  font-size: 27px;
+  line-height: 36px;
+}

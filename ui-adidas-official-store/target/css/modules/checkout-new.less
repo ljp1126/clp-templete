@@ -1,0 +1,408 @@
+
+.submit-btn-fixed{
+	display: none;
+}
+@media (max-width: 1024px){
+	.header-simple{
+		height: 48px;
+		.header-container{
+			>a{
+				line-height: 48px;
+			}
+			.header-simple-right{
+				height: 48px;
+				line-height: 48px;
+			}
+		}
+	}
+    .checkout-new-container{
+        margin:0 auto;
+        .relevant-description,
+        .delivery-address,
+        .distribution-method{
+            display:none;
+        }
+        .order-content-right{
+            .order-summary-box{
+                .summary-title,
+                .check-product-list,
+                .coupon-box{
+                    display: none;
+                }
+            }
+        }
+        .order-title{
+            font-size: 14px;
+            color: #000000;
+            line-height: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .delivery-address-box{
+			padding: 15px 20px;
+			background: #fff;
+            >div{
+                border-bottom: 1px solid #f0f0f0;
+                padding: 0px 0px 10px;
+            }
+            .address-info{
+                position: relative;
+                padding: 0 22px 0 0;
+                p{
+                    font-size: 12px;
+                    color: #000;
+                    line-height: 14px;
+                    margin-top: 6px;
+                    .address-info-phone{
+                        float:right;
+                    }
+                    &:first-child{
+                        margin-top: 0px;
+                    }
+                }
+                i{
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    margin: -8px 0 0 0;
+                }
+            }
+        }
+        .order-list-box{
+            background: #f0f0f0;
+            padding-bottom: 2px;
+            .order-summary-box{
+                padding: 0 20px;
+                background: #fff;
+                .check-product-list {
+                    padding: 0;
+                    border-bottom: 0px solid #C7CBCC;
+                }
+                .summary-title{
+                    font-size: 14px;
+                    color: #000000;
+                    line-height: 14px;
+                    font-weight: bold;
+                    padding: 0;
+                    margin-bottom: 10px;
+                    border-bottom: 0px dotted #C8CBCC;
+                }
+                .check-product-list .viewport .thumbnail .summary-list-box{
+                    .gift-item{
+                        .gift-tit{
+                            margin-bottom: 12px;
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+                    }
+                    .summary-list-item{
+						padding-bottom:10px;
+                        border-bottom: 0px dotted #f0f0f0;
+                        .gift-item{
+                            border: none;
+                            margin: 15px 0 0;
+                            padding: 0;
+                        }
+                        .summary-list-left{
+                            max-width: 60px;
+                        }
+                        .summary-list-left-2{
+                            max-width: 50px;
+                        }
+                        .summary-list-right{
+                            padding-left: 70px;
+                            min-height: 60px;
+                            position: relative;
+                            a{
+                                font-size: 12px;
+                                margin-bottom: 10px;
+                            }
+                            p{
+                                line-height: 18px;
+                                &.total-price{
+                                    position: absolute;
+                                    bottom: 0;
+                                    right: 0;
+                                    margin:0 ;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                        .summary-list-right-2{
+                            padding-left: 100px;
+                        }
+                    }
+                    >div{
+                        // border-bottom: 1px dotted #f0f0f0 !important;
+                        &:last-child{
+                            border-bottom: 0px dotted #f0f0f0 !important;
+                        }
+                    }
+                }
+            }
+        }
+        .distribution-way-box,
+        .payment-method-new{
+            border-bottom: 2px solid #f0f0f0;
+            position: relative;
+			padding: 13px 20px;
+			background: #fff;
+            .order-title{
+                margin: 0;
+            }
+            .distribution-way-info{
+                position: absolute;
+                right: 20px;
+                top: 14px;
+                margin-top: 0px;
+                padding-right: 22px;
+                p{
+                    font-size: 12px;
+                    color: #000000;
+                    letter-spacing: 0;
+                    line-height: 14px;
+                    span{
+                        display: inline-block;
+                        margin-left: 5px;
+                    }
+                    img{
+                        width: 16px;
+                        vertical-align: middle;
+                        margin-top: -2px;
+                    }
+                }
+                i{
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    margin-top: -8px;
+                }
+            }
+        }
+        .payment-method-new{
+            position: relative;
+            margin: 0;
+            .order-title{
+                padding: 0;
+            }
+            .payment-method-content {
+                display: none;
+            }
+            .checked-select-con{
+                padding: 0;
+                margin-top: 16px;
+                line-height: 14px;
+                .checked-select{
+                    span{
+                        font-size: 12px;
+                        margin-left: 5px;
+                    }
+                }
+                .icon-checked{
+                    width: 14px;
+                    height: 14px;
+                    background-size: 340px;
+                    background-position: -74px -75px;
+                    &.is-active{
+                        background-position: -93px -75px !important
+                    }
+                }
+                &.invoice-select{
+                    .invoice-box{
+                        padding: 15px 0 0;
+                        margin: 15px 0 1px;
+                        border-top: 1px solid #DDDDDD;
+                        .invoice-title{
+                            line-height: 14px;
+                            margin-right: 5px;
+                            span{
+                                margin-left: 0px;
+                            }
+                        }
+                        >div{
+                            line-height: 14px;
+                            .icon-radio{
+                                background-size: 330px;
+                                background-position: -59px -237px;
+                                width: 14px;
+                                height: 14px;
+                                &.is-active{
+                                    background-position: -79px -237px;
+                                }
+                            }
+                            span{
+                                font-size: 12px;
+                                margin-left: 5px;
+                            }
+                        }
+                        .invoice-company{
+                            margin: 0 0 0 32px;
+                        }
+                        .ordinary-invoice{
+                            .invoice-title{
+                                span{
+                                    line-height: 40px;
+                                }
+                            }
+                        }
+                        .invoice-content-box{
+                            margin: 15px 0 0;
+                        }
+                        .ordinary-invoice .form-group .form-input{
+                            margin-top: 15px;
+                        }
+                        .value-added-tax-invoice{
+                            .value-added-tax-invoice-content{
+                                >div{
+                                    margin-top: 5px;
+                                    &:first-child{
+                                        margin-top: 0;
+                                    }
+                                    span{
+                                        margin-left: 0px;
+                                    }
+                                }
+                            }
+                            .value-added-tax-invoice-form{
+                                .form-group{
+                                    margin: 0 0 15px;
+                                    input{}
+                                }
+                                .invoice-btn{
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .order-summary-box{
+            .order-price-classify{
+                border: none;
+                padding: 13px 0 9px;
+                > div{
+                    > span{
+                        &:first-child,
+                        &:last-child {
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+            .price-totle-wrap{
+                border-top: 1px solid #F0F0F0;
+                padding: 10px 0;
+                .product-total{
+                    > span{
+                        &:first-child,
+                        &:last-child{
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+                .integral{
+                    margin: 7px 0 0;
+                    > span {
+                        font-size: 12px;
+                        line-height: 14px;
+                    }
+                }
+                .diy-tit {
+                    padding-top: 8px;
+                }
+            }
+            .checked-select-con{
+                line-height: 16px;
+                margin: 0;
+                .icon-checked{
+                    width: 14px;
+                    height: 14px;
+                    background-size: 340px;
+                    background-position: -74px -75px;
+                    margin: 5px 5px 5px 0px;
+                    &.is-active{
+                        background-position: -93px -75px !important
+                    }
+                }
+                .checked-select-hotspot{
+                        position: absolute;
+                        top: -20%;
+                        left: -50%;
+                        width: 75%;
+                        height: 145%;
+                }
+                .checked-select span{
+                    margin-left: 5px;
+                }
+            }
+            .submit-button-box{
+                padding-top: 20px;
+            }
+            .mob-commutator{
+                padding: 0 0 20px;
+            }
+        }
+        .coupon-box-new{
+            .distribution-way-info{
+                p{
+                    span{
+						color: #999;
+						&.is-active{
+							color: #C53622;
+						}
+                    }
+                }
+            }
+		}
+		.submit-btn-fixed{
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			background: #fff;
+			width: 100%;
+			height: auto;
+			z-index: 2;
+			font-size: 12px;
+			.submit-content{
+				border-top: 1px solid #EFEFEF;
+				p{
+					float: left;
+					width: 55%;
+					height: 42px;
+					line-height: 42px;
+					padding-left: 20px;
+				}
+				a{
+					float: left;
+					width: 45%;
+					height: 42px;
+					font-size: 16px;
+					line-height: 42px;
+				}
+			}
+			.address-info{
+				border-top: 1px solid #EFEFEF;
+				padding: 10px 40px 10px 20px;
+                display: none;
+                // background: #EBEBEB;
+                background-color:rgba(235,235,235,0.5);
+                // background: #f9f9f9;
+				p{
+					line-height: 14px;
+					margin-top: 6px;
+					&:first-child{
+						margin-top: 0px;
+					}
+					.address-info-phone{
+						float: right;
+					}
+				}
+			}
+		}
+
+    }
+
+}

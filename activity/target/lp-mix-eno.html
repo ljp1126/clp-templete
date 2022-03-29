@@ -1,0 +1,603 @@
+<html>
+<head>
+	<%include _includes/meta.html %>
+	<title>lp-mix-eno</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+		<style type="text/css">
+			.article img {
+			  display: block;
+			  width: 100%;
+			}
+			.article-lp-video {
+			  position: relative;
+			}
+			.article-lp-video .lp-video-btn {
+			  position: absolute;
+			  width: 6.8%;
+			  height: 20%;
+			  top: 40%;
+			  left: 47.2%;
+			  cursor: pointer;
+			}
+			.pic-p {
+			  position: relative;
+			}
+			.pic-p .btn {
+			  display: block;
+			  margin: 0 auto;
+			  width: 460px;
+			  font-size: 20px;
+			  height: 60px;
+			  line-height: 58px;
+			  border: 1px solid #fff;
+			  font-family: "adineueprobold", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+			}
+			.pic-p .btn span:after {
+			  top: 4px;
+			}
+			.pic-p .btn-black {
+			  background-color: transparent;
+			}
+			.txt-box {
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			}
+			.txt-box .btn-black {
+			  margin-top: 25px;
+			}
+			.txt-box2 {
+			  position: absolute;
+			  bottom: 8.8%;
+			  left: 0;
+			  width: 100%;
+			}
+			.article .pos-img {
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+			}
+			.large-box {
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+			}
+			.large-box > div {
+			  position: absolute;
+			  overflow: hidden;
+			}
+			.large-box .large-item1 {
+			  width: 15.66%;
+			  top: 17%;
+			  left: 8.5%;
+			}
+			.large-box .large-item2 {
+			  left: 25.4%;
+			  width: 20.73%;
+			  top: 9.2%;
+			}
+			.large-box .large-item3 {
+			  width: 26.69%;
+			  left: 47.58%;
+			  top: 0.7%;
+			}
+			.large-box .large-item4 {
+			  width: 15.66%;
+			  left: 75.4%;
+			  top: 17%;
+			}
+			.large-box .large-item5 {
+			  width: 15.66%;
+			  top: 41%;
+			  left: 13.8%;
+			}
+			.large-box .large-item6 {
+			  width: 26.69%;
+			  top: 41.5%;
+			  left: 30.6%;
+			}
+			.large-box .large-item7 {
+			  width: 21%;
+			  top: 41.4%;
+			  left: 58.6%;
+			}
+			.last-article .pic-p .span-box {
+			  position: absolute;
+			  width: 100%;
+			  height: 46%;
+			  top: 14%;
+			}
+			.last-article .pic-p .span-box span {
+			  float: left;
+			  display: block;
+			  height: 100%;
+			  cursor: pointer;
+			}
+			.last-article .pic-p .scope1 {
+			  width: 19.85%;
+			  left: 0;
+			}
+			.last-article .pic-p .scope2 {
+			  width: 29.7%;
+			  left: 19.85%;
+			}
+			.last-article .pic-p .scope3 {
+			  width: 29.7%;
+			  right: 20.75%;
+			}
+			.last-article .pic-p .scope4 {
+			  width: 20.75%;
+			  right: 0;
+			}
+			.last-article .pic-p .btn {
+			  position: relative;
+			  width: 100%;
+			  cursor: pointer;
+			  font-size: 30px;
+			  height: 76px;
+			  line-height: 74px;
+			}
+			.last-article .pic-p .btn img {
+			  display: inline-block;
+			  width: 30px;
+			  height: 30px;
+			  -webkit-transition: all 0.3s ease-in-out;
+			  -moz-transition: all 0.3s ease-in-out;
+			  -ms-transition: all 0.3s ease-in-out;
+			  -o-transition: all 0.3s ease-in-out;
+			  transition: all 0.3s ease-in-out;
+			  position: relative;
+			  top: -3px;
+			  left: 20px;
+			}
+			.last-article .pic-p .btn:hover img {
+			  left: 23px;
+			}
+			.last-article .scroll-box {
+			  display: none;
+			  position: absolute;
+			  width: 32%;
+			  min-height: 572px;
+			  top: 0;
+			}
+			.last-article .scroll-box .swiper-container {
+			  width: 100%;
+			  min-height: 572px;
+			}
+			.last-article .scroll-box .swiper-slide {
+			  position: absolute;
+			  display: none;
+			}
+			.swiper-button-prev,
+			.swiper-button-next {
+			  display: none;
+			}
+			@media (max-width: 1300px) {
+			  .last-article .scroll-box,
+			  .last-article .scroll-box .swiper-container {
+			    min-height: 407px;
+			  }
+			}
+			@media (max-width: 1024px) {
+			  .article-lp-video .lp-video-btn {
+			    width: 17.2%;
+			    height: 21%;
+			    top: 37.5%;
+			    left: 43%;
+			  }
+			  .pic-p .btn {
+			    width: 620px;
+			    font-size: 30px;
+			    height: 80px;
+			    line-height: 78px;
+			  }
+			  .pic-p .btn span:after {
+			    top: 13px;
+			  }
+			  .txt-box2 {
+			    bottom: 9.5%;
+			  }
+			  .last-article .pic-p .btn {
+			    height: 58px;
+			    line-height: 56px;
+			    font-size: 23px;
+			  }
+			  .last-article .pic-p .btn img {
+			    width: 24px;
+			    height: 24px;
+			    left: 16px;
+			    top: -2px;
+			  }
+			  .last-article .pic-p .btn:hover img {
+			    left: 16px;
+			  }
+			  .last-article .scroll-box {
+			    display: block;
+			    width: 100%;
+			    min-height: 0;
+			  }
+			  .last-article .scroll-box .swiper-container {
+			    width: 62.6%;
+			    min-height: 0;
+			  }
+			  .last-article .scroll-box .swiper-wrapper {
+			    width: 100%;
+			  }
+			  .last-article .scroll-box .swiper-slide {
+			    position: static;
+			    display: block;
+			  }
+			  .swiper-button-prev,
+			  .swiper-button-next {
+			    display: block;
+			    background: none;
+			    width: 60px;
+			    height: 100px;
+			    margin-top: -50px;
+			  }
+			  .swiper-button-prev i,
+			  .swiper-button-next i {
+			    position: absolute;
+			    display: inline-block;
+			    width: 46px;
+			    height: 80px;
+			    top: 50%;
+			    margin-top: -20px;
+			    background: url("../../static/images/lp-mix-eno/arr-icon.png") no-repeat;
+			  }
+			  .swiper-button-prev {
+			    left: 40px;
+			  }
+			  .swiper-button-next {
+			    right: 40px;
+			  }
+			  .swiper-button-prev i {
+			    left: 0;
+			    background-position: 0 0;
+			  }
+			  .swiper-button-next i {
+			    right: 0;
+			    background-position: 0 -80px;
+			  }
+			}
+			@media (max-width: 749px) {
+			  .pic-p .btn {
+			    width: 310px;
+			    font-size: 15px;
+			    height: 40px;
+			    line-height: 38px;
+			  }
+			  .pic-p .btn span:after {
+			    top: 1px;
+			  }
+			  .last-article .pic-p .btn {
+			    height: 27px;
+			    line-height: 26px;
+			    font-size: 12px;
+			  }
+			  .last-article .pic-p .btn img {
+			    width: 12px;
+			    height: 12px;
+			    left: 8px;
+			  }
+			  .last-article .pic-p .btn:hover img {
+			    left: 8px;
+			  }
+			  .swiper-button-prev {
+			    left: 20px;
+			  }
+			  .swiper-button-next {
+			    right: 20px;
+			  }
+			  .swiper-button-prev i,
+			  .swiper-button-next i {
+			    width: 23px;
+			    height: 40px;
+			    background: url("../../static/images/lp-mix-eno/arr-icon.png") no-repeat;
+			    background-size: 23px 80px;
+			  }
+			  .swiper-button-prev i {
+			    background-position: 0 0;
+			  }
+			  .swiper-button-next i {
+			    background-position: 0 -40px;
+			  }
+			}
+
+		</style>
+		<!-- video 模块一-->
+		<article class="article article-lp-video">
+			<img src="images/blank.gif"
+				 lazysrc="null"
+				 data-image='{
+				 "standard":{"high":"", "normal":"../static/images/lp-mix-eno/eno-pc1.gif"},
+				 "medium":{"high":"",  "normal":"../static/images/lp-mix-eno/eno-mb1.gif"},
+				 "small":{"high":"", "normal":"../static/images/lp-mix-eno/eno-mb1.gif"}}'
+			/>
+		</article>
+		<!-- 模块二-->
+		<article class="article">
+			<div class="pic-p">
+               	<img src="images/blank.gif"
+                    lazysrc="null"
+                    data-image='{
+                    "standard":{"high":"", "normal":"../static/images/lp-mix-eno/eno-pc2-bg.png"},
+                    "medium":{"high":"",  "normal":"../static/images/lp-mix-eno/eno-mb2-bg.png"},
+                    "small":{"high":"", "normal":"../static/images/lp-mix-eno/eno-mb2-bg.png"}}'
+                />
+
+				<img class="pos-img" src="images/blank.gif"
+					lazysrc="null"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-mix-eno/eno-pc2.jpg"},
+					"medium":{"high":"", "normal":"../static/images/lp-mix-eno/eno-mb2.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-mix-eno/eno-mb2.jpg"}
+				}' />
+				<div class="txt-box">
+					<img class="" src="images/blank.gif"
+						lazysrc="null"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-mix-eno/eno-txt.png"},
+						"medium":{"high":"", "normal":"../static/images/lp-mix-eno/eno-txt-m.png"},
+						"small":{"high":"", "normal":"../static/images/lp-mix-eno/eno-txt-m.png"}
+					}' />
+					<a class="btn btn-white btn-have-arrow" href="https://www.adidas.com.cn/customise_all"><span>探索MI ULTRABOOST XENO</span></a>
+					<a href="https://www.adidas.com.cn/miadidas/4002775_M" class="btn btn-black btn-have-arrow btn-have-opacity"><span>点击购买</span></a>
+				</div>
+			</div>
+		</article>
+		<!-- 模块三-->
+		<article class="article">
+			<div class="pic-p">
+               	<img src="images/blank.gif"
+                    lazysrc="null"
+                    data-image='{
+                    "standard":{"high":"", "normal":"../static/images/lp-mix-eno/eno-pc3-bg.png"},
+                    "medium":{"high":"",  "normal":"../static/images/lp-mix-eno/eno-mb3-bg.png"},
+                    "small":{"high":"", "normal":"../static/images/lp-mix-eno/eno-mb3-bg.png"}}'
+                />
+
+				<img class="pos-img" src="images/blank.gif"
+					lazysrc="null"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-mix-eno/eno-pc3.jpg"},
+					"medium":{"high":"", "normal":"../static/images/lp-mix-eno/eno-mb3.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-mix-eno/eno-mb3.jpg"}
+				}' />
+			</div>
+		</article>
+		<!-- 模块四-->
+		<article class="article">
+			<div class="pic-p">
+               	<img src="images/blank.gif"
+                    lazysrc="null"
+                    data-image='{
+                    "standard":{"high":"", "normal":"../static/images/lp-mix-eno/eno-pc4-bg.png"},
+                    "medium":{"high":"",  "normal":"../static/images/lp-mix-eno/eno-mb4-bg.png"},
+                    "small":{"high":"", "normal":"../static/images/lp-mix-eno/eno-mb4-bg.png"}}'
+                />
+
+				<img class="pos-img" src="images/blank.gif"
+					lazysrc="null"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-mix-eno/eno-pc4.jpg"},
+					"medium":{"high":"", "normal":"../static/images/lp-mix-eno/eno-mb4.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-mix-eno/eno-mb4.jpg"}
+				}' />
+			</div>
+		</article>
+		<!-- 模块五-->
+		<article class="article">
+			<div class="pic-p">
+               	<img src="images/blank.gif"
+                    lazysrc="null"
+                    data-image='{
+                    "standard":{"high":"", "normal":"../static/images/lp-mix-eno/eno-pc5-bg.png"},
+                    "medium":{"high":"",  "normal":"../static/images/lp-mix-eno/eno-mb5-bg.png"},
+                    "small":{"high":"", "normal":"../static/images/lp-mix-eno/eno-mb5-bg.png"}}'
+                />
+
+				<img class="pos-img" src="images/blank.gif"
+						lazysrc="null"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-mix-eno/eno-pc5-bg.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-mix-eno/eno-mb5.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-mix-eno/eno-mb5.jpg"}
+					}' />
+				<div class="large-box none-sm">
+					<div class="large-item1 events-scale">
+						<img src="images/blank.gif" lazysrc="../static/images/lp-mix-eno/large1.jpg"/>
+					</div>
+					<div class="large-item2 events-scale">
+						<img src="images/blank.gif" lazysrc="../static/images/lp-mix-eno/large2.jpg" />
+					</div>
+					<div class="large-item3 events-scale">
+						<img src="images/blank.gif" lazysrc="../static/images/lp-mix-eno/large3.jpg" />
+					</div>
+					<div class="large-item4 events-scale">
+						<img src="images/blank.gif" lazysrc="../static/images/lp-mix-eno/large4.jpg" />
+					</div>
+					<div class="large-item5 events-scale">
+						<img src="images/blank.gif" lazysrc="../static/images/lp-mix-eno/large5.jpg" />
+					</div>
+					<div class="large-item6 events-scale">
+						<img src="images/blank.gif" lazysrc="../static/images/lp-mix-eno/large6.jpg" />
+					</div>
+					<div class="large-item7 events-scale">
+						<img src="images/blank.gif" lazysrc="../static/images/lp-mix-eno/large7.jpg" />
+					</div>
+				</div>
+				<div class="txt-box2">
+					<a href="https://www.adidas.com.cn/customise_all" class="btn btn-black btn-have-arrow btn-have-opacity learn-more-btn"><span>了解更多</span></a>
+				</div>
+			</div>
+		</article>
+		<!-- 模块六-->
+		<article class="article last-article">
+			<div class="pic-p">
+               	<img src="images/blank.gif"
+                    lazysrc="null"
+                    data-image='{
+                    "standard":{"high":"", "normal":"../static/images/lp-mix-eno/eno-pc6-bg.png"},
+                    "medium":{"high":"",  "normal":"../static/images/lp-mix-eno/eno-mb6-bg.png"},
+                    "small":{"high":"", "normal":"../static/images/lp-mix-eno/eno-mb6-bg.png"}}'
+                />
+
+				<img class="pos-img" src="images/blank.gif"
+						lazysrc="null"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-mix-eno/eno-pc6.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-mix-eno/eno-mb6.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-mix-eno/eno-mb6.jpg"}
+					}' />
+				<div class="span-box e-span-tab">
+					<span class="scope1"></span>
+					<span class="scope2"></span>
+					<span class="scope3 pos-right"></span>
+					<span class="scope4 pos-right"></span>
+				</div>
+				<div class="scroll-box">
+					<div class="swiper-container swiper-container-horizontal e-sub-m-swiper">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="https://www.adidas.com.cn/miadidas/4002775_M">
+									<img src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/lp-mix-eno/scr-pc1.jpg"},
+											"medium":{"high":"", "normal":"../static/images/lp-mix-eno/scr-mb1.jpg"},
+											"small":{"high":"", "normal":"../static/images/lp-mix-eno/scr-mb1.jpg"}
+										}' />
+									<span class="btn btn-white" href="https://www.adidas.com.cn/customise_all"><span>点击购买</span><img src="../static/images/lp-mix-eno/eno-arr.png" /></span>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="https://www.adidas.com.cn/miadidas/4002775_M">
+									<img src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/lp-mix-eno/scr-pc2.jpg"},
+											"medium":{"high":"", "normal":"../static/images/lp-mix-eno/scr-mb2.jpg"},
+											"small":{"high":"", "normal":"../static/images/lp-mix-eno/scr-mb2.jpg"}
+										}' />
+									<span class="btn btn-white" href="https://www.adidas.com.cn/customise_all"><span>点击购买</span><img src="../static/images/lp-mix-eno/eno-arr.png" /></span>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="https://www.adidas.com.cn/miadidas/4002775_M">
+									<img src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/lp-mix-eno/scr-pc3.jpg"},
+											"medium":{"high":"", "normal":"../static/images/lp-mix-eno/scr-mb3.jpg"},
+											"small":{"high":"", "normal":"../static/images/lp-mix-eno/scr-mb3.jpg"}
+										}' />
+									<span class="btn btn-white" href="https://www.adidas.com.cn/customise_all"><span>点击购买</span><img src="../static/images/lp-mix-eno/eno-arr.png" /></span>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="https://www.adidas.com.cn/miadidas/4002775_M">
+									<img src="images/blank.gif"
+											data-image='{"standard":{"high":"", "normal":"../static/images/lp-mix-eno/scr-pc4.jpg"},
+											"medium":{"high":"", "normal":"../static/images/lp-mix-eno/scr-mb4.jpg"},
+											"small":{"high":"", "normal":"../static/images/lp-mix-eno/scr-mb4.jpg"}
+										}' />
+									<span class="btn btn-white" href="https://www.adidas.com.cn/customise_all"><span>点击购买</span><img src="../static/images/lp-mix-eno/eno-arr.png" /></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="swiper-button-prev">
+						<i class="icon-arr-left-white"></i>
+					</div>
+					<div class="swiper-button-next">
+						<i class="icon-arr-right-white"></i>
+					</div>
+				</div>
+			</div>
+		</article>
+		</section>
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+<script type="text/javascript">
+	$(function () {
+	    // 换图 + 懒加载
+	    $.spice.lazyLoad('img[lazysrc]', {
+	        attr: 'lazysrc'
+	    });
+	    $.spice.tools.changeImageSrc({
+	        callBack: function(img, self) {
+	            $.spice.lazyLoad('img[lazysrc]', {
+	                attr: self.opt.lazyData,
+	                prestrain: 1
+	            });
+	        }
+	    });
+		//mob最后一屏
+		var mySwiper = new Swiper('.e-sub-m-swiper', {
+			loop:true, //循环播放
+			//autoplay : 3000, //自动播放
+			//speed:1000,//自动播放速度
+			slidesPerView: 1,
+			observer: true,
+			observeParents: true,
+			centeredSlides: false,
+			virtualTranslate: true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			breakpoints: {
+				1024: {
+					//initialSlide: 0,//设定初始化时显示的slide的索引。
+					virtualTranslate: false,
+					slidesPerView: 'auto',
+				}
+			}
+		})
+		var _w;
+		$(window).on('resize.lp', function() {
+			_w = $.spice.getWindowWidth();
+
+			if(_w>1024){
+				// 图片hover放大
+				$('.events-scale img').on('mouseenter', function() {
+					$(this).css({ 'transition': 'transform 7.5s linear', 'transform': 'scale(1.3)' });
+				});
+				// 图片hover复原
+				$('.events-scale img').on('mouseleave', function() {
+					$(this).css({ 'transition': 'none', 'transform': 'none'});
+				});
+				// mob最后一屏
+				$('.last-article .swiper-wrapper').removeAttr('style');
+				$(".e-span-tab>span").off().on("tap",function(){
+					var $this =$(this),
+						$index =$this.index(),
+						$container =$('.last-article .scroll-box');
+
+						$(".last-article .swiper-slide").eq($index).show().siblings().hide();
+						if($this.hasClass('pos-right')){
+							$container.show().css({'right': $this.css('right'),'left' : 'auto'});
+						}else{
+							$container.show().css({'left': $this.css('left'),'right' : 'auto'});
+						}
+				});
+			}else{
+				$('.last-article .scroll-box').removeAttr('style');
+				$('.last-article .swiper-slide').removeAttr('style');
+			}
+
+			// mob最后一屏
+			if (_w > 1024 && $("body").hasClass('swiper-container')) {
+				$.each(mySwiper, function(index, el) {
+					this.init();
+					this.disableTouchControl();
+				});
+			} else if($("body").hasClass('swiper-container')) {
+				$.each(mySwiper, function(index, el) {
+					this.enableTouchControl();
+				});
+			}
+		}).trigger('resize.lp');
+	});
+</script>
+</body>
+</html>

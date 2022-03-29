@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%include _includes/meta.html %>
+	<title>lp-deerupt-campaign</title>
+	<%include _includes/css.html %>
+
+	<%include _includes/js.html %>
+
+	<!-- <script type="text/javascript" src="libs/hotSpot/hotSpot.js"></script> -->
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+
+			<style>
+				.article {
+					position: relative;
+				}
+
+				.article img {
+					width: 100%;
+					height: 100%;
+					height: auto;
+					cursor: pointer;
+				}
+
+				.article-size {
+					margin-top: 20px;
+					margin-bottom: 20px;
+				}
+
+				.article-video1 .video-wrapper .video-content {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					left: 0;
+				}
+
+				.article-video1.video-box .video-wrapper .video-content {
+					position: absolute;
+					height: 100%;
+					width: 94%;
+					left: 3%;
+					z-index: 1;
+				}
+
+				.video-wrapper img {
+					z-index: 10;
+				}
+
+				.article-video1 .video-wrapper .video-content .video {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					visibility: hidden;
+				}
+
+				.article-video1.is-play .video-wrapper .video-content .video {
+					visibility: visible;
+				}
+
+				.article-video1.is-play .video-wrapper .video-code img {
+					visibility: hidden;
+				}
+
+				.text-logo {
+					position: absolute;
+					top: 68%;
+					left: 12.5%;
+					width: 33%;
+				}
+
+				.text-logo h5 {
+					font-size: 42px;
+					line-height: 38px;
+					color: #000;
+				}
+
+				.text-logo P {
+					font-size: 18px;
+					line-height: 24px;
+					color: #000;
+					margin-bottom: 15px;
+				}
+
+				.article-size .size-box {
+					height: 92px;
+					padding-bottom: 26px;
+					display: inline-block;
+					background-color: #fff;
+					padding-bottom: 12px;
+					max-width: 1140px;
+					margin: 0 auto;
+					display: -webkit-flex;
+					display: flex;
+					-webkit-justify-content: center;
+					justify-content: center;
+					-webkit-align-items: center;
+					align-items: center;
+					width: 100%;
+					position: relative;
+				}
+
+				.article-size .size-box h4 {
+					text-align: center;
+					position: relative;
+					margin: 0;
+					-webkit-flex: 1 auto;
+					flex: 1 auto;
+					font-size: 30px;
+					line-height: 28px;
+					font-weight: 600;
+				}
+
+				.article-size .size-box-02 {
+					max-width: 1100px;
+					font-size: 16px;
+					margin: 0 auto;
+					padding: 0 20px;
+					-webkit-transform: translateY(-35%);
+					transform: translateY(-35%);
+				}
+
+				.article-size .size-box-02 .swiper-container-od-jacket {
+					display: -webkit-flex;
+					display: flex;
+					-webkit-justify-content: center;
+					justify-content: center;
+					-webkit-align-items: center;
+					align-items: center;
+				}
+
+				.article-size .size-box-02 .swiper-container-od-jacket .swiper-wrapper {
+					display: -webkit-flex;
+					display: flex;
+					-webkit-justify-content: center;
+					justify-content: center;
+					-webkit-align-items: center;
+					align-items: center;
+					-webkit-justify-content: space-between;
+					justify-content: space-between;
+				}
+
+				.article-size .size-box-02 .swiper-container-od-jacket .swiper-wrapper .swiper-slide {
+					display: inline-block;
+					width: auto;
+				}
+
+				.article-size .size-box-02 .swiper-container-od-jacket .swiper-wrapper .swiper-slide>a {
+					height: 55px;
+					line-height: 55px;
+				}
+
+				.article-size .size-box-02 .swiper-container-od-jacket .swiper-wrapper .swiper-slide>a p {
+					margin: 0 20px;
+					color: #000;
+				}
+
+				.article-size .size-box-02 .swiper-container-od-jacket .swiper-wrapper .swiper-slide>a:hover p {
+					opacity: 0.6;
+					color: #000;
+				}
+
+				.article-swiper1 .swiper-box {
+					width: 80%;
+					margin: 75px auto 85px;
+				}
+
+				.swiper-main1 .swiper-slide {
+					width: 19%;
+					margin-right: 1%;
+				}
+
+				.scroller-cont {
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+					top: 28%;
+					width: 88%;
+				}
+
+				.link {
+					position: absolute;
+					width: 8%;
+					height: 100%;
+					left: 0;
+					top: 0;
+				}
+
+				.tolink {
+					position: absolute;
+					width: 10%;
+					height: 48%;
+					top: 43%;
+				}
+
+				.link1 {
+					left: 23%;
+				}
+
+				.link2 {
+					left: 33%;
+				}
+
+				.link3 {
+					left: 45%;
+				}
+
+				.link4 {
+					left: 56%;
+				}
+
+				.link5 {
+					left: 67%;
+				}
+
+				.link-2 {
+					left: 10%;
+				}
+
+				.link-3 {
+					left: 20%;
+				}
+
+				.link-4 {
+					left: 30%;
+				}
+
+				.link-5 {
+					left: 40%;
+				}
+
+				.link-6 {
+					left: 51%;
+				}
+
+				.link-7 {
+					left: 61%;
+				}
+
+				.link-8 {
+					left: 72%;
+				}
+
+				.link-9 {
+					left: 83%;
+				}
+
+				.link-10 {
+					left: 93%;
+				}
+
+				.shop-now {
+					position: absolute;
+					width: 41.5%;
+					height: 82%;
+					top: 8%;
+					left: 8%;
+				}
+
+				.shop-now2 {
+					left: 50.5%;
+				}
+
+				@media (max-width: 1023px) {
+					.scroller-cont {
+						width: 92%;
+						z-index: 5;
+						overflow-x: auto;
+					}
+
+					.scroller-wrap {
+						width: 200%;
+						position: relative;
+					}
+
+					.scroller-cont::-webkit-scrollbar {
+						width: 0;
+					}
+
+					.scroller-wrap::-webkit-scrollbar {
+						width: 0;
+					}
+
+					.article-size .size-box {
+						margin-top: 10px;
+					}
+
+					.article-size .size-box h4 {
+						top: 11px;
+						flex: 3 auto;
+						font-size: 26px;
+					}
+
+					.article-size .size-box .size-cen .icon-arrow-football {
+						bottom: auto;
+					}
+
+					.article-size .size-box .size-cen .icon-arrow-football-click {
+						left: 34px;
+						top: 0;
+						width: 150px;
+					}
+
+					.article-size .size-box-02 {
+						padding: 0 20px;
+					}
+
+					.article-swiper1 .swiper-box {
+						width: 100%;
+						padding-left: 16px;
+						margin: 0 auto 50px;
+					}
+
+					.text-logo {
+						top: 88%;
+						left: 4%;
+						width: 90%;
+					}
+
+					.text-logo img {
+						margin: 0;
+					}
+
+					.text-logo h5 {
+						font-size: 32px;
+						line-height: 32px;
+					}
+
+					.text-logo P {
+						font-size: 12px;
+						line-height: 20px;
+						margin-bottom: 8px;
+					}
+
+					.shop-now {
+						width: 92.5%;
+						height: 46%;
+						top: 2%;
+						left: 4%;
+					}
+
+					.shop-now2 {
+						left: 4%;
+						top: 51%;
+					}
+
+					.tolink {
+						width: 15%;
+					}
+
+					.link1 {
+						left: 3%;
+					}
+
+					.link2 {
+						left: 21%;
+					}
+
+					.link3 {
+						left: 41%;
+					}
+
+					.link4 {
+						left: 58%;
+					}
+
+					.link5 {
+						left: 76%;
+					}
+				}
+			</style>
+			<!-- kv视频模块 -->
+			<article class="article article-video1  e-play-video pc-mob-video  none-sm">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/APR/Football/pc_0111.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/APR/Football/mob_0111.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/APR/Football/mob_0111.jpg&quot;}}">
+				<div class="text-logo">
+					<div class="item-info font-white left">
+						<a class="btn btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="https://www.adidas.com.hk/readyforsport_lionel_messi">立即選購<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+					</div>
+				</div>
+			</article>
+			<article class="article article-size">
+				<div class="size-box">
+					<h4>SOCCER</h4>
+				</div>
+				<div class="size-box-02">
+					<div class="swiper-container swiper-container-od-jacket">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a target="_blank" href="https://www.adidas.com.hk/football/predator">
+									<p>SOCCER CLEATS</p>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a target="_blank" href="https://www.adidas.com.hk/football/x">
+									<p>TIRO PANTS</p>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a target="_blank" href="https://www.adidas.com.hk/football/nemeziz">
+									<p>JERSEYS</p>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a target="_blank" href="https://www.adidas.com.hk/football/copa">
+									<p>MLS</p>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a target="_blank" href="#">
+									<p>GMR</p>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a target="_blank" href="#">
+									<p>SHOP ALL SOCCER</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="article ">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/APR/Football/pc_03.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/APR/Football/mob_03.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/APR/Football/mob_03.jpg&quot;}}">
+				<a href="" class="tolink link1"></a>
+				<a href="" class="tolink link2"></a>
+				<a href="" class="tolink link3"></a>
+				<a href="" class="tolink link4"></a>
+				<a href="" class="tolink link5"></a>
+			</article>
+			<article class="article ">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/APR/Football/pc_04.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/APR/Football/mob_04.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/APR/Football/mob_04.jpg&quot;}}">
+				<div class="scroller-cont">
+					<div class="scroller-wrap">
+						<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/APR/Football/pc_05.png" alt="">
+						<a href="" class="link link-1"></a>
+						<a href="" class="link link-2"></a>
+						<a href="" class="link link-3"></a>
+						<a href="" class="link link-4"></a>
+						<a href="" class="link link-5"></a>
+						<a href="" class="link link-6"></a>
+						<a href="" class="link link-7"></a>
+						<a href="" class="link link-8"></a>
+						<a href="" class="link link-9"></a>
+						<a href="" class="link link-10"></a>
+					</div>
+				</div>
+			</article>
+			<article class="article article-swiper1">
+				<div class="swiper-box">
+					<div class="swiper-container swiper-main1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href=""><img src="https://img.adidas.com.hk/resources/2021/APR/Football/pro_01.jpg"> </a>
+							</div>
+							<div class="swiper-slide">
+								<a href=""><img src="https://img.adidas.com.hk/resources/2021/APR/Football/pro_02.jpg"> </a>
+							</div>
+							<div class="swiper-slide">
+								<a href=""><img src="https://img.adidas.com.hk/resources/2021/APR/Football/pro_03.jpg"> </a>
+							</div>
+							<div class="swiper-slide">
+								<a href=""><img src="https://img.adidas.com.hk/resources/2021/APR/Football/pro_04.jpg"> </a>
+							</div>
+							<div class="swiper-slide">
+								<a href=""><img src="https://img.adidas.com.hk/resources/2021/APR/Football/pro_05.jpg"> </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/APR/Football/pc_0666.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/APR/Football/mob_0666.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/APR/Football/mob_0666.jpg&quot;}}">
+				<a href="" class="shop-now shop-now1"></a>
+				<a href="" class="shop-now shop-now2"></a>
+			</article>
+			<script type="text/javascript">
+				$(function() {
+					// 换图 + 懒加载
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+					if ($.spice.getWindowWidth() < 1023) {
+						var swiper1 = new Swiper('.swiper-container-od-jacket', {
+							slidesPerView: 'auto',
+							spaceBetween: 0,
+							prevButton: '.swiper-button-prev1',
+							nextButton: '.swiper-button-next1',
+							slidesPerGroup: 2,
+							initialSlide: 0,
+							breakpoints: {
+								1024: {
+									slidesPerGroup: 2
+								}
+							}
+						});
+					}
+					if ($.spice.getWindowWidth() < 1024) {
+						var SwiperMain1 = new Swiper('.swiper-main1', {
+							slidesPerView: 1.2,
+							spaceBetween: 10,
+							loop: true,
+							centeredSlides: false,
+						})
+					}
+
+				});
+			</script>
+
+
+		</section>
+		<%include _includes/modules/footer.html %>
+	</div>
+</body>
+
+</html>

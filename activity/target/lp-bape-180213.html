@@ -1,0 +1,389 @@
+<html>
+<head>
+	<%include _includes/meta.html %>
+	<title>bape</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+		<style type="text/css">
+			.pic-p {
+			  position: relative;
+			}
+			.pic-p img {
+			  display: block;
+			  width: 100%;
+			}
+			.pos-txt-box1 {
+			  position: absolute;
+			  width: 100%;
+			  height: 100%;
+			  top: 0;
+			  left: 0;
+			  color: #fff;
+			  text-align: center;
+			  padding: 7.2% 0 5.2%;
+			  z-index: 1;
+			}
+			.pos-txt-box1 h3 {
+			  position: relative;
+			  font-size: 48px;
+			  line-height: 92px;
+			  padding-bottom: 2.6%;
+			  max-width: 936px;
+			  margin: 0 auto 3.5%;
+			  font-family: "adihdb", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+			}
+			.pos-txt-box1 h3:after {
+			  position: absolute;
+			  display: block;
+			  content: "";
+			  left: 50%;
+			  bottom: 0;
+			  width: 146px;
+			  margin-left: -73px;
+			  border-top: 3px solid #fff;
+			}
+			.pos-txt-box1 p {
+			  max-width: 936px;
+			  margin: 0 auto;
+			  font-size: 26px;
+			  line-height: 46px;
+			}
+			.hover-scale {
+			  overflow: hidden;
+			}
+			.hover-scale img {
+			  display: block;
+			  width: 100%;
+			}
+			.hover-scale .box-left,
+			.hover-scale .box-right {
+			  position: relative;
+			  width: 50%;
+			  float: right;
+			  overflow: hidden;
+			}
+			.hover-scale .box-left {
+			  background-color: #001711;
+			}
+			.hover-scale .box-right {
+			  background-color: #0c0d10;
+			}
+			.hover-scale .btn-black,
+			.coupon-txt .btn-black {
+			  position: absolute;
+			  width: 172px;
+			  font-size: 22px;
+			  height: 58px;
+			  line-height: 52px;
+			  bottom: 10%;
+			  left: 50%;
+			  margin-left: -86px;
+			  border: 3px solid #fff;
+			  background-color: transparent;
+			  font-family: "adineueprolight", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+			}
+			.hover-scale .btn-black span:after,
+			.coupon-txt .btn-black span:after {
+			  top: 6px;
+			}
+			.coupon-box {
+			  background-color: #080809;
+			  min-height: 398px;
+			}
+			.coupon-box .coupon-txt-box {
+			  position: relative;
+			  margin: 0 auto;
+			  max-width: 1300px;
+			  padding-bottom: 36px;
+			  padding-left: 526px;
+			}
+			.coupon-box .coupon-txt {
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  padding: 0 70px 0 136px;
+			}
+			.coupon-box .coupon-txt p {
+			  font-size: 22px;
+			  line-height: 32px;
+			  color: #fff;
+			}
+			.coupon-box .coupon-txt p span {
+			  color: #e1432a;
+			  text-decoration: underline;
+			  font-family: "adihdb", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+			}
+			.coupon-box .coupon-txt .coupon-price {
+			  width: 284px;
+			}
+			.coupon-box .coupon-txt .btn-black {
+			  position: static;
+			  width: 285px;
+			  margin-left: 0;
+			}
+			.coupon-box img {
+			  display: block;
+			  width: 100%;
+			}
+			.coupon-box .coupon-img-box {
+			  width: 100%;
+			}
+			@media (max-width: 1580px) {
+			  .pos-txt-box1 {
+			    padding-top: 4%;
+			  }
+			}
+			@media (max-width: 1400px) {
+			  .pos-txt-box1 {
+			    padding-top: 2%;
+			  }
+			}
+			@media (max-width: 1300px) {
+			  .pos-txt-box1 {
+			    padding-top: 3%;
+			  }
+			  .pos-txt-box1 h3 {
+			    font-size: 46px;
+			    line-height: 70px;
+			  }
+			  .pos-txt-box1 p {
+			    font-size: 24px;
+			    line-height: 40px;
+			  }
+			}
+			@media (max-width: 1024px) {
+			  .pos-txt-box1 {
+			    padding: 14% 6.4% 5.2%;
+			  }
+			  .pos-txt-box1 h3 {
+			    font-size: 32px;
+			    line-height: 60px;
+			    padding-bottom: 6.9%;
+			    max-width: 100%;
+			    margin-bottom: 7.5%;
+			  }
+			  .pos-txt-box1 p {
+			    max-width: 100%;
+			    font-size: 26px;
+			    line-height: 46px;
+			  }
+			  .hover-scale .box-left,
+			  .hover-scale .box-right {
+			    float: none;
+			    width: 100%;
+			  }
+			  .hover-scale .btn-black,
+			  .coupon-txt .btn-black {
+			    width: 143px;
+			    font-size: 20px;
+			    height: 48px;
+			    line-height: 42px;
+			    bottom: 7%;
+			    margin-left: -71px;
+			  }
+			  .hover-scale .btn-black span:after,
+			  .coupon-txt .btn-black span:after {
+			    top: 5px;
+			  }
+			  .coupon-box {
+			    min-height: 0;
+			  }
+			  .coupon-box .coupon-txt-box {
+			    max-width: 100%;
+			    padding-bottom: 300px;
+			    padding-left: 0;
+			  }
+			  .coupon-box .coupon-txt {
+			    width: 100%;
+			    text-align: center;
+			    top: auto;
+			    padding: 0;
+			    bottom: 30px;
+			    background-color: #000;
+			  }
+			  .coupon-box .coupon-txt p {
+			    background-color: #080809;
+			  }
+			  .coupon-box .coupon-txt .coupon-price {
+			    width: 238px;
+			    margin: 0 auto;
+			  }
+			  .coupon-box .coupon-txt .coupon-p {
+			    padding-bottom: 7px;
+			  }
+			}
+			@media (max-width: 749px) {
+			  .hover-scale .btn-black,
+			  .coupon-txt .btn-black {
+			    height: 30px;
+			    line-height: 28px;
+			    font-size: 13px;
+			    border-width: 1px;
+			  }
+			  .hover-scale .btn-black span:after,
+			  .coupon-txt .btn-black span:after {
+			    top: -1px;
+			  }
+			  .pos-txt-box1 {
+			    padding: 61px 24px 0;
+			  }
+			  .pos-txt-box1 h3 {
+			    font-size: 16px;
+			    line-height: 30px;
+			    padding-bottom: 32px;
+			    margin-bottom: 34px;
+			  }
+			  .pos-txt-box1 h3:after {
+			    width: 73px;
+			    margin-left: -36px;
+			    border-width: 1px;
+			  }
+			  .pos-txt-box1 p {
+			    max-width: 316px;
+			    font-size: 13px;
+			    line-height: 23px;
+			  }
+			  .coupon-box .coupon-txt-box {
+			    padding-bottom: 176px;
+			    padding-left: 0;
+			  }
+			  .coupon-box .coupon-txt p {
+			    font-size: 12px;
+			    line-height: 16px;
+			  }
+			  .coupon-box .coupon-txt .coupon-price {
+			    width: 120px;
+			  }
+			  .coupon-box .coupon-txt .btn-black {
+			    position: static;
+			    width: 170px;
+			  }
+			  .coupon-box img {
+			    display: block;
+			    width: 100%;
+			  }
+			  .coupon-box .coupon-img-box {
+			    width: 100%;
+			  }
+			}
+			@media (max-width: 349px) {
+			  .pos-txt-box1 {
+			    padding: 14% 0 0;
+			  }
+			  .pos-txt-box1 h3 {
+			    padding-bottom: 3.45%;
+			    margin-bottom: 3.75%;
+			  }
+			  .pos-txt-box1 p {
+			    padding: 0 24px;
+			  }
+			}
+
+		</style>
+			<!-- 模块一-->
+			<article class="article">
+				<div class="pic-p">
+					<img class="" src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-bape-180213/bape-pc1.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-bape-180213/bape-mob1.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-bape-180213/bape-mob1.jpg"}
+					}' />
+				</div>
+			</article>
+			<!-- 模块二-->
+			<article class="article">
+				<div class="pic-p">
+					<img class="" src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-bape-180213/bape-pc2.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-bape-180213/bape-mob2.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-bape-180213/bape-mob2.jpg"}
+					}' />
+					<div class="pos-txt-box1">
+						<h3>adidas x BAPE联名打造THE DAME 4系列<br />全新战靴，震撼来袭</h3>
+						<p>adidas与BAPE选择NBA球星达米恩·利拉德的签名作为设计蓝本，将BAPE标志性的Cloud Camo为灵感发想，分别蔓延出黑、绿迷彩，并将人气元素Shark以及代表着World Gone Mad的WGM缩写融入到整体设计里，脚踝处更是将经典老虎元素作为点睛。</p>
+					</div>
+				</div>
+			</article>
+			<!-- 模块三-->
+			<article class="article hover-scale">
+				<div class="box-left events-scale">
+					<img src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-bape-180213/bape-pc4.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-bape-180213/bape-mob4.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-bape-180213/bape-mob4.jpg"}
+						}' />
+					<a href="https://www.adidas.com.cn/men_outdoor_terrex?sp=OD-Terrex" class="btn btn-black btn-have-arrow btn-have-opacity">
+						<span>立即购买</span>
+					</a>
+				</div>
+				<div class="box-right events-scale">
+					<img src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-bape-180213/bape-pc3.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-bape-180213/bape-mob3.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-bape-180213/bape-mob3.jpg"}
+						}' />
+					<a href="https://www.adidas.com.cn/men_outdoor_terrex?sp=OD-Terrex" class="btn btn-black btn-have-arrow btn-have-opacity">
+						<span>立即购买</span>
+					</a>
+				</div>
+			</article>
+			<!-- 模块四-->
+			<article class="article">
+				<div class="pic-p">
+					<img src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-bape-180213/bape-pc5.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-bape-180213/bape-mob5.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-bape-180213/bape-mob5.jpg"}
+						}' />
+				</div>
+			</article>
+			<!-- 模块五-->
+			<article class="article coupon-box-wrap">
+				<div class="coupon-box">
+					<img src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-bape-180213/txt-bar-p.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-bape-180213/txt-bar-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-bape-180213/txt-bar-m.jpg"}
+						}' />
+					<div class="coupon-txt-box">
+						<div class="coupon-txt">
+							<p>即日起至2.25 购买miadidas产品</p>
+							<p class="coupon-p">结算时输入优惠码：<span>miCNY</span></p>
+							<div class="coupon-price">
+								<img src="../static/images/lp-bape-180213/price.png" alt="">
+							</div>
+							<a class="btn btn-black btn-have-arrow btn-have-opacity"><span>查看更多mi Dame 4</span></a>
+						</div>
+						<div class="coupon-img-box">
+							<img src="../static/images/lp-bape-180213/pro-img-p.jpg" />
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+<script type="text/javascript">
+	$(function () {
+		var _w =$.spice.getWindowWidth();
+		if(_w>1024){
+			// 图片hover放大
+			$('.events-scale img').on('mouseenter', function() {
+				$(this).css({ 'transition': 'transform 7.5s linear', 'transform': 'scale(1.3)' });
+			})
+
+			// 图片hover复原
+			$('.events-scale img').on('mouseleave', function() {
+				$(this).css({ 'transition': 'none', 'transform': 'none'});
+			})
+		}
+	});
+</script>
+</body>
+</html>

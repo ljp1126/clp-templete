@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@media (max-width: 1024px), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), screen and (-o-min-device-piratio: 200/100), screen and (min-device-pixel-ratio: 2) {
+  .icon-conform {
+    width: 20px;
+    height: 15px;
+    background-position: -225px -450px;
+  }
+}
+.divider {
+  margin: 0 8px;
+}
+.container {
+  padding-top: 80px;
+  min-height: 648px;
+  padding-bottom: 50px;
+}
+.icon-a-font {
+  margin-right: 5px;
+}
+.article-nav {
+  width: 100%;
+  max-width: 1180px;
+  margin: 20px auto 32px;
+}
+.kv-banner {
+  margin-bottom: 32px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.btn {
+  height: 42px;
+  line-height: 42px;
+}
+.list-inline li a {
+  font-size: 14px;
+  color: #000000;
+  line-height: 14px;
+}
+.list-inline li:first-child a .icon-login-left {
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  vertical-align: top;
+}
+.list-inline li:last-child a {
+  color: #888;
+}
+.article-partner {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0px auto 120px;
+}
+.article-partner .partner-contain > h5 {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 10px;
+  line-height: 28px;
+  font-weight: bold;
+}
+.article-partner .partner-contain > p {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 14px;
+  line-height: 22px;
+  font-weight: bold;
+}
+.article-partner .partner-contain .right-item-con {
+  margin-bottom: 32px;
+}
+.article-partner .partner-contain .right-item-con ul li {
+  margin-bottom: 14px;
+}
+.article-partner .partner-contain .right-item-con ul li:last-child {
+  margin-bottom: 0;
+}
+.article-partner .partner-contain .right-item-con ul li i,
+.article-partner .partner-contain .right-item-con ul li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.article-partner .partner-contain .right-item-con ul li i {
+  margin-right: 10px;
+}
+.article-partner .partner-contain .right-item-con ul li span {
+  font-size: 16px;
+  color: #333333;
+  line-height: 24px;
+}
+.article-partner .partner-contain .btn-box .btn {
+  width: 410px;
+  justify-content: center;
+  font-size: 18px;
+}
+@media (max-width: 1240px) {
+  .article-nav,
+  .article-partner {
+    max-width: 990px;
+  }
+}
+@media (max-width: 1023px) {
+  .container {
+    padding-top: 59px;
+    min-height: 312px;
+    padding-bottom: 24px;
+  }
+  .article-nav {
+    display: none;
+  }
+  .kv-banner {
+    margin-bottom: 19px;
+  }
+  .article-partner {
+    padding: 0 25px;
+    margin-bottom: 10px;
+  }
+  .article-partner .partner-contain > h5 {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+  .article-partner .partner-contain > p {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.86px;
+  }
+  .article-partner .partner-contain .right-item-con {
+    margin-bottom: 90px;
+  }
+  .article-partner .partner-contain .right-item-con ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+  }
+  .article-partner .partner-contain .right-item-con ul li i {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .article-partner .partner-contain .right-item-con ul li span {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .article-partner .partner-contain .btn-box .btn {
+    width: 100%;
+    max-width: 325px;
+  }
+}

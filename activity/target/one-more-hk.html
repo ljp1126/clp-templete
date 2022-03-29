@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%include _includes/meta.html %>
+    <title>salah</title>
+    <%include _includes/css.html %>
+    <!-- <link rel="stylesheet" href="css/lp-messi.css" /> -->
+    <%include _includes/js.html %>
+</head>
+
+<body>
+    <div id="wrapper">
+        <%include _includes/modules/header.html %>
+            <section class="container">
+                <style>
+.article {
+  position: relative;
+}
+.article > img {
+  width: 100%;
+}
+.article .link{
+    position: absolute;
+    width: 10%;
+    height: 4%;
+    top: 60%;
+    left: 76.5%;
+}
+.article-video1 {
+  cursor: pointer;
+}
+.article-video1 .video-wrapper .video-content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+}
+#frame-video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.video-wrapper  img{
+    z-index: 10;
+}
+.article-video1 .video-wrapper .video-content .video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  visibility: hidden;
+}
+.article-video1.is-play .video-wrapper .video-content .video {
+  visibility: visible;
+}
+.article-video1.is-play .video-wrapper .video-code img {
+  visibility: hidden;
+}
+.article-top {
+  border-bottom: 1px #e6e6e6 solid;
+  margin-top: 60px;
+}
+.article-top .messi-top {
+  margin-top: 20px;
+}
+.article-top .messi-top ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.article-top .messi-top ul li {
+  padding: 3px 16px 20px;
+  cursor: pointer;
+  width: 15%;
+  text-align: center;
+}
+.article-top .messi-top ul li.is-active {
+  border-bottom: 2px solid #000;
+}
+.section-content {
+  width: 84.2%;
+  margin: 0 auto;
+  position: relative;
+}
+.section-content .video-box {
+  width: 58%;
+  margin-right: auto;
+}
+.section-content .video-box .video-content video {
+  width: 100%;
+}
+.section-content .text-content {
+  width: 42%;
+  position: absolute;
+  bottom: 0;
+  right: 4%;
+}
+.article-swiper-swift {
+  position: relative;
+  padding: 0% 13%;
+}
+.article-swiper-swift .swiper-container {
+  max-width: 1420px;
+  margin: 0 auto ;
+}
+.article-swiper-swift .swiper-container .product-info {
+  padding: 0 8px;
+}
+.article-swiper-swift .swiper-container .product-info p {
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+.article-swiper-swift .swiper-button-prev,
+.article-swiper-swift .swiper-button-next {
+  width: 50px;
+  height: 50px;
+  margin-top: -70px;
+  background-image: none;
+  overflow: hidden;
+  z-index: 10;
+}
+.article-swiper-swift .swiper-button-next {
+  right: 8%;
+}
+.article-swiper-swift .swiper-button-next .icon-action-sports-arrow-r {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/cn/right.jpg);
+}
+.article-swiper-swift .swiper-button-prev {
+  left: 8%;
+}
+.article-swiper-swift .swiper-button-prev .icon-action-sports-arrow-l {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/cn/left.jpg);
+}
+.swiper-btn {
+  text-align: center;
+  margin: 75px 0;
+}
+@media (max-width: 1024px) {
+  .article-top {
+    margin-top: 0;
+  }
+  .section-content {
+    width: 100%;
+  }
+  .section-content .video-box {
+    width: 100%;
+  }
+  .section-content .text-content {
+    position: relative;
+    width: 100%;
+    right: 0;
+    top: -38px;
+  }
+  .article-top .messi-top ul li {
+    font-family: 'AdihausDIN-Bold';
+    width: auto;
+    }
+  .article-swiper-swift {
+    padding: 20px 0 25px;
+  }
+  .swiper-btn {
+    padding: 0 23px;
+    margin: 30px 0;
+  }
+  .swiper-btn .btn.gl-cta-height {
+    min-width: 100%;
+  }
+}
+
+                </style>
+
+                <!-- 视频模块 -->
+                <article class="article article-video1 video-box2">
+                    <div class="video-wrapper   e-play-videoTwo">
+                        <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                            "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/pcEN_01.jpg"},
+                            "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/mobEN_01.jpg"},
+                            "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/mobEN_01.jpg"}}' />
+                    </div>
+                    
+                </article>
+                
+                <article class="article article-top">
+                    <div class="messi-top">
+                        <ul>
+                            <li date-index="article-offset1 " class="is-active"><span>STORY</span></li>
+                            <li date-index="article-offset2"><span>PRODUCTS</span></li>
+                            <!-- <li date-index="article-offset3"><span>TRAINING ESSENTIALS</span></li> -->
+                        </ul>
+                    </div>
+                </article>
+                <article class="article " id="article-offset1">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/pcEN_02.jpg"},
+                        "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/mobEN_02.jpg"},
+                        "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/mobEN_02.jpg"}}' />
+                </article>
+               
+                <article class="article  article-swiper-swift" >
+                    <div class="swiper-container swiper-jacket_1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="https://www.adidas.com.hk/item/FV6956">
+                                    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/shoes_1.jpg">
+                                </a>
+                                <div class="product-info">
+                                    <p>ADIDAS 4D RUN 1.0 運動鞋</p>
+                                    <span>HKD:1699.00</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://www.adidas.com.hk/item/FW0704">
+                                    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/shoes_2.jpg">
+                                </a>
+                               
+                                <div class="product-info">
+                                    <p>SUPERNOVA 運動鞋</p>
+                                    <span>HKD:799.00</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://www.adidas.com.hk/item/EG4667">
+                                    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/shoes_3.jpg">
+                                </a>
+                                <div class="product-info">
+                                    <p>ADIZERO ADIOS 5 運動鞋</p>
+                                    <span>HKD:1299.00</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://www.adidas.com.hk/item/EG4675">
+                                    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/shoes_4.jpg">
+                                </a>
+                                <div class="product-info">
+                                    <p>ADIZERO BOSTON 9 運動鞋 </p>
+                                    <span>HKD:999.00</span>
+                                </div>
+                             </div>
+                             <div class="swiper-slide">
+                                <a href="https://www.adidas.com.hk/item/EG4671">
+                                    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/shoes_5.jpg">
+                                </a>
+                                <div class="product-info">
+                                    <p>ADIZERO BOSTON 9 運動鞋 </p>
+                                    <span>HKD:999.00</span>
+                                </div>
+                             </div>
+                        </div>
+                       
+                    </div>
+                     <!-- 箭头 -->
+                    <div class="action-sports-swiper-btn none-sm">
+                        <div class="swiper-button-prev swiper-button-prev1">
+                            <i class="icon icon-action-sports-arrow-l"></i>
+                        </div>
+                        <div class="swiper-button-next swiper-button-next1">
+                            <i class="icon icon-action-sports-arrow-r"></i>
+                        </div>
+                    </div>
+                </article>
+                <!-- 购买 -->
+                <div class="swiper-btn">
+                    <a class="btn btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="">SHOP ESSENTIALS<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+                </div>
+                <article class="article" >
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/pcEN_03.jpg"},
+                        "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/mobEN_03.jpg"},
+                        "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/mobEN_03.jpg"}}' />
+                </article>
+                
+                <article class="article  article-swiper-swift " id="article-offset2">
+                    <div class="swiper-container swiper-jacket_2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="https://www.adidas.com.hk/item/FV6956">
+                                    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/shoes_1.jpg">
+                                </a>
+                                <div class="product-info">
+                                    <p>ADIDAS 4D RUN 1.0 SHOES</p>
+                                    <span>HKD:1699.00</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://www.adidas.com.hk/item/FW0704">
+                                    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/shoes_2.jpg">
+                                </a>
+                               
+                                <div class="product-info">
+                                    <p>SUPERNOVA SHOES</p>
+                                    <span>HKD:799.00</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://www.adidas.com.hk/item/EG4667">
+                                    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/shoes_3.jpg">
+                                </a>
+                                <div class="product-info">
+                                    <p>ADIZERO ADIOS 5 SHOES</p>
+                                    <span>HKD:1299.00</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://www.adidas.com.hk/item/EG4675">
+                                    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/shoes_4.jpg">
+                                </a>
+                                <div class="product-info">
+                                    <p>ADIZERO BOSTON 9 SHOES </p>
+                                    <span>HKD:999.00</span>
+                                </div>
+                             </div>
+                             <div class="swiper-slide">
+                                <a href="https://www.adidas.com.hk/item/EG4671">
+                                    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/shoes_5.jpg">
+                                </a>
+                                <div class="product-info">
+                                    <p>ADIZERO BOSTON 9 SHOES </p>
+                                    <span>HKD:999.00</span>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                     <!-- 箭头 -->
+                    <div class="action-sports-swiper-btn none-sm">
+                        <div class="swiper-button-prev swiper-button-prev2">
+                            <i class="icon icon-action-sports-arrow-l"></i>
+                        </div>
+                        <div class="swiper-button-next swiper-button-next2">
+                            <i class="icon icon-action-sports-arrow-r"></i>
+                        </div>
+                    </div>
+                </article>
+                <!-- 购买 -->
+                <div class="swiper-btn">
+                    <a class="btn btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="">SHOP ESSENTIALS<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+                </div>
+                <article class="article">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/pcEN_04.jpg"},
+                        "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/mobEN_04.jpg"},
+                        "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/JUL/ONE_MORE/EN/mobEN_04.jpg"}}' />
+                </article>
+                <script type="text/javascript">
+                    $(function () {
+                        // 换图 + 懒加载
+                        $.spice.lazyLoad('img[lazysrc]', {
+                            attr: 'lazysrc'
+                        });
+                        $.spice.tools.changeImageSrc({
+                            callBack: function (img, self) {
+                                $.spice.lazyLoad('img[lazysrc]', {
+                                    attr: self.opt.lazyData,
+                                    prestrain: 1
+                                });
+                            }
+                        });
+                        // 视频
+                   
+                        var indexVedio = document.querySelector(".e-play-videoTwo");
+                        indexVedio.onclick = function(){
+                            indexVedio.innerHTML = "<iframe width=100%  height='741' src='https://www.youtube.com/embed/-aFe5zbRTR8' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>";
+                        }
+
+                        // 视频 end
+                        var myswiper1 = new Swiper('.swiper-jacket_1', {
+                            slidesPerView : 3,
+                            spaceBetween : 20,
+                            prevButton:'.swiper-button-prev1',
+                            nextButton:'.swiper-button-next1',
+                            breakpoints: {
+                                1023: {
+                                    slidesPerView : 1.5,
+                                    slidesOffsetBefore:16,
+                                    slidesOffsetAfter:16
+                                }
+                            }
+                        });
+
+
+                        var myswiper2 = new Swiper('.swiper-jacket_2', {
+                            slidesPerView : 3,
+                            spaceBetween : 20,
+                            prevButton:'.swiper-button-prev2',
+                            nextButton:'.swiper-button-next2',
+                            breakpoints: {
+                                1023: {
+                                    slidesPerView : 1.5,
+                                    slidesOffsetBefore:16,
+                                    slidesOffsetAfter:16
+                                }
+                            }
+                        });
+
+                        //吸顶点击
+                        
+                        
+                        var target_height;
+                        $('.messi-top li').on('tap',function(){
+                            var target = $(this).attr('date-index');
+                                $(this).addClass('is-active').siblings().removeClass('is-active')
+                                target_height = $('#' + target).offset().top;
+                            $("html,body").animate({scrollTop: target_height}, 500);
+                        })
+                    });
+                </script>
+            </section>
+            <%include _includes/modules/footer.html %>
+    </div>
+</body>
+
+</html>

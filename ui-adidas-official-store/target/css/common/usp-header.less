@@ -1,0 +1,196 @@
+@charset "utf-8";
+.icon-round-gray-rights {
+    width: 14px;
+    height: 14px;
+    background-position: -74px -20px;
+}
+
+.usp-header-article {
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+.usp-header {
+    height: 40px;
+    text-align: center;
+    background: #fff;
+    border-bottom: 1px solid #C8CBCC;
+    ul>li {
+        float: none;
+        width: auto;
+        display: inline-block;
+        &:first-child {
+            display: inline-block;
+        }
+        &:nth-child(2) {
+            margin: 0 130px;
+            ;
+        }
+        >a {
+            >img {
+                width: auto;
+                margin-right: 7px;
+                margin-top: -4px;
+            }
+        }
+        .usp-header-txt {
+            display: inline-block;
+            a {
+                display: block;
+                font-size: 14px;
+                color: #000;
+                line-height: 40px;
+                text-decoration: none;
+                i {
+                    vertical-align: middle;
+                    margin: -4px 0 0 10px;
+                }
+            }
+        }
+    }
+    .mb-zoom-icon {
+        display: none;
+    }
+}
+
+.dialog-opacity {
+    .dialog-scroll-container {
+        .dialog {
+            .dialog-container {
+                >div>p {
+                    margin: 20px;
+                }
+            }
+            .dialog-close {
+                width: 18px;
+                height: 18px;
+                font-size: 0;
+                top: 9px;
+                right: 7px;
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .usp-header {
+        padding: 0 20px;
+        text-align: left;
+        background: #F8F8F8;
+        border: 0;
+        ul>li {
+            float: left;
+            display: none;
+            width: 100%;
+            >a {
+                // display: none;
+                display: inline-block;
+                vertical-align: middle;
+                img {
+                    margin-top: 0;
+                }
+            }
+            &:first-child {
+                display: block;
+            }
+            &:nth-child(2) {
+                margin: 0;
+            }
+            .usp-header-txt {
+                display: inline-block;
+                vertical-align: middle;
+                max-width: 80%;
+                overflow: hidden;
+                a {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                a i {
+                    display: none;
+                }
+            }
+        }
+        .mb-zoom-icon {
+            display: block;
+            position: absolute;
+            top: 12px;
+            right: 18px;
+            right: 0px;
+            background-position: -390px -220px;
+            width: 14px;
+            height: 14px;
+        }
+    }
+    .mobile-usp-dialog {
+        .dialog-scroll-container {
+            .dialog-scroll {
+                width: 100%;
+                height: 100%;
+                >div {
+                    width: 100%;
+                    height: 100%;
+                    background: white;
+                    .dialog {
+                        border: 0px solid #C8CBCC;
+                        box-shadow: none;
+                        min-height: 100%;
+                        padding: 52px 0 0 0;
+                        .dialog-close-box {
+                            width: 100%;
+                            height: 52px;
+                            position: absolute;
+                            top: 0;
+                            border-bottom: 1px solid #C8CBCC;
+                            .dialog-close {
+                                position: absolute;
+                                right: 18px;
+                                left: auto;
+                            }
+                        }
+                        .dialog-container {
+                            p {
+                                text-align: left;
+                            }
+                            .list-box {
+                                padding-left: 20px;
+                                .list-item {
+                                    padding: 30px 0 26px 0;
+                                    border-bottom: 1px dashed #D8D8D8;
+                                    &:last-child{
+                                        border-bottom: none;
+                                    }
+                                    .title {
+                                        line-height: 30px;
+                                        img {
+                                            width: 30px;
+                                        }
+                                        span {
+                                            font-size: 18px;
+                                            color: #2F2F2F;
+                                            line-height: 1;
+                                            display: inline-block;
+                                            position: relative;
+                                            left: 10px;
+                                            top: 4px;
+                                        }
+                                    }
+                                    .detail{
+                                        margin-top: 16px;
+                                        line-height: 1.5;
+                                        padding-right: 18px;
+                                        .bold{
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

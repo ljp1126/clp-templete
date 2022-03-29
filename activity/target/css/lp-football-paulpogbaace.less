@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+.article{
+	>img{
+		width: 100%;
+	}
+}
+
+// 小圆点
+	@keyframes scaleout {
+		0% {
+			transform: scale(0)
+		}
+
+		100% {
+			transform: scale(1);
+			opacity: 0
+		}
+
+	}
+
+	.open-link {
+		display: block;
+		position: absolute;
+		width: 42px;
+		height: 42px;
+		margin-left: -21px;
+		margin-top: -21px;
+
+		>a {
+			display: block;
+			position: relative;
+			padding: 10px;
+
+			&:after,
+			&:before {
+				content: '';
+				position: absolute;
+				border-radius: 50%;
+				background-color: #fff;
+				animation: scaleout 1.5s infinite ease-in-out;
+				z-index: 2;
+			}
+
+			&:after {
+				top: 5px;
+				left: 5px;
+				width: 32px;
+				height: 32px;
+			}
+
+			&:before {
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				position: relative;
+				z-index: 3;
+			}
+
+		}
+	}
+// 小圆点 end
+
+
+// 视频按钮
+	.article-lp-video{
+		position: relative;
+		.lp-video-btn{
+			cursor: pointer;
+			width: 80px;
+			height: 80px;
+			position: absolute;
+			top: 51.7%;
+			margin-top: -40px;
+			left: 50%;
+			margin-left: -40px;
+
+			&:after{
+				content: '';
+				width: 160px;
+				height: 160px;
+				position: absolute;
+				top: 50%;
+				margin-top: -80px;
+				left: 50%;
+				margin-left: -80px;
+			}
+		}
+	}
+// 视频按钮 end
+
+
+// 图片缩放
+	.hover-scale {
+		width: 33.333%;
+		float: left;
+		overflow: hidden;
+		img{
+			transition: transform ease-out 8s;
+			will-change: transform;
+		}
+
+		&:hover {
+			img{
+				transform: scale(1.4);
+			}
+		}
+
+		&.none-scal:hover {
+			img{
+				transform: none;
+			}
+		}
+	}
+// 图片缩放 end
+
+
+.article-paulpogbaace{
+	position: relative;
+	>img{
+		width: 100%;
+	}
+	.open-link{
+		position: absolute;
+		z-index: 3;
+
+		.open-link-text{
+			position: absolute;
+			top: 7px;
+			left: 100%;
+			color: #fff;
+			padding-left: 14px;
+			font-weight: bold;
+			p{
+				white-space: nowrap;
+				font-size: 23px;
+				margin-bottom: 10px;
+			}
+			.btn{
+				min-width: 132px;
+				height: 33px;
+				line-height: 33px;
+			}
+		}
+	}
+	.hover-scale{
+		position: absolute;
+		width: 29.8%;
+	}
+
+	&.article-paulpogbaace-1{
+		.open-link{
+			top: 56.5%;
+			right: 40.2%;
+		}
+		.hover-scale{
+			top: 39.3%;
+			right: 4.5%;
+		}
+	}
+	&.article-paulpogbaace-2{
+		.open-link-1{
+			top: 29.1%;
+			left: 23.1%;
+		}
+		.hover-scale-1{
+			top: 15.1%;
+			left: 5.8%;
+		}
+
+		.open-link-2{
+			top: 82.8%;
+			left: 31.1%;
+		}
+		.hover-scale-2{
+			top: 61.6%;
+			left: 11.8%;
+		}
+
+		.open-link-3{
+			top: 40.6%;
+			right: 24.3%;
+		}
+
+		.open-link-4{
+			top: 75.6%;
+			right: 24.3%;
+		}
+	}
+}
+
+
+
+
+@media (max-width: 1024px){
+	// 小圆点
+		.open-link {
+			>a {
+				// transform: scale(0.7);
+			}
+		}
+	// 小圆点 end
+
+
+	// 视频按钮
+		.article-lp-video{
+			.lp-video-btn{
+				top: 70.7%;
+
+				&:after{}
+			}
+		}
+	// 视频按钮 end
+
+	// 图片缩放
+		.hover-scale {
+			img{
+				transition: none;
+				transform: none;
+			}
+
+			&:hover {
+				img{
+					transition: none;
+					transform: none;
+				}
+			}
+		}
+	// 图片缩放 end
+
+	.article-paulpogbaace{
+		>img{}
+		.open-link{
+			.open-link-text{
+				p{}
+				.btn{}
+			}
+		}
+		.hover-scale{
+			width: 30%;
+		}
+
+		&.article-paulpogbaace-1{
+			.open-link{
+				top: 51.5%;
+				right: 33.2%;
+			}
+			.hover-scale{
+				top: 36.3%;
+				right: 4.5%;
+			}
+		}
+		&.article-paulpogbaace-2{
+			.open-link-1{
+				top: 34.1%;
+				left: 29.1%;
+			}
+			.hover-scale-1{
+				top: 14.1%;
+				left: 6.8%;
+			}
+
+			.open-link-2{
+				top: 86.8%;
+				left: 29.1%;
+			}
+			.hover-scale-2{
+				top: 61.1%;
+				left: 11.5%;
+			}
+
+			.open-link-3{
+				top: 35.6%;
+				right: 24.3%;
+			}
+
+			.open-link-4{
+				top: 76.6%;
+				right: 21.3%;
+			}
+		}
+	}
+
+}

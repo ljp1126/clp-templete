@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%include _includes/meta.html %>
+	<title>salah</title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" href="css/lp-messi.css" /> -->
+	<%include _includes/js.html %>
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+			<style>
+				.article {
+					position: relative;
+				}
+
+				.article>img {
+					width: 100%;
+				}
+				.article-video1 {
+					cursor: pointer;
+				}
+
+				.article-video1 .video-wrapper .video-content {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					left: 0;
+				}
+
+				.article-video1.video-box .video-wrapper .video-content {
+					position: absolute;
+					height: 100%;
+					width: 94%;
+					left: 3%;
+					z-index: 1;
+				}
+
+				.video-wrapper img {
+					z-index: 10;
+				}
+
+				.video-wrapper .swiper-btn {
+					position: absolute;
+					left: 12.3%;
+					top: 75%;
+				}
+				.swiper-btn.link-kv{
+					position: absolute;
+					top: 62%;
+					right: 13%;
+				}
+				.article-video1 .video-wrapper .video-content .video {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					visibility: hidden;
+				}
+
+				.article-video1.is-play .video-wrapper .video-content .video {
+					visibility: visible;
+				}
+
+				.article-video1.is-play .video-wrapper .video-code img {
+					visibility: hidden;
+				}
+				.video-text {
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 12%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					overflow: hidden;
+				}
+
+				.video-text a {
+					display: inherit;
+				}
+				.link{
+					position: absolute;
+					width: 23%;
+					height: 73%;
+					top: 19%;
+				}
+				.link-boots1{
+					left: 25%;
+				}
+				.link-boots2{
+					left: 53%;
+				}
+				@media (max-width: 1023px) {
+					.video-text {
+						left: 4%;
+					}
+					.video-wrapper .swiper-btn {
+						top: 72%;
+						left: 5.3%;
+					}
+					.link{
+						width: 46%;
+					}
+					.link-boots1{
+						left: 3%;
+					}
+					.link-boots2{
+						left: 51%;
+					}
+					.swiper-btn.link-kv{
+						left: 5.3%;
+						right: auto;
+					}
+				}
+
+			
+			</style>
+			<!-- 视频模块 -->
+			<article class=" article article-video1 .video-box e-play-video pc-mob-video">
+				<div class="video-wrapper e-home-video">
+					<div class="video-content"></div>
+					<a class="video-play" href="javascript:void(0)">
+						<span class="video-code" data-video-code="A844F62F6DC1E25D9C33DC5901307461">
+							<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+								"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/pc_01.jpg"},
+								"medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/mob_01.jpg"},
+								"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/mob_01.jpg"}}' />
+						</span>
+					</a>
+					<div class="video-text">
+						<a href="">
+							<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+								"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/x_ghosted_03.png"},
+								"medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/x_ghosted_750_03.png"},
+								"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/x_ghosted_750_03.png"}}' />
+						</a>
+					</div>
+					<div class="swiper-btn">
+						<a class="btn btn-have-opacity gl-cta-height gl-cta-color-white gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="">立即選購<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+					</div>
+				</div>
+			</article>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/pc_02.jpg"},
+					"medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/mob_02.jpg"},
+					"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/mob_02.jpg"}}' />
+			</article>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/pc_03.jpg"},
+					"medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/mob_03.jpg"},
+					"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/mob_03.jpg"}}' />
+			</article>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/pc_04.jpg"},
+					"medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/mob_04.jpg"},
+					"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/mob_04.jpg"}}' />
+			</article>
+			<article class="article ">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/pc_05.jpg"},
+					"medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/mob_05.jpg"},
+					"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/mob_05.jpg"}}' />
+					<a href="" class="link link-boots1"></a>
+					<a href="" class="link link-boots2"></a>
+			</article>
+			<article class="article " style="margin-top: 15px;">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/pc_06.jpg"},
+					"medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/mob_06.jpg"},
+					"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/X_GHOSTED/CLP/cn/mob_06.jpg"}}' />
+				<div class="swiper-btn link-kv">
+					<a class="btn btn-have-opacity gl-cta-height gl-cta-color-white gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="">立即選購<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+				</div>
+			</article>
+
+			<script type="text/javascript">
+				$(function() {
+					// 换图 + 懒加载
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+					var loadImgFun_index = function(imgArr, fn) {
+						// 图片加载fun
+						var loadImgLen = 0,
+							errImgLen = 0
+						var imgdefereds = [];
+						$(imgArr).each(function() {
+							var defered = $.Deferred();
+							$(this).on('load', function() {
+								defered.resolve();
+								loadImgLen++
+							}).on('error', function() {
+								defered.resolve();
+								errImgLen++
+							})
+							if (this.complete) setTimeout(function() {
+								defered.resolve();
+							}, 200);
+							imgdefereds.push(defered);
+						})
+						$.when.apply(null, imgdefereds).done(function() {
+							if (fn && $.isFunction(fn)) {
+								fn()
+							}
+						});
+					}
+					// 视频
+
+					//自动播放视频
+
+					$('.e-home-video').each(function(index, el) {
+						$(el).parents('.article-video1').addClass('home-video')
+						var videoCode = $('.video-code', el).data('video-code'),
+							videoId = 'home_video_' + index;
+						loadImgFun_index($('.video-code img', el), function() {
+							$('.video-content', el).show().css({
+								'height': $('.video-code img', el).outerHeight(true)
+							})
+							$('.video-code img', el).css({
+								'visibility': 'hidden'
+							})
+						})
+						// 开发需要打开此代码---开始
+						var bannerVideoId = videoCode;
+						var url = base + "/indexCCVideo.json";
+						var data = loxia.syncXhrGet(url, {
+							'bannerVideoId': bannerVideoId
+						});
+						var videoUrl = data.mp4VideoUrl;
+						// 开发需要打开此代码---结束
+
+						// 下面的videoUrl为前端静态视频地址（静态页面的video路径 ，开发需注释掉）
+						//var videoUrl = 'https://cm15-c110-2.play.bokecc.com/flvs/ca/QxIfw/uohUtXeuIQ-90.mp4?t=1601190760&key=73E2E8CB2BBDB50A17C4A763055842AE&tpl=10';
+						var html = '<video class="video" id="' + videoId + '" preload="meta" webkit-playsinline="true" playsInline="true" muted><source src="' + videoUrl + '" ></source></video>';
+						$('.video-content', el).html(html);
+
+					})
+					$('#home_video_0')[0].play();
+						$('#home_video_0').parents('.article-video1').addClass('is-play');
+						$('#home_video_0')[0].addEventListener("ended", function () {
+							this.play();
+					});
+				});
+			</script>
+		</section>
+		<%include _includes/modules/footer.html %>
+
+	</div>
+</body>
+
+</html>

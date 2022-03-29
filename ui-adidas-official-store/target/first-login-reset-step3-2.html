@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title>登录</title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" href="css/login.css" />
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="js/login.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+			<!-- 内容部分 -->
+			<section class="container">
+
+				<article class="article one-side-title one-side-title-s">
+					<div>
+						<h3>初次登录</h3>
+					</div>
+				</article>
+
+				<article class="article all-step">
+					<ul class="float-clearfix">
+						<li class="color000"><i class="icon icon-ok-login"></i>重置密码</li>
+						<li class="color000"><i class="icon icon-ok-login"></i>绑定手机号</li>
+						<li class="active"><span>3</span>完善信息并激活成功</li>
+					</ul>
+				</article>
+				
+				<article class="article article-flrs3 login-bg-b login-bg">
+					<div class="login-content float-clearfix">
+						<div class="login-left">
+							<div class="login-box">
+								<h4 class="float-clearfix fontw-b">完善你的信息</i>
+									<p></p>
+								</h4>
+								<div class="step-login-ty">
+									<div class="ziliao">
+										<p><span>姓名：</span>James</p>
+										<p><span>性别：</span>男</p>
+										<p><span>生日：</span>1983.3.21</p>
+										<p><span>省市/城市：</span>上海 上海市</p>
+									</div>
+									<div class="login-remeber login-remeber20">
+										<label class="form-remeber">
+											<i class="icon icon-checked is-active"></i>订阅adidas最新资讯和新品通知
+										</label>
+									</div>
+									<div class="login-remeber">
+										<label class="form-remeber">
+											<i class="icon icon-checked is-active"></i>我已阅读并同意adiidas商城<a href="#">隐私政策</a>和<a href="#">使用条款</a>
+										</label>
+									</div>
+									<div class="login-remeber">
+										<label class="form-remeber">
+											<i class="icon icon-checked is-active"></i>我已阅读并同意<a href="#">adiCLUB会员相关条款</a>
+										</label>
+									</div>
+									<div class="login-btn float-clearfix oneline-2">
+										<a class="btn btn-black none-sm"><span>非本人</span></a>
+										<a class="btn btn-blue btn-have-arrow"><span>保存</span></a>
+										<a class="btn btn-black none block-sm two-btn-m"><span>非本人</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+	
+			</section>
+			<%include _includes/modules/footer-no-back-top.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		</div>
+	</body>
+</html>

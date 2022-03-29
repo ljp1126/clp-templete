@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<%include _includes/meta.html %>
+		<title>adicolor</title>
+		<%include _includes/css.html %>
+		<!-- <link rel="stylesheet" href="css/lp-pureboost-campaign.css" /> -->
+		<%include _includes/js.html %>
+		<!-- <script type="text/javascript" src="js/lp-pureboost-campaign.js"></script> -->
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+			<section class="container">
+				<style>
+					
+					.article {
+					position: relative;
+					}
+					.article > img {
+					width: 100%;
+					}
+					.article .lp-video-btn {
+					width: 14%;
+					height: 30%;
+					position: absolute;
+					top: 39%;
+					left: 43.5%;
+					}
+					.article-lp-pureboost-1,
+					.article-lp-pureboost-3,
+					.article-lp-pureboost-4,
+					.article-tile-product {
+					max-width: 1280px;
+					margin: 0 auto;
+					padding: 0 40px;
+					}
+					.article-lp-pureboost-text {
+					max-width: 1280px;
+					padding: 0 40px;
+					padding-top: 50px;
+					margin: 0 auto;
+					text-transform: uppercase;
+					}
+					.article-lp-pureboost-text h3 {
+					font-family: "adihdb", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+					text-align: center;
+					font-weight: bold;
+					font-size: 26px;
+					margin-bottom: 30px;
+					}
+					.article-lp-pureboost-text p {
+					font-size: 20px;
+					line-height: 36px;
+					}
+					.article-lp-pureboost-4 {
+					text-align: center;
+					text-transform: uppercase;
+					margin-bottom: 88px;
+					padding-top: 105px;
+					}
+					.article-lp-pureboost-4 .productbox {
+					margin-bottom: 35px;
+					}
+					.article-lp-pureboost-4 .productbox h3 {
+					font-family: "adihdb", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+					font-size: 32px;
+					margin-bottom: 45px;
+					}
+					.article-lp-pureboost-4 .productbox img {
+					margin-bottom: 40px;
+					}
+					.article-lp-pureboost-4 .productbox .price {
+					font-family: "adihdb", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+					font-size: 26px;
+					margin-bottom: 25px;
+					}
+					.article-lp-pureboost-4 > ul {
+					font-size: 0;
+					}
+					.article-lp-pureboost-4 > ul > li {
+					display: inline-block;
+					vertical-align: top;
+					margin: 0 30px;
+					}
+					.article-lp-pureboost-4 > ul > li img {
+					width: 100%;
+					}
+					.article-lp-pureboost-4 > ul > li p {
+					font-size: 22px;
+					margin-top: 20px;
+					}
+					.article-lp-pureboost-5 {
+					max-width: 1284px;
+					margin: 0 auto;
+					margin-bottom: 75px;
+					}
+					.article-tile-product {
+					text-transform: uppercase;
+					}
+					.article-tile-product > h3 {
+					font-weight: bold;
+					font-size: 36px;
+					text-align: center;
+					margin-bottom: 70px;
+					}
+					.article-tile-product > ul {
+					font-size: 0;
+					}
+					.article-tile-product > ul > li {
+					text-align: center;
+					display: inline-block;
+					vertical-align: top;
+					width: 25%;
+					margin-bottom: 56px;
+					padding: 0 10px;
+					}
+					.article-tile-product > ul > li a img {
+					width: 100%;
+					}
+					.article-tile-product > ul > li a p {
+					font-size: 14px;
+					}
+					.article-tile-product > ul > li a p.price {
+					font-family: "adihdb", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+					margin-top: 10px;
+					}
+					.article-lp-pureboost-more {
+					max-width: 1256px;
+					padding: 0 40px;
+					margin: 0 auto;
+					text-align: center;
+					}
+					.article-lp-pureboost-more > h3 {
+					font-weight: bold;
+					font-size: 36px;
+					margin-bottom: 57px;
+					}
+					.article-lp-pureboost-more > ul {
+					font-size: 0;
+					text-align: left;
+					}
+					.article-lp-pureboost-more > ul > li {
+					display: inline-block;
+					width: calc(50% - 17px);
+					position: relative;
+					margin-bottom: 40px;
+					}
+					.article-lp-pureboost-more > ul > li:nth-child(odd) {
+					margin-right: 34px;
+					}
+					.article-lp-pureboost-more > ul > li img {
+					width: 100%;
+					}
+					.article-lp-pureboost-more > ul > li .btn-component {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					z-index: 1;
+					}
+					.article-lp-pureboost-more > ul > li .btn-component:after {
+					content: '';
+					width: 0;
+					height: 100%;
+					display: inline-block;
+					vertical-align: middle;
+					}
+					.article-lp-pureboost-more > ul > li .btn-component > div {
+					vertical-align: middle;
+					display: inline-block;
+					padding-left: 30px;
+					}
+					.article-lp-pureboost-more > ul > li .btn-component > div .title {
+					text-transform: uppercase;
+					font-weight: bold;
+					font-size: 23px;
+					margin-bottom: 25px;
+					}
+					.article-lp-pureboost-more > .btn {
+					min-width: 200px;
+					margin-top: 15px;
+					margin-bottom: 123px;
+					}
+					@media (max-width: 1024px) {
+					.article .lp-video-btn {
+						width: 18%;
+						height: 34%;
+						top: 34%;
+						left: 41%;
+					}
+					.article-lp-pureboost-1,
+					.article-lp-pureboost-3,
+					.article-lp-pureboost-4,
+					.article-tile-product {
+						max-width: 100%;
+						padding: 0;
+					}
+					.article-lp-pureboost-text {
+						max-width: 100%;
+						padding: 0 40px;
+						padding-top: 58px;
+					}
+					.article-lp-pureboost-text h3 {
+						font-size: 36px;
+						margin-bottom: 25px;
+					}
+					.article-lp-pureboost-text p {
+						font-size: 24px;
+						line-height: 48px;
+					}
+					.article-lp-pureboost-4 {
+						padding: 0 40px;
+						padding-top: 70px;
+						margin-bottom: 148px;
+					}
+					.article-lp-pureboost-4 .productbox {
+						margin-bottom: 90px;
+					}
+					.article-lp-pureboost-4 .productbox h3 {
+						font-size: 40px;
+						margin-bottom: 60px;
+					}
+					.article-lp-pureboost-4 .productbox img {
+						width: 100%;
+						margin-bottom: 30px;
+					}
+					.article-lp-pureboost-4 .productbox .price {
+						margin-bottom: 20px;
+					}
+					.article-lp-pureboost-4 > ul > li {
+						margin: 0;
+						width: 33.33%;
+						padding: 0 20px;
+					}
+					.article-lp-pureboost-4 > ul > li p {
+						font-size: 25px;
+					}
+					.article-lp-pureboost-5 {
+						max-width: 100%;
+						margin-bottom: 90px;
+					}
+					.article-tile-product {
+						padding: 0 30px;
+						margin-bottom: 70px;
+					}
+					.article-tile-product > h3 {
+						font-size: 34px;
+						margin-bottom: 70px;
+					}
+					.article-tile-product > ul > li {
+						width: 50%;
+						padding: 0 20px;
+						margin-bottom: 66px;
+					}
+					.article-tile-product > ul > li a img {
+						width: 100%;
+					}
+					.article-tile-product > ul > li a p {
+						font-size: 24px;
+					}
+					.article-tile-product > ul > li a p.price {
+						margin-top: 15px;
+					}
+					.article-lp-pureboost-more {
+						max-width: 100%;
+						padding: 0 5px;
+					}
+					.article-lp-pureboost-more > h3 {
+						font-size: 40px;
+						margin-bottom: 54px;
+					}
+					.article-lp-pureboost-more > ul > li {
+						width: calc(50% - 11px);
+						margin-bottom: 15px;
+					}
+					.article-lp-pureboost-more > ul > li:nth-child(odd) {
+						margin-right: 22px;
+					}
+					.article-lp-pureboost-more > ul > li .btn-component > div {
+						padding-left: 14px;
+					}
+					.article-lp-pureboost-more > ul > li .btn-component > div .title {
+						font-size: 25px;
+						margin-bottom: 15px;
+					}
+					.article-lp-pureboost-more > .btn {
+						margin-top: 38px;
+						margin-bottom: 82px;
+					}
+					}
+					@media (max-width: 768px) {
+					.article-lp-pureboost-text {
+						padding: 0 20px;
+						padding-top: 29px;
+					}
+					.article-lp-pureboost-text h3 {
+						font-size: 18px;
+						margin-bottom: 12px;
+					}
+					.article-lp-pureboost-text p {
+						font-size: 12px;
+						line-height: 24px;
+					}
+					.article-lp-pureboost-4 {
+						padding: 0 20px;
+						padding-top: 35px;
+						margin-bottom: 74px;
+					}
+					.article-lp-pureboost-4 .productbox {
+						margin-bottom: 45px;
+					}
+					.article-lp-pureboost-4 .productbox h3 {
+						font-size: 20px;
+						margin-bottom: 30px;
+					}
+					.article-lp-pureboost-4 .productbox img {
+						margin-bottom: 15px;
+					}
+					.article-lp-pureboost-4 .productbox .price {
+						margin-bottom: 10px;
+					}
+					.article-lp-pureboost-4 .productbox .btn {
+						min-width: 110px;
+						font-size: 12px;
+						height: 30px;
+						line-height: 30px;
+					}
+					.article-lp-pureboost-4 .productbox .btn span:after {
+						top: -1px;
+					}
+					.article-lp-pureboost-4 > ul > li {
+						padding: 0 10px;
+					}
+					.article-lp-pureboost-4 > ul > li p {
+						font-size: 12px;
+					}
+					.article-lp-pureboost-5 {
+						margin-bottom: 45px;
+					}
+					.article-tile-product {
+						padding: 0 15px;
+						margin-bottom: 35px;
+					}
+					.article-tile-product > h3 {
+						font-size: 17px;
+						margin-bottom: 35px;
+					}
+					.article-tile-product > ul > li {
+						padding: 0 10px;
+						margin-bottom: 33px;
+					}
+					.article-tile-product > ul > li a p {
+						font-size: 12px;
+					}
+					.article-tile-product > ul > li a p.price {
+						margin-top: 8px;
+					}
+					.article-lp-pureboost-more {
+						padding: 0 3px;
+					}
+					.article-lp-pureboost-more > h3 {
+						font-size: 20px;
+						margin-bottom: 27px;
+					}
+					.article-lp-pureboost-more > ul > li {
+						width: calc(50% - 6px);
+						margin-bottom: 8px;
+					}
+					.article-lp-pureboost-more > ul > li:nth-child(odd) {
+						margin-right: 12px;
+					}
+					.article-lp-pureboost-more > ul > li .btn-component > div {
+						padding-left: 7px;
+					}
+					.article-lp-pureboost-more > ul > li .btn-component > div .title {
+						font-size: 13px;
+						margin-bottom: 8px;
+					}
+					.article-lp-pureboost-more > ul > li .btn-component > div .btn {
+						min-width: 110px;
+						font-size: 12px;
+						height: 30px;
+						line-height: 30px;
+					}
+					.article-lp-pureboost-more > ul > li .btn-component > div .btn span:after {
+						top: -1px;
+					}
+					.article-lp-pureboost-more > .btn {
+						min-width: 110px;
+						font-size: 12px;
+						height: 30px;
+						line-height: 30px;
+						min-width: 140px;
+						margin-top: 19px;
+						margin-bottom: 40px;
+					}
+					.article-lp-pureboost-more > .btn span:after {
+						top: -1px;
+					}
+					}
+					@media (max-width: 500px) {
+					.article-lp-pureboost-4 .productbox .btn {
+						min-width: 80px;
+					}
+					.article-lp-pureboost-more > ul > li .btn-component > div .btn {
+						min-width: 80px;
+					}
+					.article-lp-pureboost-more > .btn {
+						min-width: 80px;
+						min-width: 140px;
+					}
+					}
+
+					
+				</style>
+
+				<article class="article">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-pureboost-campaign/pic-p-1.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-pureboost-campaign/pic-p-1.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-pureboost-campaign/pic-m-1.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-pureboost-campaign/pic-m-1.jpg"}}'
+					/>
+				</article>
+
+				<article class="article article-lp-pureboost-1">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-pureboost-campaign/pic-p-2.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-pureboost-campaign/pic-p-2.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-pureboost-campaign/pic-m-2.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-pureboost-campaign/pic-m-2.jpg"}}'
+					/>
+
+					<a class="lp-video-btn e-lp-video-btn" data-video-code="CC350413C9DCD16F9C33DC5901307461"></a>
+				</article>
+
+				<article class="article article-lp-pureboost-text">
+					<h3>全新PUREBOOST 跑鞋蓄势待发</h3>
+					<p>全新配色PureBOOST为街跑而生，让充满好奇心的城市跑者们更深度、更纯粹地感受城市的每一个角落，在城市探索之路上，提供更为安心的缓冲保护。让阿迪达斯PureBOOST带给跑者们更优质舒适的跑步体验，让跑，尽可能！</p>
+				</article>
+
+				<article class="article article-lp-pureboost-3">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-pureboost-campaign/pic-p-3.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-pureboost-campaign/pic-p-3.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-pureboost-campaign/pic-m-3.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-pureboost-campaign/pic-m-3.jpg"}}'
+					/>
+				</article>
+
+				<article class="article article-lp-pureboost-4">
+					<div class="productbox">
+						<h3>PureBOOST 男女跑步鞋</h3>
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-pureboost-campaign/a-4/pic-1.png"
+						/>
+						<p class="price">RMB 1,099</p>
+						<a href="https://www.adidas.com.cn/item/CP9326" target="_blank" class="btn btn-black btn-have-arrow"><span>立即购买</span></a>
+					</div>
+					<ul>
+						<li>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-pureboost-campaign/a-4/pic-2.png"
+							/>
+							<p>全掌boost™科技</p>
+						</li>
+						<li>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-pureboost-campaign/a-4/pic-3.png"
+							/>
+							<p>针织鞋面</p>
+						</li>
+						<li>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-pureboost-campaign/a-4/pic-4.png"
+							/>
+							<p>网状橡胶外底</p>
+						</li>
+					</ul>
+				</article>
+
+				<article class="article article-lp-pureboost-5">
+					<img src="images/blank.gif"
+						lazysrc="../static/images/lp-pureboost-campaign/pic-p-4.jpg"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-pureboost-campaign/pic-p-4.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-pureboost-campaign/pic-m-4.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-pureboost-campaign/pic-m-4.jpg"}}'
+					/>
+				</article>
+
+				<article class="article article-tile-product">
+					<h3>其他配色</h3>
+					<ul>
+						<li>
+							<a href="https://www.adidas.com.cn/item/BB6278" target="_blank">
+								<img src="images/blank.gif"
+									lazysrc="../static/images/lp-pureboost-campaign/color/pic-1.png"
+								/>
+								<p>PureBOOST 男子跑步鞋</p>
+								<p class="price">rmb 1,099</p>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/BB6279" target="_blank">
+								<img src="images/blank.gif"
+									lazysrc="../static/images/lp-pureboost-campaign/color/pic-2.png"
+								/>
+								<p>PureBOOST 男子跑步鞋</p>
+								<p class="price">rmb 1,099</p>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/CP9326" target="_blank">
+								<img src="images/blank.gif"
+									lazysrc="../static/images/lp-pureboost-campaign/color/pic-3.png"
+								/>
+								<p>PureBOOST 男子跑步鞋</p>
+								<p class="price">rmb 1,099</p>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/BY8926" target="_blank">
+								<img src="images/blank.gif"
+									lazysrc="../static/images/lp-pureboost-campaign/color/pic-4.png"
+								/>
+								<p>PureBOOST X 女子跑步鞋</p>
+								<p class="price">rmb 1,099</p>
+							</a>
+						</li>
+					</ul>
+				</article>
+
+				<article class="article article-tile-product">
+					<h3>街跑推荐服饰</h3>
+					<ul>
+						<li>
+							<a href="https://www.adidas.com.cn/item/BQ2152" target="_blank">
+								<img src="images/blank.gif"
+									lazysrc="../static/images/lp-pureboost-campaign/street-runs/pic-1.png"
+								/>
+								<p>男子跑步茄克</p>
+								<p class="price">rmb 499</p>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/CE7291" target="_blank">
+								<img src="images/blank.gif"
+									lazysrc="../static/images/lp-pureboost-campaign/street-runs/pic-2.png"
+								/>
+								<p>男子跑步茄克</p>
+								<p class="price">rmb 599</p>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/BR0806" target="_blank">
+								<img src="images/blank.gif"
+									lazysrc="../static/images/lp-pureboost-campaign/street-runs/pic-3.png"
+								/>
+								<p>女子跑步茄克</p>
+								<p class="price">rmb 599</p>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/CF1023" target="_blank">
+								<img src="images/blank.gif"
+									lazysrc="../static/images/lp-pureboost-campaign/street-runs/pic-4.png"
+								/>
+								<p>女子跑步茄克</p>
+								<p class="price">rmb 599</p>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/CG1165" target="_blank">
+								<img src="images/blank.gif"
+									lazysrc="../static/images/lp-pureboost-campaign/street-runs/pic-5.png"
+								/>
+								<p>男子跑步短袖T恤</p>
+								<p class="price">rmb 299</p>
+							</a>
+						</li>
+						<!-- <li>
+							<a href="https://www.adidas.com.cn/item/CF2140" target="_blank">
+								<img src="images/blank.gif"
+									lazysrc="../static/images/lp-pureboost-campaign/street-runs/pic-6.png"
+								/>
+								<p>女子跑步短袖T恤</p>
+								<p class="price">rmb 599</p>
+							</a>
+						</li> -->
+						<li>
+							<a href="https://www.adidas.com.cn/item/CF6246" target="_blank">
+								<img src="images/blank.gif"
+									lazysrc="../static/images/lp-pureboost-campaign/street-runs/pic-7.png"
+								/>
+								<p>男子跑步长裤</p>
+								<p class="price">rmb 399</p>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/CF6250" target="_blank">
+								<img src="images/blank.gif"
+									lazysrc="../static/images/lp-pureboost-campaign/street-runs/pic-8.png"
+								/>
+								<p>男子跑步紧身裤</p>
+								<p class="price">rmb 399</p>
+							</a>
+						</li>
+						<!-- <li>
+							<a href="https://www.adidas.com.cn/item/CE2014" target="_blank">
+								<img src="images/blank.gif"
+									lazysrc="../static/images/lp-pureboost-campaign/street-runs/pic-9.png"
+								/>
+								<p>女子跑步短裤</p>
+								<p class="price">rmb 229</p>
+							</a>
+						</li> -->
+					</ul>
+				</article>
+	
+				<article class="article article-lp-pureboost-more">
+					<h3>更多推荐</h3>
+					<ul>
+						<li>
+							<div class="btn-component">
+								<div>
+									<p class="title">PureBOOST系列</p>
+									<a href="https://www.adidas.com.cn/running_pureboost" target="_blank" class="btn btn-black btn-have-arrow"><span>立即购买</span></a>
+								</div>
+							</div>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-pureboost-campaign/more/pic-p-1.jpg"
+								data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-pureboost-campaign/more/pic-p-1.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-pureboost-campaign/more/pic-m-1.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-pureboost-campaign/more/pic-m-1.jpg"}}'
+							/>
+						</li>
+						<li>
+							<div class="btn-component">
+								<div>
+									<p class="title" style="color:#fff;">UltraBOOST系列</p>
+									<a href="https://www.adidas.com.cn/running_ultraboost" target="_blank" class="btn btn-white btn-have-arrow"><span>立即购买</span></a>
+								</div>
+							</div>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-pureboost-campaign/more/pic-p-2.jpg"
+								data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-pureboost-campaign/more/pic-p-2.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-pureboost-campaign/more/pic-m-2.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-pureboost-campaign/more/pic-m-2.jpg"}}'
+							/>
+						</li>
+						<li>
+							<div class="btn-component">
+								<div>
+									<p class="title" style="color:#fff;">adizero系列</p>
+									<a href="https://www.adidas.com.cn/running_adizero" target="_blank" class="btn btn-white btn-have-arrow"><span>立即购买</span></a>
+								</div>
+							</div>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-pureboost-campaign/more/pic-p-3.jpg"
+								data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-pureboost-campaign/more/pic-p-3.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-pureboost-campaign/more/pic-m-3.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-pureboost-campaign/more/pic-m-3.jpg"}}'
+							/>
+						</li>
+						<li>
+							<div class="btn-component">
+								<div>
+									<p class="title">Alpha Bounce系列</p>
+									<a href="https://www.adidas.com.cn/running_alphabounce" target="_blank" class="btn btn-black btn-have-arrow"><span>立即购买</span></a>
+								</div>
+							</div>
+							<img src="images/blank.gif"
+								lazysrc="../static/images/lp-pureboost-campaign/more/pic-p-4.jpg"
+								data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-pureboost-campaign/more/pic-p-4.jpg"},
+								"medium":{"high":"",  "normal":"../static/images/lp-pureboost-campaign/more/pic-m-4.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-pureboost-campaign/more/pic-m-4.jpg"}}'
+							/>
+						</li>
+					</ul>
+					<a href="https://www.adidas.com.cn/running_all" target="_blank" class="btn btn-black btn-have-arrow"><span>全部跑步系列</span></a>
+				</article>
+
+
+				<script type="text/javascript">
+
+					$(function() {
+						// 换图 + 懒加载
+						$.spice.lazyLoad('img[lazysrc]', {
+							attr: 'lazysrc'
+						});
+						$.spice.tools.changeImageSrc({
+							callBack: function(img, self) {
+								$.spice.lazyLoad('img[lazysrc]', {
+									attr: self.opt.lazyData,
+									prestrain: 1
+								});
+							}
+						});
+
+
+						// 视频点击
+						$('.e-lp-video-btn').on('tap', function(e) {
+							e.preventDefault();
+							var _this = $(this),
+								videoCode =_this.data('videoCode');
+
+							openVideo(videoCode, 'true');
+						});
+
+					});
+
+				</script>
+			</section>
+			<%include _includes/modules/footer.html %>
+
+			<!-- 视频弹层 -->
+			<script id="video-dialog" type="text/template">
+				<div class="dialog">
+					<div class="dialog-container">
+						<div class="loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+						<div class="video-content">
+						</div>
+					</div>
+					<i class="icon icon-close dialog-close">&times;</i>
+				</div>
+			</script>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,301 @@
+@charset "UTF-8";
+.container {
+    .hover-scale {
+        width: 33.333%;
+        float: left;
+        overflow: hidden;
+        img {
+            transition: transform ease-out 8s;
+            will-change: transform;
+        }
+        &:hover {
+            img {
+                transform: scale(1.4);
+            }
+        }
+        &.none-scal:hover {
+            img {
+                transform: none;
+            }
+        }
+    }
+    .abs {
+        position: absolute;
+        //      background-color: rgba(100, 200, 100, .5);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .article {
+        position: relative;
+        >img {
+            width: 100%;
+        }
+        &.article-2 {
+            .link {
+                position: absolute;
+                left: 50%;
+                top: 62%;
+                width: 280px;
+            }
+        }
+        &.article-3 {
+            .play-video {
+                left: 45.8%;
+                top: 41.8%;
+                width: 8.6%;
+            }
+        }
+        &.article-tab {
+            .list-tab-box {
+                text-align: center;
+                li {
+                    display: inline-block;
+                    width: 140px;
+                    cursor: pointer;
+                    span {
+                        font-size: 24px;
+                        color: black;
+                        display: inline-block;
+                        letter-spacing: 5px;
+                        font-weight: bold;
+                        position: relative;
+                        padding: 4px;
+                    }
+                    &:first-child {
+                        border-right: 2px solid black;
+                    }
+                    &.active {
+                        span {
+                            color: #e5572b;
+                            &:after {
+                                content: "";
+                                width: 100%;
+                                position: absolute;
+                                bottom: 0;
+                                height: 2px;
+                                left: -2px;
+                                background: #e5572b;
+                            }
+                        }
+                    }
+                }
+            }
+            .list-content-box {
+                >li {
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
+                    .buy-btn {
+                        width: 200px;
+                        position: absolute;
+                        background: white;
+                        border: 2px solid #f05f2b;
+                        color: #f05f2b;
+                        font-size: 16px;
+                        letter-spacing: 2px;
+                        &.btn-have-arrow span:after {
+                            background-image: url(../../static/images/lp-climaheat/orange-right.png);
+                            background-position: 0 0;
+                            background-size: 100%;
+                        }
+                    }
+                    .box-1 {
+                        position: relative;
+                        .buy-btn {
+                            left: 50%;
+                            top: 33%;
+                        }
+                        .hover-scale-1 {
+                            position: absolute;
+                            left: 7%;
+                            width: 35%;
+                            top: 9.2%;
+                        }
+                        .hover-scale-2 {
+                            position: absolute;
+                            left: 50%;
+                            width: 47%;
+                            top: 43%;
+                        }
+                        .hover-scale-3 {
+                            position: absolute;
+                            left: 7%;
+                            width: 35%;
+                            top: 76.6%;
+                        }
+                    }
+                    .box-2 {
+                        position: relative;
+                        .buy-btn {
+                            left: 7%;
+                            top: 43%;
+                        }
+                        .hover-scale-1 {
+                            position: absolute;
+                            left: 50%;
+                            width: 47%;
+                            top: 23%;
+                        }
+                        .hover-scale-2 {
+                            position: absolute;
+                            left: 7%;
+                            width: 23.6%;
+                            top: 65%;
+                        }
+                    }
+                }
+            }
+        }
+        &.article-5 {
+            .link-1 {
+                width: 14.2%;
+                height: 4.3%;
+                left: 13.5%;
+                top: 51%;
+            }
+            .play-video {
+                width: 20%;
+                height: 12.2%;
+                left: 13.6%;
+                top: 57.9%;
+            }
+            .link-2 {
+                width: 16.5%;
+                height: 7.5%;
+                left: 14.1%;
+                top: 76%;
+            }
+            .link-3 {
+                width: 20.5%;
+                height: 7.5%;
+                left: 31.5%;
+                top: 76%;
+            }
+            .link-4 {
+                width: 17.1%;
+                height: 7.5%;
+                left: 52.8%;
+                top: 76%;
+            }
+        }
+    }
+    @media screen and(max-width:1024px) {
+        .article {
+            &.article-2 {
+                .link {
+                    left: 20%;
+                    top: 77%;
+                    width: 60%;
+                    font-size: 16px;
+                }
+            }
+            &.article-3 {
+                .play-video {
+                    left: 41%;
+                    top: 34%;
+                    width: 18%;
+                }
+            }
+            &.article-tab {
+                .list-tab-box {
+                    position: relative;
+                    ul {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        min-height: 100%;
+                    }
+                    li {
+                        width: 35%;
+                        span {
+                            font-size: 4vw;
+                            letter-spacing: 0.8vw;
+                            padding: 1vw;
+                        }
+                        &.active {
+                            span {
+                                &:after {
+                                    height: 2px;
+                                    left: -0.25vw;
+                                }
+                            }
+                        }
+                    }
+                }
+                .list-content-box {
+                    >li {
+                        display: none;
+                        &.active {
+                            display: block;
+                        }
+                        .buy-btn {
+                            width: 60%;
+                            font-size: 14px;
+                            &.btn-have-arrow span:after {
+                                top: 1px;
+                            }
+                        }
+                        .box-1 {
+                            .buy-btn {
+                                left: 20%;
+                                top: 49%;
+                            }
+                            .scroll-box {
+                                position: absolute;
+                                top: 56.5%;
+                                width: 100%;
+                            }
+                        }
+                        .box-2 {
+                            .buy-btn {
+                                left: 20%;
+                                top: 56%;
+                            }
+                            .scroll-box {
+                                position: absolute;
+                                top: 62.6%;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            &.article-5 {
+                .link-1 {
+                    width: 37.5%;
+                    height: 3.7%;
+                    left: 9.7%;
+                    top: 63.8%;
+                }
+                .play-video {
+                    width: 48.9%;
+                    height: 9.9%;
+                    left: 10.9%;
+                    top: 50.4%;
+                }
+                .link-2 {
+                    width: 37.5%;
+                    height: 5.8%;
+                    left: 9.7%;
+                    top: 69.3%;
+                }
+                .link-3 {
+                    width: 42.7%;
+                    height: 5.8%;
+                    left: 50.7%;
+                    top: 69.3%;
+                }
+                .link-4 {
+                    width: 37.5%;
+                    height: 6.0%;
+                    left: 9.7%;
+                    top: 76%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,681 @@
+@charset "utf-8";
+
+.article{
+    position: relative;
+    >img{
+        width: 100%;
+    }
+}
+
+.link{
+    position: absolute;
+    z-index: 1;
+    // background: rgba(0, 0, 0, .4);
+}
+.article-top{
+    a{
+        img{
+            width: 100%;
+        }
+    }
+}
+.article-video{
+    .link-01{
+        width: 52%;
+        height: 45%;
+        bottom: 9%;
+        left: 22%;
+    }
+}
+.article-com-01{
+    .link-02{
+        width: 53%;
+        height: 34%;
+        top: 11%;
+        left: 26%;
+    }
+    .link-03{
+        width: 33%;
+        height: 39%;
+        top: 49%;
+        left: 45%;
+    }
+}
+.article-com-02{
+    .link-04{
+        width: 55%;
+        height: 33%;
+        top: 9%;
+        left: 19%;
+    }
+    .link-05{
+        width: 17%;
+        height: 28%;
+        top: 44%;
+        left: 19%;
+    }
+    .link-06{
+        width: 35%;
+        height: 46%;
+        top: 45%;
+        left: 46%;
+    }
+}
+.article-com-03{
+    .link-07{
+        top: 12%;
+        left: 29%;
+        width: 53%;
+        height: 39%;
+    }
+    .link-08{
+        top: 54%;
+        left: 50%;
+        width: 33%;
+        height: 45%;
+    }
+}
+//底部轮播
+.article-tx{
+	>img:nth-child(1){
+		width:100%;
+	}
+	position: relative;
+	.swiper-p4{
+		position: absolute;
+		left:0;
+		top:0;
+		width: 100%;
+		height:100%;
+		.swiper-button-prev,.swiper-button-next{
+			width: 40px;
+			height: 40px;
+			top: 41%;
+			background: none;
+		}
+		.swiper-button-prev{
+			left: 21%;
+		}
+		.swiper-button-next{
+			right: 21.5%;
+		}
+		.pagination {
+			z-index:1000;
+			position: absolute;
+			top: 84.2%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 20.4%;
+			height: 10px;
+			cursor: pointer;
+			span {
+				display: block;
+				width: 25.3%;
+				height: 100%;
+				float: left;
+				margin: 0 5px;
+				background: #ddabb3;
+			}
+		}
+	.swiper-container1{
+		height:100%;
+	}
+	.events-changeSrc{
+		position: absolute;
+		width:29.2%;
+		top:14.3%;
+		left:50%;
+		transform: translateX(-50%);
+	}
+
+	.smallTx{
+		position: absolute;
+		left:17%;
+		top:43%;
+		width: 17.6%;
+		height:18.8%;
+		>a{
+			width:100%;
+			height: 100%;
+			display: block;
+			>img{
+				width:100%;
+				height: 100%;
+			}
+		}
+		.is-hide{
+			display: none;
+		}
+	}
+
+	.colorType {
+		width: auto;
+		height: auto;
+		position: absolute;
+		left: 23.5%;
+		top: 61.7%;
+		clear: both;
+		overflow: hidden;
+		.colorDot {
+			display: block;
+			float: left;
+			width: 30px;
+			height: 30px;
+			background: red;
+			margin: 0 5px;
+			a {
+				display: block;
+				width: 50%;
+				height: 50%;
+				margin: 0 auto;
+				margin-top: 25%;
+			}
+		}
+	}
+
+	.titleInfo{
+		font-size: 18px;
+		background: url(../../static/images/yyqx/yyqx-pc-p4-title.png) no-repeat center center;
+		background-size:100% 100%;
+		position: absolute;
+		left: 23.1%;
+		top: 64.8%;
+		padding: 5px;
+	}
+	.priceInfo {
+		font-size: 18px;
+		background: url(../../static/images/yyqx/yyqx-pc-p4-price.png) no-repeat center center;
+		background-size:100% 100%;
+		position: absolute;
+		padding: 5px;
+		left: 23.1%;
+		top: 70.8%;
+	}
+
+	.fontbolder {
+		font-weight: bold;
+	}
+
+	.buyBtn,.soldOutBtn {
+		width: 14.5%;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 70.1%;
+	}
+
+	}	
+	
+}
+// 颜色分类
+.pink {
+	background: #f7d0d5 !important;
+}
+.white {
+	background: #fdfdfd !important;
+}
+.black {
+	background: #282425 !important;
+}
+.color-active {
+	border: 2px solid #bcd334;
+}
+.pagination-active {
+	background: #ffffff !important;
+}
+
+.article-foot{
+	a{
+		display: inline-block;
+        position: absolute;
+        top: 37.7%;
+        width: 12.75%;
+        height: 40.1%;
+        .btn{
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 16px;
+            height: 40px;
+            line-height: 40px;
+        }
+	}
+	.foot-01{
+		left: 20.7%;
+	}
+	.foot-02{
+		left: 35.7%;
+	}
+	.foot-03{
+	    left: 50.6%;
+	}
+	.foot-04{
+	    left: 65.5%;
+	}
+}
+.article-kv{
+    .link-001{
+        bottom: 22%;
+        left: 42%;
+        width: 12%;
+        height: 11%;
+    }
+    .swiper-button-next{
+        background: url(https://img.adidas.com.cn/resources/activePage/JUL/neo/img-right.png);
+        width: 90px;
+        height: 95px;
+        margin-top: -50px;
+        right: 18%;
+        top: 36%
+    }
+    .swiper-button-prev{
+        background: url(https://img.adidas.com.cn/resources/activePage/JUL/neo/img-left.png);
+        width: 90px;
+        height: 95px;
+        margin-top: -50px;
+        left: 14%;
+        top: 36%
+    }
+    .swiper-container-kv{
+        position: absolute;
+        top: 15.6%;
+        left: 21.5%;
+        margin: 0 auto;
+        width: 52.6%;
+        .swiper-slide{
+            width: 33.33%;
+        }
+    }
+}
+
+@media(max-width:1800px){
+    .article-tx{
+		.swiper-p4{ 
+			.colorType {			
+				.colorDot {				
+					width: 25px;
+					height: 25px;				
+					margin: 0 5px;
+					span {
+						display: block;
+						width: 50%;
+						height: 50%;
+						margin: 0 auto;
+						margin-top: 25%;
+					}
+				}
+			}
+		
+		}
+
+	}
+}
+@media(max-width:1368px){
+    .article-tx{
+		.swiper-p4{ 
+			.pagination {				
+				height: 6px;				
+			}
+			.colorType {			
+				.colorDot {				
+					width: 20px;
+					height: 20px;				
+					margin: 0 5px;
+					span {
+						display: block;
+						width: 50%;
+						height: 50%;
+						margin: 0 auto;
+						margin-top: 25%;
+					}
+				}
+			}
+		
+			.priceInfo {
+				top: 72.8%;
+			}
+		}
+
+	}
+}
+@media(max-width:1250px){
+    .article-foot{
+        a{
+            .btn{
+                height: 36px;
+                line-height: 36px;
+                font-size: 14px;
+                span{
+                    &:after{
+                        top: 1px;
+                    }
+                }
+            }
+        } 
+    } 
+}
+@media(max-width:1250px){
+    .article-foot{
+        a{
+            .btn{
+                min-width: 125px;
+            }
+        }
+    }
+}
+@media (max-width: 1024px){
+    .article-video{
+        .link-01{
+            width: 68%;
+            height: 47%;
+            left: 16%;
+        }
+    }
+    .article-com-01{
+        .link-02{
+            width: 80%;
+            height: 45%;
+            top: 11%;
+            left: 7%;
+        }
+        .link-03{
+            width: 72%;
+            height: 30%;
+            top: 61%;
+            left: 21%;
+        }
+    }
+    .article-com-02{
+        .link-04{
+            width: 78%;
+            height: 49%;
+            top: 9%;
+            left: 11%;
+        }
+        .link-06{
+            width: 77%;
+            height: 27%;
+            top: 61%;
+            left: 6%;
+        }
+        .article-kv{
+            position: absolute;
+            top: 34%;
+            left: 60%;
+            width: 28%;
+        }
+        .article-kv-02{
+            .swiper-container{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                .swiper-slide{
+                    width: 100%;
+                }
+            }
+            .swiper-container-horizontal{
+                >.swiper-pagination-bullets{
+                    bottom: 25px;
+                    span{
+                        width: 30px;
+                        height: 6px;
+                        background: #99878b;
+                        border: 1px solid #000000;
+                        border-radius: 10px;
+                    }  
+                    .swiper-pagination-bullet-active{
+                        background: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+    .article-com-03{
+        .link-07{
+            top: 9%;
+            left: 7%;
+            width: 87%;
+            height: 48%;
+        }
+        .link-08{
+            top: 59%;
+            left: 23%;
+            width: 69%;
+            height: 30%;
+        }
+    }
+    .article-tx{
+		.swiper-p4{ 
+			.pagination {				
+				height: 6px;				
+			}
+			.colorType {
+				top: 62.1%;			
+				.colorDot {				
+					width: 15px;
+					height: 15px;				
+					margin: 0 5px;
+					span {
+						display: block;
+						width: 50%;
+						height: 50%;
+						margin: 0 auto;
+						margin-top: 25%;
+					}
+				}
+			}
+		
+			.priceInfo {
+				top: 73.8%;
+			}
+		}
+
+    }
+    .article-foot{
+        a{
+            width: 42.7%;
+            height: 33.4%;
+        }
+        .foot-01{
+            left: 6.2%;
+            top: 24.5%;
+        }
+        .foot-02{
+            top: 24.5%;
+            left: 50.8%;
+        }
+        .foot-03{
+            left: 6.2%;
+            top: 59%;
+        }
+        .foot-04{
+            top: 59%;
+            left: 50.8%;
+        }
+    } 
+    .article-kv{
+        .swiper-container-kv{
+                left: 11%;
+                width: 78%;
+            .swiper-slide{
+                width: 33.33%;
+            }
+        }
+    }
+    .article-kv{
+        .link-001{
+            bottom: 25%;
+            left: 42%;
+            width: 17%;
+            height: 11%;
+        }
+        .swiper-button-next{
+            background: url(https://img.adidas.com.cn/resources/activePage/JUL/neo/img-right-m.png);
+            width: 40px;
+            height: 40px;
+            margin-top: -50px;
+            right: 1%;
+            top: 52%;
+            background-size: 40px 40px;
+        }
+        .swiper-button-prev{
+            background: url(https://img.adidas.com.cn/resources/activePage/JUL/neo/img-left-m.png);
+            width: 40px;
+            height: 40px;
+            margin-top: -50px;
+            left: 1%;
+            top: 52%;
+            background-size: 40px 40px;
+        }
+    }
+}
+
+@media(max-width:768px){
+	.article-tx{
+		.swiper-p4{ 			
+			.colorType {
+				top: 62.1%;			
+				.colorDot {				
+					width: 12px;
+					height: 12px;				
+					margin: 0 3px;
+					span {
+						display: block;
+						width: 50%;
+						height: 50%;
+						margin: 0 auto;
+						margin-top: 25%;
+					}
+				}
+			}
+			.titleInfo{
+				font-size:12px;
+			}
+			.priceInfo{
+				font-size:12px;
+			}
+		}
+
+	}
+}
+
+@media(max-width:750px){
+    .article-tx{
+		.swiper-p4{
+			.pagination {				
+				width: 30.4%;
+				height: 5px;
+				top: 86%;
+				span {					
+					margin: 0 2px;
+				}						
+			} 			
+			.colorType {
+				top: 62.1%;			
+				.colorDot {				
+					width: 12px;
+					height: 12px;				
+					margin: 0 3px;
+					span {
+						display: block;
+						width: 50%;
+						height: 50%;
+						margin: 0 auto;
+						margin-top: 25%;
+					}
+				}
+			}
+			.events-changeSrc{
+				position: absolute;
+				width:42.4%;
+				top:10%;
+				left:50%;
+				transform: translateX(-50%);
+			}
+			.titleInfo{
+				background: url(../../static/images/yyqx/yyqx-mob-p4-title.png) no-repeat center center;
+				background-size:100% 100%;
+				position: absolute;
+				left: 6.67%;
+				top: 65.4%;
+				padding: 3px;
+				font-size: 12px;
+			}
+			.priceInfo {
+				font-size: 12px;
+				background: url(../../static/images/yyqx/yyqx-mob-p4-price.png) no-repeat center center;
+				background-size:100% 100%; 
+				padding: 3px;
+				left: 6.67%;
+				top: 74.8%;
+			}
+			.buyBtn, .soldOutBtn{
+				width: 28.5%;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				top: 70.1%;
+			}
+			.smallTx{
+				position: absolute;
+				left:10px;
+				top: 42%;
+				width: 26.1%;
+				height: 18.9%;
+				>a{
+					width:100%;
+					height: 100%;
+					display: block;
+					>img{
+						width:100%;
+						height: 100%;
+					}
+				}
+				.is-hide{
+					display: none;
+				}
+			}
+			
+		}
+
+	}
+}
+
+@media(max-width:414px){
+    	.article-tx{
+		.swiper-p4{
+			.swiper-button-prev,.swiper-button-next{
+				width: 30px;
+				height: 30px;
+				top: 40%;
+				background: none;
+			}
+			.swiper-button-prev{
+				left: 8px;
+			}
+			.swiper-button-next{
+				right: 8px;
+			}			
+			
+			.colorType {
+				top: 62.1%;
+				left: 6%;			
+				.colorDot {				
+					width: 12px;
+					height: 12px;				
+					margin: 0 3px;
+					span {
+						display: block;
+						width: 50%;
+						height: 50%;
+						margin: 0 auto;
+						margin-top: 25%;
+					}
+				}
+			}
+		}
+
+	}
+}

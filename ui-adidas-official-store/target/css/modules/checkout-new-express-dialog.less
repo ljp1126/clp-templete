@@ -1,0 +1,96 @@
+.checkout-new-express-dialog{
+	.dialog-scroll-container{
+        .dialog-scroll{
+            >div{
+                .dialog{
+                    .dialog-container{
+                        .title{
+                            >span{
+                            }
+                        }
+						.express-content{
+							.express-item{
+								margin-bottom: 15px;
+								.way-item{
+									padding: 5px 0 7px;
+									position: relative;
+									&:after{
+										content: '';
+									    position: absolute;
+									    bottom: 0;
+										left: 20px;
+									    height: 1px;
+									    background: #f0f0f0;
+									    width: calc(~'100% - 40px');
+									}
+									&.is-active{
+										.item-box{
+											background: #E6E6E6;
+										}
+									}
+									.item-box{
+										padding: 10px 20px;
+										text-align: right;
+										font-size: 0;
+										>div{
+											display: inline-block;
+											vertical-align: middle;
+										}
+										&:after{
+											content: '';
+											width: 0;
+											height: 100%;
+											display: inline-block;
+											vertical-align: middle;
+										}
+										.messages{
+											text-align: left;
+											width: 80%;
+											.way-title{
+												font-size: 14px;
+												line-height: 14px;
+												color: #000;
+												letter-spacing: 0;
+												font-weight: bold;
+											}
+											.way-info{
+												font-size: 12px;
+												color: #888;
+												letter-spacing: 0;
+												line-height: 14px;
+											}
+											>p:nth-child(n+2){
+												padding-top: 6px;
+											}
+										}
+										.payment{
+											width: 20%;
+											font-size: 14px;
+											color: #46463F;
+											letter-spacing: 0;
+											line-height: 14px;
+										}
+									}
+								}
+							}
+							.check-info{
+								font-size: 12px;
+								color: #000000;
+								line-height: 12px;
+								margin: 0 20px;
+								a{
+									text-decoration: underline;
+									color: #000;
+								}
+							}
+						}
+                    }
+                }
+            }
+        }
+	}
+}
+
+@media(max-width:1024px){
+
+}

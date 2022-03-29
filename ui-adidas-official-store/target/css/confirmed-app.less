@@ -1,0 +1,238 @@
+@charset "UTF-8";
+.article-confirmed-app-width{
+	max-width: 1920px;
+	margin: 0 auto;
+	.confirmed-app-container{
+		max-width:950px;
+		margin: 0 auto;
+	}
+	.img-box{
+		width: 100%;
+		position: relative;
+		a{
+			display: block;
+		}
+		img{
+			width: 100%;
+		}
+	}
+	.confirmed-app-container-first{
+		width: 100%;
+		position: relative;
+		.download-box{
+			width: 11.46%;
+			min-width: 220px;
+			height: 42px;
+			position: absolute;
+			top:54.7%; 
+			left:27.8%;
+			.btn-black{
+				min-width: 220px;
+			}
+		}
+		&:first-child ,&:last-child {
+		    .img-box{
+              min-height: 95vh;
+                .change-img{
+                    position: absolute;
+                    top: auto;
+                    left: auto;
+                    -ms-transform: none;
+                    transform: none;
+                    min-width: 0;
+                    min-height: 0;
+                    max-width: 100%;
+                    object-fit: cover;
+                    font-family: 'object-fit: cover;';
+                    width: 100%;
+                    height: 100%;
+                }  
+            
+            }  
+		}
+		
+		.download-box1{
+		    width: 45%;
+		    margin: 0 auto;
+		    position: absolute;
+		    bottom:18%;
+		    left:50%;
+		    transform: translateX(-50%);
+		    text-align: center;
+		    
+		    img{
+		        width: 120px;
+		        border-radius: 20px;
+		    }
+		    h2{
+		        font-weight: 400;
+                word-wrap: break-word;
+                -webkit-tap-highlight-color: transparent;
+                padding-bottom: 20px;
+                font-size: 66px;
+                line-height: 56px;
+                margin-top: 30px;
+                color: #fff;
+		    }
+		    p{
+		        font-size: 20px;
+                line-height: 28px;
+                margin-bottom: 52px;
+                color: #fff;
+		    }
+		    .new-color{
+		        color: #000;
+		    }
+		    a{
+		        display: block;
+		        img{
+		            width: 210px;
+		        }
+		    }
+		    .masthead-body-container{
+                .masthead-title{
+                    font-size: 66px;
+                    line-height: 68px;
+                    color: #fff;
+                    span{
+                        color: #0073ab;
+                        margin: 15px 0;
+                        display: block;
+                        text-decoration: underline;
+                    }
+                }
+                .masthead-subtitle{
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+		}
+		.download-box2{
+		        bottom:42% ;
+		        justify-content: center;
+		        p.new-color{
+		            margin-bottom: 0;
+		        }
+		}
+		
+		.download-box3{
+		    left:0;
+		    bottom: 18%;
+		    transform: none;
+		    padding-left: 5%;
+		    text-align: left;
+		    .masthead-subtitle{
+		        color: #fff;
+		    }
+		}
+		.download-box4{
+		    right: 0;
+		    padding-right: 3%;
+		    text-align: right;
+		    transform: none;
+		    bottom: 29%;
+		    .masthead-body-container{
+		        .masthead-title,.masthead-subtitle{
+		            color: #000;
+		        }
+		    }
+		    
+		}
+		.download-box5{
+            left: 0;
+            padding-left: 5%;
+            text-align:left;
+            transform: none;
+            bottom: 19%;
+            .masthead-body-container{
+                .masthead-title,.masthead-subtitle{
+                    color: #000;
+                }
+            }
+            
+        }
+	}
+	//常见问题
+	.test-container{
+		margin: 36px 0 40px;
+		h2{
+			font-size: 36px;
+			line-height: 36px;
+			margin-bottom: 24px;
+		}
+		h4{
+			font-size: 14px;
+			line-height: 24px;
+			font-weight: bold;
+		}
+		p{
+			font-size: 14px;
+			line-height: 24px;
+			margin: 24px 0;
+		}
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.article-confirmed-app-width{
+		max-width: 100%;
+		.img-box{
+			width: 100%;
+			position: relative;
+		}
+		.confirmed-app-container-first{
+			width: 100%;
+			.download-box{}
+			 .download-box1{
+			     width: 90%;
+			     bottom: 10%;
+			     img{
+			         width: 60px;
+			     }
+			     h2{
+			         font-size: 36px;
+			         line-height: 34px;
+			         padding-bottom: 12px;
+			         margin-top: 12px;
+			     }
+			     p{
+			         font-size: 18px;
+			         line-height: 24px;
+			         margin-bottom: 32px;
+			     }
+			     .masthead-body-container{
+                    .masthead-title{
+                        font-size: 26px;
+                        line-height: 26px;
+                    }
+                    .masthead-subtitle{
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+			 }
+			 .download-box4{
+			     left: 0;
+			 }
+		}
+		//常见问题
+		.test-container{
+			margin: 30px 20px 0;
+			h2{
+				font-size: 24px;
+				line-height: 24px;
+				margin-bottom: 30px;
+			}
+			h4{
+				font-size: 18px;
+				line-height: 22px;
+				font-weight: bold;
+			}
+			p{
+				font-size: 14px;
+				line-height: 18px;
+				margin: 14px 0 30px;
+			}
+		}
+	}
+}

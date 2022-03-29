@@ -1,0 +1,15 @@
+node_modules/
+activity/node_modules/
+activity/build/
+/html/
+/libs/
+ui-adidas-official-store/
+ui-global-style-refresh/
+ui-protostar/
+.project
+.idea/adidas-official-store.iml
+.idea/codeStyleSettings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml

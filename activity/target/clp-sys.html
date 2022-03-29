@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" href="css/lp-neo-7.css" /> -->
+	<%include _includes/js.html %>
+	<!-- <script type="text/javascript" src="js/hotSpot.js"></script> -->
+</head>
+
+<body>
+	<div id="wrapper">
+		<!-- 头部 -->
+		<%include _includes/modules/header.html %>
+		<!-- 內容 -->
+		<section class="container">
+			<style>
+				.article,
+				.article-top {
+					position: relative;
+				}
+
+				.article img {
+					width: 100%;
+					height: auto;
+				}
+
+				.app-pc {
+					position: absolute;
+					width: 21%;
+					left: 55%;
+					top: 68%;
+					height: 4%;
+				}
+
+				.animation-left {
+					position: absolute;
+					left: -50%;
+					width: 23%;
+					top: 16%;
+					animation: kvleft 5s 2s infinite;
+					-webkit-animation: kvleft 5s 2s infinite;
+				}
+
+				@keyframes kvleft {
+					0% {
+						left: -50%
+					}
+
+					25% {
+						left: 29%;
+					}
+
+					50% {
+						left: 29%;
+					}
+
+					75% {
+						left: 29%;
+					}
+
+					100% {
+						left: 29%;
+					}
+				}
+
+				.animation-right {
+					position: absolute;
+					right: -50%;
+					width: 44%;
+					top: 54%;
+					animation: kvright 5s 2s infinite;
+					-webkit-animation: kvright 5s 2s infinite;
+				}
+
+				@keyframes kvright {
+					0% {
+						right: -50%
+					}
+
+					25% {
+						right: 27%;
+					}
+
+					50% {
+						right: 27%;
+					}
+
+					75% {
+						right: 27%;
+					}
+
+					100% {
+						right: 27%;
+					}
+				}
+				.swiper-container {
+					position: absolute;
+					width: 35%;
+				}
+
+				.swiper-button-next {
+					background-image: url(../static/images/clp-sys/right_03.png) !important;
+					width: 35px;
+					height: 96px;
+					background-size: 35px 96px;
+					right: 2.8%;
+				}
+
+				.swiper-button-prev {
+					background-image: url(../static/images/clp-sys/left_03.png) !important;
+					width: 35px;
+					height: 96px;
+					background-size: 35px 96px;
+					left: 2.8%;
+				}
+
+				.swiper-container .swiper-slide {
+					width: 100% !important;
+					padding: 0 10%;
+				}
+
+				.swiper-container1 {
+					width: 36%;
+					top: 30%;
+					left: 55%;
+				}
+
+				.swiplink {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					flex-wrap: wrap;
+				}
+
+				.swiplink-mob {
+					display: none;
+				}
+
+				.swiplink .links {
+					width: 50%;
+					height: 50%;
+				}
+
+				.swiper-container2 {
+					top: 26%;
+					left: 10%;
+				}
+
+				.swiper-container3 {
+					top: 30%;
+					left: 48%;
+				}
+
+				.swiper-container4 {
+					top: 4%;
+					left: 12%;
+				}
+
+				.swiper-container5 {
+					top: 25%;
+					left: 50%;
+				}
+
+				.swiper-container6 {
+					top: 12%;
+					left: 18%;
+				}
+
+				.swiper-container7 {
+					top: 32%;
+					left: 55%;
+				}
+
+				.article .gl-cta {
+					position: absolute;
+					height: 58px;
+					line-height: 62px;
+					font-size: 22px;
+					padding: 0 5%;
+				}
+
+				.section1 .gl-cta {
+					top: 83%;
+					left: 65%;
+				}
+
+				.section2 .gl-cta {
+					left: 18%;
+					top: 78%;
+				}
+
+				.section3 .gl-cta {
+					top: 73%;
+					left: 58%;
+				}
+
+				.section4 .gl-cta {
+					left: 19.5%;
+					top: 59%;
+				}
+
+				.section7 .gl-cta {
+					top: 82%;
+					left: 64%;
+				}
+				.article-btn .gl-cta{
+					padding: 0 21px;
+				}
+				.link {
+					position: absolute;
+				}
+
+				.link-0 {
+					top: 8.23%;
+					left: 14.24%;
+					width: 16.63%;
+					height: 35.13%;
+				}
+
+				.link-1 {
+					top: 8.23%;
+					left: 32.59%;
+					width: 16.48%;
+					height: 34.62%;
+				}
+
+				.link-2 {
+					top: 8.97%;
+					left: 51.01%;
+					width: 16.48%;
+					height: 35.51%;
+				}
+
+				.link-3 {
+					top: 8.23%;
+					left: 69.57%;
+					width: 16.18%;
+					height: 35.00%;
+				}
+
+				.link-4 {
+					top: 46.95%;
+					left: 14.54%;
+					width: 16.26%;
+					height: 35.26%;
+				}
+
+				.link-5 {
+					top: 46.95%;
+					left: 32.44%;
+					width: 16.85%;
+					height: 35.00%;
+				}
+
+				.link-6 {
+					top: 46.44%;
+					left: 50.86%;
+					width: 16.70%;
+					height: 36.03%;
+				}
+
+				.link-7 {
+					top: 46.08%;
+					left: 69.35%;
+					width: 16.63%;
+					height: 34.74%;
+				}
+                .article-btn .gl-cta{
+					left: 79%;
+    				top: 68%;
+
+				}
+				.article-btn .btn.gl-cta-height .gl-icon{
+					height: 58px;
+					line-height: 62px;
+				}
+				.prize-list{
+					position: absolute;
+					width: 19%;
+					height: 6%;
+					bottom: 4%;
+					left: 41%;
+					cursor: pointer;
+				}
+				@media (max-width:768px) {
+					.animation-left {
+						left: -55%;
+						width: 58%;
+						top: 17%;
+					}
+
+					@keyframes kvleft {
+						0% {
+							left: -55%
+						}
+
+						25% {
+							left: 18%;
+						}
+
+						50% {
+							left: 18%;
+						}
+
+						75% {
+							left: 18%;
+						}
+
+						100% {
+							left: 18%;
+						}
+					}
+
+					.animation-right {
+						right: -75%;
+						width: 76%;
+						top: 54%;
+					}
+
+					@keyframes kvright {
+						0% {
+							right: -75%
+						}
+
+						25% {
+							right: 6%;
+						}
+
+						50% {
+							right: 6%;
+						}
+
+						75% {
+							right: 6%;
+						}
+
+						100% {
+							right: 6%;
+						}
+					}
+
+					.swiper-container .swiper-slide {
+						width: 100% !important;
+						padding: 0;
+						left: 0;
+					}
+
+					.view-rules {
+						position: absolute;
+						width: 27%;
+						height: 5%;
+						top: 20%;
+						left: 37%;
+					}
+
+					.close-view {
+						position: absolute;
+						width: 10%;
+						height: 2%;
+						top: 1%;
+						left: 87%;
+					}
+
+					.swiper-button-next {
+						width: 17px;
+						height: 42px;
+						background-size: 17px 42px;
+						right: 1%;
+					}
+
+					.swiper-button-prev {
+						width: 17px;
+						height: 42px;
+						background-size: 17px 42px;
+						left: 1%;
+					}
+
+					.swiper-container {
+						width: 100%;
+						left: 0;
+					}
+
+					.swiplink-mob {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						display: block;
+						display: flex;
+						flex-wrap: wrap;
+					}
+
+					.swiplink-mob .links {
+						width: 33%;
+						height: 100%;
+					}
+					.link-two.swiplink-mob .links {
+						width: 50%;
+						height: 100%;
+					}
+
+					.swiper-container1 {
+						top: 75%;
+					}
+
+					.swiper-container2 {
+						top: 73%;
+					}
+
+					.swiper-container3 {
+						top: 72%;
+					}
+
+					.swiper-container4 {
+						top: 55%;
+					}
+
+					.swiper-container5 {
+						top: 72%;
+					}
+
+					.swiper-container6 {
+						top: 65%;
+					}
+
+					.swiper-container7 {
+						top: 72%;
+					}
+
+					.article-tab .nav-box {
+						width: 100%;
+						left: 0;
+						top: 24%;
+					}
+
+					.article .gl-cta {
+						position: absolute;
+						height: 30px;
+						line-height: 35px;
+						font-size: 12px;
+						background: #000 !important;
+						color: #fff !important;
+						padding: 0 50px; 
+					}
+
+					.section1 .gl-cta {
+						top: 95%;
+						left:50%;
+						transform: translate(-50%,0);
+					}
+
+					.section2 .gl-cta {
+						top: 95%;
+						left:50%;
+						transform: translate(-50%,0);
+					}
+
+					.section3 .gl-cta {
+						top: 90%;
+						left:50%;
+						transform: translate(-50%,0);
+						background: #fff !important;
+						color: #000 !important;
+					}
+					.article.section3 .btn.gl-cta-color-white.gl-cta-box-shadow:after,.article.section4 .btn.gl-cta-color-white.gl-cta-box-shadow:after{
+						box-shadow:inset 0 0 0 1px #fff !important
+					}
+
+					.section4 .gl-cta {
+						top: 84%;
+						left:50%;
+						transform: translate(-50%,0);
+						background: #fff !important;
+						color: #000 !important;
+					}
+
+					.section7 .gl-cta {
+						top: 95%;
+						left:50%;
+						transform: translate(-50%,0);
+					}
+
+					.article .btn.gl-cta-color-white.gl-cta-box-shadow:after {
+						box-shadow: inset 0 0 0 1px #000 !important;
+					}
+
+					.link-0 {
+						top: 1.70%;
+						left: 4.96%;
+						width: 42.77%;
+						height: 21.41%;
+					}
+
+					.link-1 {
+						top: 1.61%;
+						left: 52.07%;
+						width: 42.36%;
+						height: 21.41%;
+					}
+
+					.link-2 {
+						top: 25.40%;
+						left: 4.96%;
+						width: 42.56%;
+						height: 21.50%;
+					}
+
+					.link-3 {
+						top: 25.40%;
+						left: 52.07%;
+						width: 42.56%;
+						height: 21.41%;
+					}
+
+					.link-4 {
+						top: 47.85%;
+						left: 5.58%;
+						width: 41.32%;
+						height: 21.50%;
+					}
+
+					.link-5 {
+						top: 47.68%;
+						left: 52.07%;
+						width: 42.36%;
+						height: 21.92%;
+					}
+
+					.link-6 {
+						top: 70.81%;
+						left: 5.17%;
+						width: 42.15%;
+						height: 21.33%;
+					}
+
+					.link-7 {
+						top: 70.73%;
+						left: 51.86%;
+						width: 42.15%;
+						height: 20.99%;
+                    }
+                    .article-btn .gl-cta{
+                        left: 21%;
+                        top: 80%;
+                        background: #fff !important;
+                        color: #000 !important;
+                        height: 42px;
+                        line-height: 44px;
+                    }
+                    .article-btn .btn.gl-cta-color-white.gl-cta-box-shadow:after{
+                        box-shadow: inset 0 0 0 1px #fff !important;
+                    }
+                    .article-btn .btn.gl-cta-height .gl-icon{
+                        height: 42px;
+                        line-height: 44px;
+                    }
+                    .app-mob {
+                        position: absolute;
+                        width: 35%;
+                        left: 52%;
+                        top: 68%;
+                        height: 5%;
+					}
+				}
+			</style>
+			<article class="article article-btn">
+				<a href="https://www.adidas.com.cn/outlet_all?plpranking=B&amp;highlight=B">
+				<img lazysrc="../static/images/clp-sys/pc_01-bg-v3.jpg" src="https://static.adidas.com.cn/images/blank.gif" data-image='{
+					"standard":{"high":"", "normal":"../static/images/clp-sys/pc_01-bg-v3.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/clp-sys/mob_01-bg-v3.jpg"},
+					"small":{"high":"", "normal":"../static/images/clp-sys/mob_01-bg-v3.jpg"}
+				}' />
+			 </a>
+				<div class="animation-left">
+					<img src="../static/images/clp-sys/kv-animon1.png?version=000000" alt="">
+				</div>
+				<div class="animation-right">
+					<img src="../static/images/clp-sys/kv-animon2.png?version=000000" alt="">
+                </div>
+               
+			</article>
+			<article class="article-top">
+				<article class="article section1">
+					<img lazysrc="../static/images/clp-sys/pc-min_02-v3.jpg" src="https://static.adidas.com.cn/images/blank.gif" data-image='{
+						"standard":{"high":"", "normal":"../static/images/clp-sys/pc-min_02-v3.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/clp-sys/mob-min_02-v3.jpg"},
+						"small":{"high":"", "normal":"../static/images/clp-sys/mob-min_02-v3.jpg"}
+					}' />
+					<div class="swiper-container">
+						<div class="swiper-wrapper ">
+							<div class="swiper-slide">
+								<img class="swiper-lazy" data-src="true" lazysrc="../static/images/clp-sys/z-women1.png" src="https://img.adidas.com.cn/images/blank.gif"    data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/z-women1.png"},
+                                    "medium":{"high":"", "normal":"../static/images/clp-sys/z-women1-m1.png"},
+									"small":{"high":"", "normal":"../static/images/clp-sys/z-women1-m1.png"}}' 
+									/>
+								<div class="swiplink none-sm">
+									<a href="https://www.adidas.com.hk/item/EG2047" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/G27489" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/EG0724" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/EG1431" class="links"></a>
+								</div>
+								<div class="swiplink-mob ">
+									<a href="https://www.adidas.com.hk/item/EG2047" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/G27489" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/EG0724" class="links"></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img class="swiper-lazy" data-src="true" lazysrc="../static/images/clp-sys/z-women2.png" src="https://img.adidas.com.cn/images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/z-women2.png"},
+                                    "medium":{"high":"", "normal":"../static/images/clp-sys/z-women2-m1.png"},
+                                    "small":{"high":"", "normal":"../static/images/clp-sys/z-women2-m1.png"}}'>
+								<div class="swiplink none-sm">
+									<a href="https://www.adidas.com.hk/item/FL1950" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/DV3033" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FJ7177" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FR8292" class="links"></a>
+								</div>
+								<div class="swiplink-mob link-two">
+									<a href="https://www.adidas.com.hk/item/EG1431" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FL1950" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/DV3033" class="links"></a>
+								</div>
+							</div>
+							<div class="swiper-slide none block-sm">
+								<img class="swiper-lazy" data-src="true" src="../static/images/clp-sys/z-women3-m.png?version=000000" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/z-women3-m.png"},
+                                    "medium":{"high":"", "normal":"../static/images/clp-sys/z-women3-m1.png"},
+                                    "small":{"high":"", "normal":"../static/images/clp-sys/z-women3-m1.png"}}'>
+								<div class="swiplink-mob link-two">
+									<a href="https://www.adidas.com.hk/item/FJ7177" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FR8292" class="links"></a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next swiper-button-white"></div>
+						<div class="swiper-button-prev swiper-button-white"></div>
+					</div>
+					<a class="btn btn-have-opacity gl-cta-height gl-cta-color-white gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="https://www.adidas.com.cn/three_stripes_women_sports?plpranking=B&amp;highlight=B"> 選購女子產品</a>
+				</article>
+				<article class="article section2">
+					<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/pc-min_03-v3.jpg"},
+                    "medium":{"high":"",  "normal":"../static/images/clp-sys/mob-min_03-v3.jpg"},
+                    "small":{"high":"", "normal":"../static/images/clp-sys/mob-min_03-v3.jpg"}}'>
+					<div class="swiper-container">
+						<div class="swiper-wrapper ">
+							<div class="swiper-slide">
+								<img class="swiper-lazy" data-src="true" lazysrc="../static/images/clp-sys/z-men1.png" src="https://img.adidas.com.cn/images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/z-men1.png"},
+                                    "medium":{"high":"", "normal":"../static/images/clp-sys/z-men1-m1.png"},
+                                    "small":{"high":"", "normal":"../static/images/clp-sys/z-men1-m1.png"}}'>
+								<div class="swiplink none-sm">
+									<a href="https://www.adidas.com.hk/item/EG7895" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/G27132" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FV8053" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/EG8104" class="links"></a>
+								</div>
+								<div class="swiplink-mob ">
+									<a href="https://www.adidas.com.hk/item/EG7895" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/G27132" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FV8053" class="links"></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img class="swiper-lazy" data-src="true" lazysrc="../static/images/clp-sys/z-men2.png" src="https://img.adidas.com.cn/images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/z-men2.png"},
+                                    "medium":{"high":"", "normal":"../static/images/clp-sys/z-men2-m1.png"},
+                                    "small":{"high":"", "normal":"../static/images/clp-sys/z-men2-m1.png"}}'>
+								<div class="swiplink none-sm">
+									<a href="https://www.adidas.com.hk/item/FK3505" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FT2833" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FK5127" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FN1753" class="links"></a>
+								</div>
+								<div class="swiplink-mob ">
+									<a href="https://www.adidas.com.hk/item/EG8104" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FK3505" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FT2833" class="links"></a>
+								</div>
+							</div>
+							<div class="swiper-slide none block-sm">
+								<img class="swiper-lazy" data-src="true" src="../static/images/clp-sys/z-men3-m.png?version=000000" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/z-men3-m.png"},
+                                    "medium":{"high":"", "normal":"../static/images/clp-sys/z-men3-m1.png"},
+                                    "small":{"high":"", "normal":"../static/images/clp-sys/z-men3-m1.png"}}'>
+								<div class="swiplink-mob link-two">
+									<a href="https://www.adidas.com.hk/item/FK5127" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FN1753" class="links"></a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next swiper-button-white"></div>
+						<div class="swiper-button-prev swiper-button-white"></div>
+					</div>
+					<a class="btn btn-have-opacity gl-cta-height gl-cta-color-white gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="https://www.adidas.com.cn/three_stripes_men_sports?plpranking=B&amp;highlight=B"> 约選購男子產品</a>
+				</article>
+			</article>
+			<article class="article-top">
+				<article class="article section3">
+					<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/pc-min_04-v3.jpg"},
+                    "medium":{"high":"",  "normal":"../static/images/clp-sys/mob-min_04-v3.jpg"},
+                    "small":{"high":"", "normal":"../static/images/clp-sys/mob-min_04-v3.jpg"}}'>
+					<div class="swiper-container">
+						<div class="swiper-wrapper ">
+							<div class="swiper-slide">
+								<img class="swiper-lazy" data-src="true" lazysrc="../static/images/clp-sys/y-men1.png" src="https://img.adidas.com.cn/images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/y-men1.png"},
+                                    "medium":{"high":"", "normal":"../static/images/clp-sys/y-men1-m_09.png"},
+                                    "small":{"high":"", "normal":"../static/images/clp-sys/y-men1-m_09.png"}}'>
+								<div class="swiplink none-sm">
+									<a href="https://www.adidas.com.hk/item/FV8027" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FV3746" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/DB3013" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/EE4787" class="links"></a>
+								</div>
+								<div class="swiplink-mob ">
+									<a href="https://www.adidas.com.hk/item/FV8027" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FV3746" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/DB3013" class="links"></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img class="swiper-lazy" data-src="true" lazysrc="../static/images/clp-sys/y-men2.png" src="https://img.adidas.com.cn/images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/y-men2.png"},
+                                    "medium":{"high":"", "normal":"../static/images/clp-sys/y-men2-m.png"},
+                                    "small":{"high":"", "normal":"../static/images/clp-sys/y-men2-m.png"}}'>
+								<div class="swiplink none-sm">
+									<a href="https://www.adidas.com.hk/item/FM3696" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FM3685" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/GJ3597" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FM3795" class="links"></a>
+								</div>
+								<div class="swiplink-mob ">
+									<a href="https://www.adidas.com.hk/item/EE4787" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FM3696" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FM3685" class="links"></a>
+								</div>
+							</div>
+							<div class="swiper-slide none block-sm">
+								<img class="swiper-lazy" data-src="true" src="../static/images/clp-sys/y-men3-m.png?version=000000" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/y-men3-m.png"},
+                                    "medium":{"high":"", "normal":"../static/images/clp-sys/y-men3-m.png"},
+                                    "small":{"high":"", "normal":"../static/images/clp-sys/y-men3-m.png"}}'>
+								<div class="swiplink-mob link-two">
+									<a href="https://www.adidas.com.hk/item/GJ3597" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FM3795" class="links"></a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next swiper-button-white"></div>
+						<div class="swiper-button-prev swiper-button-white"></div>
+					</div>
+					<a class="btn btn-have-opacity gl-cta-height gl-cta-color-white gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="https://www.adidas.com.cn/three_stripes_men_originals?plpranking=B&amp;highlight=B">選購男子產品</a>
+				</article>
+				<article class="article section4">
+					<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/pc-min_05-v3.jpg"},
+                    "medium":{"high":"",  "normal":"../static/images/clp-sys/mob-min_05-v3.jpg"},
+                    "small":{"high":"", "normal":"../static/images/clp-sys/mob-min_05-v3.jpg"}}'>
+					<div class="swiper-container">
+						<div class="swiper-wrapper ">
+							<div class="swiper-slide">
+								<img class="swiper-lazy" data-src="true" lazysrc="../static/images/clp-sys/y-women1.png" src="https://img.adidas.com.cn/images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/y-women1.png"},
+                                    "medium":{"high":"", "normal":"../static/images/clp-sys/y-women1-m.png"},
+                                    "small":{"high":"", "normal":"../static/images/clp-sys/y-women1-m.png"}}'>
+								<div class="swiplink none-sm">
+									<a href="https://www.adidas.com.hk/item/FV3880" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FV3289" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/EF4965" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/EE6486" class="links"></a>
+								</div>
+								<div class="swiplink-mob ">
+									<a href="https://www.adidas.com.hk/item/FV3880" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FV3289" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/EF4965" class="links"></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img class="swiper-lazy" data-src="true" lazysrc="../static/images/clp-sys/y-women2.png" src="https://img.adidas.com.cn/images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/y-women2.png"},
+                                    "medium":{"high":"", "normal":"../static/images/clp-sys/y-women2-m.png"},
+                                    "small":{"high":"", "normal":"../static/images/clp-sys/y-women2-m.png"}}'>
+								<div class="swiplink none-sm">
+									<a href="https://www.adidas.com.hk/item/FL4147" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FM1912" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/DV2636" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FM1748" class="links"></a>
+								</div>
+								<div class="swiplink-mob link-two">
+									<a href="https://www.adidas.com.hk/item/EE6486" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FL4147" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FM1912" class="links"></a>
+								</div>
+							</div>
+							<div class="swiper-slide none block-sm">
+								<img class="swiper-lazy" data-src="true" src="../static/images/clp-sys/y-women3-m.png?version=000000" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/y-women3-m.png"},
+                                    "medium":{"high":"", "normal":"../static/images/clp-sys/y-women3-m.png"},
+                                    "small":{"high":"", "normal":"../static/images/clp-sys/y-women3-m.png"}}'>
+								<div class="swiplink-mob ">
+									<a href="https://www.adidas.com.hk/item/DV2636" class="links"></a>
+									<a href="https://www.adidas.com.hk/item/FM1748" class="links"></a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next swiper-button-white"></div>
+						<div class="swiper-button-prev swiper-button-white"></div>
+					</div>
+					<a class="btn btn-have-opacity gl-cta-height gl-cta-color-white gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="https://www.adidas.com.cn/three_stripes_women_originals?plpranking=B&amp;highlight=B">選購女子產品</a>
+				</article>
+			</article>
+			<article class="article  section7">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/pc-min_08-v4.jpg"},
+                "medium":{"high":"",  "normal":"../static/images/clp-sys/mob-min_08-v4.jpg"},
+                "small":{"high":"", "normal":"../static/images/clp-sys/mob-min_08-v4.jpg"}}'>
+				<div class="swiper-container swiper-container7">
+					<div class="swiper-wrapper ">
+						<div class="swiper-slide">
+							<img class="swiper-lazy" data-src="true" lazysrc="../static/images/clp-sys/kids1.png" src="https://img.adidas.com.cn/images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/kids1.png"},
+                                "medium":{"high":"", "normal":"../static/images/clp-sys/kids1-m.png"},
+                                "small":{"high":"", "normal":"../static/images/clp-sys/kids1-m.png"}}'>
+							<div class="swiplink none-sm">
+								<a href="https://www.adidas.com.hk/item/FW6143" class="links"></a>
+								<a href="https://www.adidas.com.hk/item/FV4547" class="links"></a>
+								<a href="https://www.adidas.com.hk/item/EH1692" class="links"></a>
+								<a href="https://www.adidas.com.hk/item/FU7595" class="links"></a>
+							</div>
+							<div class="swiplink-mob ">
+								<a href="https://www.adidas.com.hk/item/FW6143" class="links"></a>
+								<a href="https://www.adidas.com.hk/item/FV4547" class="links"></a>
+								<a href="https://www.adidas.com.hk/item/EH1692" class="links"></a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img class="swiper-lazy" data-src="true" lazysrc="../static/images/clp-sys/kids2.png" src="https://img.adidas.com.cn/images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/kids2.png"},
+                                "medium":{"high":"", "normal":"../static/images/clp-sys/kids2-m.png"},
+                                "small":{"high":"", "normal":"../static/images/clp-sys/kids2-m.png"}}'>
+							<div class="swiplink none-sm">
+								<a href="https://www.adidas.com.hk/item/FM6694" class="links"></a>
+								<a href="https://www.adidas.com.hk/item/FM5632" class="links"></a>
+								<a href="https://www.adidas.com.hk/item/FM6558" class="links"></a>
+								<a href="https://www.adidas.com.hk/item/FM9835" class="links"></a>
+							</div>
+							<div class="swiplink-mob ">
+								<a href="https://www.adidas.com.hk/item/FU7595" class="links"></a>
+								<a href="https://www.adidas.com.hk/item/FM6694" class="links"></a>
+								<a href="https://www.adidas.com.hk/item/FM5632" class="links"></a>
+							</div>
+						</div>
+						<div class="swiper-slide none block-sm">
+							<img class="swiper-lazy" data-src="true" src="../static/images/clp-sys/kids3-m.png?version=000000" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/kids3-m.png"},
+                                "medium":{"high":"", "normal":"../static/images/clp-sys/kids3-m.png"},
+                                "small":{"high":"", "normal":"../static/images/clp-sys/kids3-m.png"}}'>
+							<div class="swiplink-mob ">
+								<a href="https://www.adidas.com.hk/item/FM6558" class="links"></a>
+								<a href="https://www.adidas.com.hk/item/FM9835" class="links"></a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next swiper-button-white"></div>
+					<div class="swiper-button-prev swiper-button-white"></div>
+				</div>
+				<a class="btn btn-have-opacity gl-cta-height gl-cta-color-white gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="https://www.adidas.com.cn/three_stripes_kids?plpranking=B&amp;highlight=B"> 選購童裝產品</a>
+            </article>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/clp-sys/pc_13-v1.jpg"},
+                "medium":{"high":"",  "normal":"../static/images/clp-sys/mob_13-v1.jpg"},
+                "small":{"high":"", "normal":"../static/images/clp-sys/mob_13-v1.jpg"}}'>
+				<a href="https://www.adidas.com.cn/men_shoes_outlet?plpranking=B&amp;highlight=B" class="link link-0"></a>
+				<a href="https://www.adidas.com.cn/women_shoes_outlet?plpranking=B&amp;highlight=B" class="link link-1"></a>
+				<a href="https://www.adidas.com.cn/men_clothing_outlet?plpranking=B&amp;highlight=B" class="link link-2"></a>
+				<a href="https://www.adidas.com.cn/women_clothing_outlet?plpranking=B&amp;highlight=B" class="link link-3"></a>
+				<a href="https://www.adidas.com.cn/outlet_40off" class="link link-4"></a>
+				<a href="https://www.adidas.com.cn/outlet_kids?plpranking=B&amp;highlight=B" class="link link-5"></a>
+				<a href="https://www.adidas.com.cn/accessories_outlet?plpranking=B&amp;highlight=B" class="link link-6"></a>
+				<a href="https://www.adidas.com.cn/outlet_all?plpranking=B&amp;highlight=B" class="link link-7"></a>
+			</article>
+			<script type="text/javascript">
+				$(function() {
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+					$('.swiper-container').each(function(index, el) {
+						$(this).addClass('swiper-container' + (index +1));
+						$(this).find('.swiper-button-next').addClass('swiper-button-next' + (index +1));
+						$(this).find('.swiper-button-prev').addClass('swiper-button-prev' + (index +1));
+						var newSwiper;
+						if ($('.swiper-container').length) {
+							newSwiper = new Swiper(el, {
+								nextButton: '.swiper-button-next' + (index +1),
+								prevButton: '.swiper-button-prev' + (index +1),
+								slidesPerView: 1,
+								autoPlay: true,
+								noSwiping: true,
+								centeredSlides: true,
+								autoplayDisableOnInteraction: false,
+								onlyExternal: true,
+								onInit: function(swiper){
+									$.spice.tools.changeImageSrc({
+										callBack: function(img, self) {
+											$.spice.lazyLoad('img[lazysrc]', {
+												attr: self.opt.lazyData,
+												prestrain: 1
+											});
+										}
+									});
+								}
+							});
+						}
+					})
+				})
+			</script>
+
+
+
+		</section>
+		<!-- 底部 -->
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

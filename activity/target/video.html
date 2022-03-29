@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%include _includes/meta.html %>
+        <title>runner</title>
+        <%include _includes/css.html %>
+            <!-- <link rel="stylesheet" href="css/lp-messi.css" /> -->
+            <%include _includes/js.html %>
+</head>
+
+<body>
+    <div id="wrapper">
+        <%include _includes/modules/header.html %>
+
+            <section class="container">
+                <style>
+                    .article {
+                        position: relative;
+                    }
+
+                    .article>img {
+                        width: 100%;
+                    }
+
+                    .article-video1 {
+                        cursor: pointer;
+                    }
+
+                    .section-content .video-box {
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                    }
+
+                    .video-box .video-content {
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                    }
+
+                    .video-wrapper img {
+                        z-index: 10;
+                    }
+
+                    .video-box .video-content .video {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        visibility: hidden;
+                    }
+
+                    .article-video1.is-play .video-box .video-content .video {
+                        visibility: visible;
+                    }
+
+                    .article-video1.is-play .video-box .video-code img {
+                        visibility: hidden;
+                    }
+
+                   
+                    @media (max-width: 1024px) {
+                       
+                        .section-content .video-box {
+                            position: relative;
+                            height: auto;
+                            width: 100%;
+                            left: 0;
+                            top: 0;
+                        }
+                        .video-box .video-content {
+                            position: relative;
+                            height: auto;
+                            width: 100%;
+                            left: 0;
+                            top: 0;
+                        }
+
+                    }
+                </style>
+                <!-- 视频模块 -->
+                <article class="article article-video1 article-video-auto article-bottom">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                        &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/FEB/BLACK_PINK/CLP/CN/pc_01.jpg&quot;},
+                        &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/FEB/BLACK_PINK/CLP/CN/mob_01.jpg&quot;},
+                        &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/FEB/BLACK_PINK/CLP/CN/mob_01.jpg&quot;}
+                    }">
+                    <div class="section-content e-play-video  pc-mob-video ">
+                        <div class="video-box e-home-video">
+                            <div class="video-content"></div>
+                            <a class="video-bg-wrapper" href="JavaScript:void(0);"> <span class="video-code" data-video-code="21699DBD9C0793699C33DC5901307461">
+                                </span> </a>
+                        </div>
+                    </div>
+                </article>
+                <script type="text/javascript">
+                    $(function () {
+                        // 换图 + 懒加载
+                        $.spice.lazyLoad('img[lazysrc]', {
+                            attr: 'lazysrc'
+                        });
+                        $.spice.tools.changeImageSrc({
+                            callBack: function (img, self) {
+                                $.spice.lazyLoad('img[lazysrc]', {
+                                    attr: self.opt.lazyData,
+                                    prestrain: 1
+                                });
+                            }
+                        });
+
+                        var loadImgFun_index = function (imgArr, fn) {
+                            // 图片加载fun
+                            var loadImgLen = 0,
+                                errImgLen = 0
+                            var imgdefereds = [];
+                            $(imgArr).each(function () {
+                                var defered = $.Deferred();
+                                $(this).on('load', function () {
+                                    defered.resolve();
+                                    loadImgLen++
+                                }).on('error', function () {
+                                    defered.resolve();
+                                    errImgLen++
+                                })
+                                if (this.complete) setTimeout(function () {
+                                    defered.resolve();
+                                }, 200);
+                                imgdefereds.push(defered);
+                            })
+                            $.when.apply(null, imgdefereds).done(function () {
+                                if (fn && $.isFunction(fn)) {
+                                    fn()
+                                }
+                            });
+                        }
+                        // 视频
+
+                        //自动播放视频
+
+                        $('.e-home-video').each(function (index, el) {
+                            $(el).parents('.article-video1').addClass('home-video')
+                            var videoCode = $('.video-code', el).data('video-code'),
+                                videoId = 'home_video_' + index;
+                            loadImgFun_index($('.video-code img', el), function () {
+                                $('.video-content', el).show().css({
+                                    'height': $('.video-code img', el).outerHeight(true)
+                                })
+                                $('.video-code img', el).css({
+                                    'visibility': 'hidden'
+                                })
+                            })
+                            // 开发需要打开此代码---开始
+                            // var bannerVideoId = videoCode;
+                            // var url = base + "/indexCCVideo.json";
+                            // var data = loxia.syncXhrGet(url, {
+                            //     'bannerVideoId': bannerVideoId
+                            // });
+                            // var videoUrl = data.mp4VideoUrl;
+                            // 开发需要打开此代码---结束
+
+                            // 下面的videoUrl为前端静态视频地址（静态页面的video路径 ，开发需注释掉）
+                            var videoUrl = 'https://cm15-c110-2.play.bokecc.com/flvs/ca/QxDHa/ukeavxX6l3-30.mp4?t=1617166851&key=7CAE0FDF6F9F4EC9379A36758AE66B8C&tpl=10';
+                            var html = '<video class="video" id="' + videoId + '" preload="meta" webkit-playsinline="true" playsInline="true" muted><source src="' + videoUrl + '" ></source></video>';
+                            $('.video-content', el).html(html);
+
+                        })
+                        // 视频播放
+                        $('#home_video_0')[0].play();
+                        $('#home_video_0').parents('.article-video1').addClass('is-play');
+                        $('#home_video_0')[0].addEventListener("ended", function () {
+                            this.play();
+                        });
+                        // 视频播放
+                        $('#home_video_1')[0].play();
+                        $('#home_video_1').parents('.article-video1').addClass('is-play');
+                        $('#home_video_1')[0].addEventListener("ended", function () {
+                            this.play();
+                        });
+                      
+                       
+                    });
+                </script>
+            </section>
+
+            <%include _includes/modules/footer.html %>
+    </div>
+</body>
+
+</html>.

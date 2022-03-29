@@ -1,0 +1,687 @@
+<html>
+<head>
+	<%include _includes/meta.html %>
+	<title>originals-undefeated</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+
+		<style type="text/css">
+		.video-container {
+			/*margin-bottom: 100px;*/
+		}
+
+		.video-container .video-info img {
+			width: 100%;
+		}
+
+		.video-container .video-wrap {
+			position: relative;
+			text-align: center;
+		}
+
+		.video-container .video-wrap .video-content{
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 2;
+			background: #000;
+			display: none;
+		}
+		.video-container .video-wrap .video-content video{
+			width: 100%;
+			height: 100%;
+		}
+		.video-container .video-wrap img {
+			width: 100%;
+		}
+
+		.video-container .video-wrap .video-cursor {
+			position: absolute;
+			left: 50%;
+			top: 41%;
+			width: 12%;
+			height: 21%;
+			z-index: 1;
+			display: block;
+			border-radius: 50%;
+			-webkit-transform: translateX(-50%);
+			-ms-transform: translateX(-50%);
+			transform: translateX(-50%);
+		}
+		
+		.bg{
+			width: 100%;
+		}
+		.bg img{
+			width: 100%;
+		}
+		.section-campaign .scroll .scroll-btn-next,
+		.section-campaign .scroll .scroll-btn-prev {
+			padding: 0;
+			margin-top: -42px;
+		}
+
+		.section-campaign .scroll .scroll-btn-next {
+			right: 47px;
+		}
+
+		.section-campaign .scroll .scroll-btn-prev {
+			left: 47px;
+		}
+
+		.section-campaign .scroll .scroll-btn-next a,
+		.section-campaign .scroll .scroll-btn-prev a {
+			text-indent: -9999px;
+		}
+
+		.section-campaign .scroll .scroll-btn-next a i,
+		.section-campaign .scroll .scroll-btn-prev a i {
+			display: inline-block;
+			background: url(https://img.adidas.com.cn/images/icon.png);
+			width: 42px;
+			height: 76px;
+		}
+
+		.section-campaign .scroll .scroll-btn-prev a i {
+			background-position: -568px -50px;
+		}
+
+		.section-campaign .scroll .scroll-btn-next a i {
+			background-position: -620px -50px;
+		}
+
+		.section-campaign li a {
+			position: absolute;
+			top: 70%;
+			left: 25.26%;
+		}
+		.section-campaign2 li a{
+			top: 61%;
+    		left: 57%;
+		}
+
+		.article-swiper-swift {
+			position: relative;
+			background: url(../static/images/lp-originals-undefeated/bg.jpg);
+			background-size: 100% auto; 
+			padding-bottom: 12%;
+		}
+
+		.article-swiper-swift .swiper-container {
+			width: 100%;
+		}
+
+		.article-swiper-swift .swiper-container .swiper-wrapper {
+			width: 62%;
+			height: auto;
+			position: relative;
+		}
+
+		.article-swiper-swift .swiper-container .swiper-wrapper .swiper-slide {
+			height: auto;
+		}
+
+		.article-swiper-swift .swiper-container .swiper-wrapper .swiper-slide>a {
+			cursor: default;
+		}
+		
+		.article-swiper-swift .swiper-container .swiper-wrapper .content-text {
+			position: absolute;
+			bottom: 7%;
+			left: 50%;
+			margin-left: -105px;
+			text-align: center;
+		}
+
+		.article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn {
+			margin-top: 0;
+			width: 210px;
+			font-size: 24px;
+		}
+
+		.article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn span:after {
+			top: 7px;
+		}
+
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn {
+			width: 64%;
+			left: 18%;
+			position: absolute;
+			top: 50%;
+			z-index: 0;
+		}
+
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn .swiper-button-disabled {
+			opacity: 0;
+		}
+
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev,
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+			width: 33px;
+			height: 63px;
+			margin-top: -32px;
+			background-image: none;
+			overflow: hidden;
+		}
+
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev {
+			left: -47px;
+		}
+
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+			right: -47px;
+		}
+
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev .icon-action-sports-arrow-l {
+			display: block;
+			width: 33px;
+			height: 63px;
+			background: url(https://img.adidas.com.cn/images/icon.png);
+			background-position: -676px -454px;
+		}
+
+		.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next .icon-action-sports-arrow-r {
+			display: block;
+			width: 33px;
+			height: 63px;
+			background: url(https://img.adidas.com.cn/images/icon.png);
+			background-position: -790px -454px;
+		}
+		.originals-link{
+			position: absolute;
+			top:0;
+			height: 100%;
+			cursor:pointer;
+		}
+		.originals1{
+			left: 0;
+			width: 67%;
+		}
+		.originals2{
+			right: 0;
+			width: 32%;
+		}
+		.originals5{
+			width: 58%;
+		}
+		.originals6{
+			width: 41%;
+		}
+		.article-swiper-swift .swiper-pagination{
+			position: absolute;
+			width: 100%;
+			left: 14%;
+			bottom:15%;
+		}
+		.article-swiper-swift .swiper-pagination-bullet{
+			opacity: 1;
+			width: auto;
+			height: auto;
+			border-radius: 0;
+			font-size: 24px;
+			line-height: 26px;
+			margin-right: 7%;
+			background: none;
+		}
+		.article-swiper-swift .swiper-pagination-bullet-active{
+			font-weight: bold;
+		}
+		
+		
+		
+		
+		.lp-january-neo-16 {
+		background: #fff;
+		padding-bottom: 63px;
+		}
+		.lp-january-neo-16 > ul {
+		font-size: 0;
+		max-width: 1366px;
+		margin: 0 auto;
+		text-align: center;
+		}
+		.lp-january-neo-16 > ul > li {
+		display: inline-block;
+		width: 25%;
+		position: relative;
+		padding: 0 21px;
+		}
+		.lp-january-neo-16 > ul > li > img {
+		width: 100%;
+		}
+		.lp-january-neo-16 > ul > li .btn-component {
+		position: absolute;
+		bottom: 17px;
+		left: 21px;
+		right: 21px;
+		z-index: 1;
+		}
+		.lp-january-neo-16 > ul > li .btn-component .btn {
+		min-width: 178px;
+		}
+		@media screen and (max-width: 1024px) {
+			
+			.originals1{
+				width: 100%;
+				height: 59%;
+			}
+			.originals2{
+				width: 100%;
+				height: 40%;
+				top: 60%;
+			}
+			.originals3{
+				height: 55%;
+			}
+			.originals4{
+				height: 58%;
+				top: 42%;
+			}
+			.originals5{
+				width: 47%;
+				height: 100%;
+			}
+			.originals6{
+				width: 50%;
+				height: 100%;
+				top:0;
+			}
+			.video-container .video-wrap .video-cursor{
+				top: 33%;
+				width: 25%;
+				height: 24%;
+			}
+			.section-campaign .scroll .scroll-btn-next {
+				right: 16px;
+				margin-top: -15px;
+			}
+			.section-campaign .scroll .scroll-btn-prev {
+				left: 16px;
+				margin-top: -15px;
+			}
+			.section-campaign .scroll .scroll-btn-next a i,
+			.section-campaign .scroll .scroll-btn-prev a i {
+				width: 24px;
+				height: 40px;
+				background-size: 500px;
+			}
+			.section-campaign .scroll .scroll-btn-prev a i {
+				background-position: -283px -24px;
+			}
+			.section-campaign .scroll .scroll-btn-next a i {
+				background-position: -309px -24px;
+			}
+			.article-swiper-swift {
+				background: url(../static/images/lp-originals-undefeated/m-bg.jpg);
+				background-size: 100% auto; 
+			}
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev {
+			    left: -54px;
+			}
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+			    right: -54px;
+			}
+			.article-swiper-swift .swiper-pagination {
+			    left: 33%;
+				bottom: 9%;
+			}
+			.section-campaign li img {
+				width: 100%;
+			}
+			.section-campaign li a {
+				top: auto;
+				left: 5%;
+				width: 90%;
+				bottom: 5%;
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			.lp-january-neo-16 {
+				padding: 0 50px;
+				padding-bottom: 60px;
+			}
+			.lp-january-neo-16 > ul {
+				max-width: 100%;
+			}
+			.lp-january-neo-16 > ul > li {
+				width: 50%;
+				padding: 6px;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.article-swiper-swift .swiper-container {
+				padding: 0px 35px 0px;
+			}
+			.article-swiper-swift .swiper-container .swiper-wrapper{
+				width: 100%;
+			}
+			.article-swiper-swift .swiper-container .swiper-wrapper .content-text {
+				bottom: 7%;
+				margin-left: -60px;
+				position: static;
+				margin: 24px auto 0;
+			}
+			.article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn {
+				width: 160px;
+				min-width: 160px;
+				font-size: 16px;
+				height: 40px;
+				line-height: 40px;
+				background: #262626;
+				opacity: 1;
+				color: #fff;
+			}
+			.article-swiper-swift {
+				padding-bottom: 29%;
+			}
+			.article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn span:after {
+				top: 3px;
+				background-size: 500px;
+				background-position: -26px -18px !important;
+			}
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn {
+				z-index: 1;
+				width: 100%;
+				left: 0;
+			}
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev,
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+				width: 18px;
+				height: 34px;
+				margin-top: -40px;
+			}
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev {
+				left: 8px;
+			}
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+				right: 8px;
+			}
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev .icon-action-sports-arrow-l {
+				width: 18px;
+				height: 34px;
+				background: url(https://img.adidas.com.cn/images/icon@2x.png);
+				background-size: 500px;
+				background-position: -303px -652px;
+			}
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next .icon-action-sports-arrow-r {
+				width: 18px;
+				height: 34px;
+				background: url(https://img.adidas.com.cn/images/icon@2x.png);
+				background-size: 500px;
+				background-position: -275px -652px;
+			}
+			.article-swiper-swift .swiper-pagination{
+				left: 0;
+				text-align: right;
+				bottom: 14%;
+			}
+			.article-swiper-swift .swiper-pagination-bullet{
+				font-size: 20px;
+				margin-right:6%;
+			}
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev, 
+			.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next{
+				margin-top: -22px;
+			}
+			
+			.lp-january-neo-16 {
+				padding: 0 25px;
+				padding-bottom: 30px;
+			}
+			.lp-january-neo-16 > ul > li {
+				padding: 3px;
+			}
+			.lp-january-neo-16 > ul > li .btn-component {
+				left: 0;
+				right: 0;
+			}
+			.lp-january-neo-16 > ul > li .btn-component .btn {
+				min-width: 114px;
+				height: 30px;
+				line-height: 30px;
+				font-size: 12px;
+			}
+			.lp-january-neo-16 > ul > li .btn-component .btn span:after {
+				top: 0;
+			}
+		}
+		</style>
+		<script type="text/javascript">
+			$(function () {
+				// 视频
+		        $('.e-lp-video-btn').on('tap', function(e) {
+		            e.preventDefault();
+		            var _this = $(this),
+		                videoCode =_this.data('videoCode');
+		
+		            openVideo(videoCode, 'true');
+		        });
+			    // 视频 end
+
+				var swiper = new Swiper('.swiper-container-od-jacket', {
+					slidesPerView: 'auto',
+//					loop: true,
+					centeredSlides: true,
+					paginationClickable: true,
+					pagination: '.swiper-pagination',
+					spaceBetween:96,
+					prevButton:'.swiper-button-prev1',
+					nextButton:'.swiper-button-next1',
+					initialSlide: 0,
+					paginationBulletRender: function (swiper, index, className) {
+					    var arrList = ['9AM','7AM','5AM'];
+					      return '<span class="swiper-pagination-bullet">'+ arrList[index]+'</span>'
+					}
+				});
+				
+			});
+		</script>
+
+			<!-- kv-模块 -->
+			<article class="article section-campaign">
+				<div class="scroll">
+					<div class="scroller-wrap">
+						<ul>
+							<li>
+								<span>
+									<img class="" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-pc_01.jpg"},
+											"medium":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_01.jpg"},
+											"small":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_01.jpg"}
+									}' />
+								</span>
+								<a target="_blank" class="btn btn-white btn-have-arrow btn-have-opacity" href="https://www.adidas.com.cn/originals_undefeated">
+									<span>立即选购</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+
+			<!-- 视频模块 -->
+			<article class="article video-container">
+				<div class="video-info">
+					<img class="" src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-pc_02.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_02.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_02.jpg"}
+					}' />
+				</div>
+				<div class="video-wrap">
+					<div class="video-content"></div>
+					<img class="" src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-pc_03.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_03.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_03.jpg"}
+					}' />
+					<a class="video-cursor e-lp-video-btn" data-video-code="568FAFF728D4F4379C33DC5901307461"></a>
+				</div>
+			</article>
+
+			<!--  -->
+			<article class="article article-swiper-swift">
+				<div class="swiper-container swiper-container-od-jacket">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img class="" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-originals-undefeated/kv1.png"},
+									"medium":{"high":"", "normal":"../static/images/lp-originals-undefeated/m-kv1.png"},
+									"small":{"high":"", "normal":"../static/images/lp-originals-undefeated/m-kv1.png"}
+							}' />
+							
+							<a target="_blank" class="originals-link originals1" href="https://www.adidas.com.cn/originals_undefeated"></a>
+							<a target="_blank" class="originals-link originals2" href="https://www.adidas.com.cn/item/B27771"></a>
+						</div>
+						<div class="swiper-slide">
+							<img class="" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-originals-undefeated/kv2.png"},
+									"medium":{"high":"", "normal":"../static/images/lp-originals-undefeated/m-kv2.png"},
+									"small":{"high":"", "normal":"../static/images/lp-originals-undefeated/m-kv2.png"}
+							}' />
+							
+							<a target="_blank" class="originals-link originals1 originals3" href="https://www.adidas.com.cn/originals_undefeated"></a>
+							<a target="_blank" class="originals-link originals2 originals4" href="https://www.adidas.com.cn/item/B22480"></a>
+						</div>
+						<div class="swiper-slide">
+							<img class="" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-originals-undefeated/kv3.png"},
+									"medium":{"high":"", "normal":"../static/images/lp-originals-undefeated/m-kv3.png"},
+									"small":{"high":"", "normal":"../static/images/lp-originals-undefeated/m-kv3.png"}
+							}' />
+							
+							<a target="_blank" class="originals-link originals1 originals5" href="https://www.adidas.com.cn/originals_undefeated"></a>
+							<a target="_blank" class="originals-link originals2 originals6" href="https://www.adidas.com.cn/item/CZ5953"></a>
+							
+						</div>
+					</div>
+					<!-- 箭头 -->
+					<div class="action-sports-swiper-btn">
+						<div class="swiper-button-prev swiper-button-prev1">
+							<i class="icon icon-action-sports-arrow-l"></i>
+						</div>
+						<div class="swiper-button-next swiper-button-next1">
+							<i class="icon icon-action-sports-arrow-r"></i>
+						</div>
+					</div>
+				</div>
+				<div class="small-icon-contianer swiper-pagination"></div>
+			</article>
+			<!--所有商品-->
+			<article class="article section-campaign">
+				<h1>所有商品</h1>
+			</article>
+			
+			
+			<article class="article section-campaign section-campaign2">
+				<div class="scroll">
+					<div class="scroller-wrap">
+						<ul>
+							<li>
+								<span>
+									<img class="" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-pc_05.jpg"},
+											"medium":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_05.jpg"},
+											"small":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_05.jpg"}
+									}' />
+								</span>
+								<a target="_blank" class="btn btn-white btn-have-arrow btn-have-opacity" href="https://www.adidas.com.cn/originals_undefeated">
+									<span>立即选购</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+			
+			<article class="article lp-january-neo-16">
+				<div class="bg">
+					<img class="" src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-pc_06.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_06.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_06.jpg"}
+					}' />
+				</div>
+				<ul>
+					<li>
+						<img class="" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-pc_08.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_08.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_08.jpg"}
+						}' />
+
+						<div class="btn-component">
+							<a target="_blank" class="btn btn-white btn-have-arrow"  href="https://www.adidas.com.cn/men_originals_shoes">
+								<span>选购男子鞋类</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img class="" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-pc_10.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_10.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_10.jpg"}
+						}' />
+
+						<div class="btn-component">
+							<a target="_blank" class="btn btn-white btn-have-arrow"  href="https://www.adidas.com.cn/men_originals_clothing">
+								<span>选购男子服饰</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img class="" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-pc_12.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_12.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_12.jpg"}
+						}' />
+							
+						<div class="btn-component">
+							<a target="_blank" class="btn btn-white btn-have-arrow"  href="https://www.adidas.com.cn/women_originals_shoes">
+								<span>选购女子鞋类</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img class="" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-pc_14.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_14.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-originals-undefeated/originals-mob_14.jpg"}
+						}' />
+						
+						<div class="btn-component">
+							<a target="_blank" class="btn btn-white btn-have-arrow"  href="https://www.adidas.com.cn/women_originals_clothing">
+								<span>选购女子服饰</span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</article>
+		</section>
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+		<!-- 视频弹层 -->
+		<script id="video-dialog" type="text/template">
+			<div class="dialog">
+				<div class="dialog-container">
+					<div class="loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+					<div class="video-content">
+
+					</div>
+				</div>
+				<i class="icon icon-close dialog-close">&times;</i>
+			</div>
+		</script>
+	</div>
+</body>
+</html>

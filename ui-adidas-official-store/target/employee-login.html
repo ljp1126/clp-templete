@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title>登录</title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" href="css/login.css" />
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="js/login.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header-simple.html %>
+			<!-- 内容部分 -->
+			<section class="container container-simple">
+				<article class="article article-nav">
+					<div class="login-tit">
+						<ul class="list-inline">
+							<li><a href="#"><i class="icon icon-login-left"></i>返回</a></li>
+							<li class="divider">|</li>
+							<li><a href="/">关于员工</a></li>
+							<li class="divider">/</li>
+							<li><a href="/">员工登录</a></li>
+						</ul>
+					</div>
+				</article>
+				<article class="article article-flrs2 article-login login-bg">
+					<!--不同状态 加不同的class 如：
+						3次出验证码加calss：login-verification 。
+						验证码成功删calss：login-verification ，
+						加class：login-verification-success 。 -->
+					<div class="login-content float-clearfix  login-verification">
+						<div class="login-left">
+							<div class="login-box show-mobb employee-login-box">
+								<h4 class="float-clearfix fontw-b">员工登录 </h4>
+								<div class="login-detial">
+									<div class="form-input">
+										<input type="text" placeholder="员工号"/>
+										<div class="msg-block">
+											<i class="icon msg-icon"></i>
+											<span>请输入正确的员工号</span>
+										</div>
+									</div>
+									<div class="form-input">
+										<input type="text" placeholder="密码"/>
+										<div class="msg-block">
+											<i class="icon msg-icon"></i>
+											<span>密码错误</span>
+										</div>
+									</div>
+									<div class="employee-login-option">
+										<label class="form-remeber">
+                                            <i class="icon icon-checked"></i>
+                                            <span>记住我的信息</span>
+										</label>
+                                    </div>
+                                    <div class="employee-login-option">
+										<label class="form-remeber">
+                                            <i class="icon icon-checked"></i>
+                                            <span>我接受adidas商城</span>
+										</label>
+                                        <a href="#">使用条款</a>
+                                        <span>和</span>
+                                        <a href="#">隐私声明</a>
+                                    </div>
+                                    <div class="employee-login-option">
+										<label class="form-remeber">
+                                            <i class="icon icon-checked"></i>
+                                            <span>我同意adidas</span>
+										</label>
+                                        <a href="#">员工条款</a>
+									</div>
+									<!-- <div class="form-input form-input-code ww-100">
+										<input type="text" placeholder="输入图片上的验证码"/> 
+										<div class="code-img float-clearfix">
+											<img src="images/login/CAPTCHA.png" alt="" />
+											<a>换一个</a>
+										</div>
+										<div class="msg-block">
+											<i class="icon msg-icon"></i>
+											<span>验证码错误</span>
+										</div>
+									</div> -->
+									<div class="login-btn float-clearfix">
+										<a class="btn btn-blue btn-have-arrow"><span>登录</span></a>
+										<a href="" class="forget">忘记密码？</a>
+									</div>
+									
+									<div class="third-party-login">
+										<p class="third-tit-bottom">* 员工号和密码为您的登录凭证</p>
+										<p class="third-tit-bottom">* 员工号为一串6位数字，您可从员工系统或HR处获取</p>
+										<p class="third-tit-bottom">* 如对您的员工号或者密码有疑问，请联系客服</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</article>
+	
+			</section>
+			<%include _includes/modules/footer-simple.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		</div>
+	</body>
+</html>

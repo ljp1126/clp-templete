@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+
+<body>
+	<div id="wrapper">
+		<!-- 头部 -->
+		<%include _includes/modules/header.html %>
+		<!-- 內容 -->
+
+		<section class="container">
+			<style>
+				
+				.article{
+					position: relative;
+				}
+				.article img{
+					width: 100%;
+				}
+				.article-btn {
+					margin: 20px 0;
+				}
+				.btn-box{
+					display: flex;
+					justify-content: start;
+					align-items: center;
+					width: 60%;
+					margin: 0 auto;
+					padding: 50px 0;
+					text-align: center;
+				}
+				.btn-box a{
+					width: 25%;
+					height: 100%;
+					font-size: 14px;
+				}
+        .btn-box a span{
+          padding-bottom: 10px;
+          color: #6e6e6e6e;
+          font-weight: bold;
+        }
+        .btn-box a .active{
+          color: #000;
+          
+          border-bottom: 4px solid #1f64b1;
+        }
+				.pro-box{
+					width: 74%;
+          height: auto;
+					margin: 0 auto;
+          overflow: auto;
+          margin-bottom: 20px;
+          display: flex;
+          flex-wrap: wrap;
+				}
+				.pro-box div{
+          height: auto;
+					width: 25%;
+					padding: 0 7px 50px;
+					/* float: left; */
+				}
+				.link-pdp{
+					position: absolute;
+					width: 68%;
+					height: 100%;
+					left: 50%;
+					transform: translateX(-50%);
+					top: 0;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				.link-pdp a{
+					display: block;
+					height: 100%;
+					flex: 1;
+				}
+				@media (max-width:1024px) {
+          .article-btn {
+            margin-bottom: 0;
+          }
+					.btn-box{
+						width: 100%;
+						/* padding: 30px 10px; */
+            padding: 0;
+            overflow-x: scroll;
+            /* padding-bottom: 5px; */
+					}
+          .btn-box::-webkit-scrollbar {
+            display: none;
+          }
+					.btn-box a{
+            width: auto;
+            list-style: none;
+						font-size: 12px;
+            margin: 0 15px;
+					}
+          .btn-box a span{
+            white-space: nowrap;
+            display: inline-block;
+            padding-bottom: 15px;
+            box-sizing: border-box;
+            color: #6e6e6e6e;
+            font-weight: bold;
+					}
+          .btn-box a .active{
+            color: #000;
+            border-bottom: 4px solid #1f64b1;
+          }
+					.link-pdp{
+						width: 100%;
+						flex-wrap: wrap;
+					}
+					.link-pdp a{
+						width: 50%;
+						height: 50%;
+						flex: none;
+						
+					}
+					.pro-box{
+						width: 100%;
+            height: auto;
+						/* padding: 0 8px; */
+            overflow: auto;
+            margin-bottom: 30px;
+					}
+					.pro-box div{
+            height: auto;
+						width: 50%;
+            padding: 0;
+            padding-bottom: 25px;
+						/* padding: 0 8px 25px */
+					}
+          .pro-box div:nth-child(2n){
+            padding-left: 8px;
+					}
+          .pro-box div:nth-child(2n+1){
+            padding-right: 8px;
+					}
+				}
+			</style>
+			<article class="article">
+				
+					<img lazysrc="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/topbannerpc.png" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/topbannerpc.png&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/topbannermob.png&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/topbannermob.png&quot;}
+					}">
+				
+				
+			</article>
+			<article class="article article-btn">
+				<div class="btn-box">
+          <a href="javascript:;" class="menuList" ><span id="all">ALL</span></a>
+          <a href="javascript:;" class="menuList" ><span id="001">WOMEN'S</span></a>
+          <a href="javascript:;" class="menuList" ><span id="002">GENDER NEUTRAL</span></a>
+          <a href="javascript:;" class="menuList" ><span id="003">MEN'S</span></a>
+          <a href="javascript:;" class="menuList" ><span id="004">ACCESSORIES</span></a>
+          <a href="javascript:;" class="menuList" ><span id="005">SHOES</span></a>
+        </div>
+			</article>
+			<article class="article ">
+				<div class="pro-box" id="a001">
+					<div><a href="https://www.adidas.com.hk/item/H61716?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/women/001.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/H61694?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/women/002.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HC8197?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/women/003.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HG4479?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/women/004.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/H62753?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/women/005.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/H61720?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/women/006.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HG4476?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/women/007.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HE2763?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/women/008.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HG7184?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/women/009.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HD5206?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/women/010.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/H62751?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/women/011.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HE0498?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/women/012.png" alt=""></a></div>
+				</div>
+        <div class="pro-box" id="a002">
+					<div><a href="https://www.adidas.com.hk/item/H61700?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/gender/001.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/H61704?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/gender/002.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/H61699?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/gender/003.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HG4480?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/gender/004.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HG4481?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/gender/005.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/H61691?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/gender/006.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/H61693?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/gender/007.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HB7277?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/gender/008.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/H61702?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/gender/009.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HE3738?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/gender/010.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/H61692?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/gender/011.png" alt=""></a></div>
+				</div>
+        <div class="pro-box" id="a003">
+					<div><a href="https://www.adidas.com.hk/item/HG7020?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/men/001.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HG7019?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/men/002.png" alt=""></a></div>
+				</div>
+        <div class="pro-box" id="a004">
+					<div><a href="https://www.adidas.com.hk/item/HB1220?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/accessEn/001.png" alt=""></a></div>
+					<!-- <div><a href="https://www.adidas.com.hk/item/HG6582?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/accessEn/002.png" alt=""></a></div> -->
+					<div><a href="javascript:;"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/accessEn/002.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HC5826?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/accessEn/003.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HG3894?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/accessEn/004.png" alt=""></a></div>
+					<!-- <div><a href="https://www.adidas.com.hk/item/HC1392?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/accessEn/005.png" alt=""></a></div> -->
+					<div><a href="javascript:;"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/accessEn/005.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HG3885?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/accessEn/006.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HC1396?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/accessEn/007.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/HG3893?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/accessEn/008.png" alt=""></a></div>
+					<!-- <div><a href="https://www.adidas.com.hk/item/HC1388?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/accessEn/009.png" alt=""></a></div> -->
+					<div><a href="javascript:;"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/accessEn/009.png" alt=""></a></div>
+				</div>
+        <div class="pro-box" id="a005">
+					<div><a href="https://www.adidas.com.hk/item/GW8682?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/shoes/001.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/GZ3891?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/shoes/002.png" alt=""></a></div>
+					<div><a href="https://www.adidas.com.hk/item/GY3835?locale=en_GB"><img src="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/EN/shoes/003.png" alt=""></a></div>
+				</div>
+			</article>
+			<article class="article">
+				<img lazysrc="https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/botbannerpc.png" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/botbannerpc.png&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/botBannermob.png&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/AUG/IVY_plp/botBannermob.png&quot;}
+				}">
+			</article>
+			<script>
+				$(function () {
+					
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+				})
+
+        $('.menuList>span').click(function(val){
+          var scroll = ''
+          var info = val.target.id
+          if (info === 'all') {
+            scroll = '001'
+          } else {
+            scroll = info
+          }
+          
+          document.querySelector(`#a${scroll}`).scrollIntoView({behavior: "smooth",block: "start",inline: "nearest"});
+
+          var listTab = $(".menuList");
+          var index = $(this).index();
+          for (var i = 0; i < listTab.length; ++i) {
+            $(listTab[i].childNodes).removeClass("active");
+          }
+          $(`#${info}`).addClass("active");
+        });
+
+        
+	
+			</script>
+		</section>
+
+		
+
+		<!-- 底部 -->
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>
+
+
+

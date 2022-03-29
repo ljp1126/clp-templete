@@ -1,0 +1,61 @@
+{
+  "general": {
+    "today": "Ma",
+    "month": {
+      "0": "Január",
+      "1": "Február",
+      "2": "Március",
+      "3": "Április",
+      "4": "Május",
+      "5": "Június",
+      "6": "Július",
+      "7": "Augusztus",
+      "8": "Szeptember",
+      "9": "Október",
+      "10": "November",
+      "11": "December"
+    },
+    "ordinal": {
+      "st": ".",
+      "nd": ".",
+      "rd": ".",
+      "th": "."
+    },
+    "launchDate": "2018. június 8.",
+    "endDate": "2018. július 8.",
+    "error": "Hoppá, valami hiba történt. Kérjük, próbáld újra később."
+  },
+  "teaser": {
+    "distance": {
+      "top": "Teljesítve",
+      "amount": "8 403 081",
+      "label": "összes lefutott km"
+    },
+    "members": {
+      "top": "Június 8-tól július 8-ig",
+      "amount": "744 440",
+      "label": "futó világszerte"
+    },
+    "intro": {
+      "label01": "Minden percben egy teherautónyi kerül belőle az óceánjainkba.",
+      "label02": "Ennek véget kell vetni.",
+      "label03": "Csatlakozz a mozgalomhoz most!"
+    },
+    "cta": {
+      "label01": "Minden kilométer számít",
+      "label02": "Nézd meg alul, hogy tudsz részt venni"
+    },
+    "end": {
+      "label01": "Világszerte összegyűltek, hogy a Run for the Oceans átütő siker legyen.<br />Mindenkinek, aki a lefutott kilométerekkel felhívta a figyelmet, és segített támogatni a Parley Ocean Plastic Programot.",
+      "label02": "Köszönjük!"
+    }
+  },
+  "preLoader": {
+    "title": "Fuss az óceánokért",
+    "subtitle": "betöltés"
+  },
+  "app": {
+    "name": "Fuss az óceánokért",
+    "slug": "parley-ss18-rfto"
+  }
+}

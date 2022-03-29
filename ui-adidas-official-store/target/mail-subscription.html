@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" href="css/mail-subscription.css" />
+		<%include _includes/js.html %>
+		<!-- <script type="text/javascript" src="js/mail-subscription.js"></script> -->
+	</head>
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+
+			<!-- 内容部分 -->
+			<section class="container">
+				<!-- info-模块 -->
+				<article class="article article-mail-subscription top-nav">
+
+					<!-- 订阅成功请加class: mail-subscription-success -->
+					<div class="mail-subscription-content">
+						<div>
+							<div class="mail-subscription-main">
+								<div class="callout-bars float-clearfix">
+									<div class="callout-bar">
+										<i class="icon icon-callout-1"></i>
+										<span>订阅邮件以了解最新动态</span>
+									</div>
+									<div class="callout-bar">
+										<i class="icon icon-callout-2"></i>
+										<span>在下次购物中享受15%的折扣</span>
+									</div>
+									<div class="callout-bar">
+										<i class="icon icon-callout-3"></i>
+										<span>独家的优惠和推送</span>
+									</div>
+								</div>
+								<h3 class="none block-sm">邮件订阅</h3>
+								<div class="mail-subscription-form float-clearfix">
+									<div class="form-group">
+										<label class="control-label">电子邮箱 <span class="star-red">*</span></label>
+										<div class="form-input is-error">
+											<input placeholder="" type="text">
+											<div class="msg-block">
+												<i class="icon msg-icon"></i>
+												<span>抱歉，您无法订阅两次。您输入的邮箱已订阅过邮件。</span>
+											</div>
+											<div class="form-input-text">仅供第一次注册</div>
+										</div>
+									</div>
+									<div class="form-group form-group-choice">
+										<label class="control-label">性别 <span class="star-red">*</span></label>
+										<div class="form-choice-btn float-clearfix">
+											<div class="form-choice-btn-radio is-active">
+												<i class="icon icon-radio"></i><span>男子</span>
+											</div>
+											<div class="form-choice-btn-radio">
+												<i class="icon icon-radio"></i><span>女子</span>
+											</div>
+											<div class="form-choice-btn-checked">
+											<!--form-choice-btn-checked加class:is-error为报错信息-->
+												<i class="icon icon-checked"></i><span>我已满18岁 <span class="star-red">*</span></span>
+												<div class="msg-block">
+													<i class="icon msg-icon"></i>
+													<span>报错信息</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group form-group-btn">
+									<a class="btn btn-gradient-blue btn-have-arrow"><span>订阅</span></a>
+									</div>
+
+								</div>
+								<div class="mail-subscription-statement">
+									<span>注册阿迪达斯邮箱，特色的独家推送，最新的商品信息，最新活动的新闻以及其他资讯。详情参见我们的<a href="">隐私条款</a>。</span>
+								</div>
+							</div>
+
+							<!-- 成功模块 -->
+							<div class="mail-subscription-success-main">
+								<h2><i class="icon icon-success"></i>邮件订阅成功</h2>
+								<P>您将收到订阅成功的确认邮件</P>
+							</div>
+						</div>
+					</div>
+				</article>
+
+			</section>
+
+			<%include _includes/modules/footer-no-back-top.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		</div>
+	</body>
+</html>

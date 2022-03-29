@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title>store-finder1</title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" type="text/css" href="css/store-finder-en_GB.css">
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="js/store-finder.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+
+			<!-- 内容部分 -->
+			<section class="container">
+				<!-- 模块一 -->
+				<article class="article article-list none-sm">
+					<div class="breadcrumb">
+						<ul class="list-inline">
+							<li><a href="#"><i class="icon icon-round-lightgray-lefts"></i>返回</a></li>
+							<li class="divider">丨</li>
+							<li><a href="/">首页</a></li>
+							<li class="divider">/</li>
+							<li><a href="/">门店查询</a></li>
+						</ul>
+					</div>
+				</article>
+
+				<!-- 模块三 -->
+				<article class="article article-list article-list-container">
+
+					<div class="store-finder-box">
+						<div class="store-finder-cont float-clearfix">
+							<!--左 part start-->
+							<div class="sfcont-left-box">
+								<div class="store-search-box">
+									<div class="store-search-tit">门店查询</div>
+									<div class="store-search-cont">
+										<div class="store-search-condition">
+											<div class="form-group">
+												<!--pc端省市区联动-->
+												<div class="row form-selects form-select-box none-sm sfpc-select-city">
+													<div class="col-12-12">
+														<div class="form-select">
+															<a class="btn events-city-text">
+															    <span class="dropdown-text">请选择省份或地区</span>
+															    <span class="dropdown-icon">
+															        <i class="icon icon-caret"></i>
+															    </span>
+															</a>
+															<div class="sub-menu tinyscrollbar">
+															    <div class="viewport">
+															        <div class="overview">
+															            <ul class="events-city-content">
+															                <li><a>示例文字</a></li>
+															                <li><a>示例文字</a></li>
+															                <li><a>2</a></li>
+															                <li><a>3</a></li>
+															            </ul>
+															        </div>
+															    </div>
+															    <div class="scrollbar">
+															        <div class="track">
+															            <div class="thumb">
+															                <div class="end"></div>
+															            </div>
+															        </div>
+															    </div>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-12-12">
+														<div class="form-select">
+															<a class="btn events-city-text">
+															    <span class="dropdown-text">请选择城市</span>
+															    <span class="dropdown-icon">
+															        <i class="icon icon-caret"></i>
+															    </span>
+															</a>
+															<div class="sub-menu tinyscrollbar">
+															    <div class="viewport">
+															        <div class="overview">
+															            <ul class="events-city-content">
+															                <li><a>示例文字</a></li>
+															                <li><a>示例文字</a></li>
+															                <li><a>2</a></li>
+															                <li><a>3</a></li>
+															            </ul>
+															        </div>
+															    </div>
+															    <div class="scrollbar">
+															        <div class="track">
+															            <div class="thumb">
+															                <div class="end"></div>
+															            </div>
+															        </div>
+															    </div>
+															</div>
+														</div>
+													</div>
+
+												</div>
+
+												<!--mob端省市区联动-->
+												<div class="row form-selects form-select-box none block-sm sfmb-select-city">
+													<div class="col-12-6">
+														<div class="form-select">
+															<a class="btn">
+																<span class="dropdown-text">请选择</span>
+															    <span class="dropdown-icon">
+															        <i class="icon icon-caret"></i>
+															    </span>
+															</a>
+															<select>
+																<option value="">请选择</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-12-6">
+														<div class="form-select">
+															<a class="btn">
+																<span class="dropdown-text">请选择城市</span>
+															    <span class="dropdown-icon">
+															        <i class="icon icon-caret"></i>
+															    </span>
+															</a>
+															<select>
+																<option value="">请选择</option>
+															</select>
+														</div>
+													</div>
+												</div>
+
+											</div>
+											<div class="form-iline">
+												<div class="form-input">
+													<input type="text" placeholder="门店名称/门店地址"/>
+												</div>
+											</div>
+
+										</div>
+										<dl class="store-search-type">
+											<dt>店铺类型</dt>
+											<dd><i class="icon icon-checked is-active"></i><i class="icon logo-ic logo-ic1"></i><span>运动表现</span></dd>
+											<dd><i class="icon icon-checked"></i><i class="icon logo-ic logo-ic1"></i><span>工厂折扣</span></dd>
+											<dd><i class="icon icon-checked"></i><i class="icon logo-ic logo-ic1"></i><span>鞋类专业</span></dd>
+											<dd><i class="icon icon-checked"></i><i class="icon logo-ic logo-ic2"></i><span>运动生活</span></dd>
+											<dd><i class="icon icon-checked"></i><i class="icon logo-ic logo-ic3"></i><span>三叶草</span></dd>
+											<dd><i class="icon icon-checked"></i><i class="icon logo-ic logo-ic1"></i><span>女子</span></dd>
+											<dd><i class="icon icon-checked"></i><i class="icon logo-ic logo-ic1"></i><span>旗舰店</span></dd>
+											<dd><i class="icon icon-checked"></i><i class="icon logo-ic logo-ic1"></i><span>童装</span></dd>
+											<dd><i class="icon icon-checked"></i><i class="icon logo-ic logo-ic1"></i><span>跑步专业</span></dd>
+										</dl>
+										<dl class="store-search-crumbs">
+											<dt>当前搜索条件<span>清除</span></dt>
+											<!-- <dd><i class="icon icon-clear"></i><label>区域：</label><span>上海 宝山</span></dd> -->
+											<dd><i class="icon icon-clear"></i><label>门店地址/门店：</label><span>黄河中路…</span></dd>
+											<dd><i class="icon icon-clear"></i><label>店铺类型：</label><span>运动表现</span></dd>
+										</dl>
+										<div class="store-search-btnbox is-error">
+											<a class="btn btn-blue"><span>立即搜索</span></a>
+											<div class="msg-block">
+												<i class="icon msg-icon"></i>
+												<span>格式错误，请重新输入</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--左 part end-->
+
+							<!--右 part start-->
+							<div class="sfcont-right-box">
+								<div class="sfcont-right-cont">
+									<div class="store-result-line float-clearfix">
+										<div class="store-result-place">共<span> 68 </span>家门店</div>
+										<div class="map-hide-place">
+											<div class="page-size-place">
+												<span>显示</span>
+												<span class="page-num is-active">12</span>
+												<span>|</span>
+												<span class="page-num">24</span>
+												<span>|</span>
+												<span class="page-num">48</span>
+											</div>
+											<div class="turn-page-place">
+												<div class="paging none-sm">
+													<ul class="float-clearfix">
+														<li class="paging-tit">页数</li>
+														<li class="paging-select-wrapper">
+															<div class="select-box">
+																<div class="dropdown none-sm events-dropdown">
+																	<a class="btn">
+																		<span class="dropdown-text">1</span>
+																		<span class="dropdown-icon"><i class="icon icon-caret"></i></span>
+																	</a>
+																	<div class="sub-menu tinyscrollbar">
+																		<div class="viewport">
+																			<div class="overview">
+																				<ul>
+																					<li>
+																						<a>1</a>
+																					</li>
+																					<li>
+																						<a>2</a>
+																					</li>
+																					<li>
+																						<a>3</a>
+																					</li>
+																					<li>
+																						<a>4</a>
+																					</li>
+																			</div>
+																		</div>
+																		<div class="scrollbar none">
+																			<div class="track">
+																				<div class="thumb">
+																					<div class="end"></div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="dropdown none block-sm events-form-select">
+																	<a class="btn">
+																		<span class="dropdown-text">1</span>
+																		<span class="dropdown-icon"><i class="icon icon-caret"></i></span>
+																	</a>
+																	<select>
+																		<option value="请选择">请选择</option>
+																		<option value="1">1</option>
+																		<option value="2">2</option>
+																		<option value="3">3</option>
+																		<option value="4">4</option>
+																	</select>
+																</div>
+															</div>
+														</li>
+														<li class="paging-total">/4</li>
+														<li class="left-arrow"><i class="icon icon-round-lightgray-leftm is-disabled"></i></li>
+														<li class="right-arrow"><i class="icon icon-round-lightgray-rightm"></i></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="listmap-toggle-place">
+											<ul class="float-clearfix">
+												<li>
+													<i class="icon ic-type-map"></i>
+												</li>
+												<li class="is-active">
+													<i class="icon ic-type-list"></i>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="map-list-box none">
+										<div class="store-map-box">
+											<div class="map-img-box">
+												<img class="pc-img" src="../static/images/common/map_img.png" />
+												<img class="mb-img" src="../static/images/common/map_img@2x.png" />
+												<div class="store-ic-box sicbox-tag1">
+													<div class="store-ic-cont ">
+														<div class="store-ic-cont-img">
+															<img src="images/common/originals@2x.png" />
+														</div>
+														<div class="store-hover-box">
+															<div class="store-item-box">
+																<div class="store-item-info float-clearfix">
+																	<div class="product-show">
+																		<div class="product-info">
+																			<div class="thumbnail float-clearfix">
+																			    <a href="">
+																			        <img src="../static/images/common/img98.png" alt="" width="" height="" />
+																			    </a>
+																			    <h4>
+																			    	<a>上海APM三叶草店</a>
+																			    	<p><a>Shanghai IAPM Plaza (OCS)</a></p>
+																			    </h4>
+																			    <div class="desc">
+																			    	<p class="fourwords"><label>Address :</label><span>上海 上海 上海市淮海中路999 号上海环贸广场地下2层(LG2)278室</span></p>
+																			    	<p class="fourwords"><label>Tel :</label><span>021-64752811</span></p>
+																			    	<p class="fourwords"><label>Business hour :</label><span>周一到周五 10:00 - 22:00；周六到周日 10:00 - 22:00</span></p>
+																			    </div>
+																			</div>
+																		</div>
+																		<div class="jumpbtn">
+																			<a>View Details</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="store-hover-box-arow"></div>
+													</div>
+												</div>
+												<div class="store-ic-box sicbox-tag2">
+													<div class="store-ic-cont">
+														<div class="store-ic-cont-img">
+															<img src="images/common/neo@2x.png" />
+														</div>
+														<div class="store-hover-box">
+															<div class="store-item-box">
+																<div class="store-item-info float-clearfix">
+																	<div class="product-show">
+																		<div class="product-info">
+																			<div class="thumbnail float-clearfix">
+																			    <a href="">
+																			        <img src="../static/images/common/img98.png" alt="" width="" height="" />
+																			    </a>
+																			    <h4>
+																			    	<a>上海APM三叶草店</a>
+																			    	<p><a>Shanghai IAPM Plaza (OCS)</a></p>
+																			    </h4>
+																			    <div class="desc">
+																			    	<p class="fourwords"><label>Address :</label><span>上海 上海 上海市淮海中路999 号上海环贸广场地下2层(LG2)278室</span></p>
+																			    	<p class="fourwords"><label>Tel :</label><span>021-64752811</span></p>
+																			    	<p class="fourwords"><label>Business hour :</label><span>周一到周五 10:00 - 22:00；周六到周日 10:00 - 22:00</span></p>
+																			    </div>
+																			</div>
+																		</div>
+																		<div class="jumpbtn">
+																			<a>View Details</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="store-hover-box-arow"></div>
+													</div>
+												</div>
+												<div class="store-ic-box sicbox-tag3">
+													<div class="store-ic-cont">
+														<div class="store-ic-cont-img">
+															<img src="images/common/adidas@2x.png" />
+														</div>
+														<div class="store-hover-box">
+															<div class="store-item-box">
+																<div class="store-item-info float-clearfix">
+																	<div class="product-show">
+																		<div class="product-info">
+																			<div class="thumbnail float-clearfix">
+																			    <a href="">
+																			        <img src="../static/images/common/img98.png" alt="" width="" height="" />
+																			    </a>
+																			    <h4>
+																			    	<a>上海APM三叶草店</a>
+																			    	<p><a>Shanghai IAPM Plaza (OCS)</a></p>
+																			    </h4>
+																			    <div class="desc">
+																			    	<p class="fourwords"><label>Address :</label><span>上海 上海 上海市淮海中路999 号上海环贸广场地下2层(LG2)278室</span></p>
+																			    	<p class="fourwords"><label>Tel :</label><span>021-64752811</span></p>
+																			    	<p class="fourwords"><label>Business hour :</label><span>周一到周五 10:00 - 22:00；周六到周日 10:00 - 22:00</span></p>
+																			    </div>
+																			</div>
+																		</div>
+																		<div class="jumpbtn">
+																			<a>View Details</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="store-hover-box-arow"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="map-list-box ">
+										<div class="store-item-box">
+											<div class="store-item-info float-clearfix">
+												<div class="product-show">
+													<div class="product-info">
+														<div class="thumbnail float-clearfix">
+														    <a href="">
+														        <img src="../static/images/common/img98.png" alt="" width="" height="" />
+														    </a>
+														    <h4>
+														    	<a>上海APM三叶草店</a>
+														    	<p><a>Shanghai IAPM Plaza (OCS)</a></p>
+														    </h4>
+														    <div class="desc">
+														    	<p class="fourwords"><label>Address :</label><span>上海 上海 上海市淮海中路999 号上海环贸广场地下2层(LG2)278室</span></p>
+														    	<p class="fourwords"><label>Tel :</label><span>021-64752811</span></p>
+														    	<p class="fourwords"><label>Business hour :</label><span>周一到周五 10:00 - 22:00；周六到周日 10:00 - 22:00</span></p>
+														    </div>
+														</div>
+													</div>
+													<div class="jumpbtn">
+														<div class="">
+															<a class="btn btn-white btn-have-arrow btn-white-details"><span>View Details</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="store-item-info float-clearfix">
+												<div class="product-show">
+													<div class="product-info">
+														<div class="thumbnail float-clearfix">
+														    <a href="">
+														        <img src="../static/images/common/img98.png" alt="" width="" height="" />
+														    </a>
+														    <h4>
+														    	<a>上海APM三叶草店</a>
+														    	<p><a>Shanghai IAPM Plaza (OCS)</a></p>
+														    </h4>
+														    <div class="desc">
+														    	<p class="fourwords"><label>Address :</label><span>上海 上海 上海市淮海中路999 号上海环贸广场地下2层(LG2)278室</span></p>
+														    	<p class="fourwords"><label>Tel :</label><span>021-64752811</span></p>
+														    	<p class="fourwords"><label>Business hour :</label><span>周一到周五 10:00 - 22:00；周六到周日 10:00 - 22:00</span></p>
+														    </div>
+														</div>
+													</div>
+													<div class="jumpbtn">
+														<div class="">
+															<a class="btn btn-white btn-have-arrow btn-white-details"><span>View Details</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="store-result-line ft-srline float-clearfix">
+											<div class="store-result-place">共<span> 68 </span>家门店</div>
+											<div class="page-size-place">
+												<span>显示</span>
+												<span class="page-num is-active">12</span>
+												<span>|</span>
+												<span class="page-num">24</span>
+												<span>|</span>
+												<span class="page-num">48</span>
+											</div>
+											<div class="turn-page-place">
+												<div class="paging none-sm">
+													<ul class="float-clearfix">
+														<li class="paging-tit">页数</li>
+														<li class="paging-select-wrapper">
+															<div class="select-box">
+																<div class="dropdown none-sm events-dropdown">
+																	<a class="btn">
+																		<span class="dropdown-text">1</span>
+																		<span class="dropdown-icon"><i class="icon icon-caret"></i></span>
+																	</a>
+																	<div class="sub-menu tinyscrollbar">
+																		<div class="viewport">
+																			<div class="overview">
+																				<ul>
+																					<li>
+																						<a>1</a>
+																					</li>
+																					<li>
+																						<a>2</a>
+																					</li>
+																					<li>
+																						<a>3</a>
+																					</li>
+																					<li>
+																						<a>4</a>
+																					</li>
+																			</div>
+																		</div>
+																		<div class="scrollbar none">
+																			<div class="track">
+																				<div class="thumb">
+																					<div class="end"></div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="dropdown none block-sm events-form-select">
+																	<a class="btn">
+																		<span class="dropdown-text">1</span>
+																		<span class="dropdown-icon"><i class="icon icon-caret"></i></span>
+																	</a>
+																	<select>
+																		<option value="请选择">请选择</option>
+																		<option value="1">1</option>
+																		<option value="2">2</option>
+																		<option value="3">3</option>
+																		<option value="4">4</option>
+																	</select>
+																</div>
+															</div>
+														</li>
+														<li class="paging-total">/4</li>
+														<li class="left-arrow"><i class="icon icon-round-lightgray-leftm is-disabled"></i></li>
+														<li class="right-arrow"><i class="icon icon-round-lightgray-rightm"></i></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<!-- mobile加载 -->
+										<div class="list-loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+									</div>
+
+								</div>
+							</div>
+							<!--右 part end-->
+
+						</div>
+					</div>
+
+				</article>
+
+			</section>
+
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+			<script type="text/temp" id="store-item-list">
+				<div class="store-item-info float-clearfix">
+					<div class="product-show">
+						<div class="product-info">
+							<div class="thumbnail float-clearfix">
+							    <a href="">
+							        <img src="../static/images/common/img98.png" alt="" width="" height="" />
+							    </a>
+							    <h4>
+							    	<a>上海APM三叶草店</a>
+							    	<p><a>Shanghai IAPM Plaza (OCS)</a></p>
+							    </h4>
+							    <div class="desc">
+							    	<p class="fourwords"><label>Address :</label><span>上海 上海 上海市淮海中路999 号上海环贸广场地下2层(LG2)278室</span></p>
+							    	<p class="fourwords"><label>Tel :</label><span>021-64752811</span></p>
+							    	<p class="fourwords"><label>Business hour :</label><span>周一到周五 10:00 - 22:00；周六到周日 10:00 - 22:00</span></p>
+							    </div>
+							</div>
+						</div>
+						<div class="jumpbtn">
+							<div class="">
+								<a class="btn btn-white btn-have-arrow btn-white-details"><span>View Details</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</script>
+		</div>
+	</body>
+</html>

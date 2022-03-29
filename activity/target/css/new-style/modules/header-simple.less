@@ -1,0 +1,75 @@
+@charset "utf-8";
+.header-simple{
+	.icon-adidas{
+		font-size: 74px;
+		color: #fff;
+		height: 80px;
+		width: 83px;
+		display: block;
+		position: relative;
+	}
+}
+
+@media (max-width:1024px){
+	.header-simple{
+		height: 60px;
+		.icon-adidas{
+			font-size: 50px;
+			height: 60px;
+		}
+		.header-container{
+			.header-simple-right{
+				> span{
+					a{
+						i,
+						.icon-service{
+							&:before{
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+		.none-sm{
+			display: none !important;
+			visibility: hidden;
+		}
+		.block-sm{
+			display: block !important;
+			visibility: visible;
+		}
+		.float-left-sm{
+			float: left;
+		}
+		.float-clearfix-sm{
+			clear: both !important
+		}
+	}
+	.footer{
+		.footer-cont-bottom{
+			.footer-cont-simple{
+				ul.footer-cont-left{
+					li:after{
+						display: none;
+					}
+				}
+				.none-sm{
+					display: none !important;
+					visibility: hidden;
+				}
+				.block-sm{
+					display: block !important;
+					visibility: visible;
+				}
+				.float-left-sm{
+					float: left;
+				}
+				.float-clearfix-sm{
+					clear: both !important
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.article-running-campaign{
+    max-width: 1366px;
+    margin: 0 auto;
+    .running-campaign-img{
+        a{
+            display: block;
+        }
+        img{
+            width: 100%;
+        }
+        &.running-campaign-group{
+            position: relative;
+            a{
+                position: absolute;
+                left: 0;
+                width: 45%;
+                height: 30%;
+                &.running-campaign-a1{
+                    top: 0;
+                }
+                &.running-campaign-a2{
+                    top: 30%;
+                }
+                &.running-campaign-a3{
+                    top: 60%;
+                }
+                &.running-campaign-a4{
+                    top: 0;left: 45%;
+                    width: 55%;
+                    height: 90%;
+                } 
+            }
+        }
+    }
+}

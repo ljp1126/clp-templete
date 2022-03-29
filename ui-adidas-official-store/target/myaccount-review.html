@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/myaccount-orders.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/myaccount-orders.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+
+		<!-- 内容部分 -->
+		<section class="container">
+			<div class="my-score-box">
+				<!-- 评论得积分 -->
+				<div class="evaluation-integral">
+					<div class="title">
+						<i class="icon icon-comments"></i>
+						<span>评论所购商品赢50奖励积分</span>
+					</div>
+					<p class="none-sm">
+						收到商品后成功提交评论（并无退货情况），将可获得50点积分作为奖励。
+					</p>
+					<p class="none-sm">
+						铜牌及以上等级会员，
+						<span class="bold">每500待兑换积分，可换50元优惠券！</span>
+						<a href="#">详细规则请点击</a>
+					</p>
+					<p class="none block-sm">
+						收到商品后成功提交评论（并无退货情况），将可获得50点积分作为奖励。铜牌及以上等级会员，
+						<span class="bold">每500待兑换积分，可换50元优惠券！</span>
+						<a href="#">详细规则请点击</a>
+					</p>
+				</div>
+				<!-- 评论得积分 end -->
+
+			</div>
+
+			<!-- 您的评分部分 -->
+			<div class="my-score">
+				<div class="title">
+					<h4>您的评分</h4>
+					<p>商品名称<span><b>：</b>三叶草 男女 STAN SMITH BOOST 经典</span></p>
+				</div>
+
+				<div class="scoring-details">
+
+					<ul class="float-clearfix review-total starrank events-starRank1">
+						<li class="is-error">
+							<label>评分<span>*</span></label>
+							<div class="rankBox review-star">
+							</div>
+							<!-- 报错信息 -->
+							<div class="msg-block">
+								<i class="icon msg-icon"></i>
+								<span>请为商品评分</span>
+							</div>
+						</li>
+					</ul>
+
+					<div class="size is-error">
+						<p>尺码<span>*</span>
+							<i class="icon icon-size-circular"></i>
+							<i class="icon icon-size-circular"></i>
+							<i class="icon icon-size-circular icon-size-circular-active"></i>
+							<i class="icon icon-size-circular"></i>
+							<i class="icon icon-size-circular"></i>
+						</p>
+						<div class="size-number float-clearfix">
+							<span>偏大</span>
+							<span>正好</span>
+							<span>偏小</span>
+						</div>
+						<strong>请评价商品的尺码</strong>
+					</div>
+
+					<div class="size is-error">
+						<p>舒适度<span>*</span>
+							<i class="icon icon-size-circular"></i>
+							<i class="icon icon-size-circular"></i>
+							<i class="icon icon-size-circular icon-size-circular-active"></i>
+							<i class="icon icon-size-circular"></i>
+							<i class="icon icon-size-circular"></i>
+						</p>
+						<div class="size-number float-clearfix">
+							<span>很舒适</span>
+							<span>一般</span>
+							<span>不舒适</span>
+						</div>
+						<strong>请评价商品的舒适度</strong>
+					</div>
+
+					<div class="size is-error">
+						<p>质量<span>*</span>
+							<i class="icon icon-size-circular"></i>
+							<i class="icon icon-size-circular"></i>
+							<i class="icon icon-size-circular icon-size-circular-active"></i>
+							<i class="icon icon-size-circular"></i>
+							<i class="icon icon-size-circular"></i>
+						</p>
+						<div class="size-number float-clearfix">
+							<span>优质</span>
+							<span>一般</span>
+							<span>不太好</span>
+						</div>
+						<strong>请评价商品的质量</strong>
+					</div>
+				</div>
+
+				<div class="checked-select">
+					<p>是否推荐</p>
+					<i class="icon icon-checked is-active"></i><span>我推荐此商品</span>
+				</div>
+
+				<div class="evaluate is-error">
+					<p>您的评价<span>*</span></p>
+					<textarea></textarea>
+					<b>请用至少50个字描述您对该商品的评价</b>
+					<div class="counter restrict-num">
+						<span class="events-messageCounter">0</span>/200
+					</div>
+				</div>
+
+				<div class="upload-photos float-clearfix">
+					<p>上传照片</p>
+					<div class="pic is-error">
+						<ul class="float-clearfix">
+							<li class="input-add">
+								<input type="file">
+								<img src="images/myorder/+img_blue.png" class="add-img" />
+								<img src="images/myorder/img_bule_disabled.png" class="add-upper-limit" />
+							</li>
+							<li>
+								<img src="images/myorder/example1.jpg">
+								<i class="icon icon-delete-picture"></i>
+							</li>
+							<li>
+								<img src="images/myorder/example1.jpg">
+								<i class="icon icon-delete-picture"></i>
+							</li>
+						</ul>
+						<span>图片格式仅支持BMP、PNG或JPEG,每张图片不得大于1MB</sapn>
+					</div>
+				</div>
+
+				<div class="review-checked checked-select is-error">
+					<i class="icon icon-checked is-active"></i>
+					<span>我接受adiidas商城<a href="">法律声明</a>和<a href="">隐私政策</a></span>
+					<div class="msg-block">
+						<i class="icon msg-icon"></i>
+						<span>格式错误，请重新输入</span>
+					</div>
+				</div>
+
+				<div class="submit-btn">
+					<a class="btn btn-blue" href=""><span>提交并审核评论</span></a>
+				</div>
+			</div>
+
+		</section>
+
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+
+	</div>
+</body>
+</html>

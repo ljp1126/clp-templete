@@ -1,0 +1,135 @@
+@charset "utf-8";
+@import "common/variables.less";
+
+.article{
+    position: relative;
+    >img{
+        width: 100%;
+    }
+}
+
+.link{
+    position: absolute;
+    z-index: 1;
+    // background: rgba(0, 0, 0, .4);
+}
+
+.article-countdown{
+	.countdown-box{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		span{
+			color: #000;
+			font-size: 78px;
+			position: absolute;
+			top: 40.5%;
+			letter-spacing: 8.1px;
+			&.divider{
+				font-family: @fonts-adihdb, @fonts-common-suffix;
+				font-size: 25px;
+				top: 45.8%;
+			}
+
+			&:first-child{
+				left: 49.6%;
+			}
+			&:nth-child(2){
+				left: 54.9%;
+				letter-spacing: 0;
+			}
+			&:nth-child(3){
+				left: 63.3%;
+			}
+			&:nth-child(4){
+				left: 68.6%;
+				letter-spacing: 0;
+			}
+			&:nth-child(5){
+				left: 76.4%;
+			}
+			&:last-child{
+				left: 81.4%;
+				letter-spacing: 0;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1600px){
+	.article-countdown{
+		.countdown-box{
+			span{
+				font-size: 64px;
+				&.divider{
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1300px){
+	.article-countdown{
+		.countdown-box{
+			span{
+				font-size: 54px;
+				letter-spacing: 6px;
+				&.divider{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1100px){
+	.article-countdown{
+		.countdown-box{
+			span{
+				font-size: 44px;
+				&.divider{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px){
+	.article-countdown{
+		.countdown-box{
+			span{
+				font-size: 8.6vw;
+				top: 79.15%;
+				&.divider{
+					font-size: 3.15vw;
+					top: 82.2%;
+				}
+
+				&:first-child{
+					left: 10%;
+				}
+				&:nth-child(2){
+					left: 22.7%;
+				}
+				&:nth-child(3){
+					left: 39%;
+				}
+				&:nth-child(4){
+					left: 51.6%;
+				}
+				&:nth-child(5){
+					left: 66.1%;
+				}
+				&:last-child{
+					left: 78.8%;
+				}
+			}
+		}
+	}
+}

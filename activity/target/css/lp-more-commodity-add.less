@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+//更多商品
+.more-commodity-article {
+    max-width: 950px;
+    margin: 0px auto 0;
+    padding-top: 0px;
+    
+    .product-title{
+        margin: 0px 0 35px;
+        p{
+            font-size: 29px;
+            color: #000;
+            text-align: center;
+        }
+    }
+    &.more-commodity-man{
+        padding-top: 16px;
+        .product-title{
+            margin: 38px 0 38px;
+        }
+    }
+    .product-list{
+        position: relative;
+        .product-list-cont{
+            width: 100%;
+            .list-item{
+                max-width: 25%;
+                float: none;
+                position: relative;
+                padding: 0 5px;
+                margin: 0 0 52px;
+                display: inline-block;
+                font-size: 0;
+                .thumbnail{
+                    padding: 0;
+                    background-color: #fff;
+                    border-radius: 0;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    -ms-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                    .pro-big-img-box{
+                        img{
+                            border-radius: 0px;
+                        }
+                        .addi-logo{
+                            position: absolute;
+                            top: 12px;
+                            left: 5px;
+                            img{
+                                max-height: 21px;
+                                width: auto;
+                            }
+                        }
+
+                        .badge{
+                            width: calc(~'100% - 10px');
+                            position: absolute;
+                            top: 40px;
+                            left: 5px;
+                            > div,
+                            img{
+                                height: 20px;
+                                width:auto;
+                                &:first-child{
+                                    float: left;
+                                }
+                                &:nth-child(2){
+                                    float: right;
+                                }
+                            }
+                        }
+                    }
+                    .goods-box{
+                        padding: 10px 10px 17px 10px;
+                        .goods-title{
+                            font-size: 12px;
+                            color: #000;
+                            line-height: 16px;
+                            min-height: 32px;
+                            height: auto;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            
+                            p{
+                                color: #666666;
+                                font-weight: bold;
+                                overflow: hidden;
+                            }
+                            span{
+                                color: #747474;
+                            }
+                        }
+                        .goods-bottom{
+                            margin-top: 15px;
+                            // .goods-price{
+                            //     font-size: 12px;
+                            //     font-weight: bold;
+                            // }
+
+                            .goods-price {
+                                font-size: 12px;
+                                color: #C53622;
+                                font-weight: bold;
+                                del{
+                                    font-size: 12px;
+                                    color: #5E686E;
+                                    margin-left: 6px;
+                                    font-weight: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .list-item:hover{
+                .thumbnail{
+                    box-shadow: 1px 2px 5px 0 rgba(136, 136, 136, 0.5);
+                    .pro-big-img-box{
+                        img{
+                        }
+                        .addi-logo{
+                            display:block;
+                            img{
+                            }
+                        }
+                    }
+                    .goods-box{
+                        .goods-title{
+                        }
+                    }
+                    .shopping-bag{
+                        display: block;
+                        .btn-gradient-blue{
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+.more-commodity-article {
+        padding-top: 0px;
+    
+        .product-title{
+            margin: 0px 0 15px;
+            p{
+                font-size: 18px;
+            }
+        }
+        &.more-commodity-man{
+            padding-top: 10px;
+            .product-title{
+                margin: 14px 0 14px;
+            }
+        }
+        .product-list{
+            position: relative;
+            margin: 0px 15px 0;
+            .product-list-cont{
+                .list-item{
+                    max-width: 50%;
+                    margin-bottom: 22px;
+                    
+                    .thumbnail{
+                        .pro-big-img-box{
+                            .addi-logo{
+                                display: block;
+                                
+                            }
+                        }
+                        .goods-box{
+                            padding: 0;
+                            margin-top: 0px;
+                            padding-top: 3px;
+                            
+                            >p{
+                                font-size: 12px;
+                                line-height: 30px;
+                            }
+                            .goods-title{
+                                font-size: 12px;
+                                border-top: 1px dotted #8d8d8d;
+                                padding-top: 7px;
+                                p{
+                                    color: #000;
+                                }
+                            }
+                            .goods-bottom{
+                                margin-top: 7px;
+                                
+                                .goods-price{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .list-item:hover{
+                    .thumbnail{
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .more-commodity-article {
+        .product-list{
+            .product-list-cont{
+                .list-item{
+                    .thumbnail{
+                        .pro-big-img-box{
+                            .addi-logo{
+                                img{
+                                    max-height: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

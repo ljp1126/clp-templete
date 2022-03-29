@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" type="text/css" href="css/adiclub.css"> -->
+	<%include _includes/js.html %>
+	<!-- <script type="text/javascript" src="js/adiclub.js"></script> -->
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+			<style>
+				.article {
+					position: relative;
+				}
+
+				.article img {
+					width: 100%;
+					height: auto;
+				}
+
+				.link {
+					position: absolute;
+				}
+
+				.article-video .video-wrapper {
+					position: absolute;
+					left: 50%;
+					top: 0;
+					height: 100%;
+					transform: translateX(-50%);
+					width: 85%;
+					cursor: pointer;
+				}
+
+				.video-box .video-content {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					top: 0;
+					left: 0;
+				}
+
+				.video-content .video {
+					width: 100%;
+					object-fit: contain;
+					visibility: hidden;
+				}
+
+				.video-box.is-play .video-wrapper .video-content .video {
+					visibility: visible;
+				}
+
+				.link-1 {
+					width: 33%;
+					height: 74%;
+					left: 35%;
+					top: 16%;
+				}
+
+				.link-p2{
+					width: 28%;
+					height: 35%;
+					left: 55%;
+					top: 26%;
+				}
+				.link-p3{
+					width: 24%;
+					height: 28%;
+					left: 60%;
+					top: 61%;
+				}
+				.link-p4{
+					width: 29%;
+					height: 32%;
+					left: 18%;
+					top: 3%;
+				}
+				.link-p5{
+					width: 27%;
+					height: 29%;
+					left: 16%;
+					top: 42%;
+				}
+				.link-p6{
+					width: 28%;
+					height: 32%;
+					left: 56%;
+					top: 26%;
+				}
+				.link-p7{
+					width: 24%;
+					height: 37%;
+					left: 60%;
+					top: 58%;
+				}
+				.link-p8{
+					width: 28%;
+					height: 24%;
+					left: 57%;
+					top: 27%;
+				}
+				.link-p9{
+					width: 28%;
+					height: 32%;
+					left: 56%;
+					top: 51%;
+				}
+				
+				.linkpro1{
+					width: 17%;
+					height: 60%;
+					left: 11%;
+					top: 26%;
+				}
+				.linkpro2{
+					width: 17%;
+					height: 60%;
+					left: 31%;
+					top: 26%;
+				}
+				.linkpro3{
+					width: 17%;
+					height: 60%;
+					left: 51%;
+					top: 26%;
+				}
+				.linkpro4{
+					width: 17%;
+					height: 60%;
+					left: 72%;
+					top: 26%;
+				}
+
+				@media (max-width:1024px) {
+					.article-video .video-wrapper {
+						width: 100%;
+						top: 0;
+					}
+					.video-box1 .video-wrapper {
+						transform: translateX(0);
+						left: 0;
+						width: 100%;
+						height: 100%;
+						top: 0;
+					}
+					.mob-link p {
+						display: none;
+						position: absolute;
+						width: 100%;
+						top: 0;
+						left: 0;
+						z-index: 4;
+					}
+					.mob-link .img-link {
+						position: absolute;
+						display: inline-block;
+					}
+					.mob-link1 .img-link {
+						width: 51%;
+						height: 15%;
+						top: 78%;
+						left: 32%;
+					}
+					.mob-link1 .mob-close {
+						position: absolute;
+						width: 12%;
+						height: 10%;
+						right: 17%;
+						top: 6%;
+					}
+					.mob-link2 .img-link {
+						width: 51%;
+						height: 15%;
+						top: 76%;
+						left: 15%;
+					}
+					.mob-link2 .mob-close {
+						position: absolute;
+						width: 14%;
+						height: 10%;
+						right: 2%;
+						top: 12%;
+						z-index: 5;
+					}
+					.mob-link1-1 .mob-close {
+						top: 3%;
+					}
+					.link-1 {width: 59%;left: 22%;}
+					.link-p2,.link-p4,.link-p6 ,.link-p8{
+						width: 76%;height: 40%;left: 10%;top: 14%;
+					}
+					.link-p3 ,.link-p5,.link-p7,.link-p9{
+						width: 76%;	left: 15%;top: 54%;
+					}
+					.link-p4{left: 15%;}
+					.link-p5{left: 7%;}
+					.link-p6{left: 10%;height: 35%;}
+					.link-p7{left: 15%;top: 47%;}
+					.link-p8{height: 27%;}
+					.link-p9{left: 10%;top: 47%;}
+					.linkpro1 {width: 50%;height: 40%;left: 0;top: 10%;
+					}
+					.linkpro2 {width: 50%;height: 40%;left: 50%;top: 10%;
+					}
+					.linkpro3 {width: 50%;height: 40%;left: 0;top: 51%;
+					}
+					.linkpro4 {width: 50%;height: 40%;left: 50%;top: 51%;
+					}
+				}
+			</style>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+						"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/pc_01.jpg"},
+						"medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/mob_01.jpg"},
+						"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/mob_01.jpg"}
+						}' />
+			</article>
+			<article class="article article-video video-box video-box1">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+						"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/pc_02.jpg"},
+						"medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/mob_02.jpg"},
+						"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/mob_02.jpg"}
+						}' />
+				<div class="video-wrapper e-video e-play-video-new">
+					<div class="video-content"></div>
+					<a class="video-play" href="javascript:void(0)">
+						<span class="video-code" data-video-code="D7F042252E1C20399C33DC5901307461">
+							<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/video.jpg" />
+						</span>
+					</a>
+				</div>
+			</article>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+						"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/pc_03.jpg"},
+						"medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/mob_03.jpg"},
+						"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/mob_03.jpg"}
+						}' />
+				<a class="link link-1" href="https://www.adidas.com.hk/lego/all"></a>
+			</article>
+			<article class="article none-sm">
+				<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/pc_04-1.jpg">
+				<a class="link link-p2" href="https://www.adidas.com.hk/item/GN6828"></a>
+				<a class="link link-p3" href="https://www.adidas.com.hk/item/FX2871"></a>
+			</article>
+			<article class="article none block-sm mob-link-container">
+				<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/mob_04.jpg" >
+				<div class="mob-link mob-link1">
+					<i class="img-link"></i>
+					<p>
+						<i class="mob-close"></i>
+						<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/mob_04-1.jpg" >
+						<a class="link link-p2" href="https://www.adidas.com.hk/item/GN6828"></a>
+						<a class="link link-p3" href="https://www.adidas.com.hk/item/FX2871"></a>
+					</p>
+				</div>
+			</article>
+			<article class="article none-sm">
+				<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/pc_05-1.jpg" >
+				<a class="link link-p4" href="https://www.adidas.com.hk/item/GN6772"></a>
+				<a class="link link-p5" href="https://www.adidas.com.hk/item/FY8439"></a>
+			</article>
+			<article class="article none block-sm mob-link-container">
+				<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/mob_05.jpg" >
+				<div class="mob-link mob-link2">
+					<i class="img-link"></i>
+					<p> <i class="mob-close"></i>
+						<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/mob_05-1.jpg" >
+						<a class="link link-p4" href="https://www.adidas.com.hk/item/GN6772"></a>
+						<a class="link link-p5" href="https://www.adidas.com.hk/item/FY8439"></a>
+					</p>
+				</div>
+			</article>
+			<article class="article none-sm">
+				<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/pc_06-1.jpg">
+				<a class="link link-p6" href="https://www.adidas.com.hk/item/GP3333"></a>
+				<a class="link link-p7" href="https://www.adidas.com.hk/item/GN6801"></a>
+			</article>
+			<article class="article none block-sm mob-link-container">
+				<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/mob_06.jpg" >
+				<div class="mob-link mob-link1 mob-link1-1">
+					<i class="img-link"></i>
+					<p> <i class="mob-close"></i>
+						<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/mob_06-1.jpg" >
+						<a class="link link-p6" href="https://www.adidas.com.hk/item/GP3333"></a>
+						<a class="link link-p7" href="https://www.adidas.com.hk/item/GN6801"></a>
+					</p>
+				</div>
+			</article>
+			<article class="article none-sm">
+				<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/pc_07-11.jpg" >
+				<a class="link link-p8" href="https://www.adidas.com.hk/item/FX2877"></a>
+				<a class="link link-p9" href="https://www.adidas.com.hk/item/GN6699" ></a>
+			</article>
+			<article class="article none block-sm mob-link-container">
+				<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/mob_07.jpg" >
+				<div class="mob-link mob-link2">
+					<i class="img-link"></i>
+					<p> <i class="mob-close"></i>
+						<img src="https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/mob_07-11.jpg" >
+						<a class="link link-p8" href="https://www.adidas.com.hk/item/FX2877"></a>
+						<a class="link link-p9" href="https://www.adidas.com.hk/item/GN6699" ></a>
+					</p>
+				</div>
+			</article>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+						"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/pc_08.jpg"},
+						"medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/mob_08.jpg"},
+						"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/clp/en/mob_08.jpg"}
+						}' />
+				<a class="link linkpro1" href="https://www.adidas.com.hk/item/GN6698"></a>
+				<a class="link linkpro2" href="https://www.adidas.com.hk/item/GJ6493"></a>
+				<a class="link linkpro3" href="https://www.adidas.com.hk/item/GN6802"></a>
+				<a class="link linkpro4" href="https://www.adidas.com.hk/item/FX2863"></a>
+			</article>
+			<script type="text/javascript">
+				$(function() {
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+					$('.img-link').on('tap', function(e) {
+						let _this = $(this);
+						_this.hide();
+						_this.next('p').show();
+						return false; 
+					});
+					$('.mob-close').on('tap', function() {
+						let _this = $(this);
+						_this.parent('p').hide();
+						_this.parent('p').prev('.img-link').show();
+					});
+					$(document).attr('title', 'lego');
+					var loadImgFun_index = function(imgArr, fn) {
+						var loadImgLen = 0,
+							errImgLen = 0;
+						var imgdefereds = [];
+						$(imgArr).each(function() {
+							var defered = $.Deferred();
+							$(this)
+								.on("load", function() {
+									defered.resolve();
+									loadImgLen++;
+								})
+								.on("error", function() {
+									defered.resolve();
+									errImgLen++;
+								});
+							if (this.complete)
+								setTimeout(function() {
+									defered.resolve();
+								}, 200);
+							imgdefereds.push(defered);
+						});
+						$.when.apply(null, imgdefereds).done(function() {
+							if (fn && $.isFunction(fn)) {
+								fn();
+							}
+						});
+					};
+					$(".e-video").each(function(index, el) {
+						$(el).addClass("home-video");
+						var videoCode = $(".video-code", el).data("video-code"),
+							videoId = "home_video_" + index;
+						loadImgFun_index($(".video-code img", el), function() {});
+						var bannerVideoId = videoCode;
+						var url = base + "/indexCCVideo.json";
+						var data = loxia.syncXhrGet(url, {
+							'bannerVideoId': bannerVideoId
+						});
+						var videoUrl = data.mp4VideoUrl;
+						// var videoUrl='https://cm15-c110-2.play.bokecc.com/flvs/ca/QxIwn/umQ00rpCKZ-30.mp4?t=1609394355&key=599C91B45921C477D43B3E16B7BA1364&tpl=10';
+						var html = '<video class="video" id="' +
+							videoId +
+							'"  webkit-playsinline="true" playsInline="true"><source src="' +
+							videoUrl +
+							'" ></source></video>';
+						$(".video-content", el).html(html);
+					});
+					$(".e-play-video-new").on("tap", function() {
+						var _parent_article = $(this).parents(".article-video"),
+							_video_s = $(this).parents(".article-video").find(".video"),
+							_video = $(this)
+							.parents(".article-video")
+							.find(".video");
+						_parent_article.toggleClass("is-play");
+						if (_parent_article.hasClass("is-play")) {
+							for (var i = 0; i < _video_s.length; i++) {
+								_video_s.eq(i)[0].pause();
+							}
+							_video[0].play();
+							_video[0].addEventListener("ended", function() {
+								this.play();
+							});
+						} else {
+							_video[0].pause();
+						}
+					});
+				})
+			</script>
+		</section>
+
+		<%include _includes/modules/footer-no-back-top.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

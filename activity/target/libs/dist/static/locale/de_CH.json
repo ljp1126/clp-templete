@@ -1,0 +1,61 @@
+{
+  "general": {
+    "today": "Heute",
+    "month": {
+      "0": "Januar",
+      "1": "Februar",
+      "2": "März",
+      "3": "April",
+      "4": "Mai",
+      "5": "Juni",
+      "6": "Juli",
+      "7": "August",
+      "8": "September",
+      "9": "Oktober",
+      "10": "November",
+      "11": "Dezember"
+    },
+    "ordinal": {
+      "st": "",
+      "nd": "",
+      "rd": "",
+      "th": ""
+    },
+    "launchDate": "8. Juni 2018",
+    "endDate": "8. Juli 2018",
+    "error": "Leider ist ein Fehler aufgetreten. Bitte versuche es später noch einmal."
+  },
+  "teaser": {
+    "distance": {
+      "top": "Insgesamt",
+      "amount": "8.403.081",
+      "label": "Kilometer gelaufen"
+    },
+    "members": {
+      "top": "Vom 8. Juni bis 8. Juli sind",
+      "amount": "744.440",
+      "label": "Läufer weltweit"
+    },
+    "intro": {
+      "label01": "Jede Minute landet eine LKW-Ladung Plastikmüll in den Ozeanen.",
+      "label02": "Damit muss endlich Schluss sein.",
+      "label03": "Mach mit!"
+    },
+    "cta": {
+      "label01": "Jeder Kilometer zählt",
+      "label02": "Unten erfährst du, wie du teilnehmen kannst"
+    },
+    "end": {
+      "label01": "Läufer auf der ganzen Welt kamen zusammen, um beim Run for the Oceans ein Zeichen zu setzen.<br />An alle, die Kilometer gemacht, Bewusstsein geschafft und das Parley Ocean Plastic Program unterstützt haben.",
+      "label02": "Vielen Dank!"
+    }
+  },
+  "preLoader": {
+    "title": "Run for the Oceans",
+    "subtitle": "Lädt ..."
+  },
+  "app": {
+    "name": "Run for the Oceans",
+    "slug": "parley-ss18-rfto"
+  }
+}

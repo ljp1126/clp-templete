@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>抽奖活动</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/lp-dilraba-lottery-1.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/lp-dilraba-lottery-1.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-draw.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+
+            <article class="article start-draw-inner">
+                <img src="images/blank.gif"
+                    data-image='{
+                    "standard":{"high":"", "normal":"../static/images/lp-dilraba-lottery/parts-2-01.jpg"},
+                    "medium":{"high":"",  "normal":"../static/images/lp-dilraba-lottery/parts-2-01-m.jpg"},
+                    "small":{"high":"", "normal":"../static/images/lp-dilraba-lottery/parts-2-01-m.jpg"}}'
+                />
+
+                <div class="ad-logo">
+                    <img src="../static/images/lp-dilraba-lottery/logo-pc.png" alt="">
+                </div>
+
+                <div class="extract-row">
+                    <ul>
+                        <li>
+                            <div class="lang-bg">
+                                <img src="images/blank.gif"
+                                    data-image='{
+                                    "standard":{"high":"", "normal":"../static/images/lp-dilraba-lottery/parts-1-02.jpg"},
+                                    "medium":{"high":"",  "normal":"../static/images/lp-dilraba-lottery/parts-1-02-m.jpg"},
+                                    "small":{"high":"", "normal":"../static/images/lp-dilraba-lottery/parts-1-02-m.jpg"}}'
+                                />
+                            </div>
+                            <div class="lang-text">
+                                <p class="lang-header">是时候爆发人品</p>
+                                <p class="lang-details">充值时尚能量！</p>
+                            </div>
+                            <a class="btn-base-white btn-start-handle btn-draw-handle e-start-handle">
+                                <div class="loading">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                开始抽取<img src="../static/images/lp-dilraba-lottery/arrow.png"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+		</section>
+
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+		<!-- 点击开始抽取结果弹层 -->
+		<script id="extract-result" type="text/template">
+			<div class="dialog">
+				<div class="dialog-container">
+					<div class="scroll">
+						<div class="scroller-wrap">
+							<p>恭喜你 获得女生能量</p>
+							<p>留下信息 加速到手</p>
+							<img src="../static/images/lp-dilraba-lottery/parts-new.png" alt="" width="70%">
+							<a class="btn-editor-handle e-editor-handle"><img src="../static/images/lp-dilraba-lottery/information-btn.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</script>
+
+		<!-- 填写信息弹层 -->
+		<script id="editor-information" type="text/template">
+			<div class="dialog">
+				<div class="dialog-container">
+					<div class="scroll">
+						<div class="scroller-wrap">
+							<p><span>请留下你的信息</span>我们会把能量包寄给你</p>
+							<div class="form-input">
+								<label class="form-title">姓名</label>
+								<input type="text" placeholder="姓名为空请填写">
+								<div class="msg-block">
+									<i class="icon msg-icon"></i>
+									<span>请输入姓名</span>
+								</div>
+							</div>
+							<div class="form-input">
+								<label class="form-title">电话</label>
+								<input type="text" placeholder="电话为空请填写">
+								<div class="msg-block">
+									<i class="icon msg-icon"></i>
+									<span>请输入手机号码</span>
+								</div>
+							</div>
+							<div class="form-input">
+								<label class="form-title">地址</label>
+								<input type="text" placeholder="地址为空请填写">
+								<div class="msg-block">
+									<i class="icon msg-icon"></i>
+									<span>请输入地址</span>
+								</div>
+							</div>
+							<a class="btn-submit-handle e-submit-handle"><img src="../static/images/lp-dilraba-lottery/submit.png"/></a>
+						</div>
+					</div>
+				</div>
+				<span class="btn-close"></span>
+			</div>
+		</script>
+
+		<!-- 填写完信息提交后弹层 -->
+		<script id="submit-result" type="text/template">
+			<div class="dialog">
+				<div class="dialog-container">
+					<div class="scroll">
+						<div class="scroller-wrap">
+                            <img src="images/blank.gif"
+                                data-image='{
+                                "standard":{"high":"", "normal":"../static/images/lp-dilraba-lottery/parts-5.png"},
+                                "medium":{"high":"",  "normal":"../static/images/lp-dilraba-lottery/parts-5-m.png"},
+                                "small":{"high":"", "normal":"../static/images/lp-dilraba-lottery/parts-5-m.png"}}'
+                            />
+
+							<a href="" class="back-shopping"></a>
+						</div>
+					</div>
+				</div>
+				<span class="btn-close"></span>
+			</div>
+		</script>
+
+	</div>
+</body>
+</html>

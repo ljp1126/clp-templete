@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%include _includes/meta.html %>
+        <title>lp-yeezy-02</title>
+        <%include _includes/css.html %>
+            <link rel="stylesheet" href="css/lp-yeezy-05.css" />
+            <%include _includes/js.html %>
+
+                <!-- <script type="text/javascript" src="libs/hotSpot/hotSpot.js"></script> -->
+</head>
+
+<body>
+    <div id="wrapper">
+        <%include _includes/modules/header.html %>
+            <section class="container">
+                <article class="article article-box">
+                    <div class="box-content float-clearfix">
+                        <div class="box-contents">
+                            <div class="swiper-container swiper-container-od-jacket">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <img src="https://img.adidas.com.cn/images/blank.gif" 
+                                            data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-p-02.jpg"},
+                                            "medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-m-02.jpg"},
+                                            "small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-m-02.jpg"}
+                                        }' />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <img src="https://img.adidas.com.cn/images/blank.gif" 
+                                            data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-p-03.jpg"},
+                                            "medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-m-03.jpg"},
+                                            "small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-m-03.jpg"}
+                                        }' />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <img src="https://img.adidas.com.cn/images/blank.gif" 
+                                                data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-p-04.jpg"},
+                                                "medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-m-04.jpg"},
+                                                "small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-m-04.jpg"}
+                                            }' />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <img src="https://img.adidas.com.cn/images/blank.gif" 
+                                                data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-p-05.jpg"},
+                                                "medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-m-05.jpg"},
+                                                "small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-m-05.jpg"}
+                                            }' />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <img src="https://img.adidas.com.cn/images/blank.gif" 
+                                                data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-p-06.jpg"},
+                                                "medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-m-06.jpg"},
+                                                "small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-m-06.jpg"}
+                                            }' />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 箭头 -->
+                                <div class="swiper-pagination"></div>
+                                <div class="action-sports-swiper-btn">
+                                    <div class="swiper-button-prev swiper-button-prev1"></div>
+                                    <div class="swiper-button-next swiper-button-next1"></div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="article-size">
+                            <img src="https://img.adidas.com.cn/images/blank.gif" 
+                                data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-p-07.jpg"},
+                                "medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-m-07.jpg"},
+                                "small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-m-07.jpg"}
+                            }' />
+                            <a href="https://yeezysupply.com" target="_blank" class="link-01"></a>
+                        </div>
+                    </div>
+                </article>
+                <script>
+                    
+                    $(function () {
+                        // 换图 + 懒加载
+                        $.spice.lazyLoad('img[lazysrc]', {
+                            attr: 'lazysrc'
+                        });
+                        $.spice.tools.changeImageSrc({
+                            callBack: function (img, self) {
+                                $.spice.lazyLoad('img[lazysrc]', {
+                                    attr: self.opt.lazyData,
+                                    prestrain: 1
+                                });
+                            }
+                        });
+
+                        var swiper = new Swiper('.swiper-container-od-jacket', {
+                            slidesPerView: 'auto',
+                            centeredSlides: true,
+                            // autoplay: 2000,
+                            // speed: 2000,
+                            loop: true,
+                            paginationClickable: true,
+                            pagination: '.swiper-pagination',
+                            prevButton: '.swiper-button-prev1',
+                            nextButton: '.swiper-button-next1',
+                            initialSlide: 0,
+                        });
+                    });
+                    
+                </script>
+            </section>
+            <%include _includes/modules/footer.html %>
+    </div>
+</body>
+
+</html>

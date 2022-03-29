@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@types/css": "^0.0.31",
+    "@types/ejs": "^2.5.0",
+    "@types/jquery": "^3.3.1",
+    "@types/less": "^0.0.32",
+    "@types/vue": "^2.0.0"
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/world-cup-vote.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/world-cup-vote.js"></script>
+
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+			<article class="article article-item article-item-2">
+				<div class="item-img-box">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/world-cup-vote/bg-pc-2-new.jpg"},
+						"medium":{"high":"", "normal":"../static/images/world-cup-vote/bg-mob-2-new.jpg"},
+						"small":{"high":"", "normal":"../static/images/world-cup-vote/bg-mob-2-new.jpg"}}' />
+				</div>
+				<div class="item-btn-box">
+					<a class="btn btn-white btn-have-arrow"><span>登录</span></a>
+					<a class="btn btn-white btn-have-arrow"><span>注册</span></a>
+				</div>
+			</article>
+		</section>
+
+		<%include _includes/modules/footer-no-back-top.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+</html>

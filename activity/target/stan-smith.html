@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%include _includes/meta.html %>
+	<title>messi</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" href="css/lp-messi.css" />
+	<%include _includes/js.html %>
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+			<style>
+				.article {
+					position: relative;
+				}
+
+				.article>img {
+					width: 100%;
+				}
+
+				.article-video {
+					cursor: pointer;
+				}
+                .article-video .video-box {
+                    position: absolute;
+					height: 95.8%;
+					width: 25.6%;
+					left: 55.2%;
+					top: 1.2%;
+				}
+				.article-video1 .video-box {
+					position: absolute;
+					height: 82.8%;
+					width: 25.6%;
+					left: 19.2%;
+					top: 8.2%;
+                }
+				.article-video .video-box .video-content {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					left: 0;
+				}
+
+				.article-video .video-box .video-content .video {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					visibility: hidden;
+				}
+
+				.article-video.is-play .video-box .video-content .video {
+					visibility: visible;
+				}
+
+				.article-video.is-play .video-box .video-code img {
+					visibility: hidden;
+				}
+				.swiper-btn {
+					text-align: center;
+					margin: 25px 0;
+				}
+                .link-1{
+                    position: absolute;
+                    top: 65%;
+                    width: 10%;
+                    height: 8%;
+                    left: 21%;
+                }
+				@media (max-width: 1024px) {
+                    .article-video .video-box {
+                        height: 62%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+					}
+					.article-video1 .video-box {
+						height: 61.2%;
+						width: 100%;
+						left: 0;
+						top: 1.2%;
+					}
+					.swiper-btn {
+						padding: 0 23px;
+					}
+
+					.swiper-btn .btn.gl-cta-height {
+						min-width: 100%;
+					}
+                    .link-1 {
+                        top: 90%;
+                        width: 52%;
+                        height: 6%;
+                        left: 24%;
+                    }
+				}
+			</style>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/pc_01_cn.jpg" data-image='{
+                    "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/pc_01_cn.jpg"},
+                    "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/mob_01_cn.jpg"},
+                    "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/mob_01_cn.jpg"}}' />
+			</article>
+			<article class="article article-video1 article-video e-play-video  pc-mob-video">
+                <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/pc_01_cn.jpg" data-image='{
+                    "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/pc_02_cn.jpg"},
+                    "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/mob_02_cn.jpg"},
+					"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/mob_02_cn.jpg"}}' />
+					<div class="video-box e-home-video">
+						<div class="video-content"></div>
+						<a class="video-bg-wrapper" href="JavaScript:void(0);">
+							<span class="video-code" data-video-code="3887A9F8A103457063835A29B2A11961"></span>
+						</a>
+					</div>
+			</article>
+			<article class="article article-video e-play-video  pc-mob-video">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/pc_03_cn.jpg" data-image='{
+                    "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/pc_03_cn.jpg"},
+                    "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/mob_03_cn.jpg"},
+					"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/mob_03_cn.jpg"}}' />
+					<div class="video-box e-home-video">
+						<div class="video-content"></div>
+						<a class="video-bg-wrapper" href="JavaScript:void(0);">
+							<span class="video-code" data-video-code="402C7ED5BFBAEF479C33DC5901307461"></span>
+						</a>
+					</div>
+                    <a href="" class="link-1"></a>
+            </article>
+            <article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/pc_04_cn.jpg" data-image='{
+                    "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/pc_04_cn.jpg"},
+                    "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/mob_04_cn.jpg"},
+                    "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/mob_04_cn.jpg"}}' />
+            </article>
+            <!-- 购买 -->
+            <article class="article">
+                <a href="">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/pc_05_cn.jpg" data-image='{
+                    "standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/pc_05_cn.jpg"},
+                    "medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/mob_05_cn.jpg"},
+                    "small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2021/APR/stan%20smith_Rasterized/mob_05_cn.jpg"}}' />
+                </a>
+            </article>
+			
+			<!-- <div class="swiper-btn">
+				<a class="btn btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="">Shop All Stan Smith Collection<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+			</div> -->
+			<script type="text/javascript">
+				$(function() {
+					// 换图 + 懒加载
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+					var loadImgFun_index = function(imgArr, fn) {
+						// 图片加载fun
+						var loadImgLen = 0,
+							errImgLen = 0
+						var imgdefereds = [];
+						$(imgArr).each(function() {
+							var defered = $.Deferred();
+							$(this).on('load', function() {
+								defered.resolve();
+								loadImgLen++
+							}).on('error', function() {
+								defered.resolve();
+								errImgLen++
+							})
+							if (this.complete) setTimeout(function() {
+								defered.resolve();
+							}, 200);
+							imgdefereds.push(defered);
+						})
+						$.when.apply(null, imgdefereds).done(function() {
+							if (fn && $.isFunction(fn)) {
+								fn()
+							}
+						});
+					}
+					//自动播放视频
+
+					$('.e-home-video').each(function(index, el) {
+						$(el).parents('.article').addClass('home-video')
+						var videoCode = $('.video-code', el).data('video-code'),
+							videoId = 'home_video_' + index;
+						loadImgFun_index($('.video-code img', el), function() {
+							$('.video-content', el).show().css({
+								'height': $('.video-code img', el).outerHeight(true)
+							})
+							$('.video-code img', el).css({
+								'visibility': 'hidden'
+							})
+						})
+						// 开发需要打开此代码---开始
+						var bannerVideoId = videoCode;
+						var url = base + "/indexCCVideo.json";
+						var data = loxia.syncXhrGet(url, {
+							'bannerVideoId': bannerVideoId
+						});
+						var videoUrl = data.mp4VideoUrl;
+						// 开发需要打开此代码---结束
+
+						// 下面的videoUrl为前端静态视频地址（静态页面的video路径 ，开发需注释掉）
+						//var videoUrl = 'https://cm15-c110-2.play.bokecc.com/flvs/ca/QxIJT/u3yP8OJl81-90.mp4?t=1596268821&key=C1FDCB3C268E072EF7E7F384BA7323C1&tpl=10';
+						var html = '<video class="video" id="' + videoId + '" preload="meta" webkit-playsinline="true" playsInline="true" muted><source src="' + videoUrl + '" ></source></video>';
+						$('.video-content', el).html(html);
+
+					})
+					var windowTop = 0;
+					var $homeVideo = $(".home-video"),
+						v_offTop = [],
+						v_Height = [];
+					var getVideoSize = $.spice.throttle(function() {
+						v_offTop = [];
+						v_Height = [];
+						$homeVideo.each(function(index, el) {
+							var _this_OT = $(el).offset().top,
+								_this_HT = $(el).outerHeight(true);
+							v_offTop.push(_this_OT);
+							v_Height.push(_this_HT);
+						})
+					}, 300);
+					$(window).on('scroll', function() {
+						var _mobVideo = $(".pc-mob-video");
+						if (!_mobVideo.length > 0 && $.spice.getWindowWidth() < 768) {
+							return;
+						}
+						var $scrollTop = $(this).scrollTop(),
+							headerBannerboxH = 0,
+							wH = $(this).outerHeight(true),
+							$header = $('.header-fixed'),
+							headerH = $header.outerHeight(true);
+						getVideoSize();
+						if ($(".header-banner-box").hasClass('header-banner-show')) {
+							headerBannerboxH = $(".header-banner-box").outerHeight(true);
+						} else {
+							headerBannerboxH = 0;
+						}
+						headerH = headerH + headerBannerboxH;
+
+						// 视频播放
+						for (var i = 0; i < $homeVideo.length; i++) {
+							if ($scrollTop > (v_offTop[i] - headerBannerboxH - wH) && $scrollTop < (v_offTop[i] - headerH - 24)) {
+								// console.log("第", i, '个视频进入');
+								if (!$homeVideo.eq(i).hasClass('is-play')) {
+									$homeVideo.eq(i).addClass('is-play').removeClass("is-pause");
+									$('#home_video_' + i)[0].play();
+									$('#home_video_' + i)[0].addEventListener('canplaythrough', function() {
+										console.log('视频准备就绪，开始播放');
+										this.play()
+									});
+									$('#home_video_' + i)[0].addEventListener('ended', function() {
+										this.play()
+									});
+								}
+							} else if ($scrollTop > (v_offTop[i] + v_Height[i] - headerH - 24)) {
+								// console.log("第", i, '个离开');
+								$homeVideo.eq(i).addClass('is-pause').removeClass("is-play");
+								$('#home_video_' + i)[0].pause();
+							}
+						}
+					}).trigger('scroll');
+				});
+			</script>
+		</section>
+		<%include _includes/modules/footer.html %>
+	</div>
+</body>
+
+</html>

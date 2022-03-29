@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>抽奖活动</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/lp-dilraba-lottery-3.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/lp-dilraba-lottery-3.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-draw.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+
+			<article class="article start-draw-inner">
+                <img src="images/blank.gif"
+                    data-image='{
+                    "standard":{"high":"", "normal":"../static/images/lp-dilraba-lottery/img03-p-01.jpg"},
+                    "medium":{"high":"",  "normal":"../static/images/lp-dilraba-lottery/img03-m-01.jpg"},
+                    "small":{"high":"", "normal":"../static/images/lp-dilraba-lottery/img03-m-01.jpg"}}'
+				/>
+			</article>
+		</section>
+
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		<script id="draw-step-qx" type="text/template">
+			<div class="qx-winning">
+				<div class="yi-draw">
+					<img src="images/blank.gif"
+						data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-dilraba-lottery/img03-p-02.png"},
+						"medium":{"high":"",  "normal":"../static/images/lp-dilraba-lottery/img03-m-02.png"},
+						"small":{"high":"", "normal":"../static/images/lp-dilraba-lottery/img03-m-02.png"}}'
+					/>
+					<div class="copy-writer absolute"><p class="bold absolute">NDZK2</p></div>
+				</div>
+				<span class="click-hour"></span>
+			</div>
+		</script>
+
+	</div>
+</body>
+</html>

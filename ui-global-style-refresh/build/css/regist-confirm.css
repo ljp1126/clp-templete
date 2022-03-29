@@ -1,0 +1,152 @@
+.container {
+  padding-top: 90px;
+  min-height: 385px;
+  padding-bottom: 50px;
+}
+.article-nav {
+  width: 100%;
+  max-width: 990px;
+  margin: 20px auto 30px;
+}
+.list-inline li.back {
+  position: relative;
+  margin-right: 28px;
+}
+.list-inline li.back::before {
+  content: "";
+  width: 2px;
+  height: 12px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  right: -14px;
+  transform: translateY(-50%);
+}
+.list-inline li.login {
+  position: relative;
+  margin-right: 28px;
+}
+.list-inline li.login::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  right: -14px;
+  transform: translateY(-50%);
+}
+.confirm-bg {
+  padding: 0;
+  width: 100%;
+  max-width: 990px;
+  margin-top: 20px;
+  font-family: PingFangSC-Regular;
+}
+.confirm-bg .confirm-content .confirm-left {
+  float: left;
+  max-width: inherit;
+  width: 55.4%;
+  padding-right: 15%;
+  border-right: 2px solid #EBEBEB;
+  min-height: 310px;
+}
+.confirm-bg .confirm-content .confirm-left .title {
+  font-size: 24px;
+  color: #000000;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.confirm-bg .confirm-content .confirm-left .content {
+  margin-bottom: 30px;
+}
+.confirm-bg .confirm-content .confirm-left .content li {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #000000;
+  line-height: 24px;
+}
+.confirm-bg .confirm-content .confirm-left .content li .name-key {
+  display: inline-block;
+  width: 77px;
+  margin-right: 20px;
+}
+.confirm-bg .confirm-content .confirm-left .confirm-btn {
+  font-size: 0;
+}
+.confirm-bg .confirm-content .confirm-left .confirm-btn .btn {
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  text-align: center;
+  line-height: 36px;
+}
+.confirm-bg .confirm-content .confirm-left .confirm-btn .not-me {
+  border: 1px solid #000000;
+  color: #000000;
+  min-height: 30px;
+  font-weight: 500;
+  height: 42px;
+  line-height: 36px;
+  margin-right: 14px;
+  float: left;
+}
+.confirm-bg .confirm-content .confirm-left .confirm-btn .not-me:hover {
+  color: #98989a;
+}
+.confirm-bg .confirm-content .confirm-right {
+  float: right;
+  max-width: 410px;
+  width: auto;
+}
+.confirm-bg .confirm-content .confirm-right .title {
+  font-family: AdiHaus-Bold;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 13px;
+}
+.confirm-bg .confirm-content .confirm-right .rights {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #000000;
+  line-height: 14px;
+  margin-bottom: 40px;
+}
+.confirm-bg .confirm-content .confirm-right .icon-conform {
+  margin-right: 5px;
+}
+.confirm-bg .confirm-content .confirm-right .item-rights {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-top: 52px;
+    padding-bottom: 40px;
+    min-height: auto;
+  }
+  .confirm-bg .confirm-content .confirm-left {
+    float: none;
+    width: 100%;
+    border-right: none;
+    padding-right: 0;
+    min-height: auto;
+  }
+  .confirm-bg {
+    padding: 30px 20px 0;
+    font-family: PingFangSC-Regular;
+    margin-top: 0;
+  }
+  .confirm-bg .confirm-content .confirm-left .confirm-btn .not-me {
+    width: 100%;
+    margin-right: 0;
+  }
+  .confirm-bg .confirm-content .confirm-left .confirm-btn .is-me {
+    width: 100%;
+    margin-bottom: 10px;
+    float: none;
+  }
+}

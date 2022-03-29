@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" href="css/lp-neo-7.css" /> -->
+	<%include _includes/js.html %>
+	<!-- <script type="text/javascript" src="js/hotSpot.js"></script> -->
+</head>
+
+<body>
+	<div id="wrapper">
+		<!-- 头部 -->
+		<%include _includes/modules/header.html %>
+		<!-- 內容 -->
+
+
+		<section class="container">
+			<style>
+				.article,
+				.article-top {
+					position: relative;
+				}
+
+				.article img {
+					width: 100%;
+					height: auto;
+				}
+
+
+				.swiper-container-main .swiper-slide {
+					text-align: center;
+					padding: 0;
+				}
+				.swiper-button-next.swiper-button-disabled{
+					opacity: 0;
+				}
+				.article-pro .product-box{
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 68.5%;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+				.article-pro .product-box >div{
+					width: 50%;
+					height: 100%;
+				}
+
+
+				.see-more{
+					position: absolute;
+					bottom: 6%;
+					left: 11%;
+				}
+				.flex-link{
+					display: flex;
+					width: 100%;
+					height: 100%;
+					justify-content: space-around;
+					align-items: center;
+					flex-wrap: wrap;
+					cursor: pointer;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+				.flex-link a{
+					width: 50%;
+					height: 48%;
+				}
+				@media (max-width:1024px) {
+					
+					.article-pro .product-box{
+						width: 100%;
+						flex-wrap: wrap;
+						padding: 0 22px;
+					}
+					.article-pro .product-box >div{
+						width: 100%;
+						height: 50%;
+						position: relative;
+					}
+					.see-more{
+						bottom: auto;
+						left: 11%;
+						width: 8%;
+						top: 34%;
+						z-index: 2;
+					}
+					.see-more-right{
+						left: auto;
+						right: 11%;
+						top: 32%;
+					}
+				}
+			</style>
+			<article class="article">
+				<img lazysrc="https://img.adidas.com.hk/images/blank.gif" src="https://img.adidas.com.hk/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pc_01.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/mob_01.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/mob_01.jpg&quot;}
+				}">
+			</article>
+			<!-- 1 -->
+			<article class="article article-pro" id="article-offset1">
+				<img lazysrc="https://img.adidas.com.hk/images/blank.gif" src="https://img.adidas.com.hk/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pc_02.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/mob_02-1.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/mob_02-1.jpg&quot;}
+				}">
+				<div class="product-box">
+					<div class="pro-img" id="pro-img1">
+						<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pro-img1.jpg" src="https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pro-img1.jpg" >
+					</div>
+					<div class="pro-main" id="s1">
+						<div class="swiper-container swiper-container-main1">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="https://www.adidas.com.cn/item/FW2547">
+										<img src="https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pro1-1a.jpg" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<img src="https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pro1-2b.png" alt="">
+									<div class="flex-link">
+										<a href="https://www.adidas.com.cn/item/FW2547"></a>
+										<a href="https://www.adidas.com.cn/item/GD4264"></a>
+										<a href="https://www.adidas.com.cn/item/GD4274"></a>
+										<a href="https://www.adidas.com.cn/item/GD4275"></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-prev swiper-button-white">
+								<i class="icon icon-action-sports-arrow-l"></i>
+							</div>
+							<div class="swiper-button-next swiper-button-black">
+								<i class="icon icon-action-sports-arrow-r"></i>
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<!-- 查看更多 -->
+				<div class="see-more">
+					<a href="https://www.adidas.com.hk/her_studio/all">
+						<img src="https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pro-all.png" alt="">
+					</a>
+				</div>
+			</article>
+			<!-- 2 -->
+			<article class="article article-pro" id="article-offset2">
+				<img lazysrc="https://img.adidas.com.hk/images/blank.gif" src="https://img.adidas.com.hk/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pc_03.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/mob_03-1.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/mob_03-1.jpg&quot;}
+				}">
+				<div class="product-box">
+					<div class="pro-img" id="pro-img4">
+						<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pro-img2.jpg" src="https://img.adidas.com.hk/images/blank.gif" >
+						
+					</div>
+					
+					<div class="pro-main" id="s4">
+						<div class="swiper-container swiper-container-main2">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="https://www.adidas.com.hk/item/FV9716">
+										<img src="https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pro2-1a.jpg" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<img src="https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pro2-2b.png" alt="">
+									<div class="flex-link">
+										<a href="https://www.adidas.com.hk/item/FV9716"></a>
+										<a href="https://www.adidas.com.hk/item/FU3851"></a>
+										<a href="https://www.adidas.com.hk/item/FU3775"></a>
+										<a href="javascript:;"></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-prev swiper-button-white">
+								<i class="icon icon-action-sports-arrow-l"></i>
+							</div>
+							<div class="swiper-button-next swiper-button-black">
+								<i class="icon icon-action-sports-arrow-r"></i>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- 查看更多 -->
+				<div class="see-more see-more-right">
+					<a href="https://www.adidas.com.hk/her_studio/all">
+						<img src="https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pro-all.png" alt="">
+					</a>
+				</div>
+			</article>
+
+			<!-- 宋妍霏 -->
+			<article class="article article-pro" id="article-offset3">
+				<img lazysrc="https://img.adidas.com.hk/images/blank.gif" src="https://img.adidas.com.hk/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pc_04.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/mob_04.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/mob_04.jpg&quot;}
+				}">
+				<div class="product-box">
+					<div class="pro-img" id="pro-img4">
+						<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pro-img33.jpg" src="https://img.adidas.com.hk/images/blank.gif" >
+						
+					</div>
+					
+					<div class="pro-main" id="s4">
+						<div class="swiper-container swiper-container-main4">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="https://www.adidas.com.hk/item/FY3030">
+										<img src="https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pro3-1a.jpg" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<img src="https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pro3-2b.png" alt="">
+									<div class="flex-link">
+										<a href="https://www.adidas.com.hk/item/FY3030"></a>
+										<a href="https://www.adidas.com.hk/item/FU3765"></a>
+										<a href="https://www.adidas.com.hk/item/FU3777"></a>
+										<a href="https://www.adidas.com.hk/item/FU3766"></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-prev swiper-button-white">
+								<i class="icon icon-action-sports-arrow-l"></i>
+							</div>
+							<div class="swiper-button-next swiper-button-black">
+								<i class="icon icon-action-sports-arrow-r"></i>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- 查看更多 -->
+				<div class="see-more">
+					<a href="https://www.adidas.com.hk/her_studio/all">
+						<img src="https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pro-all.png" alt="">
+					</a>
+				</div>
+			</article>
+			<article class="article">
+				<a href="https://www.adidas.com.hk/her_studio/all">
+					<img lazysrc="https://img.adidas.com.hk/images/blank.gif" src="https://img.adidas.com.hk/images/blank.gif" data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/pc_05.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/mob_05.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/SEP/HER_STUDIO/clp/en/mob_05.jpg&quot;}
+					}">
+				</a>
+			</article>
+			<script type="text/javascript">
+				$(function() {
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+
+					var SwiperMain1 = new Swiper('.swiper-container-main1', {
+						slidesPerView: "auto",
+						centeredSlides: true,
+						prevButton: '.swiper-button-prev',
+						nextButton: '.swiper-button-next',
+					})
+					// $('#pro-img1').on('click', function(){
+					// 	if($.spice.getWindowWidth() < 1024){
+					// 		var h = $('#s1').offset().top
+					// 		$("html,body").animate({scrollTop: h}, 500);
+					// 	}
+						
+					// 	SwiperMain1.slideTo(1, 100, false)
+					// })
+					var SwiperMain2 = new Swiper('.swiper-container-main2', {
+						slidesPerView: "auto",
+						centeredSlides: true,
+						prevButton: '.swiper-button-prev',
+						nextButton: '.swiper-button-next',
+					})
+					
+					var SwiperMain4 = new Swiper('.swiper-container-main4', {
+						slidesPerView: "auto",
+						centeredSlides: true,
+						prevButton: '.swiper-button-prev',
+						nextButton: '.swiper-button-next',
+					})
+					
+				})
+			</script>
+		</section>
+
+
+		<!-- 底部 -->
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

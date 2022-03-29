@@ -1,0 +1,150 @@
+
+.checkout-new-address-dialog{
+	.dialog-scroll-container{
+        .dialog-scroll{
+            >div{
+                .dialog{
+                    .dialog-container{
+                        .title{
+                            >span{
+                            }
+						}
+						.add-address-btn{
+							position: absolute;
+							right: 20px;
+							top: 0;
+							font-size: 14px;
+							line-height: 48px;
+							span{
+								font-size: 18px;
+								line-height: 18px;
+								display: inline-block;
+								vertical-align: middle;
+								margin: -7px 0 0 3px;
+							}
+
+							&.is-disabled{
+								color: #999;
+								pointer-events: none;
+							}
+						}
+						.address-content{
+							.address-item-list{
+								margin-bottom: 15px;
+								.address-item{
+									position: relative;
+									>div{
+										padding: 5px 0 7px;
+										position: relative;
+									}
+									&:after{
+										content: '';
+									    position: absolute;
+									    bottom: 0;
+										left: 20px;
+									    height: 2px;
+									    background: #f0f0f0;
+									    width: calc(~'100% - 40px');
+									}
+									&.is-active{
+										.item-box{
+											background: #E6E6E6;
+										}
+									}
+									.item-box{
+										position: relative;
+										padding: 8px 56px 8px 20px;
+										font-size: 0;
+										&:after{
+											content: '';
+											width: 0;
+											height: 100%;
+											display: inline-block;
+											vertical-align: middle;
+										}
+										.messages{
+											p{
+												font-size: 12px;
+												line-height: 18px;
+												color: #000;
+												letter-spacing: 0;
+												&:first-child{
+													margin-bottom: 2px;
+												}
+												.address-info-phone{
+													float: right;
+												}
+											}
+
+										}
+										.btn-edit{
+											display: block;
+											position: absolute;
+											top: 0;
+											right: 12px;
+											height: 100%;
+											width: 30px;
+											z-index: 1;
+										}
+										.icon-edit{
+											position: absolute;
+											top: 50%;
+											width: 14px;
+											height: 14px;
+											background-position: -290px -724px;
+											right: 8px;
+											margin: -7px 0 0 0;
+										}
+									}
+									.address-btn-delete{
+										position: absolute;
+										right: -62px;
+										width: 62px;
+										height: 101%;
+										top: -1px;
+										display: block;
+										z-index: 1;
+										.btn-delete{
+											width: 100%;
+											display: table;
+											height: 100%;
+											text-align: center;
+											background: #D9002A;
+											font-size: 16px;
+											color: #FFFFFF;
+											letter-spacing:0;
+											span{
+												display: table-cell;
+												vertical-align: middle;
+											}
+										}
+									}
+								}
+							}
+
+							.address-list-info{
+								text-align: center;
+								font-size: 0;
+								.icon,
+								span{
+									vertical-align: middle;
+								}
+
+								.icon{
+									position: relative;
+									top: -1px;
+									margin-right: 5px;
+								}
+								span{
+									font-size: 12px;
+									color: #0286CD;
+								}
+							}
+						}
+                    }
+                }
+            }
+        }
+	}
+}
+

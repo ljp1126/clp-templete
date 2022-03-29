@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* 模块一 */
+.article-my-exchange-width {
+  max-width: 930px;
+  padding: 0;
+}
+.article-my-exchange {
+  max-width: 930px;
+  padding: 0;
+  margin-bottom: 50px;
+}
+.article-my-exchange .coupon-title li {
+  margin-bottom: 30px;
+  padding-left: 15px;
+  position: relative;
+}
+.article-my-exchange .coupon-title li:before {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: #000000;
+  left: 0;
+  top: 50%;
+  margin-top: -2px;
+}
+.article-my-exchange .coupon-title li a {
+  font-size: 24px;
+  color: #000000;
+  line-height: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+.site-width {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+.site-width .catalog-body .clause-title {
+  font-size: 24px;
+  color: #000000;
+  line-height: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.site-width .catalog-body .clause-info {
+  margin-bottom: 40px;
+}
+.site-width .catalog-body .clause-info .sub-info {
+  margin-bottom: 16px;
+}
+.site-width .catalog-body .clause-info .sub-info .info-title {
+  display: inline-block;
+  font-size: 18px;
+  color: #000000;
+  line-height: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.site-width .catalog-body .clause-info .sub-info .clause-text {
+  font-size: 12px;
+  color: #000000;
+  line-height: 20px;
+}
+.site-width .catalog-body .clause-info .sub-info .clause-text .multi-line-text p {
+  padding-left: 8px;
+}
+@media screen and (max-width: 1023px) {
+  .article-my-exchange-width {
+    margin: 0 20px;
+  }
+  .article-my-exchange {
+    margin: 40px 20px 0 20px;
+  }
+  .article-my-exchange .coupon-title li a {
+    line-height: 26px;
+  }
+  .site-width {
+    padding: 0 20px;
+  }
+  .site-width .catalog-body {
+    margin-top: 84px;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+  }
+  .site-width .catalog-body .clause-title {
+    text-align: left;
+    margin-top: 30px;
+  }
+  .site-width .catalog-body .clause-info {
+    margin-bottom: 40px;
+  }
+  .site-width .catalog-body .clause-info .sub-info {
+    margin-bottom: 16px;
+  }
+  .site-width .catalog-body .clause-info .sub-info .clause-text {
+    line-height: 24px;
+  }
+}

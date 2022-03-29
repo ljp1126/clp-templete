@@ -1,0 +1,1768 @@
+@charset "utf-8";
+// 这里只能写 icon 的宽 高 坐标
+
+.icon{
+	display: inline-block;
+	background: url(../images/icon.png);
+}
+.dialog-close{
+	&:after{
+		position: absolute;
+		display: block;
+		content: "";
+		top: 50%;
+		left: 50%;
+		margin-top: -7px;
+		margin-left: -7px;
+		width: 14px;
+		height: 14px;
+		background: url(../images/icon.png) -240px -20px;
+	}
+	font-size: 0;
+	text-indent: -2000px;
+	background: none;
+}
+//单选按钮
+//黑色
+.icon-radio{
+	width: 26px;
+	height: 26px;
+	background-position: -223px -112px;
+	cursor: pointer;
+	&.is-active{
+		background-position: -258px -112px;
+	}
+}
+//蓝色
+.icon-radio-blue{
+	background-position: -68px -228px;
+	&.is-active{
+		background-position: -104px -228px;
+	}
+}
+//禁用或灰色
+.icon-radio-gray{
+	background-position: -153px -112px;
+	&.is-active{
+		background-position: -188px -112px;
+	}
+}
+.is-active{
+	.icon-radio{
+		background-position: -258px -112px;
+	}
+	.icon-radio-blue{
+		background-position: -104px -228px;
+	}
+	.icon-radio-gray{
+		background-position: -188px -112px;
+	}
+}
+
+//复选按钮
+//黑色
+.icon-checked{
+	width: 24px;
+	height: 24px;
+	background-position: -432px -50px;
+	cursor: pointer;
+	&.is-active{
+		background-position: -534px -50px;
+	}
+}
+//蓝色
+.icon-checked-blue{
+	width: 24px;
+	height: 24px;
+	background-position: 0px -228px;
+	&.is-active{
+		background-position: -34px -228px;
+	}
+}
+.on{
+	.icon-checked{
+		background-position: -534px -50px;
+	}
+}
+.is-disabled,
+.form-checkbox.is-disabled{
+	.icon-checked{
+		background-position: -466px -50px;
+	}
+}
+//禁用或灰色
+.icon-checked-gray{
+	background-position: -466px -50px;
+	&.is-active{
+		background-position: -500px -50px;
+	}
+}
+// dropdown-icon
+.form-select,
+.dropdown {
+	.btn{
+		.dropdown-icon{
+			.icon-caret{
+				width: 12px;
+				height: 8px;
+				background-position: -74px 0;
+			}
+		}
+		&.open {
+			.dropdown-icon{
+				.icon-caret{
+					background-position: -52px 0;
+				}
+			}
+		}
+	}
+	&.is-open{
+		.btn{
+			.dropdown-icon{
+				.icon-caret{
+					background-position: -52px 0;
+				}
+			}
+		}
+	}
+}
+
+//header
+.icon-black-logo{
+	width: 23px;
+	height: 15px;
+	background-position: -176px -86px;
+}
+.icon-service{
+	width: 17px;
+	height: 15px;
+	background-position: -26px -86px;
+}
+.icon-login{
+	width: 13px;
+	height: 16px;
+	background-position: 0px -86px;
+}
+.icon-search{
+	width: 16px;
+	height: 16px;
+	background-position: -360px -20px;
+}
+.form-search-open .icon-search{
+	width: 17px;
+	height: 17px;
+	background-position: -334px -20px;
+}
+.icon-search-clear{
+	width: 12px;
+	height: 12px;
+	background-position: -241px -21px;
+	opacity: 0.5;
+}
+.icon-cart{
+	width: 18px;
+	height: 22px;
+	background-position: -304px -190px;
+}
+.icon-callout-1{
+	width: 32px;
+	height: 32px;
+	background-position: -335px -112px;
+}
+.icon-callout-2{
+	width: 32px;
+	height: 32px;
+	background-position: -377px -112px;
+}
+.icon-callout-3{
+	width: 32px;
+	height: 32px;
+	background-position: -293px -112px;
+}
+.mail-subscription-form{
+	.msg-icon{
+		width: 16px;
+		height: 16px;
+		background-position: -208px -20px;
+	}
+}
+// footer
+.icon-contact-us-tel{
+	width: 16px;
+	height: 16px;
+	background-position: -74px -86px;
+}
+.icon-contact-us-email{
+	width: 16px;
+	height: 16px;
+	background-position: -96px -84px;
+}
+.icon-contact-us-time{
+	width: 16px;
+	height: 16px;
+	background-position: 0px -112px;
+}
+.icon-contact-us-service{
+	width: 17px;
+	height: 17px;
+	background-position: -400px -83px;
+}
+.icon-sina{
+	width: 30px;
+	height: 24px;
+	background-position: -130px -154px;
+}
+.icon-wechat{
+	width: 30px;
+	height: 24px;
+	background-position: -270px -154px;
+}
+.icon-Payment-method{
+	height: 24px;
+	width: 388px;
+	width: 72px;
+	background-position: -614px -343px;
+}
+.icon-Payment-method-1{
+	height: 24px;
+	width: 108px;
+	background-position: -695px -343px;
+}
+.icon-Payment-method-2{
+	height: 24px;
+	width: 100px;
+	background-position: -809px -343px;
+}
+.icon-Payment-method-3{
+	height: 24px;
+	width: 82px;
+	background-position: -917px -343px;
+}
+.icon-china{
+	width: 14px;
+	height: 12px;
+	background-position: -49px -190px;
+}
+.icon-ebs1{
+	width: 16px;
+	height: 16px;
+	background-position: -23px -190px;
+}
+.icon-ebs2{
+	width: 14px;
+	height: 16px;
+	background-position: 0px -190px;
+}
+.icon-video-btn{
+	width: 88px;
+	height: 88px;
+	background-position: -880px -48px;
+}
+
+// 弹层关闭按钮
+.dialog-close{
+
+}
+
+//登录页面
+.icon-login-left{
+    background-position:-52px -20px;
+}
+.login-checkbox{
+    background-position:-52px -20px;
+}
+.icon-conform{
+    width: 20px;
+    height: 15px;
+    background-position:-272px -19px;
+}
+
+/*checkout*/
+.icon-customized{
+	width: 16px;
+    height: 16px;
+    background-position:-73px -190px;
+}
+.icon-prompt{
+	width: 16px;
+    height: 16px;
+    background-position: -208px -86px;
+}
+.icon-payment-1{
+	background-position: -615px -343px;
+}
+.icon-payment-2{
+	background-position: -695px -343px;
+}
+.icon-payment-3{
+	background-position: -810px -343px;
+}
+.icon-payment-4{
+	background-position: -918px -343px;
+}
+
+/*shopping cart icon*/
+.icon-cart-alipay{
+	width: 63px;
+	height: 24px;
+	background-position: -614px -343px;
+}
+.icon-cart-wechat{
+	width: 97px;
+	height: 24px;
+	background-position: -695px -343px;
+}
+.icon-online-pay{
+	width: 90px;
+	height: 24px;
+	background-position: -810px -343px;
+}
+.icon-cash-on-delivery{
+	width: 82px;
+	height: 24px;
+	background-position: -918px -343px;
+}
+.icon-cart-info{
+	width: 16px;
+	height: 16px;
+	background-position: -208px -86px;
+}
+.icon-cart-discount{
+	width: 16px;
+	height: 21px;
+	background-position: -377px -154px;
+}
+.icon-cart-customized{
+	width: 17px;
+	height: 17px;
+	background-position: -99px -190px;
+}
+.icon-cart-question-mark{
+	width: 20px;
+	height: 20px;
+	background-position: -26px -112px;
+}
+
+/*myaccount icon*/
+.icon-head-portrait{
+	width: 18px;
+	height: 20px;
+	background-position: -272px -86px;
+}
+.icon-head-portrait-ed{
+    width: 19px;
+    height: 22px;
+    background-position: -437px -85px;
+}
+.icon-help{
+	width: 20px;
+	height: 20px;
+	background-position: -363px -190px;
+}
+.icon-personalise{
+	width: 16px;
+	height: 16px;
+	background-position: -99px -190px;
+}
+.icon-evaluate{
+	width: 16px;
+	height: 16px;
+	background-position: -66px -344px;
+	vertical-align: middle;
+}
+
+/*分页*/
+.icon-round-gray-rights{
+	width: 12px;
+	height: 12px;
+	background-position: -210px -60px;
+}
+.icon-round-lightgray-leftm{
+	width: 26px;
+	height: 26px;
+	background-position: -288px -50px;
+	&.is-disabled{
+		background-position: 0 -50px;
+	}
+}
+.icon-round-lightgray-rightm{
+	width: 26px;
+	height: 26px;
+	background-position: -324px -50px;
+	&.is-disabled{
+		background-position: -36px -50px;
+	}
+}
+
+.product-icon-label{
+	width: auto;
+	height: 20px;
+	padding: 0 10px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 20px;
+	cursor: default;
+	display: inline-block !important;
+	&:hover{
+		color: #fff;
+	}
+	&.icon-new-label{
+		background: #56a76c;
+	}
+	&.icon-personal-label{
+		background: #0286CD;
+	}
+	&.icon-discount-label{
+		background: #ce5b4b;
+		font-weight: bold;
+	}
+	&.icon-gray-label{
+		background: #5b5c5d;
+	}
+	&.icon-coming-soon-label{
+		background: #75a866;
+		background: #56a76c;
+	}
+}
+.icon-success{
+	width: 36px;
+	height: 36px;
+	background-position: -720px -267px;
+}
+.icon-terrex{
+	width: 75px;
+	height: 12px;
+	background-position: -521px -343px;
+	margin: -4px 5px 0 0;
+	vertical-align: middle;
+}
+.icon-coupon-down{
+	width: 14px;
+	height: 14px;
+	background-position:-179px -343px;
+}
+.icon-coupon-up{
+	width: 14px;
+	height: 14px;
+	background-position:-214px -343px;
+}
+.icon-success-green{
+	width: 26px;
+	height: 26px;
+	background-position: -440px -380px;
+}
+.icon-down{
+    width: 14px;
+    height: 8px;
+    background-position: -27px 0 ;
+}
+.icon-up{
+    width: 14px;
+    height: 8px;
+    background-position:-1px 0;
+}
+/* faq */
+.icon-delivery{
+	background-position: -18px -380px;
+}
+.icon-arrow{
+	background-position: 0 -380px;
+}
+.icon-refund{
+	background-position: -54px -380px;
+}
+.icon-payment{
+	background-position: -92px -380px;
+}
+.icon-size{
+	background-position:-127px -380px;
+}
+.icon-newsletter{
+	background-position: -165px -380px;
+}
+.icon-sale{
+	background-position:-199px -380px;
+}
+.icon-products{
+	background-position: -236px -380px;
+}
+.icon-company{
+	background-position:-276px -380px;
+}
+.icon-tel{
+	background-position: -310px -380px;
+}
+.icon-chat-80{
+	background-position:-370px -380px;
+}
+.icon-reture{
+	background-position: -52px -20px;
+}
+.icon-enlarge{
+	background-position: -474px -380px;
+}
+.icon-miadidas{
+	background-position: -303px -454px;
+}
+.icon-Print{
+	background-position: -257px -454px;
+}
+.icon-employee{
+	width:25px;
+	height:25px;
+	background-position:-149px -589px;
+}
+/* faq  end */
+
+.icon-more-down{
+	width: 16px;
+	height: 16px;
+	background-position: -474px -20px;
+}
+
+.icon-eye{
+	 width: 25px;
+	height: 21px;
+	background-position: -531px -380px;
+}
+.eye-hide{
+	.icon-eye{
+		 background-position: -576px -380px;
+	}
+}
+//蓝色logo
+.icon-bule-logo{
+    width: 26px;
+    height:24px;
+    background-position:-123px -189px;
+}
+
+.brafinder-main{
+    .icon-arrow-right{
+        width: 10px;
+        height: 19px;
+        background-position: -349px -454px;
+    }
+    .icon-arrow-down{
+        width: 19px;
+        height: 10px;
+        background-position: -379px -454px;
+    }
+    .icon-arrow-up{
+        width: 19px;
+        height: 10px;
+        background-position: -413px -550px;
+    }
+    .icon-white-right{
+        width: 10px;
+        height: 19px;
+        background-position: -418px -454px;
+    }
+    .icon-white-down{
+        width: 19px;
+        height: 10px;
+        background-position: -448px -454px;
+    }
+    .icon-white-up{
+    	width:20px;
+        height: 10px;
+        background-position: -607px -454px;
+    }
+}
+.icon-black-terrex{
+	width: 103px;
+    height: 18px;
+    background-position: 0 -550px;
+    vertical-align: bottom;
+}
+.icon-ercode-close{
+	width: 16px;
+	height:16px;
+	background-position: -438px -21px;
+}
+.icon-hook{
+	width: 26px;
+    height: 22px;
+    background-position: -566px -454px;
+    vertical-align: middle;
+}
+.size-selector-box{
+	.icon-arrow-right{
+        width: 7px;
+        height: 12px;
+        background-position: -352px -458px;
+    }
+}
+
+/*首页弹层icon*/
+.icon-welcome-1{
+	width: 24px;
+    height: 24px;
+    background-position: -120px -550px;
+}
+.icon-welcome-2{
+	width: 24px;
+    height: 24px;
+    background-position: -162px -550px;
+}
+.icon-welcome-3{
+	width: 24px;
+    height: 24px;
+    background-position: -205px -550px;
+}
+
+.icon-clover-logo{
+	width: 24px;
+    height: 24px;
+    background-position: -124px -188px;
+    vertical-align: middle;
+    margin: -4px 3px 0 0;
+}
+
+// release-dates
+	.icon-release-dates-subscribe{
+		width: 16px;
+		height: 16px;
+		background-position: -144px -86px;
+	}
+
+	.icon-subscribe-success{
+		width: 25px;
+		height: 25px;
+		background-position: 0 -590px;
+	}
+// release-dates end
+
+// pdp 免运费
+	.icon-free-freight{
+		width: 18px;
+		height: 18px;
+		background-position: -36px -590px;
+	}
+// pdp 免运费 end
+
+
+// 评论得积分
+	.icon-comments{
+		width: 25px;
+		height: 25px;
+		background-position: -104px -589px;
+	}
+// 评论得积分 end
+
+
+// min-cart
+	.icon-checked-min-cart{
+		width: 18px;
+		height: 18px;
+		background-position: 0 -628px;
+		&.is-active{
+			background-position: -56px -628px;
+		}
+		&.is-disabled{
+			background-position: -28px -628px;
+		}
+	}
+
+	.calculate-num{
+		.btn{
+			.icon-mincart-plus,
+			.icon-mincart-minus{
+				width: 10px;
+				height: 10px;
+			}
+
+			.icon-mincart-minus{
+				background-position: -124px -628px;
+			}
+			.icon-mincart-plus{
+				background-position: -84px -628px;
+			}
+
+			&.is-disabled{
+				.icon-mincart-minus{
+					background-position: -144px -628px;
+				}
+				.icon-mincart-plus{
+					background-position: -104px -628px;
+				}
+			}
+		}
+	}
+
+// min-cart end
+
+
+@media (max-width:1024px),
+screen and (-webkit-min-device-pixel-ratio:2),
+screen and (min--moz-device-pixel-ratio:2),
+screen and (-o-min-device-piratio:200/100),
+screen and (min-device-pixel-ratio:2) {
+	.icon{
+		background: url(../images/icon@2x.png);
+		background-size: 500px;
+	}
+
+	.dialog-close{
+		&:after{
+			margin-top: -16px;
+			margin-left: -16px;
+			background: url(../images/icon@2x.png) -174px -16px;
+			width: 32px;
+		    height: 32px;
+		    background-position: -174px -16px;
+		    background-size: 700px;
+		}
+		background: none;
+	}
+	.btn-have-arrow span:after {
+	    background: url(../images/icon@2x.png);
+	    background-size: 500px;
+	    background-position: -150px -360px;
+	}
+	.btn-have-arrow.btn-icon-cart span:after {
+	    background-position: 0px -18px;
+	    width: 16px;
+	    height: 19px;
+	    right: -24px;
+	    top: 1px;
+	}
+	.btn-have-arrow.btn-white span:after {
+	    background-position: -286px -219px !important;
+	}
+	.is-error{
+		&.form-input:before,
+		.form-input:before {
+		    background: url(../images/icon@2x.png) !important;
+	    	background-size: 500px !important;
+		    background-position: -196px -18px !important;
+		}
+	}
+	.delivery-address .delivery-address-top .add-address-link span:after{
+		background-position: -285px -219px;
+	}
+	.icon-round-lightgray-lefts{
+		background-position: -225px -470px !important;
+	}
+	.icon-success-green{
+		background-position: -349px -502px;
+	}
+	.icon-delete-picture {
+	    background-position: -40px -300px !important;
+	}
+	.myaccount-orders-details .goods-item-box .goods-item-info .btn-wrapper .mob-float-left .btn-evaluate .icon-returns-details{
+		background-position: -102px -18px !important;
+		width: 18px;
+		height: 18px;
+		top: 0px !important;
+		right: -22px !important;
+		margin-top: -3px !important;
+	}
+	.myaccount-right-content .my-return-order a .icon-round-gray-rights {
+	    background-position: -286px -220px;
+	    padding-right: 20px;
+	}
+	.myaccount-orders-details .goods-item-box .goods-item-info .btn-wrapper .mob-float-left .btn-evaluate span:after,
+	.myaccount-right-content .goods-item-box .goods-item-info .jumpbtn .btn-white-details span::after{
+		background-position: -102px -18px !important;
+		width: 18px;
+		height: 18px;
+		top: 0px !important;
+		right: -22px !important;
+	}
+	.myaccount-orders-details .goods-item-box .goods-item-info .product-show .comment-details-btn,
+	.myaccount-orders-details .goods-item-box .goods-item-info .orders-details-info .logistics-btn{
+		.icon-logistics-btn-bottom{
+			background-position: -23px 2px !important;
+			background-position: -68px 2px !important;
+		}
+		.icon-logistics-btn-top{
+			background-position: 0px 1px !important;
+			background-position: -113px 2px !important;
+		}
+		.icon-comment-details-btn-bottom{
+			top: 7px !important;
+			background-position: -68px 2px !important;
+		}
+		.icon-comment-details-btn-top{
+			top: 7px !important;
+			background-position: -113px 2px !important;
+		}
+	}
+	.myaccount-orders-details .goods-item-box .goods-item-info .product-show .comment-details-con .recommend-star{
+		.icon-yellow-star{
+			background-position: -82px -242px !important;
+		}
+		.icon-star {
+		    background-position: -82px -220px !important;
+		}
+	}
+
+
+	//header
+	.icon-arrow-down{
+		background-position: -91px 0px;
+		width: 14px;
+		height: 8px;
+	}
+	.icon-login {
+	    width: 14px;
+	    height: 18px;
+	    background-position: 0px -47px;
+	}
+	.icon-service{
+		width: 15px;
+		height: 15px;
+		background-position: -25px -47px;
+	}
+	.icon-search {
+	    width: 17px;
+	    height: 17px;
+	    background-position: -221px -18px !important;
+	}
+	.header-search.form-search-open{
+		.icon-search {
+		    background-position: -384px -502px !important;
+		}
+	}
+	.icon-search-m{
+		width: 17px;
+		height: 17px;
+		background-position: -247px -18px;
+	}
+	.icon-cart{
+		background-position: 0px -18px;
+		width: 16px;
+		height: 19px;
+	}
+	.icon-phone{
+		width: 16px;
+		height: 16px;
+		background-position: -302px -47px;
+	}
+	.top-nav .header-top .header-top-container > ul > li a .icon-service,
+	.header-simple .header-container .header-simple-right > span a .icon-service {
+	    width: 17px;
+		height: 16px;
+		background-position: -332px -47px;
+	}
+	.header .header-container .nav-bar .header-right > li.header-cart{
+		&.header-cart-has,
+		&:hover{
+			> a{
+				.icon-cart {
+			    	background-position: -274px -18px !important;
+				}
+				span{
+					width: 16px;
+				}
+			}
+		}
+	}
+	.icon-search-clear{
+		background-position: -129px -17px;
+		opacity: 0.7;
+		background-position: -355px -18px;
+    	opacity: 1;
+	}
+	.section-top-info .top-info-box .icon-top-info-close{
+		background-position: -351px -43px !important;
+	}
+	.top-nav .header-top .header-top-container > ul > li a .icon-login{
+		background-position: -355px -76px !important;
+	}
+	.icon-callout-1{
+		background-position: -84px -324px !important;
+	}
+	.icon-callout-2{
+		background-position: 0px -324px !important;
+	}
+	.icon-callout-3{
+		background-position: -42px -324px !important;
+	}
+	.mail-subscription-form{
+		.msg-icon{
+			background-position: -196px -18px;
+		}
+	}
+	.top-nav .mail-subscription-form .form-group .form-choice-btn-radio{
+		.icon-radio{
+			background-position: -70px -110px !important;
+		}
+		&.is-active .icon-radio {
+		    background-position: -126px -324px !important;
+		}
+	}
+	.icon-star-yellow {
+	    width: 60px !important;
+	    height: 10px !important;
+	    background-position: 0 -220px !important;
+	}
+	.icon-star-gray {
+	    width: 60px !important;
+	    height: 10px !important;
+	    background-position: 0 -207px !important;
+	}
+	.icon-black-logo{
+		background-position: -293px -324px !important;
+	}
+	.icon-success{
+		background-position: -255px -502px;
+	    width: 36px;
+		height: 38px;
+	}
+	.icon-more-down{
+		background-position: -360px -553px;
+	}
+	// 新增在线客服图标
+	.icon-online-service {
+		width: 17px;
+		height: 15px;
+		background-position: -332px -47px;
+	}
+
+	// footer
+	.icon-back-top{
+		width: 14px;
+		height: 8px;
+		background-position: 0px 0px;
+	}
+	.icon-china{
+		width: 20px;
+		height: 14px;
+		background-position: -162px -47px;
+	}
+	.icon-primary-arrow{
+		width: 15px;
+		height: 15px;
+		background-position: -26px -18px;
+	}
+	.icon-video-btn{
+		width: 70px;
+		height: 70px;
+		background-position: -390px 3px;
+		background-position: -384px -70px;
+		margin: -35px 0 0 -35px !important;
+	}
+	.footer-cont-simple {
+		/*.icon{
+			width: 16px !important;
+			height: 16px !important;
+		}
+		.icon-ebs1{
+			background-position: -331px -75px !important;
+		}
+		.icon-ebs2{
+			background-position: -301px -76px !important;
+		}*/
+	}
+	.icon-contact-us-tel{
+    	background-position: -301px -47px !important;
+	}
+	.icon-contact-us-email{
+		background-position: -187px -323px !important;
+    	width: 17px;
+	}
+	.icon-contact-us-time{
+		width: 17px;
+		background-position: -161px -324px !important;
+	}
+	.icon-contact-us-service{
+		background-position: -361px -108px !important;
+	}
+	.icon-sina{
+		background-position: -213px -324px !important;
+	}
+	.icon-wechat{
+		background-position: -253px -324px !important;
+	}
+	.icon-Payment-method{
+		background-position: -327px -156px !important;
+	}
+	.icon-Payment-method-1{
+		width: 98px;
+		margin-right: 10px;
+		background-position: -404px -156px !important;
+	}
+	.icon-Payment-method-2{
+		background-position: -226px -156px !important;
+	}
+	.icon-Payment-method-3{
+		width: 83px;
+		background-position: -404px -188px !important;
+	}
+	.footer .footer-cont-bottom ul.footer-cont-left {
+	    padding: 0 38px 0 0 !important;
+	}
+	.icon-ebs1{
+		width: 16px;
+	    height: 16px;
+	    background-position: -331px -76px !important;
+	}
+	.icon-ebs2{
+		width: 16px;
+	    height: 16px;
+	    background-position: -301px -76px !important;
+	}
+
+	// dropdown-icon
+	.form-select,
+	.dropdown {
+		.btn{
+			.dropdown-icon{
+				.icon-caret{
+					background-position: -69px 0;
+				}
+			}
+			&.open {
+				.dropdown-icon{
+					.icon-caret{
+						background-position: -115px 0;
+					}
+				}
+			}
+		}
+		&.is-open{
+			.btn{
+				.dropdown-icon{
+					.icon-caret{
+						background-position: -115px 0;
+					}
+				}
+			}
+		}
+	}
+
+	// 复选框
+	.icon-checked {
+		width: 20px;
+		height: 20px;
+		background-position: -109px -110px;
+		&.is-active{
+			background-position: -137px -110px !important;
+		}
+	}
+	//蓝色
+	.icon-checked-blue{
+		width: 24px;
+		height: 24px;
+		background-position: 0 -76px;
+		&.is-active{
+			background-position: -34px -76px !important;
+		}
+	}
+	.is-active{
+		.icon-checked{
+			background-position: -137px -110px !important;
+		}
+	}
+	.order-summary-box .coupon-box .coupon-content .coupon-select .dropdown .sub-menu .viewport .overview ul li.is-active a .icon-checked{
+		background-position: -137px -110px !important;
+	}
+
+	.form-simulate{
+		.icon-checked{
+			width: 20px;
+			height: 20px;
+			background-position: -109px -110px;
+		}
+	}
+	.on{
+		.icon-checked{
+			background-position: -137px -110px;
+		}
+	}
+	.is-disabled,
+	.form-checkbox.is-disabled{
+		.icon-checked{
+			background-position: -226px -110px;
+		}
+	}
+	/*shopping cart icon*/
+	.icon-payment-1,
+	.icon-cart-alipay{
+		width: 61px;
+		height: 22px;
+		background-position: -329px -157px;
+	}
+	.icon-payment-2,
+	.icon-cart-wechat{
+		width: 95px;
+		height: 22px;
+		background-position: -405px -157px;
+	}
+	.icon-payment-3,
+	.icon-online-pay{
+		width: 88px;
+		height: 22px;
+		background-position: -226px -157px;
+	}
+	.icon-payment-4,
+	.icon-cash-on-delivery{
+		width: 82px;
+		height: 22px;
+		background-position: -405px -189px;
+	}
+	.icon-cart-info{
+		width: 15px;
+		height: 15px;
+		background-position: -200px -110px;
+	}
+	.icon-cart-discount{
+		width: 14px;
+		height: 19px;
+		background-position: -172px -110px;
+	}
+	.icon-cart-customized{
+		background-position: -110px -47px;
+	}
+	.icon-cart-question-mark{
+		background-position: -81px -47px;
+	}
+	/*checkout*/
+	.order-submit-content{
+		.icon-radio {
+		    background-position: -255px -110px;
+		    width: 22px;
+		    height: 22px;
+		    background-position: -90px -360px;
+		    width: 20px;
+		    height: 20px;
+		    &.is-active{
+		    	background-position: -287px -110px;
+		    	background-position: -120px -360px;
+		    }
+		}
+		.is-active{
+			.icon-radio {
+			    background-position: -287px -110px;
+			    background-position: -120px -360px;
+			}
+		}
+	}
+	.icon-prompt{
+	    background-position: -199px -110px;
+	}
+	.delivery-address{
+		.delivery-address-bottom {
+		    a {
+		        .icon-caret{
+		            background-position: -69px 0 !important;
+		        }
+		        &.is-open{
+		            .icon-caret{
+		                background-position: -115px 0 !important;
+		            }
+		        }
+		    }
+		}
+	}
+	.icon-customized{
+		background-position: -136px -47px;
+	}
+	.icon-cart-question-mark{
+		background-position: -81px -47px;
+	}
+	.icon-close{
+		width: 12px;
+	    height: 12px;
+	    background-position: -129px -17px;
+	    width: 32px;
+	    height: 32px;
+	    background-position: -174px -16px;
+	    background-size: 700px;
+	}
+	.icon-caret{
+		width: 12px;
+	    height: 8px;
+	    background-position: -69px 0;
+    }
+
+    /*myaccount icon*/
+	.icon-head-portrait{
+		background-position: 0px -46px;
+	}
+	.icon-help{
+		background-position: -229px -220px;
+	}
+	.left-nav-item ul li a .icon-caret {
+	    top: 12px  !important;
+	    width: 16px !important;
+	    height: 16px !important;
+	    background-position: -76px -18px !important;
+	}
+	.icon-myaccount-1{
+		width: 26px;
+		background-position: 0px -263px;
+	}
+	.icon-myaccount-2{
+		width: 28px;
+		background-position: -30px -262px;
+	}
+	.icon-myaccount-3{
+		width: 17px;
+		background-position: -62px -264px;
+	}
+	.icon-myaccount-4{
+		width: 18px;
+		background-position: -84px -264px;
+    }
+	.icon-myaccount-5{
+		width: 27px;
+		background-position: -106px -263px;
+	}
+	.icon-myaccount-6{
+		width: 25px;
+		background-position: -137px -264px;
+	}
+	.icon-myaccount-7{
+		width: 25px;
+    	background-position: -167px -264px;
+	}
+	.icon-myaccount-8{
+		width: 26px;
+    	background-position: -196px -263px;
+	}
+
+	.icon-back-myaccount-memeber{
+		width: 14px;
+		height: 12px;
+		background-position: -107px -297px;
+	}
+	.left-nav-item{
+		ul{
+			li.is-active{
+				.icon-myaccount-1{
+					background-position: 0px -500px;
+				}
+				.icon-myaccount-2{
+					background-position: -30px -499px;
+				}
+				.icon-myaccount-3{
+					background-position: -62px -501px;
+				}
+				.icon-myaccount-4{
+					background-position: -84px -501px;
+				}
+				.icon-myaccount-5{
+					background-position: -106px -500px;
+				}
+				.icon-myaccount-6{
+					background-position: -137px -501px;
+				}
+				.icon-myaccount-7{
+					background-position: -167px -501px;
+				}
+				.icon-myaccount-8{
+					background-position: -196px -500px;
+				}
+			}
+		}
+	}
+	.icon-personalise{
+		background-position: -110px -47px;
+	}
+	.icon-evaluate{
+		background-position: -315px -266px;
+	}
+
+	.myaccount-tit{
+		.icon-round-gray-rights{
+			width: 9px;
+			height: 14px;
+			background-position: -137px -297px;
+		}
+	}
+
+	//store-find icon
+	.article-list-container .store-finder-box .store-finder-cont .sfcont-left-box .store-search-box .store-search-cont .store-search-type dd .logo-ic.logo-ic1{
+		background-position:-474px -367px!important;
+	}
+
+	.article-list-container .store-finder-box .store-finder-cont .sfcont-left-box .store-search-box .store-search-cont .store-search-type dd .logo-ic.logo-ic2{
+		background-position:-380px -370px!important;
+	}
+
+	.article-list-container .store-finder-box .store-finder-cont .sfcont-left-box .store-search-box .store-search-cont .store-search-type dd .logo-ic.logo-ic3{
+		background-position:-319px -366px!important;
+	}
+
+	.article-list-container .store-finder-box .store-finder-cont .sfcont-right-box .sfcont-right-cont .store-result-line .listmap-toggle-place li i.ic-type-map{
+		background-position:-405px -364px!important;
+	}
+
+	.article-list-container .store-finder-box .store-finder-cont .sfcont-right-box .sfcont-right-cont .store-result-line .listmap-toggle-place li i.ic-type-list{
+		background-position:-437px -366px!important;
+	}
+
+	.article-list-container .store-finder-box .store-finder-cont .sfcont-right-box .sfcont-right-cont .store-item-box .store-item-info .jumpbtn .btn-white-details span:after{
+		background-position: -259px -220px!important;
+	}
+
+	.article-list-container .store-finder-box .store-finder-cont .sfcont-left-box .store-search-box .store-search-cont .store-search-crumbs dd .icon-clear{
+		background-position: -349px -12px!important;
+	}
+
+	.article-list-container .store-finder-box .store-finder-cont .sfcont-right-box .sfcont-right-cont .sf-particulars-tit .back-sf-list i{
+		background-position: -286px -220px!important;
+	}
+	.article-list-container .store-finder-box .store-finder-cont .sfcont-right-box .sfcont-right-cont .sf-particulars-box .sf-particulars-cont .share-box i.weibo,
+	.article-list-container .store-finder-box .store-finder-cont .sfcont-right-box .sfcont-right-cont .sf-particulars-box .sf-particulars-cont p span i.weibo{
+		background-position: -258px -450px!important;
+	}
+	.article-list-container .store-finder-box .store-finder-cont .sfcont-right-box .sfcont-right-cont .sf-particulars-box .sf-particulars-cont .share-box i.weixin,
+	.article-list-container .store-finder-box .store-finder-cont .sfcont-right-box .sfcont-right-cont .sf-particulars-box .sf-particulars-cont p span i.weixin{
+		background-position: -258px -470px!important;
+	}
+
+
+
+	//分页
+	//小型灰色圆形向右箭头按钮 12*12
+		.icon-round-gray-rights{
+			background-position: -219px -60px;
+		}
+	//小型灰色圆形向左箭头按钮 12*12
+		.icon-round-lightgray-lefts{
+			background-position: -241px -60px;
+		}
+	//中型浅灰色圆形向左箭头按钮 18*18
+		.icon-round-lightgray-leftm{
+			width: 18px;
+			height: 18px;
+			background-position: -278px -60px;
+		}
+	//中型浅灰色圆形向左箭头按钮 18*18
+		.icon-round-lightgray-rightm{
+			width: 18px;
+			height: 18px;
+			background-position: -306px -60px;
+		}
+
+	.automatic-out-dialog{
+        .dialog-scroll-container{
+            .dialog{
+                .icon-fault{
+                    background-position: -289px -266px;
+                }
+            }
+        }
+    }
+    .my-score{
+    	.scoring-details .size p .icon-size-circular {
+		    background-position: -70px -110px !important;
+		     &.icon-size-circular-active {
+			    background-position: -34px -110px !important;
+			}
+		}
+		.upload-photos .pic li .icon-delete-picture{
+			background-position: -40px -300px !important;
+		}
+	}
+	.icon-terrex{
+		background-position: -425px -398px;
+	}
+	.icon-coupon-down{
+		background-position:-34px -360px;
+	}
+	.icon-coupon-up{
+		background-position:-68px -360px;
+	}
+
+/* faq */
+	.icon-delivery{
+		background-position: -19px -415px;
+	}
+	.icon-arrow{
+		background-position: 0 -415px;
+	}
+	.icon-refund{
+		background-position: -54px -415px;
+	}
+	.icon-payment{
+		background-position: -92px -415px;
+	}
+	.icon-size{
+		background-position: -128px -415px;
+	}
+	.icon-newsletter{
+		background-position: -159px -415px;
+	}
+	.icon-sale{
+		background-position:-186px -415px;
+	}
+	.icon-products{
+		background-position: -223px -415px;
+	}
+	.icon-company{
+		background-position:-263px -415px;
+	}
+	.icon-tel{
+		background-position: -301px -415px;
+	}
+	.icon-chat-80{
+		background-position:-361px -415px;
+	}
+	.icon-reture{
+		background-position: -225px -470px;
+	}
+	.icon-enlarge{
+		background-position: -0 -606px;
+	}
+	.icon-miadidas{
+		background-position: -199px -606px;
+	}
+	.icon-Print{
+		background-position: -163px -606px;
+	}
+	.icon-employee{
+		background-position: -376px -696px;
+	}
+	/* faq  end */
+	/* 地区选择 */
+
+	.icon-down{
+		width: 14px;
+		height: 8px;
+		background-position: -23px 0 ;
+	}
+	.icon-up{
+		width: 14px;
+		height: 8px;
+		background-position:0 0;
+	}
+	/* 地区选择 end */
+
+	/*video弹层*/
+	.video-dialog{
+	    .dialog-scroll-container{
+	        .dialog{
+	            .dialog-close{
+	                &:after{
+	                	background-size: 600px;
+	                    background-position: -150px -18px;
+	                    background-position: -173px -12px;
+	                }
+	            }
+	        }
+	    }
+	}
+
+	.customized-opt-box .icon-radio-blue{
+		background-position: -70px -110px;
+		&.is-active {
+		    background-position: -35px -110px;
+		}
+	}
+	.hyper-launch-login .form-input-code .btn-verification-success .icon-success1{
+		background-position: -371px -324px !important;
+	}
+	.usp-header .icon-round-gray-rights{
+		width: 15px;
+	    height: 16px;
+	    background-position: -286px -219px;
+	}
+	.icon-round-lightgray-leftm{
+		width: 26px;
+		height: 26px;
+		background-position: 0px -553px;
+		&.is-disabled{
+			background-position: -144px -553px;
+		}
+	}
+	.icon-round-lightgray-rightm{
+		width: 26px;
+		height: 26px;
+		background-position: -36px -553px;
+		&.is-disabled{
+			background-position: -180px -553px;
+		}
+	}
+	.delivery-address .add-address-list .distribution-list i.icon {
+	    margin-top: -10px !important;
+	    left: 20px !important;
+	}
+
+	.icon-eye{
+		background-position: -46px -606px;
+	}
+	.eye-hide{
+		.icon-eye{
+			background-position: -80px -606px;
+		}
+	}
+    //蓝色logo
+    .icon-bule-logo{
+        background-position:-319px -368px;
+    }
+
+    .brafinder-main{
+        .icon-arrow-right{
+            background-position: -235px -606px;
+        }
+        .icon-arrow-down{
+            background-position: -271px -606px;
+        }
+        .icon-arrow-up{
+            background-position: -59px -728px;
+        }
+        .icon-white-right{
+            background-position: -323px -606px;
+        }
+        .icon-white-down{
+            background-position: -343px -606px;
+        }
+        .icon-white-up{
+        	background-position: -30px -728px;
+        }
+    }
+    .icon-black-terrex{
+		background-position: -215px -697px;
+	}
+	.icon-ercode-close{
+		background-position: -171px -17px;
+	}
+
+	.login-bg .login-content .login-box .login-btn .visitor span:after{
+		background: url(../images/icon@2x.png);
+	    background-size: 500px;
+	    background-position: -150px -360px;
+	}
+
+	.icon-hook{
+	    background-position: -424px -651px;
+	}
+
+	.welcome-dialog .dialog-scroll-container .dialog{
+		.dialog-close:after {
+			background: url(../images/icon@2x.png);
+			background-size: 700px;
+		    background-position: -202px -17px;
+		}
+		.welcome-content .btn{
+			span:after {
+				background-size: 500px;
+				background-position: -487px -500px;
+				width: 17px;
+				height: 17px;
+			}
+			i{
+				background: url(../images/icon@2x.png);
+				background-size: 1000px;
+			}
+			.icon-welcome-1 {
+			    background-position: -854px -1005px;
+			}
+			.icon-welcome-2 {
+			    background-position: -897px -1005px;
+			}
+			.icon-welcome-3 {
+			    background-position: -940px -1005px;
+			}
+			&:hover{
+				span:after {
+    				background-position: -487px -500px;
+				}
+			}
+		}
+	}
+
+	.icon-clover-logo{
+	    background-position: -320px -366px !important;
+	}
+
+	.size-dialog{
+		.dialog-close:after {
+		    background-position: -208px -24px !important;
+		}
+		.size-selector-box{
+			.icon-arrow-right {
+			    width: 10px;
+			    height: 13px;
+			    background-position: -237px -609px;
+			}
+		}
+	}
+
+	// release-dates
+		.icon-release-dates-subscribe{
+			background-position: -286px -219px;
+		}
+
+		.icon-subscribe-success{
+			background-position: 0 -690px;
+		}
+	// release-dates end
+
+	// pdp 免运费
+		.icon-free-freight{
+			background-position: -32px -690px;
+		}
+	// pdp 免运费 end
+
+	// 评论得积分
+		.icon-comments{
+			background-position: -115px -719px;
+		}
+	// 评论得积分 end
+
+	// min-cart
+		.icon-checked-min-cart{
+			background-position: -293px -470px;
+			&.is-active{
+				background-position: -349px -470px;
+			}
+			&.is-disabled{
+				background-position: -321px -470px;
+			}
+		}
+
+		.calculate-num{
+			.btn{
+				.icon-mincart-minus{
+					background-position: -417px -470px;
+				}
+				.icon-mincart-plus{
+					background-position: -377px -470px;
+				}
+
+				&.is-disabled{
+					.icon-mincart-minus{
+						background-position: -437px -470px;
+					}
+					.icon-mincart-plus{
+						background-position: -397px -470px;
+					}
+				}
+			}
+		}
+	// min-cart end
+	.page-header-fixed .header-banner-box .icon-close {
+		width: 18px;
+		height: 16px;
+		background-position: -238px -20px;
+	}	
+}
+
+@media (max-width: 1024px){
+    // checkout new
+        .icon-dialog-back{
+            width: 8px;
+            height: 14px;
+            background-position: -158px -726px;
+        }
+		//支付图标
+        .icon-new-alipay-pay{
+            width: 21px;
+            height: 21px;
+            background-position: -168px -723px;
+        }
+        .icon-new-weixin-pay{
+            width: 21px;
+            height: 21px;
+            background-position: -191px -723px;
+		}
+		.icon-new-union-pay{
+            width: 21px;
+            height: 21px;
+            background-position: -308px -719px;
+        }
+        .icon-new-cod-pay{
+            width: 21px;
+            height: 21px;
+            background-position: -212px -723px;
+        }
+        //圆形打勾check
+		.checkout-new-coupon-code-dialog,.select-payment-dialog{
+			.icon-new-circle-check{
+				width: 19px;
+	            height: 19px;
+	            background-position: -235px -724px;
+			}
+			.is-active{
+				.icon-new-circle-check{
+		            background-position: -254px -724px;
+				}
+			}
+		}
+		.checkout-new-container{
+			.icon-arrow-right{
+				width: 8px;
+				height: 16px;
+				background-position: -277px -724px;
+			}
+		}
+
+
+		// 地址列表，已达上限提示
+		.icon-address-list-info{
+			width: 12px;
+			height: 13px;
+			background-position: -332px -723px;
+		}
+    // checkout new
+
+
+
+	.icon-ebs1{
+		/*background-position: -137px 0px !important;
+		width: 9px !important;
+		height: 9px !important;*/
+	}
+	.icon-video-btn{
+		background-position: -390px 3px;
+	}
+	.icon-success{
+		background-size: 400px;
+		background-position: -203px -401px;
+	    width: 30px;
+		height: 30px;
+	}
+	.header-search.form-search-open{
+		.icon-search {
+		    background-position: -221px -18px !important;
+		}
+	}
+	.welcome-dialog .dialog-scroll-container .dialog{
+		.welcome-content .btn{
+			i{
+				background: url(../images/icon@2x.png);
+				background-size: 700px;
+			}
+			.icon-welcome-1 {
+			    background-position: -598px -703px;
+			}
+			.icon-welcome-2 {
+			    background-position: -627px -703px;
+			}
+			.icon-welcome-3 {
+			    background-position: -657px -703px;
+			}
+			&:hover{
+				span:after{
+				    background-size: 500px;
+				    background-position: -150px -360px;
+			    }
+			}
+		}
+	}
+
+
+	// pdp bundle-sale
+		.icon-bundle-sale-dialog-back{
+			width: 10px;
+			height: 20px;
+			background-position: -390px -650px;
+		}
+	// pdp bundle-sale end
+
+
+}
+@media (max-width: 767px){
+	/*.icon{
+		background: url(../images/icon@2x.png);
+		background-size: 500px;
+	}*/
+
+
+}

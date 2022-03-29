@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>抽奖活动</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/lp-lottery.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/lp-lottery-2.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-draw.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+            <article class="article start-draw-inner">
+                <img src="images/blank.gif"
+                    data-image='{
+                    "standard":{"high":"", "normal":"../static/images/lp-lottery/img-18.jpg"},
+                    "medium":{"high":"",  "normal":"../static/images/lp-lottery/img-18.jpg"},
+                    "small":{"high":"", "normal":"../static/images/lp-lottery/img-18.jpg"}}'
+				/>
+				<img src="../static/images/lp-lottery/img-19.png" class="start-draw-inner-btn absolute">
+            </article>
+		</section>
+
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		<script id="draw-step-qx" type="text/template" >
+			<div class="qx-winning">
+				<!-- 已抽奖 -->
+				<!-- <div class="yi-draw">
+					<img src="../static/images/lp-lottery/img-10.png"/>
+					<a href="index.html"></a>
+					<img src="../static/images/lp-lottery/img-16.png" class="start-draw-inner-bg-size start-draw-inner-bg-size-02">
+                </div> -->
+                
+				<!-- 未中奖 -->
+				<!-- <div class="losing-lottery">
+                    <img src="images/blank.gif"
+                        data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-lottery/img-11.png"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-lottery/img-11.png"},
+                        "small":{"high":"", "normal":"../static/images/lp-lottery/img-11.png"}}'
+                    />
+
+					<a href="index.html"></a>
+					<img src="../static/images/lp-lottery/img-16.png" class="start-draw-inner-bg-size start-draw-inner-bg-size-02">
+                </div> -->
+                
+				<!-- 已中奖 -->
+				<img src="images/blank.gif"
+                        data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-lottery/img-12.png"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-lottery/img-12.png"},
+                        "small":{"high":"", "normal":"../static/images/lp-lottery/img-12.png"}}'
+                    />
+				<div class="winning-infro absolute">
+					<div class="infro-box">
+						<p><span>姓名</span>爱热巴</p>
+						<p><span>电话</span>18634338858</p>
+						<p><span>地址</span>广东省广州市越秀区中山六路</p>
+					</div>
+				</div>
+				<a class="absolute winning-infro-btn">
+					<img src="images/blank.gif" class=""
+                        data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-lottery/img-15.png"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-lottery/img-15.png"},
+                        "small":{"high":"", "normal":"../static/images/lp-lottery/img-15.png"}}'
+                    />
+				</a>
+				<img src="../static/images/lp-lottery/img-16.png" class="start-draw-inner-bg-size start-draw-inner-bg-size-01">
+				
+			</div>
+
+		</script>
+
+	</div>
+</body>
+</html>

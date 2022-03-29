@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title>登录</title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" href="css/login.css" />
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="js/login.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+			<!-- 内容部分 -->
+			<section class="container">
+				
+				<article class="article article-nav">
+					<div class="login-tit">
+						<ul class="list-inline">
+							<li><a href="#"><i class="icon icon-login-left"></i>返回</a></li>
+							<li class="divider">|</li>
+							<li><a href="/">登录 | 注册</a></li>
+							<li class="divider">/</li>
+							<li><a href="/">登录</a></li>
+						</ul>
+					</div>
+				</article>
+				
+				<article class="article article-forget-password login-bg">
+					
+					<!--不同状态 加不同的class 如：
+						3次出验证码加calss：login-verification 。
+						验证码成功删calss：login-verification ，
+						加class：login-verification-success 。 -->
+					<div class="login-content hyper-launch-login float-clearfix">
+						<div class="login-left">
+							<p class="login-title none">由于系统升级，2017年8月1日前已注册用户首次登录需要重置密码，给您带来不便敬请谅解。</p>
+						
+							<div class="login-box show-mobb">
+								<!-- <h4 class="float-clearfix fontw-b"><span>用户</span>登录 <i class="icon icon-login-detial"></i></h4> -->
+								<div class="login-box-content">
+									<a class="e-login-detial-mobile">
+										<h4 class="float-clearfix login-detial-border form-input-mobile-margin">短信快捷登录/注册</h4>
+									</a>
+									<a class="e-login-detial-account none-sm">
+										<h4 class="float-clearfix">账号密码登录</h4>
+									</a>
+								</div>
+								
+								<div class="login-detial form-input-mobile-margin">
+									<p class="login-title">由于系统升级，2017年8月1日前已注册用户首次登录需要重置密码，给您带来不便敬请谅解。</p>
+									<div class="login-detial-account none">
+										<div class="form-input">
+											<input type="text" placeholder="邮箱/手机号" />
+											<div class="msg-block">
+												<i class="icon msg-icon"></i>
+												<span>请输入正确的邮箱地址</span>
+											</div>
+										</div>
+										<div class="form-input">
+											<input type="text" placeholder="密码" />
+											<div class="msg-block">
+												<i class="icon msg-icon"></i>
+												<span>密码错误</span>
+											</div>
+										</div>
+										<div class="form-input-code">
+											<a class="btn btn-blue">点击进行验证</a>
+											<!-- 验证成功按钮，验证成功显示 -->
+											<a class="btn btn-verification-success">
+												<i class="icon icon-success1"></i>
+											</a>
+										</div>
+									</div>
+									<div class="login-detial-mobile">
+										<div class="form-input-mobile-number form-input">
+											<input type="text" placeholder="手机号" />
+											<div class="msg-block">
+												<i class="icon msg-icon"></i>
+												<span>请输入正确的手机号</span>
+											</div>
+										</div>
+										<div class="form-input-mobile-number form-input form-input-mobile-number-width">
+											<input type="text" placeholder="向右滑动滑块填充拼图" />
+											<div class="msg-block">
+												<i class="icon msg-icon"></i>
+												<span>向右滑动滑块填充拼图</span>
+											</div>
+										</div>
+
+										<!-- <div class="form-input-mobile-number form-input form-input-mobile-number-code">
+											<input type="text" placeholder="手机验证码" />
+											<div class="msg-block">
+												<i class="icon msg-icon"></i>
+												<span>请输入正确的手机验证码</span>
+											</div>
+											<a class="acquire-code events-btn-git-code" onselectstart="return false">获取验证码</a>
+										</div> -->
+										<div class="form-input form-input-code daojishi ww-100 form-input-mobile-number-code block">
+											<input type="text" placeholder="手机验证码" />
+											<div class="code-img float-clearfix">
+												<a class="events-btn-git-code">获取验证码</a>
+											</div>
+											<div class="msg-block">
+												<i class="icon msg-icon"></i>
+												<span>验证码错误</span>
+											</div>
+										</div>
+									</div>
+
+									
+									<div class="login-detial-account none">
+										<div class="login-remeber">
+											<label class="form-remeber dis-in-b">
+												<i class="icon icon-checked"></i>记住我的信息
+											</label>
+										</div>
+									</div>
+									<!-- 显示条款 隐藏记住手机号加上is-mobile-option -->
+									<div class="login-detial-mobile login-detial-mobile-option is-mobile-option">
+										<div class="login-remeber">
+											<label class="form-remeber dis-in-b">
+												<i class="icon icon-checked"></i>记住手机号
+											</label>
+										</div>
+										<div class="login-remeber login-remeber-bottom">
+											<label class="form-remeber dis-in-b">
+												<i class="icon icon-checked"></i>订阅adidas最新资讯和新品通知
+											</label><!-- <a class="text-underline">adiCLUB会员相关条款</a> -->
+										</div>
+										<div class="login-remeber login-remeber-bottom">
+											<label class="form-remeber dis-in-b">
+												<i class="icon icon-checked"></i>我已阅读并同意
+											</label><a class="text-underline">adiCLUB会员相关条款</a>
+										</div>
+										<div class="login-remeber">
+											<label class="form-remeber dis-in-b">
+												<i class="icon icon-checked"></i>我已阅读并同意adidas官方商城
+											</label><a class="text-underline">隐私政策</a>和<a class="text-underline">使用条款</a>
+										</div>
+										<div class="login-remeber-size">
+											<p>验证手机号即可完成登录，并注册成为adiCLUB会员</p>
+										</div>
+									</div>
+									
+									<div class="login-btn float-clearfix">
+										<a class="btn btn-blue btn-have-arrow"><span>登录</span></a>
+										<a class="forget forget-mobile e-forget-mobile-code none forget-mobile-01">账号密码登录</a>
+										<a class="forget forget-mobile e-forget-mobile forget-mobile-01">短信快捷登录/注册</a>
+										<a class="forget forget-mobile-02 none block-sm">忘记密码？</a>
+									</div>
+									
+									<div class="third-party-login">
+										<p class="third-tit">使用其他方式登录</p>
+										<ul class="list-inline">
+											<li class="none-sm"><a href="#"><i class="icon icon-qq"></i></a></li>
+											<li><a href="#"><i class="icon icon-weixin"></i></a></li>
+											<!-- <li><a href="#"><i class="icon icon-alipay"></i></a></li> -->
+											<li><a href="#"><i class="icon icon-weibo"></i></a></li>
+										</ul>
+										<p class="third-tit-bottom">* 已绑定微信adiCLUD会员卡的会员，可通过微信直接登录</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="login-right">
+							<div class="login-box show-mobb">
+								<h4 class="float-clearfix fontw-b">adiCLUB会员相关权益<i class="icon icon-login-detial"></i></h4>
+								<div class="login-detial">
+									<p class="login-right-tlt">成为adiCLUB会员并完善个人信息，即可享受更多权益</p>
+									<div class="regist-inner">
+										<div>
+											<i class="icon icon-conform"></i>
+											<span>安全快捷支付订单</span>
+										</div>
+										<div>
+											<i class="icon icon-conform"></i>
+											<span>随时跟踪订单状态</span>
+										</div>
+										<div>
+											<i class="icon icon-conform"></i>
+											<span>即时收到打折优惠及新品发布信息</span>
+										</div>
+										<div>
+											<i class="icon icon-conform"></i>
+											<span>全场免普通达运费和七天无理由退货服务</span>
+										</div>
+										<div>
+											<i class="icon icon-conform"></i>
+											<span>消费即可获得积分，铜牌以上会员即可积分兑换优惠券</span>
+										</div>
+									</div>
+									<div class="login-btn float-clearfix none">
+										<a class="btn btn-blue btn-have-arrow"><span>注册</span></a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</article>
+	
+			</section>
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		</div>
+	</body>
+</html>

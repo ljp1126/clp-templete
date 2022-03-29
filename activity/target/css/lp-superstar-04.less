@@ -1,0 +1,195 @@
+.article {
+	position: relative;
+
+	> img {
+		width: 100%;
+	}
+}
+
+.article-link {
+	a {
+		position: absolute;
+		width: 17%;
+		height: 22%;
+	}
+	&.link-three{
+		.btn1{top:75.52%;left:24.90%;}
+		.btn2{top:75.80%;left:42.52%;}
+		.btn3{top:75.66%;left:59.95%;}
+	}
+
+	&.link-four{
+		a{
+			width:16%;
+		}
+		.btn1 {
+			left: 16%;
+			bottom: 3%;
+		}
+
+		.btn2 {
+			left: 33%;
+			bottom: 3%;
+		}
+
+		.btn3 {
+			left: 51%;
+			bottom: 3%;
+		}
+
+		.btn4{
+			left: 68%;
+			bottom: 3%;
+		}
+	}
+	&.link-two{
+		.btn1 {
+			left: 33%;
+			bottom: 3%;
+		}
+
+		.btn2 {
+			left: 50%;
+			bottom: 3%;
+		}
+	}
+}
+.article-link-footer{
+	a{
+		position: absolute;
+		width: 16%;
+    height: 23%;
+	}
+	.btn1 {
+		left: 16%;
+		bottom: 5%;
+	}
+
+	.btn2 {
+		left: 33%;
+		bottom: 5%;
+	}
+
+	.btn3 {
+		left: 51%;
+		bottom: 5%;
+	}
+
+	.btn4{
+		left: 68%;
+		bottom: 5%;
+	}
+}
+@media (max-width: 1024px) {
+	.article-link {
+		a {
+			width: 41%;
+     height: 19%;
+		}
+		&.link-three{
+			a{
+				width: 40%;
+	     height: 19%;
+			}
+			.btn1 {
+				top: auto;
+				left: 10%;
+				bottom: 24%;
+			}
+
+			.btn2 {
+				top: auto;
+				left: 51%;
+				bottom: 24%;
+			}
+
+			.btn3 {
+				top: auto;
+				left: 10%;
+				bottom: 4%;
+			}
+		}
+		&.link-four{
+			a{
+				width: 40%;
+	     height: 19%;
+			}
+			.btn1 {
+				left: 10%;
+				bottom: 24%;
+			}
+
+			.btn2 {
+				left: 51%;
+				bottom: 24%;
+			}
+
+			.btn3 {
+				left: 10%;
+				bottom: 4%;
+			}
+
+			.btn4{
+				left: 51%;
+				bottom: 4%;
+			}
+			&.link-4{
+				.btn1 {
+				  bottom: 25%;
+
+				}
+
+				.btn2 {
+	        bottom: 25%;
+				}
+
+				.btn3 {
+					bottom: 4%;
+				}
+				.btn4 {
+					bottom: 4%;
+				}
+			}
+		}
+		&.link-two{
+			a{
+				height: 25%;
+			}
+			.btn1 {
+				left: 9%;
+				bottom: 5%;
+			}
+
+			.btn2 {
+				left: 51%;
+				bottom: 5%;
+			}
+		}
+	}
+	.article-link-footer{
+		a{
+			position: absolute;
+			width: 43%;
+	    height: 25%;
+		}
+		.btn1 {
+			left: 5%;
+			bottom: 31%;
+		}
+
+		.btn2 {
+			left: 51%;
+			bottom: 31%;
+		}
+
+		.btn3 {
+			left: 5%;
+			bottom: 4%;
+		}
+
+		.btn4{
+			left: 51%;
+			bottom: 4%;
+		}
+	}
+}

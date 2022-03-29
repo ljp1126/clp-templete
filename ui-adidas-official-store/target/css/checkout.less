@@ -1,0 +1,1834 @@
+@charset "utf-8";
+// 公共方法
+@import "common/utilities.less";
+// 公共变量、样式
+@import "common/variables.less";
+.container {
+    padding-top: 0;
+}
+.order-submit-content {
+    width: 950px;
+    margin: 30px auto 50px;
+
+    .order-content-left {
+        width: 650px;
+        float: left;
+        .address-select-list,
+        .address-form-box{
+            position: relative;
+        }
+    }
+    .order-content-right {
+        width: 280px;
+        float: right;
+    }
+    .order-line {
+        height: 1px;
+        border-top: 1px dotted #C8CBCC;
+        margin: 32px 0 35px 0;
+    }
+    /*会员*/
+    &.order-submit-member-content{
+        /*.address-form-box{
+            display: block;
+        }
+        .address-select-list{
+            display: none;
+        }*/
+    }
+}
+
+.payment-method {
+    padding: 0 0 35px;
+    margin: 0 0 35px;
+    border-bottom: 3px solid #C8CBCC;
+    border-bottom: 1px solid #C8CBCC;
+    &.no-line{
+        border-bottom: 0px solid #C8CBCC;
+        margin: 0 0 12px;
+    }
+    .order-title {
+        font-size: 24px;
+        color: #000;
+        line-height: 24px;
+        // margin-bottom: 20px;
+        span{
+            font-size: 12px;
+            color: #C53622;
+            line-height: 12px;
+            display: inline-block;
+            vertical-align: bottom;
+            margin-left: 20px;
+        }
+    }
+}
+/* 发票文案 */
+.checkout-pay-content{
+    .payment-method{
+        .order-detail-text-invoice{
+            color: #888888;
+            font-size: 12px;
+            margin-left: 71px;
+        }
+    }
+} 
+.order-detail-text-invoice{
+    color: #888888;
+    font-size: 12px;
+    margin-left: 71px;
+}
+/*配送地址*/
+.delivery-address{
+    .delivery-address-top {
+        // margin-bottom: 15px;
+        .address-top-labels {
+            font-size: 14px;
+            color: #000000;
+            line-height: 14px;
+        }
+        .address-top-labels-xs {
+            display: none;
+        }
+        .add-address-link {
+            // float: right;
+            font-size: 16px;
+            color: #0280C3;
+            line-height: 18px;
+            &:hover{
+                color: #025F8E;
+            }
+        }
+    }
+    .add-address-list{
+        margin-bottom: 15px;
+        margin-bottom: 0px;
+        border-top: 1px dotted #C8CBCC;
+        .distribution-list {
+            position: relative;
+            padding: 12px 20px 12px 49px;
+            border-bottom: 1px dotted #C8CBCC;
+            i.icon {
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                margin-top: -13px;
+            }
+            .distribution-list-box {
+                display: inline-block;
+                color: #000;
+                .address-name{
+                    width: 140px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    padding: 0 8px 0 0;
+                    display: inline-block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    position: absolute;
+                    left: 49px;
+                    top: 50%;
+                    margin: -8px 0 0 0;
+                    span{
+                        display: inline-block;
+                        margin: 0 4px 0 0;
+                    }
+                    .mob-default,
+                    .sm-show{
+                        display: none;
+                    }
+                }
+                .address-box {
+                    vertical-align: middle;
+                    float: left;
+                    max-width: 370px;
+                    margin: 0 0 0 140px;
+                    p {
+                        font-size: 14px;
+                        line-height: 20px;
+                        /*white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;*/
+                    }
+                }
+
+            }
+            .edit-box {
+                float: right;
+                .edit-button {
+                    font-size: 12px;
+                    color: #0287CD;
+                    line-height: 20px;
+                    padding: 0 2px;
+                    &:hover{
+                        color: #025F8E;
+                    }
+                }
+            }
+            &.is-active {
+                background: #F9F9F9;
+                .distribution-list-box{
+                    .address-name{
+                        span{
+                            display: inline-block;
+                            margin: 0 4px 0 0;
+                        }
+                        .sm-show{
+                            display: none;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    .delivery-address-bottom {
+        margin-top: 15px;
+        a {
+            font-size: 14px;
+            color: #000;
+            line-height: 16px;
+            .icon-caret {
+                display: inline-block;
+                width: 12px;
+                height: 8px;
+                background-position: -74px 0;
+                margin-left: 7px;
+            }
+            &.is-open{
+                .icon-caret {
+                    background-position: -52px 0;
+                }
+            }
+        }
+
+    }
+
+}
+
+/*游客*/
+.order-submit-guest-content{
+    .address-form-box{
+        .form-group{
+            &:nth-child(4),
+            &:nth-child(5) {
+               margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+/*配送方式*/
+.distribution-method{
+    .distribution-list {
+        position: relative;
+        padding: 20px 10px 20px 44px;
+        border-top: 1px dotted #C8CBCC;
+        color: #000;
+        cursor: pointer;
+        .distribution-list-box {
+            display: inline-block;
+            width: 77%;
+        }
+        i.icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            margin-top: -13px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 26px;
+            &.express-text{
+                font-size: 12px;
+                color: #888888;
+                line-height: 18px;
+            }
+        }
+        >span {
+            font-size: 16px;
+            color: #000000;
+            line-height: 26px;
+            float: right;
+            /*position: absolute;
+            right: 10px;
+            top: 50%;
+            margin: -13px 0 0;*/
+        }
+        &:last-child{
+            border-bottom: 1px dotted #C8CBCC;
+        }
+        &.is-active {
+            background: #F9F9F9;
+        }
+
+    }
+
+}
+
+/*支付方式*/
+.payment-method-content{
+    border-top: 1px dotted #C8CBCC;
+    border-bottom: 1px dotted #C8CBCC;
+    padding: 10px 0;
+    .payment-method-item {
+        float: left;
+        width: auto;
+        padding-left: 35px;
+        margin: 10px 35px 10px 0px;
+        font-size: 0;
+        position: relative;
+        cursor: pointer;
+        i{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -13px;
+        }
+        img{
+            height: 22px;
+        }
+    }
+
+}
+
+/*复选按钮*/
+.checked-select-con{
+    position: relative;
+    line-height: 24px;
+    margin-bottom: 10px;
+    .icon-checked{
+        vertical-align: middle;
+    }
+    .checked-select{
+        display: inline-block;
+        span{
+            font-size: 14px;
+            color: #000;
+            vertical-align: middle;
+            margin-left: 8px;
+            a{
+                text-decoration: underline;
+            }
+        }
+    }
+    .checked-select-one{
+            color: #000;
+            vertical-align: middle;
+            a{
+                text-decoration: underline;
+            }
+        
+    }
+    &.font-size-12{
+        .checked-select{
+            span{
+                font-size: 12px;
+            }
+        }
+    }
+    &.invoice-select{
+        margin: 20px 0 0;
+        .invoice-box{
+            margin: 20px 0 0;
+            >div{
+                float: left;
+                position: relative;
+                line-height: 26px;
+                margin-top: 7px;
+                span{
+                    font-size: 14px;
+                    color: #000;
+                    vertical-align: middle;
+                    margin-left: 10px;
+                }
+                .icon-radio{
+                    vertical-align: middle;
+                }
+            }
+            .invoice-company{
+                margin: 7px 0 0 40px;
+            }
+            .form-group{
+                margin: 0 0 0 20px;
+                .form-input{
+                    width: 230px;
+                    &.is-error{
+                        .msg-block{
+                            color: #a94442;
+                            line-height: 14px;
+                            span{
+                                color: #a94442;
+                            }
+                        }
+                    }
+                }
+            }
+            .invoice-title{
+                font-size: 14px;
+                color: #000;
+                line-height: 26px;
+                margin-right: 12px;
+                span{
+                    margin-left: 0px;
+                }
+            }
+            .invoice-content-box{
+                width: 100%;
+                margin-top: 20px;
+                >div{
+                    float: left;
+                    span{
+                        margin-left: 0px;
+                        vertical-align: top;
+                    }
+                }
+                .invoice-title{
+                    line-height: 38px;
+                }
+                .select-box{
+                    width: 265px;
+                    .electronic-invoice{
+                        margin-left: -12px;
+                        font-size: 12px;
+                        color: #888888;
+                        .font-under-12(11);
+                    }
+                }
+            }
+            .ordinary-invoice{
+                .form-group{
+                    margin: 0;
+                    width: 100%;
+                    .form-input{
+                        width: 347px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .value-added-tax-invoice{
+                .value-added-tax-invoice-form{
+                    float: none;
+                    .form-group{
+                        margin: 0 0 20px;
+                        padding: 0 0 0 118px;
+                        padding: 0;
+                        .control-label{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            margin: 0;
+                            padding: 0;
+                            line-height: 40px;
+                            font-size: 12px;
+                            padding: 0 0 0 10px;
+                            display: none;
+                            span{
+                                font-size: 12px;
+                                display: inline-block;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                            }
+                        }
+                        .form-input{
+                            width: 242px;
+                            width: 347px;
+                        }
+                        &:nth-child(1){
+                            .control-label{
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                    .invoice-btn{
+                        a{
+                            width: 105px;
+                            min-width: 105px;
+                            height: 32px;
+                            line-height: 32px;
+                            span{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                .value-added-tax-invoice-content{
+                    float: none;
+                    position: relative;
+                    >div{
+                        font-size: 14px;
+                        line-height: 16px;
+                        position: relative;
+                        margin-top: 8px;
+                        max-width: 92%;
+                        &:nth-child(1){
+                            margin-top: 0px;
+                        }
+                        span{
+                            font-size: 14px;
+                            line-height: 16px;
+                            display: inline-block;
+                            margin-right: 3px;
+                            &:nth-child(2){
+                                margin-right: 0px;
+                            }
+                        }
+                    }
+                    .invoice-modify-btn{
+                        position: absolute;
+                        right: 20px;
+                        bottom: 0;
+                        a{
+                            color: #0287CD;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.submit-button-box{
+    padding: 10px 0 0;
+    .payment-button{
+        width: 270px;
+        font-size: 16px;
+        height: 42px;
+        line-height: 42px;
+        span:after {
+            top: 2px;
+        }
+    }
+    >div{
+        font-size: 12px;
+        color: #FF6D6D;
+        line-height: 12px;
+        margin-top: 10px;
+        a{
+            color: #0286cd;
+            &:hover{
+                color: #025F8E;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+/*订单详情*/
+@import "modules/address-form.less";
+@import "modules/order-summary-box.less";
+@import "modules/order-help-box.less";
+@import "modules/other-payment-method.less";
+.common-payment{
+    position: relative;
+    .order-summary-box{
+        margin-bottom: 50px;
+    }
+    .order-help-box {
+        margin-bottom: 60px;
+    }
+
+}
+/*订单详情 end*/
+
+
+// 弹层
+.dialog-payment{
+    .dialog-scroll-container{
+        .dialog{
+            width: 530px;
+            .dialog-container{
+                text-align: center;
+                padding: 28px 20px;
+                h4 {
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: #000;
+                    border-bottom: 0px solid #C8CBCC;
+                }
+                p {
+                    font-size: 14px;
+                    color: #888;
+                    line-height: 22px;
+                    margin: 20px 0 45px;
+                }
+                .dialog-btn-wrap{
+                    width: 390px;
+                    height: 40px;
+                    margin: 0 auto;
+                    .btn {
+                        float: left;
+                        min-width: 180px;
+                        margin: 0;
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 14px;
+                    }
+                    .btn-blue{
+                        float: right;
+                    }
+                }
+            }
+        }
+        .dialog-close {
+            display: none;
+        }
+
+    }
+}
+
+/*提交后相关页面*/
+.order-detail-box {
+    .order-detail-info {
+        .order-detail-title {
+            float: left;
+        }
+        .order-detail-text {
+            margin-left: 71px;
+            img{
+                height: 22px;
+            }
+        }
+        
+        .order-detail-title,
+        .order-detail-text {
+            font-size: 14px;
+            color: #000;
+            line-height: 26px;
+            font-weight: normal;
+        }
+        .order-detail-text-invoice{
+            padding: 4px 0 8px;
+            color: #888888;
+            font-size: 12px;
+            line-height: 12px;
+        }
+    }
+    .order-reminder {
+        font-size: 12px;
+        color: #C53622;
+        line-height: 18px;
+        /*margin-left: 71px;*/
+    }
+    // 文字提醒
+    .order-reminder-box {
+        margin-bottom: 8px;
+        .payment-button {
+            width: 270px;
+        }
+    }
+    .pc-none-mb{
+        display: none;
+    }
+}
+.checkout-pay-content {
+    .payment-method {
+        padding: 0;
+        margin: 0;
+        border-bottom: 0px solid #C8CBCC;
+    }
+    .payment-text {
+        font-size: 14px;
+        color: #888888;
+        line-height: 14px;
+        margin: 15px 0 24px 0;
+    }
+    // 微信支付
+    .wechat-pay{
+        >.order-detail-box,
+        >p{
+            padding: 0 0 0 38px;
+        }
+    }
+    .wechat-code {
+        .wechat-text {
+            float: left;
+            font-size: 14px;
+            color: #000000;
+            line-height: 22px;
+            width: 224px;
+            margin-right: 66px;
+            .other-method {
+                color: #0286cd;
+                &:hover {
+                    color: #025F8E;
+                }
+            }
+        }
+    }
+    // 支付成功
+    .view-detail-mes {
+        margin-top: 30px;
+        .view-detail {
+            font-size: 14px;
+            color: #0287CD;
+            text-decoration: underline;
+            &:hover {
+                color: #025F8E;
+            }
+        }
+    }
+    .checkout-pay-new{
+        .order-line {
+            height: 1px;
+            border-top: 1px solid #C8CBCC;
+        }
+    }
+    .submit-button-box{
+        margin-top: 25px;
+    }
+    .order-summary-box{
+        .order-price-classify {
+            border-top: 0px solid #EBEBEB;
+        }
+        .coupon-box{
+            display: none;
+        }
+    }
+
+}
+
+// 本月推荐
+.pick-week {
+    background: #F9F9F9;
+    padding-bottom: 40px;
+    .style-guess-you-Iike {
+        margin-bottom: 0;
+        h3 {
+            padding-top: 40px;
+        }
+    }
+}
+
+/*提交后相关页面 end*/
+
+/*hyper-launch*/
+.hyper-launch-container{
+    .order-summary-box .order-price-classify {
+        border-top: 0px solid #EBEBEB;
+    }
+    .header-tit-red{
+        color: #f00;
+        font-size: 18px;
+        line-height: 20px;
+        padding: 0px 0px 28px;
+    }
+}
+.line-up-dialog{
+    .article-frame{
+        width: 800px;
+        padding: 0;
+        .text-box{
+            h3{
+                font-weight: bold;
+            }
+            p{
+                max-width: 100% !important;
+                font-weight: bold;
+                span{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.mobile-empty-address{
+    display: none;
+}
+.form-input{
+    textarea{
+        height: 54px;
+    }
+}
+
+/*checkout-loading*/
+.checkout-loading-box{
+    min-height: 500px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+    .checkout-loading-img{
+        padding: 120px 0 40px;
+        img{
+            width: 40px;
+        }
+    }
+    .checkout-loading-text{
+        position: relative;
+        h4{
+            font-size: 18px;
+            color: #000;
+            line-height: 20px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 14px;
+            color: #888;
+            line-height: 16px;
+        }
+    }
+}
+
+
+
+// 通知
+    .relevant-description{
+        margin-bottom: 15px;
+        >div{
+            background: #F9F9F9;
+            padding: 12px 15px 17px;
+            p{
+                &.des-16{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+// 通知 end
+
+
+@media (max-width:1024px){
+    .order-submit-content {
+        width: 100%;
+        margin: 18px auto 12px;
+
+        .order-content-left,
+        .order-content-right {
+            width: 100%;
+            float: none;
+        }
+    }
+    .payment-method {
+        padding: 0 0 16px;
+        margin: 0 0 16px;
+        border-bottom: 1px solid #C8CBCC;
+        &.no-line {
+            margin: 0 0 16px;
+            border-bottom: 1px solid #C8CBCC;
+        }
+        .order-title {
+            font-size: 18px;
+            line-height: 18px;
+            margin-bottom: 17px;
+            padding: 0 20px;
+            font-weight: bold;
+            span{
+                margin-left: 10px;
+                color: #f00;
+            }
+        }
+    }
+    .common-payment{
+        .other-payment-method,
+        .order-help-box {
+            display: none;
+        }
+        .order-summary-box{
+            margin-bottom: 0;
+        }
+    }
+    .order-summary-box .check-product-list .viewport {
+        max-height: 100%;
+    }
+
+    /*配送地址*/
+    .delivery-address{
+        /*border-bottom: 0px solid #C8CBCC;
+        margin: 0 0 6px;*/
+        .delivery-address-top {
+            margin-bottom: 13px;
+            padding: 12px 20px 0;
+            border-top: 1px dotted #C8CBCC;
+            .address-top-labels {
+                display: none;
+            }
+            .address-top-labels-xs {
+                display: inline-block;
+                font-size: 18px;
+                line-height: 20px;
+                font-weight: bold;
+            }
+            .add-address-link {
+                font-size: 14px;
+                line-height: 20px;
+                height: 20px;
+                color: #000;
+                padding: 0 8px 0 4px;
+                span{
+                    &:after {
+                        top: 1px;
+                        right: -20px;
+                    }
+                }
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+        .add-address-list{
+            margin-bottom: 0px;
+            border-top: 0px dotted #C8CBCC;
+            padding: 0 20px;
+            .distribution-list {
+                position: relative;
+                padding: 17px 20px 17px 55px;
+                border-bottom: 0px dotted #C8CBCC;
+                margin-bottom: 8px;
+                background: #F7F7F7;
+                border: 1px solid #CFCFCF;
+                margin-bottom: 0px;
+                i.icon {
+                    left: 20px;
+                    top: 17px;
+                    margin-top: 1px;
+                }
+                .distribution-list-box {
+                    display: inline-block;
+                    color: #000;
+                    .address-name{
+                        width: 100%;
+                        line-height: 22px;
+                        padding: 0 ;
+                        display: block;
+                        position: static;
+                        margin: 0;
+                        span{
+                            display: none;
+                        }
+                        .sm-show{
+                            display: inline-block;
+                            margin: 0 0 0 5px;
+                            display: none;
+                        }
+                    }
+                    .address-box {
+                        float: none;
+                        max-width: 100%;
+                        margin: 0;
+                        p {
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+
+                }
+                .edit-box {
+                    display: none;
+                    float: none;
+                    margin: 6px 0 0;
+                    .edit-button {
+                        padding: 0 4px;
+                    }
+                    span{
+                        color: #0287CD;
+                    }
+                }
+                &.is-active {
+                    background: #F7F7F7;
+                    .distribution-list-box{
+                        .address-name{
+                            span{
+                                display: none;
+                            }
+                            .sm-show{
+                                display: inline-block;
+                                margin: 0 0 0 5px;
+                                display: none;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .delivery-address-bottom {
+            a {
+                .icon-caret{
+                    background-position: -69px 0;
+                }
+                &.is-open{
+                    .icon-caret{
+                        background-position: -115px 0;
+                    }
+                }
+            }
+        }
+
+    }
+
+    /*配送方式*/
+    .distribution-method{
+        padding: 0 20px 16px;
+        .order-title {
+            padding: 0;
+        }
+        .distribution-list {
+            padding: 20px 25px 20px 55px;
+            background: #FFFFFF;
+            border: 1px solid #CFCFCF;
+            margin-bottom: 20px;
+            .distribution-list-box {
+                width: 77%;
+            }
+            i.icon {
+                left: 21px;
+                top: 21px;
+                margin-top: 1px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 24px;
+                &.express-text{
+                    line-height: 18px;
+                }
+            }
+            >span {
+                font-size: 14px;
+                line-height: 24px;
+            }
+            &:last-child{
+                margin-bottom: 0px;
+                border-bottom: 1px solid #CFCFCF;
+            }
+            &.is-active {
+                background: #F7F7F7;
+            }
+
+        }
+
+    }
+
+    /*支付方式*/
+    .payment-method-content{
+        border-top: 0px dotted #C8CBCC;
+        border-bottom: 1px dotted #C8CBCC;
+        padding: 0 0px 8px;
+        margin: 0 20px;
+        .payment-method-item {
+            float: left;
+            width: 50%;
+            padding-left: 35px;
+            margin: 12px 0px;
+            i{
+                margin-top: -10px;
+            }
+        }
+    }
+
+    /*复选按钮*/
+    .checked-select-con{
+        padding: 0 20px;
+        margin-bottom: 14px;
+        line-height: 20px;
+        &.invoice-select {
+            margin: 16px 0 0;
+            .checked-select{
+                >.icon-checked.is-active {
+                    background-position: -36px -79px;
+                }
+            }
+            .invoice-box{
+                >div{
+                    margin: 0;
+                    .icon-checked{
+                        /*background-position: -255px -110px;*/
+                        width: 22px;
+                        height: 22px;
+                        &.is-active{
+                            background-position: -287px -110px;
+                        }
+                    }
+                }
+                .invoice-company {
+                    margin: 0px 0 0 56px;
+                }
+                .form-group{
+                    /*margin: 15px 0 0;
+                    width: 100%;*/
+                    width: 230px;
+                    .form-input {
+                        width: 100%;
+                    }
+                }
+                .invoice-content-box{
+                    margin-bottom: 4px;
+                }
+                .value-added-tax-invoice{
+                    .value-added-tax-invoice-form{
+                        .form-group{
+                            padding: 0 0 0 110px;
+                            padding: 0;
+                            width: 100%;
+                            .form-input{
+                                width: 100%;
+                            }
+                        }
+                        .invoice-btn{
+                            padding: 10px 0px;
+                            a{
+                                width: 100%;
+                                height: 42px;
+                                line-height: 42px;
+                                span{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .value-added-tax-invoice-content{
+                        > div {
+                            max-width: 90%;
+                            font-size: 12px;
+                            span{
+                                font-size: 12px;
+                            }
+                        }
+                        .invoice-modify-btn{
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .submit-button-box{
+        padding: 0 20px;
+        .payment-button{
+            width: 100%;
+        }
+        >div{
+            line-height: 14px;
+        }
+    }
+
+    /*游客*/
+    .order-submit-guest-content{
+        .delivery-address {
+            margin: 0 0 16px;
+            border-bottom: 1px solid #C8CBCC;
+            .order-title{
+                border-bottom: 1px dotted #C8CBCC;
+                padding-bottom: 17px;
+                margin-bottom: 12px;
+            }
+        }
+        .address-form-box{
+            .form-group{
+                &:nth-child(4){
+                   margin-bottom: 16px;
+                }
+                &:nth-child(5) {
+                   margin-bottom: 0px;
+                }
+            }
+        }
+    }
+
+/*提交后相关页面*/
+    .order-detail-box {
+        .order-detail-info {
+            .order-detail-title {}
+            .order-detail-text {
+                margin-left: 62px;
+            }
+            .order-detail-title,
+            .order-detail-text {
+                font-size: 12px;
+            }
+            .pc-none-mb{
+                display: inline-block;
+            }
+        }
+        .order-reminder {
+            font-size: 12px;
+            color: #f00;
+            /*margin-left: 62px;*/
+            display: block;
+        }
+    }
+
+    .checkout-pay-content{
+        width: 100%;
+        padding: 0 20px;
+        margin: 18px auto 30px;
+        .order-title{
+            padding: 0;
+        }
+        .order-line {
+            border-top: 1px solid #C7CBCC;
+            margin: 8px -20px 16px -20px;
+        }
+        .payment-text {
+            font-size: 12px;
+            line-height: 16px;
+            margin: 13px 0 6px 0;
+        }
+        // 支付成功
+        .view-detail-mes {
+            .successfully-detail {
+                display: inline-block;
+                font-size: 16px;
+                color: #FFFFFF;
+                width: 100%;
+                height: 42px;
+                line-height: 42px;
+                text-align: center;
+                text-decoration: none;
+                background: #0087D3;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+        .submit-button-box {
+            margin-bottom: 35px;
+            padding: 0;
+        }
+        .payment-method-content{
+            margin: 0;
+        }
+        .order-summary-box,
+        .checked-select-con{
+            padding: 0;
+            .submit-button-box{
+                margin-bottom: 0px;
+            }
+            .mob-commutator{
+                display: none;
+            }
+        }
+        .checkout-pay-confirmed{
+            .order-detail-info-box{
+                .order-detail-info .order-detail-title{
+                    font-size: 14px;
+                }
+            }
+            .price-box{
+                padding: 20px 0 0;
+                .order-detail-box{
+                    padding: 9px 0;
+                    border-top: 1px dotted #C8CBCC;
+                    .order-detail-title{
+                        font-size: 14px;
+                        line-height: 26px;
+                        float: left;
+                    }
+                    .order-detail-text{
+                        font-size: 14px;
+                        line-height: 26px;
+                        float: right;
+                    }
+                }
+                .all-detail-money{
+                    border-top: 1px dotted #C8CBCC;
+                    padding: 12px 0px 0;
+                    .order-detail-title{
+                        font-size: 14px;
+                        line-height: 20px;
+                        float: left;
+                    }
+                    .order-detail-text{
+                        font-size: 14px;
+                        line-height: 20px;
+                        float: right;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+    }
+    // 本月推荐
+    .pick-week {
+        background: #fff;
+        padding-bottom: 30px;
+        .style-guess-you-Iike {
+            margin-bottom: 0;
+            h3 {
+                padding-top: 0;
+            }
+        }
+    }
+/*提交后相关页面 end*/
+
+    /*hyper-launch*/
+    .hyper-launch-container{
+        .order-summary-box .order-price-classify {
+            padding: 0px 0 9px;
+        }
+        .header-tit-red{
+            font-size: 14px;
+            line-height: 18px;
+            padding: 0px 20px 18px;
+        }
+    }
+    .line-up-dialog{
+        .article-frame{
+            max-width: 800px;
+            width: 90%;
+            padding: 0;
+            margin: 0 auto;
+            .text-box{
+                p{
+                    span{
+                        display: initial;
+                    }
+                }
+            }
+        }
+    }
+
+    .mobile-empty-address{
+        display: block;
+        padding: 20px 0px 0;
+        border-top: 1px dotted #C8CBCC;
+        .add-address-btn{
+            a{
+                width: 100%;
+            }
+            .btn-black{
+                display: none;
+            }
+        }
+    }
+
+    // 通知
+        .relevant-description{
+            padding: 0 20px;
+            >div{
+                p{
+                    &.des-16{
+                       font-size: 12px;
+                       color: #4A4A4A;
+                       line-height: 16px;
+                       margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    // 通知 end
+    
+    .dropdown{
+        padding-bottom: 10px;
+    }
+    .checkout-pay-content{
+        .payment-method{
+            .order-detail-text-invoice{
+                margin-left: 62px;
+            }
+        }
+    } 
+    .order-detail-text-invoice{
+        margin-left: 62px;
+    }
+}
+
+@media (max-width:767px){
+    // 弹层
+    .dialog-payment{
+        .dialog-scroll-container{
+            .dialog{
+                width: 78%;
+                margin: 0 auto;
+                min-width: 295px;
+                .dialog-container{
+                    text-align: center;
+                    padding: 35px 10px;
+                    h4 {
+                        font-size: 18px;
+                        line-height: 18px;
+                    }
+                    p {
+                        line-height: 16px;
+                        margin: 15px 0 25px;
+                    }
+                    .dialog-btn-wrap{
+                        width: 100%;
+                        height: auto;
+                        padding: 0 30px;
+                        .btn {
+                            float: none;
+                            min-width: 100%;
+                            font-size: 16px;
+                        }
+                        .btn-blue{
+                            float: none;
+                            margin-bottom: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .checked-select-con.invoice-select{
+        .invoice-box{
+            .invoice-title{
+                margin-right: 10px;
+            }
+            .invoice-company {
+                margin: 0px 0 0 30px;
+                margin: 0px 0 0 24px;
+            }
+            .ordinary-invoice{
+                position: relative;
+                .invoice-title{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .select-box{
+                    width: 100%;
+                    padding: 0 0 0 80px;
+                }
+                .form-group{
+                    width: 100%;
+                    margin: 0;
+                    .form-input {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:359px){
+    .payment-method .order-title span {
+        margin-left: 0;
+    }
+    .distribution-method{
+        .distribution-list{
+            padding: 20px 10px 20px 55px;
+            .distribution-list-box {
+                width: 70%;
+            }
+        }
+    }
+    .checked-select-con.invoice-select{
+        .invoice-box{
+            .invoice-company {
+                margin: 6px 0 0;
+                width: 110px;
+            }
+        }
+    }
+
+}
+
+// 评论得积分
+@import "modules/evaluation-integral.less";
+.checkout-pay{
+    .evaluation-integral{
+        margin-top: 35px;
+        padding-top: 35px;
+        border-top: 1px dashed #C8CBCC;
+    }
+}
+@media (max-width: 767px){
+    .checkout-pay{
+        .evaluation-integral{
+            border-top: none;
+            margin-top: 0;
+        }
+    }
+}
+// 评论得积分 end
+
+
+
+
+// checkout 改版
+    @import "modules/checkout-new.less";
+    @import "modules/checkout-new-dialog-temp.less";
+
+    // address dialog
+    @import "modules/checkout-new-address-dialog.less";
+    // address dialog end
+
+
+    // address edit & add dialog
+    @import "modules/checkout-address-form-dialog.less";
+    // address edit & add dialog end
+
+
+    // Express dialog
+    @import "modules/checkout-new-express-dialog.less";
+    // Express dialog end
+
+
+    // payment dialog
+    @import "modules/checkout-select-payment-dialog.less";
+    // payment dialog end
+
+
+    // coupon & code & code 2 dialog
+    @import "modules/checkout-new-coupon-code-dialog.less";
+    // coupon & code & code 2 endianness dialog end
+
+	// 空地址
+	@import "modules/checkout-empty-address.less";
+	// 空地址 end
+
+// checkout 改版 end
+
+// 购物车小程序提示
+@media (max-width: 1024px){
+    .wx-hint{
+        display: block;
+        position: relative;
+        p{
+            font-size: 12px;
+            color: #0286CD;
+            padding: 11px 26px 11px 10px;
+            min-height: 36px;
+            display: inline-block;
+            position: relative;
+        }
+       .e-close-btn{
+           position: absolute;
+           width: 30px;
+		   height: 36px;
+		   top:0;
+           right: 0;
+           line-height: 36px;
+           .icon-close{
+            position:relative;
+            top: 4px;
+            left: 9px;
+            width:1px;
+            height:15px;
+            background: #333;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            display: inline-block;
+            line-height: 36px;
+            &:after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width:1px;
+                height:15px;
+                background: #333;
+                -webkit-transform: rotate(270deg);
+                -moz-transform: rotate(270deg);
+                -o-transform: rotate(270deg);
+                -ms-transform: rotate(270deg);
+                transform: rotate(270deg);
+            }
+        }
+       }
+
+    }
+    .promotion-code{
+        display: block;
+        padding: 10px 0px 10px 0px;
+		width: 100%;
+		padding: 0px;
+        p{
+            font-size: 12px;
+            color: #000000;
+            padding: 0px 20px;
+            min-height: 32px;
+            line-height: 32px;
+            background: #F9F9F9;
+			padding: 7px 20px;
+			line-height: 18px;
+        }
+    }
+}
+
+//购物车添加一个编辑
+.order-summary-box {
+	.check-product-list {
+		.viewport {
+			.thumbnail {
+				.summary-list-box {
+					.summary-list-item {
+						.summary-list-right{
+							.editor-custom{
+								margin-bottom: 0px;
+								font-size: 12px;
+								color: #0286CD;
+								float: right;
+								line-height: 18px;
+								padding: 0px 11px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px){
+	.checkout-new-container {
+		.order-list-box {
+			.order-summary-box {
+				.check-product-list {
+					.viewport {
+						.thumbnail {
+							.summary-list-box {
+								.summary-list-item {
+									.summary-list-right {
+										.editor-custom{
+											padding: 0px 10px 10px 10px;
+											font-size: 12px;
+											color: #0286CD;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+//7-13 checkout地址逻辑优化
+.delivery-address{
+    .payment-method-con{
+        margin-bottom: 20px;
+        .order-title{
+            display: inline-block;
+        }
+        .delivery-address-top{
+            display: inline-block;
+            float: right;
+            margin-top: 6px;
+            .add-address-link{
+                &:hover{
+                   color: #0280C3;
+                }
+            }
+        }
+    }
+}
+
+.address-form-box{
+    .form-group{
+        .control-label{
+            .font-icon-red{
+                color: red;
+                display: inline-block;
+            }
+        }
+    } 
+} 
+
+@media (max-width:1024px){
+    .address-form-dialog{
+        .dialog-container{
+            .address-form-container{
+                .form-group{
+                    .control-label{
+                        .font-icon-red{
+                            color: red;
+                            display: inline-block;
+                        }
+                    }
+                } 
+            } 
+        } 
+    } 
+    .empty-address{
+        .address-form-container {
+            margin-top: -20px;
+        }
+    } 
+    .font-icon-red{
+        display: inline-block;
+        color: red;
+    }
+}
+//checkout地址逻辑优化 end
+
+//完善信息增加50积分
+.evaluation-integral{
+    .title-new{
+        margin-bottom: 25px;
+    }
+    .title-new-black{
+        font-size: 14px;
+        color: #000000;
+        line-height: 14px;
+        margin-left: 34px;
+        a{
+            &:hover{
+                color: #000000;
+            }
+        }
+    }
+    .title-new-grey{
+        font-size: 14px;
+        color: #888888;
+        line-height: 18px;
+        margin-left: 34px;
+        a{
+            color: #888888;
+            &:hover{
+                color: #888888;
+            }
+        }
+    }
+    .title-new-black-one{
+        margin-bottom: 10px;
+    }
+    .title-new-black-two{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}   
+.evaluation-integral{
+    .icon-comments-new{
+        background-position: -193px -588px;
+    }
+}
+@media (max-width:1024px),
+screen and (-webkit-min-device-pixel-ratio:2),
+screen and (min--moz-device-pixel-ratio:2),
+screen and (-o-min-device-piratio:200/100),
+screen and (min-device-pixel-ratio:2) {
+    .evaluation-integral{
+        .icon-comments-new{
+            background-position: -380px -722px;
+        }
+    }
+}
+@media (max-width:1024px){
+    .evaluation-integral{
+        .title-new{
+            margin-bottom: 20px;
+        }
+        .title-new-black-two{
+            line-height: 18px;
+            margin-bottom: 12px;
+        }
+        .title-new-black{
+            font-size: 14px;
+        }
+        .title-new-grey{
+            font-size: 12px;
+            line-height: 16px;
+        }
+    } 
+}
+//完善信息增加50积分  end
+
+.distribution-method .order-title{
+	margin-bottom: 20px;
+}
+
+
+//8-6 AD2-1661 保存到地址簿
+.address-form-box{
+    .checked-select-con-bottom{
+        margin-bottom: 10px;
+    }
+}
+.address-form-dialog{
+    .dialog-container{
+        .address-form-container{
+            .form-group-block{
+                display: inline-block;
+                width: 49%;
+            }
+        }
+    } 
+} 
+//保存到地址簿 end
+
+//checkout 优惠券模块样式优化  AD2-1581 8-13
+.order-summary-box{
+    .coupon-box{
+        .coupon-content{
+            .coupon-select{
+                .dropdown{
+                    .sub-menu{
+                        .viewport{
+                            .overview{
+                                ul{
+                                    padding: 8px 0 20px;
+                                    li{
+                                        height: 42px;
+                                        line-height: 42px;
+                                        // margin-bottom: 14px;
+                                        a{
+                                            div{
+                                                display: inline-block;
+                                                vertical-align: middle;
+                                                width: 180px;
+                                                span{
+                                                    // display: inline-block;
+                                                    line-height: 12px;
+                                                    float: left;
+                                                    font-size: 12px;
+                                                    font-family: "PingFangSC-Regular", "adihrg", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+                                                    &:nth-child(1){
+                                                        margin-bottom: 4px;
+                                                        color: #000000;
+                                                    }
+                                                    &:nth-child(2){
+                                                        color: #888888;
+                                                    }
+                                                }
+                                            }
+                                            i{
+                                                margin-top: 0;
+                                            }
+										}
+										&.is-active{
+											a{
+												.icon-checked{
+													&:before{
+														margin-top: -45px;
+													}
+												}
+											}
+										} 
+                                    }
+                                    li{
+                                        &.coupon-btn{
+                                            margin: 20px 0 0;
+                                            height: 32px;
+                                            line-height: 32px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//checkout 优惠券模块样式优化  end
+
+//添加banner
+.checkout-pay-content{
+    .order-title-img{
+        margin-top: 30px;
+    }
+}
+.form-group-block{
+    display: inline-block !important;
+    width: 49% !important;
+}

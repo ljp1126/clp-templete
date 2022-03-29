@@ -1,0 +1,257 @@
+
+// 公共变量、样式
+@import "common/variables.less";
+
+/* .article .btn-black-market span{
+font-family:@fonts-common-suffix;
+font-family:@fonts-adihdb,@fonts-common-suffix;
+font-family:@fonts-adihbdit,@fonts-common-suffix;
+font-family:@fonts-adihrg,@fonts-common-suffix;
+font-family:@fonts-adihrgit,@fonts-common-suffix;
+font-family:@fonts-adineueproblack,@fonts-common-suffix;
+font-family:@fonts-adineueprobold,@fonts-common-suffix;
+font-family:@fonts-adineueprolight,@fonts-common-suffix;
+} */
+.article .pos-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+}
+.large-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    >div{
+        position: absolute;
+        overflow: hidden;
+    }
+    .large-item1{
+        width: 15.66%;
+        top: 17%;
+        left: 8.5%;
+    }
+    .large-item2{
+        left: 25.4%;
+        width: 20.73%;
+        top: 9.2%;
+    }
+    .large-item3{
+        width: 26.69%;
+        left: 47.58%;
+        top: 0.7%;
+    }
+    .large-item4{
+        width: 15.66%;
+        left: 75.4%;
+        top: 17%;
+    }
+    .large-item5{
+        width: 15.66%;
+        top: 41%;
+        left: 13.8%;
+    }
+    .large-item6{
+        width: 26.69%;
+        top: 41.5%;
+        left: 30.6%;
+    }
+    .large-item7{
+        width: 21%;
+        top: 41.4%;
+        left: 58.6%;
+    }
+}
+.last-article{
+    .pic-p{
+        .span-box{
+            position: absolute;
+            width:100%;
+            height: 46%;
+            top: 14%;
+            span{
+                float: left;
+                display: block;
+                height:100%;
+                cursor: pointer;
+            }
+        }
+        .scope1{
+            width: 19.85%;
+            left: 0;
+        }
+        .scope2{
+            width: 29.7%;
+            left:19.85%;
+        }
+        .scope3{
+            width: 29.7%;
+            right: 20.75%;
+        }
+        .scope4{
+            width: 20.75%;
+            right: 0;
+        }
+        .btn{
+            position: relative;
+            width:100%;
+            cursor: pointer;
+            font-size: 30px;
+            height: 76px;
+            line-height: 74px;
+             img {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                position: relative;
+                top: -3px;
+                left: 20px;
+            }
+            &:hover{
+                img {
+                  left: 23px;
+                }
+            }
+        }
+    }
+    .scroll-box{
+        display: none;
+        position: absolute;
+        width: 32%;
+        min-height: 572px;
+        top: 0;
+        .swiper-container{
+            width:100%;
+            min-height: 572px;
+        }
+        .swiper-slide{
+            position: absolute;
+            display: none;
+        }
+    }
+}
+.swiper-button-prev,.swiper-button-next{
+    display: none;
+}
+@media (max-width:1300px){
+    .last-article .scroll-box,.last-article .scroll-box .swiper-container{
+        min-height: 407px;
+    }
+}
+@media (max-width:1024px){
+    .last-article{
+        .pic-p{
+            .btn{
+                height: 58px;
+                line-height: 56px;
+                font-size: 23px;
+                img{
+                    width: 24px;
+                    height: 24px;
+                    left: 16px;
+                    top:-2px;
+                }
+                &:hover{
+                    img{
+                        left: 16px;
+                    }
+                }
+            }
+        }
+        .scroll-box{
+            display: block;
+            width: 100%;
+            min-height: 0;
+            .swiper-container{
+                width: 62.6%;
+                min-height: 0;
+            }
+            .swiper-wrapper{
+                width: 100%;
+            }
+            .swiper-slide{
+                position: static;
+                display: block;
+            }
+        }
+    }
+    .swiper-button-prev,.swiper-button-next{
+        display: block;
+        background: none;
+        width: 60px;
+        height: 100px;
+        margin-top: -50px;
+        i{
+            position: absolute;
+            display: inline-block;
+            width: 46px;
+            height: 80px;
+            top: 50%;
+            margin-top: -20px;
+            background: url("../../static/images/lp-mix-eno/arr-icon.png") no-repeat;
+        }
+    }
+    .swiper-button-prev{
+        left: 40px;
+    }
+    .swiper-button-next{
+        right: 40px;
+    }
+    .swiper-button-prev i{
+        left: 0;
+        background-position: 0 0;
+    }
+    .swiper-button-next i{
+         right: 0;
+        background-position: 0 -80px;
+    }
+}
+@media (max-width:749px){
+    .last-article{
+        .pic-p{
+            .btn{
+                height: 27px;
+                line-height: 26px;
+                font-size: 12px;
+                img{
+                    width: 12px;
+                    height: 12px;
+                    left: 8px;
+                }
+                &:hover{
+                    img{
+                        left: 8px;
+                    }
+                }
+            }
+        }
+    }
+    .swiper-button-prev{
+        left: 20px;
+    }
+    .swiper-button-next{
+        right: 20px;
+    }
+    .swiper-button-prev,.swiper-button-next{
+        i{
+            width: 23px;
+            height: 40px;
+            background: url("../../static/images/lp-mix-eno/arr-icon.png") no-repeat;
+            background-size: 23px 80px;
+        }
+    }
+    .swiper-button-prev i{
+        background-position: 0 0;
+    }
+    .swiper-button-next i{
+        background-position: 0 -40px;
+    }
+}

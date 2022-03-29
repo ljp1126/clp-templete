@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title>guest-order</title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" href="css/guest-order.css" />
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="js/login.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+			<!-- 内容部分 -->
+			<section class="container">
+				<article class="article article-breadcrumb none-sm">
+					<div class="breadcrumb">
+						<ul class="list-inline">
+							<li><a href="#"><i class="icon icon-round-lightgray-lefts"></i>返回</a></li>
+							<li class="divider">丨</li>
+							<li><a href="/">首页</a></li>
+							<li class="divider">/</li>
+							<li><a href="/">订单追踪</a></li>
+						</ul>
+					</div>
+				</article>
+				<article class="article titl none block-sm">
+					<div>
+						<p>订单追踪</p>
+					</div>
+				</article>
+							
+				<article class="article article-reset-password order-number">
+					<div class="order-content float-clearfix">
+						<div class="order-left">
+							<div class="login-box">	
+								<p class="one-side-email">请输入您的订单编号和手机号</p>
+								<p class="look">如果您是adiCLUB会员请在我的账户订单详情页面查看</p>
+								<div class="login-detial">
+									<!--<span>新密码</span>-->
+									<div class="form-input is-error">
+										<input type="password" placeholder="订单编号"/>
+										<div class="msg-block">
+											<i class="icon msg-icon"></i>
+											<span>您输入的订单编号不存在</span>
+										</div>
+									</div>
+									<!--<span>确认新密码</span>-->
+									<div class="form-input">
+										<input type="password" placeholder="手机号"/>
+										<div class="msg-block">
+											<i class="icon msg-icon"></i>
+											<span>手机号错误</span>
+										</div>
+									</div>
+									<div class="login-btn float-clearfix">
+										<a class="btn btn-blue btn-have-arrow"><span>查询订单</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+	
+			</section>
+			<%include _includes/modules/footer-no-back-top.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		</div>
+	</body>
+</html>

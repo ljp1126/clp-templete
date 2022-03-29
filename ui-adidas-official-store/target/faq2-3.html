@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" type="text/css" href="css/faq.css">
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="js/faq.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+			<!-- 内容部分 -->
+			<section class="container">
+				<article class="article faq-article article-faq-width">
+					<div class="search-page-content">
+						<!-- 模块一 -->
+						<div class="help-container help-categories-content">
+							<!-- 面包屑 -->
+							<div class="help-content">
+								<div class="breadcrumb">
+								    <ul class="list-inline">
+								        <li><a href="/" class="reture-text"><i class="icon icon-reture"></i>返回</a></li>
+								        <li class="vertical-line none-sm">|</li>
+								        <li class="none-sm"><a href="/">首页</a></li>
+								        <li class="slash none-sm">/</li>
+								        <li class="hele-core none-sm">帮助中心</li>
+								    </ul>
+								</div>
+								<!-- 使用什么快递配送 -->
+								<div class="contentasset-container">
+									<div class="contentasset border-bot-none return-goods-cont">
+										<h2>我是否可以无理由退货吗？</h2>
+										<div class="contentasset-cont">
+											<p>对于在阿迪达斯官方商城购买的商品，在保证商品未经使用以及穿着、商品吊牌完好、不影响二次销售的情况下，7日内（以顾客签收日期为准）可予以办理无理由退货。无理由退货所产生的退仓运费需您自行承担。（miadidas定制商品、及其他特殊说明的商品无法进行7天无理由退货）</p>
+											<p>本公司拒收以平邮、挂号信及到付形式的快递所寄回的退件，尽请谅解！</p>
+											<p>miadidas商品专门为您制造，非质量问题不可退货，如有质量问题，烦请联系客服。</p>
+										</div>
+										<p class="reture-title">商品退货流程：</p>
+										<div class="reture-pro-cont">
+											<img class="events-changeSrc" src="images/blank.gif"
+												data-image='{
+												"standard":{"high":"", "normal":"images/faq/pic-retrun-pro.png"},
+												"medium":{"high":"", "normal":"images/faq/pic-retrun-pro@2x.png"},
+												"small":{"high":"images/faq/pic-retrun-pro@2x.png", "normal":"images/faq/small-retrun-pro.png"}
+												}'/>
+												<div class="envens-img-enlarge img-enlarge none block-sm"><i class="icon icon-enlarge"></i></div>
+										</div>
+										<p class="reture-title mb-20">完成退货申请后，请依照以下程序处理，否则可能无法办理退货</p>
+										<div class="service-cont">
+											<ul class="contentasset-cont-box">
+												<li>依照随货寄出的商品清单，核对并填写退货原因和数量。若商品清单丟失，请准备一张空白纸张，并填写顾客姓名、订单编号、所退商品货号、数量及原因等信息，</li>
+												<li>将填写好的商品清单（复印有效）与商品一同退回。并在退回商品包裹的运单上注明原订单号，</li>
+												<li>如巳开据发票，请将发票一并退回；对于已开据发票，而在退货时无法提供发票的，您的退货退款申请可能遭拒，</li>
+												<li>为了保障您货物的安全，请您在退货时务必选择可以让我们开箱验货的快递公司，</li>
+												<li>我们在收到退货后,根据商品清单核查退货信息。核查无误后，我们将确认退款;如退货不符合退货要求，我们将联系消费者，并以到付形式的快递将货品退还给消费者</li>
+												<li>我们将会在收到您的退货后及时确认您的退款申请。由于公司财务流程，我们将于10-15个工作日内将退款退入您的帐户，退款实际到帐时间以参考各银行操作时间为准，敬请谅解。</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 模块二 -->
+						<div class="help-myaccount help-container">
+							<%include _includes/faq-query-order.html %>
+						</div>
+					</div>
+				</article>
+			</section>
+
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+			<script  type="text/template" id="reture-goods">
+				<div class="dialog" >
+					<div class="dialog-container notice-container reture-goods-container">
+						<div class="reture-goods-cont">
+							<div class="notice-font">商品退货流程</div>
+							<div class="reture-goods-scroller-container">
+								<div>
+									<div class="reture-goods-scroller-cont events-par-iscroll">
+										<div class="scroller-wrap">
+											<div>
+												<img src="images/faq/pic-retrun-pro@2x.png">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="dialog-close-box"><i class="icon icon-close dialog-close"></i></div>
+				</div>
+			</script>
+		</div>
+	</body>
+</html>

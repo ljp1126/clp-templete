@@ -1,0 +1,110 @@
+.article {
+	position: relative;
+
+	img {
+		width: 100%;
+	}
+
+	.btn {
+		min-width: auto;
+	}
+	.info{
+		position: absolute;
+		display: flex;
+		bottom: 4%;
+		width:100%;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.section1{
+	.btn1 {
+		position: absolute;
+		left: 22.6%;
+     bottom: 5%;
+	}
+	.btn2 {
+		position: absolute;
+		left: 48%;
+		bottom: 5%;
+	}
+	.btn3 {
+		position: absolute;
+		left: 73%;
+		bottom: 5%;
+	}
+}
+
+.section2{
+	.btn1 {
+		position: absolute;
+		left: 14.5%;
+     bottom: 12%;
+	}
+	.btn2 {
+		position: absolute;
+		left: 37%;
+		bottom: 12%;
+	}
+	.btn3 {
+		position: absolute;
+		left: 57.5%;
+		bottom: 12%;
+	}
+
+	.btn4 {
+		position: absolute;
+		left: 78%;
+		bottom: 12%;
+	}
+}
+@media(max-width:768px) {
+	.article{
+		.info{
+		  bottom:2%;
+		}
+		.btn{
+			height: 40px;
+			line-height: 40px;
+			padding: 0 10px;
+			.gl-icon {
+			 line-height: 40px;
+			 height: 40px;
+		 }
+		}
+	}
+	.section1{
+		.btn1 {
+			left: 36%;
+	     bottom: 58%;
+		}
+		.btn2 {
+			left: 35%;
+			bottom: 41%;
+		}
+		.btn3 {
+			left: 67%;
+			bottom: 45%;
+		}
+	}
+
+	.section2{
+		.btn1 {
+			left: 37.5%;
+	     bottom: 61%;
+		}
+		.btn2 {
+			left: 67%;
+			bottom: 46%;
+		}
+		.btn3 {
+			left: 32%;
+			bottom: 46%;
+		}
+
+		.btn4 {
+			left: 63%;
+			bottom: 37%;
+		}
+	}
+}

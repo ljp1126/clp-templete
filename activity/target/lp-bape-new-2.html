@@ -1,0 +1,491 @@
+<html>
+<head>
+	<%include _includes/meta.html %>
+	<title>bape</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+		<style type="text/css">
+			.pos-txt-box1 p{
+				line-height: 48px;
+			}
+			.pic-p {
+			  position: relative;
+			}
+			.pic-p img {
+			  display: block;
+			  width: 100%;
+			}
+			.pos-txt-box1 {
+			  position: absolute;
+			  width: 100%;
+			  height: 100%;
+			  top: 0;
+			  left: 0;
+			  color: #fff;
+			  text-align: center;
+			  padding: 3% 0 5.2%;
+			  z-index: 1;
+			}
+			.pos-txt-box1 h3 {
+			  position: relative;
+			  font-size: 44px;
+			  line-height: 66px;
+			  padding-bottom: 2.1%;
+			  max-width: 936px;
+			  margin: 0 auto 2.1%;
+			  font-family: "adineueprobold", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+			}
+			.pos-txt-box1 h3:after {
+			  position: absolute;
+			  display: block;
+			  content: "";
+			  left: 50%;
+			  bottom: 0;
+			  width: 146px;
+			  margin-left: -73px;
+			  border-top: 3px solid #fff;
+			}
+			.pos-txt-box1 p {
+			  max-width: 55.57%;
+			  margin: 0 auto;
+			  font-size: 24px;
+			  line-height: 44px;
+			}
+			.hover-scale {
+			  overflow: hidden;
+			}
+			.hover-scale img {
+			  display: block;
+			  width: 100%;
+			}
+			.hover-scale .box-left,
+			.hover-scale .box-right {
+			  position: relative;
+			  width: 50%;
+			  float: left;
+			  overflow: hidden;
+			}
+			.hover-scale .box-left {
+			  background-color: #001711;
+			}
+			.hover-scale .box-right {
+			  background-color: #0c0d10;
+			}
+			.hover-scale .btn-black,
+			.coupon-txt .btn-black {
+			  position: absolute;
+			  width: 172px;
+			  font-size: 22px;
+			  height: 58px;
+			  line-height: 52px;
+			  bottom: 10%;
+			  margin-left: -86px;
+			  border: 3px solid #fff;
+			  background-color: transparent;
+			  font-family: "adineueprolight", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+			}
+			.hover-scale .btn-black:hover,
+			.coupon-txt .btn-black:hover{
+				background: transparent;
+			}
+			.hover-scale .box-right .btn-black{
+			  left: 40%;
+			}
+			.hover-scale .box-left .btn-black{
+			  left: 60%;
+			}
+			.coupon-box {
+			  background-color: #080809;
+			  min-height: 398px;
+			}
+			.coupon-box .coupon-txt-box {
+			  position: relative;
+			  margin: 0 auto;
+			  max-width: 1300px;
+			  padding-bottom: 36px;
+			  padding-left: 526px;
+			}
+			.coupon-box .coupon-txt {
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  padding: 0 70px 0 136px;
+			}
+			.coupon-box .coupon-txt p {
+			  font-size: 22px;
+			  line-height: 32px;
+			  color: #fff;
+			}
+			.coupon-box .coupon-txt p span {
+			  color: #e1432a;
+			  text-decoration: underline;
+			  font-family: "adihdb", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+			}
+			.coupon-box .coupon-txt .coupon-price {
+			  width: 284px;
+			}
+			.coupon-box .coupon-txt .btn-black {
+			  position: static;
+			  width: 285px;
+			  margin-left: 0;
+			}
+			.coupon-box img {
+			  display: block;
+			  width: 100%;
+			}
+			.coupon-box .coupon-img-box {
+			  width: 100%;
+			}
+			.pos-txt-box1 {
+			    padding-top: 8%;
+				}
+			@media (max-width: 1600px) {
+			  .pos-txt-box1 h3{
+					font-size: 42px;
+					line-height: 60px;
+				}
+				.pos-txt-box1 p{
+					font-size: 22px;
+    			line-height: 42px;
+				}
+			}
+			@media (max-width: 1580px) {
+			  .pos-txt-box1 {
+			    padding-top: 8%;
+				}
+				.pos-txt-box1 h3{
+					font-size: 40px;
+					line-height: 58px;
+				}
+				.pos-txt-box1 p{
+					font-size: 20px;
+    			line-height: 40px;
+				}
+			}
+			@media (max-width: 1460px) {
+			  .pos-txt-box1 h3{
+					font-size: 38px;
+					line-height: 56px;
+				}
+				.pos-txt-box1 p{
+					font-size: 18px;
+    			line-height: 38px;
+				}
+			}
+			@media (max-width: 1400px) {
+			  .pos-txt-box1 {
+			    padding-top: 2%;
+			  }
+			}
+			@media (max-width: 1314px) {
+			  .pos-txt-box1 h3 {
+			    font-size: 36px;
+			    line-height: 56px;
+			  }
+			  .pos-txt-box1 p {
+			    font-size: 18px;
+			    line-height: 36px;
+			  }
+			}
+			@media (max-width: 1300px) {
+			  .pos-txt-box1 {
+			    padding-top: 3%;
+			  }
+			  .pos-txt-box1 h3 {
+			    font-size: 34px;
+			    line-height: 54px;
+			  }
+			  .pos-txt-box1 p {
+			    font-size: 16px;
+			    line-height: 34px;
+			  }
+			}
+			@media (max-width: 1170px) {
+			  .pos-txt-box1 h3 {
+			    font-size: 32px;
+			    line-height: 52px;
+			  }
+			  .pos-txt-box1 p {
+			    font-size: 14px;
+			    line-height: 32px;
+			  }
+			}
+			@media (max-width: 1024px) {
+			  .pos-txt-box1 {
+			    padding: 14% 6.4% 5.2%;
+			  }
+			  .pos-txt-box1 h3 {
+			    font-size: 32px;
+			    line-height: 60px;
+			    padding-bottom: 6.9%;
+			    max-width: 100%;
+			    margin-bottom: 7.5%;
+			  }
+			  .pos-txt-box1 p {
+			    max-width: 100%;
+			    font-size: 26px;
+			    line-height: 46px;
+			  }
+			  .hover-scale .box-left,
+			  .hover-scale .box-right {
+			    float: none;
+			    width: 100%;
+			  }
+			  .hover-scale .btn-black,
+			  .coupon-txt .btn-black {
+			    width: 143px;
+			    font-size: 20px;
+			    height: 48px;
+			    line-height: 42px;
+			    bottom: 7%;
+			    margin-left: -71px;
+			  }
+			  .hover-scale .btn-black span:after,
+			  .coupon-txt .btn-black span:after {
+			    top: 5px;
+			  }
+			  .coupon-box {
+			    min-height: 0;
+			  }
+			  .coupon-box .coupon-txt-box {
+			    max-width: 100%;
+			    padding-bottom: 300px;
+			    padding-left: 0;
+			  }
+			  .coupon-box .coupon-txt {
+			    width: 100%;
+			    text-align: center;
+			    top: auto;
+			    padding: 0;
+			    bottom: 30px;
+			    background-color: #000;
+			  }
+			  .coupon-box .coupon-txt p {
+			    background-color: #080809;
+			  }
+			  .coupon-box .coupon-txt .coupon-price {
+			    width: 238px;
+			    margin: 0 auto;
+			  }
+			  .coupon-box .coupon-txt .coupon-p {
+			    padding-bottom: 7px;
+				}
+				.hover-scale .box-right .btn-black{
+					left: 50%;
+				}
+				.hover-scale .box-left .btn-black{
+					left: 50%;
+				}
+			}
+			@media (max-width: 749px) {
+			  .hover-scale .btn-black,
+			  .coupon-txt .btn-black {
+			    height: 30px;
+			    line-height: 28px;
+			    font-size: 13px;
+			    border-width: 1px;
+			  }
+			  .hover-scale .btn-black span:after,
+			  .coupon-txt .btn-black span:after {
+			    top: -1px;
+			  }
+			  .pos-txt-box1 {
+			    padding: 61px 24px 0;
+			  }
+			  .pos-txt-box1 h3 {
+			    font-size: 16px;
+			    line-height: 30px;
+			    padding-bottom: 32px;
+			    margin-bottom: 25px;
+			  }
+			  .pos-txt-box1 h3:after {
+			    width: 73px;
+			    margin-left: -36px;
+			    border-width: 1px;
+			  }
+			  .pos-txt-box1 p {
+			    max-width: 316px;
+			    font-size: 13px;
+			    line-height: 23px;
+			  }
+			  .coupon-box .coupon-txt-box {
+			    padding-bottom: 176px;
+			    padding-left: 0;
+			  }
+			  .coupon-box .coupon-txt p {
+			    font-size: 12px;
+			    line-height: 16px;
+			  }
+			  .coupon-box .coupon-txt .coupon-price {
+			    width: 120px;
+			  }
+			  .coupon-box .coupon-txt .btn-black {
+			    position: static;
+			    width: 170px;
+			  }
+			  .coupon-box img {
+			    display: block;
+			    width: 100%;
+			  }
+			  .coupon-box .coupon-img-box {
+			    width: 100%;
+			  }
+			}
+			@media (max-width: 349px) {
+			  .pos-txt-box1 {
+			    padding: 3% 0 0;
+			  }
+			  .pos-txt-box1 h3 {
+			    padding-bottom: 3.45%;
+					margin-bottom: 3.75%;
+					line-height: 26px;
+			  }
+			  .pos-txt-box1 p {
+					padding: 0 24px;
+					font-size: 12px;
+			  }
+			}
+			.hover-scale .box-right{
+				width: 49.95%;
+			}
+			.hover-scale .box-left{
+				width: 50.05%;
+			}
+			.hover-scale .btn-white{
+				position: absolute;
+				width: 172px;
+				font-size: 22px;
+				height: 58px;
+				line-height: 52px;
+				bottom: 10%;
+				margin-left: 0px;
+				border: 3px solid #000;
+				background-color: transparent;
+				font-family: "adineueprolight", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+				left: 50%;
+				transform: translateX(-50%);
+				color: #000;
+			}
+			.hover-scale .btn-white:hover{
+				background-color: transparent;
+			}
+			.hover-scale .box-left .btn-black{
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			@media (max-width: 1024px) {
+				.hover-scale .box-right{
+					width: 100%;
+				}
+				.hover-scale .box-left{
+					width: 100%;
+				}
+				.hover-scale .box-right .btn-black{
+					transform: translateX(-50%);
+				}
+				.hover-scale .btn-black{
+					margin-left: 0;
+				}
+				.hover-scale .btn-white{
+					height: 30px;
+					line-height: 28px;
+					font-size: 13px;
+					border-width: 1px;
+					width: 143px;
+					bottom: 7%;
+				}
+				.hover-scale .btn-white span:after{
+					top: 1px;
+				}
+			}
+
+		</style>
+			<!-- 模块一-->
+			<article class="article">
+				<div class="pic-p">
+					<img class="" src="https://img.adidas.com.cn/images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/NOV/BBC/img-p-01.jpg"},
+						"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/NOV/BBC/img-m-01.jpg"},
+						"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/NOV/BBC/img-m-01.jpg"}
+					}' />
+				</div>
+			</article>
+			<!-- 模块二-->
+			<article class="article">
+				<div class="pic-p">
+					<img class="" src="https://img.adidas.com.cn/images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/NOV/BBC/img-p-02.jpg"},
+						"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/NOV/BBC/img-m-02.jpg"},
+						"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/NOV/BBC/img-m-02.jpg"}
+					}' />
+					<div class="pos-txt-box1">
+						<h3>adidas Originals by Billionaire Boys Club<br />全新设计展现</h3>
+						<p>与adidas Originals合作无间的Pharrell Williams再次以旗下品牌Billionaire Boys Club之名联手打造全新2018秋冬联名企划。双方打破原有联名局限，重新设计Hu NMD 和 Tennis Hu两款备受关注的鞋款。该系列以传统大学制服的条纹图案为灵感，采用鲜黄、深蓝以及红色间条作鞋身底色，融合Primeknit针织材质，打造良好视觉效果及穿着体验。</p>
+					</div>
+				</div>
+			</article>
+			<!-- 模块三-->
+			<article class="article hover-scale">
+				<div class="box-right events-scale none-sm">
+					<img src="https://img.adidas.com.cn/resources/activePage/NOV/BBC/img-p-04.jpg">
+					<a href="https://www.adidas.com.cn/item/BB9544?locale=zh_CN" class="btn btn-white btn-have-arrow btn-have-opacity">
+						<span>立即购买</span>
+					</a>
+				</div>
+				<div class="box-left events-scale none-sm">
+					<img src="https://img.adidas.com.cn/resources/activePage/NOV/BBC/img-p-05.jpg">
+					<a href="https://www.adidas.com.cn/item/BB9549?locale=zh_CN" class="btn btn-white btn-have-arrow btn-have-opacity">
+						<span>立即购买</span>
+					</a>
+				</div>
+				<div class="box-right events-scale none block-sm">
+					<img src="https://img.adidas.com.cn/resources/activePage/NOV/BBC/img-m-05.jpg">
+					<a href="https://www.adidas.com.cn/item/BB9549?locale=zh_CN" class="btn btn-black btn-have-arrow btn-have-opacity">
+						<span>立即购买</span>
+					</a>
+				</div>
+				<div class="box-left events-scale none block-sm">
+					<img src="https://img.adidas.com.cn/resources/activePage/NOV/BBC/img-m-04.jpg">
+					<a href="https://www.adidas.com.cn/item/BB9544?locale=zh_CN" class="btn btn-black btn-have-arrow btn-have-opacity">
+						<span>立即购买</span>
+					</a>
+				</div>
+			</article>
+			<!-- 模块四-->
+			<article class="article">
+				<div class="pic-p">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/NOV/BBC/img-p-03.jpg"},
+							"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/NOV/BBC/img-m-03.jpg"},
+							"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/NOV/BBC/img-m-03.jpg"}
+						}' />
+				</div>
+			</article>
+			<!-- 模块五-->
+			<script type="text/javascript">
+				$(function () {
+					var _w = $.spice.getWindowWidth();
+					if (_w > 1024) {
+						// 图片hover放大
+						$('.events-scale img').on('mouseenter', function () {
+							$(this).css({ 'transition': 'transform 7.5s linear', 'transform': 'scale(1.3)' });
+						})
+
+						// 图片hover复原
+						$('.events-scale img').on('mouseleave', function () {
+							$(this).css({ 'transition': 'none', 'transform': 'none' });
+						})
+					}
+				});
+			</script>
+		</section>
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+</html>

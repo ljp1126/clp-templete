@@ -1,0 +1,141 @@
+@charset "UTF-8";
+.article img {
+  width: 100%;
+}
+.article-main {
+  width: 100%;
+}
+.article-main .main-wrapper {
+  width: 70%;
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 20px 0 60px 0;
+}
+.article-main .main-wrapper .main-con {
+  width: 70%;
+  padding-left: 10%;
+  max-width: 460px;
+}
+.article-main .main-wrapper .main-con .title {
+  font-family: "AdineuePRO", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+.article-main .main-wrapper .main-con .form-input .gl-input__field {
+  height: 50px;
+}
+.article-main .main-wrapper .main-con .form-input .gl-input__label {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #888888;
+  position: absolute;
+  pointer-events: none;
+  text-transform: uppercase;
+  left: 11px;
+  top: 18px;
+  transition: all .2s ease;
+}
+.article-main .main-wrapper .main-con .form-input .gl-input__label.gl-input__label--hoisted {
+  font-size: 12px;
+  top: -8px;
+  left: 17px;
+  margin-top: 0;
+  padding: 2px 5px 1px;
+  background-color: #fff;
+}
+.article-main .main-wrapper .main-con .form-input .gl-input__label.is-needed::after {
+  content: '*';
+  color: red;
+}
+.article-main .main-wrapper .main-con .checkBox {
+  margin-top: 40px;
+}
+.article-main .main-wrapper .main-con .checkBox .msg-block span {
+  padding-left: 25px;
+}
+.article-main .main-wrapper .main-con .checkBox .form-remeber {
+  align-items: center;
+}
+.article-main .main-wrapper .main-con .checkBox .icon-checked {
+  margin-right: 12px;
+}
+.article-main .main-wrapper .main-con .checkBox .icon-checked.is-active::before {
+  margin-top: 1px;
+}
+.article-main .main-wrapper .main-con .btn-con {
+  margin-top: 30px;
+}
+.article-main .main-wrapper .main-con .label-text {
+  font-size: 12px;
+  color: #666;
+  line-height: 18px;
+  margin-top: 28px;
+}
+.article-main .main-wrapper .main-con .label-text a {
+  color: #0e0ecc;
+  text-decoration: underline;
+}
+@media (max-width: 1024px) {
+  .article-main .main-wrapper {
+    width: 90%;
+    padding: 45px 0;
+  }
+  .article-main .main-wrapper .main-con {
+    width: 100%;
+    padding-left: 0;
+  }
+  .article-main .main-wrapper .main-con .title {
+    margin-bottom: 35px;
+    font-size: 26px;
+  }
+  .article-main .main-wrapper .main-con .form-input .gl-input__label {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #888888;
+    position: absolute;
+    pointer-events: none;
+    text-transform: uppercase;
+    left: 11px;
+    top: 18px;
+    transition: all .2s ease;
+  }
+  .article-main .main-wrapper .main-con .form-input .gl-input__label.gl-input__label--hoisted {
+    font-size: 12px;
+    top: -8px;
+    left: 17px;
+    margin-top: 0;
+    padding: 2px 5px 1px;
+    background-color: #fff;
+  }
+  .article-main .main-wrapper .main-con .form-input .gl-input__label.is-needed::after {
+    content: '*';
+    color: red;
+  }
+  .article-main .main-wrapper .main-con .checkBox {
+    font-size: 16px;
+  }
+  .article-main .main-wrapper .main-con .checkBox .form-remeber {
+    align-items: center;
+  }
+  .article-main .main-wrapper .main-con .checkBox .icon-checked {
+    margin-right: 12px;
+  }
+  .article-main .main-wrapper .main-con .checkBox .icon-checked.is-active::before {
+    margin-top: 1px;
+  }
+  .article-main .main-wrapper .main-con .btn-con {
+    margin-top: 35px;
+  }
+  .article-main .main-wrapper .main-con .label-text {
+    font-size: 12px;
+    color: #666;
+    line-height: 18px;
+  }
+  .article-main .main-wrapper .main-con .label-text a {
+    color: #0e0ecc;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" href="css/lp-neo-7.css" /> -->
+	<%include _includes/js.html %>
+	<!-- <script type="text/javascript" src="js/hotSpot.js"></script> -->
+</head>
+
+<body>
+	<div id="wrapper">
+		<!-- 头部 -->
+		<%include _includes/modules/header.html %>
+		<!-- 內容 -->
+		<section class="container">
+
+			<style>
+				.article {
+					position: relative;
+				}
+
+				.article img {
+					width: 100%;
+				}
+
+				.article-swiper-swift2 {
+					padding-top: 25px;
+				}
+
+				.article-swiper-swift .swiper-container .swiper-pagination {
+					width: 15%;
+				}
+
+				.article-swiper-swift2 .swiper-container .swiper-pagination {
+					right: 13%;
+					left: auto;
+				}
+
+				.article-swiper-swift .swiper-pagination-bullet {
+					border: 2px #bbc8dc solid;
+					width: 16px;
+					height: 16px;
+					opacity: 1;
+					position: relative;
+				}
+
+				.article-swiper-swift .swiper-pagination-bullet::before {
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%,-50%);
+					width: 12px;
+					height: 12px;
+					display: block;
+					border: 1px #000 solid;
+					border-radius: 50px;
+				}
+
+				.article-swiper-swift .swiper-pagination-bullet-active {
+					background: #bbc8dc;
+				}
+
+				.pw-link {
+					display: flex;
+					justify-content: space-between;
+					position: absolute;
+					top: 0;
+					left: 20%;
+					width: 60%;
+					height: 100%;
+					flex-wrap: wrap;
+				}
+				.pw-link a {
+					width: 50%;
+					height: 50%;
+				}
+				.pw-link-more {
+					display: flex;
+					position: absolute;
+					top: 22%;
+					left: 12.5%;
+					width: 75%;
+					height: 56%;
+				}
+				.pw-link-more a {
+					width: 50%;
+				}
+				
+
+				.article-video .video-wrapper {
+					position: absolute;
+					left: 50%;
+					top: 58%;
+					width: 58%;
+					transform: translate(-50%, -50%);
+					cursor: pointer;
+				}
+
+				.video-box .video-content {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					top: 0;
+					left: 0;
+				}
+
+				.video-content .video {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					visibility: hidden;
+				}
+
+				.video-box.is-play .video-wrapper .video-content .video {
+					visibility: visible;
+				}
+
+				.video-box.is-play .video-wrapper .video-code img {
+					visibility: hidden;
+				}
+
+				
+				.article-david {
+					background: #0d0f14;
+					padding-bottom: 80px;
+				}
+
+				.article-david .david-content {
+					display: flex;
+					width: 74%;
+					margin: 0 auto;
+				}
+
+				.product-link {
+					position: relative;
+				}
+				.pw-link-product{
+					display: flex;
+					justify-content: space-between;
+					position: absolute;
+					top: 0;
+					left: 3%;
+					width: 92%;
+					height: 100%;
+					flex-wrap: wrap;
+				}
+				.pw-link-product a{
+					width: 50%;
+					height: 56%;
+				}
+				.pw-link-product.pw-link1 a{
+					width: 100%;
+				}
+				@media (max-width:1024px) {
+					.article-video .video-wrapper {
+						width: 92%;
+					}
+					.article-swiper-swift .swiper-container .swiper-pagination{
+						width: 20%;
+						bottom: -3px;
+					}
+					.pw-link,
+					.pw-link-more {
+						width: 100%;
+						left: 0;
+					}
+					.article-david .david-content {
+						width: 100%;
+						flex-wrap: wrap;
+						position: relative;
+					}
+					.article-david{
+						padding-bottom: 0;
+					}
+					.article-david .david-content .cont-img {
+						padding-bottom: 13%;
+					}
+
+					.article-david .david-content .product-link {
+						position: absolute;
+						top: 0;
+					}
+					.article-swiper-swift2 .swiper-container .swiper-pagination {
+						right: 3%;
+						left: auto;
+						top: 82%;
+					}
+					.pw-link-product.pw-link1{
+						height: 66%;
+						top: 4%;
+					}
+					.pw-link-product.pw-link1 a{
+						height: 50%;
+					}
+					.pw-link-product a{
+						width: 100%;
+						height: 37%;
+					}
+				}
+			</style>
+			<article class="article  article-swiper-swift">
+				<div class="swiper-container swiper-jacket_1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="https://www.adidas.com.hk"> 
+								<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/female1.jpg&quot;},
+								&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-female1.jpg&quot;},
+								&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-female1.jpg&quot;}}">
+							 </a>
+						</div>
+						<div class="swiper-slide">
+							<a href="https://www.adidas.com.hk"> 
+								<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/female2.jpg&quot;},
+								&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-female2.jpg&quot;},
+								&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-female2.jpg&quot;}}">
+							</a>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+					
+				</div>
+			</article>
+			<article class="article article-video video-box">
+				<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/pc_02.jpg" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/pc_02.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob_02.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob_02.jpg&quot;}
+					}">
+				<div class="video-wrapper e-video  e-play-videoTwo">
+					<div class="video-content"></div>
+					<a class="video-play" href="javascript:void(0)"> 
+						<span class="video-code" data-video-code="4D9B80A7C8E9DD599C33DC5901307461"> 
+						<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/video.png" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+		                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/pc-video.png&quot;},
+		                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-video.png&quot;},
+		                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-video.png&quot;}
+					  }"> 
+					</span> 
+				</a>
+				</div>
+			</article>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/pc_03.jpg&quot;},
+				&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob_03.jpg&quot;},
+				&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob_03.jpg&quot;}}">
+			</article>
+			<article class="article ">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/pc_04.jpg&quot;},
+				&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob_04.jpg&quot;},
+				&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob_04.jpg&quot;}}">
+			</article>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/pc_05.jpg&quot;},
+				&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob_05.jpg&quot;},
+				&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob_05.jpg&quot;}}">
+				<div class="pw-link">
+					<a href="https://www.adidas.com.hk/item/FW4910" class="link"></a>
+					<a href="https://www.adidas.com.hk/item/FW8386" class="link"></a>
+					<a href="https://www.adidas.com.hk/item/FW8407" class="link"></a>
+					<a href="https://www.adidas.com.hk/item/FW8406" class="link"></a>
+				</div>
+			</article>
+			<article class="article article-david">
+				<div class="david-content">
+					<div class="cont-img">
+						<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/pc-davi.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-davi.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-davi.jpg&quot;}}">
+					</div>
+					<div class="product-link">
+						<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/pc-david1.png&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-david1.png&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-david1.png&quot;}}">
+						<div class="pw-link-product">
+							<a href="https://www.adidas.com.hk/item/GC8606" ></a>
+							<a href="https://www.adidas.com.hk/item/GC8608" ></a>
+							<a href="https://www.adidas.com.hk/item/FW4910" ></a>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="article  article-swiper-swift article-david article-swiper-swift2">
+				<div class="swiper-container swiper-jacket_2">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="david-content">
+								<div class="cont-img">
+									<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/pc-zhang1.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-zhang1.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-zhang1.jpg&quot;}}">
+								</div>
+								<div class="product-link">
+									<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/pc-zhang1.png&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-zhang1.png&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-zhang1.png&quot;}}">
+									<div class="pw-link-product ">
+										<a href="https://www.adidas.com.hk/item/FT0478"></a>
+										<a href="https://www.adidas.com.hk/item/FM7643"></a>
+										<a href="https://www.adidas.com.hk/item/FW8406"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="david-content">
+								<div class="cont-img">
+									<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/pc-zhang2.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-zhang2.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-zhang2.jpg&quot;}}">
+								</div>
+								<div class="product-link">
+									<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/pc-zhang2.png&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-zhang2.png&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob-zhang2.png&quot;}}">
+									<div class="pw-link-product pw-link1">
+										<a href="https://www.adidas.com.hk/item/GP3968" class="link"></a>
+										<a href="https://www.adidas.com.hk/item/FW8406" class="link"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</article>
+
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/pc_08.jpg&quot;},
+				&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob_08.jpg&quot;},
+				&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/AUG/FEEL_THE_FUTHER/EN/mob_08.jpg&quot;}}">
+				<div class="pw-link-more">
+					<a href="https://www.adidas.com.hk/feel_the_future/men"></a>
+					<a href="https://www.adidas.com.hk/feel_the_future/women"></a>
+				</div>
+			</article>
+			<script type="text/javascript">
+				$(function() {
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+					var swiper1 = new Swiper('.swiper-jacket_1', {
+						centeredSlides: true,
+						paginationClickable: true,
+						pagination: '.swiper-pagination',
+					});
+					var loadImgFun_index = function(imgArr, fn) {
+						var loadImgLen = 0,
+							errImgLen = 0;
+						var imgdefereds = [];
+						$(imgArr).each(function() {
+							var defered = $.Deferred();
+							$(this)
+								.on("load", function() {
+									defered.resolve();
+									loadImgLen++;
+								})
+								.on("error", function() {
+									defered.resolve();
+									errImgLen++;
+								});
+							if (this.complete)
+								setTimeout(function() {
+									defered.resolve();
+								}, 200);
+							imgdefereds.push(defered);
+						});
+						$.when.apply(null, imgdefereds).done(function() {
+							if (fn && $.isFunction(fn)) {
+								fn();
+							}
+						});
+					};
+					$(".e-video").each(function(index, el) {
+						$(el).addClass("home-video");
+						var videoCode = $(".video-code", el).data("video-code"),
+							videoId = "home_video_" + index;
+						loadImgFun_index($(".video-code img", el), function() {});
+						var bannerVideoId = videoCode;
+						var url = base + "/indexCCVideo.json";
+						var data = loxia.syncXhrGet(url, {
+							'bannerVideoId': bannerVideoId
+						});
+						var videoUrl = data.mp4VideoUrl;
+						//var videoUrl = 'https://cm11-c110-2.play.bokecc.com/flvs/ca/QxIfv/umM2f0fFGf-30.mp4?t=1599885489&key=221257A4BC8712B21272F4444A1B5D9D&tpl=10';
+						var html = '<video class="video" id="' +
+							videoId +
+							'"  webkit-playsinline="true" playsInline="true"><source src="' +
+							videoUrl +
+							'" ></source></video>';
+						$(".video-content", el).html(html);
+					});
+					$(".e-play-videoTwo").on("tap", function() {
+						console.log(123)
+						var _parent_article = $(this).parents(".article-video"),
+							_video_s = $(this).parents(".article-video").find(".video"),
+							_video = $(this)
+							.parents(".article-video")
+							.find(".video");
+						_parent_article.toggleClass("is-play");
+						if (_parent_article.hasClass("is-play")) {
+							for (var i = 0; i < _video_s.length; i++) {
+								_video_s.eq(i)[0].pause();
+							}
+							_video[0].play();
+							_video[0].addEventListener("ended", function() {
+								this.play();
+							});
+						} else {
+							_video[0].pause();
+						}
+					});
+					var swiper2 = new Swiper('.swiper-jacket_2', {
+						centeredSlides: true,
+						paginationClickable: true,
+						pagination: '.swiper-pagination',
+					});
+				})
+			</script>
+
+		</section>
+		<!-- 底部 -->
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

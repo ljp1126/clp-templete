@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<%include _includes/meta.html %>
+		<title>lp-black-market</title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" href="css/lp-black-market.css"/>
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="libs/countdown/jquery.countdown.js"></script>
+		<script type="text/javascript" src="js/lp-black-market.js"></script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+			<section class="container">
+				<style>
+
+				</style>
+
+                <div id="getting-started"></div>
+
+				<article class="article article-one e-article">
+                    <img src="images/blank.gif"
+                        data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-black-market/lh-230.jpg"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-black-market/lh-750.jpg"},
+                        "small":{"high":"", "normal":"../static/images/lp-black-market/lh-750.jpg"}}'
+                    />
+                </article>
+                <!-- <a class="lp-video-btn e-lp-video-btn" data-video-code="AF0F177411459A799C33DC5901307461"></a> -->
+
+
+                <!-- 视频弹层 -->
+				<script id="video-dialog" type="text/template">
+					<div class="dialog">
+						<div class="dialog-container">
+							<div class="loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+							<div class="video-content">
+
+							</div>
+						</div>
+						<i class="icon icon-close dialog-close">&times;</i>
+					</div>
+				</script>
+
+				<script type="text/javascript">
+
+				</script>
+			</section>
+			<%include _includes/modules/footer.html %>
+		</div>
+	</body>
+
+</html>

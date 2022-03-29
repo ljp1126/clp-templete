@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+		<%include _includes/js.html %>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+
+			<!-- 内容部分 -->
+			<section class="container">
+				<style>
+					.article,
+					.article-top {
+						position: relative;
+					}
+	
+					.article img {
+						width: 100%;
+						height: auto;
+					}
+	
+					.article-tab {
+						padding: 0;
+						position: relative;
+					}
+	
+					.article-tab .nav-box {
+						position: relative;
+						text-align: center;
+					}
+	
+					.article-tab .nav-bg {
+						position: absolute;
+						top: 0;
+						left: 50%;
+						width: 80%;
+						transform: translate(-50%, 0);
+					}
+	
+					.article-tab .nav-box a {
+						width: 13.3%;
+						padding: 0 20px;
+						display: inline-block;
+						position: relative;
+					}
+	
+					.article-tab .nav-box a img {
+						width: auto;
+					}
+	
+					.article-tab .nav-box .btnimg-click {
+						position: absolute;
+						top: 0px;
+						left: 0;
+						padding: 0 20px;
+						display: none;
+					}
+	
+					.article-tab .nav-box .is-active .btnimg-click {
+						display: block;
+					}
+	
+					.article-tab .nav-box .is-active .btnimg {
+						visibility: hidden;
+					}
+	
+					.article-tab .nav-box.nav-fiexd {
+						position: fixed;
+						width: 100%;
+						z-index: 88;
+						left: 0;
+					}
+	
+					.article-tab .nav-box.nav-fiexd .nav-bg {
+						width: 80%;
+						margin: 0 auto;
+						position: absolute;
+						top: 10px;
+						left: 50%;
+						transform: translate(-50%, 0);
+					}
+	
+					.article-tab .nav-box .yuanben-fix {
+						display: none;
+					}
+	
+					.article-tab .nav-box.nav-fiexd .yuanben-fix {
+						display: block;
+					}
+	
+					.article-tab .nav-box.nav-fiexd .yuanben {
+						display: none;
+					}
+	
+					.link {
+						position: absolute;
+					}
+	
+					.link-right {
+						width: 39%;
+						height: 59%;
+						top: 39%;
+						left: 49%;
+					}
+	
+					.link-left {
+						width: 39%;
+						height: 57%;
+						top: 41%;
+						left: 13%;
+					}
+	
+					.link-main {
+						width: 80%;
+						height: 90%;
+						top: 0;
+						left: 50%;
+						transform: translate(-50%, 0);
+					}
+	
+					.link-six .link-con {
+						position: absolute;
+						width: 80%;
+						height: 82%;
+						top: 56%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						display: flex;
+						justify-content: flex-start;
+						flex-wrap: wrap;
+					}
+	
+					.link-six .link-con a {
+						width: 33.3%;
+						height: 50%;
+					}
+	
+					.link-four .link-con {
+						position: absolute;
+						width: 70%;
+						height: 62%;
+						top: 56%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						display: flex;
+						justify-content: flex-start;
+						flex-wrap: wrap;
+					}
+	
+					.link-four .link-con a {
+						width: 33.3%;
+						height: 100%;
+					}
+	
+	
+					article img {
+						width: 100%;
+					}
+	
+					.yuanben-mob,
+					.yuanben-mob-fix {
+						display: none;
+					}
+	
+					@media (max-width:1024px) {
+						.mob-gif {
+							position: absolute;
+							width: 100%;
+							top: 0;
+							left: 0;
+						}
+	
+						.article-tab .nav-bg {
+							top: 0;
+							width: 100%;
+						}
+	
+						.article-tab .nav-box a {
+							padding: 0;
+							width: 19.3%;
+						}
+	
+						.article-tab .nav-box {
+							width: 100%;
+							left: 0;
+							top: 24%;
+						}
+	
+						.article .btn.gl-cta-color-white.gl-cta-box-shadow:after {
+							box-shadow: inset 0 0 0 1px #000 !important;
+						}
+	
+						.article-tab .nav-box .btnimg-click {
+							padding: 0;
+						}
+	
+						.article-tab .nav-box.nav-fiexd .nav-bg {
+							width: 100%;
+							top: 4px;
+						}
+	
+						.link-right {
+							display: none;
+						}
+	
+						.link-left {
+							display: none;
+						}
+	
+						.link-main {
+							width: 90%;
+							height: 95%;
+						}
+	
+						.link-six .link-con {
+							width: 92%;
+							height: 91%;
+							top: 55%;
+						}
+	
+						.link-six .link-con a {
+							width: 50%;
+							height: 33%;
+						}
+	
+						.link-four .link-con {
+							width: 91%;
+							height: 84%;
+							top: 55%;
+						}
+	
+						.link-four .link-con a {
+							width: 50%;
+							height: 50%;
+						}
+	
+						.yuanben-mob {
+							display: block;
+						}
+	
+						.article-tab .nav-box.nav-fiexd .yuanben-mob-fix {
+							display: block;
+						}
+	
+						.article-tab .nav-box.nav-fiexd .yuanben-mob {
+							display: none;
+						}
+						.swiper-container-moreRecommend{
+							padding: 20px 0 50px 16px;
+							background: url('../../static/images/lp-tiger-hk/mob-recommend-bg.jpg') repeat-y;
+						}
+					}
+				</style>
+				<article class="article article-btn">
+					<img lazysrc="https://www.adidas.com.hk/images/blank.gif" src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-tiger-hk/pc_01.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-tiger-hk/mob_01.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-tiger-hk/mob_01.jpg"}
+					}' />
+					<img lazysrc="https://www.adidas.com.hk/images/blank.gif" src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-tiger-hk/pc_02.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-tiger-hk/mob_02.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-tiger-hk/mob_02.jpg"}
+					}' />
+					<img class="mob-gif none block-sm" src="../static/images/lp-tiger-hk/mob-gif.gif">
+				</article>
+				<article class="article article-tab">
+					<div class="nav-box">
+						<img class="none-sm yuanben" src="../static/images/lp-tiger-hk/nav-bg.jpg">
+						<img class="none-sm yuanben-fix" src="../static/images/lp-tiger-hk/nav-bg-active.jpg">
+						<img class="yuanben-mob" src="../static/images/lp-tiger-hk/nav-bg-mob.jpg">
+						<img class="yuanben-mob-fix" src="../static/images/lp-tiger-hk/nav-bg-mob-active.jpg">
+						<div class="nav-bg">
+							<a class="nav-bg-a-1 is-active" href="##"> <img class="btnimg" src="../static/images/lp-tiger-hk/logo1.png"> <img class="btnimg-click" src="../static/images/lp-tiger-hk/logo1.png"> </a>
+							<a class="nav-bg-a-2" href="##"> <img class="btnimg" src="../static/images/lp-tiger-hk/logo2.png"> <img class="btnimg-click" src="../static/images/lp-tiger-hk/logo2.png"> </a>
+							<a class="nav-bg-a-3 no-click" href="##"> <img class="btnimg" src="../static/images/lp-tiger-hk/logo3.png"> <img class="btnimg-click" src="../static/images/lp-tiger-hk/logo3.png"> </a>
+							<a class="nav-bg-a-4 no-click" href="##"> <img class="btnimg" src="../static/images/lp-tiger-hk/logo4.png"> <img class="btnimg-click" src="../static/images/lp-tiger-hk/logo4.png"> </a>
+							<a class="nav-bg-a-5" href="##"> <img class="btnimg" src="../static/images/lp-tiger-hk/logo5.png"> <img class="btnimg-click" src="../static/images/lp-tiger-hk/logo5.png"> </a>
+						</div>
+					</div>
+				</article>
+				<article class="article-top" id="article-top1">
+					<div class="article">
+						<img lazysrc="https://www.adidas.com.hk/images/blank.gif" src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-tiger-hk/pc-shop-bg-1.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-tiger-hk/mob-shop-bg-1.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-tiger-hk/mob-shop-bg-1.jpg"}
+						}' />
+						<a href="https://www.adidas.com.hk/item/FW3884" class="link link-right"></a>
+					</div>
+					<div class="article">
+						<img lazysrc="https://www.adidas.com.hk/images/blank.gif" src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-tiger-hk/pc-shop-bg-1-1.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-tiger-hk/mob-shop-bg-1-1.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-tiger-hk/mob-shop-bg-1-1.jpg"}
+						}' />
+						<a href="https://www.adidas.com.hk/item/FW3884" class="link link-main"></a>
+					</div>
+				</article>
+				<article class="article-top" id="article-top2">
+					<div class="article">
+						<img lazysrc="https://www.adidas.com.hk/images/blank.gif" src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-tiger-hk/pc-shop-bg-2.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-tiger-hk/mob-shop-bg-2.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-tiger-hk/mob-shop-bg-2.jpg"}
+						}' />
+						<a href="https://www.adidas.com.hk/item/FW3656" class="link link-left"></a>
+					</div>
+					<div class="article">
+						<img lazysrc="https://www.adidas.com.hk/images/blank.gif" src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-tiger-hk/pc-shop-bg-2-1.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-tiger-hk/mob-shop-bg-2-1.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-tiger-hk/mob-shop-bg-2-1.jpg"}
+						}' />
+						<a href="https://www.adidas.com.hk/item/FW3656" class="link link-main"></a>
+					</div>
+				</article>
+				<article class="article-top" id="article-top3">
+					<div class="article">
+						<img lazysrc="https://www.adidas.com.hk/images/blank.gif" src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-tiger-hk/pc-shop-bg-3.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-tiger-hk/mob-shop-bg-3.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-tiger-hk/mob-shop-bg-3.jpg"}
+						}' />
+						<a href="https://www.adidas.com.hk/item/FW3655" class="link link-right"></a>
+					</div>
+					<div class="article">
+						<img lazysrc="https://www.adidas.com.hk/images/blank.gif" src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-tiger-hk/pc-shop-bg-3-1.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-tiger-hk/mob-shop-bg-3-1.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-tiger-hk/mob-shop-bg-3-1.jpg"}
+						}' />
+						<a href="https://www.adidas.com.hk/item/FW3655" class="link link-main"></a>
+					</div>
+				</article>
+				<article class="article link-six">
+					<img lazysrc="https://www.adidas.com.hk/images/blank.gif" src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-tiger-hk/pc-shop-bg-4.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-tiger-hk/mob-shop-bg-4.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-tiger-hk/mob-shop-bg-4.jpg"}
+					}' />
+					<div class="link-con">
+						<a href="https://www.adidas.com.hk/item/GL7276"></a>
+						<a href="https://www.adidas.com.hk/item/GK5211"></a>
+						<a href="https://www.adidas.com.hk/item/GK5213"></a>
+						<a href="https://www.adidas.com.hk/item/GK5215"></a>
+						<a href="https://www.adidas.com.hk/item/GK5212"></a>
+					</div>
+				</article>
+				<article class="article link-four">
+					<img lazysrc="https://www.adidas.com.hk/images/blank.gif" src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+						"standard":{"high":"", "normal":"../static/images/lp-tiger-hk/pc-shop-bg-5.jpg"},
+						"medium":{"high":"",  "normal":"../static/images/lp-tiger-hk/mob-shop-bg-5.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-tiger-hk/mob-shop-bg-5.jpg"}
+					}' />
+					<div class="link-con none-sm">
+						<a href="https://www.adidas.com.hk/basketball/jamesharden"></a>
+						<a href="https://www.adidas.com.hk/basketball/derrickrose"></a>
+						<a href="https://www.adidas.com.hk/basketball/tracymcgrady"></a>
+					</div>
+					<div class="none block-sm">
+						<div class="swiper-container swiper-container-moreRecommend">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="https://www.adidas.com.hk/basketball/jamesharden">
+										<img  src="../static/images/lp-tiger-hk/mob-recommend-1.png" />
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="https://www.adidas.com.hk/basketball/derrickrose">
+										<img  src="../static/images/lp-tiger-hk/mob-recommend-2.png" />
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a  href="https://www.adidas.com.hk/basketball/tracymcgrady">
+										<a  href="https://www.adidas.com.hk/basketball/tracymcgrady">
+										<img  src="../static/images/lp-tiger-hk/mob-recommend-3.png" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<script type="text/javascript">
+					$(function() {
+						$.spice.lazyLoad('img[lazysrc]', {
+							attr: 'lazysrc'
+						});
+						$.spice.tools.changeImageSrc({
+							callBack: function(img, self) {
+								$.spice.lazyLoad('img[lazysrc]', {
+									attr: self.opt.lazyData,
+									prestrain: 1
+								});
+							}
+						});
+						var $window = $(window),
+							$nav = $('.nav-box'),
+							$articleProdunct = $('.article-top'),
+							$header = $('.header-fixed');
+						headerH = $header.outerHeight(true);
+						var windowTop = 0,
+							headerBannerboxH = 0,
+							windowTop = 0;
+						var v_offTop = [],
+							v_Height = [];
+						var getProdunctSize = $.spice.throttle(function() {
+							v_offTop = [];
+							v_Height = [];
+							$articleProdunct.each(function(index, el) {
+								var _this_OT = $(el).position().top,
+									_this_HT = $(el).outerHeight(true);
+								v_offTop.push(_this_OT);
+								v_Height.push(_this_HT);
+							})
+						}, 300);
+						$(window).on('scroll.worldCupScroll', function() {
+							var $scrollTop = $(this).scrollTop(),
+								$article = $('.nav-box'),
+								wH = $(this).outerHeight(true),
+								$navBox = $('.article-tab'),
+								$articleTop = $navBox.offset().top,
+								articleHei = $article.outerHeight(true),
+								headBanner = $(".header-banner-box").outerHeight(true);
+							getProdunctSize();
+							if ($(".header-banner-box").hasClass('header-banner-show')) {
+								headerBannerboxH = $(".header-banner-box").outerHeight(true);
+							} else {
+								headerBannerboxH = 0;
+							}
+							for (var i = 0; i < $articleProdunct.length; i++) {
+								if ($scrollTop > (v_offTop[i] - headerH - 24) && $scrollTop < v_offTop[i]) {
+									$('.nav-box').find('a').eq(i).addClass('is-active').siblings().removeClass('is-active');
+								}
+							}
+							if ($scrollTop > 0) {
+								$(".header-banner-box").css({
+									'top': -headerBannerboxH
+								})
+							} else {
+								$(".header-banner-box").css({
+									'top': 0
+								})
+								$header.css({
+									'top': headerBannerboxH
+								})
+							}
+							if ($scrollTop >= $articleTop) {
+								if (!$article.hasClass('nav-fiexd')) {
+									$article.addClass('nav-fiexd');
+								}
+								if ($scrollTop >= windowTop) {
+									windowTop = $scrollTop;
+									$article.animate({
+										top: $(window).width() > 1024 ? (headerH + headerBannerboxH) : 0
+									}, 0);
+								} else {
+									windowTop = $scrollTop;
+									$article.animate({
+										top: (headerH + headerBannerboxH)
+									}, 0)
+								}
+							} else {
+								$article.removeClass('nav-fiexd').removeAttr('style');
+							}
+						}).trigger('scroll.worldCupScroll');
+						var _activeIndex = 0;
+						$('a:not(.no-click)', $nav).on('tap', function() {
+							var _this = $(this),
+								_thisIndex = _this.index();
+								if( _thisIndex == 4){
+									_thisIndex = _this.index() - 2;
+								}
+							var	h = $('.header-fixed').height(),
+								t = $articleProdunct.eq(_thisIndex).position().top + h,
+								fixDis = 0;
+							if (_thisIndex > _activeIndex) {
+								fixDis = 0
+								_activeIndex = _thisIndex;
+							} else {
+								fixDis = headerH
+								_activeIndex = _thisIndex;
+							}
+							var top1 = Number(t - fixDis),
+								top2 = Number(t - fixDis - ($('.nav-box').height() / 2));
+							// if ($('body').hasClass('style-spice-small') || $('body').hasClass('style-spice-medium')) {
+							// 	// $('html,body').animate({
+							// 	// 	scrollTop: top1
+							// 	// }, 1500);
+	
+							// 		$(document).scrollTop(top1)
+							// } else {
+							// 	// $('html,body').animate({
+							// 	// 	scrollTop: top2
+							// 	// }, 1500);
+							// 	$(document).scrollTop(top2)
+							// }
+							if ($('body').hasClass('style-spice-small') || $('body').hasClass('style-spice-medium')) {
+								// $('html,body').animate({
+								// 	scrollTop: t - (headerH) - fixDis - 50
+								// }, 1500);
+								$(document).scrollTop(top1)
+							} else {
+								$('html,body').animate({
+									scrollTop: t - (headerH) - fixDis - ($('.nav-box').height() / 2)
+								}, 1500);
+							}
+						})
+
+						// 轮播一
+						var swiper = new Swiper('.swiper-container-moreRecommend', {
+							slidesPerView: 1.5,
+							loop: true,
+							paginationClickable: true,
+							spaceBetween: 16,
+							initialSlide: 0
+							
+						});
+	
+					})
+				</script>
+			</section>
+
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		</div>
+	</body>
+
+</html>

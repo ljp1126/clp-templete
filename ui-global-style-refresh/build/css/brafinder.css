@@ -1,0 +1,1170 @@
+@charset "UTF-8";
+.article {
+  position: relative;
+}
+.brafinder-kv .kv-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.brafinder-kv .kv-inner .display-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.brafinder-kv .kv-inner .display-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+}
+.brafinder-kv .kv-inner .display-table-cell h1 {
+  font-size: 36px;
+  line-height: 38px;
+  margin-bottom: 28px;
+}
+.brafinder-kv .kv-inner .display-table-cell p {
+  font-size: 18px;
+  line-height: 26px;
+}
+.brafinder-main {
+  max-width: 990px;
+  padding: 0 20px;
+  margin: auto;
+}
+.brafinder-main .brafinder-style .style-title {
+  text-align: center;
+  padding: 30px 0;
+}
+.brafinder-main .brafinder-style .style-title h2 {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  margin: 0 0 14px;
+}
+.brafinder-main .brafinder-style .style-title p {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+}
+.brafinder-main .brafinder-style .style-title.recommended-size-title .triangle {
+  display: inline-block;
+  margin-top: 15px;
+}
+.brafinder-main .brafinder-style .style-title.recommended-size-title .triangle:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: inline-block;
+  overflow: hidden;
+  border: solid transparent;
+  border-top-color: #000;
+  border-top-width: 10px;
+  border-right-width: 5px;
+  border-bottom-width: 6px;
+  border-left-width: 5px;
+}
+.brafinder-main .brafinder-style .brafinder-series-list > ul {
+  border-top: 6px solid #F80052;
+  border-bottom: 30px solid #ededed;
+  font-size: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  background: #ededed;
+}
+.brafinder-main .brafinder-style .brafinder-series-list > ul > li {
+  position: relative;
+  display: inline-block;
+  width: 33.3%;
+  padding-right: 1px;
+  background: #000;
+  cursor: pointer;
+  -webkit-box-sizing: initial;
+  -moz-box-sizing: initial;
+  -ms-box-sizing: initial;
+  -o-box-sizing: initial;
+  box-sizing: initial;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.brafinder-main .brafinder-style .brafinder-series-list > ul > li:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+.brafinder-main .brafinder-style .brafinder-series-list > ul > li:last-of-type {
+  padding-right: 0;
+}
+.brafinder-main .brafinder-style .brafinder-series-list > ul > li > img {
+  width: 100%;
+}
+.brafinder-main .brafinder-style .brafinder-series-list > ul > li .series-desc {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 19px 0;
+}
+.brafinder-main .brafinder-style .brafinder-series-list > ul > li .series-desc p {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+.brafinder-main .brafinder-style .brafinder-series-list > ul > li .series-desc .size {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+.brafinder-main .brafinder-style .brafinder-series-list > ul > li .series-desc.recommended-size p {
+  font-size: 18px;
+  line-height: 28px;
+}
+.brafinder-main .brafinder-style .brafinder-series-list > ul > li .series-desc.recommended-size .size {
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  min-height: 22px;
+  display: block;
+}
+.brafinder-main .brafinder-style .brafinder-series-list:nth-of-type(2) > ul {
+  border-top: 6px solid #DBD814;
+}
+.brafinder-main .brafinder-style .brafinder-series-list:nth-of-type(3) > ul {
+  border-top: 6px solid #83CFC3;
+}
+.brafinder-main .brafinder-introduce {
+  padding: 50px 0 30px;
+}
+.brafinder-main .brafinder-introduce h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.brafinder-main .brafinder-introduce p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+}
+.brafinder-main .brafinder-introduce p:last-of-type {
+  margin: 0 0 20px;
+}
+.brafinder-main .brafinder-introduce dl {
+  padding: 0;
+}
+.brafinder-main .brafinder-introduce dl dt {
+  position: relative;
+  margin: 4px 0 0;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 500;
+  background: #dddddd;
+  cursor: pointer;
+}
+.brafinder-main .brafinder-introduce dl dt:first-of-type {
+  margin: 0;
+}
+.brafinder-main .brafinder-introduce dl dt a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+}
+.brafinder-main .brafinder-introduce dl dt a .icon {
+  margin: -2px 0 0;
+  vertical-align: middle;
+}
+.brafinder-main .brafinder-introduce dl dd {
+  display: none;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  background: #f5f5f5;
+}
+.brafinder-main .brafinder-style-detail {
+  margin-bottom: 50px;
+}
+.brafinder-main .brafinder-style-detail .size {
+  display: none !important;
+}
+.brafinder-main .brafinder-style-detail .size P {
+  font-size: 22px !important;
+  line-height: 24px !important;
+  color: #000000 !important;
+}
+.brafinder-main .brafinder-style-detail.show-size .size {
+  display: block !important;
+}
+@media screen and (max-width: 1024px) {
+  .brafinder-main .brafinder-style-detail.show-size .scroll-dots {
+    bottom: 285px !important;
+  }
+}
+.brafinder-main .brafinder-style-detail dt {
+  position: relative;
+  font-size: 18px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background: #F80052;
+  font-weight: 500;
+  margin-top: 30px;
+}
+.brafinder-main .brafinder-style-detail dt:nth-of-type(1) {
+  margin-top: 0px;
+}
+.brafinder-main .brafinder-style-detail dt:nth-of-type(2) {
+  background: #DBD814;
+}
+.brafinder-main .brafinder-style-detail dt:nth-of-type(3) {
+  background: #83CFC3;
+}
+.brafinder-main .brafinder-style-detail dt a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+}
+.brafinder-main .brafinder-style-detail dt a .icon {
+  vertical-align: middle;
+  margin-top: -4px;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item:first-child .scroll .scroll-dots:before {
+  content: "滑动查看更多";
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  padding-left: 450px;
+  font-size: 14px;
+  z-index: 4;
+  left: 0;
+  width: 100%;
+  line-height: 18px;
+  text-align: center;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroller-wrap ul li .scroll-background-image .back {
+  display: none;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroller-wrap ul li .scroll-container {
+  height: auto;
+  top: 60px;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroller-wrap ul li .scroll-container .scroll-container-text {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroller-wrap ul li .scroll-container .scroll-container-text h3 {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroller-wrap ul li .scroll-container .scroll-container-text p {
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 6px;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroller-wrap ul li .scroll-container .scroll-container-text ul {
+  padding: 32px 0 65px;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroller-wrap ul li .scroll-container .scroll-container-text ul li {
+  display: block !important;
+  float: none;
+  line-height: 24px;
+  font-size: 14px;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroller-wrap ul li .scroll-container .scroll-container-text .btn {
+  width: 200px;
+  height: 42px;
+  line-height: 42px;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroller-wrap ul li .dos-msg {
+  position: absolute;
+  bottom: 30px;
+  padding-left: 450px;
+  font-size: 14px;
+  z-index: 4;
+  width: 100%;
+  text-align: center;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-dots {
+  width: 100% !important;
+  left: 0 !important;
+  bottom: 0;
+  margin-left: 0 !important;
+  line-height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: initial;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-dots a {
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  margin: 0 4px;
+  background: #999999;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-dots a.active {
+  background: #0085D5;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-prev,
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-next {
+  padding: 55px 20px;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-prev a i,
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-next a i {
+  display: inline-block;
+  background: url(../images/icon.png);
+  width: 20px;
+  height: 35px;
+  text-indent: -9999px;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-prev a i {
+  background-position: -487px -454px;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-next a i {
+  background-position: -527px -454px;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item.item-left .scroll .scroller-wrap ul li .scroll-container .scroll-container-text,
+.brafinder-main .brafinder-style-detail dd .article-series-item.item-right .scroll .scroller-wrap ul li .scroll-container .scroll-container-text {
+  width: 100%;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item.item-left .scroll .scroller-wrap ul li .scroll-container.scroll-container-left,
+.brafinder-main .brafinder-style-detail dd .article-series-item.item-right .scroll .scroller-wrap ul li .scroll-container.scroll-container-left {
+  left: 130px;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item.item-left .scroll .scroller-wrap ul li .scroll-container.scroll-container-right,
+.brafinder-main .brafinder-style-detail dd .article-series-item.item-right .scroll .scroller-wrap ul li .scroll-container.scroll-container-right {
+  right: 130px;
+  left: auto;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item.item-left .scroll .scroll-dots,
+.brafinder-main .brafinder-style-detail dd .article-series-item.item-right .scroll .scroll-dots {
+  padding-left: 450px;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item.item-right .scroll .scroll-dots {
+  padding-left: 0px;
+  padding-right: 450px;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item.dos-msg-show .scroll .scroll-dots {
+  padding-top: 10px;
+  height: 60px;
+  line-height: 60px;
+}
+.brafinder-main .brafinder-style-detail dd .article-series-item.dos-msg-show .dos-msg {
+  padding-left: 450px;
+}
+@-webkit-keyframes switchFront {
+  100% {
+    background-position: -36rem;
+  }
+}
+@keyframes switchFront {
+  100% {
+    background-position: -36rem;
+  }
+}
+@-webkit-keyframes switchBack {
+  0% {
+    background-position: -36rem;
+  }
+  100% {
+    background-position: -72rem;
+  }
+}
+@keyframes switchBack {
+  0% {
+    background-position: -36rem;
+  }
+  100% {
+    background-position: -72rem;
+  }
+}
+.brafinder-main .brafinder-style-detail .switch-view {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  width: 48px;
+  height: 38px;
+  z-index: 2;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  background-position: left center;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background-image: url(../images/brafinder/switch.png);
+  background-size: 72rem 3.2rem;
+}
+.brafinder-main .brafinder-style-detail .switch-view.front {
+  -webkit-animation: switchBack steps(9) 0.4s;
+  animation: switchBack steps(9) 0.4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.brafinder-main .brafinder-style-detail .switch-view.back {
+  -webkit-animation: switchFront steps(9) 0.4s;
+  animation: switchFront steps(9) 0.4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.brafinder-back-top {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.brafinder-back-top .back-top {
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  background: #000000;
+  margin: 0 auto;
+  cursor: pointer;
+}
+/*悬浮条样式*/
+.size-guide-box {
+  position: absolute;
+  left: auto;
+  top: -57px;
+  z-index: 6;
+  min-width: 320px;
+  display: none;
+}
+.size-guide-box .animation-inner {
+  position: relative;
+  width: 427px;
+  height: 57px;
+  line-height: 57px;
+  background: #0286CD;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 0 0 20px;
+}
+.size-guide-box .animation-inner img {
+  position: absolute;
+  width: 37px;
+  right: 20px;
+  top: 13px;
+}
+.size-guide-box .animation-inner:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 77px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  border-left: 1px solid #25B3FF;
+}
+.size-guide-box.size-guide-fixed {
+  position: fixed;
+  top: 80px;
+}
+/*悬浮条样式 end*/
+/*弹层样式*/
+.size-dialog {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  width: 950px;
+  margin: 0 0 0 -475px;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.5);
+  min-width: 320px;
+}
+.size-dialog > div {
+  position: relative;
+}
+.size-dialog .dialog-close {
+  cursor: pointer;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #0286CD;
+  right: 0;
+  top: 0;
+}
+.size-dialog .dialog-close:after {
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  background-position: -436px -19px;
+}
+.size-dialog .dialog-container {
+  position: relative;
+  padding: 20px;
+}
+.size-dialog .dialog-container h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  line-height: 40px;
+  padding: 8px 0;
+}
+.size-dialog .dialog-container p {
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0 24px;
+}
+.size-dialog .dialog-container .size-content {
+  background: #DDDDDD;
+  overflow: hidden;
+}
+.size-dialog .dialog-container .size-content .size-tabs-title {
+  font-size: 0;
+}
+.size-dialog .dialog-container .size-content .size-tabs-title li {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  background: #AEAEAE;
+  outline: 4px solid #fff;
+  position: relative;
+  z-index: 3;
+  text-transform: uppercase;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.size-dialog .dialog-container .size-content .size-tabs-title li:hover {
+  background: #999;
+}
+.size-dialog .dialog-container .size-content .size-tabs-title li.is-active {
+  background: #DDDDDD;
+  outline: none;
+  z-index: 2;
+}
+.size-dialog .dialog-container .size-content .size-tabs-title a {
+  font-size: 16px;
+  color: #000;
+  line-height: 52px;
+  display: block;
+  font-weight: bold;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-description {
+  display: none;
+  text-align: center;
+  color: #000;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-description h3 {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-description p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+  padding: 0;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-description.is-active {
+  display: block;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .description-measure {
+  padding: 40px;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .description-knowsize {
+  padding: 30px;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .description-knowsize > div:nth-child(1) {
+  float: left;
+  width: 285px;
+  margin: 0 0 0 54px;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .description-knowsize > div:nth-child(2) {
+  float: right;
+  width: 350px;
+  margin: 0 20px 0 0;
+  position: relative;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .description-knowsize > div:nth-child(2) img {
+  width: 100%;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .description-knowsize > div:nth-child(2) .series-descs {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 9px 0;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .description-knowsize > div:nth-child(2) .series-descs p {
+  font-size: 14px;
+  color: #fff;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .description-knowsize > div > p {
+  font-size: 12px;
+  position: relative;
+  padding: 2px 0 0 56px;
+  text-align: left;
+  margin-bottom: 14px;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .description-knowsize > div > p span {
+  position: absolute;
+  font-size: 14px;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .description-knowsize .size-select-content {
+  margin: 36px auto 30px;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .btn-calculation {
+  width: 285px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 16px;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content {
+  width: 285px;
+  margin: 36px auto 40px;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item {
+  float: left;
+  width: 135px;
+  text-align: center;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item p span {
+  font-size: 14px;
+  font-weight: normal;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item:nth-child(2) {
+  float: right;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item .size-selector-box {
+  position: relative;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item .size-selector-box .value-btn {
+  width: 100%;
+  line-height: 48px;
+  height: 50px;
+  background: #fff;
+  border-top: 1px solid #aeaeae;
+  display: block;
+  font-size: 14px;
+  color: #000;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item .size-selector-box .value-btn .icon-arrow-right {
+  position: absolute;
+  right: 10px;
+  top: 19px;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item .size-selector-box .size-selector {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  line-height: 50px;
+  z-index: 2;
+  width: 100%;
+  background: #fff;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item .size-selector-box .size-selector .swiper-container {
+  padding: 0 24px;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item .size-selector-box .size-selector .swiper-slide {
+  font-size: 14px;
+  color: #000;
+  width: 35px;
+  background: #fff;
+  cursor: pointer;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item .size-selector-box .size-selector .swiper-slide:hover {
+  background: #E8E8E8;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item .size-selector-box .size-selector .swiper-button-prev,
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item .size-selector-box .size-selector .swiper-button-next {
+  width: 24px;
+  height: 100%;
+  background: #fff;
+  opacity: 1;
+  margin: 0;
+  top: 0;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item .size-selector-box .size-selector .swiper-button-prev:after,
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item .size-selector-box .size-selector .swiper-button-next:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url(../images/icon.png);
+  width: 8px;
+  height: 14px;
+  top: 19px;
+  left: 8px;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item .size-selector-box .size-selector .swiper-button-prev {
+  left: 0;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item .size-selector-box .size-selector .swiper-button-prev:after {
+  background-position: -346px 0px;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item .size-selector-box .size-selector .swiper-button-next {
+  right: 0;
+}
+.size-dialog .dialog-container .size-content .size-tabs-content .size-select-content .size-select-item .size-selector-box .size-selector .swiper-button-next:after {
+  background-position: -372px 0px;
+}
+.measurement-demonstration-dialog {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.8);
+  min-width: 320px;
+  overflow: hidden;
+}
+.measurement-demonstration-dialog .dialog-container {
+  width: 100%;
+  padding: 0 13px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 12.6%;
+}
+.measurement-demonstration-dialog .dialog-container .measurement-demonstration-img {
+  position: relative;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.measurement-demonstration-dialog .dialog-container .measurement-demonstration-img img {
+  width: 100%;
+}
+.measurement-demonstration-dialog .dialog-container .measurement-demonstration-img p {
+  color: #FFFFFF;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  line-height: 32px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.measurement-demonstration-dialog .dialog-container .measurement-demonstration-back {
+  padding: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.measurement-demonstration-dialog .dialog-container .measurement-demonstration-back span {
+  text-decoration: underline;
+  font-size: 14px;
+  color: #000;
+  display: inline-block;
+  vertical-align: middle;
+}
+.measurement-demonstration-dialog .dialog-container .measurement-demonstration-back i {
+  width: 10px;
+  height: 13px;
+  background-position: -237px -609px;
+  vertical-align: middle;
+  margin: 0 0 0 8px;
+}
+/*弹层样式 end*/
+@media (max-width: 1024px), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), screen and (-o-min-device-piratio: 200/100), screen and (min-device-pixel-ratio: 2) {
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-prev a i,
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-next a i {
+    background: url(../images/icon@2x.png);
+    background-size: 500px;
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-prev a i {
+    background-position: -245px -652px;
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-next a i {
+    background-position: -215px -652px;
+  }
+}
+@media (max-width: 1366px) {
+  .brafinder-kv .kv-inner .display-table-cell h1 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .brafinder-kv .kv-inner .display-table-cell p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 1024px) {
+  .article img {
+    width: 100%;
+  }
+  .brafinder-kv .kv-inner .display-table-cell h1 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 14px;
+  }
+  .brafinder-kv .kv-inner .display-table-cell p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .brafinder-main .brafinder-style-top {
+    padding-top: 57px;
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroller-wrap ul li .scroll-container {
+    width: auto;
+  }
+  .size-guide-box {
+    position: static;
+    left: 0;
+    width: 100%;
+    display: block;
+  }
+  .size-guide-box .animation-inner {
+    width: 100%;
+  }
+  .size-guide-box.size-guide-fixed {
+    top: 60px;
+  }
+  .size-guide-box.size-guide-fixed .animation-inner {
+    width: 60px;
+  }
+  .size-guide-box.size-guide-fixed .animation-inner span {
+    display: none;
+  }
+  .size-guide-box.size-guide-fixed .animation-inner:after {
+    display: none;
+  }
+  .size-guide-box.size-guide-fixed .animation-inner img {
+    right: 12px;
+  }
+  /*弹层样式*/
+  .size-dialog {
+    top: 60px;
+    left: 5%;
+    width: 90%;
+    max-width: 990px;
+    margin: 0;
+  }
+  /*弹层样式 end*/
+}
+@media (max-width: 990px) {
+  .brafinder-main {
+    padding: 0;
+  }
+  .brafinder-main .brafinder-style .style-title {
+    padding: 20px 5px;
+  }
+  .brafinder-main .brafinder-style .style-title h2 {
+    margin: 0 0 12px;
+  }
+  .brafinder-main .brafinder-style .style-title p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .brafinder-main .brafinder-style .brafinder-series-list > ul {
+    border-bottom: 20px solid #ededed;
+  }
+  .brafinder-main .brafinder-style .brafinder-series-list > ul > li:hover::after {
+    display: none;
+  }
+  .brafinder-main .brafinder-style .brafinder-series-list > ul > li .series-desc {
+    padding: 5px 0;
+  }
+  .brafinder-main .brafinder-style .brafinder-series-list > ul > li .series-desc p {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+  }
+  .brafinder-main .brafinder-style .brafinder-series-list > ul > li .series-desc p span {
+    display: block;
+  }
+  .brafinder-main .brafinder-style .brafinder-series-list > ul > li .series-desc.recommended-size p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .brafinder-main .brafinder-style .brafinder-series-list > ul > li .series-desc.recommended-size .size {
+    font-size: 14px;
+  }
+  .brafinder-main .brafinder-introduce {
+    padding: 30px 0;
+  }
+  .brafinder-main .brafinder-introduce h1 {
+    font-size: 24px;
+    line-height: 26px;
+    margin: 0 0 18px;
+  }
+  .brafinder-main .brafinder-introduce p {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0 24px;
+  }
+  .brafinder-main .brafinder-introduce p span {
+    display: block;
+  }
+  .brafinder-main .brafinder-introduce p:last-of-type {
+    margin: 0 0 28px;
+  }
+  .brafinder-main .brafinder-introduce dl dt {
+    margin: 1px 0 0;
+    padding: 0 15px 0 20px;
+    font-size: 14px;
+  }
+  .brafinder-main .brafinder-introduce dl dt a {
+    width: 40px;
+  }
+  .brafinder-main .brafinder-introduce dl dt a .icon-arrow-right {
+    width: 7px;
+    height: 13px;
+    background-position: -254px -606px;
+  }
+  .brafinder-main .brafinder-introduce dl dt a .icon-arrow-down {
+    width: 13px;
+    height: 7px;
+    background-position: -300px -606px;
+  }
+  .brafinder-main .brafinder-introduce dl dt a .icon-arrow-up {
+    width: 13px;
+    height: 7px;
+    background-position: -88px -728px;
+  }
+  .brafinder-main .brafinder-introduce dl dd {
+    padding: 16px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .brafinder-main .brafinder-style-detail dt a {
+    display: none;
+  }
+  .brafinder-main .brafinder-style-detail dd {
+    display: block;
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroller-wrap ul li .scroll-container {
+    top: 40px;
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroller-wrap ul li .scroll-container .scroll-container-text ul {
+    padding: 20px 0 40px;
+  }
+  /*弹层样式*/
+  .size-dialog {
+    left: 0;
+    width: 100%;
+  }
+  .size-dialog .dialog-container .size-content .size-tabs-content .description-knowsize > div:nth-child(1) {
+    margin: 0;
+  }
+  .size-dialog .dialog-container .size-content .size-tabs-content .description-knowsize > div:nth-child(2) {
+    width: 340px;
+    margin: 0;
+  }
+  /*弹层样式 end*/
+}
+@media (max-width: 767px) {
+  .brafinder-main .brafinder-style-detail {
+    margin-bottom: 0px;
+    border-bottom: 4px solid #000;
+  }
+  .brafinder-main .brafinder-style-detail dt {
+    margin-top: 0;
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item:first-child .scroll .scroll-dots:before {
+    padding-left: 0;
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroller-wrap ul li .scroll-container {
+    position: static;
+    /*.scroll-container-img{
+                                            width: 37px;
+                                            top: 14px;
+                                            right: 14px;
+                                            left: auto !important;
+                                        }*/
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroller-wrap ul li .scroll-container .scroll-container-text {
+    margin: 0;
+    padding: 20px 10px 30px;
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroller-wrap ul li .scroll-container .scroll-container-text ul {
+    padding: 22px 0 25px;
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroller-wrap ul li .dos-msg {
+    bottom: 30px;
+    padding: 0;
+    font-size: 12px;
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-dots {
+    left: 0 !important;
+    bottom: 255px;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 48px;
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-prev,
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-next {
+    margin-top: 0px;
+    padding: 50px 10px;
+    top: 19%;
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-prev a i,
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-next a i {
+    display: inline-block;
+    background: url(../images/icon.png);
+    width: 20px;
+    height: 35px;
+    text-indent: -9999px;
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-prev a i {
+    background-position: -487px -454px;
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-next a i {
+    background-position: -527px -454px;
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item.dos-msg-show .scroll .scroll-dots {
+    padding-top: 10px !important;
+    height: 48px;
+    line-height: 48px;
+  }
+  /*弹层样式*/
+  .size-dialog {
+    overflow-y: scroll;
+    background: #fff;
+  }
+  .size-dialog .dialog-container {
+    padding: 20px 0 0;
+  }
+  .size-dialog .dialog-container h1 {
+    font-size: 24px;
+    line-height: 26px;
+    color: #000;
+    padding: 14px 0;
+  }
+  .size-dialog .dialog-container > p {
+    color: #000;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0px 0 30px;
+  }
+  .size-dialog .dialog-container .size-content .size-tabs-title li {
+    outline: 3px solid #fff;
+  }
+  .size-dialog .dialog-container .size-content .size-tabs-content .size-description > p {
+    font-size: 12px;
+  }
+  .size-dialog .dialog-container .size-content .size-tabs-content .size-description > p span {
+    display: block;
+  }
+  .size-dialog .dialog-container .size-content .size-tabs-content .size-description .size-select-content .size-select-item .size-selector-box.dropdown .btn {
+    width: 100%;
+    line-height: 48px;
+    height: 50px;
+    background: #fff;
+    border-top: 1px solid #aeaeae;
+    display: block;
+    font-size: 14px;
+    color: #000;
+    padding: 0;
+  }
+  .size-dialog .dialog-container .size-content .size-tabs-content .description-measure {
+    padding: 35px 10px;
+  }
+  .size-dialog .dialog-container .size-content .size-tabs-content .description-knowsize {
+    padding: 35px 10px;
+  }
+  .size-dialog .dialog-container .size-content .size-tabs-content .description-knowsize .size-select-content {
+    margin: 30px auto;
+  }
+  .size-dialog .dialog-container .size-content .size-tabs-content .description-knowsize > div:nth-child(1) {
+    float: none;
+    margin: 0 auto;
+  }
+  .size-dialog .dialog-container .size-content .size-tabs-content .description-knowsize > div:nth-child(2) {
+    float: none;
+    display: none;
+  }
+  .size-dialog .dialog-container .size-content .size-tabs-content .size-select-content {
+    width: 285px;
+    margin: 30px auto 40px;
+  }
+  .size-dialog .dialog-container .size-content .size-tabs-content .measure-btn {
+    font-size: 14px;
+    color: #000;
+    line-height: 16px;
+    margin-bottom: 30px;
+  }
+  .size-dialog .dialog-container .size-content .size-tabs-content .measure-btn a {
+    color: #000;
+  }
+  .size-dialog .dialog-container .size-content .size-tabs-content .measure-btn span {
+    text-decoration: underline;
+  }
+  .size-dialog .dialog-container .size-content .size-tabs-content .measure-btn .icon-arrow-right {
+    width: 10px;
+    height: 13px;
+    background-position: -237px -609px;
+    vertical-align: middle;
+    margin: -2px 0 0 8px;
+  }
+  /*弹层样式 end*/
+}
+@media (max-width: 374px) {
+  .brafinder-main .brafinder-style .brafinder-series-list > ul > li .series-desc p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-prev,
+  .brafinder-main .brafinder-style-detail dd .article-series-item .scroll .scroll-btn-next {
+    top: 16%;
+  }
+}
+.gl-cta {
+  font-size: 18px;
+  width: 200px;
+  height: 42px;
+  line-height: 42px;
+  display: inline-block;
+}
+.icon-arrow-right:before {
+  display: none;
+}
+@media (max-width: 1023px) {
+  .gl-cta {
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    min-width: 151px;
+  }
+}

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" type="text/css" href="css/football.css"> -->
+	<%include _includes/js.html %>
+	<!-- <script type="text/javascript" src="js/football.js"></script> -->
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<!-- 内容部分 -->
+		<section class="container football-width">
+			  
+		  
+			<style type="text/css">
+				.article {
+					position: relative;
+				}
+				.article > img {
+					width: 100%;
+				}
+				.link {
+					position: absolute;
+					z-index: 1;
+				}
+				img {
+					width: 100%;
+				}
+				.article-kv {
+					position: relative;
+				}
+				.article-kv .btn {
+					display: block;
+				}
+				.article .btn{
+					height: 54px;
+					line-height: 54px;
+					font-size: 14px;
+				}
+				.article-kv .btn1{
+					width: 258px;
+					height: 54px;
+					line-height: 54px;
+				}
+				.article-kv .btn2{
+					width: 178px;
+					height: 54px;
+					margin-top: 10px;
+					line-height: 54px;
+				}
+				.btn-box{
+					left: 5.5%;
+					position: absolute;
+					top: 73%;
+				}
+				.btn-box2{
+					left: 12.1%;
+					position: absolute;
+					top: 55%;
+				}
+				.btn-box3{
+					position: relative;
+					left: auto;
+					top: auto;
+					text-align: center;
+					margin-top: 120px;
+				}
+				.article-stories{
+					max-width: 1460px;
+					margin: 0 auto 20px;
+					padding: 0 20px;
+				}
+				.article-stories .tit{
+					font-size: 40px;
+					color: #000;
+					margin: 30px auto 40px;
+				}
+				.article-stories .swiper-wrapper{
+					justify-content:space-between;
+				}
+				.stories-swiper{
+					padding: 0 4%; 
+				}
+				.article-stories .swiper-slide{
+					width: 25.4%;
+				}
+				.article-product{
+					max-width: 1460px;
+					margin: 50px auto 130px;
+					padding: 0 20px;
+				}
+				.article-product .product-swiper {
+					padding: 0 80px;
+				}
+				.swiper-button-prev {
+					background-image: url(https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/lf.png) !important;
+					width: 50px;
+					height: 50px;
+					background-size: 50px 50px;
+					left: 0%;
+					top: 34%;
+				}
+
+				.swiper-button-next {
+					background-image: url(https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/rt.png) !important;
+					width: 50px;
+					height: 50px;
+					background-size: 50px 50px;
+					top: 34%;
+					right: 0%;
+				}
+				@media (max-width: 1200px){
+					.article .btn-box .btn{
+						height: 46px;
+						line-height: 48px;
+					}
+					.btn.gl-cta-height .gl-icon{
+						top: 4px;
+						height: 46px;
+						line-height: 40px;
+					}
+				}
+				@media (max-width: 1023px) {
+					.btn-box{
+						left: auto;
+						position: relative;
+						top: auto;
+						padding-left: 16px;
+					}
+					.btn-box2{
+						margin-top: 20px;
+						margin-bottom: 60px;
+					}
+					.article-kv .btn1{
+						margin-top: 20px;
+					}
+					.article-stories{
+						margin: 0 auto 20px;
+						padding: 0;
+					}
+					.article-stories .tit{
+						padding-left: 32px;
+						font-size: 28px;
+						margin: 30px auto 30px;
+					}
+					.stories-swiper{
+						padding: 0;
+						padding-left: 32px; 
+					}
+					.article-product{
+						margin: 0 auto;
+						padding: 0;
+						margin-top: 40px;
+					}
+					.article-product .product-swiper {
+						padding: 0;
+						padding-left: 32px;
+					}
+					.btn-box3{
+						padding-left: 0;
+						padding-right: 32px;
+						margin: 30px auto 70px;
+					}
+					.swiper-button-prev {
+						display: none;
+					}
+
+					.swiper-button-next {
+						display: none;
+					}
+				}
+				@media (max-width: 370px){
+					.article-kv .btn-box .btn1{
+						width: 95%;
+					}
+				}
+			   </style>   
+				  <article class="article article-kv"> 
+						<img src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+						"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/pc_01.jpg"},
+						"medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/mob_01.jpg"},
+						"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/mob_01.jpg"}}' />
+						<div class="btn-box">
+							<a class="btn  btn1 btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" target="_blank" href=""> 購買TOKYO 東京系列<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span> </a> 
+							<a class="btn  btn2 btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" target="_blank" href=""> 瀏覽故事<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span> </a> 
+						</div>
+				  </article> 
+				  <article class="article">
+						<img src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+							"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/pc_02.jpg"},
+							"medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/mob_02.jpg"},
+							"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/mob_02.jpg"}}' />
+				  </article>
+				  <article class="article article-stories">
+					    <h4 class="tit">發掘其他故事</h4>
+					    <div class="stories-swiper">
+							<div class="swiper-container swiper-1">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="">
+											<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/sp_01.png" 
+											src="https://www.adidas.com.hk/images/blank.gif" alt="">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/sp_02.png" 
+											src="https://www.adidas.com.hk/images/blank.gif" alt="">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/sp_03.png" 
+											src="https://www.adidas.com.hk/images/blank.gif" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+					    </div>
+				  </article>
+				  <article class="article">
+						<img src="https://www.adidas.com.hk/images/blank.gif" data-image='{
+							"standard":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/pc_03.jpg"},
+							"medium":{"high":"",  "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/mob_03.jpg"},
+							"small":{"high":"", "normal":"https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/mob_03.jpg"}}' />
+				  </article>
+				  <article class="article article-product">
+					    <div class="product-swiper">
+							<div class="swiper-container swiper-2">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="">
+											<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/sw_01.png" 
+											src="https://www.adidas.com.hk/images/blank.gif" alt="">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/sw_02.png" 
+											src="https://www.adidas.com.hk/images/blank.gif" alt="">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/sw_03.png" 
+											src="https://www.adidas.com.hk/images/blank.gif" alt="">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/sw_04.png" 
+											src="https://www.adidas.com.hk/images/blank.gif" alt="">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/sw_05.png" 
+											src="https://www.adidas.com.hk/images/blank.gif" alt="">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/AUG/RFS/CLP/CN/sw_06.png" 
+											src="https://www.adidas.com.hk/images/blank.gif" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="btn-box btn-box3">
+								<a class="btn  btn1 btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" target="_blank" href="">購買 HEAT.RDY<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span> </a> 
+							</div>
+					    </div>
+				  </article>
+				  <script type="text/javascript">
+				$(function() {
+				   // 换图 + 懒加载
+				   $.spice.lazyLoad('img[lazysrc]', {
+					   attr: 'lazysrc'
+				   });
+				   $.spice.tools.changeImageSrc({
+					   callBack: function(img, self) {
+						   $.spice.lazyLoad('img[lazysrc]', {
+							   attr: self.opt.lazyData,
+							   prestrain: 1
+						   });
+					   }
+				   });
+					if ($.spice.getWindowWidth() < 1023) {
+						var swiper1 = new Swiper('.swiper-1', {
+							slidesPerView: 1.4,
+							spaceBetween: 24,
+							initialSlide: 0
+						});
+					}
+					var swiper2 = new Swiper('.swiper-2', {
+						slidesPerView: 3,
+						spaceBetween: 17,
+						prevButton: '.product-swiper .swiper-button-prev',
+						nextButton: '.product-swiper .swiper-button-next',
+						initialSlide: 0,
+						breakpoints: {
+								1024: {
+									slidesPerView: 1.2,
+								}
+						}
+					});
+			   
+			   
+				});
+			   
+						 </script>  
+				 
+				 
+		</section>
+
+		<%include _includes/modules/footer-no-back-top.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		<!-- 视频弹层 -->
+		<script id="video-dialog" type="text/template">
+			<div class="dialog">
+				<div class="dialog-container">
+					<div class="video-content">
+						<video  id="video" controls poster="../static/images/plp/img2.png">
+							<source src="../static/videos/plp/FB_Brand_07_27.mp4" type="video/mp4"></video>
+					</div>
+				</div>
+				<i class="icon icon-close dialog-close">&times;</i>
+			</div>
+		</script>
+	</div>
+</body>
+</html>

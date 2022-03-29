@@ -1,0 +1,83 @@
+
+@charset "UTF-8";
+
+.myaccount-right-content {
+	.my-subscriptions-box{
+		.my-subscriptions-item{
+			.product-container > div{
+				.thumbnail .good-box .release-info > .subscribe .icon-a-font{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+.look-more {
+	 .gl-cta {
+		font-size: 18px;
+		font-weight: normal;
+		font-family: "adihrg", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+		i{
+			font-size: 14px;
+		margin-left: 8px;
+		line-height: 42px;
+		}
+	}
+
+}
+
+
+//只有商品的时候样式错乱
+.row{
+	display: flex;
+}
+.myaccount-right-content{
+	.myaccount-right-tit{
+		.myaccount-top-nav{
+			ul{
+				li{
+					&.is-active{
+						a{
+							span{
+								color: #000000;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1023px){
+	.myaccount-right-content{
+		.myaccount-right-tit{
+			.myaccount-top-nav{
+				ul{
+					li{
+						&.is-active{
+							a{
+								&:before{
+									background: #000000;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.del-subscriptions-dialog{
+	.dialog-scroll-container{
+		.dialog{
+			.dialog-container{
+				.dialog-btn-wrap{
+					.btn-black{
+						color: #000000;
+					}
+				}
+			}
+		}
+	}
+}

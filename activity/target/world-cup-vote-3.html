@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/world-cup-vote.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/world-cup-vote.js"></script>
+
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+			<article class="article article-item article-item-3">
+				<div class="item-box-bg">
+					<h2 class="item-logo"><img src="../static/images/world-cup-vote/logo.png" /></h2>
+					<div class="item-form-box">
+						<div class="item-form-title">
+							<h2>感谢您支持xxx国家队。</h2>
+							<p>若您支持的球队夺得2018世界杯冠军。</p>
+							<p>您将有机会赢取由adidas提供的价值人民币1299元的</p>
+							<p>2018世界杯官方比赛用球一枚。</p>
+							<p>同时，我们还将从两轮竞猜都成功的消费者中抽选出10名幸运儿</p>
+							<p>送出价值人民币1699元的miadidas指定优惠码一枚</p>
+							<p>(仅可用于购买miadidas商品)</p>
+						</div>
+						<div class="item-form-content">
+							<h2><span>请提交您用户信息</span> 以便我们的客服在您中奖后联系到您</h2>
+							<div class="form-group-box">
+								<div class="form-group">
+									<label class="control-label">姓名</label>
+									<div class="form-input">
+										<input placeholder="姓名为空请填写" type="text">
+										<div class="msg-block">
+											<i class="icon msg-icon"></i>
+											<span>格式错误，请重新输入</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label">电话</label>
+									<div class="form-input">
+										<input placeholder="电话为空请填写" type="text">
+										<div class="msg-block">
+											<i class="icon msg-icon"></i>
+											<span>格式错误，请重新输入</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label">邮箱</label>
+									<div class="form-input">
+										<input placeholder="邮箱为空请填写" type="text">
+										<div class="msg-block">
+											<i class="icon msg-icon"></i>
+											<span>格式错误，请重新输入</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p>※我们将以您留下的联系方式作为信息核对依据，请务必确保2个活动阶段填写的用户信息一致</p>
+							<a href="world-cup-vote-2.html" target="_blank" class="btn btn-white btn-have-arrow"><span>确定提交</span></a>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<%include _includes/modules/footer-no-back-top.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+</html>

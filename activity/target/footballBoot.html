@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+			<!-- <link rel="stylesheet" type="text/css" href="css/adiclub.css"> -->
+			<%include _includes/js.html %>
+				<!-- <script type="text/javascript" src="js/adiclub.js"></script> -->
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+			<!-- 内容部分 -->
+			<section class="container">
+				<style>
+					.article {
+						position: relative;
+					}
+
+					.article>img {
+						width: 100%;
+					}
+
+					.row-clp {
+						display: flex;
+						padding: 20px 14px;
+					}
+
+					.letter-item {
+						width: 25%;
+						padding: 0 12px;
+						margin: 23px 0;
+					}
+
+					.link1 {
+						position: absolute;
+						width: 29%;
+						height: 26%;
+						bottom: 10%;
+						left: 35.5%;
+					}
+
+					.pc-link1,
+					.pc-link2,
+					.pc-link3 {
+						position: absolute;
+						width: 22%;
+						height: 43%;
+						bottom: 29%;
+					}
+
+					.pc-link1 {
+						left: 16%;
+					}
+
+					.pc-link2 {
+						left: 39%;
+					}
+
+					.pc-link3 {
+						left: 62.2%;
+					}
+
+					.swiper-block {
+						position: absolute;
+						bottom: 35px;
+						width: 78%;
+						max-width: 1500;
+						box-sizing: border-box;
+						left: 50%;
+						margin-left: -39%;
+						padding: 0 4%;
+					}
+
+					.swiper-button-black.swiper-button-prev {
+						background-image: url("https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc-left.png");
+						margin-top: -8%;
+					}
+
+					.swiper-button-black.swiper-button-next {
+						background-image: url("https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc-right.png");
+						margin-top: -8%;
+					}
+
+					@media (max-width: 1024px) {
+						.link1 {
+							position: absolute;
+							width: 71%;
+							height: 19%;
+							bottom: 5%;
+							left: 14.5%;
+						}
+
+						.mob-link1,
+						.mob-link2,
+						.mob-link3 {
+							position: absolute;
+							width: 74%;
+							height: 24%;
+							left: 13%;
+
+						}
+
+						.mob-link1 {
+							bottom: 64%;
+						}
+
+						.mob-link2 {
+							bottom: 34.5%;
+						}
+
+						.mob-link3 {
+							bottom: 4%;
+						}
+
+						.swiper-block {
+							position: absolute;
+							bottom: 5%;
+							width: 100%;
+							max-width: auto;
+							box-sizing: border-box;
+							left: 0;
+							margin-left: 0;
+							padding: 0;
+							padding-left: 5%
+						}
+
+						.swiper-block .swiper-slide img {
+							width: 94%;
+						}
+
+					}
+				</style>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc_01.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_01.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_01.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc_02.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_02.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_02.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc_03.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_03.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_03.jpg&quot;}}">
+					<div class="none-sm">
+						<span class="pc-link1 tab" data-sign="pc-link1"></span>
+						<span class="pc-link2 tab" data-sign="pc-link2"></span>
+						<span class="pc-link3 tab" data-sign="pc-link3"></span>
+					</div>
+					<div class="none block-sm">
+						<span class="mob-link1 tab" data-sign="pc-link1"></span>
+						<span class="mob-link2 tab" data-sign="pc-link2"></span>
+						<span class="mob-link3 tab" data-sign="pc-link3"></span>
+					</div>
+				</article>
+				<article class="article" id="pc-link1">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+																											&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc_04.jpg&quot;},
+																											&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_04.jpg&quot;},
+																											&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_04.jpg&quot;}}">
+				</article>
+				<article class="article" id="pc-link2">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+																											&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc_05.jpg&quot;},
+																											&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_05.jpg&quot;},
+																											&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_05.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc_06.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_06.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_06.jpg&quot;}}">
+
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc_07.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_07.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_07.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc_08.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_08.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_08.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc_09.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_09.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_09.jpg&quot;}}">
+				</article>
+				<article class="article none-sm">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc_10.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc_11.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_11.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_11.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc_12.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_12.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_12.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc_13.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_13.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_13.jpg&quot;}}">
+				</article>
+				<article class="article none block-sm">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_14.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_14.jpg&quot;}}">
+				</article>
+				<article class="article none block-sm">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_15.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_15.jpg&quot;}}">
+				</article>
+				<article class="article" id="pc-link3">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc_14.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_16.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_16.jpg&quot;}}">
+					<div class="swiper-block">
+						<div class="swiper-container gallery-top ">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="https://www.adidas.com.hk/item/FW6492">
+										<img class="none-sm"
+											src="https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pro1.png" />
+										<img class="none block-sm"
+											src="https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/pro1.png" />
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="https://www.adidas.com.hk/item/FW6911">
+										<img class="none-sm"
+											src="https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pro2.png" />
+										<img class="none block-sm"
+											src="https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/pro2.png" />
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="https://www.adidas.com.hk/item/FY1118">
+										<img class="none-sm"
+											src="https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pro3.png" />
+										<img class="none block-sm"
+											src="https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/pro3.png" />
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="https://www.adidas.com.hk/item/FW7517">
+										<img class="none-sm"
+											src="https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pro4.png" />
+										<img class="none block-sm"
+											src="https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/pro4.png" />
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="https://www.adidas.com.hk/item/H68129">
+										<img class="none-sm"
+											src="https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pro5.png" />
+										<img class="none block-sm"
+											src="https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/pro5.png" />
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="https://www.adidas.com.hk/item/FW6940">
+										<img class="none-sm"
+											src="https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pro6.png" />
+										<img class="none block-sm"
+											src="https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/pro6.png" />
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-prev swiper-button-black none-sm"></div>
+						<div class="swiper-button-next swiper-button-black none-sm"></div>
+					</div>
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/pc/cn/pc_15.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_17.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Football_Boot/mob/cn/mob_17.jpg&quot;}}">
+					<a class="link1" href=""></a>
+				</article>
+
+
+				<script type="text/javascript">
+					$(function () {
+						// 换图 + 懒加载
+						$.spice.lazyLoad('img[lazysrc]', {
+							attr: 'lazysrc'
+						});
+						$.spice.tools.changeImageSrc({
+							callBack: function (img, self) {
+								$.spice.lazyLoad('img[lazysrc]', {
+									attr: self.opt.lazyData,
+									prestrain: 1
+								});
+							}
+						});
+						var galleryTop = new Swiper('.gallery-top', {
+							slidesPerView: 4,
+							prevButton: '.swiper-button-prev',
+							nextButton: '.swiper-button-next',
+							initialSlide: 0,
+							spaceBetween: 30,
+							breakpoints: {
+								1024: {
+									slidesPerView: 1.5,
+									loopAdditionalSlid: 1,
+									spaceBetween: 0
+								}
+							}
+						});
+						$('.tab').on('tap', function () {
+							var target = $(this).attr('data-sign');
+							target_height = $('#' + target).offset().top;
+							$("html,body").animate({
+								scrollTop: target_height
+							}, 500);
+						})
+					});
+				</script>
+			</section>
+
+			<%include _includes/modules/footer-no-back-top.html %>
+				<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

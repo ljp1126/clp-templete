@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<%include _includes/meta.html %>
+	<title>lp-neo-dece</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+<body>
+<div id="wrapper">
+	<%include _includes/modules/header.html %>
+
+	<section class="container">
+		<style type="text/css">
+		 	/* 热区 */
+			.box-dece {position: relative;}
+			.box-dece img {display: block;width: 100%;}
+			.box-dece .link {position: absolute;}
+			.box-dece .link-0 {top: 30.17%;left: 28.33%;width: 7.62%;height: 4.84%;}
+			.box-dece .link-1 {top: 75.70%;left: 45.11%;width: 6.05%;height: 4.13%;}
+			.box-dece .link-2 {top: 67.35%;left: 66.68%;width: 16.40%;height: 4.22%;}
+			.box-dece .link-3 {top: 54.47%;left: 20.92%;width: 7.05%;height: 3.98%;}
+			.box-dece .link-4 {top: 44.40%;left: 39.02%;width: 7.68%;height: 4.39%;}
+			.box-dece .link-5 {top: 73.98%;left: 54.74%;width: 14.63%;height: 3.98%;}
+			.box-dece .link-6 {top: 43.30%;left: 34.38%;width: 13.51%;height: 3.54%;}
+			.box-dece .link-7 {top: 54.48%;left: 72.56%;width: 7.82%;height: 3.82%;}
+			/* 热区结束 */
+
+			/* 全部鞋类 服饰 */
+			.apparel-w {max-width: 950px;margin: 0 auto 0;}
+			.apparel-w .product-list {position: relative;}
+			.apparel-w .product-list .product-title {margin: 38px 0 38px;}
+			.apparel-w .product-list .product-title p {font-size: 29px;color: #000;text-align: center;}
+			.apparel-w .product-list .product-list-cont {width: 100%;}
+			.apparel-w .product-list .product-list-cont .list-item {float: left;position: relative;max-width: 25%;padding: 0 5px;margin: 0 0 40px;}
+			.apparel-w .product-list .product-list-cont .list-item:hover .thumbnail {box-shadow: 1px 2px 5px 0 rgba(136, 136, 136, 0.5);}
+			.apparel-w .product-list .product-list-cont .list-item .thumbnail {padding: 0;background-color: #fff; border-radius: 0;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+			.apparel-w .product-list .product-list-cont .list-item .thumbnail .pro-big-img-box img {-webkit-border-radius: 0;-moz-border-radius: 0;-ms-border-radius: 0;-o-border-radius: 0;border-radius: 0;}
+			.apparel-w .product-list .product-list-cont .list-item .thumbnail .goods-box {padding: 10px 10px 17px 10px;}
+			.apparel-w .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-title {font-size: 12px;color: #000;line-height: 16px;height: 32px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+			.apparel-w .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-title p {color: #000;font-weight: bold;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+			.apparel-w .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-title span {color: #747474;}
+			.apparel-w .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-bottom {margin-top: 12px;font-weight: bold;}
+			.apparel-w .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-bottom .goods-price {color: #000;font-weight: bold;font-size: 12px;}
+			/* 全部鞋类 服饰 结束 */
+
+			/* adidasneo */
+			.dece-neo-box {max-width: 1440px;padding: 0 10px;margin: 40px auto 100px;}
+			.dece-neo-box .title {text-align: center;margin-bottom: 70px;}
+			.dece-neo-box .ad-neo-content {position: relative;font-size: 0;}
+			.dece-neo-box .ad-neo-content .ad-neo-item {position: relative;padding: 0 27px;}
+			.dece-neo-box .ad-neo-content .ad-neo-item span img {
+				width: 100%;
+			}
+			.dece-neo-box .ad-neo-content .ad-neo-item a {position: absolute;bottom: 20px;left: 50%;width: 180px;margin-left: -90px;}
+			/* adidasneo 结束 */
+			@media screen and (max-width: 1024px) {
+				/* 热区 */
+			    .box-dece .link-0 {top: 31.41%;left: 3.83%;width: 19.65%;height: 5.93%;}
+			    .box-dece .link-1 {top: 69.52%;left: 35.27%;width: 16.01%;height: 6.60%;}
+			    .box-dece .link-2 {top: 64.86%;left: 53.24%;width: 42.14%;height: 5.93%;}
+			    .box-dece .link-3 {top: 55.85%;left: 3.14%;width: 18.27%;height: 4.37%;}
+			    .box-dece .link-4 {top: 40.69%;left: 33.01%;width: 19.55%;height: 4.87%;}
+			    .box-dece .link-5 {top: 75.46%;left: 44.30%;width: 37.62%;height: 5.22%;}
+			    .box-dece .link-6 {top: 22.58%;left: 31.93%;width: 34.48%;height: 5.39%;}
+			    .box-dece .link-7 {top: 53.44%;left: 71.81%;width: 20.33%;height: 4.92%;}
+			    /* 热区结束 */
+
+				/* 全部鞋类 服饰 */
+			    .apparel-w {padding-top: 10px;}
+			    .apparel-w .product-list {position: relative;margin: 0 17px 0;}
+			    .apparel-w .product-list .product-title {margin: 14px 0 14px;}
+			    .apparel-w .product-list .product-title p {font-size: 18px;}
+			    .apparel-w .product-list .product-list-cont .list-item {max-width: 50%;margin-bottom: 22px;}
+			    .apparel-w .product-list .product-list-cont .list-item .thumbnail .goods-box {margin-top: 0;padding-top: 3px;}
+			    .apparel-w .product-list .product-list-cont .list-item .thumbnail .goods-box .one-color {font-size: 12px;color: #000;line-height: 30px;}
+			    .apparel-w .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-title {line-height: 18px;height: 43px;font-size: 12px;border-top: 1px dotted #000000;padding-top: 7px;}
+			    .apparel-w .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-bottom {margin-top: 7px;}
+			    .apparel-w .product-list .product-list-cont .list-item:hover .thumbnail {box-shadow: none;}
+			    /* 全部鞋类 服饰 结束 */
+
+				/* adidasneo */
+			    .dece-neo-box {margin: 25px auto 50px;padding-left: 15px;padding-right: 15px;}
+			    .dece-neo-box .title {margin-bottom: 25px;}
+			    .dece-neo-box .ad-neo-content .ad-neo-item {padding: 5px;}
+			    .dece-neo-box .ad-neo-content .ad-neo-item a {bottom: 15px;width: 152px;margin-left: -76px;min-width: 130px;height: 40px;line-height: 40px;font-size: 16px;}
+			    /* adidasneo 结束 */
+			}
+			@media screen and (max-width: 374px) {
+			    .dece-neo-box .ad-neo-content .ad-neo-item a {min-width: 120px;width: 120px;font-size: 12px;margin-left: -60px;}
+			}
+		</style>
+		<!-- 1 -->
+		<article class="article">
+			<div class="box-dece">
+				<img src="images/blank.gif"	data-image='{
+					"standard":{"high":"", "normal":"../static/images/lp-neo-dece/pc_01.png"},
+					"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob_01.png"},
+					"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob_01.png"}
+				}' />
+			</div>
+		</article>
+
+		<!-- 2 -->
+		<article class="article">
+			<div class="box-dece">
+				<img src="images/blank.gif"	data-image='{
+					"standard":{"high":"", "normal":"../static/images/lp-neo-dece/pc_02.png"},
+					"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob_02.png"},
+					"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob_02.png"}
+				}' />
+				<a href="https://www.adidas.com.cn/item/BS0822" class="link link-0"></a>
+				<a href="https://www.adidas.com.cn/item/CV9138" class="link link-1"></a>
+				<a href="https://www.adidas.com.cn/item/CG5718" class="link link-2"></a>
+			</div>
+		</article>
+
+		<!-- 3 -->
+		<article class="article">
+			<div class="box-dece">
+				<img src="images/blank.gif"	data-image='{
+					"standard":{"high":"", "normal":"../static/images/lp-neo-dece/pc_03.png"},
+					"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob_03.png"},
+					"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob_03.png"}
+				}' />
+				<a href="https://www.adidas.com.cn/item/BQ0739" class="link link-3"></a>
+				<a href="https://www.adidas.com.cn/item/BP6537" class="link link-4"></a>
+				<a href="https://www.adidas.com.cn/item/BC0053" class="link link-5"></a>
+			</div>
+		</article>
+
+		<!-- 4 -->
+		<article class="article">
+			<div class="box-dece">
+				<img src="images/blank.gif"	data-image='{
+					"standard":{"high":"", "normal":"../static/images/lp-neo-dece/pc_04.png"},
+					"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob_04.png"},
+					"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob_04.png"}
+				}' />
+				<a href="https://www.adidas.com.cn/item/CG5704" class="link link-6"></a>
+				<a href="https://www.adidas.com.cn/item/CD2327" class="link link-7"></a>
+			</div>
+		</article>
+
+		<!-- 全部鞋类 -->
+		<article class="article apparel-w">
+			<div class="product-list">
+				<div class="product-title">
+					<p>全部鞋类</p>
+				</div>
+				<div class="row product-list-cont float-clearfix">
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BB9914">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-neo-dece/neo-shop-12.png" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-12.png"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-12.png"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-12.png"}
+									}' width="320" height="320" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="one-color none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BB9914" class="goods-title">
+									<p>CF HOOPS MID WTR 休闲鞋</p>
+									<span>男子 adidas neo</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥769</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CG5718">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-neo-dece/neo-shop-13.png" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-13.png"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-13.png"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-13.png"}
+									}' width="320" height="320" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="one-color none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CG5718" class="goods-title">
+									<p>CF HOOPS MID WTR 休闲鞋</p>
+									<span>男子 adidas neo</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥769</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CG5704">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-neo-dece/neo-shop-14.png" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-14.png"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-14.png"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-14.png"}
+									}' width="320" height="320" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="one-color none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CG5704" class="goods-title">
+									<p>CF RACER TR 休闲鞋</p>
+									<span>男子 adidas neo</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥669</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CG5726">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-neo-dece/neo-shop-15.png" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-15.png"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-15.png"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-15.png"}
+									}' width="320" height="320" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="one-color none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CG5726" class="goods-title">
+									<p>CF RACER TR 休闲鞋 </p>
+									<span>男子 adidas neo</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥629</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BC0053">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-neo-dece/neo-shop-16.png" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-16.png"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-16.png"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-16.png"}
+									}' width="320" height="320" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="one-color none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BC0053" class="goods-title">
+									<p>CF RACER TR W 休闲鞋</p>
+									<span>女子 adidas neo</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥669</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<!-- 全部服饰 -->
+		<article class="article apparel-w">
+			<div class="product-list">
+				<div class="product-title">
+					<p>全部服饰</p>
+				</div>
+				<div class="row product-list-cont float-clearfix">
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CF0800">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-neo-dece/neo-shop-01.png" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-01.png"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-01.png"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-01.png"}
+									}' width="320" height="320" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="one-color none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CF0800" class="goods-title">
+									<p>羽绒外套</p>
+									<span>男子 adidas neo</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥999</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CZ1707">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-neo-dece/neo-shop-02.png" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-02.png"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-02.png"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-02.png"}
+									}' width="320" height="320" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="one-color none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CZ1707" class="goods-title">
+									<p>套头衫</p>
+									<span>男子 adidas neo</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥499</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BS0822">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-neo-dece/neo-shop-03.png" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-03.png"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-03.png"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-03.png"}
+									}' width="320" height="320" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="one-color none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BS0822" class="goods-title">
+									<p>羽绒外套</p>
+									<span>男子 adidas neo</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,199</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CD2327">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-neo-dece/neo-shop-04.png" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-04.png"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-04.png"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-04.png"}
+									}' width="320" height="320" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="one-color none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CD2327" class="goods-title">
+									<p>羽绒外套</p>
+									<span>男子 adidas neo</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥999</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BR8451">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-neo-dece/neo-shop-05.png" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-05.png"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-05.png"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-05.png"}
+									}' width="320" height="320" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="one-color none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BR8451" class="goods-title">
+									<p>套头衫</p>
+									<span>男子 adidas neo</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥499</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CD3558">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-neo-dece/neo-shop-06.png" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-06.png"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-06.png"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-06.png"}
+									}' width="320" height="320" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="one-color none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CD3558" class="goods-title">
+									<p>套头衫</p>
+									<span>男子 adidas neo</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥499</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CF1925">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-neo-dece/neo-shop-07.png" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-07.png"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-07.png"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-07.png"}
+									}' width="320" height="320" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="one-color none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CF1925" class="goods-title">
+									<p>套头衫</p>
+									<span>男子 adidas neo</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥399</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BP6537">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-neo-dece/neo-shop-08.png" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-08.png"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-08.png"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-08.png"}
+									}' width="320" height="320" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="one-color none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BP6537" class="goods-title">
+									<p>羽绒外套</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,099</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ0739">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-neo-dece/neo-shop-09.png" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-09.png"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-09.png"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-09.png"}
+									}' width="320" height="320" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="one-color none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ0739" class="goods-title">
+									<p>套头衫</p>
+									<span>女子 adidas neo</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥449</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BR8593">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-neo-dece/neo-shop-10.png" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-10.png"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-10.png"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-10.png"}
+									}' width="320" height="320" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="one-color none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BR8593" class="goods-title">
+									<p>针织裤</p>
+									<span>男子 adidas neo</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥399</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CV9138">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-neo-dece/neo-shop-11.png" data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-11.png"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-11.png"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-11.png"}
+									}' width="320" height="320" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="one-color none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CV9138" class="goods-title">
+									<p>针织裤</p>
+									<span>男子 adidas neo</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥699</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<!-- adidasneo -->
+		<article class="article">
+			<div class="dece-neo-box">
+				<p class="title"><img src="../static/images/lp-neo-oct/mobile-bg-11.jpg" /></p>
+				<div class="ad-neo-content">
+					<div class="ad-neo-item col-12-3 col-sm-12-6">
+						<span>
+							<img src="images/blank.gif" data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-17.png"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-17.png"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-17.png"}
+							}' />
+						</span>
+						<a target="_target" href="https://www.adidas.com.cn/men_adidasneo_shoes" class="btn btn-white btn-have-arrow">
+							<span>选购男子鞋类</span>
+						</a>
+					</div>
+					<div class="ad-neo-item col-12-3 col-sm-12-6">
+						<span>
+							<img src="images/blank.gif" data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-18.png"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-18.png"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-18.png"}
+							}' />
+						</span>
+						<a target="_target" href="https://www.adidas.com.cn/men_adidasneo_clothing" class="btn btn-white btn-have-arrow">
+							<span>选购男子鞋类</span>
+						</a>
+					</div>
+					<div class="ad-neo-item col-12-3 col-sm-12-6">
+						<span>
+							<img src="images/blank.gif" data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-19.png"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-19.png"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-19.png"}
+							}' />
+						</span>
+						<a target="_target" href="https://www.adidas.com.cn/women_adidasneo_shoes" class="btn btn-white btn-have-arrow">
+							<span>选购男子鞋类</span>
+						</a>
+					</div>
+					<div class="ad-neo-item col-12-3 col-sm-12-6">
+						<span>
+							<img src="images/blank.gif" data-image='{
+								"standard":{"high":"", "normal":"../static/images/lp-neo-dece/neo-shop-20.png"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-20.png"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-dece/mob-neo-shop-20.png"}
+							}' />
+						</span>
+						<a target="_target" href="https://www.adidas.com.cn/women_adidasneo_clothing" class="btn btn-white btn-have-arrow">
+							<span>选购男子鞋类</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<%include _includes/modules/footer.html %>
+	<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+</div>
+</body>
+</html>

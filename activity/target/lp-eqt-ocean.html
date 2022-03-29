@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>adidasneo</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+<body>
+<div id="wrapper">
+	<%include _includes/modules/header.html %>
+	<!-- 内容部分 -->
+	<section class="container">
+<style type="text/css">
+.action-sports-branner {
+  position: relative;
+}
+.action-sports-branner .action-sports-banner-pic {
+  width: 100%;
+}
+.action-text-pic {
+  width: 100%;
+}
+.swiper-bg {
+  position: relative;
+}
+.swiper-bg > .action-bg-banner-pic {
+  width: 100%;
+}
+.swiper-bg .action-sports-banner-btn {
+    position: absolute;
+    bottom: 11%;
+    left: 43.8%;
+    width: 13%;
+    height: 3.3%;
+}
+.swiper-bg .swiper-01 {
+  position: relative;
+  width: 100%;
+}
+.swiper-bg .swiper-01 .swiper-container1 .swiper-wrapper .swiper-slide {
+  text-align: center;
+}
+.swiper-bg .swiper-01 .swiper-container1 .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+.swiper-bg .swiper-01 .swiper-container1 .swiper-button-prev {
+  left: 5.3%;
+  top: 30%;
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+}
+.swiper-bg .swiper-01 .swiper-container1 .swiper-button-next {
+  right: 5.3%;
+  top: 30%;
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+}
+.hover-scale {
+  padding-bottom: 8.75%;
+}
+.hover-scale .box-left {
+  width: 49.9479166%;
+  float: left;
+  margin-right: -1px;
+}
+.hover-scale .box-left .show-left {
+  float: left;
+  width: 49.94786236%;
+}
+.hover-scale img {
+	display: block;
+  width: 100%;
+}
+.hover-scale .box-left .show-right {
+  float: left;
+  width: 50.05213764%;
+}
+.hover-scale .box-right {
+  width: 50.05208333%;
+  float: left;
+}
+.hover-scale .box-right .show-right > div {
+  float: left;
+}
+.hover-scale .box-right .show-right .show-01 {
+  width: 49.94797086%;
+}
+.hover-scale .box-right .show-right .show-02 {
+  width: 50.05202914%;
+}
+.hover-scale .box-right .buy-btn {
+  width: 100%;
+}
+.hover-scale .events-scale {
+  overflow: hidden;
+}
+.video-poster {
+  position: relative;
+}
+.video-poster > img {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+.video-poster .banner-video {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+@media (max-width: 1024px) {
+  .swiper-bg .swiper-01 .swiper-container1 .swiper-button-prev {
+    left: 2.6%;
+    top: 22%;
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+  .swiper-bg .swiper-01 .swiper-container1 .swiper-button-next {
+    right: 2.6%;
+    top: 22%;
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+  .swiper-bg .action-sports-banner-btn {
+    left: 10.6%;
+    bottom: 8%;
+    width: 81%;
+    height: 7.8%;
+  }
+  .hover-scale .box-left {
+    width: 100%;
+    margin-right: 0;
+  }
+  .hover-scale .box-left .show-left {
+    width: 49.733333%;
+  }
+  .hover-scale .box-left .show-right {
+    width: 50.266667%;
+  }
+  .hover-scale .box-left img {
+    max-width: none;
+    width: 101%;
+  }
+  .hover-scale .box-right {
+    margin-top: -1px;
+    width: 100%;
+  }
+  .hover-scale .box-right .show-right .show-01 {
+    width: 51.2%;
+  }
+  .hover-scale .box-right .show-right .show-02 {
+    width: 48.8%;
+  }
+}
+</style>
+<script type="text/javascript">
+$(function() {
+	var arr = [];
+	var mySwiper1 = new Swiper('.events-swiper1-eject', {
+		loop: true,
+		autoplay: 5000,
+		autoplayDisableOnInteraction: false,
+		speed:500,
+		slidesPerView : 1,
+		spaceBetween : 0,
+		observer: true,
+		observeParents: true,
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev'
+	});
+	$(".events-swiper1-eject").mouseenter(function() {
+		mySwiper1.stopAutoplay();
+	}).mouseleave(function() {
+		mySwiper1.startAutoplay();
+	});
+
+	// 放大
+	$('.events-scale img').on('mouseenter', function() {
+		$(this).css({ 'transition': 'transform 7.5s linear', 'transform': 'scale(1.3)' });
+		$(this).parent().parent().find('i').css({ 'transition': 'transform 1s linear', 'transform': 'rotate(180deg)' })
+	})
+
+	// 复原
+	$('.events-scale img').on('mouseleave', function() {
+		$(this).css({ 'transition': 'none', 'transform': 'none'});
+		$(this).parent().parent().find('i').css({ 'transition': 'transform 1s linear', 'transform': 'rotate(-180deg)'});
+	})
+
+	// 視頻播放
+	$('.e-video-open').on('tap', function(e) {
+		e.preventDefault();
+        openVideo('31CD736A509D131E9C33DC5901307461','true');
+    });
+})
+</script>
+		<!-- 模块一 -->
+		<article class="article">
+			<div class="action-sports-branner">
+				<!-- banner图片 -->
+				<img class="events-changeSrc action-sports-banner-pic" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-pc-1.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-1.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-1.jpg"}
+				}' />
+			</div>
+		</article>
+		<!-- 模块二 -->
+		<article class="article">
+			<!-- 轮播1 -->
+			<div class="swiper-bg">
+				<div class="swiper-01">
+					<div class="action-sports-swiper swiper-container1 events-swiper1-eject">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-pc-2.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-2.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-2.jpg"}
+								}' />
+								<a href="https://www.adidas.com.cn/item/AC7804" class="action-sports-banner-btn"></a>
+							</div>
+							<div class="swiper-slide">
+								<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-PC-3.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-3.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-3.jpg"}
+								}' />
+								<a href="https://www.adidas.com.cn/item/CQ0299" class="action-sports-banner-btn"></a>
+							</div>
+						</div>
+						<!-- 箭头 -->
+						<div class="swiper-button-prev swiper-button-white">
+							<!-- <i class="icon icon-action-sports-arrow-l"></i> -->
+							<!-- <span class="arrow"><</span> -->
+						</div>
+						<div class="swiper-button-next swiper-button-white">
+							<!-- <i class="icon icon-action-sports-arrow-r"></i> -->
+							<!-- <span class="arrow">></span> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<!--模块二 視頻模塊 -->
+		<article class="article">
+			<div class="video-poster">
+				<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-pc-4.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-4.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-4.jpg"}
+				}' />
+				<a class="banner-video e-video-open"></a>
+			</div>
+			<img class="events-changeSrc action-text-pic" src="images/blank.gif"
+				data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-pc-5.jpg"},
+					"medium":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-5.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-5.jpg"}
+			}' />
+		</article>
+		<!-- 模块三 -->
+		<article class="article">
+			<img class="events-changeSrc action-text-pic" src="images/blank.gif"
+				data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-pc-6.jpg"},
+					"medium":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-6.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-6.jpg"}
+			}' />
+		</article>
+		<!-- 模块四 -->
+		<article class="article">
+			<div class="hover-scale float-clearfix">
+				<div class="box-left float-clearfix">
+					<div class="events-scale show-left">
+						<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-pc-7.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-7.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-7.jpg"}
+						}' />
+					</div>
+					<div class="show-right">
+						<div class="events-scale">
+							<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-pc-8.jpg"},
+									"medium":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-8.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-8.jpg"}
+							}' />
+						</div>
+						<div class="events-scale">
+							<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-pc-9.jpg"},
+									"medium":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-9.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-9.jpg"}
+							}' />
+						</div>
+					</div>
+				</div>
+				<div class="box-right">
+					<div class="buy-btn events-scale">
+						<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-pc-10.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-10.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-10.jpg"}
+						}' />
+					</div>
+					<div class="show-right float-clearfix">
+						<div class="events-scale show-01">
+							<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-pc-11.jpg"},
+									"medium":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-11.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-11.jpg"}
+							}' />
+						</div>
+						<div class="events-scale show-02">
+							<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-pc-12.jpg"},
+									"medium":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-12.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-eqt-ocean/eqt-mob-12.jpg"}
+							}' />
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<%include _includes/modules/footer.html %>
+	<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	<!-- 视频弹层 -->
+	<script id="video-dialog" type="text/template">
+		<div class="dialog">
+			<div class="dialog-container">
+				<div class="loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+				<div class="video-content">
+
+				</div>
+			</div>
+			<i class="icon icon-close dialog-close">&times;</i>
+		</div>
+	</script>
+</div>
+</body>
+</html>

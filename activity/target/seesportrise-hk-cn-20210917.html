@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+			<!-- <link rel="stylesheet" type="text/css" href="css/adiclub.css"> -->
+			<%include _includes/js.html %>
+				<!-- <script type="text/javascript" src="js/adiclub.js"></script> -->
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+			<!-- 内容部分 -->
+			<section class="container">
+				<style>
+					.article {
+						position: relative;
+					}
+
+					.article>img {
+						width: 100%;
+					}
+
+					@media (max-width: 1024px) {
+
+					}
+				</style>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-pc_01.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-mob_01.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-mob_01.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-pc_02.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-mob_02.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-mob_02.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-pc_03.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-mob_03.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-mob_03.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-pc_04.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-mob_04.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-mob_04.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-pc_05.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-mob_05.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-mob_05.jpg&quot;}}">
+				</article>
+				<article class="article">
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-pc_06.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-mob_06.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/campaign/CN/clp-mob_06.jpg&quot;}}">
+				</article>
+
+
+
+				<script type="text/javascript">
+					$(function () {
+						// 换图 + 懒加载
+						$.spice.lazyLoad('img[lazysrc]', {
+							attr: 'lazysrc'
+						});
+						$.spice.tools.changeImageSrc({
+							callBack: function (img, self) {
+								$.spice.lazyLoad('img[lazysrc]', {
+									attr: self.opt.lazyData,
+									prestrain: 1
+								});
+							}
+						});
+					});
+				</script>
+			</section>
+
+			<%include _includes/modules/footer-no-back-top.html %>
+				<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

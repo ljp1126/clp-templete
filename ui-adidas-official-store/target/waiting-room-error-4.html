@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" href="css/sale.css">
+	<%include _includes/js.html %>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-simple.html %>
+		<!-- 内容部分 -->
+		<section class="container waiting-room waiting-room-error container-min-h">
+			
+			<article class="article article-frame">
+				<div class="bg-box"></div>
+				<div class="sale-content waiting-in-queue">
+					<div class="img-box"><img src="images/sale/logo-4.png" /></div>
+					<div class="text-box">
+						<h3><img src="images/sale/loading2.gif" /></h3>
+						<p>感谢您的耐心等待。为保证您排队的次序，请勿关闭或刷新此页面。</p>
+						<p>等待时间可能因订单量和剩余商品数量会有所不同。<br/>您最终有可能因为产品售罄而无法完成购买。<br/>敬请谅解。</p>
+					</div>
+					<ul class="info-box float-clearfix">
+						<li><span><i></i></span>此商品仅支持网上在线支付，每个用户ID仅限购买一件，且不参加任何打折或优惠活
+动。请于商品订单创建成功后10分钟内付款。超时未成功付款，您的订单将被取消。</li>
+					</ul>
+				</div>
+			</article>
+		
+		</section>
+
+		<%include _includes/modules/footer-simple-no-back-top.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+	</div>
+</body>
+</html>

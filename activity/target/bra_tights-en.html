@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%include _includes/meta.html %>
+	<title>UB21</title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" href="css/lp-messi.css" /> -->
+	<%include _includes/js.html %>
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+			<style>
+				.article {
+					position: relative;
+				}
+				.article>img {
+					width: 100%;
+				}
+				.article .link {
+					position: absolute;
+					width: 9%;
+					height: 13%;
+					top: 69%;
+					left: 12.5%;
+				}
+
+				.article .link-2 {
+					top: 71%;
+    				left: 53.5%;
+				}
+				.article .link-3 {
+					top: 72%;
+    				
+				}
+				.more-pro{
+					position: absolute;
+					width: 98%;
+					height: 87%;
+					top: 0;
+					left: 50%;
+					transform: translateX(-50%);
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+					align-items: center;
+				}
+				.more-pro a{
+					width: 33%;
+					height: 100%;
+				}
+				.article-swiper-swift{
+					padding: 5% 0;
+					text-align: center;
+				}
+				.article-swiper-swift h5 {
+					font-size: 30px;
+					padding: 30px 0;
+					text-align: center;
+				}
+				.swiper-slide {
+					background-size: cover;
+					background-position: center;
+				}
+				.gallery-top .swiper-button-prev.swiper-button-disabled{
+					opacity: 0;
+				}
+				.gallery-top .swiper-button-next.swiper-button-disabled{
+					opacity: 0;
+				}
+				.gallery-top .swiper-button-prev,.gallery-top .swiper-button-next{
+					width: 15px;
+    				height: 22px;
+					background-size: 15px 22px;
+				}
+				.gallery-top .swiper-button-next{
+					right: 15%;
+				}
+				.gallery-top .swiper-button-prev{
+					left: 15%;
+				}
+				.gallery-thumbs {
+					height: 20%;
+					box-sizing: border-box;
+					padding: 10px 0;
+				}
+				.gallery-thumbs .swiper-slide {
+					width: 10%;
+					height: 100%;
+					opacity: 0.4;
+					text-align: center;
+				}
+				.gallery-thumbs .swiper-slide-active {
+					opacity: 1;
+				}
+				.gallery-thumbs{
+					padding: 2% 0;
+				}
+				.gallery-thumbs .swiper-slide p{
+					font-size: 15px;
+					padding:10px 0 5px;
+					height: 32px;
+					line-height: 20px;
+					cursor: pointer;
+				}
+				.gallery-thumbs .swiper-slide p:last-child{
+					opacity: 0;
+					margin-top:6px;
+				}
+				.gallery-thumbs .swiper-slide.swiper-slide-active p:first-child span{
+					font-weight: bold;
+					border-bottom: 1px #000 solid;
+					line-height: 15px;
+    				padding-bottom: 8px;
+				}
+				.gallery-thumbs .swiper-slide.swiper-slide-active p:last-child {
+					opacity: 1;
+					display: inline-block;
+					white-space: nowrap;
+					margin-left: 50%;
+					transform: translateX(-50%);
+					
+				}
+				@media (max-width: 1024px) {
+					.more-pro{
+						height: 96%;
+					}
+					.more-pro a{
+						width: 100%;
+						height: 33%;
+					}
+					.gallery-thumbs .swiper-slide,.gallery-top .swiper-slide{
+						width: 85% !important;
+					}
+					.gallery-thumbs .swiper-slide.swiper-slide-active p:last-child {
+						white-space: initial;
+						margin-left: 0;
+						transform: translateX(0);
+					}
+					.article .link {
+						width: 40%;
+						height: 10%;
+						top: 88%;
+						left: 3%;
+					}
+					.article .link-2 {
+						top: 88%;
+						left: 3%;
+					}
+					.article .link-3 {
+						top: 88%;
+					}
+
+				}
+			</style>
+			<article class="article ">
+				<img  src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/pc_01.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/mob_01.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/mob_01.jpg&quot;}}"> 
+			</article>
+			<article class="article ">
+				<img  src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/pc_02.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/mob_02.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/mob_02.jpg&quot;}}"> 
+			</article>
+			<article class="article ">
+				<img  src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/pc_03.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/mob_03.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/mob_03.jpg&quot;}}"> 
+					<a href="" class='link link-1'></a>
+			</article>
+			<article class="article ">
+				<img  src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/pc_04.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/mob_04.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/mob_04.jpg&quot;}}"> 
+					<a href="" class='link link-2'></a>
+			</article>
+			<article class="article ">
+				<img  src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/pc_05.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/mob_05.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/mob_05.jpg&quot;}}"> 
+					<a href="" class='link link-3'></a>
+			</article>
+			<!-- 
+				轮播
+			 -->
+			 <article class="article ">
+				<div class="article-swiper-swift">
+					<h5>How should it fit? </h5>
+					<div class="swiper-container gallery-top ">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img  src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/p1.png&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/m1.png&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/m1.png&quot;}}"> 
+							</div>
+							<div class="swiper-slide">
+								<img  src="https://img.adidas.com.cn/images/blank.gif"  data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/p2.png&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/m2.png&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/m2.png&quot;}}"> 
+							</div>
+							<div class="swiper-slide">
+								<img  src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/p3.png&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/m3.png&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/m3.png&quot;}}"> 
+							</div>
+							<div class="swiper-slide">
+								<img  src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/p4.png&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/m4.png&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/m4.png&quot;}}"> 
+							</div>
+							<div class="swiper-slide">
+								<img  src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/p5.png&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/m5.png&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/m5.png&quot;}}"> 
+							</div>
+						</div>
+						<div class="swiper-button-prev swiper-button-black none-sm"></div>
+						<div class="swiper-button-next swiper-button-black none-sm"></div>
+					</div>
+					<div class="swiper-container gallery-thumbs ">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<p><span> CENTER FRONT</span></p>
+								<p>This should sit flat against your chest.</p>
+							</div>
+							<div class="swiper-slide">
+								<p><span>BOUNCE TEST </span></p>
+								<p>Jump to see how your breasts move. If you don’t feel any discomfort, the bra is a good fit. </p>
+							</div>
+							<div class="swiper-slide">
+								<p><span>STRAPS </span></p>
+								<p>They shouldn’t dig into or slip off your shoulders. </p>
+							</div>
+							<div class="swiper-slide">
+								<p><span>UNDERBAND</span></p>
+								<p>You should feel supported but be able to fit a finger between the bra and your body.   </p>
+							</div>
+							<div class="swiper-slide">
+								<p><span>CUPS</span></p>
+								<p>Your breasts shouldn’t spill out over the top, front or sides of the cups.</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article class="article ">
+				<img  src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/pc_07.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/mob_07.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/mob_07.jpg&quot;}}"> 
+			</article>
+			<article class="article ">
+				<img  src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/pc_08.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/mob_08.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/mob_08.jpg&quot;}}"> 
+			</article>
+			<article class="article ">
+				<img  src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/pc_09.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/mob_09.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAR/bra_tights/en/mob_09.jpg&quot;}}"> 
+					<div class="more-pro">
+						<a href=""></a>
+						<a href=""></a>
+						<a href=""></a>
+					</div>
+			</article>
+			<script type="text/javascript">
+				$(function() {
+					// 换图 + 懒加载
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+					var galleryTop = new Swiper('.gallery-top', {
+						nextButton: '.swiper-button-next',
+						prevButton: '.swiper-button-prev',
+						spaceBetween: 35,
+						slidesPerView: '1.5',
+						centeredSlides : true,
+						observer: true,
+					 	observeParents: true,
+						breakpoints: {
+							1023: {
+								slidesPerView: 'auto',
+								spaceBetween: 15,
+							}
+						}
+					});
+					var galleryThumbs = new Swiper('.gallery-thumbs', {
+						spaceBetween: 10,
+						centeredSlides: true,
+						slidesPerView: 'auto',
+						touchRatio: 0.2,
+						slideToClickedSlide: true,
+						
+					});
+					galleryTop.params.control = galleryThumbs;
+					galleryThumbs.params.control = galleryTop;
+    
+
+				});
+			</script>
+		</section>
+		<%include _includes/modules/footer.html %>
+	</div>
+</body>
+
+</html>

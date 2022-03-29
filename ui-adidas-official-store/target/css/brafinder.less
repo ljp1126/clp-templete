@@ -1,0 +1,1385 @@
+@charset "UTF-8";
+// 公共方法
+@import "common/utilities.less";
+.article {
+    position: relative;
+}
+
+.brafinder-kv {
+    .kv-inner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: block;
+        .display-table {
+            display: table;
+            width: 100%;
+            height: 100%;
+        }
+        .display-table-cell {
+            display: table-cell;
+            vertical-align: middle;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: #fff;
+            h1 {
+                font-size: 36px;
+                line-height: 38px;
+                margin-bottom: 28px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.brafinder-main {
+    max-width: 990px;
+    padding: 0 20px;
+    margin: auto;
+    .brafinder-style {
+        .style-title {
+            text-align: center;
+            padding: 30px 0;
+            h2 {
+                font-size: 18px;
+                line-height: 20px;
+                font-weight: bold;
+                margin: 0 0 14px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 20px;
+                font-weight: normal;
+            }
+            &.recommended-size-title {
+                .triangle {
+                    display: inline-block;
+                    margin-top: 15px;
+                    &:after {
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        display: inline-block;
+                        overflow: hidden;
+                        border: solid transparent;
+                        border-top-color: #000;
+                        border-top-width: 10px;
+                        border-right-width: 5px;
+                        border-bottom-width: 6px;
+                        border-left-width: 5px;
+                    }
+                }
+            }
+        }
+        .brafinder-series-list {
+            >ul {
+                border-top: 6px solid #F80052;
+                border-bottom: 30px solid #ededed;
+                font-size: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-align: center;
+                background: #ededed;
+                >li {
+                    position: relative;
+                    display: inline-block;
+                    width: 33.3%;
+                    padding-right: 1px;
+                    background: #000;
+                    cursor: pointer;
+                    .pre(box-sizing, initial);
+                    .pre(transition, all .3s ease-in-out 0s);
+                    &:hover::after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 3;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:last-of-type {
+                        padding-right: 0;
+                    }
+                    >img {
+                        width: 100%;
+                    }
+                    .series-desc {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        background: rgba(0, 0, 0, .4);
+                        padding: 19px 0;
+                        p {
+                            font-size: 24px;
+                            line-height: 28px;
+                            text-align: center;
+                            color: #fff;
+                            font-weight: bold;
+                        }
+                        .size {
+                            display: none;
+                            width: 100%;
+                            text-align: center;
+                        }
+                        &.recommended-size {
+                            p {
+                                font-size: 18px;
+                                line-height: 28px;
+                            }
+                            .size {
+                                color: #fff;
+                                font-size: 18px;
+                                line-height: 22px;
+                                min-height: 22px;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(2) {
+                >ul {
+                    border-top: 6px solid #DBD814;
+                    >li:hover::after {}
+                }
+            }
+            &:nth-of-type(3) {
+                >ul {
+                    border-top: 6px solid #83CFC3;
+                }
+            }
+        }
+    }
+    .brafinder-introduce {
+        padding: 50px 0 30px;
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            text-align: center;
+            line-height: 24px;
+            &:last-of-type {
+                margin: 0 0 20px;
+            }
+        }
+        dl {
+            padding: 0;
+            dt {
+                position: relative;
+                margin: 4px 0 0;
+                padding: 0 20px;
+                font-size: 18px;
+                line-height: 50px;
+                font-weight: 500;
+                background: #dddddd;
+                cursor: pointer;
+                &:first-of-type {
+                    margin: 0;
+                }
+                a {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    display: block;
+                    width: 50px;
+                    height: 100%;
+                    text-align: center;
+                    .icon {
+                        margin: -2px 0 0;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            dd {
+                display: none;
+                padding: 20px;
+                font-size: 14px;
+                line-height: 20px;
+                background: #f5f5f5;
+            }
+        }
+    }
+    .brafinder-style-detail {
+        margin-bottom: 50px;
+        .size {
+            display: none !important;
+            P {
+                font-size: 22px !important;
+                line-height: 24px !important;
+                color: #000000 !important;
+            }
+        }
+        &.show-size {
+            .size {
+                display: block !important;
+            }
+            @media screen and(max-width:1024px) {
+                .scroll-dots {
+                    bottom: 285px !important;
+                }
+            }
+        }
+        dt {
+            position: relative;
+            font-size: 18px;
+            line-height: 40px;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            background: #F80052;
+            font-weight: 500;
+            margin-top: 30px;
+            &:nth-of-type(1) {
+                margin-top: 0px;
+            }
+            &:nth-of-type(2) {
+                background: #DBD814;
+            }
+            &:nth-of-type(3) {
+                background: #83CFC3;
+            }
+            a {
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: block;
+                width: 50px;
+                height: 100%;
+                text-align: center;
+                .icon {
+                    vertical-align: middle;
+                    margin-top: -4px;
+                }
+            }
+        }
+        dd {
+
+            .article-series-item {
+                &:first-child{
+                    .scroll {
+                        .scroll-dots {
+                            &:before{
+                                content:"滑动查看更多";
+                                display:block;
+                                position: absolute;
+                                bottom: 30px;
+                                padding-left: 450px;
+                                font-size: 14px;
+                                z-index: 4;
+                                left:0;
+                                width: 100%;
+                                line-height:18px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .scroll {
+                    .scroller-wrap {
+                        ul {
+                            li {
+                                .scroll-background-image {
+                                    .back {
+                                        display: none;
+                                    }
+                                }
+                                .scroll-container {
+                                    height: auto;
+                                    top: 60px;
+                                    .scroll-container-text {
+                                        width: 100%;
+                                        padding: 0;
+                                        text-align: center;
+                                        h3 {
+                                            font-size: 18px;
+                                            line-height: 20px;
+                                            font-weight: bold;
+                                        }
+                                        p {
+                                            font-size: 16px;
+                                            line-height: 18px;
+                                            margin-top: 6px;
+                                        }
+                                        ul {
+                                            padding: 32px 0 65px;
+                                            li {
+                                                display: block !important;
+                                                float: none;
+                                                line-height: 24px;
+                                                font-size: 14px;
+                                            }
+                                        }
+                                        .btn {
+                                            width: 200px;
+                                            height: 42px;
+                                            line-height: 42px;
+                                        }
+                                    }
+                                }
+                                .dos-msg {
+                                    position: absolute;
+                                    bottom: 30px;
+                                    padding-left: 450px;
+                                    font-size: 14px;
+                                    z-index: 4;
+                                    width: 100%;
+                                    text-align: center;
+                                }
+
+                            }
+                        }
+                    }
+                    .scroll-dots {
+                        width: 100% !important;
+                        left: 0 !important;
+                        bottom: 0;
+                        margin-left: 0 !important;
+                        line-height: 50px;
+                        background: rgba(255, 255, 255, .5);
+                        z-index: initial;
+                        a {
+                            vertical-align: middle;
+                            width: 6px;
+                            height: 6px;
+                            margin: 0 4px;
+                            background: #999999;
+                            &.active {
+                                background: #0085D5;
+                            }
+                        }
+
+
+                    }
+                    .scroll-btn-prev,
+                    .scroll-btn-next {
+                        padding: 55px 20px;
+                        a {
+                            i {
+                                display: inline-block;
+                                background: url(../images/icon.png);
+                                width: 20px;
+                                height: 35px;
+                                text-indent: -9999px;
+                            }
+                        }
+                    }
+                    .scroll-btn-prev {
+                        a {
+                            i {
+                                background-position: -487px -454px;
+                            }
+                        }
+                    }
+                    .scroll-btn-next {
+                        a {
+                            i {
+                                background-position: -527px -454px;
+                            }
+                        }
+                    }
+                }
+                &.item-left,
+                &.item-right {
+                    .scroll {
+                        .scroller-wrap {
+                            ul {
+                                li {
+                                    .scroll-container {
+                                        .scroll-container-text {
+                                            width: 100%;
+                                        }
+                                        &.scroll-container-left {
+                                            left: 130px;
+                                        }
+                                        &.scroll-container-right {
+                                            right: 130px;
+                                            left: auto;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .scroll-dots {
+                            padding-left: 450px;
+                        }
+                    }
+                }
+                &.item-right {
+                    .scroll {
+                        .scroll-dots {
+                            padding-left: 0px;
+                            padding-right: 450px;
+                        }
+                    }
+                }
+                &.dos-msg-show {
+                    .scroll {
+                        .scroll-dots {
+                            padding-top: 10px;
+                            height: 60px;
+                            line-height: 60px;
+                        }
+                    }
+                    .dos-msg {
+                        padding-left: 450px;
+                    }
+                }
+            }
+        }
+        @-webkit-keyframes switchFront {
+            100% {
+                background-position: -36rem;
+            }
+        }
+        @keyframes switchFront {
+            100% {
+                background-position: -36rem;
+            }
+        }
+        @-webkit-keyframes switchBack {
+            0% {
+                background-position: -36rem;
+            }
+            100% {
+                background-position: -72rem;
+            }
+        }
+        @keyframes switchBack {
+            0% {
+                background-position: -36rem;
+            }
+            100% {
+                background-position: -72rem;
+            }
+        }
+        .switch-view {
+            position: absolute;
+            top: 10px;
+            right: 14px;
+            width: 48px;
+            height: 38px;
+            z-index: 2;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+            background-position: left center;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            background-image: url(../images/brafinder/switch.png);
+            background-size: 72rem 3.2rem;
+            &.front {
+                -webkit-animation: switchBack steps(9) 0.4s;
+                animation: switchBack steps(9) 0.4s;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+            }
+            &.back {
+                -webkit-animation: switchFront steps(9) 0.4s;
+                animation: switchFront steps(9) 0.4s;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
+
+.brafinder-back-top {
+    text-align: center;
+    margin-bottom: 50px;
+    .back-top {
+        width: 300px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        color: #fff;
+        background: #000000;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
+
+
+/*悬浮条样式*/
+
+.size-guide-box {
+    position: absolute;
+    left: auto;
+    top: -57px;
+    z-index: 6;
+    min-width: 320px;
+    display: none;
+    .animation-inner {
+        position: relative;
+        width: 427px;
+        height: 57px;
+        line-height: 57px;
+        background: #0286CD;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        padding: 0 0 0 20px;
+        img {
+            position: absolute;
+            width: 37px;
+            right: 20px;
+            top: 13px;
+        }
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 77px;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            border-left: 1px solid #25B3FF;
+        }
+    }
+    &.size-guide-fixed {
+        position: fixed;
+        top: 80px;
+    }
+}
+
+
+/*悬浮条样式 end*/
+
+
+/*弹层样式*/
+
+.size-dialog {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    width: 950px;
+    margin: 0 0 0 -475px;
+    z-index: 9;
+    background: rgba(0, 0, 0, 0.50);
+    min-width: 320px;
+    >div {
+        position: relative;
+    }
+    .dialog-close {
+        cursor: pointer;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: #0286CD;
+        right: 0;
+        top: 0;
+        &:after {
+            width: 20px;
+            height: 20px;
+            margin: -10px 0 0 -10px;
+            background-position: -436px -19px;
+        }
+    }
+    .dialog-container {
+        position: relative;
+        padding: 20px;
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 36px;
+            line-height: 40px;
+            padding: 8px 0;
+        }
+        p {
+            font-size: 18px;
+            line-height: 20px;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0 24px;
+        }
+        .size-content {
+            background: #DDDDDD;
+            overflow: hidden;
+            .size-tabs-title {
+                font-size: 0;
+                li {
+                    display: inline-block;
+                    width: 50%;
+                    text-align: center;
+                    background: #AEAEAE;
+                    outline: 4px solid #fff;
+                    position: relative;
+                    z-index: 3;
+                    text-transform: uppercase;
+                    -webkit-touch-callout: none;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    &:hover {
+                        background: #999;
+                    }
+                    &.is-active {
+                        background: #DDDDDD;
+                        outline: none;
+                        z-index: 2;
+                    }
+                }
+                a {
+                    font-size: 16px;
+                    color: #000;
+                    line-height: 52px;
+                    display: block;
+                    font-weight: bold;
+                }
+            }
+            .size-tabs-content {
+                .size-description {
+                    display: none;
+                    text-align: center;
+                    color: #000;
+                    h3 {
+                        font-size: 18px;
+                        line-height: 20px;
+                        font-weight: bold;
+                        margin-bottom: 18px;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #000;
+                        padding: 0;
+                    }
+                    &.is-active {
+                        display: block;
+                    }
+                }
+                .description-measure {
+                    padding: 40px;
+                }
+                .description-knowsize {
+                    padding: 30px;
+                    >div {
+                        &:nth-child(1) {
+                            float: left;
+                            width: 285px;
+                            margin: 0 0 0 54px;
+                        }
+                        &:nth-child(2) {
+                            float: right;
+                            width: 350px;
+                            margin: 0 20px 0 0;
+                            position:relative;
+                            img{
+                                width:100%;
+                            }
+                            .series-descs{
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                width: 100%;
+                                background: rgba(0, 0, 0, 0.4);
+                                padding: 9px 0;
+                                p{
+                                    font-size: 14px;
+                                    color:#fff;
+                                }
+                            }
+                        }
+                        >p {
+                            font-size: 12px;
+                            position: relative;
+                            padding: 2px 0 0 56px;
+                            text-align: left;
+                            margin-bottom: 14px;
+                            span {
+                                position: absolute;
+                                font-size: 14px;
+                                font-weight: bold;
+                                top: 0;
+                                left: 0;
+                            }
+                        }
+                    }
+                    .size-select-content {
+                        margin: 36px auto 30px;
+                    }
+                }
+                .btn-calculation {
+                    width: 285px;
+                    height: 55px;
+                    line-height: 55px;
+                    font-size: 16px;
+                }
+                .size-select-content {
+                    width: 285px;
+                    margin: 36px auto 40px;
+                    .size-select-item {
+                        float: left;
+                        width: 135px;
+                        text-align: center;
+                        p {
+                            font-size: 18px;
+                            font-weight: bold;
+                            line-height: 20px;
+                            margin-bottom: 10px;
+                            span {
+                                font-size: 14px;
+                                font-weight: normal;
+                            }
+                        }
+                        &:nth-child(2) {
+                            float: right;
+                        }
+                        .size-selector-box {
+                            position: relative;
+                            .value-btn {
+                                width: 100%;
+                                line-height: 48px;
+                                height: 50px;
+                                background: #fff;
+                                border-top: 1px solid #aeaeae;
+                                display: block;
+                                font-size: 14px;
+                                color: #000;
+                                .icon-arrow-right {
+                                    position: absolute;
+                                    right: 10px;
+                                    top: 19px;
+                                }
+                            }
+                            .size-selector {
+                                display: none;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                                line-height: 50px;
+                                z-index: 2;
+                                width: 100%;
+                                background: #fff;
+                                .swiper-container {
+                                    padding: 0 24px;
+                                }
+                                .swiper-slide {
+                                    font-size: 14px;
+                                    color: #000;
+                                    width: 35px;
+                                    background: #fff;
+                                    cursor: pointer;
+                                    &:hover {
+                                        background: #E8E8E8;
+                                    }
+                                }
+                                .swiper-button-prev,
+                                .swiper-button-next {
+                                    width: 24px;
+                                    height: 100%;
+                                    background: #fff;
+                                    opacity: 1;
+                                    margin: 0;
+                                    top: 0;
+                                    &:after {
+                                        content: '';
+                                        display: block;
+                                        position: absolute;
+                                        background: url(../images/icon.png);
+                                        width: 8px;
+                                        height: 14px;
+                                        top: 19px;
+                                        left: 8px;
+                                    }
+                                }
+                                .swiper-button-prev {
+                                    left: 0;
+                                    &:after {
+                                        background-position: -346px 0px;
+                                    }
+                                }
+                                .swiper-button-next {
+                                    right: 0;
+                                    &:after {
+                                        background-position: -372px 0px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 测量演示 弹层
+.measurement-demonstration-dialog {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.80);
+    min-width: 320px;
+    overflow: hidden;
+    .dialog-container {
+        width: 100%;
+        padding: 0 13px;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        .pre (transform, translateX(-50%));
+        bottom: 12.6%;
+        .measurement-demonstration-img {
+            position: relative;
+            max-width: 350px;
+            margin: 0 auto;
+            img {
+                width: 100%;
+            }
+            p {
+                color: #FFFFFF;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.40);
+                line-height: 32px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        .measurement-demonstration-back {
+            padding: 10px;
+            margin-top: 10px;
+            display: inline-block;
+            span {
+                text-decoration: underline;
+                font-size: 14px;
+                color: #000;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            i {
+                width: 10px;
+                height: 13px;
+                background-position: -237px -609px;
+                vertical-align: middle;
+                margin: 0 0 0 8px;
+            }
+        }
+    }
+}
+
+
+/*弹层样式 end*/
+
+@media (max-width:1024px),
+screen and (-webkit-min-device-pixel-ratio:2),
+screen and (min--moz-device-pixel-ratio:2),
+screen and (-o-min-device-piratio:200/100),
+screen and (min-device-pixel-ratio:2) {
+    .brafinder-main .brafinder-style-detail dd .article-series-item .scroll {
+        .scroll-btn-prev a,
+        .scroll-btn-next a {
+            i {
+                background: url(../images/icon@2x.png);
+                background-size: 500px;
+            }
+        }
+        .scroll-btn-prev a {
+            i {
+                background-position: -245px -652px;
+            }
+        }
+        .scroll-btn-next a {
+            i {
+                background-position: -215px -652px;
+            }
+        }
+    }
+}
+
+@media (max-width:1366px) {
+    .brafinder-kv {
+        .kv-inner {
+            .display-table-cell {
+                h1 {
+                    font-size: 30px;
+                    line-height: 32px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .article {
+        img {
+            width: 100%;
+        }
+    }
+    .brafinder-kv {
+        .kv-inner {
+            .display-table-cell {
+                h1 {
+                    font-size: 24px;
+                    line-height: 26px;
+                    margin-bottom: 14px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    .brafinder-main {
+        .brafinder-style-top {
+            padding-top: 57px;
+        }
+        .brafinder-style-detail {
+            dd {
+                .article-series-item {
+
+                    .scroll {
+                        .scroller-wrap {
+                            ul {
+                                li {
+                                    .scroll-container {
+                                        width: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .size-guide-box {
+        position: static;
+        left: 0;
+        width: 100%;
+        display: block;
+        .animation-inner {
+            width: 100%;
+        }
+        &.size-guide-fixed {
+            top: 60px;
+            .animation-inner {
+                width: 60px;
+                span {
+                    display: none;
+                }
+                &:after {
+                    display: none;
+                }
+                img {
+                    right: 12px;
+                }
+            }
+        }
+    }
+    /*弹层样式*/
+    .size-dialog {
+        top: 60px;
+        left: 5%;
+        width: 90%;
+        max-width: 990px;
+        margin: 0;
+    }
+    /*弹层样式 end*/
+}
+
+@media (max-width:990px) {
+    .brafinder-main {
+        padding: 0;
+        .brafinder-style {
+            .style-title {
+                padding: 20px 5px;
+                h2 {
+                    margin: 0 0 12px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+            .brafinder-series-list {
+                >ul {
+                    border-bottom: 20px solid #ededed;
+                    >li {
+                        &:hover::after {
+                            display: none;
+                        }
+                        .series-desc {
+                            padding: 5px 0;
+                            p {
+                                font-size: 14px;
+                                line-height: 18px;
+                                font-weight: normal;
+                                span {
+                                    display: block;
+                                }
+                            }
+                            &.recommended-size {
+                                p {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                                .size {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .brafinder-introduce {
+            padding: 30px 0;
+            h1 {
+                font-size: 24px;
+                line-height: 26px;
+                margin: 0 0 18px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 18px;
+                padding: 0 24px;
+                span {
+                    display: block;
+                }
+                &:last-of-type {
+                    margin: 0 0 28px;
+                }
+            }
+            dl {
+                dt {
+                    margin: 1px 0 0;
+                    padding: 0 15px 0 20px;
+                    font-size: 14px;
+                    a {
+                        width: 40px;
+                        .icon-arrow-right {
+                            width: 7px;
+                            height: 13px;
+                            background-position: -254px -606px;
+                        }
+                        .icon-arrow-down {
+                            width: 13px;
+                            height: 7px;
+                            background-position: -300px -606px;
+                        }
+                        .icon-arrow-up {
+                            width: 13px;
+                            height: 7px;
+                            background-position: -88px -728px;
+                        }
+                    }
+                }
+                dd {
+                    padding: 16px;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+        .brafinder-style-detail {
+            dt {
+                a {
+                    display: none;
+                }
+            }
+            dd {
+                display: block;
+                .article-series-item {
+
+                    .scroll {
+                        .scroller-wrap {
+                            ul {
+                                li {
+                                    .scroll-container {
+                                        top: 40px;
+                                        .scroll-container-text {
+                                            ul {
+                                                padding: 20px 0 40px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*弹层样式*/
+    .size-dialog {
+        left: 0;
+        width: 100%;
+        .dialog-container {
+            .size-content {
+                .size-tabs-content {
+                    .description-knowsize {
+                        >div {
+
+                            &:nth-child(1) {
+                                margin: 0;
+                            }
+                            &:nth-child(2) {
+                                width: 340px;
+                                margin: 0;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*弹层样式 end*/
+}
+
+@media (max-width:767px) {
+    .brafinder-main {
+        .brafinder-style-detail {
+            margin-bottom: 0px;
+            border-bottom: 4px solid #000;
+            dt {
+                margin-top: 0;
+            }
+            dd {
+                .article-series-item {
+                    &:first-child{
+                        .scroll {
+                            .scroll-dots {
+                                &:before{
+                                    padding-left:0;
+                                }
+                            }
+                        }
+                    }
+                    .scroll {
+                        .scroller-wrap {
+                            ul {
+                                li {
+                                    .scroll-container {
+                                        position: static;
+                                        /*.scroll-container-img{
+                                            width: 37px;
+                                            top: 14px;
+                                            right: 14px;
+                                            left: auto !important;
+                                        }*/
+                                        .scroll-container-text {
+                                            margin: 0;
+                                            padding: 20px 10px 30px;
+                                            ul {
+                                                padding: 22px 0 25px;
+                                            }
+                                        }
+                                    }
+                                    .dos-msg {
+                                        bottom: 30px;
+                                        padding: 0;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                        .scroll-dots {
+                            left: 0 !important;
+                            bottom: 255px;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                            line-height: 48px;
+                        }
+                        .scroll-btn-prev,
+                        .scroll-btn-next {
+                            margin-top: 0px;
+                            padding: 50px 10px;
+                            top: 19%;
+                            a {
+                                i {
+                                    display: inline-block;
+                                    background: url(../images/icon.png);
+                                    width: 20px;
+                                    height: 35px;
+                                    text-indent: -9999px;
+                                }
+                            }
+                        }
+                        .scroll-btn-prev {
+                            a {
+                                i {
+                                    background-position: -487px -454px;
+                                }
+                            }
+                        }
+                        .scroll-btn-next {
+                            a {
+                                i {
+                                    background-position: -527px -454px;
+                                }
+                            }
+                        }
+                    }
+                    &.dos-msg-show {
+                        .scroll {
+                            .scroll-dots {
+                                padding-top: 10px !important;
+                                height: 48px;
+                                line-height: 48px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*弹层样式*/
+    .size-dialog {
+        overflow-y: scroll;
+        background: #fff;
+        .dialog-container {
+            padding: 20px 0 0;
+            h1 {
+                font-size: 24px;
+                line-height: 26px;
+                color: #000;
+                padding: 14px 0;
+            }
+            >p {
+                color: #000;
+                font-size: 14px;
+                line-height: 16px;
+                padding: 0px 0 30px;
+            }
+            .size-content {
+                .size-tabs-title {
+                    li {
+                        outline: 3px solid #fff;
+                    }
+                }
+                .size-tabs-content {
+                    .size-description {
+                        >p {
+                            font-size: 12px;
+                            span {
+                                display: block;
+                            }
+                        }
+                        .size-select-content {
+                            .size-select-item {
+                                .size-selector-box {
+                                    // mobile
+                                    &.dropdown {
+                                        .btn {
+                                            width: 100%;
+                                            line-height: 48px;
+                                            height: 50px;
+                                            background: #fff;
+                                            border-top: 1px solid #aeaeae;
+                                            display: block;
+                                            font-size: 14px;
+                                            color: #000;
+                                            padding: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .description-measure {
+                        padding: 35px 10px;
+                    }
+                    .description-knowsize {
+                        padding: 35px 10px;
+                        .size-select-content {
+                            margin: 30px auto;
+                        }
+                        >div {
+                            &:nth-child(1) {
+                                float: none;
+                                margin: 0 auto;
+                            }
+                            &:nth-child(2) {
+                                float: none;
+                                display: none;
+                            }
+                        }
+                    }
+                    .size-select-content {
+                        width: 285px;
+                        margin: 30px auto 40px;
+                    }
+                    .measure-btn {
+                        font-size: 14px;
+                        color: #000;
+                        line-height: 16px;
+                        margin-bottom: 30px;
+                        a {
+                            color: #000;
+                        }
+                        span {
+                            text-decoration: underline;
+                        }
+                        .icon-arrow-right {
+                            width: 10px;
+                            height: 13px;
+                            background-position: -237px -609px;
+                            vertical-align: middle;
+                            margin: -2px 0 0 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*弹层样式 end*/
+}
+
+@media (max-width:374px) {
+    .brafinder-main {
+        .brafinder-style {
+            .brafinder-series-list {
+                >ul {
+                    >li {
+                        .series-desc {
+                            p {
+                                font-size: 12px;
+                                line-height: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .brafinder-style-detail {
+            dd {
+                .article-series-item {
+                    .scroll {
+                        .scroll-btn-prev,
+                        .scroll-btn-next {
+                            top: 16%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,730 @@
+@charset "UTF-8";
+
+.order-summary-box{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 15px 10px;
+    background: #EBEBEB;
+    margin: 0px;
+
+    .summary-title {
+        font-family: @fonts-adineueproblack, @fonts-common-suffix;
+        font-size: 18px;
+        color: #000;
+        line-height: 18px;
+        margin-bottom: 15px;
+        .summary-small-title {
+            font-family: @fonts-adineueprolight, @fonts-common-suffix;
+        }
+    }
+    .summary-bg-box {
+        padding: 20px 0 0;
+        background: #fff;
+    }
+    .customized-prompt-text{
+        padding: 0px 0 10px;
+        >div{
+            background: #DEF3FA;
+            border-left: 3px solid #5BC2E7;
+            font-size: 12px;
+            color: #000;
+            line-height: 16px;
+            padding: 6px 8px 6px 34px;
+            position: relative;
+            .icon-prompt{
+                position: absolute;
+                top: 50%;
+                left: 9px;
+                margin: -8px 0 0 0;
+            }
+        }
+    }
+    .check-product-list {
+        position: relative;
+        margin: 0;
+        padding: 0 10px;
+        border-bottom: 1px solid #EBEBEB;
+        .viewport {
+            height: auto;
+            max-height: 420px;
+            .thumbnail {
+                padding: 0;
+                border-radius: 0px;
+                .summary-list-box {
+                    .gift-item,
+                    .summary-list-item {
+                        position: relative;
+                        padding: 0 0 20px;
+                        margin: 0 0 20px;
+                        border-bottom: 1px dotted #EBEBEB;
+                        &:last-child{
+                            border-bottom: 0px dotted #EBEBEB;
+                            margin: 0;
+                        }
+                        .summary-list-left {
+                            float: left;
+                            max-width: 60px;
+                            img{
+                                border-radius: 0px;
+                            }
+                        }
+                        .summary-list-right {
+                            padding-left: 71px;
+
+                            a {
+                                font-size: 12px;
+                                line-height: 12px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: block;
+                                margin-bottom: 7px;
+                            }
+                            p {
+                                font-size: 12px;
+                                color: #888888;
+                                line-height: 18px;
+                                &.badge-text{
+                                    position: relative;
+                                    padding: 0 0 0 36px;
+                                    span{
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                    }
+                                }
+                            }
+                            p.miadidas-customized{
+                                color: #000;
+                                margin-top: 4px;
+                                .icon-customized{
+                                    vertical-align: middle;
+                                    margin: -4px 0 0 5px;
+                                }
+                            }
+                            p.unit-price {
+                                font-size: 14px;
+                                line-height: 14px;
+                                text-align: right;
+                                margin-top: 26px;
+                                color: #000;
+                                .unit-price-text{
+                                    display: none;
+                                }
+                                .goods-price{
+                                    color: #C53622;
+                                    font-weight: bold;
+                                    &.price-single{
+                                        color: #000;
+                                        font-weight: normal;
+                                    }
+                                    del {
+                                        color: #888;
+                                        font-weight: normal;
+                                        margin-left: 6px;
+                                    }
+                                }
+                                .employee-red{
+                                    font-size: 12px;
+                                    color: #C53622;
+                                    line-height: 12px;
+                                    display:block;
+                                    margin:5px 0;
+                                }
+                            }
+                            p.total-price {
+                                font-size: 14px;
+                                color: #000000;
+                                line-height: 14px;
+                                font-weight: bold;
+                                text-align: right;
+                                margin-top: 5px;
+                            }
+                        }
+                        .gift-item{
+                            padding:20px 0 0;
+                        }
+                    }
+                    .gift-item{
+                        .gift-tit{
+                            font-size: 14px;
+                            color: #000;
+                            line-height: 16px;
+                            margin-bottom: 20px;
+                            p{
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                        .summary-list-right{
+                            .unit-price{
+                                span{
+                                    &:nth-child(1){
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .scrollbar {
+            right: 3px;
+            width: 4px;
+            &.disable{
+                display: none;
+            }
+            .track{
+                .thumb{
+                    width: 4px;
+                }
+            }
+        }
+    }
+
+    // 优惠券
+    .coupon-box {
+        padding: 20px 10px;
+        .coupon-box-top {
+            font-size: 14px;
+            color: #000000;
+            line-height: 14px;
+            margin-bottom: 10px;
+            a{
+                color: #000000;
+            }
+            .is-active {
+                display: inline-block;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+        }
+        .coupon-content {
+            .coupon-select{
+                .dropdown{
+                    a.btn{
+                        .dropdown-text {
+                            color: #888;
+                            letter-spacing: 0;
+                        }
+                    }
+                    .sub-menu{
+                        top: 39px;
+                        border: 1px solid #C8CBCC;
+                        border-top: 0px solid #fff;
+                        .viewport {
+                            height: auto;
+                            max-height: 250px;
+                            .overview{
+                                ul{
+                                    padding: 8px 0 20px;
+                                    li {
+                                        border-bottom: 0px solid #C8CBCC;
+                                        line-height: 36px;
+                                        margin: 0;
+                                        a{
+                                            color: #000;
+                                            span{
+                                                vertical-align: middle;
+                                                margin-left: 15px;
+                                                display: inline-block;
+                                                max-width: 170px;
+                                                white-space: nowrap;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                            }
+                                            i{
+                                                vertical-align: middle;
+                                                margin-top: -2px;
+                                            }
+                                        }
+                                        &.coupon-btn{
+                                            // padding: 0 10px;
+                                            margin: 17px 0 0;
+                                            a{
+                                                text-align: center;
+                                                color: #fff;
+                                                height: 32px;
+                                                line-height: 30px;
+                                                display: inline-block;
+                                                min-width: 30px;
+                                                float: left;
+                                                border: 0;
+                                                cursor: pointer;
+                                                span{
+                                                    margin: 0;
+                                                    padding: 0;
+                                                }
+                                                &.btn-black{
+                                                    width: 33%;
+                                                    background: #000;
+                                                    margin-left: 10px;
+                                                }
+                                                &.btn-blue{
+                                                    float: right;
+                                                    margin-right: 10px;
+                                                    width: 55%;
+                                                    background: #0286CD;
+                                                }
+                                            }
+                                        }
+                                        &.is-active {
+                                            border-bottom: 0px solid #C8CBCC;
+                                            a{
+                                                color: #000;
+                                                .icon-checked{
+                                                    background-position: -534px -50px;
+                                                }
+                                            }
+                                        }
+                                        &.is-disabled *{
+                                            cursor: not-allowed !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.is-open .btn {
+                        border-bottom: 0px solid #C8CBCC;
+                    }
+                }
+                .coupon-use-content{
+                    position: relative;
+                    padding: 5px 0 0;
+                    display: none;
+                    ul{
+                        li{
+                            position: relative;
+                            padding: 0 56px 0 0;
+                            margin-top: 5px;
+                            p{
+                                width: 100%;
+                                height: 40px;
+                                line-height: 38px;
+                                background: #FFFFFF;
+                                border: 1px solid #C8CBCC;
+                                padding: 0px 10px;
+                                font-size: 14px;
+                                color: #000;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                            a{
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                width: 56px;
+                                height: 40px;
+                                background: #000;
+                                font-size: 14px;
+                                color: #FFFFFF;
+                                line-height: 40px;
+                                text-align: center;
+                                z-index: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            .coupon-code{
+                display: none;
+                .form-input{
+                    padding: 0 56px 0 0;
+                    .delete-content{
+                        display: none;
+                    }
+                    p{
+                        display: none;
+                        width: 100%;
+                        height: 40px;
+                        line-height: 38px;
+                        background: #FFFFFF;
+                        border: 1px solid #C8CBCC;
+                        padding: 0px 10px;
+                        font-size: 14px;
+                        color: #000;
+                    }
+                    a{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 56px;
+                        height: 40px;
+                        background: #000;
+                        font-size: 14px;
+                        color: #FFFFFF;
+                        line-height: 40px;
+                        text-align: center;
+                        z-index: 1;
+                    }
+                }
+                .is-error.form-input,
+                .is-error .form-input {
+                    &:before{
+                        right: 62px;
+                    }
+                    .delete-content{
+                        display: block;
+                        width: 30px;
+                        height: 40px;
+                        position: absolute;
+                        right: 57px;
+                        top: 0;
+                        background: transparent;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .order-price-classify {
+        border-top: 1px solid #EBEBEB;
+        padding: 0 10px;
+        >div {
+            border-bottom: 1px dotted #EBEBEB;
+            > span{
+                &:first-child {
+                    float: left;
+                    font-size: 14px;
+                    color: #000000;
+                    line-height: 46px;
+                    font-weight: normal;
+                }
+                &:last-child{
+                    float: right;
+                    font-size: 16px;
+                    color: #000000;
+                    line-height: 46px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .product-price{}
+        .coupon-price{
+            > span{
+                &:last-child{
+                    color: #C53622;
+                }
+            }
+        }
+        .freight-price{
+            border-bottom: 0px dotted #EBEBEB;
+            > span{
+                &:last-child{
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+    .price-totle-wrap {
+        padding: 20px 10px;
+        border-top: 3px solid #C8CBCC;
+        .product-total {
+            > span{
+                color: #000000;
+                font-weight: bold;
+                line-height: 20px;
+                &:first-child {
+                    float: left;
+                    font-size: 14px;
+                }
+                &:last-child{
+                    float: right;
+                    font-size: 20px;
+                }
+            }
+        }
+        .integral{
+            margin-top: 12px;
+            > span{
+                color: #000;
+                line-height: 12px;
+                font-size: 12px;
+                &:first-child {
+                    float: left;
+                    color: #888888;
+                }
+                &:last-child{
+                    float: right;
+                }
+            }
+        }
+        .diy-tit{
+            font-size: 12px;
+            color: #C53622;
+            letter-spacing: 0.5px;
+            line-height: 16px;
+            padding-top: 18px;
+            a{
+                color: #C53622;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.order-submit-guest-content{
+    .order-summary-box{
+        .coupon-box{
+            .coupon-box-top{
+                span,
+                a:nth-child(1){
+                    display: none;
+                }
+                a.is-active{
+                   text-decoration: none;
+                    font-weight: normal;
+                }
+            }
+            .coupon-content{
+                .coupon-select{
+                    display: none;
+                }
+                .coupon-code{
+                    display: block;
+                }
+            }
+        }
+
+    }
+}
+
+
+@media (max-width:1024px){
+    .order-summary-box{
+        background: #fff;
+        padding: 0px 20px 0;
+        .summary-title {
+            font-family: @fonts-adineueproblack, @fonts-common-suffix;
+            font-size: 14px;
+            line-height: 14px;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px dotted #C8CBCC;
+        }
+        .customized-prompt-text{
+            padding: 0px 0 8px;
+            > div {
+                padding: 8px 8px 8px 34px;
+                .icon-prompt {
+                    top: 8px;
+                    margin: 0;
+                }
+            }
+            .miadidas-customized-mob{
+                background: #F2F2F2;
+                border-left: 0px solid #5BC2E7;
+                padding: 18px;
+                font-size: 16px;
+                color: #000;
+                line-height: 16px;
+                margin: 10px 0 6px;
+                i{
+                    margin: -4px 0 0 8px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .summary-bg-box {
+            padding: 0;
+        }
+        .check-product-list{
+            padding: 2px 0 0;
+            border-bottom: 1px solid #C7CBCC;
+            .viewport{
+                .thumbnail{
+                    .summary-list-box{
+                        .gift-item,
+                        .summary-list-item{
+                            padding: 0 0 14px;
+                            margin: 0 0 14px;
+                            border-bottom: 1px solid #C7CBCC;
+                            .summary-list-left {
+                                max-width: 80px;
+                            }
+                            .summary-list-right{
+                                padding-left: 94px;
+                                a {
+                                    font-size: 14px;
+                                    line-height: 14px;
+                                    font-weight: bold;
+                                    margin-bottom: 9px;
+                                }
+                                p{
+                                    color: #000;
+                                    font-size: 12px;
+                                    line-height: 22px;
+                                }
+                                p.unit-price{
+                                    font-size: 12px;
+                                    line-height: 22px;
+                                    text-align: left;
+                                    margin-top: 0px;
+                                    .unit-price-text {
+                                        display: inline-block;
+                                    }
+                                }
+                                p.total-price {
+                                    margin-top: 12px;
+                                }
+                                 p.miadidas-customized {
+                                    display: none;
+                                }
+                            }
+                            .gift-item{
+                                border-top: 1px dotted #EBEBEB;
+                                margin: 14px 0 0;
+                                padding: 14px 0 0;
+                            }
+                        }
+                        .gift-item{
+                            .gift-tit{
+                                font-weight: bold;
+                            }
+                            .summary-list-right{
+                                a{
+                                    display: none;
+                                }
+                                p{
+                                    line-height: 20px !important;
+                                    span{
+                                       &:nth-child(1){
+                                            color: #888;
+                                        }
+                                    }
+                                }
+                                .unit-price{
+                                    span{
+                                        &:nth-child(1){
+                                            display: inline-block;
+                                        }
+                                        &:nth-child(2){
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .coupon-box {
+            padding: 0px 0px 16px;
+            .coupon-box-top{
+                margin-bottom: 20px;
+            }
+            .coupon-content{
+                .coupon-select{
+                    .dropdown{
+                        .sub-menu{
+                            top: 40px;
+                            .scrollbar{
+                                display: none;
+                            }
+                            .viewport{
+                                max-height: 226px;
+                                .overview{
+                                    ul{
+                                        li{
+                                            a{
+                                                padding: 0 10px 0 20px;
+                                            }
+                                            &.is-active{
+                                                a{
+                                                    .icon-checked{
+                                                        background-position: -137px -110px;
+                                                    }
+                                                }
+                                            }
+                                            &.coupon-btn {
+                                                text-align: center;
+                                                a{
+                                                    font-size: 16px;
+                                                    height: 42px;
+                                                    line-height: 40px;
+                                                    display: inline-block;
+                                                    padding: 0;
+                                                    margin-left: 10px;
+                                                    &.btn-black {
+                                                        margin: 0;
+                                                        margin-left: 10px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.is-open .btn {
+                            border-bottom: 1px solid #C8CBCC;
+                        }
+                    }
+                }
+            }
+        }
+        .order-price-classify {
+            border-top: 1px dotted #C8CBCC;
+            padding: 9px 0;
+            > div {
+                border-bottom: 0px dotted #EBEBEB;
+                > span{
+                    &:first-child {
+                        line-height: 26px;
+                    }
+                    &:last-child {
+                        font-size: 14px;
+                        line-height: 26px;
+                    }
+                }
+            }
+            .coupon-price > span:last-child {
+                /*color: #000;*/
+            }
+        }
+        .price-totle-wrap{
+            border-top: 1px dotted #C8CBCC;
+            padding: 12px 0px 18px;
+            .product-total{
+                > span:last-child {
+                    font-size: 14px;
+                }
+            }
+            .integral{
+                margin: 10px 0 4px;
+                >span{
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+            }
+            .diy-tit{
+                padding-top: 12px;
+            }
+        }
+        .submit-button-box{
+            padding: 10px 0 0;
+        }
+        .checked-select-con{
+            padding: 0;
+        }
+        .mob-commutator{
+            padding: 0 0 35px;
+        }
+
+    }
+
+}
+
+
+@media (max-width:1024px){
+}

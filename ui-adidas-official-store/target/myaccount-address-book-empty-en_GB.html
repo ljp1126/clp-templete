@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<%include _includes/meta.html %>
+		<title>myaccount-address-book-empty</title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" href="css/myaccount-address-book-en_GB.css">
+		<link rel="stylesheet" type="text/css" href="css/myaccount-orders.css">
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="js/myaccount-orders.js"></script>
+		<script type="text/javascript" src="js/myaccount-address-book.js"></script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+
+			<!-- 内容部分 -->
+			<section class="container">
+				<!-- 模块一 -->
+				<article class="article article-breadcrumb-common-width none-sm">
+					<div class="breadcrumb">
+						<ul class="list-inline">
+							<li>
+								<a href="#"><i class="icon icon-round-lightgray-lefts"></i>返回</a>
+							</li>
+							<li class="divider">丨</li>
+							<li>
+								<a href="/">首页</a>
+							</li>
+							<li class="divider">/</li>
+							<li>
+								<a href="/">我的账户</a>
+							</li>
+						</ul>
+					</div>
+				</article>
+
+				<!-- 模块二 -->
+				<article class="article article-my-width">
+					<div class="my-content-box float-clearfix">
+						<!-- 左 导航 -->
+						<%include _includes/myaccount-left-nav-en_GB.html %>
+
+						<!-- 右 内容 -->
+						<div class="myaccount-right">
+							<div class="myaccount-rig-left float-clearfix">
+								<div class="ma-address-box">
+									<div class="order-submit-content order-submit-member-content float-clearfix">
+										<div class="order-content-left">
+											<!-- 配送地址 -->
+											<div class="delivery-address payment-method">
+												<div class="order-title-box">
+													<!-- pc -->
+													<div class="pc-place none-sm">
+														<span class="order-title-labels">我的地址簿</span>
+														<a class="order-title-link event-address">新增地址+</a>
+														<a class="order-title-link none maxaddress">地址簿数目已达上限<i class="warning-ic"></i></a>
+													</div>
+													<!-- mb -->
+													<div class="mb-place block-sm none">
+														<span class="order-title-labels">我的地址簿</span>
+														<a class="order-title-link event-address"><i class="add-ic"></i>新增地址</a>
+														<a class="order-title-link none maxaddress"><i class="add-ic"></i>您的地址数量已达上限</a>
+														<a class="order-title-link spantxt">已添加地址</a>
+													</div>
+												</div>
+												<div class="order-title none none-sm">我的地址簿</div>
+												<div class="order-title-tips none">您还未保存配送地址，请填写以下内容。</div>
+												<!-- 地址选择列表 -->
+												<div class="address-select-list event-address-select">
+													<div class="add-address-list father-list-box">
+													</div>
+												</div>
+												<div class="event-address-box">
+
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="myaccount-gallery-box">
+									<div class="style-guess-you-Iike myaccount-might-like">
+										<h3>您可能也喜欢</h3>
+										<!-- 您可能也喜欢 -->
+										<%include _includes/guess-you-Iike.html %>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+				</article>
+			</section>
+
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+			<script id="ressselect" type="text/template">
+				<!-- 新增地址表单 -->
+				<div class="address-form-content tinyscrollbar">
+					<div class="viewport">
+						<div class="overview">
+							<div class="address-form-box float-clearfix">
+								<div class="form-group">
+									<label class="control-label">收货人</label>
+									<div class="form-input">
+										<input placeholder="" type="text">
+										<div class="msg-block">
+											<i class="icon msg-icon"></i>
+											<span>格式错误，请重新输入</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label">手机号码</label>
+									<div class="form-input">
+										<input placeholder="" type="text">
+										<div class="msg-block">
+											<i class="icon msg-icon"></i>
+											<span>格式错误，请重新输入</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<!--pc端省市区联动-->
+									<div class="row form-selects form-select-box none-sm events-city-simulation ">
+										<div class="col-12-4">
+											<label class="control-label">省</label>
+											<div class="form-select">
+												<a class="btn events-city-text">
+													<span class="dropdown-text">请选择</span>
+													<span class="dropdown-icon">
+												        <i class="icon icon-caret"></i>
+												    </span>
+												</a>
+												<div class="sub-menu tinyscrollbar">
+													<div class="viewport">
+														<div class="overview">
+															<ul class="events-city-content">
+																<li>
+																	<a>示例文字</a>
+																</li>
+																<li>
+																	<a>示例文字</a>
+																</li>
+																<li>
+																	<a>2</a>
+																</li>
+																<li>
+																	<a>3</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="scrollbar">
+														<div class="track">
+															<div class="thumb">
+																<div class="end"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="msg-block">
+													<i class="icon msg-icon"></i>
+													<span>格式错误，请重新输入</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12-4">
+											<label class="control-label">市</label>
+											<div class="form-select">
+												<a class="btn events-city-text">
+													<span class="dropdown-text">请选择</span>
+													<span class="dropdown-icon">
+												        <i class="icon icon-caret"></i>
+												    </span>
+												</a>
+												<div class="sub-menu tinyscrollbar">
+													<div class="viewport">
+														<div class="overview">
+															<ul class="events-city-content">
+																<li>
+																	<a>示例文字</a>
+																</li>
+																<li>
+																	<a>示例文字</a>
+																</li>
+																<li>
+																	<a>2</a>
+																</li>
+																<li>
+																	<a>3</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="scrollbar">
+														<div class="track">
+															<div class="thumb">
+																<div class="end"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="msg-block">
+													<i class="icon msg-icon"></i>
+													<span>格式错误，请重新输入</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12-4">
+											<label class="control-label">区</label>
+											<div class="form-select">
+												<a class="btn events-city-text">
+													<span class="dropdown-text">请选择</span>
+													<span class="dropdown-icon">
+												        <i class="icon icon-caret"></i>
+												    </span>
+												</a>
+												<div class="sub-menu tinyscrollbar">
+													<div class="viewport">
+														<div class="overview">
+															<ul class="events-city-content">
+																<li>
+																	<a>示例文字</a>
+																</li>
+																<li>
+																	<a>示例文字</a>
+																</li>
+																<li>
+																	<a>2</a>
+																</li>
+																<li>
+																	<a>3</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="scrollbar">
+														<div class="track">
+															<div class="thumb">
+																<div class="end"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="msg-block">
+													<i class="icon msg-icon"></i>
+													<span>格式错误，请重新输入</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12-12">
+											<div class="form-input">
+												<textarea placeholder="请填写详细收货地址，例如街道名称、门牌号码等信息"></textarea>
+												<!-- <input type="text"  placeholder="填写详细收货地址，例如街道名称、门牌号码等信息" /> -->
+												<div class="msg-block">
+													<i class="icon msg-icon"></i>
+													<span>格式错误，请重新输入</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!--mob端省市区联动-->
+									<div class="row form-selects form-select-box none block-sm events-city-simulation ">
+										<div class="form-selects row events-city-default">
+											<div class="col-12-4">
+												<label class="control-label">省</label>
+												<div class="form-select">
+													<a class="btn">
+														<span class="dropdown-text">请选择</span>
+														<span class="dropdown-icon">
+													        <i class="icon icon-caret"></i>
+													    </span>
+													</a>
+													<select>
+														<option value="">请选择</option>
+													</select>
+													<div class="msg-block">
+														<i class="icon msg-icon"></i>
+														<span>格式错误，请重新输入</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-12-4">
+												<label class="control-label">市</label>
+												<div class="form-select">
+													<a class="btn">
+														<span class="dropdown-text">请选择</span>
+														<span class="dropdown-icon">
+													        <i class="icon icon-caret"></i>
+													    </span>
+													</a>
+													<select>
+														<option value="">请选择</option>
+													</select>
+													<div class="msg-block">
+														<i class="icon msg-icon"></i>
+														<span>格式错误，请重新输入</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-12-4">
+												<label class="control-label">区</label>
+												<div class="form-select">
+													<a class="btn">
+														<span class="dropdown-text">请选择</span>
+														<span class="dropdown-icon">
+													        <i class="icon icon-caret"></i>
+													    </span>
+													</a>
+													<select>
+														<option value="">请选择</option>
+													</select>
+													<div class="msg-block">
+														<i class="icon msg-icon"></i>
+														<span>格式错误，请重新输入</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-12-12">
+												<div class="form-input">
+													<textarea placeholder="请填写详细收货地址，例如街道名称、门牌号码等信息"></textarea>
+													<!-- <input type="text" placeholder="填写详细收货地址，例如街道名称、门牌号码..." /> -->
+													<div class="msg-block">
+														<i class="icon msg-icon"></i>
+														<span>格式错误，请重新输入</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label">邮政编码 <span>(非必填)</span></label>
+									<div class="form-input">
+										<input placeholder="" type="text">
+										<div class="msg-block">
+											<i class="icon msg-icon"></i>
+											<span>格式错误，请重新输入</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="checked-select-con font-size-12">
+									<div class="checked-select">
+										<i class="icon icon-checked"></i>
+										<span>设为默认地址</span>
+									</div>
+								</div>
+								<div class="add-address-btn">
+									<a class="btn btn-black event-save-return none-sm"><span>取消</span></a>
+									<a class="btn btn-blue event-save"><span>保存该地址</span></a>
+									<a class="btn btn-black event-save-return block-sm none"><span>取消</span></a>
+								</div>
+							</div>
+							<!-- <a class="address-full"><i class="icon icon-caret"></i>填写完整地址</a> -->
+							<div class="mob-address-list-content none block-sm">
+								<div class="mb-list-tit">已添加地址</div>
+								<div class="mob-address-list father-list-box">
+
+								</div>
+								<!-- <a class="address-form-close">返回</a> -->
+							</div>
+						</div>
+					</div>
+					<div class="scrollbar">
+						<div class="track">
+							<div class="thumb">
+								<div class="end"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</script>
+
+			<script id="linshi-list" type="text/template">
+
+				<div class="distribution-list event-default-address">
+					<i class="icon icon-radio"></i>
+					<div class="distribution-list-box">
+						<div class="address-default"><span class="default-span">[默认地址]</span><span>设为默认地址</span></div>
+						<p class="address-name">
+							张十三
+						</p>
+						<div class="address-box">
+							<p>
+								<span>上海市</span><span>静安区</span><span>万荣路1268号云立方B栋</span>
+							</p>
+							<p><span>邮编：&nbsp;</span>200000</p>
+							<p><span>电话：&nbsp;</span>13585507535</p>
+						</div>
+					</div>
+					<p class="edit-box">
+						<a class="edit-button event-editor">编辑</a>
+						<span> | </span>
+						<a class="edit-button event-delect"><em>删除</em></a>
+					</p>
+				</div>
+
+			</script>
+
+		</div>
+	</body>
+
+</html>

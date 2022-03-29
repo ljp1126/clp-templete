@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+.article{
+	max-width:1000px;
+	margin: 0 auto;
+}
+/*搜索页面*/
+.search-page-content{
+	text-align: center;
+	margin-bottom: 70px;
+	.four-content{
+		padding: 70px 0 81px;
+	}
+	h4{
+		font-size: 24px;
+		font-weight: bold;
+		color: #30302D;
+		line-height: 24px;
+		margin-bottom: 30px;
+	}
+	.form-search{
+		width: 480px;
+		height: 40px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		position: relative;
+		input{
+			width: 100%;
+			background: #FFFFFF;
+			border: 1px solid #C8CBCC;
+			height: 40px;
+			font-size: 14px;
+			line-height: 16px;
+			padding: 0 34px 0 10px;
+		}
+		a{
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 32px;
+			height: 40px;
+			padding: 12px 6px 0 0;
+		}
+	}
+	.crumbs-cont{
+		span{
+			font-size:14px;
+			line-height: 14px;
+			&.go-home{
+				font-weight: bold;
+				a{
+					text-decoration: underline;
+					&:hover{
+						/*color: #000;*/
+					}
+				}
+			}
+		}
+	}
+	.search-tit{
+		margin-top: 30px;
+		color: #000;
+		letter-spacing: 0;
+		p{
+			font-size: 18px;
+			line-height: 18px;
+			margin-bottom: 12px;
+		}
+		ul{
+			li{
+				font-size: 14px;
+				line-height: 14px;
+				display: inline-block;
+				padding: 0 14px;
+			}
+		}
+	}
+
+}
+@media screen and (max-width: 1024px){
+	.article-list {
+		padding: 0;
+		min-width: 320px;
+		margin-top: 0;
+	}
+	/*搜索页面*/
+	.search-page-content{
+		text-align: center;
+		margin-bottom: 40px;
+		padding: 0 20px;
+		.four-content{
+			padding: 80px 0 40px;
+		}
+		h4{
+			font-size: 24px;
+			line-height: 24px;
+			margin-bottom: 40px;
+		}
+		.form-search{
+			max-width: 480px;
+			width: 100%;
+			margin: 0 auto 20px;
+			a{
+				width: 28px;
+			}
+		}
+		.search-tit{
+			margin-top: 0px;
+			margin-bottom: 30px;
+			p{
+				font-size: 14px;
+				line-height: 14px;
+				margin-bottom: 12px;
+			}
+			ul{
+				li{
+					font-size: 12px;
+					line-height: 16px;
+					padding: 4px 0;
+				}
+			}
+		}
+
+	}
+}

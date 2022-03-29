@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" href="css/sale.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/sale.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-simple.html %>
+		<!-- 内容部分 -->
+		<section class="container container-min-h">
+			
+			<article class="article article-frame">
+				<div class="bg-box"></div>
+				<div class="sale-content frame-content verification">
+					<div class="img-box"><img src="images/sale/logo@2x.png" /></div>
+					<div class="text-box">
+						<h3>进行验证</h3>
+						<p>点击下方按钮进行验证，验证成功后即可进入购买页</p>
+					</div>
+					<div class="btn-box">
+						<a class="btn verification-btn">点击进行验证</a>
+					</div>
+					<ul class="info-box float-clearfix">
+						<li><span><i></i></span>仅支持在线支付</li>
+						<li><span><i></i></span>不参加任何优惠活动</li>
+						<li><span><i></i></span>每个用户ID仅限购一件</li>
+					</ul>
+				</div>
+			</article>
+		
+		</section>
+
+		<%include _includes/modules/footer-simple.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		<script id="verification" type="text/template">
+			<div class="verification-box">
+				<a href="sale-waiting-in-queue-1.html"><img src="images/sale/img1.png" /></a>
+				<!-- <iframe src="https://www.touclick.com/"></iframe> -->
+			</div>
+		</script>
+
+	</div>
+</body>
+</html>

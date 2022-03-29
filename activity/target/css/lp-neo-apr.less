@@ -1,0 +1,685 @@
+@charset "utf-8";
+// 公共方法
+@import "common/utilities.less";
+.article {
+    position: relative;
+    >img {
+        width: 100%;
+    }
+    .link {
+        position: absolute;
+        z-index: 5;
+//      background: rgba(0, 0, 0, .4);
+        .btn {
+            position: absolute;
+            min-width: 120px;
+            height: 38px;
+            line-height: 38px;
+            span::after {
+                top: 4px;
+            }
+        }
+    }
+    &.article-1 {
+        .swiper-container {
+            position: absolute;
+            width: 52.88%;
+            left: 14.6%;
+            top: 14.47%;
+            z-index: 2;
+            a {
+                display: block;
+            }
+        }
+        .swiper-btn {
+            position: absolute;
+            width: 1.5%;
+            top: 65.5%;
+            z-index: 2;
+            cursor: pointer;
+            &.prev-btn {
+                left: 60.9%;
+            }
+            &.next-btn {
+                left: 63.6%;
+            }
+        }
+        .view-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 3;
+            pointer-events: none;
+        }
+    }
+    &.article-2 {
+        .link {
+            &.link-1 {
+                width: 13.6%;
+                height: 40.1%;
+                left: 15.7%;
+                top: 34.7%;
+                .btn {
+                    left: 17.6%;
+                    top: 83%;
+                }
+            }
+            &.link-2 {
+                width: 15.9%;
+                height: 22%;
+                left: 16.7%;
+                top: 76.4%;
+                .btn {
+                    left: 17.7%;
+                    top: 27.4%;
+                }
+            }
+            &.link-3 {
+                width: 13.3%;
+                height: 85.1%;
+                left: 33%;
+                top: 11.6%;
+            }
+            &.link-4 {
+                width: 14.6%;
+                height: 35.6%;
+                left: 46.1%;
+                top: 10.7%;
+                .btn {
+                    left: 2.5%;
+                    top: 17%;
+                }
+            }
+            &.link-5 {
+                width: 16.4%;
+                height: 25%;
+                left: 47.1%;
+                top: 41.4%;
+                .btn {
+                    left: 15%;
+                    top: 85.8%;
+                }
+            }
+            &.link-6 {
+                width: 12.8%;
+                height: 4.9%;
+                left: 57%;
+                top: 76.9%;
+            }
+            &.link-7 {
+                width: 14.7%;
+                height: 44.4%;
+                left: 62.8%;
+                top: 3%;
+            }
+        }
+    }
+    &.article-3 {
+        .link {
+            &.link-1 {
+                width: 20%;
+                height: 58.9%;
+                left: 18.5%;
+                top: 20.1%;
+            }
+            &.link-2 {
+                width: 26.1%;
+                height: 18.2%;
+                left: 18.5%;
+                top: 80.4%;
+                .btn {
+                    left: 62.4%;
+                    top: 68.5%;
+                }
+            }
+            &.link-3 {
+                width: 25%;
+                height: 25.4%;
+                left: 39.9%;
+                top: 25.3%;
+                .btn {
+                    left: 4.7%;
+                    top: 68.2%;
+                }
+            }
+            &.link-4 {
+                width: 25%;
+                height: 19.1%;
+                left: 39.9%;
+                top: 51.3%;
+                .btn {
+                    left: 57.5%;
+                    top: 53.3%;
+                }
+            }
+            &.link-5 {
+                width: 14.6%;
+                height: 24.7%;
+                left: 52.8%;
+                top: 70.8%;
+                .btn {
+                    left: 13.9%;
+                    top: 23.5%;
+                }
+            }
+            &.link-6 {
+                width: 11.4%;
+                height: 5.1%;
+                left: 50.2%;
+                top: 15.6%;
+            }
+            &.link-7 {
+                width: 20.3%;
+                height: 86.1%;
+                left: 67.8%;
+                top: 9.5%;
+            }
+        }
+    }
+    &.article-4 {
+        .link {
+            &.link-1 {
+                width: 16.6%;
+                height: 37%;
+                left: 14.2%;
+                top: 15.1%;
+                .btn {
+                    left: 30.3%;
+                    top: 87.6%;
+                }
+            }
+            &.link-2 {
+                width: 12.3%;
+                height: 4.8%;
+                left: 15.3%;
+                top: 72.2%;
+            }
+            &.link-3 {
+                width: 15.7%;
+                height: 84.4%;
+                left: 31.4%;
+                top: 6.9%;
+            }
+            &.link-4 {
+                width: 16.1%;
+                height: 37.4%;
+                left: 47.2%;
+                top: 6.9%;
+                .btn {
+                    left: 28.2%;
+                    top: 86%;
+                }
+            }
+            &.link-5 {
+                width: 13.6%;
+                height: 42.3%;
+                left: 47.2%;
+                top: 45.5%;
+                .btn {
+                    left: 5.4%;
+                    top: 86%;
+                }
+            }
+            &.link-6 {
+                width: 23%;
+                height: 55.7%;
+                left: 63.4%;
+                top: 13.3%;
+            }
+            &.link-7 {
+                width: 24%;
+                height: 23%;
+                left: 61.4%;
+                top: 69.2%;
+                .btn {
+                    left: 2.4%;
+                    top: 74%;
+                }
+            }
+        }
+    }
+    &.article-5 {
+        .link {
+            width: 16.1%;
+            height: 34.3%;
+            &.link-1 {
+                left: 16%;
+                top: 7%;
+            }
+            &.link-2 {
+                left: 33.2%;
+                top: 7%;
+            }
+            &.link-3 {
+                left: 50.8%;
+                top: 7%;
+            }
+            &.link-4 {
+                left: 68%;
+                top: 7%;
+            }
+            &.link-5 {
+                left: 16%;
+                top: 48%;
+            }
+            &.link-6 {
+                left: 33.3%;
+                top: 48%;
+            }
+            &.link-7 {
+                left: 50.3%;
+                top: 48%;
+            }
+            &.link-8 {
+                left: 68%;
+                top: 48%;
+            }
+            &.link-9 {
+                width: auto;
+                height: auto;
+                left: 50%;
+                top: 88%;
+                .pre(transform, translateX(-50%));
+                .btn {
+                    position: relative;
+                    min-width: 220px;
+                    height: 48px;
+                    line-height: 48px;
+                }
+            }
+        }
+    }
+    &.article-6 {
+        .link {
+            width: 16.1%;
+            height: 26.5%;
+            &.link-1 {
+                left: 16%;
+                top: 5.5%;
+            }
+            &.link-2 {
+                left: 33%;
+                top: 5.5%;
+            }
+            &.link-3 {
+                left: 50.5%;
+                top: 5.5%;
+            }
+            &.link-4 {
+                left: 67.8%;
+                top: 5.5%;
+            }
+            &.link-5 {
+                left: 16%;
+                top: 35.5%;
+            }
+            &.link-6 {
+                left: 33%;
+                top: 35.5%;
+            }
+            &.link-7 {
+                left: 50.7%;
+                top: 35.5%;
+            }
+            &.link-8 {
+                left: 68%;
+                top: 35.5%;
+            }
+            &.link-9 {
+                left: 16%;
+                top: 65.5%;
+            }
+            &.link-10 {
+                left: 33%;
+                top: 65.5%;
+            }
+            &.link-11 {
+                left: 50.6%;
+                top: 65.5%;
+            }
+            &.link-12 {
+                left: 67.8%;
+                top: 65.5%;
+            }
+            &.link-13 {
+                width: auto;
+                height: auto;
+                left: 50%;
+                bottom: 0;
+                .pre(transform, translateX(-50%));
+                .btn {
+                    position: relative;
+                    min-width: 220px;
+                    height: 48px;
+                    line-height: 48px;
+                }
+            }
+        }
+    }
+    &.article-7 {
+        .link {
+            width: 15.7%;
+            height: 39.5%;
+            .btn {
+                width: 90%;
+                max-width: 178px;
+                height: 48px;
+                line-height: 48px;
+                left: 50%;
+                .pre(transform, translateX(-50%));
+                bottom: 4.5%;
+            }
+            &.link-1 {
+                left: 14.4%;
+                top: 51.9%;
+            }
+            &.link-2 {
+                left: 32.9%;
+                top: 51.9%;
+            }
+            &.link-3 {
+                left: 51.4%;
+                top: 51.9%;
+            }
+            &.link-4 {
+                left: 69.8%;
+                top: 51.9%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .article {
+        .link {
+            .btn {
+                display: none;
+            }
+        }
+        &.article-1 {
+            .swiper-container {
+                width: 83.4%;
+                left: 7.35%;
+                top: 20.2%;
+            }
+            .swiper-btn {
+                width: 3.7%;
+                top: 64.5%;
+                &.prev-btn {
+                    left: 77.2%;
+                }
+                &.next-btn {
+                    left: 84.1%;
+                }
+            }
+        }
+        &.article-2 {
+            .link {
+                &.link-1 {
+                    width: 33.2%;
+                    height: 24.2%;
+                    left: 47.6%;
+                    top: 16%;
+                }
+                &.link-2 {
+                    width: 58%;
+                    height: 13.5%;
+                    left: 41.1%;
+                    top: 40.8%;
+                }
+                &.link-3 {
+                    width: 25.5%;
+                    height: 52.5%;
+                    left: 13.3%;
+                    top: 10.1%;
+                }
+                &.link-4 {
+                    width: 54%;
+                    height: 11.9%;
+                    left: 41.1%;
+                    top: 40.8%;
+                }
+                &.link-5 {
+                    width: 38.5%;
+                    height: 15.3%;
+                    left: 4.5%;
+                    top: 69.9%;
+                }
+                &.link-6 {
+                    width: 30.1%;
+                    height: 3.1%;
+                    left: 39.6%;
+                    top: 9.9%;
+                }
+                &.link-7 {
+                    width: 53.1%;
+                    height: 35.3%;
+                    left: 43.2%;
+                    top: 55%;
+                }
+            }
+        }
+        &.article-3 {
+            .link {
+                &.link-1 {
+                    width: 53.5%;
+                    height: 33.2%;
+                    left: 2.4%;
+                    top: 59.7%;
+                }
+                &.link-2 {
+                    width: 38.9%;
+                    height: 13.5%;
+                    left: 58.3%;
+                    top: 83.1%;
+                }
+                &.link-3 {
+                    width: 45.2%;
+                    height: 21.5%;
+                    left: 2.4%;
+                    top: 18.9%;
+                }
+                &.link-4 {
+                    width: 38.8%;
+                    height: 23.2%;
+                    left: 58.3%;
+                    top: 59.7%;
+                }
+                &.link-5 {
+                    width: 49.1%;
+                    height: 14.6%;
+                    left: 9.2%;
+                    top: 41.6%;
+                }
+                &.link-6 {
+                    width: 29.9%;
+                    height: 3.7%;
+                    left: 15.3%;
+                    top: 12.8%;
+                }
+                &.link-7 {
+                    width: 38%;
+                    height: 48.5%;
+                    left: 60.4%;
+                    top: 9.9%;
+                }
+            }
+        }
+        &.article-4 {
+            .link {
+                &.link-1 {
+                    width: 49.3%;
+                    height: 24.5%;
+                    left: 46.3%;
+                    top: 28.1%;
+                }
+                &.link-2 {
+                    width: 29.9%;
+                    height: 3.2%;
+                    left: 48.8%;
+                    top: 13.9%;
+                }
+                &.link-3 {
+                    width: 31.2%;
+                    height: 51.8%;
+                    left: 10.4%;
+                    top: 6.3%;
+                }
+                &.link-4 {
+                    width: 50.8%;
+                    height: 21.3%;
+                    left: 47.2%;
+                    top: 19.1%;
+                }
+                &.link-5 {
+                    width: 48.5%;
+                    height: 20.5%;
+                    left: 0;
+                    top: 59.7%;
+                }
+                &.link-6 {
+                    width: 46.8%;
+                    height: 34.5%;
+                    left: 48.8%;
+                    top: 57.2%;
+                }
+                &.link-7 {
+                    width: 47.2%;
+                    height: 16.7%;
+                    left: 0;
+                    top: 80.4%;
+                }
+            }
+        }
+        &.article-5 {
+            .link {
+                width: 43.9%;
+                height: 21.3%;
+                &.link-1 {
+                    left: 5.1%;
+                    top: 2.7%;
+                }
+                &.link-2 {
+                    left: 51.3%;
+                    top: 2.7%;
+                }
+                &.link-3 {
+                    left: 5.1%;
+                    top: 25.3%;
+                }
+                &.link-4 {
+                    left: 51.3%;
+                    top: 25.3%;
+                }
+                &.link-5 {
+                    left: 5.1%;
+                    top: 47.9%;
+                }
+                &.link-6 {
+                    left: 51.3%;
+                    top: 47.9%;
+                }
+                &.link-7 {
+                    left: 5.1%;
+                    top: 70.4%;
+                }
+                &.link-8 {
+                    left: 51.3%;
+                    top: 70.4%;
+                }
+                &.link-9 {
+                    width: 33.9%;
+                    height: 3.2%;
+                    left: 32.1%;
+                    top: 93.5%;
+                    .pre(transform, none);
+                }
+            }
+        }
+        &.article-6 {
+            .link {
+                width: 43.9%;
+                height: 14.9%;
+                &.link-1 {
+                    left: 5.1%;
+                    top: 1.9%;
+                }
+                &.link-2 {
+                    left: 51.3%;
+                    top: 1.9%;
+                }
+                &.link-3 {
+                    left: 5.1%;
+                    top: 17.7%;
+                }
+                &.link-4 {
+                    left: 51.3%;
+                    top: 17.7%;
+                }
+                &.link-5 {
+                    left: 5.1%;
+                    top: 33.5%;
+                }
+                &.link-6 {
+                    left: 51.3%;
+                    top: 33.5%;
+                }
+                &.link-7 {
+                    left: 5.1%;
+                    top: 49.3%;
+                }
+                &.link-8 {
+                    left: 51.3%;
+                    top: 49.3%;
+                }
+                &.link-9 {
+                    left: 5.1%;
+                    top: 65.1%;
+                }
+                &.link-10 {
+                    left: 51.3%;
+                    top: 65.1%;
+                }
+                &.link-11 {
+                    left: 5.1%;
+                    top: 80.9%;
+                }
+                &.link-12 {
+                    left: 51.3%;
+                    top: 80.9%;
+                }
+                &.link-13 {
+                    width: 33.9%;
+                    height: 2.3%;
+                    left: 32.1%;
+                    top: 96.8%;
+                    .pre(transform, none);
+                }
+            }
+        }
+        &.article-7 {
+            .link {
+                width: 42.8%;
+                height: 32.7%;
+                &.link-1 {
+                    left: 6.5%;
+                    top: 25.9%;
+                }
+                &.link-2 {
+                    left: 50.9%;
+                    top: 25.9%;
+                }
+                &.link-3 {
+                    left: 6.5%;
+                    top: 59.7%;
+                }
+                &.link-4 {
+                    left: 50.9%;
+                    top: 59.7%;
+                }
+            }
+        }
+    }
+}

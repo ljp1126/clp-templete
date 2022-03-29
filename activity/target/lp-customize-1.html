@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" href="css/lp-customize.css" />
+		<link rel="stylesheet" href="css/lp-customize-new.css" />
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="js/lp-customize-new.js"></script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+
+			<!-- 内容部分 -->
+			<section class="container">
+				<style type="text/css">
+					.article-customize {
+					position: relative;
+					}
+					.article-customize .banner-content-wrap {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					z-index: 1;
+					}
+					.article-customize .banner-content-wrap:after {
+					content: '';
+					width: 0;
+					height: 100%;
+					display: inline-block;
+					vertical-align: middle;
+					}
+					.article-customize .banner-content-wrap .banner-content {
+					vertical-align: middle;
+					display: inline-block;
+					width: 480px;
+					margin-top: 25px;
+					margin-left: 15%;
+					}
+					.article-customize .banner-content-wrap .banner-content h2,
+					.article-customize .banner-content-wrap .banner-content p {
+					color: #fff;
+					}
+					.article-customize .banner-content-wrap .banner-content h2 {
+					font-size: 56px;
+					font-weight: bold;
+					margin-bottom: 24px;
+					}
+					.article-customize .banner-content-wrap .banner-content p {
+					font-size: 21px;
+					line-height: 25px;
+					margin-bottom: 28px;
+					}
+					.article-customize .banner-content-wrap .banner-content .scroll-btn-component .scroll-btn-cta .btn {
+					min-width: 176px;
+					font-size: 14px;
+					}
+					.article-customize .banner-content-wrap .banner-content .scroll-btn-component .scroll-btn-cta .btn span:after {
+					top: 1px;
+					}
+					.article-customize .banner-background {
+					pointer-events: none;
+					position: relative;
+					}
+					.article-customize .banner-background .video-box {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					z-index: 0;
+					}
+					.article-customize .banner-background .video-box .banner-video {
+					width: 100%;
+					height: 100%;
+					}
+					@media (max-width: 1024px) {
+					.article-customize .banner-content-wrap {
+						font-size: 0;
+						padding: 0 40px;
+					}
+					.article-customize .banner-content-wrap .banner-content {
+						width: 100%;
+						margin: 0;
+						text-align: center;
+						vertical-align: bottom;
+						margin-bottom: 50px;
+					}
+					.article-customize .banner-content-wrap .banner-content h2 {
+						font-size: 48px;
+						margin-bottom: 30px;
+					}
+					.article-customize .banner-content-wrap .banner-content p {
+						font-size: 20px;
+						padding: 0 80px;
+						margin-bottom: 26px;
+						line-height: 26px;
+					}
+					.article-customize .banner-content-wrap .banner-content .scroll-btn-component .scroll-btn-cta .btn {
+						font-size: 28px;
+						min-width: 100%;
+						height: 80px;
+						line-height: 80px;
+					}
+					.article-customize .banner-content-wrap .banner-content .scroll-btn-component .scroll-btn-cta .btn span:after {
+						top: 10px;
+						transform: scale(1.5);
+						right: -36px;
+					}
+					}
+					@media (max-width: 768px) {
+					.article-customize .banner-content-wrap {
+						padding: 0 20px;
+					}
+					.article-customize .banner-content-wrap .banner-content {
+						margin-bottom: 25px;
+					}
+					.article-customize .banner-content-wrap .banner-content h2 {
+						font-size: 24px;
+						margin-bottom: 15px;
+					}
+					.article-customize .banner-content-wrap .banner-content p {
+						font-size: 12px;
+						padding: 0 40px;
+						margin-bottom: 13px;
+						line-height: 16px;
+					}
+					.article-customize .banner-content-wrap .banner-content .scroll-btn-component .scroll-btn-cta .btn {
+						font-size: 14px;
+						height: 40px;
+						line-height: 40px;
+					}
+					.article-customize .banner-content-wrap .banner-content .scroll-btn-component .scroll-btn-cta .btn span:after {
+						top: 1px;
+						transform: none;
+						right: -26px;
+					}
+					}
+
+				</style>
+				<!-- 模块一-->
+				<!-- <article class="article article-customize">
+					<div class="action-branner">
+						<img src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_01.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-customize/miadidas-mob_01.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-customize/miadidas-mob_01.jpg"}
+						}' />
+						<a class="video-btn">&nbsp;</a>
+
+						<img src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-customize/pc.gif"},
+								"medium":{"high":"", "normal":"../static/images/lp-customize/mob.gif"},
+								"small":{"high":"", "normal":"../static/images/lp-customize/mob.gif"}
+						}' />
+
+						<a class="btn btn-black btn-have-arrow kv-btn kv-btn-1" href="#" target="_blank"><span>点击购买</span></a>
+						<a class="btn btn-black btn-have-arrow kv-btn kv-btn-2" href="#" target="_blank"><span>点击购买</span></a>
+					</div>
+
+					<div class="banner-content-wrap">
+						<div class="banner-content">
+							<h2>辞旧，迎新</h2>
+							<p>定制adidas装备，开启2018新局。风格由你打造，配色由你决定，心爱鞋款，专属于你。</p>
+							<div class="scroll-btn-component">
+								<div class="scroll-btn-cta">
+									<a class="btn btn-black btn-have-arrow"><span>打造专属设计</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="banner-background">
+						<img class="blank" src="images/blank.gif"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-customize/banner-blank-p.png"},
+							"medium":{"high":"",  "normal":"../static/images/lp-customize/banner-new-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-customize/banner-new-m.jpg"}}'
+						/>
+
+						<div class="video-box none-sm">
+							<video class="banner-video e-banner-video"
+								src="../static/videos/lp-customize/branner-video-p.mp4"
+								preload="meta" width="100%" height="100%"
+								data-loop="true"
+							/></video>
+						</div>
+					</div>
+
+					<script>
+						$(function () {
+							// 切换视频
+							function playVideo() {
+								this.play();
+							}
+
+							if($.spice.getWindowWidth() <= 1024) return false;
+
+							// 监听指定视频是否加载完成，加载完成后自动播放
+							var $bannerVideo = $('.e-banner-video');
+
+							$bannerVideo[0].addEventListener('canplaythrough', playVideo, false);
+
+							if($bannerVideo.data('loop')){
+								$bannerVideo[0].addEventListener('ended', playVideo, false);
+							}
+
+						});
+					</script>
+				</article> -->
+
+				<article class="article article-kv">
+					<style>
+						.article-kv .lp-swiper-container .swiper-wrapper .swiper-slide .btn {
+							min-width: 176px;
+							font-size: 14px;
+							position: absolute;
+							bottom: calc(40% - 48px);
+							left: 15.3%;
+							z-index: 1;
+						}
+						.article-kv .lp-swiper-container .swiper-wrapper .swiper-slide .btn-1 {
+							bottom: calc(28% - 48px);
+						}
+						.article-kv .lp-swiper-container .swiper-wrapper .swiper-slide .btn span:after{
+							top: 1px;
+						}
+						.article-kv .lp-swiper-container .swiper-wrapper .swiper-slide img {
+							width: 100%;
+						}
+						.article-kv .lp-swiper-container .swiper-wrapper .swiper-slide img.kv-gif-1 {
+							position: absolute;
+							top: 0;
+							left: 0;
+							right: 0;
+							z-index: -1;
+						}
+						.article-kv .lp-swiper-container .swiper-pagination {
+							font-size: 0;
+						}
+						.article-kv .lp-swiper-container .swiper-pagination .swiper-pagination-bullet {
+							background: #000;
+							opacity: .4;
+							border-radius: 0;
+							width: 60px;
+							height: 4px;
+							-webkit-transition: width 0.3s ease-out;
+							-moz-transition: width 0.3s ease-out;
+							-o-transition: width 0.3s ease-out;
+							transition: width 0.3s ease-out;
+						}
+						.article-kv .lp-swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+							width: 126px;
+							opacity: 1;
+						}
+						@media (max-width: 1450px) {
+							.article-kv .lp-swiper-container .swiper-wrapper .swiper-slide .btn-1 {
+								bottom: calc(26% - 48px);
+							}
+						}
+						@media (max-width: 1200px) {
+							.article-kv .lp-swiper-container .swiper-wrapper .swiper-slide .btn-1 {
+								bottom: calc(23% - 48px);
+							}
+						}
+						@media (max-width: 1024px) {
+							.article {
+								max-width: 100%;
+							}
+							.article-kv .lp-swiper-container .swiper-wrapper .swiper-slide .btn {
+								font-size: 28px;
+								height: 80px;
+								line-height: 80px;
+								left: 40px;
+								right: 40px;
+								bottom: 16%;
+							}
+							.article-kv .lp-swiper-container .swiper-wrapper .swiper-slide .btn-1 {
+								bottom: 6%;
+							}
+							.article-kv .lp-swiper-container .swiper-wrapper .swiper-slide .btn span:after{
+								top: 10px;
+								transform: scale(1.5);
+								right: -36px;
+							}
+							.article-kv .lp-swiper-container .swiper-pagination {
+								bottom: 2%;
+							}
+							.article-kv .lp-swiper-container .swiper-pagination .swiper-pagination-bullet {
+								width: 9.3333%;
+								margin: 0 6px;
+							}
+							.article-kv .lp-swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+								width: 19.3333%;
+							}
+
+						}
+
+						@media (max-width: 768px){
+							.article-kv .lp-swiper-container .swiper-wrapper .swiper-slide .btn {
+								font-size: 14px;
+								height: 40px;
+								line-height: 40px;
+								bottom: 13%;
+							}
+							.article-kv .lp-swiper-container .swiper-wrapper .swiper-slide .btn-1 {
+								bottom: 7%;
+							}
+							.article-kv .lp-swiper-container .swiper-wrapper .swiper-slide .btn span:after{
+								top: 1px;
+								transform: none;
+								right: -26px;
+							}
+						}
+						@media (max-width: 600px){
+							.article-kv .lp-swiper-container .swiper-wrapper .swiper-slide .btn {
+								bottom: 16%;
+							}
+							.article-kv .lp-swiper-container .swiper-wrapper .swiper-slide .btn-1 {
+								bottom: 6%;
+							}
+						}
+						@media (max-width: 360px){
+							.article-kv .lp-swiper-container .swiper-wrapper .swiper-slide .btn-1 {
+								bottom: 5%;
+							}
+						}
+
+					</style>
+					<div class="swiper-container lp-swiper-container e-lp-kv-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class="btn btn-black btn-have-arrow"><span>立即购买</span></a>
+								<a href="#" class="btn btn-1 btn-black btn-have-arrow"><span>立即购买1</span></a>
+								<img src="images/blank.gif"
+									data-image='{
+									"standard":{"high":"", "normal":"../static/images/lp-customize/1920-630.jpg"},
+									"medium":{"high":"",  "normal":"../static/images/lp-customize/750-937.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-customize/750-937.jpg"}}'
+								/>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="btn btn-black btn-have-arrow"><span>立即购买</span></a>
+								<a href="#" class="btn btn-1 btn-black btn-have-arrow"><span>立即购买1</span></a>
+								<img src="images/blank.gif"
+									data-image='{
+									"standard":{"high":"", "normal":"../static/images/lp-customize/1920-630-2.jpg"},
+									"medium":{"high":"",  "normal":"../static/images/lp-customize/750-937-2.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-customize/750-937-2.jpg"}}'
+								/>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+
+					<script>
+						$(function () {
+							new Swiper('.e-lp-kv-swiper', {
+								loop: true,
+								pagination : '.swiper-pagination',
+								paginationClickable :true,
+								autoplay: 5000,
+								autoplayDisableOnInteraction : false,
+								speed: 800,
+							});
+						})
+					</script>
+				</article>
+
+				<!-- 模块二 -->
+				<!-- tab列表切换 -->
+				<article class="article free-tab-content-wrapper">
+					<div class="pc-title-image none-sm">
+						<div class="title-upper">
+							<img src="../static/images/lp/customize/freedom-title-pc-1.jpg" alt="">
+						</div>
+						<div class="title-lower">
+							<img src="../static/images/lp/customize/freedom-title-pc-2.jpg" alt="">
+						</div>
+					</div>
+					<div class="mobile-title-image none block-sm">
+						<div class="title-upper">
+							<img src="../static/images/lp/customize/mobile/freedom-title-mobile-1.jpg" alt="">
+						</div>
+						<div class="title-lower">
+							<img src="../static/images/lp/customize/mobile/freedom-title-mobile-2.jpg" alt="">
+						</div>
+					</div>
+					<div class="pc-tab-content">
+						<div class="tab-main">
+							<div class="swiper-container tab-swiper-container">
+								<div class="title-tab swiper-wrapper">
+									<!-- 添加select类进行  激活状态 -->
+						            <div class="swiper-slide"><span>RUNNING</span></div>
+						            <div class="swiper-slide is-active select"><span>ORIGINALS</span></div>
+						            <div class="swiper-slide"><span>BASKETBALL</span></div>
+						        </div>
+						        <div class="swiper-pagination"></div>
+					        </div>
+					        <div class="con-tab">
+					        	<!-- tab状态  添加show类进行   激活状态  -->
+
+					        	<!-- ul列表中的  有无hover状态 -->
+					        	<!-- 其中有货 有hover状态  添加add-hover类 -->
+					        	<!-- 无货 无hover状态  添加add-hover类 -->
+
+		                        <!-- running -->
+					            <div>
+		                        	<ul class="float-clearfix">
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/running-img-1.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI PUREBOOST</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/running-img-2.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI ENERGY CLOUD</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/running-img-3.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI SUPERNOVA</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/running-img-4.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI ADIZERO AIDOS 3</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/running-img-5.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI PUREBOOST X</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+					            	</ul>
+		                        </div>
+					            <!-- origins -->
+		                        <div class="show">
+		                        	<ul class="float-clearfix">
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/originals-img-1.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI SUPERSTAR RT</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/originals-img-2.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI EQT SUPPORT ADV</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/originals-img-3.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI STAN SMITH</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/originals-img-4.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI SWIFT RUNNER</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/originals-img-5.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI GAZELLE</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/originals-img-6.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI SUPERSTAR 80S</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/originals-img-7.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI ADILETTE</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/originals-img-8.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI ZX FLUX ADV</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/originals-img-9.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI EQT SUPPORT RF</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/originals-img-10.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI ADILETTE YOUR CALL</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/originals-img-11.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI STAN SMITH CLUB</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/originals-img-12.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI SPEZIAL</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/originals-img-13.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI ADILETTE PREMIUM</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/originals-img-14.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI STAN SMITH DECON</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/originals-img-15.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI ADILETTE ATHLETIC</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+					            	</ul>
+		                        </div>
+		                        <!-- basketball -->
+					            <div>
+		                        	<ul class="float-clearfix">
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/basketball-img-1.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI DAME 3</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<!-- <li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/basketball-img-2.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI D ROSE 7</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/basketball-img-3.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI CRAZY EXPLOSIVE</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li> -->
+										<li class="cus-item add-hover">
+											<a href="#" target="_blank" class="cus-item-link">
+												<div class="cus-item-img img-stan-smith">
+													<img src="../static/images/lp-customize/basketball-img-4.png">
+												</div>
+												<div class="cus-item-desc">
+													<p class="cus-item-desc-title">MI CRAZYLIGHT BOOST LOW</p>
+												</div>
+												<div class="cus-item-btn">
+													<div class="adi-btn btn-arrow">
+														<span class="btn-text font-adineueBold btn-noSpacing">miadidas&nbsp;
+														</span>
+														<span class="btn-text">定制</span>
+													</div>
+												</div>
+											</a>
+										</li>
+					            	</ul>
+		                        </div>
+					        </div>
+						</div>
+					</div>
+				</article>
+
+				<article class="article article-customize">
+					<div class="action-branner branner-bg">
+						<img src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_02.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_02.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_02.jpg"}
+						}' />
+					</div>
+					<div class="branner-item-box">
+						<div>
+							<h2>找寻灵感</h2>
+							<p>无需赘言，表达自我</p>
+						</div>
+						<ul class="float-clearfix">
+							<li>
+								<span><img src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_04.jpg"},
+									"medium":{"high":"", "normal":"../static/images/lp-customize/miadidas-mob_04.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-customize/miadidas-mob_04.jpg"}
+							}' /></span>
+								<a class="btn btn-white btn-have-arrow" target="_target" href="https://www.adidas.com.cn/basketball_customise_segment"><span>MI BASKETBALL</span></a>
+							</li>
+							<li>
+								<span><img src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_05.jpg"},
+									"medium":{"high":"", "normal":"../static/images/lp-customize/miadidas-mob_05.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-customize/miadidas-mob_05.jpg"}
+							}' /></span>
+								<a class="btn btn-white btn-have-arrow" target="_target" href="https://www.adidas.com.cn/originals_customise_segment"><span>MI ORIGINALS</span></a>
+							</li>
+							<li>
+								<span><img src="images/blank.gif"
+								data-image='{"standard":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_06.jpg"},
+									"medium":{"high":"", "normal":"../static/images/lp-customize/miadidas-mob_06.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-customize/miadidas-mob_06.jpg"}
+							}' /></span>
+								<a class="btn btn-white btn-have-arrow" target="_target" href="https://www.adidas.com.cn/running_customise_segment"><span>MI RUNNING</span></a>
+							</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="article article-customize article-customize-carousel">
+					<div class="action-branner">
+						<img src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_03.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-customize/miadidas-mob_03.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-customize/miadidas-mob_03.jpg"}
+						}' />
+					</div>
+					<div class="customize-carousel">
+						<div class="scroll events-customize-carousel">
+							<div class="scroller-wrap">
+								<ul>
+									<li>
+										<div class="scroll-background-image">
+											<a>
+												<img class="events-changeSrc" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_07.jpg"},
+												"medium":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_07.jpg"},
+												"small":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_07.jpg"}}' />
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="scroll-background-image">
+											<a>
+												<img class="events-changeSrc" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_08.jpg"},
+												"medium":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_08.jpg"},
+												"small":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_08.jpg"}}' />
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="scroll-background-image">
+											<a>
+												<img class="events-changeSrc" src="images/blank.gif"
+												data-image='{"standard":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_09.jpg"},
+												"medium":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_09.jpg"},
+												"small":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_09.jpg"}}' />
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="customize-carousel-tit">
+						<h2>MI STAN SMITH</h2>
+						<p>现有全新配色和材质可供定制选择。 </p>
+						<a class="btn btn-black btn-have-arrow" target="_target" href="https://www.adidas.com.cn/customize"><span>获取灵感</span></a>
+						<a class="btn btn-white btn-have-arrow" target="_target" href="https://www.adidas.com.cn/originals_stansmith_customise_segment"><span>立即创造</span></a>
+					</div>
+				</article>
+
+				<article class="article article-info">
+					<div class="customize-info-box">
+						<ul class="float-clearfix">
+							<li>
+								<span><img class="events-changeSrc" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_10.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-customize/miadidas-mob_10.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-customize/miadidas-mob_10.jpg"}}' /></span>
+								<a class="btn btn-white btn-have-arrow" target="_target" href="https://www.adidas.com.cn/miadidasTC
+"><span>更多信息</span></a>
+							</li>
+							<li>
+								<span><img class="events-changeSrc" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_11.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-customize/miadidas-mob_11.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-customize/miadidas-mob_11.jpg"}}' /></span>
+								<a class="btn-weibo" href="">&nbsp;</a>
+								<a class="btn-weixin" href="">&nbsp;</a>
+								<div class="wechat-code-box">
+									<img src="images/wechat-img-1.jpg">
+									<p>扫一扫，关注adidas官方微信</p>
+								</div>
+							</li>
+							<li>
+								<span><img class="events-changeSrc" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/lp-customize/miadidas-pc_12.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-customize/miadidas-mob_12.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-customize/miadidas-mob_12.jpg"}}' /></span>
+								<a class="btn btn-white btn-have-arrow" target="_target" href="https://www.adidas.com.cn/miadidas_stores
+"><span>寻找工作坊</span></a>
+							</li>
+						</ul>
+					</div>
+				</article>
+
+				<!-- 视频弹层 -->
+				<script id="video-dialog" type="text/template">
+					<div class="dialog">
+						<div class="dialog-container">
+							<div class="loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+							<div class="video-content">
+
+							</div>
+						</div>
+						<i class="icon icon-close dialog-close">&times;</i>
+					</div>
+				</script>
+			</section>
+
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		</div>
+	</body>
+
+</html>

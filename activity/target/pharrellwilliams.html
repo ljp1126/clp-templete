@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%include _includes/meta.html %>
+	<title>falcon</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+
+			<style>
+				.article,
+				.article-top {
+					position: relative;
+				}
+
+				.article img {
+					width: 100%;
+					height: auto;
+				}
+
+				.pw-link {
+					display: flex;
+					justify-content: space-between;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+
+				.pw-link a {
+					width: 50%;
+					height: 100%;
+				}
+
+				.article-video {
+					padding: 0 9%;
+				}
+
+				.article-video.article-video-max,
+				.article-video.article-video-max1 {
+					padding: 0;
+				}
+
+				.video-box {
+					cursor: pointer;
+				}
+
+				.article-video.article-video-max.video-box .video-content {
+					padding: 0;
+				}
+
+				.article-video.article-video-max1.video-box .video-content {
+					padding: 0;
+				}
+
+				.video-box .video-content {
+					position: absolute;
+					height: 100% !important;
+					width: 100%;
+					top: 0;
+					left: 0;
+				}
+
+				.video-content .video {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					visibility: hidden;
+				}
+
+				.video-box.is-play .video-wrapper .video-content .video {
+					visibility: visible;
+				}
+
+				.link-12 {
+					position: absolute;
+					left: 0;
+					top: 48%;
+					width: 100%;
+					height: 52%;
+				}
+
+				@media (max-width:1024px) {
+					.article-video {
+						padding: 35px 0;
+					}
+
+					.video-box .video-content {
+						padding: 0;
+					}
+
+					.article-video.article-video-max {
+						padding-bottom: 15px;
+					}
+
+					.link-12 {
+						top: 44%;
+						height: 50%;
+					}
+				}
+			</style>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://stage-img.adidas.com.hk/resources/2020/8/pcEN_01.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://stage-img.adidas.com.hk/resources/2020/8/mobEN.gif&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://stage-img.adidas.com.hk/resources/2020/8/mobEN.gif&quot;}}">
+				<a class="link link-12" href="https://android.myapp.com/myapp/detail.htm?apkName=cn.adidas.app&amp;utm_source=adidas.com.cn%09&amp;utm_medium=homepage_banner%09&amp;utm_term=term&amp;utm_content=app_exclusive&amp;utm_campaign=com_alwayson"></a>
+			</article>
+			<article class="article">
+				<a href="https://www.adidas.com.HK/originals_pharrellwilliams"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://stage-img.adidas.com.hk/resources/2020/8/pcEN_02.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://stage-img.adidas.com.hk/resources/2020/8/mobEN_02.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://stage-img.adidas.com.hk/resources/2020/8/mobEN_02.jpg&quot;}}"> </a>
+			</article>
+			<article class="article article-video article-video-max   video-box  pc-mob-video">
+				<div class="video-wrapper e-home-video">
+					<div class="video-content"></div>
+					<a class="video-play" href="javascript:void(0)"> 
+						<span class="video-code " data-video-code="5B04986CFDB9F2E69C33DC5901307461"> 
+							<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://stage-img.adidas.com.hk/resources/2020/8/pcEN_03.jpg"> 
+						</span> 
+				</div>
+			</article>
+			<article class="article">
+				<a href="https://www.adidas.com.cn/originals_pharrellwilliams"> 
+					<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://stage-img.adidas.com.hk/resources/2020/8/pcEN_04.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://stage-img.adidas.com.hk/resources/2020/8/mobEN_04.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://stage-img.adidas.com.hk/resources/2020/8/mobEN_04.jpg&quot;}}"> 
+					</a>
+			</article>
+			<article class="article article-video  video-box pc-mob-video">
+				<div class="video-wrapper  e-home-video ">
+					<div class="video-content"></div>
+					<a class="video-play" href="javascript:void(0)"> 
+						<span class="video-code " data-video-code="E919D578C7366D2F9C33DC5901307461"> 
+							<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://stage-img.adidas.com.hk/resources/2020/8/pcEN_05.jpg"> 
+						</span> 
+						
+						
+				</div>
+			</article>
+			<article class="article">
+				<a href="https://www.adidas.com.cn/originals_pharrellwilliams"> 
+					<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://stage-img.adidas.com.hk/resources/2020/8/pcEN_06.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://stage-img.adidas.com.hk/resources/2020/8/mobEN_06.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://stage-img.adidas.com.hk/resources/2020/8/mobEN_06.jpg&quot;}}"> </a>
+			</article>
+			<script type="text/javascript">
+				$(function() {
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+					var loadImgFun_index = function(imgArr, fn) {
+						var loadImgLen = 0,
+							errImgLen = 0;
+						var imgdefereds = [];
+						$(imgArr).each(function() {
+							var defered = $.Deferred();
+							$(this)
+								.on("load", function() {
+									defered.resolve();
+									loadImgLen++;
+								})
+								.on("error", function() {
+									defered.resolve();
+									errImgLen++;
+								});
+							if (this.complete)
+								setTimeout(function() {
+									defered.resolve();
+								}, 200);
+							imgdefereds.push(defered);
+						});
+						$.when.apply(null, imgdefereds).done(function() {
+							if (fn && $.isFunction(fn)) {
+								fn();
+							}
+						});
+					};
+					
+						$('.e-home-video').each(function(index, el) {
+							$(el).parents('.article').addClass('home-video')
+							var videoCode = $('.video-code', el).data('video-code'),
+								videoId = 'home_video_' + index;
+							loadImgFun_index($('.video-code img', el), function() {
+								$('.video-content', el).show().css({
+									'height': $('.video-code img', el).outerHeight(true)
+								})
+								$('.video-code img', el).css({
+									'visibility': 'hidden'
+								})
+							})
+							// 开发需要打开此代码---开始
+							var bannerVideoId = videoCode;
+							var url = base + "/indexCCVideo.json";
+							var data = loxia.syncXhrGet(url, {
+								'bannerVideoId': bannerVideoId
+							});
+							var videoUrl = data.mp4VideoUrl;
+							// 开发需要打开此代码---结束
+
+							// 下面的videoUrl为前端静态视频地址（静态页面的video路径 ，开发需注释掉）
+							//var videoUrl = 'https://cm11-c110-2.play.bokecc.com/flvs/ca/QxIfS/uryeEjGTlT-30.mp4?t=1599116597&key=7D49D691913FE3324418B27220DC641D&tpl=10';
+							var html = '<video class="video" id="' + videoId + '" preload="meta" webkit-playsinline="true" playsInline="true" muted><source src="' + videoUrl + '" ></source></video>';
+							$('.video-content', el).html(html);
+
+						})
+						var windowTop = 0;
+						var $homeVideo = $(".home-video"),
+							v_offTop = [],
+							v_Height = [];
+						var getVideoSize = $.spice.throttle(function() {
+							v_offTop = [];
+							v_Height = [];
+							$homeVideo.each(function(index, el) {
+								var _this_OT = $(el).offset().top,
+									_this_HT = $(el).outerHeight(true);
+								v_offTop.push(_this_OT);
+								v_Height.push(_this_HT);
+							})
+						}, 300);
+						$(window).on('scroll', function() {
+							var _mobVideo = $(".pc-mob-video");
+							if (!_mobVideo.length > 0 && $.spice.getWindowWidth() < 768) {
+								return;
+							}
+							var $scrollTop = $(this).scrollTop(),
+								headerBannerboxH = 0,
+								wH = $(this).outerHeight(true),
+								$header = $('.header-fixed'),
+								headerH = $header.outerHeight(true);
+							getVideoSize();
+							if ($(".header-banner-box").hasClass('header-banner-show')) {
+								headerBannerboxH = $(".header-banner-box").outerHeight(true);
+							} else {
+								headerBannerboxH = 0;
+							}
+							headerH = headerH + headerBannerboxH;
+
+							// 视频播放
+							for (var i = 0; i < $homeVideo.length; i++) {
+								if ($scrollTop > (v_offTop[i] - headerBannerboxH - wH) && $scrollTop < (v_offTop[i] - headerH - 24)) {
+									// console.log("第", i, '个视频进入');
+									if (!$homeVideo.eq(i).hasClass('is-play')) {
+										$homeVideo.eq(i).addClass('is-play').removeClass("is-pause");
+										$('#home_video_' + i)[0].play();
+										$('#home_video_' + i)[0].addEventListener('canplaythrough', function() {
+											console.log('视频准备就绪，开始播放');
+											this.play()
+										});
+										$('#home_video_' + i)[0].addEventListener('ended', function() {
+											this.play()
+										});
+									}
+								} else if ($scrollTop > (v_offTop[i] + v_Height[i] - headerH - 24)) {
+									// console.log("第", i, '个离开');
+									$homeVideo.eq(i).addClass('is-pause').removeClass("is-play");
+									$('#home_video_' + i)[0].pause();
+								}
+							}
+
+						}).trigger('scroll');
+					
+
+				})
+			</script>
+
+		</section>
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

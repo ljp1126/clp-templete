@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%include _includes/meta.html %>
+    <title>salah</title>
+    <%include _includes/css.html %>
+    <!-- <link rel="stylesheet" href="css/lp-messi.css" /> -->
+    <%include _includes/js.html %>
+</head>
+
+<body>
+    <div id="wrapper">
+        <%include _includes/modules/header.html %>
+            <section class="container">
+                
+   <style>
+    .article {
+      position: relative;
+    }
+    .article > img {
+      width: 100%;
+    }
+    .article .link{
+        position: absolute;
+        width: 10%;
+        height: 4%;
+        top: 60%;
+        left: 76.5%;
+    }
+    .article-video1 {
+      cursor: pointer;
+    }
+    .article-video1 .video-wrapper .video-content {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+    }
+    #frame-video{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .video-wrapper  img{
+        z-index: 10;
+    }
+    .article-video1 .video-wrapper .video-content .video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      visibility: hidden;
+    }
+    .article-video1.is-play .video-wrapper .video-content .video {
+      visibility: visible;
+    }
+    .article-video1.is-play .video-wrapper .video-code img {
+      visibility: hidden;
+    }
+    .article-top {
+      border-top: 1px #e6e6e6 solid;
+      margin-top: 60px;
+    }
+    .article-top .messi-top {
+      margin-top: 20px;
+    }
+    .article-top .messi-top ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .article-top .messi-top ul li {
+      padding: 3px 16px 20px;
+      cursor: pointer;
+      width: 15%;
+      text-align: center;
+    }
+    .article-top .messi-top ul li.is-active {
+      border-bottom: 2px solid #000;
+    }
+    .section-content {
+      width: 84.2%;
+      margin: 0 auto;
+      position: relative;
+    }
+    .section-content .video-box {
+      width: 58%;
+      margin-right: auto;
+    }
+    .section-content .video-box .video-content video {
+      width: 100%;
+    }
+    .section-content .text-content {
+      width: 42%;
+      position: absolute;
+      bottom: 0;
+      right: 4%;
+    }
+    .article-swiper-swift {
+      position: relative;
+      padding: 0% 13%;
+      margin-top: -10.8%;
+    }
+    .article-swiper-swift .swiper-container {
+      max-width: 1420px;
+      margin: 0 auto ;
+    }
+    .article-swiper-swift .swiper-container .product-info {
+      padding: 0 8px;
+    }
+    .article-swiper-swift .swiper-container .product-info p {
+      margin-top: 12px;
+      margin-bottom: 10px;
+    }
+    .article-swiper-swift .swiper-button-prev,
+    .article-swiper-swift .swiper-button-next {
+      width: 50px;
+      height: 50px;
+      margin-top: -70px;
+      background-image: none;
+      overflow: hidden;
+      z-index: 10;
+    }
+    .article-swiper-swift .swiper-button-next {
+      right: 8%;
+    }
+    .article-swiper-swift .swiper-button-next .icon-action-sports-arrow-r {
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: url(https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/right.jpg);
+    }
+    .article-swiper-swift .swiper-button-prev {
+      left: 8%;
+    }
+    .article-swiper-swift .swiper-button-prev .icon-action-sports-arrow-l {
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: url(https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/left.jpg);
+    }
+    .swiper-btn {
+      text-align: center;
+      margin: 75px 0;
+    }
+    @media (max-width: 1024px) {
+      .article-top {
+        border: 0px #000 solid;
+        margin-top: 0;
+      }
+      .section-content {
+        width: 100%;
+      }
+      .section-content .video-box {
+        width: 100%;
+      }
+      .section-content .text-content {
+        position: relative;
+        width: 100%;
+        right: 0;
+        top: -38px;
+      }
+      .article-top .messi-top ul li {
+        font-family: 'AdihausDIN-Bold';
+        width: auto;
+        }
+      .article-swiper-swift {
+        padding: 20px 0 25px;
+        margin-top: -20.8%;
+      }
+      .swiper-btn {
+        padding: 0 23px;
+        margin: 30px 0;
+      }
+      .swiper-btn .btn.gl-cta-height {
+        min-width: 100%;
+      }
+    }
+    
+                    </style> 
+       <!-- 视频模块 -->   
+       <article class="article article-video1 video-box2"> 
+        <div class="video-wrapper e-video  e-play-videoTwo"> 
+            <div class="video-content"></div>
+                <a class="video-play" href="javascript:void(0)">
+                    <span class="video-code1" data-video-code="CBBF4976B396368A9C33DC5901307461">
+                        <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                            &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/pcEN_01.jpg&quot;},
+                            &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/mobEN_01.jpg&quot;},
+                            &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/mobEN_01.jpg&quot;}}"> 
+                    </span>
+                </a> 
+       </div> 
+       </article> 
+       <article class="article article-top"> 
+        <div class="messi-top"> 
+         <ul> 
+          <li date-index="article-offset1 " class="is-active"><span>STORY</span></li> 
+          <li date-index="article-offset2"><span>RUNNING COMMUNITY PICKS</span></li> 
+          <li date-index="article-offset3"><span>RUNNING STARTER KIT</span></li> 
+         </ul> 
+        </div> 
+       </article> 
+       <article class="article article-video" id="article-offset1" style="margin-bottom: 70px;"> 
+        <div class="section-content e-play-video  pc-mob-video"> 
+         <div class="video-box e-home-video"> 
+          <div class="video-content"></div> 
+          <a class="video-bg-wrapper" href="JavaScript:void(0);"> <span class="video-code" data-video-code="AC817005438D8EB59C33DC5901307461"></span> </a> 
+         </div> 
+         <div class="text-content"> 
+          <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                                    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/pcEN_02.jpg&quot;},
+                                    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/mobEN_02.png&quot;},
+                                    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/mobEN_02.png&quot;}}"> 
+         </div> 
+        </div> 
+       </article> 
+       <article class="article " "=""> 
+        <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                            &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/pcEN_03.jpg&quot;},
+                            &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/mobEN_03.jpg&quot;},
+                            &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/mobEN_03.jpg&quot;}}"> 
+        <a href="" class="link"></a> 
+       </article> 
+       <article class="article" id="article-offset2" "=""> 
+        <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                            &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/pcEN_04.jpg&quot;},
+                            &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/mobEN_04.jpg&quot;},
+                            &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/mobEN_04.jpg&quot;}}"> 
+       </article> 
+       <article class="article  article-swiper-swift"> 
+        <div class="swiper-container swiper-jacket_1"> 
+         <div class="swiper-wrapper"> 
+          <div class="swiper-slide"> 
+           <a href="https://www.adidas.com.hk/item/EG7123"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/product_1.jpg"> </a> 
+           <div class="product-info"> 
+            <p>X 19.1 Artificial Grass Boots</p> 
+            <span>HKD:1499.00</span> 
+           </div> 
+          </div> 
+          <div class="swiper-slide"> 
+           <a href="https://www.adidas.com.hk/item/FV3468"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/product_2.jpg"> </a> 
+           <div class="product-info"> 
+            <p>X 19+ FIRM GROUND BOOTS</p> 
+            <span>HKD:1920.00</span> 
+           </div> 
+          </div> 
+          <div class="swiper-slide"> 
+           <a href="https://www.adidas.com.hk/item/EG7132"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/product_3.jpg"> </a> 
+           <div class="product-info"> 
+            <p>X 19.3 FIRM GROUND BOOTS</p> 
+            <span>HKD:599.00</span> 
+           </div> 
+          </div> 
+          <div class="swiper-slide"> 
+           <a href="https://www.adidas.com.hk/item/FH7362"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/product_4.jpg"> </a> 
+           <div class="product-info"> 
+            <p>UNIFORIA PRO BALL</p> 
+            <span>HKD:1099.00</span> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <!-- 箭头 --> 
+        <div class="action-sports-swiper-btn none-sm"> 
+         <div class="swiper-button-prev swiper-button-prev1"> 
+          <i class="icon icon-action-sports-arrow-l"></i> 
+         </div> 
+         <div class="swiper-button-next swiper-button-next1"> 
+          <i class="icon icon-action-sports-arrow-r"></i> 
+         </div> 
+        </div> 
+       </article> 
+       <!-- 购买 --> 
+       <div class="swiper-btn"> 
+        <a class="btn btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="https://www.adidas.com.hk/football/newarrivals">SHOP FOOTBALL<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a> 
+       </div> 
+       <article class="article "> 
+        <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                            &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/pcEN_05.jpg&quot;},
+                            &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/mobEN_05.jpg&quot;},
+                            &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/mobEN_05.jpg&quot;}}"> 
+       </article> 
+       <article class="article" id="article-offset3"> 
+        <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                            &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/pcEN_06.jpg&quot;},
+                            &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/mobEN_06.jpg&quot;},
+                            &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/mobEN_06.jpg&quot;}}"> 
+       </article> 
+       <article class="article  article-swiper-swift "> 
+        <div class="swiper-container swiper-jacket_2"> 
+         <div class="swiper-wrapper"> 
+          <div class="swiper-slide"> 
+           <a href="https://www.adidas.com.hk/item/FT8327"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/clothing_1.jpg"> </a> 
+           <div class="product-info"> 
+            <p>HEAT.RDY PRIME SHORTS</p> 
+            <span>HKD:499.00</span> 
+           </div> 
+          </div> 
+          <div class="swiper-slide"> 
+           <a href="https://www.adidas.com.hk/item/GD8429"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/clothing_2.jpg"> </a> 
+           <div class="product-info"> 
+            <p>PRIME HEAT.RDY SLEEVELESS TEE</p> 
+            <span>HKD:549.00</span> 
+           </div> 
+          </div> 
+          <div class="swiper-slide"> 
+           <a href="https://www.adidas.com.hk/item/FT9163"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/clothing_3.jpg"> </a> 
+           <div class="product-info"> 
+            <p>PRIME HEAT.RDY REVERSIBLE 7/8 TIGHTS</p> 
+            <span>HKD:749.00</span> 
+           </div> 
+          </div> 
+          <div class="swiper-slide"> 
+           <a href="https://www.adidas.com.hk/item/FT9162"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/clothing_4.jpg"> </a> 
+           <div class="product-info"> 
+            <p>HEAT.RDY PRIME TEE</p> 
+            <span>HKD:499.00</span> 
+           </div> 
+          </div> 
+          <div class="swiper-slide"> 
+           <a href="https://www.adidas.com.hk/item/FM2103"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.hk/resources/2020/KV/JUL/mosalah/en/clothing_5.jpg"> </a> 
+           <div class="product-info"> 
+            <p>HEAT.RDY 3-STRIPES TEE</p> 
+            <span>HKD:165.00</span> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <!-- 箭头 --> 
+        <div class="action-sports-swiper-btn none-sm"> 
+         <div class="swiper-button-prev swiper-button-prev2"> 
+          <i class="icon icon-action-sports-arrow-l"></i> 
+         </div> 
+         <div class="swiper-button-next swiper-button-next2"> 
+          <i class="icon icon-action-sports-arrow-r"></i> 
+         </div> 
+        </div> 
+       </article> 
+       <!-- 购买 --> 
+       <div class="swiper-btn"> 
+        <a class="btn btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="https://www.adidas.com.hk/training/newarrivals">TRAINING ESSENTIAL<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a> 
+       </div> 
+       <script type="text/javascript">
+                        $(function () {
+                            // 换图 + 懒加载
+                            $.spice.lazyLoad('img[lazysrc]', {
+                                attr: 'lazysrc'
+                            });
+                            $.spice.tools.changeImageSrc({
+                                callBack: function (img, self) {
+                                    $.spice.lazyLoad('img[lazysrc]', {
+                                        attr: self.opt.lazyData,
+                                        prestrain: 1
+                                    });
+                                }
+                            });
+                            var loadImgFun_index = function(imgArr, fn) {
+                                // 图片加载fun
+                                var loadImgLen = 0,
+                                    errImgLen = 0
+                                var imgdefereds = [];
+                                $(imgArr).each(function() {
+                                    var defered = $.Deferred();
+                                    $(this).on('load', function() {
+                                        defered.resolve();
+                                        loadImgLen++
+                                    }).on('error', function() {
+                                        defered.resolve();
+                                        errImgLen++
+                                    })
+                                    if (this.complete) setTimeout(function() {
+                                        defered.resolve();
+                                    }, 200);
+                                    imgdefereds.push(defered);
+                                })
+                                $.when.apply(null, imgdefereds).done(function() {
+                                    if (fn && $.isFunction(fn)) {
+                                        fn()
+                                    }
+                                });
+                            }
+                            // 视频
+                            $('.e-video').each(function(index, el) {
+                            $(el).addClass('home-videoTwo')
+                            var videoCode1 = $('.video-code1', el).data('video-code'),
+                                videoIdTwo = 'home-videoTwo_' + index;
+                            
+                            // 开发需要打开此代码---开始
+                            // var bannerVideoId1 = videoCode1;
+                            // var url = base + "/indexCCVideo.json";
+                            // var data = loxia.syncXhrGet(url, {
+                            // 	'bannerVideoId': bannerVideoId1
+                            // });
+                            // var videoUrl2 = data.mp4VideoUrl;
+                            // 开发需要打开此代码---结束
+    
+                            // 下面的videoUrl为前端静态视频地址（静态页面的video路径 ，开发需注释掉）
+                            var videoUrl2 = 'https://cm15-c110-2.play.bokecc.com/flvs/ca/QxIJT/u3yP8OJl81-90.mp4?t=1596268821&key=C1FDCB3C268E072EF7E7F384BA7323C1&tpl=10';
+                            var html = '<video class="video" id="' + videoIdTwo + '"  webkit-playsinline="true" playsInline="true"><source src="' + videoUrl2 + '" ></source></video>';
+                            $('.video-content', el).html(html);
+    
+                        });
+    
+                            $(".e-play-videoTwo").on('tap', function() {
+                                if ($(this).parents('.article-video1').hasClass('video-box2')) {
+                                    $(' .article-video1').removeClass('is-play');
+                                }
+                                var _parent_article = $(this).parents('.article-video1'),
+                                    _video_s = $('.article-video1').find('.video'),
+                                    _video = $(this).parents('.article-video1').find('.video');
+                                _parent_article.toggleClass('is-play');
+                                $(this).parents('.article-video1').siblings().removeClass('is-play');
+    
+                                if (_parent_article.hasClass('is-play')) {
+                                    for (var i = 0; i < _video_s.length; i++) {
+                                        _video_s.eq(i)[0].pause();
+                                    }
+                                    _video[0].play();
+                                    _video[0].addEventListener('ended', function() {
+                                        this.play()
+                                    });
+                                } else {
+                                    _video[0].pause();
+                                }
+    
+                            });
+                            // $('.e-play-videoTwo img').on('click', function(){
+                            //     $('#frame-video').play();
+                            // })
+                            // var indexVedio = document.querySelector(".e-play-videoTwo");
+                            // indexVedio.onclick = function(){
+                            //     indexVedio.innerHTML = "<iframe width=100%  height='682' src='https://www.youtube.com/embed/kwk2eZFbfi8' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>";
+                            // }
+    
+                            // 视频 end
+    
+    
+                            //自动播放视频
+                            
+                            $('.e-home-video').each(function(index, el) {
+                                $(el).parents('.article').addClass('home-video')
+                                var videoCode = $('.video-code', el).data('video-code'),
+                                    videoId = 'home_video_' + index;
+                                loadImgFun_index($('.video-code img', el), function() {
+                                    $('.video-content', el).show().css({
+                                        'height': $('.video-code img', el).outerHeight(true)
+                                    })
+                                    $('.video-code img', el).css({
+                                        'visibility': 'hidden'
+                                    })
+                                })
+                                // 开发需要打开此代码---开始
+                                // var bannerVideoId = videoCode;
+                                // var url = base + "/indexCCVideo.json";
+                                // var data = loxia.syncXhrGet(url, {
+                                //     'bannerVideoId': bannerVideoId
+                                // });
+                                // var videoUrl = data.mp4VideoUrl;
+                                // 开发需要打开此代码---结束
+    
+                                // 下面的videoUrl为前端静态视频地址（静态页面的video路径 ，开发需注释掉）
+                                var videoUrl = 'https://cm15-c110-2.play.bokecc.com/flvs/ca/QxIJT/u3yP8OJl81-90.mp4?t=1596268821&key=C1FDCB3C268E072EF7E7F384BA7323C1&tpl=10';
+                                var html = '<video class="video" id="' + videoId + '" preload="meta" webkit-playsinline="true" playsInline="true" muted><source src="' + videoUrl + '" ></source></video>';
+                                $('.video-content', el).html(html);
+    
+                            })
+                            var windowTop = 0;
+                            var $homeVideo = $(".home-video"),
+                                v_offTop = [],
+                                v_Height = [];
+                            var getVideoSize = $.spice.throttle(function() {
+                                v_offTop = [];
+                                v_Height = [];
+                                $homeVideo.each(function(index, el) {
+                                    var _this_OT = $(el).offset().top,
+                                        _this_HT = $(el).outerHeight(true);
+                                    v_offTop.push(_this_OT);
+                                    v_Height.push(_this_HT);
+                                })
+                            }, 300);
+                            $(window).on('scroll', function() {
+                                var _mobVideo = $(".pc-mob-video");
+                                if (!_mobVideo.length > 0 && $.spice.getWindowWidth() < 768) {
+                                    return;
+                                }
+                                var $scrollTop = $(this).scrollTop(),
+                                    headerBannerboxH = 0,
+                                    wH = $(this).outerHeight(true),
+                                    $header = $('.header-fixed'),
+                                    headerH = $header.outerHeight(true);
+                                getVideoSize();
+                                if ($(".header-banner-box").hasClass('header-banner-show')) {
+                                    headerBannerboxH = $(".header-banner-box").outerHeight(true);
+                                } else {
+                                    headerBannerboxH = 0;
+                                }
+                                headerH = headerH + headerBannerboxH;
+    
+                                // 视频播放
+                                for (var i = 0; i < $homeVideo.length; i++) {
+                                    if ($scrollTop > (v_offTop[i] - headerBannerboxH - wH) && $scrollTop < (v_offTop[i] - headerH - 24)) {
+                                        // console.log("第", i, '个视频进入');
+                                        if (!$homeVideo.eq(i).hasClass('is-play')) {
+                                            $homeVideo.eq(i).addClass('is-play').removeClass("is-pause");
+                                            $('#home_video_' + i)[0].play();
+                                            $('#home_video_' + i)[0].addEventListener('canplaythrough', function() {
+                                                console.log('视频准备就绪，开始播放');
+                                                this.play()
+                                            });
+                                            $('#home_video_' + i)[0].addEventListener('ended', function() {
+                                                this.play()
+                                            });
+                                        }
+                                    } else if ($scrollTop > (v_offTop[i] + v_Height[i] - headerH - 24)) {
+                                        // console.log("第", i, '个离开');
+                                        $homeVideo.eq(i).addClass('is-pause').removeClass("is-play");
+                                        $('#home_video_' + i)[0].pause();
+                                    }
+                                }
+    
+                            }).trigger('scroll');
+                           
+                            var myswiper1 = new Swiper('.swiper-jacket_1', {
+                                slidesPerView : 3,
+                                spaceBetween : 20,
+                                prevButton:'.swiper-button-prev1',
+                                nextButton:'.swiper-button-next1',
+                                breakpoints: {
+                                    1023: {
+                                        slidesPerView : 1.5,
+                                        slidesOffsetBefore:16,
+                                        slidesOffsetAfter:16
+                                    }
+                                }
+                            });
+    
+    
+                            var myswiper2 = new Swiper('.swiper-jacket_2', {
+                                slidesPerView : 3,
+                                spaceBetween : 20,
+                                prevButton:'.swiper-button-prev2',
+                                nextButton:'.swiper-button-next2',
+                                breakpoints: {
+                                    1023: {
+                                        slidesPerView : 1.5,
+                                        slidesOffsetBefore:16,
+                                        slidesOffsetAfter:16
+                                    }
+                                }
+                            });
+    
+                            //吸顶点击
+                            
+                            
+                            var target_height;
+                            $('.messi-top li').on('tap',function(){
+                                var target = $(this).attr('date-index');
+                                    $(this).addClass('is-active').siblings().removeClass('is-active')
+                                    target_height = $('#' + target).offset().top;
+                                $("html,body").animate({scrollTop: target_height}, 500);
+                            })
+                        });
+                    </script>  
+      
+            </section>
+            <%include _includes/modules/footer.html %>
+    </div>
+</body>
+
+</html>

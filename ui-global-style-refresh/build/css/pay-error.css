@@ -1,0 +1,135 @@
+@charset "UTF-8";
+.container {
+  padding-top: 0;
+}
+.order-submit-content {
+  width: 950px;
+  margin: 30px auto 96px;
+}
+.order-submit-content .order-content-left {
+  width: 650px;
+  float: left;
+}
+.order-submit-content .order-content-right {
+  width: 297px;
+  float: right;
+}
+.order-line {
+  height: 1px;
+  border-top: 1px solid #C8CBCC;
+  margin: 35px 0 35px 0;
+}
+.order-line-dashed {
+  height: 1px;
+  border-top: 1px dashed #C8CBCC;
+  margin: 35px 0 40px 0;
+}
+.order-content-left .payment-method {
+  padding: 0;
+  margin: 0;
+}
+.order-content-left .payment-method .order-title {
+  font-size: 24px;
+  color: #000;
+  line-height: 24px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.order-content-left .payment-method .order-detail-box .order-detail-info .order-detail-title,
+.order-content-left .payment-method .order-detail-box .order-detail-info .order-detail-text {
+  font-size: 14px;
+  color: #000;
+  line-height: 28px;
+  font-weight: normal;
+}
+.order-content-left .payment-method .order-detail-box .order-detail-info .order-detail-title {
+  float: left;
+}
+.order-content-left .payment-method .order-detail-box .order-detail-info .order-detail-text {
+  margin-left: 71px;
+}
+.order-content-left .payment-method .view-detail-mes .view-detail {
+  font-size: 14px;
+  color: #0287CD;
+  text-decoration: underline;
+}
+.order-content-left .payment-method .view-detail-mes .view-detail:hover {
+  color: #000;
+}
+.order-content-left .submit-button-box {
+  padding: 0 21px;
+  width: 270px;
+  font-size: 16px;
+}
+.order-content-right .common-payment {
+  position: relative;
+}
+.order-content-right .common-payment .order-help-box {
+  position: relative;
+}
+.order-content-right .common-payment .order-help-box .help-title {
+  font-size: 14px;
+  color: #000;
+  line-height: 14px;
+  margin-bottom: 14px;
+  font-weight: bold;
+}
+.order-content-right .common-payment .order-help-box .help-link a {
+  display: inline-block;
+  font-size: 12px;
+  color: #000;
+  text-decoration: underline;
+  line-height: 22px;
+}
+@media screen and (max-width: 1023px) {
+  .order-submit-content {
+    width: 100%;
+    padding: 0 20px;
+    margin: 30px auto 100px;
+  }
+  .order-submit-content .order-content-left {
+    width: 100%;
+    float: none;
+  }
+  .order-submit-content .order-content-right {
+    width: 100%;
+    float: none;
+  }
+  .order-line {
+    margin: 26px -20px 28px -20px;
+  }
+  .order-content-left .payment-method {
+    padding: 0;
+    margin: 0;
+  }
+  .order-content-left .payment-method .order-title {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  .order-content-left .payment-method .order-detail-box .order-detail-info .order-detail-title,
+  .order-content-left .payment-method .order-detail-box .order-detail-info .order-detail-text {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .order-content-left .payment-method .order-detail-box .order-detail-info .order-detail-text {
+    margin-left: 62px;
+  }
+  .order-content-left .payment-method .view-detail-mes .view-detail {
+    font-size: 14px;
+    color: #0287CD;
+    text-decoration: underline;
+  }
+  .order-content-left .payment-method .view-detail-mes .view-detail:hover {
+    color: #000;
+  }
+  .order-content-left .submit-button-box {
+    margin-top: 32px;
+    padding: 0 21px;
+    width: 100%;
+  }
+  .order-content-right .common-payment .order-help-box {
+    display: none;
+  }
+}

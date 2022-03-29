@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+.myaccount-left{
+	float: left;
+	width: 240px;
+	margin-right: -240px;
+	position: relative;
+	.myaccount-left-top{
+		background: #000;
+		border: 1px solid #000;
+		height: 60px;
+		.myaccount-tit{
+			position: relative;
+			padding: 0 0 0 41px;
+			p{
+				font-size: 20px;
+				color: #FFF;
+				line-height: 60px;
+			}
+			.icon-head-portrait,.icon-head-portrait-ed{
+				position: absolute;
+				left: 15px;
+				top: 19px;
+			}
+			.icon-caret{}
+		}
+	}
+
+}
+/*员工账户*/
+.employee-account{
+    .myaccount-left-top{
+        background: #fff;
+        border-bottom: 0;
+        .myaccount-tit p{
+            color: #000;
+        }
+    }
+}
+.left-nav-item{
+	border: 1px solid #000;
+	color: #000;
+	.item-name{
+		border-bottom: 1px solid #000;
+		font-size: 16px;
+		line-height: 38px;
+		padding: 0 15px;
+	}
+	ul{
+		padding: 12px 0;
+		li{
+			a{
+				display: block;
+				font-size: 14px;
+				color: #000;
+				line-height: 40px;
+				padding: 0 30px;
+				position: relative;
+				.icon-myaccount{
+					display: none;
+				}
+				.icon-caret{
+					position: absolute;
+					right: 30px;
+					top: 13px;
+					width: 14px;
+					height: 14px;
+					background-position: -96px -20px;
+					display: none;
+				}
+			}
+			&:hover{
+				a{
+					background: rgba(222,243,250,0.50);
+					span{
+						position: relative;
+						&:after {
+						    position: absolute;
+						    display: block;
+						    content: "";
+						    line-height: 1;
+						    z-index: 1;
+						    top: 2px;
+						    right: -26px;
+						    width: 14px;
+						    height: 14px;
+						    background: url(../images/icon.png);
+						    background-position: -74px -20px;
+						    display: none;
+						}
+					}
+				}
+			}
+			&.is-active{
+				a{
+					color: #fff;
+					background: #0287CD;
+					.icon-caret{
+						display: none;
+					}
+					span{
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.help-left-nav-item{
+	margin-top: 20px;
+	.item-name{
+		font-size: 20px;
+		line-height: 58px;
+		border-top: 0px solid #000;
+		.icon-help{
+			vertical-align: middle;
+			margin: -4px 10px 0 0;
+		}
+	}
+}
+
+@media (max-width:1024px){
+	.myaccount-left{
+		float: none;
+		width: 100%;
+		margin: 0px;
+		z-index: 9;
+		.help-left-nav-item{
+			display: none;
+		}
+		.myaccount-left-top{
+			position: relative;
+			background: #F9F9F9;
+			border: 0px solid #000;
+			height: 40px;
+			box-shadow: 0 0 10px 2px #00000026;
+			.myaccount-tit{
+				padding: 0 0 0 43px;
+				p{
+					font-size: 14px;
+					color: #232323;
+					line-height: 40px;
+				}
+				.icon-head-portrait,.icon-head-portrait-ed{
+					left: 20px;
+					top: 10px;
+					background-position: -62px -297px;
+					width: 15px;
+					height: 18px;
+				}
+				.icon-caret{
+					width: 14px;
+					background-position: -84px -297px;
+					position: absolute;
+					right: 20px;
+					top: 16px;
+
+					&:after{
+						content: attr(data-value);
+						font-size: 12px;
+						color: #000000;
+						position: absolute;
+						top: -3px;
+						left: -30px;
+					}
+				}
+			}
+			&.is-active{
+				.myaccount-tit{
+					.icon-caret{
+						background-position: -84px -297px;
+						transform: rotate(180deg);
+
+						&:after{
+							transform: rotate(180deg);
+							right: -30px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.left-nav-item{
+		display: none;
+		background: #ffffff;
+		border: 0px solid #000;
+		color: #232323;
+
+		width: 100%;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		.item-name{
+			border-top: 0px solid #000;
+			border-bottom: 1px solid #C7CBCC;
+			font-size: 20px;
+			line-height: 22px;
+			padding: 8px 0 20px;
+			color: #888;
+		}
+		ul{
+			padding: 10px 20px;
+			font-size: 0;
+			letter-spacing: 0;
+			li{
+				width: 25%;
+				text-align: center;
+				margin: 10px 0 0 0;
+				padding-bottom: 10px;
+				display: inline-block;
+				vertical-align: top;
+				a{
+					display: block;
+					font-size: 12px;
+					color: #333333;
+					line-height: 12px;
+					padding: 0px;
+					.icon-myaccount{
+						display: inline-block;
+						height: 30px;
+						margin-bottom: 5px;
+					}
+					span{
+						display: block;
+					}
+				}
+				&:hover{
+					a{
+						color: #000;
+						background: #ffffff;
+						.icon-caret{
+							display: none;
+						}
+						span{
+							position: relative;
+							&:after {
+							    display: none;
+							}
+						}
+					}
+				}
+				&.is-active{
+					a{
+						color: #000;
+						background: #ffffff;
+						.icon-caret{
+							display: none;
+						}
+						span{
+							&:after {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.back-myaccount-memeber{
+			border-top: 1px solid #DDDDDD;
+			text-align: center;
+			cursor: pointer;
+			a{
+				display: block;
+				padding: 12px 0;
+
+				span,
+				.icon{
+					display: inline-block;
+					vertical-align: middle;
+				}
+				span{
+					font-size: 14px;
+					color: #000000;
+					line-height: 14px;
+
+					margin-right: 5px;
+				}
+				.icon{
+
+				}
+			}
+		}
+	}
+
+	.myaccount-nav-mask{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 8;
+		background: rgba(0,0,0,0.30);
+		display: none;
+	}
+
+}

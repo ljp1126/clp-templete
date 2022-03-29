@@ -1,0 +1,86 @@
+.list-inline li a i {
+    margin-right: 5px;
+}
+.myaccount-orders-details .goods-item-box .returns-btn-box .gl-cta{
+    width: 316px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    text-transform : none;
+    letter-spacing: 1px;
+
+    &:nth-child(2){
+        margin-right: 15px;
+    }
+}
+
+.myaccount-orders-details{
+	.myaccount-right-tit{
+		.return-order{
+			a{
+				.icon-round-gray-rights{
+					vertical-align: top;
+				    margin-top: -1px;
+					background: transparent !important;
+					&:before{
+						font-family: fonticons-adidas;
+						font-weight: 400;
+						font-style: normal;
+						speak: none;
+						display: inline-block;
+						font-variant: normal;
+						text-transform: none;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						content: "\E800";
+					}
+				}
+			}
+		}
+	}
+	.goods-item-box{
+		.cancel-order-description{
+			textarea{
+				&:focus{
+					border-color: #000;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1023px) {
+    .myaccount-orders-details .goods-item-box .returns-btn-box .gl-cta{
+        width: 100%;
+        font-size: 16px;
+
+        &:nth-child(1){
+            margin-bottom: 10px;
+        }
+    }
+}
+.myaccount-returns-bottom{
+	a{
+		&:hover{
+			color: #000;
+		}
+	}
+}
+.myaccount-right-content{
+	.return-status{
+		ul{
+			li{
+				&.is-active{
+					border-bottom: 2px solid #000;
+					a{
+						span{
+							color: #000;
+						}
+					}
+				}
+			}
+		}
+	}
+}

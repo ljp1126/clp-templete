@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+		<%include _includes/js.html %>
+	</head>
+    <body>
+		<div id="wrapper">
+			<!-- 头部 -->
+			<%include _includes/modules/header.html %>
+			<!-- 內容 -->
+			<section class="container">
+				<style type="text/css">
+					img {
+						width: 100%;
+						height: auto;
+					}
+					.article,
+					.od-Jacket-img-item {
+						position: relative;
+					}
+					.od-Jacket-img-w1{
+						max-width: 1390px;
+    					padding: 0 30px;
+    					margin: 0 auto;
+					}
+					.od-Jacket-img-w2{
+						max-width: 1100px;
+    					padding: 0 30px;
+    					margin: 0 auto;
+					}
+					.video-box {
+						margin: 0 0 110px;
+					}
+					.video-box a{
+						position: absolute;
+					    width: 56.5%;
+					    height: 100%;
+					    top: 0;
+					    left: 22.3%;
+					}
+					.clothes-article {
+						margin-bottom: 80px;
+					}
+					.clothes-article .btn-box{
+						position: absolute;
+    					left: 12.6%;
+    					top: 64%;
+    					width: 13%;
+    					min-width: 180px;
+					}
+					.shoes-article .btn-box{
+						position: absolute;
+    					left: 12.6%;
+    					top: 58.5%;
+    					width: 13%;
+    					min-width: 180px;
+					}
+					.btn-1,
+					.btn-2{
+    					width: 100%;
+					}
+					.btn-2{
+						margin-top: 10px;
+					}
+					.city-series-article{
+						margin-top: 130px;
+					}
+					.city-series-article a{
+						position: absolute;
+    					left: 45%;
+    					top: 78%;
+    					width: 13%;
+    					min-width: 180px;
+					}
+					.article-guess-you-Iike{
+						margin: 120px auto 80px;
+					}
+					.style-guess-you-Iike .swiper-container .swiper-wrapper .swiper-slide .thumbnail .goods-box .goods-title > span{
+						display: block;
+						color: #888;
+					}
+					.article-swiper-swift .swiper-container {
+					  position: relative;
+					}
+					.article-swiper-swift .swiper-container .swiper-wrapper {
+					  width: 64%;
+					  position: relative;
+					}
+					.article-swiper-swift .swiper-container .swiper-wrapper .swiper-slide >a{
+						cursor: default;
+					}
+					.article-swiper-swift .swiper-container .swiper-wrapper .content-text {
+					  position: absolute;
+					  bottom: 7%;
+					  left: 50%;
+					  margin-left: -105px;
+					  text-align: center;
+					}
+					.article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn {
+					  margin-top: 0;
+					  width: 210px;
+					  font-size: 24px;
+					}
+					.article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn span:after {
+					  top: 7px;
+					}
+					.article-swiper-swift .swiper-container .action-sports-swiper-btn {
+					  width: 64%;
+					  left: 18%;
+					  position: absolute;
+					  top: 50%;
+					  z-index: 0;
+					}
+					.article-swiper-swift .swiper-container .action-sports-swiper-btn .swiper-button-disabled {
+					  opacity: 0;
+					}
+					.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev,
+					.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+					  width: 33px;
+					  height: 63px;
+					  margin-top: -32px;
+					  background-image: none;
+					  overflow: hidden;
+					}
+					.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev {
+					  left: -47px;
+					}
+					.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+					  right: -47px;
+					}
+					.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev .icon-action-sports-arrow-l {
+					  display: block;
+					  width: 33px;
+					  height: 63px;
+					  background: url(images/icon.png);
+					  background-position: -676px -454px;
+					}
+					.article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next .icon-action-sports-arrow-r {
+					  display: block;
+					  width: 33px;
+					  height: 63px;
+					  background: url(images/icon.png);
+					  background-position: -790px -454px;
+					}
+
+					@media(max-width: 1024px){
+						.od-Jacket-img-w1,
+						.od-Jacket-img-w2{
+							max-width: 750px;
+	    					padding: 0;
+						}
+						.video-box {
+							margin: 0 0 35px;
+						}
+						.video-box a{
+						    width: 95%;
+						    left: 2.5%;
+						}
+						.clothes-article {
+							margin-bottom: 30px;
+						}
+						.clothes-article .btn-box{
+	    					left: 50%;
+	    					top: 52%;
+	    					width: 160px;
+	    					min-width: 160px;
+	    					margin-left: -80px;
+						}
+						.shoes-article .btn-box{
+	    					left: 50%;
+	    					top: 50%;
+	    					width: 160px;
+	    					min-width: 160px;
+	    					margin-left: -80px;
+						}
+						.btn-1,
+						.btn-2{
+	    					font-size: 16px;
+						    height: 40px;
+						    line-height: 40px;
+						}
+						.city-series-article{
+							margin-top: 30px;
+						}
+						.city-series-article a{
+	    					left: 50%;
+	    					top: 75%;
+	    					width: 160px;
+	    					min-width: 160px;
+	    					margin-left: -80px;
+	    					font-size: 16px;
+						    height: 40px;
+						    line-height: 40px;
+						}
+
+						.article-guess-you-Iike{
+							margin: 30px auto;
+						}
+						.style-guess-you-Iike .swiper-container .swiper-wrapper .swiper-slide .thumbnail .goods-box .goods-title{
+							font-weight: bold;
+						}
+						.style-guess-you-Iike .swiper-container .swiper-wrapper .swiper-slide .thumbnail .goods-box .goods-title.letter-spacing{
+							letter-spacing: -1px;
+						}
+						.style-guess-you-Iike .swiper-container .swiper-wrapper .swiper-slide .thumbnail .goods-box .goods-title > span{
+							font-weight:normal;
+						}
+						.style-guess-you-Iike .swiper-container .swiper-wrapper .swiper-slide .thumbnail .goods-box .goods-title.letter-spacing > span{
+							letter-spacing: 0px;
+						}
+					}
+
+					@media screen and (max-width: 767px) {
+					  .article-swiper-swift .swiper-container {
+					    padding: 0px 35px 0px;
+					  }
+					  .article-swiper-swift .swiper-container .swiper-wrapper {
+					    width: 100%;
+					  }
+					  .article-swiper-swift .swiper-container .swiper-wrapper .content-text {
+						    bottom: 7%;
+						    margin-left: -60px;
+						    position: static;
+    						margin: 24px auto 0;
+					  }
+					  .article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn {
+					    width: 160px;
+					    min-width: 160px;
+					    font-size: 16px;
+					    height: 40px;
+					    line-height: 40px;
+					    background: #262626;
+					    opacity: 1;
+					    color: #fff;
+					  }
+					  .article-swiper-swift .swiper-container .swiper-wrapper .content-text .btn span:after {
+					    top: 3px;
+					    background-size: 500px;
+    					background-position: -26px -18px !important;
+					  }
+					  .article-swiper-swift .swiper-container .action-sports-swiper-btn {
+					    z-index: 1;
+				        width: 100%;
+						left: 0;
+					  }
+					  .article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev,
+					  .article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+					    width: 18px;
+					    height: 34px;
+					    margin-top: -40px;
+					  }
+					  .article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev{
+					  	left: 8px;
+					  }
+					  .article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next {
+						    right: 8px;
+						}
+					  .article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-prev .icon-action-sports-arrow-l {
+					    width: 18px;
+					    height: 34px;
+					    background: url(images/icon@2x.png);
+					    background-size: 500px;
+					    background-position: -303px -652px;
+					  }
+					  .article-swiper-swift .swiper-container .action-sports-swiper-btn div.swiper-button-next .icon-action-sports-arrow-r {
+					    width: 18px;
+					    height: 34px;
+					    background: url(images/icon@2x.png);
+					    background-size: 500px;
+					    background-position: -275px -652px;
+					  }
+					}
+
+				</style>
+				<script type="text/javascript">
+					$(function(){
+						var swiper = new Swiper('.swiper-container-od-jacket', {
+					        slidesPerView: 'auto',
+					        loop: true,
+					        centeredSlides: true,
+					        paginationClickable: true,
+					        spaceBetween: 64,
+						    prevButton:'.swiper-button-prev1',
+						    nextButton:'.swiper-button-next1',
+						    initialSlide: 0
+					    });
+
+						$('.video-box a').on('tap', function(e) {
+					        e.preventDefault();
+					        openVideo('801393B0DA8D32969C33DC5901307461','true');
+					    });
+						 
+					});
+				</script>
+
+				<article class="article od-Jacket-article">
+					<div class="od-Jacket-img-item">
+						<img src="images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/lp-outdoor-jacket-1/od-Jacket-PC-01.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/lp-outdoor-jacket-1/od-Jacket-mob-01.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-outdoor-jacket-1/od-Jacket-mob-01.jpg"}}' />
+					</div>
+				</article>
+				<article class="article od-Jacket-article">
+					<div class="od-Jacket-img-item od-Jacket-img-w1">
+						<img src="images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/lp-outdoor-jacket-1/od-Jacket-PC-02.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/lp-outdoor-jacket-1/od-Jacket-mob-02.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-outdoor-jacket-1/od-Jacket-mob-02.jpg"}}' />
+					</div>
+				</article>
+				<article class="article od-Jacket-article">
+					<div class="od-Jacket-img-item video-box">
+						<img src="images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/lp-outdoor-jacket-1/od-Jacket-PC-03.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/lp-outdoor-jacket-1/od-Jacket-mob-03.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-outdoor-jacket-1/od-Jacket-mob-03.jpg"}}' />
+						<a>&nbsp;</a>
+					</div>
+				</article>
+
+				<article class="article">
+					<div class="hover-scale float-clearfix">
+						<div class="box-left float-clearfix">
+							<div class="events-scale show-left">
+								<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-pc-05.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-mob-05.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-mob-05.jpg"}
+								}' />
+							</div>
+							<div class="show-right">
+								<div class="events-scale">
+									<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-pc-06.jpg"},
+											"medium":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-mob-06.jpg"},
+											"small":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-mob-06.jpg"}
+									}' />
+								</div>
+								<div class="events-scale">
+									<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-pc-08.jpg"},
+											"medium":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-mob-07.jpg"},
+											"small":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-mob-07.jpg"}
+									}' />
+								</div>
+							</div>
+						</div>
+						<div class="box-right">
+							<div class="buy-btn">
+								<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-pc-07.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-mob-08.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-mob-08.jpg"}
+								}' />
+								<div class="action-box4-btn">
+									<a href="https://pro.adidas.com.cn/eqt_aug17" class="btn btn-black btn-have-arrow">
+										<span>立即购买</span>
+									</a>
+								</div>
+							</div>
+							<div class="show-right float-clearfix">
+								<div class="events-scale show-01">
+									<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-pc-09.jpg"},
+											"medium":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-mob-10.jpg"},
+											"small":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-mob-10.jpg"}
+									}' />
+								</div>
+								<div class="events-scale show-02">
+									<img class="events-changeSrc action-bg-banner-pic" src="images/blank.gif"
+										data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-pc-10.jpg"},
+											"medium":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-mob-09.jpg"},
+											"small":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-mob-09.jpg"}
+									}' />
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="gif-eqt">
+						<img class="events-changeSrc action-sports-banner-pic" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-customize-pc.gif"},
+								"medium":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-customize-mob.gif"},
+								"small":{"high":"", "normal":"../static/images/lp-eqt-aug17/EQT-customize-mob.gif"}
+						}' />
+						<a href="https://www.adidas.com.cn/originals_eqt_customise_segment" class="gif-btn"></a>
+					</div>
+				</article>
+
+				<!-- 多图轮播模块 -->
+				<article class="article article-guess-you-Iike">
+					<div class="style-guess-you-Iike you-might-like">
+						<h3>户外主推</h3>
+						<div class="swiper-container events-guess-you-Iike">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="thumbnail">
+										<a href="">
+											<img src="../static/images/plp/product-blank.png" lazy-src="../static/images/lp-outdoor-jacket-1/od-Jacket-1.jpg" height="328" width="328" />
+											<div class="badge">
+											</div>
+										</a>
+										<div class="goods-box">
+											<a href="">
+												<span class="goods-title">户外抓绒茄克<span>男子 运动表现 户外</span></span>
+											</a>
+											<div class="goods-bottom">
+												<span class="goods-price price-single">¥799</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="thumbnail">
+										<a href="">
+											<img src="../static/images/plp/product-blank.png" lazy-src="../static/images/lp-outdoor-jacket-1/od-Jacket-2.jpg" height="328" width="328" />
+											<div class="badge">
+											</div>
+										</a>
+										<div class="goods-box">
+											<a href="">
+												<span class="goods-title">户外抓绒茄克<span>男子 运动表现 户外</span></span>
+											</a>
+											<div class="goods-bottom">
+												<span class="goods-price price-single">¥799</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="thumbnail">
+										<a href="">
+											<img src="../static/images/plp/product-blank.png" lazy-src="../static/images/lp-outdoor-jacket-1/od-Jacket-3.jpg" height="328" width="328" />
+											<div class="badge">
+											</div>
+										</a>
+										<div class="goods-box">
+											<a href="">
+												<span class="goods-title">户外抓绒茄克<span>男子 运动表现 户外</span></span>
+											</a>
+											<div class="goods-bottom">
+												<span class="goods-price price-single">¥799</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="thumbnail">
+										<a href="">
+											<img src="../static/images/plp/product-blank.png" lazy-src="../static/images/lp-outdoor-jacket-1/od-Jacket-4.jpg" height="328" width="328" />
+										</a>
+										<div class="goods-box">
+											<a href="">
+												<span class="goods-title">户外抓绒茄克<span>女子 运动表现 户外</span></span>
+											</a>
+											<div class="goods-bottom">
+												<span class="goods-price price-single">¥799</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="thumbnail">
+										<a href="">
+											<img src="../static/images/plp/product-blank.png" lazy-src="../static/images/lp-outdoor-jacket-1/od-Jacket-5.jpg" height="328" width="328" />
+										</a>
+										<div class="goods-box">
+											<a href="">
+												<span class="goods-title">户外抓绒茄克<span>女子 运动表现 户外</span></span>
+											</a>
+											<div class="goods-bottom">
+												<span class="goods-price price-single">¥799</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="thumbnail">
+										<a href="">
+											<img src="../static/images/plp/product-blank.png" lazy-src="../static/images/lp-outdoor-jacket-1/od-Jacket-6.jpg" height="328" width="328" />
+										</a>
+										<div class="goods-box">
+											<a href="">
+												<span class="goods-title">户外短裤<span>男子 运动表现 户外</span></span>
+											</a>
+											<div class="goods-bottom">
+												<span class="goods-price price-single">¥399</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="thumbnail">
+										<a href="">
+											<img src="../static/images/plp/product-blank.png" lazy-src="../static/images/lp-outdoor-jacket-1/od-Jacket-7.jpg" height="328" width="328" />
+										</a>
+										<div class="goods-box">
+											<a href="">
+												<span class="goods-title">户外短裤<span>女子 运动表现 户外</span></span>
+											</a>
+											<div class="goods-bottom">
+												<span class="goods-price price-single">¥399</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="thumbnail">
+										<a href="">
+											<img src="../static/images/plp/product-blank.png" lazy-src="../static/images/lp-outdoor-jacket-1/od-Jacket-8.jpg" height="328" width="328" />
+										</a>
+										<div class="goods-box">
+											<a href="">
+												<span class="goods-title">紧身裤<span>男子 运动表现 户外</span></span>
+											</a>
+											<div class="goods-bottom">
+												<span class="goods-price price-single">¥399</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="thumbnail">
+										<a href="">
+											<img src="../static/images/plp/product-blank.png" lazy-src="../static/images/lp-outdoor-jacket-1/od-Jacket-9.jpg" height="328" width="328" />
+										</a>
+										<div class="goods-box">
+											<a href="">
+												<span class="goods-title">户外长裤<span>女子 运动表现 户外</span></span>
+											</a>
+											<div class="goods-bottom">
+												<span class="goods-price price-single">¥399</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="thumbnail">
+										<a href="">
+											<img src="../static/images/plp/product-blank.png" lazy-src="../static/images/lp-outdoor-jacket-1/od-Jacket-10.jpg" height="328" width="328" />
+										</a>
+										<div class="goods-box">
+											<a href="">
+												<span class="goods-title letter-spacing">TERREX AGRAVIC GTX 户外鞋<span>男子 运动表现 户外</span></span>
+											</a>
+											<div class="goods-bottom">
+												<span class="goods-price price-single">¥1,299</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="thumbnail">
+										<a href="">
+											<img src="../static/images/plp/product-blank.png" lazy-src="../static/images/lp-outdoor-jacket-1/od-Jacket-11.jpg" height="328" width="328" />
+										</a>
+										<div class="goods-box">
+											<a href="">
+												<span class="goods-title letter-spacing">TERREX AGRAVIC GTX W 户外鞋<span>女子 运动表现 户外</span></span>
+											</a>
+											<div class="goods-bottom">
+												<span class="goods-price price-single">¥1,299</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<!-- Add Pagination -->
+					        <div class="swiper-pagination"></div>
+
+					        <!-- Add Navigation -->
+					        <div class="swiper-button-prev"></div>
+					        <div class="swiper-button-next"></div>
+						</div>
+
+					</div>
+				</article>
+				
+				<!-- 视频弹层 -->
+				<script id="video-dialog" type="text/template">
+					<div class="dialog">
+						<div class="dialog-container">
+							<div class="loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+							<div class="video-content">
+
+							</div>
+						</div>
+						<i class="icon icon-close dialog-close">&times;</i>
+					</div>
+				</script>
+			</section>
+			<!-- 底部 -->
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		</div>
+    </body>
+</html>

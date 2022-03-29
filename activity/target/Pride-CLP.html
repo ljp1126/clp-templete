@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%include _includes/meta.html %>
+	<title>runner</title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" href="css/lp-messi.css" /> -->
+	<%include _includes/js.html %>
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+			<style>
+				.article {
+					position: relative;
+				}
+
+				.article img {
+					width: 100%;
+				}
+
+				.article .link {
+					position: absolute;
+					width: 10%;
+					height: 4%;
+					top: 60%;
+					left: 76.5%;
+				}
+
+                .pc-pro{
+                    display: flex;
+					justify-content: space-between;
+					align-items: center;
+					position: absolute;
+					top: 0;
+					left: 50%;
+                    transform: translateX(-50%);
+					width: 68%;
+					height: 100%;
+                }
+                .pc-pro a{
+                    width: 20%;
+                    height: 100%;
+                }
+				
+				@media (max-width: 1024px) {
+                    .product-swiper{
+                        position: absolute;
+                        top: 12%;
+                        left: 0;
+                        width: 100%;
+                    }
+				}
+			</style>
+			<article class="article">
+                <img lazysrc="https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_01.jpg" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_01.jpg&quot;},
+                    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_01.jpg&quot;},
+                    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_01.jpg&quot;}
+                }">
+			</article>
+			<article class="article">
+                <img lazysrc="https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_02.jpg" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_02.jpg&quot;},
+                    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_02.jpg&quot;},
+                    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_02.jpg&quot;}
+                }">
+            </article>
+            <article class="article">
+                <img lazysrc="https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_03.jpg" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_03.jpg&quot;},
+                    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_03.jpg&quot;},
+                    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_03.jpg&quot;}
+                }">
+            </article>
+            <article class="article">
+                <img lazysrc="https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_04.jpg" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_04.jpg&quot;},
+                    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_04.jpg&quot;},
+                    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_04.jpg&quot;}
+                }">
+            </article>
+            <article class="article">
+                <img lazysrc="https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_05.jpg" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_05.jpg&quot;},
+                    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_05.jpg&quot;},
+                    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_05.jpg&quot;}
+                }">
+            </article>
+            <article class="article">
+                <img lazysrc="https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_06.jpg" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_06.jpg&quot;},
+                    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_06.jpg&quot;},
+                    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_06.jpg&quot;}
+                }">
+            </article>
+            <article class="article">
+                <img lazysrc="https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_07.jpg" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_07.jpg&quot;},
+                    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_07.jpg&quot;},
+                    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_07.jpg&quot;}
+                }">
+                <div class="pc-pro none-sm">
+                    <a href="https://www.adidas.com.hk/item/GW2419"></a>
+                    <a href="https://www.adidas.com.hk/item/H43969"></a>
+                    <a href="https://www.adidas.com.hk/item/GW2417"></a>
+                    <a href="https://www.adidas.com.hk/item/H43968"></a>
+                    <a href="https://www.adidas.com.hk/item/GW2418"></a>
+                </div>
+                <div class="product-swiper none block-sm">
+                    <div class="swiper-container swiper-1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="https://www.adidas.com.hk/item/GW2419">
+                                    <img src="https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pro1_08.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://www.adidas.com.hk/item/H43969">
+                                    <img src="https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pro2_08.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://www.adidas.com.hk/item/GW2417">
+                                    <img src="https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pro3_08.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://www.adidas.com.hk/item/H43968">
+                                    <img src="https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pro4_08.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://www.adidas.com.hk/item/GW2418">
+                                    <img src="https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pro5_08.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="article">
+                <a href="">
+                    <img lazysrc="https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_08.jpg" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                        &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_08.jpg&quot;},
+                        &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_08.jpg&quot;},
+                        &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_08.jpg&quot;}
+                    }">
+                </a>
+            </article>
+            <article class="article">
+                <img lazysrc="https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_09.jpg" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/pc_09.jpg&quot;},
+                    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_09.jpg&quot;},
+                    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/JUN/Pride_Pack/CLP/CN/mob_09.jpg&quot;}
+                }">
+			</article>
+			<script type="text/javascript">
+				$(function() {
+					// 换图 + 懒加载
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+					var swiper1 = new Swiper('.swiper-1', {
+						slidesPerView: 1.4,
+						spaceBetween: 0,
+						initialSlide: 0,
+                        slidesOffsetBefore:16,
+			            slidesOffsetAfter:16
+					});
+
+				});
+			</script>
+		</section>
+		<%include _includes/modules/footer.html %>
+	</div>
+</body>
+
+</html>

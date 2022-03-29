@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%include _includes/meta.html %>
+        <title>lp-yeezy-02</title>
+        <%include _includes/css.html %>
+            <link rel="stylesheet" href="css/lp-yeezy-06.css" />
+            <%include _includes/js.html %>
+
+                <!-- <script type="text/javascript" src="libs/hotSpot/hotSpot.js"></script> -->
+</head>
+
+<body>
+    <div id="wrapper">
+        <%include _includes/modules/header.html %>
+            <section class="container">
+                <article class="article article-box">
+                    <div class="box-content float-clearfix">
+                        <div class="box-contents">
+                           <img src="https://img.adidas.com.cn/images/blank.gif" 
+                                data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/NOV/yeezy700/img-p-01.jpg"},
+                                "medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/NOV/yeezy700/img-m-01.jpg"},
+                                "small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/NOV/yeezy700/img-m-01.jpg"}
+                            }' />
+                        </div>
+                        <div class="article-size">
+                            <img src="https://img.adidas.com.cn/images/blank.gif" 
+                                data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/NOV/yeezy700/img-p-02.jpg"},
+                                "medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/NOV/yeezy700/img-m-02.jpg"},
+                                "small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/NOV/yeezy700/img-m-02.jpg"}
+                            }' />
+                            <a href="https://www.adidas.com.cn/hype/yeezy/EE9614" target="_blank" class="btn btn-white btn-have-arrow link link-01"><span>了解更多</span></a>
+                        </div>
+                    </div>
+                </article>
+                <script>
+                    
+                    $(function () {
+                        // 换图 + 懒加载
+                        $.spice.lazyLoad('img[lazysrc]', {
+                            attr: 'lazysrc'
+                        });
+                        $.spice.tools.changeImageSrc({
+                            callBack: function (img, self) {
+                                $.spice.lazyLoad('img[lazysrc]', {
+                                    attr: self.opt.lazyData,
+                                    prestrain: 1
+                                });
+                            }
+                        });
+                    });
+                    
+                </script>
+            </section>
+            <%include _includes/modules/footer.html %>
+    </div>
+</body>
+
+</html>

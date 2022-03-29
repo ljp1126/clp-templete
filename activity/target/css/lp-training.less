@@ -1,0 +1,202 @@
+@charset "UTF-8";
+.article {
+    .training-banner{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .training-btn{
+           text-align: left;
+            padding-left: 18px;
+            min-width: 172px;
+            span{
+                font-weight: bold; 
+            }
+        }
+        .shopping-women-btn{
+            position: absolute;
+            top: 57%;
+            left: 21%;
+            min-width: 195px;      
+        }
+        .shopping-man-btn{
+            position: absolute;
+            top: 57%;
+            left: 21%;
+            margin-top: 61px;
+        }
+        
+    }
+    .training-kv{
+        .scroll{
+            .scroll-btn-next a i, .scroll-btn-prev a i {
+                display: inline-block;
+                background: url(../images/icon.png);
+                width: 42px;
+                height: 76px;
+            }
+            .scroll-btn-next a,.scroll-btn-prev a {
+                text-indent: -9999px;
+            }
+            .scroll-btn-next{
+                right: 14%;
+                a {
+                    i {
+                        background-position: -52px -454px;
+                    } 
+                }
+            }
+            .scroll-btn-prev{
+                left: 16%;
+                a {
+                    i {
+                        background-position: 0 -454px;
+                    } 
+                }
+            }
+            .scroll-dots{
+                bottom: 9%;
+                a{
+                    background-color: #ddd;
+                    width: 12px;
+                    height: 12px;
+                     &.active{
+                        background-color: #000;
+                    }
+                }
+               
+            }
+        } 
+    }
+    .training-product{
+        li{
+            float: left;
+            width: 25%;
+            overflow: hidden;
+            position: relative;
+            .product-list{
+                .hover-img{
+                    transform: scale(1);  
+                    transition: all 1s ease 0s;  
+                    -webkit-transform: scale(1);  
+                    -webkit-transform: all 1s ease 0s; 
+                    &:hover{
+                        transform: scale(1.3);  
+                        transition: all 1s ease 0s;  
+                        -webkit-transform: scale(1.3);  
+                        -webkit-transform: all 1s ease 0s;  
+                    }
+                }
+                .product-list-con{
+                    position: absolute;
+                    bottom: 50px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    >div{
+                        position: relative;
+                        .purchase-button{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            bottom: -4px;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    .training-last-pic{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .training-story{
+            position: absolute;
+            display: block;
+            width: 14%;
+            height: 7%;
+            left: 44%;
+            bottom: 18%;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .article {
+        .training-banner{
+            .btn-have-arrow.btn-white {
+                span:after {
+                    background-position: -285px -218px;
+                }
+            }
+            .training-btn{
+                padding-left: 10px;
+                height: 40px;
+                line-height: 40px;
+            }
+            .shopping-man-btn {
+                margin-top: 52px;
+            }
+            .shopping-women-btn{
+                min-width: 168px;
+                left: 4%; 
+            }
+            .shopping-man-btn{
+                min-width: 154px;
+                left: 4%;
+            }
+        } 
+        .training-kv{
+            .scroll{
+                .scroll-btn-next a i, .scroll-btn-prev a i {
+                    background: url(../images/icon@2x.png);
+                    background-size: 500px;
+                }
+                .scroll-btn-next{
+                    right: 0%;
+                    top: 43%;
+                    a {
+                        i {
+                            background-position: -436px -553px;
+                        } 
+                    }
+                }
+                .scroll-btn-prev{
+                    left: 0%;
+                    top: 43%;
+                    a {
+                        i {
+                            background-position: -381px -553px;
+                        } 
+                    }
+                }
+                .scroll-dots{
+                    bottom: 12%;                 
+                }
+            } 
+        }
+        .training-product{
+            li{
+                .product-list{
+                    .product-list-con{
+                        bottom: 26px;
+                        >div{
+                            .purchase-button{
+                                bottom: -1px;
+                            }
+                        }
+                    }
+                } 
+            }
+        } 
+        .training-last-pic{
+            .training-story{
+                width: 20%;
+                left: 39%;
+            }
+        }
+    }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" type="text/css" href="css/myaccount-memeber.css">
+		<%include _includes/js.html %>
+		<script type="text/javascript" src="js/myaccount-memeber.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+
+			<!-- 内容部分 -->
+			<section class="container">
+				
+				<article class="article article-breadcrumb-common-width none-sm">
+					<div class="breadcrumb">
+						<ul class="list-inline">
+							<li><a href="#"><i class="icon icon-round-lightgray-lefts"></i>返回</a></li>
+							<li class="divider">丨</li>
+							<li><a href="/">首页</a></li>
+							<li class="divider">/</li>
+							<li><a href="/">我的账户</a></li>
+						</ul>
+					</div>
+				</article>
+				
+				<!-- 模块二 -->
+				<article class="article article-my-width">
+					
+					<div class="my-content-box float-clearfix">
+						<!-- 左 导航 -->
+						<%include _includes/myaccount-left-nav.html %>
+						
+						<!-- 右 内容 -->
+						<div class="myaccount-right">
+							<div class="myaccount-rig-left float-clearfix">
+								<div class="myaccount-box memeber">
+									<div class="memeber-box memeber-information">
+										<div class="myaccount-tit float-clearfix">
+											<h3>您好！James</h3>
+											<div>
+												<span>不是James？</span>
+												<a>退出</a>
+											</div>
+										</div>
+										
+										<div class="memeber-info">
+											<div class="member-card">
+
+												<!-- 银、金会员的文案颜色是黑的
+												加class： color-black -->
+												<div class="member-card-text">
+													<p>0020 8888 888</p>
+													<p>铜牌会员</p>
+												</div>
+											<img class="events-changeSrc" src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"images/about/vip-2.png"},
+							"medium":{"high":"", "normal":"images/about/vip-2@2x.png"},
+							"small":{"high":"", "normal":"images/about/vip-2@2x.png"}
+					}' />
+											<!-- 银牌 -->
+											<!-- <img class="events-changeSrc" src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"images/about/vip-3.png"},
+							"medium":{"high":"", "normal":"images/about/vip-3@2x.png"},
+							"small":{"high":"", "normal":"images/about/vip-3@2x.png"}
+					}' /> -->
+											<!-- 金牌 -->
+											<!-- <img class="events-changeSrc" src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"images/about/vip-4.png"},
+							"medium":{"high":"", "normal":"images/about/vip-4@2x.png"},
+							"small":{"high":"", "normal":"images/about/vip-4@2x.png"}
+					}' /> -->
+											</div>
+											<div class="prompt-tit">
+												2017年7月31日至2017年9月10日，网站消费积分试运行期间，消费即可获得积分，享受会员权益
+											</div>
+											<p class="memeber-bold">您当前的会员等级：<span>铜牌会员</span></p>
+											<p>您的会籍有效期：至2017年7月31日</p>
+											<p>目前的积分 <span>82</span> 分    拥有 <span>3</span> 张可用优惠券。</p>
+										</div>
+									</div>
+									
+									<div class="memeber-box memeber-order">
+										<div class="myaccount-tit float-clearfix">
+											<h3>官网订单</h3>
+											<div>
+												<a>查看全部订单<i class="icon icon-round-gray-rights"></i></a>
+											</div>
+										</div>
+										
+										<div class="memeber-order-info myaccount-right-content">
+											<ul class="goods-item-box">
+												<!-- 不同状态的订单，在此加不同的class，如待支付加class='goods-item-stay-pay' -->
+												<li class="goods-item-info float-clearfix">
+													
+													<div class="info-wrapper">
+														<p class="order-info">
+															<span>
+																<span>下单时间：&nbsp;</span>2017.4.25 10:30:30
+															</span>
+															<span class="mob-block">
+																<span>订单编号：&nbsp;</span>AD123456789
+															</span>
+															<strong class="pull-right">待收货</strong>
+														</p>
+														<p class="order-info">
+															<span class="mob-margin">
+																共&nbsp;<strong>1</strong>&nbsp;件商品<span class="none-sm">，</span>
+															</span>
+															<span>
+																<span>订单金额：&nbsp;</span><strong>￥999.00</strong>
+															</span>
+														</p>
+													</div>
+													<!-- mobile 定制结构 -->
+													<div class="mob-miadidas none block-sm">
+														<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p>
+													</div>
+													<div class="product-show">
+														<div class="product-info">
+															<div class="thumbnail float-clearfix">
+															    <a href="">
+															        <img src="../static/images/common/pic-shoes2x.jpg" alt="" width="" height="" />
+															        <!-- 小图标 笔A -->
+															        <!-- <i class="icon icon-personalise"></i> -->
+															    </a>
+															    <h4><a>跑步 男子 UltraBOOST 跑步鞋学院藏青蓝跑步鞋学院藏青蓝跑步鞋学院藏青蓝</a></h4>
+															    <div class="desc">
+															    	<!-- <p>颜色：<span>黄</span></p> -->
+															    	<p>尺码：<span>41</span></p>
+															    	<!-- <p>左脚文字：<span>james</span></p>
+															    	<p>右脚文字：<span>james</span></p>-->
+																    <div class="Price-item">
+																    	<span class="Price-text">价格：</span>
+																    	<span class="goods-price price-single">￥799</span>
+																    	<span>&nbsp;&nbsp;x&nbsp;</span>
+																    	<span>1</span>
+																    </div>
+															    	<!--<p>定制费：<span>50</span></p> -->
+															    	<p class="miadidas-item">miadidas 定制<i class="icon icon-customized"></i></p>
+															    </div>
+															</div>
+														</div>
+														<div class="jumpbtn">
+															<!-- <div class="">
+																<a class="btn btn-blue btn-have-arrow payment-button"><span>立即支付</span></a>
+															</div> -->
+															<div class="">
+																<a class="btn btn-white btn-have-arrow btn-white-details"><span>查看详情</span></a>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="memeber-img">
+										<img class="events-changeSrc" src="images/blank.gif" 
+						data-image='{"standard":{"high":"", "normal":"images/myaccount/img-BANNER.png"},
+						"medium":{"high":"", "normal":"../static/images/common/banner@2x.jpg"},
+						"small":{"high":"", "normal":"../static/images/common/banner@2x.jpg"}}' />
+									</div>
+									
+									<div class="">
+										<div class="style-guess-you-Iike myaccount-might-like">
+											<h3>您可能也喜欢</h3>
+											<!-- 本月主推 -->
+											<%include _includes/guess-you-Iike.html %>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+
+					</div>
+					
+					
+					
+					
+				</article>
+
+			</section>
+
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+
+		</div>
+	</body>
+</html>

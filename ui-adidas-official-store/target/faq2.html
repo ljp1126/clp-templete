@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+		<link rel="stylesheet" type="text/css" href="css/faq.css">
+		<%include _includes/js.html %>
+	</head>
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+			<!-- 内容部分 -->
+			<section class="container">
+				<article class="article faq-article article-faq-width">
+					<div class="search-page-content">
+						<!-- 模块一 -->
+						<div class="help-container help-categories-content">
+							<!-- 面包屑 -->
+							<div class="help-content">
+								<div class="breadcrumb">
+								    <ul class="list-inline">
+								        <li><a href="/" class="reture-text"><i class="icon icon-reture"></i>返回</a></li>
+								        <li class="vertical-line none-sm">|</li>
+								        <li class="none-sm"><a href="/">首页</a></li>
+								        <li class="slash none-sm">/</li>
+								        <li class="hele-core none-sm">帮助中心</li>
+								    </ul>
+								</div>
+								<!-- 订单取消 -->
+								<div class="contentasset-container">
+									<div class="contentasset border-bot-none">
+										<h2>为什么我的订单被取消了？</h2>
+										<div class="contentasset-cont">
+											<p>您的订单被取消可能会有如下几个原因：</p>
+											<ul class="contentasset-box">
+												<li>a.您在下单后24小时内没有完成付款，您的订单将会被自动取消。（特殊商品及网站特殊规定商品除外）</li>
+												<li>b.由于您的支付问题，或者地址不详细等原因，取消了您的订单。</li>
+												<li>c.您选购的商品已经售罄，无法为您发出的情况下。</li>
+												<li>d.当日达、次晨达和次日达的订单，如果在规定的时间没有完成付款，您的订单也将会被取消。-规定付款时间详见：物流配送</li>
+												<li>如果您的订单在付款后被取消，客服会在24小时内为您处理退款，退款实际到帐时间以参考各银行操作时间为准。</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 模块二 -->
+						<div class="help-myaccount help-container">
+							<%include _includes/faq-query-order.html %>
+						</div>
+					</div>
+				</article>
+			</section>
+
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		</div>
+	</body>
+</html>

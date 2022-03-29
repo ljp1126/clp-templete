@@ -1,0 +1,61 @@
+{
+  "general": {
+    "today": "Dnes",
+    "month": {
+      "0": "Leden",
+      "1": "Únor",
+      "2": "Březen",
+      "3": "Duben",
+      "4": "Květen",
+      "5": "Červen",
+      "6": "Červenec",
+      "7": "Srpen",
+      "8": "Září",
+      "9": "Říjen",
+      "10": "Listopad",
+      "11": "Prosinec"
+    },
+    "ordinal": {
+      "st": ".",
+      "nd": ".",
+      "rd": ".",
+      "th": "."
+    },
+    "launchDate": "8. června 2018",
+    "endDate": "8. července 2018",
+    "error": "Ou, někde nastala chyba. Zkus to prosím později."
+  },
+  "teaser": {
+    "distance": {
+      "top": "Bylo přispěno již",
+      "amount": "8.403.081",
+      "label": "celkem uběhnutých kilometrů"
+    },
+    "members": {
+      "top": "Od 8. června do 8. července",
+      "amount": "744,440",
+      "label": "běžci po celém světě"
+    },
+    "intro": {
+      "label01": "Každou minutu se do oceánů dostanou plasty, které by naplnily nákladní auto.",
+      "label02": "To musí přestat.",
+      "label03": "Přidej se k našemu hnutí!"
+    },
+    "cta": {
+      "label01": "Každý kilometr se počítá.",
+      "label02": "Zjisti, jak se můžeš připojit"
+    },
+    "end": {
+      "label01": "Lidé po celém světě spojují síly a přetvářejí Run for the Oceans v obrovsky úspěšné hnutí.<br />Každému, kdo přispěl zaběhnutými kilometry, pomohl s kampaní, nebo jinak přispěl k programu Parley Ocean Plastic.",
+      "label02": "Děkujeme!"
+    }
+  },
+  "preLoader": {
+    "title": "Run for the Oceans",
+    "subtitle": "načítání"
+  },
+  "app": {
+    "name": "Run for the Oceans",
+    "slug": "parley-ss18-rfto"
+  }
+}

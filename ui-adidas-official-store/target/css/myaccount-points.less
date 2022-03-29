@@ -1,0 +1,155 @@
+@charset "UTF-8";
+.center-banner{
+	margin:20px 0;
+	img{
+		width:100%;
+	}
+
+}
+.myaccount-right-content{
+	.myaccount-right-tit{
+		h3{
+			height: 40px;
+		}
+	}
+	/*空页面*/
+	&.my-points-empty{
+		
+		.points-item-empty{
+			padding:20px 0  0;
+			p{
+				font-size: 14px;
+				color: #000;
+				line-height: 14px;
+				margin-bottom: 10px;
+				a{
+					text-decoration: underline;
+				}
+			}
+			.btn-blue{
+				width: 230px;
+				height: 42px;
+				line-height: 42px;
+				margin-top: 10px;
+			}
+		}
+	}
+	.points-item-box{
+		.points-item-tit{
+			font-size: 14px;
+			color: #000000;
+			line-height:55px;
+			span{
+				font-weight:700;
+			}
+
+		}
+		.points-item-cont{
+			
+			.points-item-cont-tb{
+				border-top: 1px dotted #C8CBCC;
+				width: 100%;
+
+				tr{
+					font-size: 14px;
+					color: #000000;
+					
+					text-align: center;
+					border-bottom: 1px dotted #C8CBCC;
+					th{
+						font-weight: 700;
+						background: #F9F9F9;
+						line-height:42px;
+					}
+					td{
+						line-height:44px;
+					}
+				}
+
+			}
+		}
+		.myaccount-paging{
+			margin-bottom:26px;
+		}
+
+		.points-item-tips{
+			font-size: 14px;
+			margin-bottom: 8px;
+			a{
+				text-decoration: underline;
+			}
+		}
+
+
+	}
+
+
+
+}
+
+
+@media (max-width: 1024px){
+	.center-banner{
+		margin:0;
+		img{
+			width:100%;
+		}
+
+	}
+    .myaccount-right-content{
+    	.myaccount-right-tit{
+			h3{
+				height: auto;
+			}
+		}
+		.points-item-box{
+			.points-item-tit{
+				font-size: 12px;
+				padding:0 20px;
+				line-height:1;
+				p{
+					margin:10px 0 20px;
+					a{
+						text-decoration: underline;
+					}
+				}
+			}
+			.points-item-cont{
+				.points-item-cont-tb{
+
+					tr{
+
+						th{
+							line-height:37px;
+							font-size: 12px;
+						}
+						td{
+							line-height:45px;
+							font-size: 12px;
+						}
+					}
+
+				}
+			}
+		}
+    	/*空页面*/
+		&.my-points-empty{		
+			.points-item-empty{
+				padding: 0 20px;
+				p{
+					font-size: 12px;
+					padding: 0;
+					a{
+						font-size: 12px;
+					}
+				}
+				.btn-blue{
+					width: 100%;
+					font-size:16px;
+					margin: 20px 0 16px;
+				}
+			}
+		}
+
+    }
+}

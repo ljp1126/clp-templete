@@ -1,0 +1,1192 @@
+@charset "UTF-8";
+/* input placeholder文字颜色 */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #000;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #000;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #000;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #000;
+}
+/* end */
+.article-faq-width {
+  width: 100%;
+  max-width: 1920px;
+}
+.article-faq-width .search-page-content .ask-help-search-container {
+  background: linear-gradient(to top left, #c1c0c3, #e7e5e2);
+  position: relative;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search {
+  max-width: 950px;
+  margin: 0 auto;
+  max-height: 282px;
+  padding: 40px 0 51px;
+  position: relative;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-container {
+  margin: 0 0 31px;
+  width: 450px;
+  height: 120px;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-container .title-48 {
+  font-size: 46px;
+  line-height: 60px;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-container .title-48 span {
+  display: block;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-container:before {
+  background-image: url(../../images/faq/seach_bg.png);
+  content: '';
+  width: 490px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  margin-right: -475px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-container + .info {
+  font-size: 16px;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin-top: -30px;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container {
+  width: 950px;
+  margin-bottom: 51px;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .btn {
+  background: transparent;
+  padding: 0;
+  border: none;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 100px 0 0;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .btn input {
+  padding-right: 10px;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .btn input:focus {
+  border: 1px solid #C8CBCC;
+  border-bottom: 1px solid #C8CBCC;
+  margin-top: 0;
+  padding-top: 0px;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .btn a {
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 100px;
+  cursor: pointer;
+  border: 0;
+  height: 40px;
+  line-height: 40px;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .btn a.btn-blue {
+  background: #0287CD;
+  min-width: 100px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 16px;
+  z-index: 1;
+  padding: 0 20px 0 4px;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .btn a.btn-blue span:after {
+  right: -20px;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .btn:hover {
+  background-color: transparent;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .sub-menu {
+  background: #FFFFFF;
+  border: 1px solid #C8CBCC;
+  border-top: none;
+  border-radius: 0;
+  padding: 0;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .sub-menu .viewport {
+  max-height: 306px;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .sub-menu .viewport .overview ul li {
+  border-bottom: 1px solid #C8CBCC;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .sub-menu .viewport .overview ul li:last-child {
+  border: none;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .sub-menu .viewport .overview ul li a {
+  color: #000;
+  font-size: 14px;
+  padding: 13px 18px 13px 10px;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .sub-menu .viewport .overview ul li a p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .sub-menu .viewport .overview ul li:hover {
+  background: #F9F9F9;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .sub-menu .scrollbar {
+  /*width: 0;*/
+}
+.article-faq-width .search-page-content .help-container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.article-faq-width .search-page-content .help-categories-content {
+  margin-top: 30px;
+}
+.article-faq-width .search-page-content .help-categories-content h2 {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.article-faq-width .search-page-content .help-categories-content .contentasset {
+  padding-bottom: 35px;
+  margin-bottom: 44px;
+  border-bottom: 1px dotted #C8CBCC;
+}
+.article-faq-width .search-page-content .help-categories-content .contentasset > li {
+  width: 288px;
+  display: block;
+  float: left;
+}
+.article-faq-width .search-page-content .help-categories-content .contentasset > li.questions1 {
+  margin-right: 186px;
+}
+.article-faq-width .search-page-content .help-categories-content .contentasset > li.questions1 ul li {
+  display: block;
+}
+.article-faq-width .search-page-content .help-categories-content .contentasset > li.questions1 ul li a {
+  font-size: 18px;
+  line-height: 38px;
+  color: #0087D3;
+  display: block;
+}
+.article-faq-width .search-page-content .help-categories-content .contentasset > li.questions2 ul li {
+  display: block;
+}
+.article-faq-width .search-page-content .help-categories-content .contentasset > li.questions2 ul li a {
+  font-size: 18px;
+  line-height: 38px;
+  color: #0087D3;
+  display: block;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav h2 {
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 37px;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav {
+  max-height: 384px;
+  background: #F9F9F9;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content {
+  position: relative;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items {
+  width: 38%;
+  height: 46px;
+  line-height: 46px;
+  background: #fff;
+  border-bottom: 1px solid #C8CBCC;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label {
+  font-size: 18px;
+  padding: 0 10px;
+  height: 46px;
+  line-height: 46px;
+  width: 100%;
+  display: inline-block;
+  cursor: pointer;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .iconleft-box {
+  width: 30px;
+  height: 30px;
+  display: block;
+  vertical-align: middle;
+  float: left;
+  margin-right: 15px;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label a {
+  display: inline-block;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .iconright-box {
+  display: block;
+  float: right;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label i {
+  vertical-align: middle;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .icon-delivery {
+  width: 27px;
+  height: 17px;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .icon-refund {
+  width: 29px;
+  height: 25px;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .icon-payment {
+  width: 26px;
+  height: 21px;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .icon-size {
+  width: 30px;
+  height: 25px;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .icon-newsletter {
+  width: 24px;
+  height: 26px;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .icon-sale {
+  width: 28px;
+  height: 21px;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .icon-products {
+  width: 30px;
+  height: 14px;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .icon-company {
+  width: 28px;
+  height: 21px;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .icon-arrow {
+  width: 8px;
+  height: 15px;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .icon-miadidas,
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .icon-Print {
+  width: 26px;
+  height: 32px;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items .help-tab {
+  display: none;
+  padding-top: 6px;
+  position: absolute;
+  top: 0;
+  left: 38%;
+  width: 60%;
+  margin-left: 10px;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items .help-tab li {
+  line-height: 40px;
+  height: 40px;
+  font-size: 14px;
+  padding: 10px 0;
+  line-height: 20px;
+  height: auto;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items .help-tab li a {
+  display: block;
+  color: #0087D3;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items .help-tab.help-tab-show {
+  display: block;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items.is-active {
+  background: #F9F9F9;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items:hover {
+  background: #F9F9F9;
+}
+.article-faq-width .search-page-content .help-myaccount {
+  border-top: 1px solid #e3e5e5;
+  border-bottom: 1px solid #e3e5e5;
+  position: relative;
+  margin-bottom: 50px;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-left {
+  padding: 22px 0;
+  float: left;
+  width: 50%;
+  padding-right: 23px;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-left .contentasset h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 24px;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-left .contentasset .help-myaccount-text {
+  font-size: 12px;
+  line-height: 22px;
+  margin-bottom: 22px;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-left .contentasset .help-myaccount-buttons {
+  width: 50%;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-left .contentasset .help-myaccount-buttons a {
+  font-size: 16px;
+  display: block;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-left .contentasset .help-myaccount-buttons a:nth-child(1) {
+  margin-bottom: 20px;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right {
+  padding: 22px 0;
+  float: right;
+  width: 50%;
+  background: #F9F9F9;
+  padding-left: 19px;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .contentasset h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .contentasset h3 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-support {
+  padding: 17px 0;
+  border-top: 1px dotted #e3e5e5;
+  border-bottom: 1px dotted #e3e5e5;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-support p {
+  font-size: 16px;
+  line-height: 16px;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-support p.help-myaccount-support-tit {
+  margin-bottom: 14px;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-support p.help-myaccount-support-tiem {
+  font-size: 14px;
+  color: #888888;
+  line-height: 14px;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text {
+  padding: 20px 0;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text div {
+  height: 50px;
+  line-height: auto;
+  margin-bottom: 0;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text div span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text div span i {
+  width: 50px;
+  height: 50px;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text div span.help-myaccount-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text div span.help-myaccount-cont {
+  vertical-align: middle;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text div span.help-myaccount-cont a {
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text div span.help-myaccount-cont a:hover {
+  color: #000;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text div:nth-child(1) {
+  margin-bottom: 10px;
+}
+.article-faq-width .search-page-content .breadcrumb {
+  margin: 22px 0 41px;
+}
+.article-faq-width .search-page-content .breadcrumb .list-inline li {
+  height: 14px;
+  line-height: 14px;
+}
+.article-faq-width .search-page-content .breadcrumb .list-inline li a {
+  font-size: 14px;
+  line-height: 14px;
+  height: 14px;
+}
+.article-faq-width .search-page-content .breadcrumb .list-inline li a .icon-reture {
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  vertical-align: text-bottom;
+}
+.article-faq-width .search-page-content .breadcrumb .list-inline li a.reture-text {
+  font-weight: bold;
+}
+.article-faq-width .search-page-content .breadcrumb .list-inline li.slash {
+  margin: 0 5px;
+}
+.article-faq-width .search-page-content .breadcrumb .list-inline li.vertical-line {
+  margin: 0 12px;
+}
+.article-faq-width .search-page-content .breadcrumb .list-inline li.hele-core {
+  color: #888888;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset h2 {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .contentasset-cont {
+  border-top: 1px solid #C8CBCC;
+  padding: 20px 0 37px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .contentasset-cont p {
+  font-size: 12px;
+  line-height: 22px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset.border-bot-none {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .mb-40 {
+  margin-bottom: 40px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .pb-0 {
+  padding-bottom: 0!important;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .contentasset-box li {
+  font-size: 12px;
+  line-height: 22px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .table-warrenty {
+  background: #FFFFFF;
+  border: 1px solid #C8CBCC;
+  border-radius: 2px;
+  vertical-align: middle !important;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .table-warrenty thead {
+  background: #555555;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .table-warrenty thead th {
+  width: 175px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  font-size: 14px;
+  display: table-cell;
+  color: #fff;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .table-warrenty td {
+  width: 175px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  text-align: center;
+  display: table-cell;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .table-warrenty.express-table-width {
+  width: 525px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .service-cont {
+  margin-top: 25px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .service-cont p {
+  font-size: 12px;
+  line-height: 22px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .service-cont .contentasset-cont-box {
+  padding-bottom: 40px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .service-cont .contentasset-cont-box li {
+  font-size: 12px;
+  line-height: 22px;
+  position: relative;
+  padding-left: 12px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .service-cont .contentasset-cont-box li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #404040;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .express-charges-table-con-width {
+  width: 100%;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .express-charges-table-con-width .table-warrenty .col-1 {
+  width: 176px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .express-charges-table-con-width .table-warrenty .col-2 {
+  width: 216px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .express-charges-table-con-width .table-warrenty .col-3 {
+  width: 176px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .express-charges-table-con-width .table-warrenty .col-4 {
+  width: 229px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .express-charges-table-con-width .table-warrenty .col-5 {
+  width: 145px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .express-charges-table-con-width .table-warrenty td {
+  height: auto;
+  padding: 8px 11px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .express-charges-table-con-width .table-warrenty td span {
+  display: block;
+  color: #C53622;
+  padding: 0 6px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset .express-charges-table-con-width .table-warrenty td span.cor-0 {
+  color: #000;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset.return-goods-cont .contentasset-cont {
+  padding: 20px 0 20px;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset.return-goods-cont .reture-title {
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.article-faq-width .search-page-content .contentasset-container .contentasset.return-goods-cont .reture-pro-cont {
+  width: 660px;
+  height: 421px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1023px) {
+  .article-faq-width {
+    width: 100%;
+  }
+  .article-faq-width .search-page-content .ask-help-search-container {
+    background: linear-gradient(to top left, #c1c0c3, #e7e5e2);
+    position: relative;
+  }
+  .article-faq-width .search-page-content .ask-help-search-container .ask-help-search {
+    max-width: 100%;
+    margin: 0 auto;
+    max-height: 188px;
+    padding: 20px;
+  }
+  .article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-container {
+    padding: 0;
+    margin: 0 0 10px;
+    width: 100%;
+    height: 24px;
+  }
+  .article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-container .title-48 {
+    font-size: 22px;
+    line-height: 24px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  .article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-container .title-48 span {
+    display: inline-block;
+  }
+  .article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-container:before {
+    content: '';
+    width: 52%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    margin-right: 0;
+    background-position: left bottom;
+  }
+  .article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-container + .info {
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    transform: none;
+  }
+  .article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container {
+    width: 100%;
+    margin-bottom: 52px;
+  }
+  .article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .btn {
+    padding: 0 120px 0 0;
+  }
+  .article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .btn a {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .btn a.btn-blue {
+    min-width: 120px;
+    font-size: 14px;
+    padding: 0 25px 0 4px;
+  }
+  .article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .btn a.btn-blue span:after {
+    top: 1px;
+    right: -25px;
+  }
+  .article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .sub-menu .viewport .overview ul li a p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .article-faq-width .search-page-content .help-container {
+    width: 100%;
+    padding: 0 20px;
+    max-width: 100%;
+  }
+  .article-faq-width .search-page-content .help-categories-content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .article-faq-width .search-page-content .help-categories-content .contentasset {
+    padding-bottom: 0;
+    margin-bottom: 30px;
+    border-bottom: 1px dotted #C8CBCC;
+  }
+  .article-faq-width .search-page-content .help-categories-content .contentasset > li {
+    width: 100%;
+    display: block;
+    float: left;
+    padding-left: 20px;
+  }
+  .article-faq-width .search-page-content .help-categories-content .contentasset > li.questions1 {
+    margin-right: 0;
+  }
+  .article-faq-width .search-page-content .help-categories-content .contentasset > li.questions1 ul li a {
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 30px;
+  }
+  .article-faq-width .search-page-content .help-categories-content .contentasset > li.questions2 ul li a {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 30px;
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav h2 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav {
+    border: 1px solid #C8CBCC;
+    max-height: 100%;
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content {
+    position: relative;
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items {
+    width: 100%;
+    height: auto;
+    line-height: auto;
+    background: #fff;
+    border-bottom: 1px solid #C8CBCC;
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items:last-child {
+    border-bottom: none;
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label {
+    font-size: 18px;
+    padding: 0 20px;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .icon-arrow {
+    transform: rotate(90deg);
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .icon-arrow.icon-arrow-up {
+    transform: rotate(270deg);
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .iconleft-box {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 0;
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label a:hover {
+    text-decoration: none;
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items label .iconright-box {
+    float: right;
+    width: 8px;
+    padding: 0 8px;
+    height: 40px;
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items .help-tab {
+    display: none;
+    padding-top: 0;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    background: #F7F7F7;
+    padding: 0 20px 0 27px;
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items .help-tab li {
+    /*line-height: 40px;
+										height: 40px;
+										font-size: 14px;*/
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items .help-tab li a {
+    display: block;
+    color: #0287CD;
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items .help-tab.help-tab-show {
+    display: block;
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items.is-active {
+    background: #F9F9F9;
+    border-bottom: none;
+  }
+  .article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items:hover {
+    background: #F9F9F9;
+  }
+  .article-faq-width .search-page-content .help-myaccount {
+    border-top: none;
+    border-bottom: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-left {
+    border-top: 1px dotted #e3e5e5;
+    margin: 0 20px;
+    padding: 30px 10px 30px 0px;
+    width: 90%;
+    height: 100%;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-left .contentasset h2 {
+    line-height: 24px;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-left .contentasset .help-myaccount-text {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 14px;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-left .contentasset .help-myaccount-text p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-left .contentasset .help-myaccount-buttons {
+    width: 100%;
+    max-width: 100%;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-left .contentasset .help-myaccount-buttons a {
+    display: block;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-left .contentasset .help-myaccount-buttons a:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right {
+    margin: 0 ;
+    padding: 30px 0;
+    float: right;
+    width: 100%;
+    background: #F9F9F9;
+    height: 100%;
+    padding-left: 20px;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .contentasset {
+    text-align: center;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .contentasset h2 {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 20px;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .contentasset h3 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text {
+    padding: 0;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text div {
+    height: 60px;
+    line-height: auto;
+    margin-bottom: 0;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text div span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text div span i {
+    width: 50px;
+    height: 50px;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text div span.help-myaccount-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text div span.help-myaccount-cont {
+    vertical-align: middle;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text div span.help-myaccount-cont a {
+    height: 26px;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 0px;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text div span.help-myaccount-cont p {
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-right .customer-care-first .help-myaccount-text div:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  .article-faq-width .search-page-content .breadcrumb {
+    margin: 30px 0 30px;
+  }
+  .article-faq-width .search-page-content .breadcrumb .list-inline li a .icon-reture {
+    width: 15px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset h2 {
+    margin-bottom: 30px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .contentasset-cont {
+    border-top: 1px dotted #C8CBCC;
+    padding: 20px 0 20px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .contentasset-cont p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset.border-bot-none h2 {
+    text-align: left;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .scroller-wrap {
+    margin-right: 0px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .scroller-wrap .iScrollHorizontalScrollbar .iScrollIndicator {
+    background: #cccccc !important;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .contentasset-box li {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .table-warrenty {
+    cursor: e-resize;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .table-warrenty thead {
+    background: #555555;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .table-warrenty thead th {
+    width: 167px;
+    min-width: 167px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .table-warrenty td {
+    width: 167px;
+    min-width: 167px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .table-warrenty.express-table-width {
+    width: 335px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .express-table {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 6px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .express-table.express-table-con-width {
+    width: 335px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .service-cont p {
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .service-cont h5 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .service-cont .num-pos {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 3px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .service-cont .num-pos span {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .service-cont .contentasset-cont-box {
+    padding-bottom: 20px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .service-cont .contentasset-cont-box li {
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 14px;
+    position: relative;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .service-cont .contentasset-cont-box li span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .service-cont .contentasset-cont-box li a {
+    text-decoration: underline;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset h2.lh-32 {
+    line-height: 32px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-table-mob-continer {
+    position: relative;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-table-mob-continer .express-table-title {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-table-mob-continer .express-table-title table {
+    background: #555555;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-table-mob-continer .express-table-title table td {
+    color: #fff;
+    font-size: 12px;
+    line-height: 24px;
+    border: 1px solid #000000;
+    padding: 5px 7px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-table-mob-continer .express-table-mob-cont {
+    padding-left: 100px;
+    width: 100%;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-table-mob-continer .express-table-mob-cont .table-con-width-mob {
+    height: auto;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-table-mob-continer .express-table-mob-cont .table-con-width-mob table {
+    width: 1041px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-table-mob-continer .express-table-mob-cont .table-con-width-mob table td {
+    border: 1px solid #000;
+    text-align: center;
+    white-space: normal;
+    word-break: break-all;
+    padding: 5px 7px;
+    min-width: 65px;
+    font-size: 12px;
+    line-height: 24px;
+    vertical-align: middle !important;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-table-mob-continer .express-table-mob-cont .table-con-width-mob table td span {
+    display: block;
+    color: #C53622;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-table-mob-continer .express-table-mob-cont .table-con-width-mob table td span.cor-0 {
+    color: #000;
+    display: inline-block;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset.return-goods-cont .contentasset-cont {
+    padding: 20px 0 30px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset.return-goods-cont .reture-title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset.return-goods-cont .reture-title.mb-20 {
+    margin-bottom: 20px;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset.return-goods-cont .reture-pro-cont {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset.return-goods-cont .reture-pro-cont .img-enlarge {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    right: 0;
+    top: -45px;
+    z-index: 100;
+  }
+  .article-faq-width .search-page-content .contentasset-container .contentasset.return-goods-cont .reture-pro-cont .img-enlarge i {
+    width: 37px;
+    height: 37px;
+  }
+  .reture-goods .dialog-scroll-wrap .dialog-scroll-container .dialog-scroll {
+    width: 100%;
+  }
+  .reture-goods .dialog-scroll-wrap .dialog-scroll-container .dialog-scroll > div .dialog {
+    min-width: 320px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .reture-goods .dialog-scroll-wrap .dialog-scroll-container .dialog-scroll > div .dialog .dialog-container {
+    padding: 54px 0 0px;
+    border-radius: 0;
+  }
+  .reture-goods .dialog-scroll-wrap .dialog-scroll-container .dialog-scroll > div .dialog .dialog-container .reture-goods-cont .notice-font {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 18px;
+    line-height: 54px;
+  }
+  .reture-goods .dialog-scroll-wrap .dialog-scroll-container .dialog-scroll > div .dialog .dialog-container .reture-goods-cont .reture-goods-scroller-container {
+    width: 100%;
+    border-top: 1px solid #C8CBCC;
+    padding-top: 20px;
+  }
+  .reture-goods .dialog-scroll-wrap .dialog-scroll-container .dialog-scroll > div .dialog .dialog-container .reture-goods-cont .reture-goods-scroller-container .reture-goods-scroller-cont {
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 20px 0;
+  }
+  .reture-goods .dialog-scroll-wrap .dialog-scroll-container .dialog-scroll > div .dialog .dialog-container .reture-goods-cont .reture-goods-scroller-container .reture-goods-scroller-cont > div {
+    padding-left: 20px;
+    width: 400px;
+  }
+  .reture-goods .dialog-scroll-wrap .dialog-scroll-container .dialog-scroll > div .dialog .dialog-container .reture-goods-cont .reture-goods-scroller-container .reture-goods-scroller-cont > div > div {
+    width: 660px;
+  }
+  .reture-goods .dialog-scroll-wrap .dialog-scroll-container .dialog-scroll > div .dialog .dialog-container .reture-goods-cont .reture-goods-scroller-container .reture-goods-scroller-cont > div > div img {
+    width: 660px;
+    max-width: none;
+  }
+  .reture-goods .dialog-scroll-wrap .dialog-scroll-container .dialog-scroll > div .dialog .dialog-container .reture-goods-cont .reture-goods-scroller-container .reture-goods-scroller-cont .scroller-wrap {
+    margin-right: 0px;
+  }
+  .reture-goods .dialog-scroll-wrap .dialog-scroll-container .dialog-scroll > div .dialog .dialog-container .reture-goods-cont .reture-goods-scroller-container .reture-goods-scroller-cont .scroller-wrap .iScrollHorizontalScrollbar {
+    bottom: -20px;
+    height: 10px !important;
+  }
+  .reture-goods .dialog-scroll-wrap .dialog-scroll-container .dialog-scroll > div .dialog .dialog-container .reture-goods-cont .reture-goods-scroller-container .reture-goods-scroller-cont .scroller-wrap .iScrollHorizontalScrollbar .iScrollIndicator {
+    background: #cccccc !important;
+    border-radius: 5px!important;
+  }
+  .reture-goods .dialog-scroll-wrap .dialog-scroll-container .dialog-scroll > div .dialog .dialog-close {
+    width: 18px;
+    height: 18px;
+    top: 16px;
+    right: 18px;
+    font-size: 0;
+  }
+}
+@media (max-width: 360px) {
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .express-table.express-table-con-width,
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .table-warrenty.express-table-width {
+    width: 320px;
+  }
+}
+@media (max-width: 320px) {
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .express-table.express-table-con-width,
+  .article-faq-width .search-page-content .contentasset-container .contentasset .express-cont .table-warrenty.express-table-width {
+    width: 280px;
+  }
+  .article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-container {
+    padding: 0;
+  }
+  .article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-container .title-48 {
+    font-size: 20px;
+  }
+  .article-faq-width .search-page-content .help-categories-content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .article-faq-width .search-page-content .help-categories-content .contentasset {
+    padding-bottom: 0;
+    margin-bottom: 30px;
+    border-bottom: 1px dotted #C8CBCC;
+  }
+  .article-faq-width .search-page-content .help-categories-content .contentasset > li {
+    width: 100%;
+    display: block;
+    float: left;
+    padding-left: 20px;
+  }
+  .article-faq-width .search-page-content .help-categories-content .contentasset > li.questions1 {
+    margin-right: 0;
+  }
+  .article-faq-width .search-page-content .help-categories-content .contentasset > li.questions1 ul li a {
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 30px;
+  }
+  .article-faq-width .search-page-content .help-categories-content .contentasset > li.questions2 ul li a {
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 30px;
+  }
+  .article-faq-width .search-page-content .help-categories-content .contentasset .express-cont .table-warrenty .express-table.express-table-con-width {
+    width: 280px;
+  }
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-left .contentasset .help-myaccount-buttons {
+  width: 55%;
+}
+.article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-left .contentasset .help-myaccount-buttons a {
+  display: inline-flex;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .btn {
+  padding: 0 120px 0 0;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .btn a.btn-blue {
+  display: inline-flex;
+  right: 2px;
+  min-width: 120px;
+  padding: 0;
+}
+.article-faq-width .search-page-content .ask-help-search-container .ask-help-search .help-search-container .form-group div.dropdown .sub-menu .viewport .overview ul li a {
+  padding: 0;
+  padding-left: 10px;
+}
+@media (max-width: 1023px) {
+  .article-faq-width .search-page-content .help-myaccount .help-myaccount-box .help-myaccount-left .contentasset .help-myaccount-buttons {
+    width: 100%;
+  }
+}
+.article-faq-width .search-page-content .help-categories-content .contentasset > li.questions1 ul li a {
+  color: #000;
+  text-decoration: underline;
+}
+.article-faq-width .search-page-content .help-categories-content .contentasset > li.questions1 ul li a:hover {
+  color: #000;
+}
+.article-faq-width .search-page-content .help-categories-content .contentasset > li.questions2 ul li a {
+  color: #000;
+  text-decoration: underline;
+}
+.article-faq-width .search-page-content .help-categories-content .contentasset > li.questions2 ul li a:hover {
+  color: #000;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items .help-tab li a {
+  color: #000;
+  text-decoration: underline;
+}
+.article-faq-width .search-page-content .help-categories-content .help-categories-nav .help-nav .help-nav-content .help-nav-items .help-tab li a:hover {
+  color: #000;
+}

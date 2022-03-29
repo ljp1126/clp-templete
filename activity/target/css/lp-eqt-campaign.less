@@ -1,0 +1,53 @@
+.a-link{
+	position: relative;
+	a{
+		position:absolute;
+
+	}
+	&.a-link1{
+		a{
+			top: 51.4%;
+			left: 8.8%;
+		}
+	}
+	&.a-link2{
+		a{
+			top: 46.6%;
+			left: 63.1%;
+		}
+	}
+	&.a-link3{
+		a{
+			top: 46.6%;
+			left: 8.8%;
+		}
+	}
+	&.a-link4{
+		a{
+			top: 50.5%;
+			left: 63.1%;
+		}
+	}
+}
+@media (max-width:1024px) {
+	.a-link{
+		.btn-black{
+			height:40px;
+			line-height: 40px;
+			font-size: 14px;
+		}
+		&.a-link1,&.a-link2,&.a-link4{
+			a{
+				top: 87.4%;
+				left: 13.2%;
+			}
+		}
+
+		&.a-link3{
+			a{
+				top: 81.4%;
+				left: 13.2%;
+			}
+		}
+	}
+}

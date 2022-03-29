@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+			<%include _includes/js.html %>
+</head>
+
+<body>
+	<div id="wrapper">
+		<!-- 头部 -->
+		<%include _includes/modules/header.html %>
+			<!-- 內容 -->
+
+			<section class="container">
+				<style>
+					.article {
+						position: relative;
+					}
+
+					.article img {
+						width: 100%;
+					}
+
+					.show-pc {
+						display: block;
+					}
+
+					.show-mob {
+						display: none;
+					}
+
+					.list-content {
+						width: 100%;
+						max-width: 1204px;
+						margin: auto;
+						color: #000;
+					}
+
+					.latest-stories-title {
+						font-size: 28px;
+						margin-bottom: 20px;
+					}
+
+					.latest-stories-container-clp {
+						/* display: grid;
+						grid-template-rows: auto;
+						grid-template-columns: repeat(3, 1fr) */
+						display: flex;
+						flex-wrap: wrap;
+					}
+
+					.latest-stories-container-clp .list {
+						width: 33.33%;
+					}
+
+					.latest-stories-container-clp .list img {
+						width: 96%;
+						margin: auto;
+						display: block;
+					}
+
+					.latest-stories-container-clp .list .item-info {
+						width: 96%;
+						margin: auto;
+						display: block;
+					}
+
+					.latest-stories-container-clp .list h5 {
+						font-size: 14px;
+						color: #000;
+						margin-bottom: 4px;
+						font-weight: bold;
+						margin: 15px 0 5px 0;
+					}
+
+					.latest-stories-container-clp .list .item-info p {
+						font-size: 12px;
+						color: #000;
+						margin-bottom: 40px;
+					}
+
+					.email-site {
+						position: relative;
+						padding-top: 46px;
+						padding-bottom: 26px;
+						background: #ecedef;
+						margin-top: 60px;
+					}
+
+					.email-sign .tit {
+						text-align: center;
+						font-size: 24px;
+						font-weight: bold;
+						color: #000000;
+						line-height: 24px;
+						margin-bottom: 30px;
+					}
+
+					.email-sign .login-box {
+						max-width: 600px;
+						margin: 0 auto 24px;
+						padding: 0 13.5px;
+					}
+
+					.email-sign .login-box .tips {
+						font-size: 12px;
+						font-weight: 400;
+						color: #888888;
+						line-height: 16px;
+						margin-top: 8px;
+					}
+
+					.email-sign .login-box .tips a {
+						color: #0286CD;
+						text-decoration: underline;
+					}
+
+					.form-input {
+						float: left;
+						width: 375px;
+						margin-right: 18px;
+					}
+
+					.form-input input {
+						width: 100%;
+						height: 42px;
+					}
+
+					.form-input .msg-block .msg-icon {
+						transition: all .2s ease;
+						display: block;
+						position: absolute;
+						right: 10px;
+						top: 12px;
+						cursor: pointer;
+					}
+
+					.gl-input__label {
+						font-size: 14px;
+						letter-spacing: 1px;
+						color: #888888;
+						position: absolute;
+						pointer-events: none;
+						text-transform: uppercase;
+						left: 11px;
+						top: 14px;
+						transition: all .2s ease;
+					}
+
+					.gl-input__label--hoisted {
+						font-size: 14px;
+						top: -8px;
+						left: 17px;
+						margin-top: 0;
+						padding: 2px 5px 1px;
+						background-color: #fff;
+					}
+
+					.subscribe-btn {
+						float: left;
+						width: 170px;
+					}
+
+					.subscribe-btn a {
+						width: 100%;
+						justify-content: center;
+						font-size: 16px;
+					}
+
+					.dialog-subscribte .dialog-scroll-container .dialog {
+						width: 483px;
+						padding: 54px 74px;
+					}
+
+					.dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box .tit {
+						font-size: 18px;
+						font-weight: bold;
+						color: #000000;
+						line-height: 18px;
+						margin-bottom: 10px;
+					}
+
+					.dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box p {
+						font-size: 14px;
+						color: #000;
+						font-weight: 400;
+						margin: 0;
+						margin-bottom: 12px;
+					}
+
+					.dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box p.email-address {
+						font-weight: 500;
+						margin-bottom: 40px;
+					}
+
+					.dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box .btn {
+						min-width: 135px;
+						width: 135px;
+						justify-content: center;
+						font-size: 16px;
+					}
+
+					.block2 {
+						margin-top: 40px;
+					}
+
+					@media (max-width:1024px) {
+						.show-pc {
+							display: none;
+						}
+
+						.show-mob {
+							display: block;
+						}
+
+						.latest-stories-title {
+							padding-left: 2%;
+							padding-top: 20px;
+						}
+
+						.latest-stories-container-clp .list {
+							width: 100%;
+						}
+
+						.latest-stories-container-clp .list h5 {
+							margin: 9px 0 5px 0;
+						}
+
+						.latest-stories-container-clp .list .item-info p {
+							margin-bottom: 30px;
+						}
+
+						.email-site {
+							margin-bottom: 25px;
+							padding: 0 20px;
+						}
+
+						.container {
+							padding-bottom: 0;
+						}
+
+						.center-wrap {
+							width: 55%;
+
+						}
+
+						.center-wrap h2 {
+							font-size: 24px;
+						}
+
+						.center-wrap p {
+							font-size: 18px;
+
+						}
+
+						.email-sign .tit {
+							text-align: center;
+							font-size: 16px;
+							line-height: 14px;
+							font-weight: bold;
+							padding: 50px 0 0 0;
+						}
+
+						.email-sign .login-box {
+							max-width: 100%;
+							padding: 0px;
+						}
+
+						.email-sign .login-box .tips {
+							margin-top: 11px;
+						}
+
+						.form-input {
+							float: none;
+							width: 100%;
+							margin-right: 0;
+						}
+
+						.form-input input {
+							height: 40px;
+						}
+
+						.form-input .msg-block .msg-icon {
+							right: 10px;
+							top: 12px;
+						}
+
+						.gl-input__label {
+							font-size: 14px;
+						}
+
+						.gl-input__label--hoisted {
+							font-size: 14px;
+						}
+
+						.subscribe-btn {
+							margin-top: 20px;
+							float: none;
+							width: 140px;
+							padding-bottom: 50px;
+						}
+
+						.subscribe-btn a {
+							width: 100%;
+							justify-content: center;
+						}
+
+						.dialog-subscribte .dialog-scroll-container .dialog {
+							width: 335px;
+							padding: 30px 18px 18px;
+							margin: 0;
+						}
+
+						.dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box .tit {
+							margin-bottom: 12px;
+						}
+
+						.dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box p {
+							font-size: 12px;
+							margin-bottom: 12px;
+						}
+
+						.dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box p.email-address {
+							font-weight: 700;
+							margin-bottom: 40px;
+						}
+					}
+
+					@media screen and (max-width: 350px) {
+						.dialog-subscribte .dialog-scroll-container .dialog {
+							width: 300px;
+							margin: 0;
+						}
+					}
+				</style>
+				<article class="article">
+					<img lazysrc="https://img.adidas.com.hk/resources/2021/LATEST_STORIES/pc_01.jpg"
+						src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/LATEST_STORIES/pc_01.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/LATEST_STORIES/mob_01.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/LATEST_STORIES/mob_01.jpg&quot;}
+					}">
+				</article>
+				<article class="list-content">
+					<div class="latest-stories-title">
+						推薦內容
+					</div>
+					<div class="latest-stories-container-clp">
+						<div class="list">
+							<a href="https://www.adidas.com.hk/campaign_tips_to_run_better">
+								<img src="https://img.adidas.com.hk/resources/2021/LATEST_STORIES/img7.jpg"
+									data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/LATEST_STORIES/img7.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/LATEST_STORIES/img7.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/LATEST_STORIES/img7.jpg&quot;}}">
+								<div class="item-info center">
+									<h5>提升你的跑步表現</h5>
+									<p>5個提升跑步表現的小秘訣</p>
+								</div>
+							</a>
+						</div>
+						<div class="list">
+							<a href="https://www.adidas.com.hk/campaign_cracking_the_secret_of_speed_adidas_adizero">
+								<img src="https://img.adidas.com.hk/resources/2021/LATEST_STORIES/img6.jpg"
+									data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/LATEST_STORIES/img6.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/LATEST_STORIES/img6.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/LATEST_STORIES/img6.jpg&quot;}}">
+								<div class="item-info center">
+									<h5>破解ADIZERO開啟速度之門的秘密</h5>
+									<p>帶大家窺探開啟速度之門之秘密！</p>
+								</div>
+							</a>
+						</div>
+						<div class="list">
+							<a href="https://www.adidas.com.hk/campaign_chooserunningshoe">
+								<img src="https://img.adidas.com.hk/resources/2021/7/21/img_5.png"
+									data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_5.png&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_5.png&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_5.png&quot;}}">
+								<div class="item-info center">
+									<h5>新手如何選擇跑鞋?</h5>
+									<p>小測驗洞悉哪類型跑鞋最適合你</p>
+								</div>
+							</a>
+						</div>
+						<div class="list">
+							<a href="https://www.adidas.com.hk/campaign_seesportrise">
+								<img src="https://img.adidas.com.hk/resources/2021/7/21/img_1.jpg"
+									data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_1.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_1.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_1.jpg&quot;}}">
+								<div class="item-info center">
+									<h5>炎夏訓練秘笈</h5>
+									<p>4大貼士突破表現</p>
+								</div>
+							</a>
+						</div>
+						<div class="list">
+							<a href="https://www.adidas.com.hk/Football_Boots">
+								<img src="https://img.adidas.com.hk/resources/2021/7/21/img_2.jpg"
+									data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_2.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_2.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_2.jpg&quot;}}">
+								<div class="item-info center">
+									<h5>足球鞋，你知道怎麼選嗎?</h5>
+									<p>了解如何尋找一對合適自己的足球鞋</p>
+								</div>
+							</a>
+						</div>
+						<div class="list">
+							<a href="https://www.adidas.com.hk/Fastest_own_time"> <img
+									src="https://img.adidas.com.hk/resources/2021/7/21/img_3.jpg"
+									data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_3.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_3.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_3.jpg&quot;}}">
+								<div class="item-info center">
+									<h5>創造你的Fastest Own Time</h5>
+									<p>越野跑路線推薦及裝備推介</p>
+								</div>
+							</a>
+						</div>
+						<div class="list">
+							<a href="https://www.adidas.com.hk/sport_bra_finder">
+								<img src="https://img.adidas.com.hk/resources/2021/7/21/img_4.jpg"
+									data-image="{
+	&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_4.jpg&quot;},
+	&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_4.jpg&quot;},
+	&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_4.jpg&quot;}}">
+								<div class="item-info center">
+									<h5>尋找你的貼心感覺</h5>
+									<p>查找最貼合你及你訓練的運動胸圍</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</article>
+				<article class="list-content block2">
+					<div class="latest-stories-title">
+						最新資訊
+					</div>
+					<div class="latest-stories-container-clp">
+						<div class="list">
+							<a href="https://www.adidas.com.hk/campaign_tips_to_run_better">
+								<img src="https://img.adidas.com.hk/resources/2021/LATEST_STORIES/img7.jpg"
+									data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/LATEST_STORIES/img7.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/LATEST_STORIES/img7.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/LATEST_STORIES/img7.jpg&quot;}}">
+								<div class="item-info center">
+									<h5>提升你的跑步表現</h5>
+									<p>5個提升跑步表現的小秘訣</p>
+								</div>
+							</a>
+						</div>
+						<div class="list">
+							<a href="https://www.adidas.com.hk/campaign_cracking_the_secret_of_speed_adidas_adizero">
+								<img src="https://img.adidas.com.hk/resources/2021/LATEST_STORIES/img6.jpg"
+									data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/LATEST_STORIES/img6.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/LATEST_STORIES/img6.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/LATEST_STORIES/img6.jpg&quot;}}">
+								<div class="item-info center">
+									<h5>破解ADIZERO開啟速度之門的秘密</h5>
+									<p>帶大家窺探開啟速度之門之秘密！</p>
+								</div>
+							</a>
+						</div>
+						<div class="list">
+							<a href="https://www.adidas.com.hk/campaign_chooserunningshoe">
+								<img src="https://img.adidas.com.hk/resources/2021/7/21/img_5.png"
+									data-image="{&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_5.png&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_5.png&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/7/21/img_5.png&quot;}}">
+								<div class="item-info center">
+									<h5>新手如何選擇跑鞋?</h5>
+									<p>小測驗洞悉哪類型跑鞋最適合你</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</article>
+				<article class="email-site">
+					<div class="email-sign">
+						<h4 class="tit">訂閱優先獲取獨家更新</h4>
+						<div class="login-box">
+							<div class="float-clearfix">
+								<!-- 报错类名form-input加is-error  -->
+								<div class="form-input form-group-mail">
+									<input type="text" class="gl-input__field gl-input__field-account">
+									<label class="gl-input__label"> <span>電子郵箱</span> </label>
+									<div class="msg-block">
+										<i class="icon msg-icon"></i>
+										<span></span>
+									</div>
+								</div>
+								<p class="tips show-mob">確認訂閱代表你已閱讀及同意 adidas 的 <a
+										href="https://www.adidas.com.hk/private_policy">私隱政策</a></p>
+								<div class="subscribe-btn">
+									<!-- is-disabled is-error -->
+									<a class="btn btn-blue icon-a-font gl-cta gl-cta--primary gl-cta--primary-light"
+										href="javascript:void(0)">訂閱<span
+											class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+								</div>
+							</div>
+							<p class="tips show-pc">確認訂閱代表你已閱讀及同意 adidas 的 <a href="https://www.adidas.com.hk/private_policy">私隱政策</a>
+							</p>
+						</div>
+					</div>
+				</article>
+				<script id="subscribte-element" type="text/template">
+					<div class="dialog">
+							<div class="dialog-container">
+								<div class="subscribte-box">
+									<h5 class="tit">訂閱成功!</h5>
+									<p>我們會將最新發布產品消息電郵至</p>
+									<p class="email-address"></p>
+									<a class="e-btncomplete btn btn-blue icon-a-font gl-cta gl-cta--primary gl-cta--primary-light">完成<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+								</div>
+							</div>
+							<i class="icon icon-close dialog-close">&times;</i>
+						</div>
+					</script>
+				<script>
+					$(function () {
+
+						$.spice.lazyLoad('img[lazysrc]', {
+							attr: 'lazysrc'
+						});
+						$.spice.tools.changeImageSrc({
+							callBack: function (img, self) {
+								$.spice.lazyLoad('img[lazysrc]', {
+									attr: self.opt.lazyData,
+									prestrain: 1
+								});
+							}
+						});
+					})
+
+				</script>
+
+				<script type="text/javascript">
+					var reg = new RegExp("^\s*?(.+)@(.+?)\s*$");
+					var signUpUrl = base + "/signUp/signUp.json";
+					// var signUpUrl = "https://www.adidas.com.hk/signUp/signUp.json";
+					// $(window).on('pageshow', function () {
+
+
+					// });
+					$(function () {
+
+						setTimeout(function () {
+							$('.form-group-mail').each(function (index, elm) {
+								moveUpInputLable($(elm).find('input'), $(elm).find('label'));
+							})
+						}, 500);
+
+						//邮箱验证
+						$("input").blur(function () {
+							validateEmail($(this));
+						})
+						// 清除input框内容
+						$('.form-group-mail .msg-icon').on('tap', function () {
+							$(this).parent('.msg-block').siblings('input').removeAttr('value');
+						})
+
+						$(".gl-input__field").focus(function () {
+							$(this).next($('.gl-input__label')).addClass('gl-input__label--hoisted');
+						}).blur(function () {
+							if ($(this).val() === 0) {
+								$(this).next($('.gl-input__label')).removeClass('gl-input__label--hoisted');
+							}
+						});
+
+						var subscribteDialog = $.spice.dialog({
+							template: $('#subscribte-element').html(),
+							dialogClass: 'dialog-subscribte',
+							initEvent: function (e) {
+								//弹出层初始化时需要做的事情，只会在创建弹出层的时候执行
+								//如：初始化事件
+								var dialog = e.data.dialog;
+								$('.e-btncomplete', dialog.elem).on('tap', function () {
+									dialog.hide();
+								});
+							},
+						});
+						$('.subscribe-btn .btn').on('tap', function (e) {
+							e.preventDefault();
+							var _this = $(this),
+								_thisParents = _this.parents('.float-clearfix').find('.form-group-mail'),
+								emailObj = _thisParents.find('.gl-input__field');
+							if (!validateEmail(emailObj)) {
+								return;
+							}
+							var result = loxia.syncXhrPost(signUpUrl, {
+								email: emailObj.val().trim()
+							});
+							if (result.result) {
+								clearError(_thisParents);
+								subscribteDialog.elem.on('dialog.show-before', function () {
+									$('.email-address').html(emailObj.val());
+								});
+								subscribteDialog.show();
+							} else {
+								if (!result.resultMessage) {
+									showError(_thisParents, "抱歉，系統繁忙，請稍後再試");
+								} else if (result.resultMessage.message === 'EMAIL_REPEAT_SIGN_UP') {
+									showError(_thisParents, "該郵箱地址已註冊");
+								} else if (result.resultMessage.message === 'EMAIL_PATTERN_ERROR') {
+									showError(_thisParents, "請輸入正確的電子郵箱地址");
+								}
+							}
+						});
+
+					});
+
+					function validateEmail(emailObj) {
+						var _this = emailObj,
+							obj = _this.val().trim(),
+							_thisParents = _this.parents('.form-group-mail');
+						if (obj === '' || !reg.test(obj)) {
+							showError(_thisParents, "請輸入正確的電子郵箱地址");
+							return false;
+						}
+						clearError(_thisParents);
+						return true;
+
+					}
+
+					function showError(obj, message) {
+						obj.addClass('is-error');
+						obj.addClass('mail-subscription-form');
+						obj.find('.msg-block span').html(message);
+					}
+
+					function clearError(obj) {
+						obj.removeClass('is-error');
+						obj.removeClass('mail-subscription-form');
+						obj.find('.msg-block span').html('');
+					}
+
+					function moveUpInputLable(input, label) {
+						if ("" != input.val()) {
+							label.removeClass();
+							label.addClass("gl-input__label gl-input__label--hoisted")
+						}
+					}
+				</script>
+			</section>
+
+
+
+			<!-- 底部 -->
+			<%include _includes/modules/footer.html %>
+				<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>

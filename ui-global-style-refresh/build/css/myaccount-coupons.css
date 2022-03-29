@@ -1,0 +1,624 @@
+@charset "UTF-8";
+.center-banner {
+  margin: 20px 0;
+}
+.center-banner img {
+  width: 100%;
+}
+.myaccount-right-content {
+  /*空页面*/
+}
+.myaccount-right-content .myaccount-right-tit h3 {
+  height: 40px;
+}
+.myaccount-right-content .coupons-nav-top-box {
+  float: right;
+  margin-right: 20px;
+}
+.myaccount-right-content .coupons-nav-top-box .coupons-nav-top li {
+  float: left;
+  font-size: 14px;
+  width: 100px;
+  height: 40px;
+  padding-top: 5px;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+}
+.myaccount-right-content .coupons-nav-top-box .coupons-nav-top li span {
+  padding-left: 5px;
+}
+.myaccount-right-content .coupons-nav-top-box .coupons-nav-top li.is-active {
+  border-bottom: 2px solid #0287CD;
+}
+.myaccount-right-content .coupons-nav-top-box .coupons-nav-top li.is-active span {
+  color: #0287CD;
+}
+.myaccount-right-content .coupons-item-cont {
+  padding: 20px 0 0;
+}
+.myaccount-right-content .coupons-item-cont .pc-img {
+  display: block;
+}
+.myaccount-right-content .coupons-item-cont .mb-img {
+  display: none;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li {
+  width: 100%;
+  position: relative;
+  margin-bottom: 26px;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .warm-tips {
+  position: absolute;
+  right: 1.29%;
+  top: -9px;
+  width: 96px;
+  height: 18px;
+  line-height: 18px;
+  background: #C71414;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 9px;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .warm-tips-grey {
+  background: #CCC;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img {
+  width: 100%;
+  position: relative;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img img {
+  width: 100%;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price {
+  position: absolute;
+  overflow: hidden;
+  left: 17%;
+  top: 50%;
+  margin-top: -32px;
+  line-height: 1;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price i {
+  float: left;
+  font-size: 22px;
+  margin-right: 5px;
+  font-style: normal !important;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price span {
+  float: left;
+  font-size: 50px;
+  line-height: 0.9;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price.blue {
+  color: #28A5E6;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price.purple {
+  color: #5602CD;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price.watermelom {
+  color: #FF5C57;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price.orange {
+  color: #FFB457;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price.red {
+  color: #C53622;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .p-box {
+  position: absolute;
+  top: 50%;
+  left: 39.89%;
+  font-size: 14px;
+  color: #000000;
+  margin-top: -30px;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .p-box dt {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .p-box dd p {
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .p-box dd p i {
+  margin-left: 8px;
+  margin-bottom: -2px;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .expired {
+  position: absolute;
+  width: 8.651%;
+  height: auto;
+  top: 15.625%;
+  right: 1.124%;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .expired img {
+  width: 100%;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .used {
+  position: absolute;
+  width: 8.651%;
+  height: auto;
+  top: 15.625%;
+  right: 1.124%;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .used img {
+  width: 100%;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img.overdue-tag .p-box {
+  color: #CCCCCC;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img.overdue-tag .coupons-price {
+  color: #CCCCCC;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule {
+  min-height: 112px;
+  position: relative;
+  border-right: 1px #e5e5e5 solid;
+  background: url(../images/myaccount/Coupon-left-img1_02.png) repeat-y;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .uese-rule p {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  margin-top: -7px;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .uese-rule .img-box {
+  width: 15.25%;
+  display: block;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .uese-rule .img-box .radiu-up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 15.25%;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .uese-rule .img-box .radiu-down {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 15.25%;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .rule-box {
+  margin-left: 15.3%;
+  border-top: 1px #e5e5e5 dashed;
+  border-bottom: 1px #e5e5e5 solid;
+  margin-top: -1px;
+  background: #fff;
+  position: relative;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .rule-box .rule-p {
+  margin: 12px 0;
+  min-height: 88px;
+  border-left: 1px #e5e5e5 dashed;
+  margin-left: -14px;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .rule-box .rule-p p {
+  font-size: 12px;
+  color: #666666;
+  line-height: 18px;
+  padding-left: 30px;
+}
+.myaccount-right-content.my-coupons-empty .coupons-item-empty p {
+  font-size: 14px;
+  color: #000;
+  line-height: 14px;
+  padding: 20px 0;
+}
+.myaccount-right-content.my-coupons-empty .coupons-item-empty a {
+  width: 230px;
+  margin: 20px 0;
+  height: 42px;
+  line-height: 42px;
+}
+@media (max-width: 1024px) {
+  .center-banner {
+    margin: 0;
+  }
+  .center-banner img {
+    width: 100%;
+  }
+  .myaccount-right-content {
+    /*空页面*/
+  }
+  .myaccount-right-content .myaccount-right-tit h3 {
+    height: auto;
+    border-bottom: 1px solid #C7CBCC;
+  }
+  .myaccount-right-content .coupons-nav-top-box {
+    float: none;
+    margin-right: 0;
+  }
+  .myaccount-right-content .coupons-nav-top-box .coupons-nav-top {
+    overflow: hidden;
+    border-bottom: 1px solid #C7CBCC;
+  }
+  .myaccount-right-content .coupons-nav-top-box .coupons-nav-top li {
+    float: left;
+    overflow: hidden;
+    font-size: 12px;
+    width: 33.3333%;
+    padding-top: 15px;
+    height: 64px;
+    text-align: center;
+    border-bottom: none;
+  }
+  .myaccount-right-content .coupons-nav-top-box .coupons-nav-top li a {
+    display: inline-block;
+    height: 49px;
+  }
+  .myaccount-right-content .coupons-nav-top-box .coupons-nav-top li span {
+    display: block;
+    margin-top: 10px;
+    padding-left: 0;
+  }
+  .myaccount-right-content .coupons-nav-top-box .coupons-nav-top li.is-active {
+    border-bottom: none;
+  }
+  .myaccount-right-content .coupons-nav-top-box .coupons-nav-top li.is-active span {
+    color: #0287CD;
+  }
+  .myaccount-right-content .coupons-nav-top-box .coupons-nav-top li.is-active a {
+    border-bottom: 2px solid #0287CD;
+  }
+  .myaccount-right-content .coupons-item-cont {
+    padding: 30px 10px 0;
+  }
+  .myaccount-right-content .coupons-item-cont .pc-img {
+    display: none;
+  }
+  .myaccount-right-content .coupons-item-cont .mb-img {
+    display: block;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li {
+    margin-bottom: 30px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .warm-tips {
+    right: 10px;
+    top: -11px;
+    width: 120px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img {
+    width: 100%;
+    position: relative;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img img {
+    width: 100%;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price {
+    left: 38.87%;
+    top: 12%;
+    margin-top: 0;
+    line-height: 1;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price i {
+    font-size: 13px;
+    margin-right: 5px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price span {
+    font-size: 36px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .p-box {
+    top: 46%;
+    left: 38.87%;
+    font-size: 12px;
+    margin-top: 0;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .p-box dt {
+    margin-bottom: 5px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .p-box dd p i {
+    vertical-align: bottom;
+    margin-bottom: 4px;
+    margin-left: 4px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .expired {
+    width: 16.90%;
+    height: auto;
+    top: 8.57%;
+    margin-top: 0;
+    right: 2.54%;
+    background: none;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .expired img {
+    width: 100%;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .used {
+    width: 16.90%;
+    height: auto;
+    top: 8.57%;
+    margin-top: 0;
+    right: 2.54%;
+    background: none;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .used img {
+    width: 100%;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img.overdue-tag .p-box {
+    color: #CCCCCC;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img.overdue-tag .coupons-price {
+    color: #CCCCCC;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule {
+    border-right: 1px #e5e5e5 dashed;
+    background: none;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .uese-rule p {
+    position: inherit;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .uese-rule .img-box {
+    display: none;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .uese-rule .img-box .radiu-up {
+    display: none;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .uese-rule .img-box .radiu-down {
+    display: none;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .rule-box {
+    margin-left: 0;
+    border-top: 1px #e5e5e5 dashed;
+    border-bottom: 1px #e5e5e5 dashed;
+    margin-top: -1px;
+    background: #fff;
+    position: relative;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .rule-box .rule-p {
+    margin: 0;
+    padding: 10px 0;
+    border-left: 1px #e5e5e5 dashed;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .rule-box .rule-p p {
+    font-family: 'PingFangSC-Regular';
+    font-size: 12px;
+    color: #666666;
+    line-height: 18px;
+    margin-left: 0;
+    border-left: 0;
+    padding-left: 10px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .rule-box .rule-p p:first-child {
+    font-family: 'PingFangSC-Medium';
+    font-size: 14px;
+    color: #000000;
+    line-height: 14px;
+  }
+  .myaccount-right-content.my-coupons-empty .myaccount-right-tit h3 {
+    border-bottom: none;
+  }
+  .myaccount-right-content.my-coupons-empty .coupons-item-empty {
+    padding: 0 20px;
+  }
+  .myaccount-right-content.my-coupons-empty .coupons-item-empty p {
+    font-size: 12px;
+    padding: 0;
+  }
+  .myaccount-right-content.my-coupons-empty .coupons-item-empty a {
+    width: 100%;
+    font-size: 16px;
+    margin: 30px 0 16px;
+  }
+}
+@media (max-width: 374px) {
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price {
+    top: 5px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price i {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price span {
+    font-size: 20px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .p-box {
+    top: 34px;
+  }
+}
+.myaccount-right-content .coupons-nav-top-box .coupons-nav-top li.is-active {
+  border-bottom: 2px solid #000000;
+}
+.myaccount-right-content .coupons-nav-top-box .coupons-nav-top li a:hover {
+  color: #000000;
+}
+.myaccount-right-content .coupons-nav-top-box .coupons-nav-top li.is-active {
+  border-bottom: 2px solid #000000;
+}
+.myaccount-right-content .coupons-nav-top-box .coupons-nav-top li.is-active span {
+  color: #000000;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupon-bgbox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 13.71%;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupon-bgbox .coupon-title {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupon-bgbox .coupon-title p {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: initial;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupon-bgbox.upgrade .coupon-title p.type {
+  font-size: 15px;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupon-iconbox {
+  display: flex;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  right: 1.5%;
+  transform: translateY(-50%);
+  width: 10.23%;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupon-iconbox img {
+  width: 100%;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price .percent-box {
+  float: left;
+  height: 72px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0 2px 0;
+  margin-left: 4px;
+}
+.myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price .percent-box > p {
+  font-size: 20px;
+}
+@media (min-width: 1025px) and (max-width: 1175px) {
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupon-bgbox.upgrade .coupon-title p.type {
+    font-size: 12px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .p-box {
+    left: 46.89%;
+  }
+}
+@media (max-width: 1024px) {
+  .myaccount-right-content .coupons-item-cont {
+    padding: 30px 0 0;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li {
+    margin-bottom: 20px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img {
+    z-index: 1;
+    padding: 0 3px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price {
+    left: 29%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price i {
+    margin-right: 2px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price span {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .p-box {
+    left: 47.87%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupon-bgbox {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    height: 85.6%;
+    width: 25.35%;
+    transform: translateY(-51.5%);
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupon-bgbox .coupon-title p {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: initial;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupon-bgbox.upgrade .coupon-title p.type {
+    font-size: 14px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupon-iconbox {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    right: 1.5%;
+    transform: translateY(-50%);
+    width: 10.23%;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupon-iconbox img {
+    width: 100%;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price span {
+    font-size: 20px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price i {
+    margin-top: -6px;
+    font-weight: bold;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price .percent-box {
+    height: 33px;
+    padding: 4px 0 2px 0;
+    margin-left: 4px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price .percent-box > p {
+    font-size: 12px;
+    font-weight: bolder;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule {
+    border-right: 0px #e5e5e5 dashed;
+    box-shadow: 0 1px 6px 0 rgba(204, 204, 204, 0.5);
+    margin: 0 10px;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .rule-box {
+    border-top: 0px #e5e5e5 dashed;
+    border-bottom: 0px #e5e5e5 dashed;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-use-rule .rule-box .rule-p {
+    border-left: 0px #e5e5e5 dashed;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .warm-tips {
+    z-index: 1;
+    height: 20px;
+    line-height: 20px;
+    right: 15px;
+    top: -10px;
+  }
+}
+@media (max-width: 375px) {
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupon-bgbox .coupon-title p {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: initial;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupon-bgbox.upgrade .coupon-title p.type {
+    transform: scale(0.9);
+    width: 120%;
+    text-align: center;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .p-box {
+    left: auto;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price {
+    left: 28%;
+  }
+  .myaccount-right-content .coupons-item-cont ul.coupons-item-ul li .coupons-img .coupons-price span {
+    font-size: 20px;
+  }
+}

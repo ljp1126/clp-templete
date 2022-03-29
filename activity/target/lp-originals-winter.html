@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>lp-originals-winter</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+
+</head>
+<body>
+<div id="wrapper">
+	<%include _includes/modules/header.html %>
+	<section class="container">
+		<style type="text/css">
+
+			.article-originals-winter{
+				position: relative;
+			}
+			.article-originals-winter img{
+				width: 100%;
+			}
+			.open-link {
+				display: block;
+				position: absolute;
+			}
+			.open-link span{
+				display: block;
+				width: 42px;
+				height: 42px;
+				padding: 10px;
+				position: absolute;
+			}
+			.open-link span:after,
+			.open-link span:before{
+				content: '';
+				position: absolute;
+				border-radius: 50%;
+				background-color: #fff;
+				-webkit-animation: scaleout 1.5s infinite ease-in-out;
+				-moz-animation: scaleout 1.5s infinite ease-in-out;
+				-ms-animation: scaleout 1.5s infinite ease-in-out;
+				-o-animation: scaleout 1.5s infinite ease-in-out;
+				animation: scaleout 1.5s infinite ease-in-out;
+				z-index: 2;
+			}
+			.open-link span:after{
+				top: 5px;
+				left: 5px;
+				width: 32px;
+				height: 32px;
+			}
+			.open-link span:before{
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+			.open-link span img{
+				display: block;
+				width: 100%;
+				height: 100%;
+				position: relative;
+				z-index: 3;
+			}
+			.open-link .open-link-text{
+				padding-left: 60px;
+				color: #fff;
+				font-size: 24px;
+			}
+			.open-link-text .link-title{
+				font-weight: bolder;
+			}
+			.open-link-text .mt-6{margin-bottom: 6px;}
+			.open-link-text .mt-14{margin-bottom: 14px;}
+			@-webkit-keyframes scaleout {
+				0% {
+					-webkit-transform: scale(0);
+					-moz-transform: scale(0);
+					-ms-transform: scale(0);
+					-o-transform: scale(0);
+					transform: scale(0);
+				}
+				100% {
+					-webkit-transform: scale(1);
+					-moz-transform: scale(1);
+					-ms-transform: scale(1);
+					-o-transform: scale(1);
+					transform: scale(1);
+					opacity: 0;
+				}
+			}
+			@-moz-keyframes scaleout {
+				0% {
+					-webkit-transform: scale(0);
+					-moz-transform: scale(0);
+					-ms-transform: scale(0);
+					-o-transform: scale(0);
+					transform: scale(0);
+				}
+				100% {
+					-webkit-transform: scale(1);
+					-moz-transform: scale(1);
+					-ms-transform: scale(1);
+					-o-transform: scale(1);
+					transform: scale(1);
+					opacity: 0;
+				}
+			}
+			@-ms-keyframes scaleout {
+				0% {
+					-webkit-transform: scale(0);
+					-moz-transform: scale(0);
+					-ms-transform: scale(0);
+					-o-transform: scale(0);
+					transform: scale(0);
+				}
+				100% {
+					-webkit-transform: scale(1);
+					-moz-transform: scale(1);
+					-ms-transform: scale(1);
+					-o-transform: scale(1);
+					transform: scale(1);
+					opacity: 0;
+				}
+			}
+			@-o-keyframes scaleout {
+				0% {
+					-webkit-transform: scale(0);
+					-moz-transform: scale(0);
+					-ms-transform: scale(0);
+					-o-transform: scale(0);
+					transform: scale(0);
+				}
+				100% {
+					-webkit-transform: scale(1);
+					-moz-transform: scale(1);
+					-ms-transform: scale(1);
+					-o-transform: scale(1);
+					transform: scale(1);
+					opacity: 0;
+				}
+			}
+			@keyframes scaleout {
+				0% {
+					-webkit-transform: scale(0);
+					-moz-transform: scale(0);
+					-ms-transform: scale(0);
+					-o-transform: scale(0);
+					transform: scale(0);
+				}
+				100% {
+					-webkit-transform: scale(1);
+					-moz-transform: scale(1);
+					-ms-transform: scale(1);
+					-o-transform: scale(1);
+					transform: scale(1);
+					opacity: 0;
+				}
+			}
+
+			.originals-winter-03 .open-link{left: 38%; top: 29%;}
+			.originals-winter-04 .open-link{left: 62.5%; top: 10%;}
+			.article-originals-winter .lp-link{position: absolute; display: block; z-index: 10;}
+			.article-originals-winter .lp-link-01,
+			.article-originals-winter .lp-link-04{width: 35%; height: 33%; left: 13.5%; bottom: 15%;}
+			.article-originals-winter .lp-link-02{width: 16%; height: 40%; left: 51%; bottom: 10%;}
+			.article-originals-winter .lp-link-03{width: 16%; height: 40%; right: 14%; bottom: 10%;}
+			.article-originals-winter .lp-link-05{width: 24%; height: 32%; right: 16.5%; bottom: 19%;}
+			.article-originals-winter .lp-link-06{width: 35%; height: 40%; left: 13.5%; bottom: 10%;}
+			.originals-winter-08 .lp-link-02,
+			.originals-winter-08 .lp-link-03 {bottom: 8%;}
+			.originals-winter-footer{
+				max-width: 1440px;
+			    padding: 0 10px;
+			    margin: 40px auto 100px;
+			}
+			.originals-winter-footer p{
+				text-align: center;
+	    		margin-bottom: 55px;
+			}
+			.originals-winter-footer p img{
+				max-width: 100%;
+				width: auto;
+			}
+			.originals-winter-footer li{
+				padding: 0 27px;
+			}
+			.originals-winter-footer li a{
+				position: absolute;
+			    bottom: 20px;
+			    left: 50%;
+			    width: 180px;
+			    margin-left: -90px;
+			}
+
+
+			@media (max-width: 1024px){
+				.article-originals-winter .lp-link-01,
+				.article-originals-winter .lp-link-04{
+					width: 30%;
+				    height: 35%;
+				    left: 2.5%;
+				    bottom: 10%;
+				}
+				.article-originals-winter .lp-link-02{
+					width: 25%;
+				    height: 40%;
+				    left: 38%;
+				    bottom: 10%;
+				}
+				.article-originals-winter .lp-link-03{
+					width: 28%;
+				    height: 40%;
+				    right: 1%;
+				    bottom: 10%;
+				}
+				.originals-winter-04 .lp-link-04{
+					width: 56%;
+				    height: 30%;
+				    bottom: 16%;
+				}
+				.article-originals-winter .lp-link-05{
+					width: 30%;
+				    height: 38%;
+				    right: 5.5%;
+				    bottom: 13%;
+				}
+				.originals-winter-06 .lp-link-01,
+				.originals-winter-06 .lp-link-02,
+				.originals-winter-06 .lp-link-03{
+				    height: 42%;
+				    bottom: 12%;
+				}
+				.originals-winter-07 .lp-link-06{
+					width: 25%;
+				    height: 40%;
+				    left: 2.5%;
+				    bottom: 10%;
+				}
+				.originals-winter-07 .lp-link-02,
+				.originals-winter-07 .lp-link-03{
+				    height: 42%;
+				    bottom: 9%;
+				}
+				.originals-winter-08 .lp-link-01,
+				.originals-winter-08 .lp-link-02,
+				.originals-winter-08 .lp-link-03 {
+					height: 45%;
+					bottom: 5%;
+				}
+				.originals-winter-footer{
+					margin: 20px auto 55px;
+				}
+				.originals-winter-footer li a {
+				    bottom: 15px;
+				    width: 140px;
+				    margin-left: -70px;
+				    min-width: 120px;
+				    height: 40px;
+				    line-height: 40px;
+				    font-size: 16px;
+				}
+				.originals-winter-footer li{
+					padding: 7.5px;
+				}
+				.originals-winter-footer p img{
+					width: 60%;
+				}
+				.article-originals-winter img {
+				    width: 100%;
+				}
+				.open-link .open-link-text {
+				    padding-left: 45px;
+				    color: #fff;
+				    font-size: 12px;
+				}
+				.originals-winter-03 .open-link {
+				    left: 34%;
+				    top: 22%;
+				}
+			}
+
+		</style>
+
+		<article class="article article-originals-winter">
+			<img src="images/blank.gif"
+				 data-image='{
+				 "standard":{"high":"", "normal":"../static/images/lp-originals/01.jpg"},
+				 "medium":{"high":"",  "normal":"../static/images/lp-originals/01-m.jpg"},
+				 "small":{"high":"", "normal":"../static/images/lp-originals/01-m.jpg"}}'
+			/>
+		</article>
+
+		<article class="article article-originals-winter">
+			<img src="images/blank.gif"
+				 data-image='{
+				 "standard":{"high":"", "normal":"../static/images/lp-originals/02.jpg"},
+				 "medium":{"high":"",  "normal":"../static/images/lp-originals/02-m.jpg"},
+				 "small":{"high":"", "normal":"../static/images/lp-originals/02-m.jpg"}}'
+			/>
+		</article>
+
+		<article class="article article-originals-winter originals-winter-03">
+			<img src="images/blank.gif"
+				 data-image='{
+				 "standard":{"high":"", "normal":"../static/images/lp-originals/03.jpg"},
+				 "medium":{"high":"",  "normal":"../static/images/lp-originals/03-m.jpg"},
+				 "small":{"high":"", "normal":"../static/images/lp-originals/03-m.jpg"}}'
+			/>
+			<a class="open-link" target="_blank" href="https://www.adidas.com.cn/item/BS2221">
+				<span>
+					<img src="../static/images/lp-sst-pure/yuan.png" alt="" />
+				</span>
+				<div class="open-link-text">
+					<p class="link-title mt-6">运动裤</p>
+					<p class="mt-14">男子 originals</p>
+					<p class="link-title">¥ 799</p>
+				</div>
+			</a>
+			<a href="https://www.adidas.com.cn/item/CQ1374" target="_blank" class="lp-link lp-link-01"></a>
+			<a href="https://www.adidas.com.cn/item/BR9321" target="_blank" class="lp-link lp-link-02"></a>
+			<a href="https://www.adidas.com.cn/item/BS2204" target="_blank" class="lp-link lp-link-03"></a>
+		</article>
+
+		<article class="article article-originals-winter originals-winter-04">
+			<img src="images/blank.gif"
+				 data-image='{
+				 "standard":{"high":"", "normal":"../static/images/lp-originals/04.jpg"},
+				 "medium":{"high":"",  "normal":"../static/images/lp-originals/04-m.jpg"},
+				 "small":{"high":"", "normal":"../static/images/lp-originals/04-m.jpg"}}'
+			/>
+			<a class="open-link" target="_blank" href="https://www.adidas.com.cn/item/CE2357">
+				<span>
+					<img src="../static/images/lp-sst-pure/yuan.png" alt="" />
+				</span>
+				<div class="open-link-text">
+					<p class="link-title mt-6">羽绒服</p>
+					<p class="mt-14">女子 originals</p>
+					<p class="link-title">¥ 1,799</p>
+				</div>
+			</a>
+			<a href="https://www.adidas.com.cn/item/BY9203" target="_blank" class="lp-link lp-link-04"></a>
+			<a href="https://www.adidas.com.cn/item/BQ8003" target="_blank" class="lp-link lp-link-05"></a>
+		</article>
+
+		<article class="article article-originals-winter">
+			<img src="images/blank.gif"
+				 data-image='{
+				 "standard":{"high":"", "normal":"../static/images/lp-originals/05.jpg"},
+				 "medium":{"high":"",  "normal":"../static/images/lp-originals/05-m.jpg"},
+				 "small":{"high":"", "normal":"../static/images/lp-originals/05-m.jpg"}}'
+			/>
+			<a href="https://www.adidas.com.cn/item/BY3627" target="_blank" class="lp-link lp-link-01"></a>
+			<a href="https://www.adidas.com.cn/item/BR4019" target="_blank" class="lp-link lp-link-02"></a>
+			<a href="https://www.adidas.com.cn/item/BR2122" target="_blank" class="lp-link lp-link-03"></a>
+		</article>
+
+		<article class="article article-originals-winter originals-winter-06">
+			<img src="images/blank.gif"
+				 data-image='{
+				 "standard":{"high":"", "normal":"../static/images/lp-originals/06.jpg"},
+				 "medium":{"high":"",  "normal":"../static/images/lp-originals/06-m.jpg"},
+				 "small":{"high":"", "normal":"../static/images/lp-originals/06-m.jpg"}}'
+			/>
+			<a href="https://www.adidas.com.cn/item/BY9337" target="_blank" class="lp-link lp-link-01"></a>
+			<a href="https://www.adidas.com.cn/item/BQ7476" target="_blank" class="lp-link lp-link-02"></a>
+			<a href="https://www.adidas.com.cn/item/BR9251" target="_blank" class="lp-link lp-link-03"></a>
+		</article>
+
+		<article class="article article-originals-winter originals-winter-07">
+			<img src="images/blank.gif"
+				 data-image='{
+				 "standard":{"high":"", "normal":"../static/images/lp-originals/07.jpg"},
+				 "medium":{"high":"",  "normal":"../static/images/lp-originals/07-m.jpg"},
+				 "small":{"high":"", "normal":"../static/images/lp-originals/07-m.jpg"}}'
+			/>
+			<a href="https://www.adidas.com.cn/item/CD1722" target="_blank" class="lp-link lp-link-06"></a>
+			<a href="https://www.adidas.com.cn/item/BR6509" target="_blank" class="lp-link lp-link-02"></a>
+			<a href="https://www.adidas.com.cn/item/BS2284" target="_blank" class="lp-link lp-link-03"></a>
+		</article>
+
+		<article class="article article-originals-winter originals-winter-08">
+			<img src="images/blank.gif"
+				 data-image='{
+				 "standard":{"high":"", "normal":"../static/images/lp-originals/08.jpg"},
+				 "medium":{"high":"",  "normal":"../static/images/lp-originals/08-m.jpg"},
+				 "small":{"high":"", "normal":"../static/images/lp-originals/08-m.jpg"}}'
+			/>
+			<a href="https://www.adidas.com.cn/item/BY9182" target="_blank" class="lp-link lp-link-01"></a>
+			<a href="https://www.adidas.com.cn/item/BQ8007" target="_blank" class="lp-link lp-link-02"></a>
+			<a href="https://www.adidas.com.cn/item/BQ7986" target="_blank" class="lp-link lp-link-03"></a>
+		</article>
+
+		<article class="article more-commodity-article more-commodity-man">
+			<div class="product-list">
+				<div class="product-title">
+					<p>全部鞋类</p>
+				</div>
+				<div class="row product-list-cont float-clearfix">
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/CQ1374">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/s_01.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/CQ1374" class="goods-title">
+									<p>TUBULAR X 2.0 PK 经典鞋</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 1,299</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/BY3627">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/s_02.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/BY3627" class="goods-title">
+									<p>TUBULAR INVADER 经典鞋</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 999</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/BY9337">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/s_03.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/BY9337" class="goods-title">
+									<p>TUBULAR DOOM SOCK PK W  经典鞋</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 1,199</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/BY9203">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/s_04.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/BY9203" class="goods-title">
+									<p>TUBULAR INVADER 2.0  WINTER W 经典鞋</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 1,199</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/BY9182">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/s_05.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/BY9182" class="goods-title">
+									<p>TUBULAR INVADER 2.0  WINTER W 经典鞋</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 1,199</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="article more-commodity-article more-commodity-man">
+			<div class="product-list">
+				<div class="product-title">
+					<p>全部服饰</p>
+				</div>
+				<div class="row product-list-cont float-clearfix">
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/BS2204">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/c_01.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/BS2204" class="goods-title">
+									<p>卫衣</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 799</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/BR6509">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/c_02.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/BR6509" class="goods-title">
+									<p>卫衣</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 699</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/BR9321">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/c_03.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/BR9321" class="goods-title">
+									<p>棉服</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 1,899</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/CD1722">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/c_04.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/CD1722" class="goods-title">
+									<p>羽绒服</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 1,899</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/BR4019">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/c_05.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/BR4019" class="goods-title">
+									<p>羽绒服</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 1,699</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/BR9251">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/c_06.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/BR9251" class="goods-title">
+									<p>卫衣</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 799</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/BQ8003">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/c_07.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/BQ8003" class="goods-title">
+									<p>卫衣</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 699</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/BQ8007">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/c_08.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/BQ8007" class="goods-title">
+									<p>卫衣</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 799</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/BQ7476">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/c_09.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/BQ7476" class="goods-title">
+									<p>羽绒服</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 2,499</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/CE2357">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/c_10.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/CE2357" class="goods-title">
+									<p>羽绒服</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 1,799</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/BS2221">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/c_11.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/BS2221" class="goods-title">
+									<p>运动裤</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 799</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/BS2284">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/c_12.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/BS2284" class="goods-title">
+									<p>运动裤</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 699</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/BR2122">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/c_13.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/BR2122" class="goods-title">
+									<p>运动裤</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 599</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_blank" href="https://www.adidas.com.cn/item/BQ7986">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-originals/c_14.jpg" width="230" height="230" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_blank" href="https://www.adidas.com.cn/item/BQ7986" class="goods-title">
+									<p>运动裤</p>
+									<span>女子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">¥ 699</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="article article-originals-winter originals-winter-footer">
+			<p><img src="../static/images/lp-originals/footer.jpg"></p>
+			<ul class="row">
+				<li class="col-12-3 col-sm-12-6">
+					<img src="images/blank.gif" lazy-src="../static/images/lp-originals/f_01.jpg" alt="" />
+					<a target="_target" href="https://www.adidas.com.cn/men_originals_shoes" class="btn btn-white btn-have-arrow"><span>选购男子鞋类</span></a>
+				</li>
+				<li class="col-12-3 col-sm-12-6">
+					<img src="images/blank.gif" lazy-src="../static/images/lp-originals/f_02.jpg" alt="" />
+					<a target="_target" href="https://www.adidas.com.cn/men_originals_clothing" class="btn btn-white btn-have-arrow"><span>选购男子服饰</span></a>
+				</li>
+				<li class="col-12-3 col-sm-12-6">
+					<img src="images/blank.gif" lazy-src="../static/images/lp-originals/f_03.jpg" alt="" />
+					<a target="_target" href="https://www.adidas.com.cn/women_originals_shoes" class="btn btn-white btn-have-arrow"><span>选购女子鞋类</span></a>
+				</li>
+				<li class="col-12-3 col-sm-12-6">
+					<img src="images/blank.gif" lazy-src="../static/images/lp-originals/f_04.jpg" alt="" />
+					<a target="_target" href="https://www.adidas.com.cn/women_originals_clothing" class="btn btn-white btn-have-arrow"><span>选购女子服饰</span></a>
+				</li>
+			</ul>
+		</article>
+
+	</section>
+	<%include _includes/modules/footer.html %>
+	<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+</div>
+</body>
+</html>

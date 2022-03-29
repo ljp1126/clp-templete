@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>member-checkout-无地址配送</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" href="css/checkout.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/checkout.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-simple.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+			<div class="order-submit-content checkout-pay-content float-clearfix">
+				<!-- order-content-left 开始 -->
+				<div class="order-content-left">
+					<div class="checkout-pay wechat-pay">
+						<h2 class="order-title">
+							<img src="images/check/icon_wechat.jpg" height="26" width="134" alt="">
+						</h2>
+						<p class="payment-text">请您在24小时内完成支付，否则订单会被自动取消。</p>
+
+						<div class="order-detail-box">
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">订单编号：</dt>
+								<dd class="order-detail-text">AD2748596038</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">订单状态：</dt>
+								<dd class="order-detail-text">待发货</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">支付方式：</dt>
+								<dd class="order-detail-text">微信</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">订单金额：</dt>
+								<dd class="order-detail-text">￥1,899.00</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">配送地址：</dt>
+								<dd class="order-detail-text">
+									<span>James</span>&nbsp;&nbsp;&nbsp;<span>13855962542</span>
+								</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title"></dt>
+								<dd class="order-detail-text">上海市静安区万荣路1268号市北高新云立方B栋
+								<span class="pc-none-mb">，&nbsp;200046</span></dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix none-sm">
+								<dt class="order-detail-title"></dt>
+								<dd class="order-detail-text">200046</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">配送方式：</dt>
+								<dd class="order-detail-text">普通快递</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">发票类型：</dt>
+								<dd class="order-detail-text">普通发票（电子）</dd>
+							</dl>
+							<dl class="order-detail-text-invoice">
+								<span>*电子发票将以短信形式发送至您订单收件人手机</span>
+							</dl>
+							<span class="order-detail-text order-reminder">*因订单内有订制商品，需3-5个工作日发货</span>
+						</div>
+					</div>
+
+					<div class="order-line"></div>
+
+					<div class="payment-method">
+						<div class="wechat-code float-clearfix">
+							<div class="wechat-text">
+								请使用微信扫描右方二维码进行支付或选择<a href="" class="other-method">其他支付方式</a>
+							</div>
+
+							<div class="wechat-code-img float-left">
+								<img src="images/blank.gif" data-image='{
+									"standard":{"high":"", "normal":"images/check/code.jpg"}
+									,"medium":{"high":"", "normal":"images/check/code.jpg"}
+									,"small":{"high":"", "normal":"images/check/code.jpg"}
+								}' alt="" width="195" height="195"/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- order-content-left 结束 -->
+
+				<!-- order-content-right 开始 -->
+				<div class="order-content-right">
+					<div class="common-payment">
+					    <!-- 公共右 帮助 -->
+					    <%include _includes/checkout-modules/help.html %>
+					</div>
+				</div>
+				<!-- order-content-right 结束 -->
+			</div>
+			<!-- order-submit-content 结束 -->
+		</section>
+		<%include _includes/modules/footer-simple.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+</html>

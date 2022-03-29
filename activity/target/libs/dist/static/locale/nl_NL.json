@@ -1,0 +1,61 @@
+{
+  "general": {
+    "today": "Vandaag",
+    "month": {
+      "0": "januari",
+      "1": "februari",
+      "2": "maart",
+      "3": "april",
+      "4": "mei",
+      "5": "juni",
+      "6": "juli",
+      "7": "augustus",
+      "8": "september",
+      "9": "oktober",
+      "10": "november",
+      "11": "december"
+    },
+    "ordinal": {
+      "st": "",
+      "nd": "ND",
+      "rd": "RD",
+      "th": "TH"
+    },
+    "launchDate": "8 juni 2018",
+    "endDate": "8 juli 2018",
+    "error": "Oeps, er is iets misgegaan. Probeer het later nog eens."
+  },
+  "teaser": {
+    "distance": {
+      "top": "Bijgedragen",
+      "amount": "8.403.081",
+      "label": "totaal aantal km afgelegd"
+    },
+    "members": {
+      "top": "Van 8 juni t/m 8 juli",
+      "amount": "744.440",
+      "label": "hardlopers wereldwijd"
+    },
+    "intro": {
+      "label01": "Er eindigt iedere minuut een vrachtwagen vol plastic in onze oceanen.",
+      "label02": "Dit moet stoppen.",
+      "label03": "Zet ook je beste beentje voor!"
+    },
+    "cta": {
+      "label01": "Iedere km telt",
+      "label02": "Ontdek hieronder hoe jij je steentje kunt bijdragen"
+    },
+    "end": {
+      "label01": "Mensen van over de hele wereld zijn samengekomen om een weergaloos succes te maken van Run for the Oceans.<br />Aan iedereen die kilometers heeft gemaakt en zich heeft ingezet voor het Parley Ocean Plastic Program.",
+      "label02": "Bedankt!"
+    }
+  },
+  "preLoader": {
+    "title": "Run for the Oceans",
+    "subtitle": "laden"
+  },
+  "app": {
+    "name": "Run for the Oceans",
+    "slug": "parley-ss18-rfto"
+  }
+}

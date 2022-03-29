@@ -1,0 +1,337 @@
+@charset "utf-8";
+
+.article{
+    position: relative;
+    >img{
+        width: 100%;
+    }
+}
+
+.link{
+    position: absolute;
+    z-index: 1;
+    // background: rgba(0, 0, 0, .4);
+}
+
+img{
+    width: 100%;
+}
+
+.article-video{
+    .video-cursor{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 30%;
+        height: 30%;
+    }
+    .video-wrap{
+        .video-content{
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+    }
+}
+
+.article-size{
+    .link-01{
+        position: absolute;
+        bottom: 22%;
+        left: 50%;
+        transform: translate(-50%);
+        letter-spacing: 4px;
+        width: 200px;
+        background: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.hover-scale {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 25px;
+    .box-left{
+        float: left;
+        width: 50%;
+        .shoe-7-4-01{
+            width: 50.1%;
+        }
+        .show-left{
+            float: left;
+        }
+        .shoe-7-4-02{
+            float: left;
+            width: 49.9%;
+        }
+    }
+    .box-right{
+        float: left;
+        width: 50%;
+        .buy-btn{
+            position: relative;
+            .btn{
+                position: absolute;
+                left: 50%;
+                bottom: 36%;
+                width: 284px;
+                margin-left: -142px;
+                font-size: 18px;
+                background: rgba(255, 255, 255, 0.8);
+            }
+        }
+        .show-right{
+            clear: both;
+            overflow: hidden;
+            .show-right-top{
+                float: left;
+                width: 49.89%;
+            }
+            .show-right-bottom{
+                float: left;
+                width: 50.11%;
+            }
+        }
+    }
+    .box-left-7-4-03{
+        margin-right: -0.01%;
+    }
+}
+
+.article-swiper-swift{
+    .swiper-container{
+        .action-sports-swiper-btn{
+            div{
+                &.swiper-button-prev{
+                    &.swiper-button-disabled{
+                        display: none;
+                    }
+                    background-image: none;
+                    left: 15.5%;
+                    .icon-action-sports-arrow-l{
+                        width: 12px;
+                        height: 19px;
+                        background: url(https://img.adidas.com.cn/resources/activePage/OCT/nevermade/img-left.png);
+                    }
+                }
+                &.swiper-button-next{
+                    &.swiper-button-disabled{
+                        display: none;
+                    }
+                    background-image: none;
+                    right: 15.5%;
+                    .icon-action-sports-arrow-r{
+                        width: 12px;
+                        height: 19px;
+                        background-image: url(https://img.adidas.com.cn/resources/activePage/OCT/nevermade/img-right.png);
+                    }
+                }
+            }
+        }
+        
+    }
+    .swiper-container-od-jacket{
+        .swiper-wrapper{
+            width: 62%;
+            height: auto;
+            position: relative;
+
+        }
+    }
+    .swiper-container-od-jacket1{
+        width: 95%;
+        .swiper-wrapper{
+            width: 100%;
+            // height: auto;
+            position: relative;
+            // height: 50px;
+            .swiper-slide{
+                width: 30%;
+                text-align: center;
+                .slides-border{
+                    margin-top: 20px !important;
+                    margin-bottom: 60px !important;
+                    width: 60%;
+                    height: 2px;
+                    margin: 0 auto;
+                    background: #b2b2b2;
+                    display: none;
+                }
+                &:hover{
+                    .slides-border{
+                        display: block;
+                    }
+                }
+                a{
+                    // width: 30%;
+                    color: #b2b2b2;
+                    height: 40px;
+                    font-size: 22px;
+                    font-family: "adineueproblack", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+                    &:hover{
+                        color: #b2b2b2;
+                    }
+                }
+                .btn{
+                    display: none;
+                }
+                &.swiper-slide-active{
+                    a{
+                        font-weight: 700;
+                        color: #000;
+                        font-family: "adineueproblack", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+                        &:hover{
+                            color: #000;
+                        }
+                    }
+                    .slides-border{
+                        margin-top: 20px !important;
+                        margin-bottom: 60px !important;
+                        width: 60%;
+                        height: 2px;
+                        margin: 0 auto;
+                        background: #000;
+                        display: block;
+                    }
+                    .btn{
+                        display: block;
+                        color: #fff;
+                        font-size: 16px;
+                        width: 80%;
+                        margin: 0 auto;
+                        height: 42px;
+                        line-height: 42px;
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            
+           
+        }
+    }
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1024px){
+    .article-video{
+        .video-wrap{
+            .video-content{
+                width: 100%;
+                video{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .article-size{
+        .link-01{
+            height: 36px;
+            line-height: 36px;
+            bottom: 12%;
+            width: 150px;
+            font-size: 14px;
+            span{
+                &:after{
+                    top: 1px;
+                }
+            }
+        }
+    }
+    .hover-scale{
+        .box-left,
+        .box-right{
+            width: 100%;
+        }
+        .box-left{
+            .shoe-7-4-01{
+                width: 50.1334%;
+            }
+            .shoe-7-4-02{
+                width: 49.8667%;
+            }
+        }
+        .box-right{
+            .buy-btn{
+                .btn{
+                    font-size: 16px;
+                    width: 226px;
+                    margin-left: -113px;
+                    bottom: 14%;
+                    height: 40px;
+                    line-height: 40px;
+                    max-width: 143px;
+                    left: 61%;
+                }
+            }
+        }
+    } 
+    .article-swiper-swift{
+        .swiper-container-od-jacket{
+            .swiper-wrapper{
+                width: 80%;
+            }
+        }
+    }
+    .article-swiper-swift{
+        .swiper-container{
+            .action-sports-swiper-btn{
+                div{
+                    &.swiper-button-prev{
+                        left: 4.5%;
+                    }
+                    &.swiper-button-next{
+                        right: 0.5%;
+                        background-size: initial;
+                    }
+                }
+            }
+        }
+    }
+    .article-swiper-swift{
+        .swiper-container-od-jacket1{
+            .swiper-wrapper{
+                .swiper-slide{
+                    &.swiper-slide-active{
+                        a{
+                            font-size: 20px;
+                        }
+                        .slides-border{
+                            margin-top: 15px !important;
+                            margin-bottom: 30px !important;
+                            width: 50%;
+                        }
+                        .btn{
+                            width: 150px;
+                            font-size: 14px;
+                            span{
+                                &:after{
+                                    top: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1024px), screen and (-webkit-min-device-pixel-ratio: 2), not all, not all, not all{
+    .article-swiper-swift{
+        .swiper-container{
+            .action-sports-swiper-btn{
+                div{
+                    &.swiper-button-next{
+                        .icon-action-sports-arrow-r{
+                            background-size: initial;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

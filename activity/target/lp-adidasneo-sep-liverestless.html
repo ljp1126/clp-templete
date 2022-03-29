@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>adidasneo</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+<body>
+<div id="wrapper">
+	<%include _includes/modules/header.html %>
+	<!-- 内容部分 -->
+	<section class="container">
+
+<style type="text/css">
+.article,
+.action-branner{
+	position: relative;
+}
+.action-branner > img{
+	width: 100%;
+}
+.action-branner-auto{
+	text-align: center;
+	padding: 0 25px;
+	position: relative;
+}
+.btn-link{
+	position: absolute;
+	display: block;
+	background: #a5a5a5;
+	padding: 20px;
+	max-width: 340px;
+	width: 18%;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.btn-link > div{
+	margin-top: 10px;
+}
+.btn-link .goods-info{
+	height: 48px;
+	line-height: 48px;
+	font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+.btn-link .goods-info .goods-info-title{
+	float: left;
+}
+.btn-link .goods-info .goods-info-price{
+	float: right;
+}
+.btn-link .goods-btn{
+	display: none;
+	width: 144px;
+	margin: 10px auto 0;
+}
+.btn-link:hover{
+	background: #808080;
+    box-shadow: 1px 2px 5px 0 rgba(128, 128, 128, 1);
+}
+.btn-link:hover .goods-info{
+	display: none;
+}
+.btn-link:hover .goods-btn{
+	display: block;
+}
+.btn-link-1{
+	top: 69%;
+	left: 60%;
+}
+.btn-link-2{
+	top: -1%;
+	left: 60%;
+}
+.btn-link-3{
+	top: 71%;
+    left: 47%;
+}
+.btn-link-4{
+	top: 71%;
+    left: 66.5%;
+}
+.btn-link-5{
+	top: 57%;
+    left: 16%;
+}
+.btn-link-6{
+	top: 57%;
+    left: 36%;
+}
+.btn-link-7{
+    top: 61%;
+    left: 64%;
+}
+.btn-link-8{
+	top: 66.5%;
+    left: 21%;
+}
+.btn-link-9{
+	top: 71%;
+    left: 41%;
+}
+.btn-link-10{
+	top: 72.5%;
+    left: 61%;
+}
+.btn-link-11{
+	top: 18%;
+    left: 62%;
+}
+.btn-link-12{
+	top: 52%;
+    left: 62%;
+}
+.ad-neo-box{
+	max-width: 1440px;
+	padding: 0 10px;
+	margin: 40px auto 100px;
+}
+.ad-neo-box p{
+	text-align: center;
+	margin-bottom: 70px;
+}
+.ad-neo-content{
+	font-size: 0;
+	position: relative;
+}
+.ad-neo-content > div{
+    padding: 0 27px;
+}
+.ad-neo-content > div a{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	width: 180px;
+	margin-left: -90px;
+
+}
+
+@media (max-width:1366px) {
+	.btn-link-1{
+		top: 68%;
+	}
+	.btn-link-11 {
+	    top: 16%;
+	}
+}
+@media (max-width:1024px) {
+	.action-branner-auto{
+		padding: 0;
+	}
+	.btn-link{
+		padding: 0;
+		background: transparent;
+		border: 0px solid #f00;
+		width: 30%;
+	}
+	.btn-link > div{
+		margin-top: 6px;
+	}
+	.btn-link .goods-info{
+		height: 40px;
+		line-height: 40px;
+		font-size: 12px;
+	}
+	.btn-link:hover{
+		background: transparent;
+	    box-shadow: none;
+	}
+	.btn-link:hover .goods-info{
+		display: block;
+	}
+	.btn-link:hover .goods-btn{
+		display: none;
+	}
+	.btn-link *{
+		display: none;
+	}
+	.btn-link-1{
+		top: 70%;
+	    left: 66%;
+		height: 28%;
+	}
+	.btn-link-2{
+		top: 0%;
+	    left: 66%;
+	    height: 17%;
+	}
+	.btn-link-3{
+	    top: 60%;
+	    left: 35%;
+	    height: 17%;
+	}
+	.btn-link-4{
+	    top: 60%;
+	    left: 66%;
+	    height: 17%;
+	}
+	.btn-link-5{
+	    top: 60%;
+		left: 2.5%;
+		height: 26%;
+	}
+	.btn-link-6{
+	    top: 60%;
+		left: 34%;
+		height: 26%;
+	}
+	.btn-link-7{
+	    top: 73%;
+	    left: 59%;
+	    height: 14%;
+	}
+	.btn-link-8{
+	    top: 17.2%;
+	    left: 63.7%;
+	    height: 14%;
+	}
+	.btn-link-9{
+        top: 63.7%;
+	    left: 4%;
+	    height: 14%;
+	}
+	.btn-link-10{
+	    top: 78.9%;
+	    left: 4%;
+	    height: 14%;
+	}
+	.btn-link-11{
+	    top: 22.5%;
+	    left: 66%;
+	    height: 25%;
+	}
+	.btn-link-12{
+	    top: 49.2%;
+	    left: 66%;
+	    height: 25%;
+	}
+
+	.ad-neo-box{
+		margin: 25px auto 50px;
+	}
+	.ad-neo-box p{
+		margin-bottom: 25px;
+	}
+	.ad-neo-content > div{
+	    padding: 5px;
+	}
+	.ad-neo-content > div img{
+	    width: 100%;
+	}
+	.ad-neo-content > div a{
+		bottom: 15px;
+	    width: 152px;
+	    margin-left: -76px;
+	    min-width: 130px;
+	    height: 40px;
+	    line-height: 40px;
+	    font-size: 16px;
+	}
+
+}
+
+@media (max-width:374px) {
+	.ad-neo-content > div a{
+	    width: 136px;
+	    margin-left: -68px;
+	}
+}
+
+</style>
+
+		<article class="article">
+			<div class="action-branner">
+				<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-neos/pc-bg-1.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-1.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-1.jpg"}
+				}' />
+			</div>
+			<a target="_target" href="https://www.adidas.com.cn/item/BS0951" class="btn-link btn-link-1">
+				<span>
+					<img src="../static/images/lp-neos/neo-img-1.jpg" alt="">
+				</span>
+				<div class="goods-info float-clearfix">
+					<span class="goods-info-title">男子 防风服</span>
+					<span class="goods-info-price">￥599.00</span>
+				</div>
+				<div class="btn btn-white btn-have-arrow goods-btn"><span>立即购买</span></div>
+			</a>
+		</article>
+		<article class="article">
+			<div class="action-branner">
+				<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-neos/pc-bg-2.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-2.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-2.jpg"}
+				}' />
+			</div>
+			<a target="_target" href="https://www.adidas.com.cn/item/CG5782" class="btn-link btn-link-2">
+				<span>
+					<img src="../static/images/lp-neos/neo-img-2.jpg" alt="">
+				</span>
+				<div class="goods-info float-clearfix">
+					<span class="goods-info-title">女子 休闲鞋</span>
+					<span class="goods-info-price">￥729.00</span>
+				</div>
+				<div class="btn btn-white btn-have-arrow goods-btn"><span>立即购买</span></div>
+			</a>
+			<a target="_target" href="https://www.adidas.com.cn/item/CD4245" class="btn-link btn-link-3">
+				<span>
+					<img src="../static/images/lp-neos/neo-img-3.jpg" alt="">
+				</span>
+				<div class="goods-info float-clearfix">
+					<span class="goods-info-title">男子 套头衫</span>
+					<span class="goods-info-price">￥399.00</span>
+				</div>
+				<div class="btn btn-white btn-have-arrow goods-btn"><span>立即购买</span></div>
+			</a>
+			<a target="_target" href="https://www.adidas.com.cn/item/CG5801" class="btn-link btn-link-4">
+				<span>
+					<img src="../static/images/lp-neos/neo-img-4.jpg" alt="">
+				</span>
+				<div class="goods-info float-clearfix">
+					<span class="goods-info-title">男子 休闲鞋</span>
+					<span class="goods-info-price">￥769.00</span>
+				</div>
+				<div class="btn btn-white btn-have-arrow goods-btn"><span>立即购买</span></div>
+			</a>
+		</article>
+		<article class="article">
+			<div class="action-branner">
+				<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-neos/pc-bg-3.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-3.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-3.jpg"}
+				}' />
+			</div>
+			<a target="_target" href="https://www.adidas.com.cn/item/BQ7084" class="btn-link btn-link-5">
+				<span>
+					<img src="../static/images/lp-neos/neo-img-5.jpg" alt="">
+				</span>
+				<div class="goods-info float-clearfix">
+					<span class="goods-info-title">女子 套头衫</span>
+					<span class="goods-info-price">￥399.00</span>
+				</div>
+				<div class="btn btn-white btn-have-arrow goods-btn"><span>立即购买</span></div>
+			</a>
+			<a target="_target" href="https://www.adidas.com.cn/item/BC0012" class="btn-link btn-link-6">
+				<span>
+					<img src="../static/images/lp-neos/neo-img-6.jpg" alt="">
+				</span>
+				<div class="goods-info float-clearfix">
+					<span class="goods-info-title">女子 休闲鞋</span>
+					<span class="goods-info-price">￥729.00</span>
+				</div>
+				<div class="btn btn-white btn-have-arrow goods-btn"><span>立即购买</span></div>
+			</a>
+		</article>
+		<article class="article">
+			<div class="action-branner">
+				<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-neos/pc-bg-4.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-4.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-4.jpg"}
+				}' />
+			</div>
+			<a target="_target" href="https://www.adidas.com.cn/item/CD2110" class="btn-link btn-link-7">
+				<span>
+					<img src="../static/images/lp-neos/neo-img-7.jpg" alt="">
+				</span>
+				<div class="goods-info float-clearfix">
+					<span class="goods-info-title">女子 套头衫</span>
+					<span class="goods-info-price">￥449.00</span>
+				</div>
+				<div class="btn btn-white btn-have-arrow goods-btn"><span>立即购买</span></div>
+			</a>
+		</article>
+		<article class="article">
+			<div class="action-branner">
+				<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-neos/pc-bg-5.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-5.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-5.jpg"}
+				}' />
+			</div>
+			<a target="_target" href="https://www.adidas.com.cn/item/BP6576" class="btn-link btn-link-8">
+				<span>
+					<img src="../static/images/lp-neos/neo-img-8.jpg" alt="">
+				</span>
+				<div class="goods-info float-clearfix">
+					<span class="goods-info-title">女子 防风服</span>
+					<span class="goods-info-price">￥599.00</span>
+				</div>
+				<div class="btn btn-white btn-have-arrow goods-btn"><span>立即购买</span></div>
+			</a>
+			<a target="_target" href="https://www.adidas.com.cn/item/CF9781" class="btn-link btn-link-9">
+				<span>
+					<img src="../static/images/lp-neos/neo-img-9.jpg" alt="">
+				</span>
+				<div class="goods-info float-clearfix">
+					<span class="goods-info-title">女子 防风服</span>
+					<span class="goods-info-price">￥549.00</span>
+				</div>
+				<div class="btn btn-white btn-have-arrow goods-btn"><span>立即购买</span></div>
+			</a>
+			<a target="_target" href="https://www.adidas.com.cn/item/CG5782" class="btn-link btn-link-10">
+				<span>
+					<img src="../static/images/lp-neos/neo-img-10.jpg" alt="">
+				</span>
+				<div class="goods-info float-clearfix">
+					<span class="goods-info-title">女子 休闲鞋</span>
+					<span class="goods-info-price">￥729.00</span>
+				</div>
+				<div class="btn btn-white btn-have-arrow goods-btn"><span>立即购买</span></div>
+			</a>
+		</article>
+		<article class="article">
+			<div class="action-branner">
+				<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-neos/pc-bg-6.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-6.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-6.jpg"}
+				}' />
+			</div>
+			<a target="_target" href="https://www.adidas.com.cn/item/BR8631" class="btn-link btn-link-11">
+				<span>
+					<img src="../static/images/lp-neos/neo-img-11.jpg" alt="">
+				</span>
+				<div class="goods-info float-clearfix">
+					<span class="goods-info-title">男子 连帽套头衫</span>
+					<span class="goods-info-price">￥449.00</span>
+				</div>
+				<div class="btn btn-white btn-have-arrow goods-btn"><span>立即购买</span></div>
+			</a>
+			<a target="_target" href="https://www.adidas.com.cn/item/CG5709" class="btn-link btn-link-12">
+				<span>
+					<img src="../static/images/lp-neos/neo-img-12.jpg" alt="">
+				</span>
+				<div class="goods-info float-clearfix">
+					<span class="goods-info-title">男子 休闲鞋</span>
+					<span class="goods-info-price">￥769.00</span>
+				</div>
+				<div class="btn btn-white btn-have-arrow goods-btn"><span>立即购买</span></div>
+			</a>
+		</article>
+		
+		<article class="article">
+			<div class="ad-neo-box">
+				<p><img src="../static/images/lp-neos/mobile-bg-11.jpg" /></p>
+				<div class="ad-neo-content">
+					<div class="col-12-3 col-sm-12-6">
+						<span><img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-neos/pc-bg-7.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-7.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-7.jpg"}
+				}' /></span>
+						<a target="_target" href="https://www.adidas.com.cn/men_adidasneo_shoes" class="btn btn-white btn-have-arrow"><span>选购男子鞋类</span></a>
+					</div>
+					<div class="col-12-3 col-sm-12-6">
+						<span><img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-neos/pc-bg-8.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-8.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-8.jpg"}
+				}' /></span>
+						<a target="_target" href="https://www.adidas.com.cn/men_adidasneo_clothing" class="btn btn-white btn-have-arrow"><span>选购男子服饰</span></a>
+					</div>
+					<div class="col-12-3 col-sm-12-6">
+						<span><img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-neos/pc-bg-9.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-9.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-9.jpg"}
+				}' /></span>
+						<a target="_target" href="https://www.adidas.com.cn/women_adidasneo_shoes" class="btn btn-white btn-have-arrow"><span>选购女子鞋类</span></a>
+					</div>
+					<div class="col-12-3 col-sm-12-6">
+						<span><img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/lp-neos/pc-bg-10.jpg"},
+						"medium":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-10.jpg"},
+						"small":{"high":"", "normal":"../static/images/lp-neos/mobile-bg-10.jpg"}
+				}' /></span>
+						<a target="_target" href="https://www.adidas.com.cn/women_adidasneo_clothing" class="btn btn-white btn-have-arrow"><span>选购女子服饰</span></a>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+	</section>
+	<%include _includes/modules/footer.html %>
+	<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+</div>
+</body>
+</html>

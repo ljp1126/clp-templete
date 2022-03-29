@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+.vip-room-article{
+	max-width: 100%;
+    padding: 0;
+}
+.banner-title{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 20px 25px;
+	h3{
+		font-size: 24px;
+		color: #000;
+		line-height: 26px;
+		text-align: center;
+		margin: 10px 0 20px;
+	}
+	p{
+		font-size: 14px;
+		color: #000;
+		line-height: 16px;
+	}
+}
+.article-list-vip-romm{
+	max-width: 990px;
+	margin-top: 0;
+	.list-cont-right{
+		> div{
+			margin-left: 0px;
+		}
+	}
+	.product-grid{
+	   	.product-grid-con{
+	   		margin: 0;
+	   		.list-item{
+	   			padding: 0 5px;
+	   			&:hover .thumbnail {
+				    left: 0;
+				    margin: 0 5px;
+				}
+	   		}
+	    }
+	}
+	.look-more{
+		padding: 20px 0 0 0;
+	}
+}
+
+/*pdp页面*/
+.vip-room-empty{
+	max-width: 950px;
+	margin: 70px auto 0;
+	padding: 0 10px;
+	text-align: center;
+	h2{
+		font-size: 24px;
+		color: #30302D;
+		letter-spacing: 0;
+	    line-height: 32px;
+	    max-width: 525px;
+	    margin: 0 auto 15px;
+	}
+	div{
+		font-size: 14px;
+		color: #000;
+		letter-spacing: 0;
+		line-height: 16px;
+		a{
+			text-decoration: underline;
+			margin:5px 20px;
+			text-decoration: none;
+			position: relative;
+			color:#5d8abf;
+			&:after{
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 1px;
+				width: 100%;
+				background: #000;
+			}
+		}
+	}
+}
+.login-text {
+	font-size: 14px;
+	line-height: 16px;
+	p{
+		padding-bottom: 4px;
+	}
+    .color-gray{
+    	color: #888;
+    	a{
+			color: #0286CD;
+    	}
+    }
+}
+.vip-room-info-dialog{
+	.dialog-scroll-container{
+		.dialog{
+			width: 388px;
+			.dialog-close{
+				display: none;
+			}
+			.dialog-container{
+				text-align: center;
+				padding: 30px 0;
+			}
+			.dialog-content{
+				margin: 20px 0 50px;
+				p{
+					font-size: 16px;
+					color: #000;
+					line-height: 22px;
+				}
+			}
+			.dialog-btn-wrap{
+				.btn-success{
+					height: 42px;
+					line-height: 42px;
+					width: 180px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1240px){
+	.article-list-vip-romm{
+		.product-grid{
+		   	.product-grid-con{
+		   		.list-item{
+		   			width: 25%;
+		   		}
+		    }
+		}
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.article-list-vip-romm{
+		.product-grid{
+			.product-grid-con{
+				.list-item {
+				    padding: 0;
+				    width: 50%;
+				    &:hover .thumbnail {
+					    margin: 0;
+					}
+				}
+			}
+		}
+		.look-more{
+			padding: 0;
+			a:after {
+			    height: 0px;
+			}
+		}
+	}
+
+	/*pdp页面*/
+	.vip-room-empty{
+		max-width: 950px;
+		margin: 50px auto 0;
+		padding: 0 10px 20px;
+		h2{
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 30px;
+			max-width: 350px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 767px){
+	.article-banner-vip-room{
+		padding: 0 0 14px;
+	}
+	.banner-title{
+		padding: 0 0 30px;
+		h3{
+			margin: 0px 0 28px;
+		}
+		p{
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+
+	/*pdp*/
+	.vip-room-info-dialog{
+		.dialog-scroll-container{
+			.dialog{
+				max-width: 388px;
+				width: 375px;
+				min-width: 320px;
+				margin: 0;
+				border: 0px solid #C8CBCC;
+				.dialog-content{
+					margin: 0px 0 30px;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 374px){
+	/*pdp*/
+	.vip-room-info-dialog{
+		.dialog-scroll-container{
+			.dialog{
+				width: 100%;
+			}
+		}
+	}
+}
+
+@import "index.less";

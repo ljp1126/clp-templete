@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>adidasneo</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+<body>
+<div id="wrapper">
+	<%include _includes/modules/header.html %>
+	<!-- 内容部分 -->
+	<section class="container">
+		<link rel="stylesheet" type="text/css" href="css/lp-pw-us-open.css">
+		<script type="text/javascript" src="js/lp-pw-us-open.js"></script>
+		<style type="text/css">
+			.wm-article,
+			.wm-branner{
+				position: relative;
+			}
+			.open-link{
+				display: block;
+			    position: absolute;
+			}
+			.open-link > div{
+				position: relative;
+			}
+			.open-link a{
+				position: relative;
+    			padding: 10px;
+    			display: block;
+    			width: 42px;
+			    height: 42px;
+			}
+			.open-link a img{
+			    display: block;
+			    width: 100%;
+			    height: 100%;
+			    position: relative;
+			    z-index: 3;
+			    transition: none;
+    			transform: none;
+			}
+			.open-link a:after,
+			.open-link a:before{
+				content: '';
+				display: block;
+			    position: absolute;
+			    border-radius: 50%;
+			    background-color: #fff;
+			    -webkit-animation: scaleout 1.5s infinite ease-in-out;
+			    animation: scaleout 1.5s infinite ease-in-out;
+			    z-index: 2;
+			}
+			.open-link a:before{
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			}
+			.open-link a:after{
+				top: 5px;
+			    left: 5px;
+			    width: 32px;
+			    height: 32px;
+			}
+			.open-link .open-link-text{
+				position: absolute;
+			    color: #fff;
+			    font-weight: bold;
+				top: 2px;
+			}
+			.open-link .open-link-text p{
+				white-space: nowrap;
+			    font-size: 24px;
+			    line-height: 38px;
+			}
+			.open-link .open-link-text.open-link-text-left{
+				left: 100%;
+			    padding-left: 5px;
+			}
+			.open-link .open-link-text.open-link-text-right{
+				right: 100%;
+			    padding-right: 5px;
+			}
+			.open-link-1{
+				top: 26%;
+				left: 52%;
+			}
+			.open-link-2{
+			    bottom: 23.5%;
+				left: 44%;
+			}
+			.open-link-3{
+		        bottom: 16%;
+				left: 62%;
+			}
+			.open-link-4{
+		        top: 45%;
+				left: 34%;
+			}
+			.open-link-5{
+			    bottom: 8%;
+    			left: 55%;
+			}
+			.open-link-6{
+		        bottom: 36%;
+				left: 52%;
+			}
+			.open-link-7{
+		        bottom: 52%;
+				left: 58%;
+			}
+			.open-link-8{
+			    top: 19%;
+    			left: 47%;
+			}
+			.btn-open-link-6{
+				position: absolute;
+				left: 50%;
+				top: 21%;
+				width: 200px;
+				margin-left: -100px;
+			}
+			.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-title{
+				height: auto;
+				min-height: 32px;
+			}
+			.parley-cont-width .product-list .product-list-cont .list-item .thumbnail .goods-box .goods-title p{
+				overflow: hidden;
+			}
+			/*轮播*/
+			.carousel-box{
+			    position: absolute;
+			    left: 0;
+			    top: 40%;
+			    width: 100%;
+			}
+			.carousel-box .swiper-container1 .swiper-wrapper .swiper-slide{
+				text-align: center;
+			}
+			.carousel-box .swiper-container1 .swiper-wrapper .swiper-slide img{
+				width: 48%;
+				max-width: 900px;
+			}
+			.carousel-box .swiper-container1 .swiper-wrapper .swiper-slide .swiper-btn{
+				margin-top: 12%;
+			}
+			.carousel-box .swiper-container1 .swiper-wrapper .swiper-slide .swiper-btn a{
+				width: 200px;
+			}
+			.carousel-box .swiper-button-prev{
+				left: 20%;
+				top: 38%;
+			}
+			.carousel-box .swiper-button-next{
+				right: 20%;
+				top: 38%;
+			}
+
+			@media (max-width:1500px) {
+				.open-link-3 .open-link-text.open-link-text-black{
+					color: #000;
+				}
+			}
+
+			@media (max-width:1230px) {
+				.open-link .open-link-text.open-link-text-black{
+					color: #000;
+				}
+			}
+			
+			@media (max-width:1024px) {
+				.wm-article img{
+					width: 100%;
+				}
+				.open-link .open-link-text{
+					width: 140px;
+				}
+				.open-link .open-link-text p{
+				    font-size: 12px;
+				    line-height: 18px;
+				    white-space: normal;
+				}
+				.open-link .open-link-text.open-link-text-black{
+					color: #fff;
+				}
+				.open-link .open-link-text.open-link-text-left {
+				    padding-left: 0px;
+				}
+				.open-link .open-link-text.open-link-text-right {
+				    padding-right: 0px;
+				}
+				.open-link-1{
+					top: 23%;
+    				left: 46%;
+				}
+				.open-link-1 .open-link-text.open-link-text-left {
+				    left: 36%;
+				    top: 40px;
+				    width: 126px;
+				}
+				.open-link-2{
+			        bottom: 21%;
+					left: 40%;
+				}
+				.open-link-2 .open-link-text.open-link-text-right {
+			        right: -26px;
+				    bottom: 32px;
+				    top: auto;
+				}
+				.open-link-3{
+			        bottom: 20%;
+					left: 46%;
+				}
+				.open-link-4{
+			        top: 38%;
+					left: 47%;
+				}
+				.open-link .open-link-text {
+				    width: 118px;
+				}
+				.open-link-5{
+				    bottom: 7%;
+	    			left: 40%;
+				}
+				.open-link-6{
+			        bottom: 30%;
+					left: 40%;
+				}
+				.open-link-7{
+			        bottom: 52%;
+					left: 50%;
+				}
+				.open-link-8{
+				    top: 27%;
+	    			left: 48%;
+				}
+				.open-link-3 .open-link-text.open-link-text-right,
+				.open-link-4 .open-link-text.open-link-text-right,
+				.open-link-5 .open-link-text.open-link-text-left,
+				.open-link-6 .open-link-text.open-link-text-left,
+				.open-link-7 .open-link-text.open-link-text-left,
+				.open-link-8 .open-link-text.open-link-text-left{
+				    right: auto;
+				    bottom: 34px;
+				    top: auto;
+				    left: 100%;
+				}
+				.btn-open-link-6 {
+				    top: 24%;
+				    width: 144px;
+				    margin-left: -72px;
+				    background: transparent;
+				    border: 1px solid #000;
+				    color: #000;
+				    height: 40px;
+				    line-height: 38px;
+				    font-size: 16px;
+				}
+				.btn-open-link-6 span:after {
+				    background-position: -286px -219px !important;
+				}
+				.carousel-box .swiper-container1 .swiper-wrapper .swiper-slide img{
+					width: 85%;
+					max-width: 750px;
+				}
+				.carousel-box .swiper-button-prev{
+					left: 5%;
+					top: 30%;
+				}
+				.carousel-box .swiper-button-next{
+					right: 5%;
+					top: 30%;
+				}
+				.carousel-box .swiper-container1 .swiper-wrapper .swiper-slide .swiper-btn{
+					margin-top: 25%;
+				}
+				.carousel-box .swiper-container1 .swiper-wrapper .swiper-slide .swiper-btn a{
+					background: transparent;
+					border: 2px solid #fff;
+					color: #fff;
+					line-height: 44px;
+				}
+				.carousel-box .swiper-container1 .swiper-wrapper .swiper-slide .swiper-btn a span:after{
+					background-position: -150px -360px !important;
+				}
+
+			}
+
+		</style>
+		<script type="text/javascript">
+		$(function() {
+			/*轮播*/
+			var mySwiper = new Swiper('.events-swiper1', {
+				loop: true,
+				autoplay: 3000,
+				autoplayDisableOnInteraction: false,
+				speed:500,
+				slidesPerView : 1,
+				spaceBetween : 0,
+				observer: true,
+				observeParents: true,
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev'
+			});
+			$(".events-swiper1").mouseenter(function() {
+				mySwiper.stopAutoplay();
+			}).mouseleave(function() {
+				mySwiper.startAutoplay();
+			});
+		})
+		</script>
+
+		<article class="article wm-article">
+			<div class="wm-branner">
+				<span>
+					<img src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-wm/wm-pc_01.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-wm/wm-mob_01.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-wm/wm-mob_01.jpg"}}' />
+				</span>
+			</div>
+		</article>
+		<article class="article wm-article">
+			<div class="wm-branner">
+				<span>
+					<img src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-wm/wm-pc_02.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-wm/wm-mob_02.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-wm/wm-mob_02.jpg"}}' />
+				</span>
+			</div>
+			<div class="carousel-box">
+				<div class="swiper-container1 events-swiper1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="../static/images/lp-wm/wm-pc_11.png" />
+							<div class="swiper-btn">
+								<a target="_target" href="https://www.adidas.com.cn/item/CG3666" class="btn btn-white btn-have-arrow">
+									<span>立即购买</span>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="../static/images/lp-wm/wm-pc_12.png" />
+							<div class="swiper-btn">
+								<a target="_target" href="https://www.adidas.com.cn/item/CG3667" class="btn btn-white btn-have-arrow">
+									<span>立即购买</span>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="../static/images/lp-wm/wm-pc_13.png" />
+							<div class="swiper-btn">
+								<a target="_target" href="https://www.adidas.com.cn/item/CG3668" class="btn btn-white btn-have-arrow">
+									<span>立即购买</span>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="../static/images/lp-wm/wm-pc_14.png" />
+							<div class="swiper-btn">
+								<a target="_target" href="https://www.adidas.com.cn/item/CG3669" class="btn btn-white btn-have-arrow">
+									<span>立即购买</span>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="../static/images/lp-wm/wm-pc_15.png" />
+							<div class="swiper-btn">
+								<a target="_target" href="https://www.adidas.com.cn/item/CQ1763" class="btn btn-white btn-have-arrow">
+									<span>立即购买</span>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="../static/images/lp-wm/wm-pc_16.png" />
+							<div class="swiper-btn">
+								<a target="_target" href="https://www.adidas.com.cn/item/CQ1764" class="btn btn-white btn-have-arrow">
+									<span>立即购买</span>
+								</a>
+							</div>
+						</div>					
+					</div>
+					<!-- 箭头 -->
+					<div class="swiper-button-prev swiper-button-white">
+						<!-- <i class="icon icon-action-sports-arrow-l"></i> -->
+						<!-- <span class="arrow"><</span> -->
+					</div>
+					<div class="swiper-button-next swiper-button-white">
+						<!-- <i class="icon icon-action-sports-arrow-r"></i> -->
+						<!-- <span class="arrow">></span> -->
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="article wm-article">
+			<div class="wm-branner">
+				<span>
+					<img src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-wm/wm-pc_03.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-wm/wm-mob_03.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-wm/wm-mob_03.jpg"}}' />
+				</span>
+			</div>
+			<div class="open-link open-link-1">
+				<div>
+					<a target="_target" href="https://www.adidas.com.cn/item/BQ4063">
+						<img src="../static/images/lp-wm/yuan_03.png">
+					</a>
+					<div class="open-link-text open-link-text-left">
+						<p>White Mountaineering 夹克</p>
+					</div>
+				</div>
+			</div>
+			<div class="open-link open-link-2">
+				<div>
+					<a target="_target" href="https://www.adidas.com.cn/item/CG3667">
+						<img src="../static/images/lp-wm/yuan_03.png">
+					</a>
+					<div class="open-link-text open-link-text-black open-link-text-right">
+						<p>White Mountaineering</p>
+						<p>SEEULATER ALLEDO PK 经典鞋</p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="article wm-article">
+			<div class="wm-branner">
+				<span>
+					<img src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-wm/wm-pc_04.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-wm/wm-mob_04.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-wm/wm-mob_04.jpg"}}' />
+				</span>
+			</div>
+			<div class="open-link open-link-3">
+				<div>
+					<a target="_target" href="https://www.adidas.com.cn/item/CG3666">
+						<img src="../static/images/lp-wm/yuan_03.png">
+					</a>
+					<div class="open-link-text open-link-text-black open-link-text-right">
+						<p>White Mountaineering</p>
+						<p>SEEULATER ALLEDO PK 经典鞋</p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="article wm-article">
+			<div class="wm-branner">
+				<span>
+					<img src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-wm/wm-pc_05.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-wm/wm-mob_05.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-wm/wm-mob_05.jpg"}}' />
+				</span>
+			</div>
+			<div class="open-link open-link-4">
+				<div>
+					<a target="_target" href="https://www.adidas.com.cn/item/CG3669">
+						<img src="../static/images/lp-wm/yuan_03.png">
+					</a>
+					<div class="open-link-text open-link-text-right">
+						<p>White Mountaineering</p>
+						<p>BOSTON SUPER PK 经典鞋</p>
+					</div>
+				</div>
+			</div>
+			<div class="open-link open-link-5">
+				<div>
+					<a target="_target" href="https://www.adidas.com.cn/item/CQ1763">
+						<img src="../static/images/lp-wm/yuan_03.png">
+					</a>
+					<div class="open-link-text open-link-text-left">
+						<p>White Mountaineering CAMPUS 经典鞋</p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="article wm-article">
+			<div class="wm-branner">
+				<span>
+					<img src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-wm/wm-pc_06.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-wm/wm-mob_06.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-wm/wm-mob_06.jpg"}}' />
+				</span>
+			</div>
+			<a target="_target" href="https://www.adidas.com.cn/originals_whitemountaineering_shoes" class="btn btn-black btn-have-arrow btn-open-link-6"><span>立即购买</span></a>
+			<div class="open-link open-link-6">
+				<div>
+					<a target="_target" href="https://www.adidas.com.cn/item/BQ4102">
+						<img src="../static/images/lp-wm/yuan_03.png">
+					</a>
+					<div class="open-link-text open-link-text-left">
+						<p>White Mountaineering 套头衫</p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="article wm-article">
+			<div class="wm-branner">
+				<span>
+					<img src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-wm/wm-pc_07.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-wm/wm-mob_07.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-wm/wm-mob_07.jpg"}}' />
+				</span>
+			</div>
+			<div class="open-link open-link-7">
+				<div>
+					<a target="_target" href="https://www.adidas.com.cn/item/BQ4063">
+						<img src="../static/images/lp-wm/yuan_03.png">
+					</a>
+					<div class="open-link-text open-link-text-left">
+						<p>White Mountaineering 夹克</p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="article wm-article">
+			<div class="wm-branner">
+				<span>
+					<img src="images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"../static/images/lp-wm/wm-pc_08.jpg"},
+							"medium":{"high":"", "normal":"../static/images/lp-wm/wm-mob_08.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-wm/wm-mob_08.jpg"}}' />
+				</span>
+			</div>
+			<div class="open-link open-link-8">
+				<div>
+					<a target="_target" href="https://www.adidas.com.cn/item/BQ4113">
+						<img src="../static/images/lp-wm/yuan_03.png">
+					</a>
+					<div class="open-link-text open-link-text-left">
+						<p>White Mountaineering 套头衫</p>
+					</div>
+				</div>
+			</div>
+		</article>
+
+
+		<article class="article parley-cont-width parley-cont-man">
+			<div class="product-list">
+				<div class="product-title">
+					<p>全部鞋类</p>
+				</div>
+				<div class="row product-list-cont float-clearfix">
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CG3666">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-wm/wm-img-1.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">2 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CG3666" class="goods-title">
+									<p>White Mountaineering SEEULATER ALLEDO PK 经典鞋</p>
+									<span>中性 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,699</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CG3667">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-wm/wm-img-2.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">2 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CG3667" class="goods-title">
+									<p>White Mountaineering SEEULATER ALLEDO PK 经典鞋</p>
+									<span>中性 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,699</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CG3668">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-wm/wm-img-3.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">2 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CG3668" class="goods-title">
+									<p>White Mountaineering BOSTON SUPER PK 经典鞋</p>
+									<span>中性 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,699</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CG3669">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-wm/wm-img-4.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">2 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CG3669" class="goods-title">
+									<p>White Mountaineering BOSTON SUPER PK 经典鞋</p>
+									<span>中性 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,699</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CQ1763">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-wm/wm-img-5.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">2 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CQ1763" class="goods-title">
+									<p>White Mountaineering CAMPUS 经典鞋</p>
+									<span>中性 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,199</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/CQ1764">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-wm/wm-img-6.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">2 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/CQ1764" class="goods-title">
+									<p>White Mountaineering CAMPUS 经典鞋</p>
+									<span>中性 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,199</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="article parley-cont-width parley-cont-man">
+			<div class="product-list">
+				<div class="product-title">
+					<p>全部服饰</p>
+				</div>
+				<div class="row product-list-cont float-clearfix">
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ4063">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-wm/wm-img-7.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ4063" class="goods-title">
+									<p>White Mountaineering 夹克</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥7,599</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ4080">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-wm/wm-img-8.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ4080" class="goods-title">
+									<p>White Mountaineering 夹克</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥3,099</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ4113">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-wm/wm-img-9.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ4113" class="goods-title">
+									<p>White Mountaineering 套头衫</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,199</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ4102">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-wm/wm-img-10.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ4102" class="goods-title">
+									<p>White Mountaineering 套头衫</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,699</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12-3 col-sm-12-6 list-item">
+						<div class="thumbnail">
+							<div class="pro-big-img-box">
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ4104">
+									<img src="images/blank.gif" lazy-src="../static/images/lp-wm/wm-img-11.jpg" width="326" height="326" alt="" />
+								</a>
+							</div>
+							<div class="goods-box">
+								<p class="none block-sm">1 种颜色</p>
+								<a target="_target" href="https://www.adidas.com.cn/item/BQ4104" class="goods-title">
+									<p>White Mountaineering 套头衫</p>
+									<span>男子 originals</span>
+								</a>
+								<div class="goods-bottom">
+									<span class="goods-price price-single">￥1,699</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+	</section>
+	<%include _includes/modules/footer.html %>
+	<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	<script id="video-dialog" type="text/template">
+		<div class="dialog">
+			<div class="dialog-container">
+				<div class="loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+				<div class="video-content">
+
+				</div>
+			</div>
+			<i class="icon icon-close dialog-close">&times;</i>
+		</div>
+	</script>
+</div>
+</body>
+</html>

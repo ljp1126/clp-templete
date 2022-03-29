@@ -1,0 +1,148 @@
+@charset "utf-8";
+// 首页kv轮播 按钮和小圆点公用
+.article-kv{
+    .scroll{
+        .scroll-dots{
+            left: auto ;
+            right: auto !important;
+            bottom: 20px;
+            z-index: 9;
+            padding: 10px 0;
+            background: rgba(0,0,0,0.50);
+            border-radius: 15px;
+            /*left: auto !important;
+            right: 25% !important;*/
+            a{
+                width: 24px;
+                height: 5px;
+                background: #C8CBCC;
+                border: 1px solid #EEEEEE;
+                margin: 0 4px;
+                border-radius: 0px;
+                &:first-child{
+                    margin: 0 4px 0 8px;
+                }
+                &:last-child{
+                    margin: 0 8px 0 4px;
+                }
+                &:hover{
+                    background: #025F8E;
+                    border: 1px solid #EEEEEE;
+                }
+                &.active{
+                    background: #000000;
+                    border: 1px solid #EEEEEE;
+                }
+            }
+        }
+        .scroll-btn-next,
+        .scroll-btn-prev{
+            cursor: pointer;
+            a{
+                text-indent: -9999px;
+                i{
+                    display: inline-block;
+                    background: url(../images/icon.png);
+                    width: 42px;
+                    height: 76px;
+                }
+            }
+        }
+        .scroll-btn-prev{
+            left: 18%;
+            a{
+                i{
+                    background-position: -568px -50px;
+                }
+            }
+            &:hover{
+                a{
+                    i{
+                        background-position: -0px -454px;
+                    }
+                }
+            }
+        }
+        .scroll-btn-next{
+            right: 18%;
+            a{
+                i{
+                    background-position: -620px -50px;
+                }
+            }
+            &:hover{
+                a{
+                    i{
+                        background-position: -52px -454px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media (max-width:1700px){
+    .article-kv{
+        .scroll{
+            .scroll-btn-prev {
+                left: 10%;
+            }
+            .scroll-btn-next {
+                right: 10%;
+            }
+        }
+    }
+}
+@media (max-width:1450px){
+    .article-kv{
+        .scroll{
+            .scroll-btn-prev {
+                left: 8%;
+            }
+            .scroll-btn-next {
+                right: 8%;
+            }
+        }
+    }
+
+}
+@media (max-width:1199px){
+    .article-kv{
+        .scroll{
+            .scroll-btn-prev {
+                left: 5%;
+            }
+            .scroll-btn-next {
+                right: 5%;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    .article-kv{
+        .scroll{
+            padding: 0 0 56px;
+            .scroll-dots{
+                background: transparent;
+                border-radius: 0px;
+                padding: 0;
+                bottom: 34px;
+                a{
+                    width: 30px;
+                    &:first-child{
+                        margin: 0 4px;
+                    }
+                    &:last-child{
+                        margin: 0 4px;
+                    }
+                }
+            }
+            .scroll-btn-next,
+            .scroll-btn-prev{
+                display: none;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+  "general": {
+    "today": "Hoje",
+    "month": {
+      "0": "Janeiro",
+      "1": "Fevereiro",
+      "2": "Março",
+      "3": "Abril",
+      "4": "Maio",
+      "5": "Junho",
+      "6": "Julho",
+      "7": "Agosto",
+      "8": "Setembro",
+      "9": "Outubro",
+      "10": "Novembro",
+      "11": "Dezembro"
+    },
+    "ordinal": {
+      "st": "",
+      "nd": "",
+      "rd": "",
+      "th": ""
+    },
+    "launchDate": "8 de junho de 2018",
+    "endDate": "8 de julho de 2018",
+    "error": "Oops, ocorreu um erro. Por favor, tenta de novo mais tarde."
+  },
+  "teaser": {
+    "distance": {
+      "top": "Contribuições",
+      "amount": "8.403.081",
+      "label": "km totais percorridos"
+    },
+    "members": {
+      "top": "De 8 de junho a 8 de julho",
+      "amount": "744,440",
+      "label": "runners de todo o mundo"
+    },
+    "intro": {
+      "label01": "A cada minuto, um camião de plástico acaba nos nossos oceanos.",
+      "label02": "Isto tem de acabar.",
+      "label03": "Junta-te ao movimento!"
+    },
+    "cta": {
+      "label01": "Cada km conta",
+      "label02": "Descobre como contribuir abaixo"
+    },
+    "end": {
+      "label01": "Pessoas de todo o mundo uniram-se para fazer da iniciativa \"Corre pelos Oceanos\" um sucesso.<br />A todos aqueles que correram quilómetros, ajudaram a criar consiciência e apoiaram o Programa Parley Ocean Plastic.",
+      "label02": "Obrigado!"
+    }
+  },
+  "preLoader": {
+    "title": "Corre pelos oceanos",
+    "subtitle": "carregar"
+  },
+  "app": {
+    "name": "Corre pelos oceanos",
+    "slug": "parley-ss18-rfto"
+  }
+}

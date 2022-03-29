@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+		<%include _includes/js.html %>
+	</head>
+    <body>
+		<div id="wrapper">
+			<!-- 头部 -->
+			<%include _includes/modules/header.html %>
+			<!-- 內容 -->
+			<section class="container">
+				<style type="text/css">
+					img {
+						width: 100%;
+						height: auto;
+					}
+					.po-rel {
+						position: relative;
+					}
+					.po-rel>a {
+						position: absolute;
+						display: block;
+						width: 142px;
+						height: 48px;
+						line-height: 48px;
+						font-size: 18px;
+						text-align: center;
+						left: 50%;
+						margin-left: -71px;
+					}
+					.po-rel-1>a {
+						bottom: 25%;
+					}
+					.po-rel-2>a {
+						bottom: 16%;
+					}
+					@media(max-width: 1024px){
+					    .po-rel>a {
+							width: 112px;
+							height: 38px;
+							line-height: 38px;
+							font-size: 14px;
+							margin-left: -56px;
+							min-width: 10px;
+						}
+						.po-rel-1>a {
+							bottom: 12%;
+						}
+						.po-rel-2>a {
+							bottom: 28%;
+						}
+					}
+				</style>
+				<article class="article article-kv">
+					<img src="images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/lp-crazy/crazy-pc-1.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/lp-crazy/crazy-mob-1.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-crazy/crazy-mob-1.jpg"}}' />
+				</article>
+				<article class="article article-kv po-rel po-rel-1">
+					<img src="images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/lp-crazy/crazy-pc-2.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/lp-crazy/crazy-mob-2.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-crazy/crazy-mob-2.jpg"}}' />
+					<a href="https://www.adidas.com.cn/item/BY4423" target="_target" class="btn btn-white btn-have-arrow btn-have-opacity">
+						<span>立即购买</span>
+					</a>
+				</article>
+				<article class="article article-kv">
+					<img src="images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/lp-crazy/crazy-pc-3.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/lp-crazy/crazy-mob-3.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-crazy/crazy-mob-3.jpg"}}' />
+				</article>
+				<article class="article article-kv po-rel po-rel-2">
+					<img src="images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/lp-crazy/crazy-pc-4.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/lp-crazy/crazy-mob-4.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-crazy/crazy-mob-4.jpg"}}' />
+					<a href="https://www.adidas.com.cn/item/CG4819" target="_target" class="btn btn-white btn-have-arrow btn-have-opacity">
+						<span>立即购买</span>
+					</a>
+				</article>
+				<article class="article article-kv">
+					<img src="images/blank.gif" data-image='{"standard":{"high":"", "normal":"../static/images/lp-crazy/crazy-pc-5.jpg"},
+					"medium":{"high":"",  "normal":"../static/images/lp-crazy/crazy-mob-5.jpg"},
+					"small":{"high":"", "normal":"../static/images/lp-crazy/crazy-mob-5.jpg"}}' />
+				</article>
+			</section>
+			<!-- 底部 -->
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		</div>
+    </body>
+</html>

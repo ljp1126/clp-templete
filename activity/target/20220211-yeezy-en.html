@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <%include _includes/meta.html %>
+    <title></title>
+    <%include _includes/css.html %>
+      <!-- <link rel="stylesheet" type="text/css" href="css/adiclub.css"> -->
+      <%include _includes/js.html %>
+        <!-- <script type="text/javascript" src="js/adiclub.js"></script> -->
+</head>
+
+<body>
+  <div id="wrapper">
+    <%include _includes/modules/header.html %>
+      <!-- 内容部分 -->
+      <section class="container">
+      
+        <style>
+          @charset "UTF-8";
+
+    body {
+      background: #FFFFFF;
+    }
+
+    .container {
+      padding-bottom: 0;
+      background-color: #edede2;
+    }
+
+    .article {
+      position: relative;
+    }
+
+    .swiper-big {
+      width: 66.66%;
+      margin: 0 auto;
+      padding-top: 10px;
+    }
+
+    .banner-site {
+      position: relative;
+      background: #fff;
+
+
+    }
+
+    .center-wrap {
+      width: 20%;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .center-wrap h2 {
+      color: #000;
+      margin: 30px 0 16px;
+      font-size: 30px;
+      line-height: 28px;
+      font-weight: bold;
+    }
+
+    .center-wrap p {
+      color: #000;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 18px;
+      font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+    }
+
+    .banner-site img {
+      width: 100%;
+    }
+
+    .email-site {
+      position: relative;
+      padding-top: 46px;
+      padding-bottom: 26px;
+    }
+
+    .email-sign .tit {
+      text-align: center;
+      color: #000000;
+      margin-bottom: 16px;
+      font-family: "YEEZYTSTAR-Regular";
+      font-weight: bold;
+      font-size: 16px;
+      line-height: initial;
+      text-transform: uppercase;
+    }
+
+    .email-sign .log {
+      text-align: center;
+      color: #000000;
+      margin-bottom: 20px;
+      font-family: "YEEZYTSTAR-Bold";
+      font-weight: bold;
+      font-size: 108px;
+      line-height: initial;
+      text-transform: uppercase;
+    }
+
+    .email-sign .login-box {
+      max-width: 340px;
+      margin: 0 auto 24px;
+      padding: 0 13.5px;
+    }
+
+    .email-sign .login-box .tips {
+      font-size: 12px;
+      font-weight: bold;
+      color: #000;
+      margin-top: 30px;
+      font-family: "YEEZYTSTAR-Regular";
+      line-height: initial;
+      text-transform: uppercase;
+      line-height: 20px;
+      text-align: center;
+    }
+
+    .email-sign .login-box .tips a {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    .form-input {
+      float: left;
+      width: 100%;
+    }
+
+    .form-input input {
+      width: 100%;
+      font-family: "YEEZYTSTAR-Regular";
+      font-size: 16px;
+      height: 40px;
+      background: #edede2;
+      border-color: #000;
+    }
+
+    .form-input .msg-block .msg-icon {
+      transition: all .2s ease;
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 12px;
+      cursor: pointer;
+    }
+
+    .gl-input__label {
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #888888;
+      position: absolute;
+      pointer-events: none;
+      text-transform: uppercase;
+      left: 11px;
+      top: 14px;
+      transition: all .2s ease;
+    }
+
+    .gl-input__label--hoisted {
+      font-size: 12px;
+      top: -8px;
+      left: 17px;
+      margin-top: 0;
+      padding: 2px 5px 1px;
+      background-color: #edede2;
+    }
+
+    .subscribe-btn {
+      width: 100%;
+      margin-top: 5px;
+
+    }
+
+    .subscribe-btn a {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      font-family: "YEEZYTSTAR-Regular";
+      font-size: 20px;
+      /* display: block; */
+      height: 40px;
+      transform: none;
+    }
+
+    .dialog-subscribte .dialog-scroll-container .dialog {
+      width: 483px;
+      padding: 54px 74px;
+      background: #edede2;
+    }
+    .dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box{
+        font-size: 30px;
+        text-align: center;
+      font-family: "YEEZYTSTAR-Bold";
+      background: #edede2;
+    }
+
+    .dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box .tit {
+      font-size: 18px;
+      font-weight: bold;
+      color: #000000;
+      line-height: 18px;
+      margin-bottom: 10px;
+    }
+
+    .dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box p {
+      font-size: 14px;
+      color: #000;
+      font-weight: 400;
+      margin: 0;
+      margin-bottom: 12px;
+    }
+
+    .dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box p.email-address {
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+
+    .dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box .btn {
+      min-width: 135px;
+      width: 135px;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .swiper-container .swiper-button {
+      position: absolute;
+      z-index: 20;
+      top: 46%;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 46px;
+      border: 1px solid #000;
+      cursor: pointer;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      background-color: #fff;
+    }
+
+    .swiper-container .swiper-button-disabled {
+      display: none;
+    }
+
+    .swiper-container .swiper-button .icon-arrow-right-long::before {
+      font-size: 20px;
+    }
+
+    .swiper-container .swiper-button-prev-1 {
+      left: 0;
+      transform: rotate(180deg);
+    }
+
+    .swiper-container .swiper-button-next-1 {
+      right: 0;
+    }
+
+    .recommend-product {
+      width: 400px;
+      margin: auto;
+    }
+
+    .clp-more {
+      position: relative;
+    }
+
+    .clp-more .swiper-container .swiper-pagination .swiper-pagination-bullet {
+      opacity: 1;
+      width: 38px;
+      height: 4px;
+      background: #fff;
+      box-sizing: border-box;
+      margin: 0 20px;
+      border-radius: 0;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      background-image: none;
+      margin-top: auto;
+      bottom: 0;
+      height: 27px;
+      font-size: 20px;
+      right: 30%;
+    }
+
+    .swiper-button-prev {
+      left: 30%;
+      text-align: right;
+    }
+.swiper-button-next:before {
+  content: '›';
+}
+
+.swiper-button-prev:before {
+  content: '‹';
+}
+
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background: #2e3238;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+      background: #fff;
+      border: 1px solid #2e3238;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets {
+      margin-bottom: 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 2;
+    }
+
+    .text-block {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    .text-block h1 {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 0;
+      font-family: 'YEEZYTSTAR-Bold';
+    }
+
+    .text-block p {
+      font-size: 24px;
+      text-align: center;
+      font-family: 'YEEZYTSTAR-Bold';
+    }
+.text-block p a{
+text-decoration: underline;
+}
+.text-block p a:hover{
+color:#000;
+}
+    .dialog-opacity .dialog-scroll-container .dialog .dialog-close{
+        background: #edede2;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .recommend-product {
+        width: 96%;
+      }
+
+      .swiper-big {
+        width: 98%;
+      }
+
+      .banner-site {
+        margin-bottom: 25px;
+      }
+
+      .email-site {
+        margin-bottom: 25px;
+        padding: 20px;
+      }
+
+      .container {
+        padding-bottom: 0;
+      }
+
+      .center-wrap {
+        width: 55%;
+      }
+
+      .center-wrap h2 {
+        font-size: 24px;
+      }
+
+      .center-wrap p {
+        font-size: 18px;
+
+      }
+
+      .email-sign .tit {
+        text-align: center;
+        font-size: 18px;
+        line-height: 14px;
+        margin-bottom: 15px;
+      }
+
+      .email-sign .login-box {
+        max-width: 100%;
+        padding: 0px;
+      }
+
+      .email-sign .login-box .tips {
+        margin-top: 11px;
+      }
+
+      .form-input {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .form-input input {
+        height: 40px;
+        font-size: 16px;
+      }
+
+      .form-input .msg-block .msg-icon {
+        right: 10px;
+        top: 12px;
+      }
+
+      .gl-input__label {
+        font-size: 14px;
+      }
+
+      .gl-input__label--hoisted {
+        font-size: 14px;
+      }
+
+      .subscribe-btn {
+        margin-top: 20px;
+        float: none;
+        width: 100%;
+      }
+
+      .subscribe-btn a {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .dialog-subscribte .dialog-scroll-container .dialog {
+        width: 335px;
+        padding: 30px 18px 18px;
+        margin: 0;
+      }
+
+      .dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box .tit {
+        margin-bottom: 12px;
+      }
+
+      .dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box p {
+        font-size: 12px;
+        margin-bottom: 12px;
+      }
+
+      .dialog-subscribte .dialog-scroll-container .dialog .dialog-container>div.subscribte-box p.email-address {
+        font-weight: 700;
+        margin-bottom: 40px;
+      }
+    }
+
+    @media screen and (max-width: 350px) {
+      .dialog-subscribte .dialog-scroll-container .dialog {
+        width: 300px;
+        margin: 0;
+      }
+    }
+  </style>
+  <script type="text/javascript">
+        document.title = 'adidas x YEEZY｜adidas Hong Kong Official Online Store'
+        var reg = new RegExp("^\s*?(.+)@(.+?)\s*$");
+        var signUpUrl = base + "/signUp/signUp.json";
+        var productListUrl = base + "/yeezy/clp/getRecommendProductInfo.json";
+        $(window).on('pageshow', function () {
+        });
+
+        $(function () {
+          //商品图片域名
+          var imgBaseUrl = '';
+        if (document.location.host == 'www.adidas.com.hk') {
+          imgBaseUrl = 'https://img.adidas.com.hk/resources/'
+        } else {
+          imgBaseUrl = 'http://beta-img.adidas.com.hk/resources/'
+        }
+      // 获取商品
+
+        var obj = {
+          "activityList": [
+            {
+              "activityId": 170,
+              "codes": ["GX3605"]
+            },
+            {
+              "activityId": 171,
+              "codes": ["GZ3079"]
+            }
+          ]
+        }
+
+        var productList = [];
+        var pro = [];
+        var swiperHtml = '';
+        var proImgHtml = '';
+        var proImg = [];
+        var time = [];
+        $.ajax(
+          {
+            url: productListUrl,
+            type: 'post',
+            data: JSON.stringify(obj),
+            dateType: 'json',
+            headers: { 'Content-Type': 'application/json;charset=utf8' },
+            success: function (data) {
+              productList = data
+              for (i = 0; i < productList.length; i++) {
+                var p = productList[i].products
+                for (n = 0; n < p.length; n++) {
+                  pro.push(p[n])
+                }
+
+            }
+            console.log(pro)
+            for (i = 0; i < pro.length; i++) {
+              proImg[i] = pro[i].picUrls;
+              time[i] = pro[i].startTime;
+              swiperHtml += `<div class="recommend-product">`
+              swiperHtml += `<div class="clp-more">`
+              swiperHtml += `<div class="swiper-container swiper-more${i}" data-index="${i}">`
+              swiperHtml += `<div class="swiper-wrapper" style="height: auto;">`
+              for (n in proImg[i]) {
+                swiperHtml += `<div class="swiper-slide" style="height: auto;">`
+                swiperHtml += `<p>`
+                swiperHtml += `<a class="link" href="${pro[i].url}">`
+                swiperHtml += `<img src="${imgBaseUrl}${proImg[i][n]}">`
+                swiperHtml += `</a>`
+                swiperHtml += `</p>`
+                swiperHtml += `</div>`
+              }
+
+              swiperHtml += `</div>`
+              swiperHtml += `<div class="pagination swiper-pagination${i}"></div>`
+              swiperHtml += `</div>`
+              swiperHtml += `<div class="swiper-button-prev swiper-button-prev${i}"></div>`
+              swiperHtml += `<div class="swiper-button-next swiper-button-next${i}"></div>`
+              swiperHtml += `</div>`
+              swiperHtml += `<div class="text-block">`
+              swiperHtml += `<h1>${pro[i].title}</h1>`
+              if (pro[i].status == 0) {
+                swiperHtml += `<p>${timestampToTime(time[i])}</p>`
+              } else {
+                swiperHtml += `<p><a href="${pro[i].url}">${pro[i].isSoldOut == false ? 'BUY NOW' : 'SOLD OUT'}</a></p>`
+              }
+              swiperHtml += `</div>`
+              swiperHtml += `</div>`
+            }
+            $('#proContent').append(swiperHtml);
+            console.log(data, "sucess");
+            $('.clp-more .swiper-container').each(function (index, el) {
+              var _index = $(this).attr('data-index');
+              var obj = '.swiper-more' + _index;
+              var SwiperBig = new Swiper(obj, {
+                spaceBetween: 10,
+                paginationClickable: true,
+                loop: true,
+                slidesPerGroup: 1,
+                slidesPerView: 1,
+                paginationClickable: true,
+                nextButton: '.swiper-button-next' + _index,
+                prevButton: '.swiper-button-prev' + _index,
+                pagination: '.swiper-pagination' + _index,
+                observer: true, //修改swiper自己或子元素时，自动初始化swiper，主要是这两行
+                observeParents: true, //修改swiper的父元素时，自动初始化swiper
+              });
+            })
+          },
+          error: function (data) { console.log("error"); }
+        }
+      );
+        function timestampToTime(timestamp) {
+          var date = new Date(timestamp);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
+          Y = ' ' + date.getFullYear();
+          M = date.getMonth() + 1;
+          D = ' ' + date.getDate() + ' ';
+          h = (date.getHours() > 12 ? date.getHours() - 12 : date.getHours());
+          m = (date.getMinutes() < 10 ? '0' + (date.getMinutes()) : date.getMinutes()) + ' ';
+          isAm = 'AM';
+          if (date.getHours() > 12) {
+            isAm = 'PM';
+          }
+          if (M == 1) {
+          M = 'JAN'
+        } else if (M == 2) {
+          M = 'FEB'
+        } else if (M == 3) {
+          M = 'MAR'
+        } else if (M == 4) {
+          M = 'APR'
+        } else if (M == 5) {
+          M = 'MAY'
+        } else if (M == 6) {
+          M = 'JUN'
+        } else if (M == 7) {
+          M = 'JUL'
+        } else if (M == 8) {
+          M = 'AUG'
+        } else if (M == 9) {
+          M = 'SEP'
+        } else if (M == 10) {
+          m = 'OTC'
+        } else if (M == 11) {
+          M = 'NOV'
+        } else if (M == 12) {
+          M = 'DEC'
+        }
+        return 'AVAILABLE AT' + ' ' + h + isAm + ' ' + M + D
+      }
+
+
+
+
+
+
+        setTimeout(function () {
+          $('.form-group-mail').each(function (index, elm) {
+            moveUpInputLable($(elm).find('input'), $(elm).find('label'));
+          })
+        }, 500);
+
+        //邮箱验证
+        $("input").blur(function () {
+          validateEmail($(this));
+        })
+        // 清除input框内容
+        $('.form-group-mail .msg-icon').on('tap', function () {
+          $(this).parent('.msg-block').siblings('input').removeAttr('value');
+        })
+
+        $(".gl-input__field").focus(function () {
+          $(this).next($('.gl-input__label')).addClass('gl-input__label--hoisted');
+        }).blur(function () {
+          if ($(this).val() === 0) {
+            $(this).next($('.gl-input__label')).removeClass('gl-input__label--hoisted');
+          }
+        });
+
+        var subscribteDialog = $.spice.dialog({
+          template: $('#subscribte-element').html()
+          , dialogClass: 'dialog-subscribte',
+          initEvent: function (e) {
+            //弹出层初始化时需要做的事情，只会在创建弹出层的时候执行
+            //如：初始化事件
+            var dialog = e.data.dialog;
+            $('.e-btncomplete', dialog.elem).on('tap', function () {
+              dialog.hide();
+            });
+          },
+        });
+        $('.subscribe-btn .btn').on('tap', function (e) {
+          e.preventDefault();
+          var _this = $(this),
+            _thisParents = _this.parents('.login-box').find('.form-group-mail'),
+            emailObj = _thisParents.find('.gl-input__field');
+          if (!validateEmail(emailObj)) {
+            return;
+          }
+          var result = loxia.syncXhrPost(signUpUrl, {
+            email: emailObj.val().trim()
+          });
+          if (result.result) {
+            clearError(_thisParents);
+            subscribteDialog.elem.on('dialog.show-before', function () {
+              $('.email-address').html(emailObj.val());
+            });
+            subscribteDialog.show();
+          } else {
+            if (!result.resultMessage) {
+              showError(_thisParents, "Sorry,system busy, please try again later");
+            } else if (result.resultMessage.message === 'EMAIL_REPEAT_SIGN_UP') {
+              showError(_thisParents, "The Email has been registered");
+            } else if (result.resultMessage.message === 'EMAIL_PATTERN_ERROR') {
+              showError(_thisParents, "Please enter a valid e-mail address");
+            }
+          }
+        });
+
+      });
+
+                  function validateEmail(emailObj) {
+                    var _this = emailObj,
+                      obj = _this.val().trim(),
+                      _thisParents = _this.parents('.form-group-mail');
+                    if (obj === '' || !reg.test(obj)) {
+                      showError(_thisParents, "Please enter a valid e-mail address");
+                      return false;
+                    }
+                    clearError(_thisParents);
+                    return true;
+
+                }
+
+        function showError(obj, message) {
+          obj.addClass('is-error');
+          obj.addClass('mail-subscription-form');
+          obj.find('.msg-block span').html(message);
+        }
+
+        function clearError(obj) {
+          obj.removeClass('is-error');
+          obj.removeClass('mail-subscription-form');
+          obj.find('.msg-block span').html('');
+        }
+        function moveUpInputLable(input, label) {
+          if ("" != input.val()) {
+            label.removeClass();
+            label.addClass("gl-input__label gl-input__label--hoisted")
+          }
+        }
+      </script>
+    <!-- 内容部分 -->
+    <section class="container">
+      <!-- 商品展示 -->
+      <div id="proContent"></div>
+      <!-- 邮箱注册 -->
+      <article class="email-site">
+        <div class="email-sign">
+          <h2 class="log">YEEZY</h2>
+          <h4 class="tit">SIGN UP TO BE THE FIRST TO GET UPDATES</h4>
+          <div class="login-box">
+            <div class="float-clearfix">
+              <!-- 报错类名form-input加is-error  -->
+              <div class="form-input form-group-mail">
+                <input type="text" class="gl-input__field gl-input__field-account">
+    <label class="gl-input__label"> <span>EMAIL *</span> </label>
+    <div class="msg-block">
+      <i class="icon msg-icon"></i>
+      <span></span>
+    </div>
+    </div>
+  </div>
+  <div class="subscribe-btn">
+    <!-- is-disabled is-error -->
+    <a class="btn btn-blue icon-a-font gl-cta gl-cta--primary gl-cta--primary-light" href="javascript:void(0)"> SIGN UP
+      <!-- <span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span> -->
+    </a>
+    </div>
+  <p class="tips"> BY CLICKING SIGN UP, YOU HAVE READ AND AGREED TO THE ADIDAS <a
+      href="https://www.adidas.com.hk/private_policy?locale=en_GB">PRIVACY NOTICE</a> </p>
+  </div>
+  </div>
+  </article>
+<script>
+  $(function () {
+    // 换图 + 懒加载
+    $.spice.lazyLoad('img[lazysrc]', {
+      attr: 'lazysrc'
+    });
+    $.spice.tools.changeImageSrc({
+      callBack: function (img, self) {
+        $.spice.lazyLoad('img[lazysrc]', {
+          attr: self.opt.lazyData,
+          prestrain: 1
+        });
+      }
+    });
+
+  })                                            
+    </script>
+    </section>
+    <script id="subscribte-element" type="text/template">
+          <div class="dialog">
+            <div class="dialog-container">
+              <div class="subscribte-box">
+                SIGN UP COMPLETE
+              </div>
+            </div>
+            <i class="icon icon-close dialog-close">&times;</i>
+          </div>
+        </script>
+
+      </section>
+      <%include _includes/modules/footer-no-back-top.html %>
+        <!-- 公共部分放最下，如回到顶部，弹出层等 -->
+  </div>
+</body>
+
+</html>

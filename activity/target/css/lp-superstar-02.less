@@ -1,0 +1,308 @@
+.article {
+	position: relative;
+
+	> img {
+		width: 100%;
+	}
+}
+
+.article-link {
+	a {
+		position: absolute;
+		width: 17%;
+		height: 22%;
+	}
+
+	&.link-five {
+		a{
+			width:15.6%;
+		}
+		.btn1 {
+			left: 10%;
+			bottom: 3%;
+		}
+
+		.btn2 {
+			left: 26%;
+			bottom: 3%;
+		}
+
+		.btn3 {
+			left: 42%;
+			bottom: 3%;
+		}
+		.btn4 {
+			left: 58.5%;
+			bottom: 3%;
+		}
+		.btn5 {
+			left: 74.5%;
+			bottom: 3%;
+		}
+	}
+
+	&.link-four{
+		a{
+			width:16%;
+		}
+		.btn1 {
+			left: 16%;
+			bottom: 3%;
+		}
+
+		.btn2 {
+			left: 33%;
+			bottom: 3%;
+		}
+
+		.btn3 {
+			left: 51%;
+			bottom: 3%;
+		}
+
+		.btn4{
+			left: 68%;
+			bottom: 3%;
+		}
+	}
+	&.link-two{
+		.btn1 {
+			left: 33%;
+			bottom: 3%;
+		}
+
+		.btn2 {
+			left: 50%;
+			bottom: 3%;
+		}
+	}
+}
+.article-link-footer{
+	a{
+		position: absolute;
+		width: 16%;
+    height: 23%;
+	}
+	.btn1 {
+		left: 16%;
+		bottom: 5%;
+	}
+
+	.btn2 {
+		left: 33%;
+		bottom: 5%;
+	}
+
+	.btn3 {
+		left: 51%;
+		bottom: 5%;
+	}
+
+	.btn4{
+		left: 68%;
+		bottom: 5%;
+	}
+}
+.article-kv {
+	position: relative;
+
+	.swiper-container-kv {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 19%;
+		width: 68%;
+
+		.swiper-wrapper {
+			.swiper-slide {
+				.slide-img {
+					display: block;
+					width: 100%;
+					margin: 0 auto 25px;
+				}
+			}
+		}
+	}
+
+	.swiper-button-next1,
+	.swiper-button-prev1 {
+		width: 80px;
+		height: 80px;
+		cursor: pointer;
+		position: absolute;
+		top: 29%;
+	}
+
+	.swiper-button-prev1 {
+		left: 17%;
+	}
+
+	.swiper-button-next1 {
+		right: 17%;
+	}
+
+	.swiper-pagination-one {
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 12%;
+
+		.swiper-pagination-bullet {
+			height: 18px;
+			width: 48px;
+			background: url("https://img.adidas.com.hk/resources/2020/KV/FEB/superstar/clp/btn.png");
+			border-radius: 0;
+			margin: 0 5px;
+			opacity: 1;
+		}
+
+		.swiper-pagination-bullet-active {
+			background: url("https://img.adidas.com.hk/resources/2020/KV/FEB/superstar/clp/btn-active.png");
+		}
+	}
+}
+@media (max-width: 1024px) {
+	.article-kv {
+		.swiper-container-kv {
+			width: 96%;
+			bottom: 13%;
+
+			.swiper-wrapper {
+				.swiper-slide {
+					.slide-img {
+						margin-bottom: 15px;
+					}
+				}
+			}
+		}
+		.swiper-pagination-one {
+			width: 100%;
+			bottom: 6%;
+
+			.swiper-pagination-bullet {
+				width: 30px;
+				height: 11px;
+				background-size: 100%;
+			}
+		}
+	}
+
+	.article-link {
+		a {
+			width: 41%;
+     height: 19%;
+		}
+
+		&.link-five{
+			a{
+				width: 40%;
+	     height: 17%;
+			}
+			.btn1 {
+				left: 10%;
+				bottom: 37%;
+			}
+
+			.btn2 {
+				left: 51%;
+				bottom: 37%;
+			}
+
+			.btn3 {
+				left: 10%;
+				bottom: 19%;
+			}
+
+			.btn4{
+				left: 51%;
+				bottom: 19%;
+			}
+			.btn5{
+				left: 10%;
+				bottom: 1%;
+			}
+		}
+
+		&.link-four{
+			a{
+				width: 40%;
+	     height: 19%;
+			}
+			.btn1 {
+				left: 10%;
+				bottom: 24%;
+			}
+
+			.btn2 {
+				left: 51%;
+				bottom: 24%;
+			}
+
+			.btn3 {
+				left: 10%;
+				bottom: 4%;
+			}
+
+			.btn4{
+				left: 51%;
+				bottom: 4%;
+			}
+			&.link-4{
+				.btn1 {
+				  bottom: 25%;
+
+				}
+
+				.btn2 {
+	        bottom: 25%;
+				}
+
+				.btn3 {
+					bottom: 4%;
+				}
+				.btn4 {
+					bottom: 4%;
+				}
+			}
+		}
+		&.link-two{
+			a{
+				height: 25%;
+			}
+			.btn1 {
+				left: 9%;
+				bottom: 5%;
+			}
+
+			.btn2 {
+				left: 51%;
+				bottom: 5%;
+			}
+		}
+	}
+	.article-link-footer{
+		a{
+			position: absolute;
+			width: 43%;
+	    height: 25%;
+		}
+		.btn1 {
+			left: 5%;
+			bottom: 31%;
+		}
+
+		.btn2 {
+			left: 51%;
+			bottom: 31%;
+		}
+
+		.btn3 {
+			left: 5%;
+			bottom: 4%;
+		}
+
+		.btn4{
+			left: 51%;
+			bottom: 4%;
+		}
+	}
+}

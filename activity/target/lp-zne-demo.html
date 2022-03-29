@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>adidasneo</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/lp-adidasneo.css">
+	<%include _includes/js.html %>
+</head>
+<body>
+<div id="wrapper">
+	<%include _includes/modules/header.html %>
+	<!-- 内容部分 -->
+	<section class="container">
+		<style type="text/css">
+			.zne-box img{
+				width: 100%;
+			}
+		</style>
+		<article class="article">
+			<div class="zne-box">
+				<img src="images/blank.gif"
+					data-image='{"standard":{"high":"", "normal":"../static/images/common/zne-pc1.jpg"},
+						"medium":{"high":"", "normal":"../static/images/common/zne-mb1.jpg"},
+						"small":{"high":"", "normal":"../static/images/common/zne-mb1.jpg"}
+				}' />
+			</div>
+		</article>
+	</section>
+	<%include _includes/modules/footer.html %>
+	<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+</div>
+</body>
+</html>

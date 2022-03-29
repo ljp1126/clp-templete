@@ -1,0 +1,198 @@
+.article {
+  position: relative;
+}
+.article .btn {
+  min-width: auto;
+  height: 40px;
+  line-height: 40px;
+}
+.article .btn .gl-icon {
+  height: 40px;
+  line-height: 40px;
+}
+.margin_T {
+  margin-top: 24px;
+}
+.article-two .btn-con {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  bottom: 6%;
+}
+.article-three .btn-con {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 6%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+}
+.article-three .btn-con > a {
+  margin-right: 8%;
+}
+.article-three .btn-con > a:last-child {
+  margin-right: 0;
+}
+.article-four .btn-con {
+  position: absolute;
+  left: 60%;
+  bottom: 10%;
+}
+.article-five .btn-con-new {
+  position: absolute;
+  width: 97.7%;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+}
+.article-five .btn-con-new .item {
+  position: relative;
+  height: 100%;
+  flex: 1;
+}
+.article-five .btn-con-new .item .btn-con {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 12%;
+  text-align: center;
+}
+.gallery-swiper-style h3 {
+  font-family: 'AdineuePRO', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+  padding: 0;
+  margin-top: 40px;
+}
+.gallery-swiper-style .style-guess-you-Iike {
+  margin-bottom: 80px;
+}
+.gallery-swiper-style .style-guess-you-Iike .swiper-button-next,
+.gallery-swiper-style .style-guess-you-Iike .swiper-button-prev {
+  display: none;
+}
+.gallery-swiper-style .style-guess-you-Iike .swiper-container .swiper-wrapper .swiper-slide {
+  min-height: auto;
+}
+.gallery-swiper-style .style-guess-you-Iike .swiper-container .swiper-wrapper .swiper-slide a {
+  text-align: center;
+  padding: 22px 0;
+}
+.gallery-swiper-style .style-guess-you-Iike .swiper-container .swiper-wrapper .swiper-slide a .text {
+  font-family: 'PingFangSC-Semibold';
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: underline;
+}
+.gallery-swiper-style .style-guess-you-Iike .swiper-container .swiper-wrapper .swiper-slide a img {
+  width: 80%;
+  margin-bottom: 40px;
+}
+.article-week-best {
+  padding-top: 40px;
+}
+@media (max-width: 1024px) {
+  .article .btn {
+    min-width: auto;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+  .article .btn .gl-icon {
+    height: 36px;
+    line-height: 34px;
+    margin-left: 12px;
+    font-size: 20px;
+  }
+  .article-three .btn-con {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 6%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    padding: 0 8px;
+  }
+  .article-three .btn-con > a {
+    margin-right: 0%;
+  }
+  .article-three .btn-con > a:last-child {
+    margin-right: 0;
+  }
+  .article-four .btn-con {
+    position: absolute;
+    left: 47%;
+    bottom: auto;
+    top: 91%;
+  }
+  .article-five .btn-con-new {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .article-five .btn-con-new .item {
+    width: 100%;
+    height: 23.6%;
+    flex: unset;
+  }
+  .article-five .btn-con-new .item .btn-con {
+    width: auto;
+    left: 48%;
+    bottom: 22%;
+    transform: translateY(50%);
+  }
+  .gallery-swiper-style .style-guess-you-Iike {
+    margin-bottom: 40px;
+    margin-top: 28px;
+  }
+  .gallery-swiper-style h3 {
+    font-size: 20px;
+    padding: 0;
+    width: 100%;
+    position: unset;
+    line-height: 20px;
+    margin-bottom: 3px;
+    margin-top: 42px;
+    text-align: center;
+  }
+  .gallery-swiper-style .style-guess-you-Iike {
+    margin-bottom: 45px;
+    padding-left: 24px;
+    margin-top: 0;
+  }
+  .gallery-swiper-style .style-guess-you-Iike .swiper-button-next,
+  .gallery-swiper-style .style-guess-you-Iike .swiper-button-prev {
+    display: none;
+  }
+  .gallery-swiper-style .style-guess-you-Iike .swiper-container .swiper-wrapper .swiper-slide {
+    width: 43%;
+    min-height: auto;
+  }
+  .gallery-swiper-style .style-guess-you-Iike .swiper-container .swiper-wrapper .swiper-slide a {
+    text-align: center;
+    padding: 22px 0;
+  }
+  .gallery-swiper-style .style-guess-you-Iike .swiper-container .swiper-wrapper .swiper-slide a .text {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .gallery-swiper-style .style-guess-you-Iike .swiper-container .swiper-wrapper .swiper-slide a img {
+    width: 80%;
+    margin-bottom: 25px;
+  }
+  .gallery-swiper-style .style-guess-you-Iike .swiper-container .swiper-pagination {
+    margin-top: 3px;
+  }
+}

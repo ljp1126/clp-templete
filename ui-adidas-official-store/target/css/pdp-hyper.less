@@ -1,0 +1,61 @@
+@charset "utf-8";
+@ie:\9;
+.pdp-htper-room-info-dialog{
+	.dialog-scroll-container{
+		.dialog{
+			width: 388px;
+			.dialog-container{
+				text-align: center;
+    			padding: 30px 0;
+			}
+			.dialog-content{
+				margin: 20px 0 50px;
+				p{
+					font-size: 16px;
+					color: #000;
+					line-height: 22px;
+					padding: 0 20px;
+					a{
+						text-decoration: underline;
+						&:hover{
+							color: #000;
+						}
+					}
+				}
+			}
+			.dialog-close{
+				display: none;
+			}
+		}
+	}
+}
+@media screen and (max-width: 767px){
+	.pdp-htper-room-info-dialog{
+		.dialog-scroll-container{
+			.dialog{
+				max-width: 388px;
+				width: 375px;
+				min-width: 320px;
+				margin: 0;
+				border: 0px solid #C8CBCC;
+				.dialog-content{
+					margin: 0px 0 30px;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 374px){
+	/*pdp*/
+	.pdp-htper-room-info-dialog{
+		.dialog-scroll-container{
+			.dialog{
+				width: 100%;
+			}
+		}
+	}
+}
+
+@import "index.less";

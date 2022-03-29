@@ -1,0 +1,116 @@
+<!-- pdp-bundle-sale-dialog-template -->
+<script id="bundle-sale-dialog" type="text/template">
+	<div class="dialog">
+		<div class="dialog-container">
+			<div class="dialog-content">
+				<h3><i class="icon icon-bundle-sale-dialog-back e-bundle-sale-dialog-back"></i>推荐组合</h3>
+				<div class="bundle-sale-container">
+					<ul class="bundle-commodity">
+						<% for(var i = 0; i < 4; i++){ %>
+						<li>
+							<div class="thumbnail">
+								<a href="#">
+									<i class="icon icon-bundle-plus"></i>
+									<img src="images/blank.gif" lazy-src="../static/images/pdp/productmap230_3.png" width="140" height="140" alt="" />
+								</a>
+								<div class="goods-box">
+									<a href="pdp.html">
+										<span class="goods-title">跑步 UltraBOOST 跑步鞋学院藏青蓝</span>
+									</a>
+									<div class="select-box">
+										<div class="dropdown e-bundle-sale-dropdown">
+											<a class="btn">
+												<span class="dropdown-text">选择商品属性</span>
+												<span class="dropdown-icon"><i class="icon icon-caret"></i></span>
+											</a>
+										</div>
+										<p class="full-attribute"></p>
+									</div>
+									<span class="goods-price">¥1,399</span>
+								</div>
+							</div>
+						</li>
+						<% }%>
+					</ul>
+					<div class="bundle-price">
+						<div class="price">
+							<span class="title">组合价</span>
+							<span>¥1,527</span>
+							<span><del>¥1,600</del></span>
+						</div>
+						<a class="btn btn-blue btn-have-arrow"><span>立即购买</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script id="bundle-sale-select-dialog" type="text/template">
+	<div class="dialog">
+		<div class="dialog-container">
+			<div class="dialog-content">
+				<div class="color-select">
+					<p>灰 / 白 （S82156）</p>
+					<div class="color-box e-color-box">
+						<div class="color-list is-active" data-color="灰">
+							<a>
+								<img src="images/blank.gif" lazy-src="../static/images/pdp/productmap230_3.png" width="60" height="60" alt="" />
+							</a>
+						</div>
+						<div class="color-list" data-color="黑">
+							<a>
+								<img src="images/blank.gif" lazy-src="../static/images/pdp/productmap230_3.png" width="60" height="60" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<ul>
+					<li>
+						<a>42.5</a>
+					</li>
+					<li>
+						<a>43</a>
+					</li>
+					<li>
+						<a>43.5</a>
+					</li>
+					<li>
+						<a>44.5</a>
+					</li>
+					<li>
+						<a>44.5</a>
+					</li>
+					<li>
+						<a>44.5</a>
+					</li>
+					<li>
+						<a>44.5</a>
+					</li>
+					<li class="is-disabled">
+						<a>44.5</a>
+					</li>
+				</ul>
+				<ul class="none">
+					<li>
+						<a>42.5</a>
+					</li>
+					<li>
+						<a>43</a>
+					</li>
+					<li>
+						<a>43.5</a>
+					</li>
+					<li>
+						<a>44.5</a>
+					</li>
+					<li>
+						<a>44.5</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<i class="icon icon-close dialog-close">&times;</i>
+	</div>
+</script>
+<!-- pdp-bundle-sale-dialog-template end -->

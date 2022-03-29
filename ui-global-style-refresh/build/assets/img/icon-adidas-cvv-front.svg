@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="44" viewBox="0 0 60 44">
+    <defs>
+        <filter id="a" width="121.9%" height="121.9%" x="-10.9%" y="-7.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.166779891 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <circle id="b" cx="16" cy="16" r="16"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(2 1)">
+            <rect width="47" height="30" y="6" fill="#D8D8D8" rx="3"/>
+            <path fill="#EDEDED" d="M3 23h39v5H3z"/>
+            <g filter="url(#a)" transform="translate(23)">
+                <mask id="c" fill="#fff">
+                    <use xlink:href="#b"/>
+                </mask>
+                <use fill="#D8D8D8" xlink:href="#b"/>
+                <rect width="51" height="30" x="-25" y="-2" fill="#D8D8D8" mask="url(#c)" rx="3"/>
+                <path fill="#606060" d="M-25 2h51v7h-51z" mask="url(#c)"/>
+                <path fill="#FFF" d="M11 13h11v7H11z" mask="url(#c)"/>
+                <path fill="#EDEDED" d="M-21 13H9v7h-30z" mask="url(#c)"/>
+                <rect width="38" height="35" x="-2" y="-1" fill="#D8D8D8" mask="url(#c)" rx="3"/>
+                <path fill="#EDEDED" d="M0 20h17v8H0z" mask="url(#c)"/>
+            </g>
+            <circle cx="39" cy="16" r="16" stroke="#FFF"/>
+            <path fill="#000" d="M31.92 15v-4.576l-1.16 1.008v-1.12l1.16-1.008h1.04V15h-1.04zm2.712 0v-.936l2.128-2.472c.107-.123.183-.235.228-.336a.855.855 0 0 0 .068-.352.743.743 0 0 0-.176-.516c-.117-.13-.288-.196-.512-.196a.9.9 0 0 0-.252.036.59.59 0 0 0-.384.344.885.885 0 0 0-.06.348h-1.04c0-.261.044-.495.132-.7.088-.205.21-.38.368-.524.157-.144.341-.253.552-.328.21-.075.439-.112.684-.112.25 0 .483.039.696.116.213.077.396.187.548.328.152.141.27.315.356.52.085.205.128.436.128.692 0 .139-.013.263-.04.372-.027.11-.065.215-.116.316-.05.101-.115.201-.192.3a9.378 9.378 0 0 1-.26.316l-1.592 1.848h2.2V15h-3.464zm7.712-1.648c0 .283-.048.53-.144.744-.096.213-.227.39-.392.532a1.637 1.637 0 0 1-.576.316 2.29 2.29 0 0 1-.696.104c-.235 0-.46-.032-.676-.096a1.65 1.65 0 0 1-.576-.3 1.486 1.486 0 0 1-.404-.52 1.827 1.827 0 0 1-.16-.764h1.04c.005.128.03.239.072.332a.664.664 0 0 0 .412.368c.093.03.19.044.292.044a.772.772 0 0 0 .552-.204c.144-.136.216-.332.216-.588 0-.24-.07-.43-.208-.572-.139-.141-.336-.212-.592-.212h-.152v-.904h.152c.256 0 .44-.068.552-.204a.773.773 0 0 0 .168-.508c0-.24-.07-.421-.208-.544a.713.713 0 0 0-.488-.184.7.7 0 0 0-.492.18c-.13.12-.201.29-.212.508h-1.04c.005-.256.055-.484.148-.684a1.557 1.557 0 0 1 .92-.828c.21-.075.436-.112.676-.112.25 0 .483.04.696.12.213.08.397.192.552.336a1.5 1.5 0 0 1 .36.516c.085.2.128.42.128.66 0 .31-.063.556-.188.74a1.328 1.328 0 0 1-.468.428c.203.107.376.263.52.468.144.205.216.481.216.828zm3.84.84V15h-1v-.808h-2.328v-.984l1.952-3.904h1.136l-1.952 3.904h1.192v-1.064h1v1.064h.52v.984h-.52z"/>
+        </g>
+        <text fill="#000" font-family="AdihausDIN-Bold, AdihausDIN" font-size="5" font-weight="bold">
+            <tspan x="6" y="15">AMEX</tspan>
+        </text>
+    </g>
+</svg>

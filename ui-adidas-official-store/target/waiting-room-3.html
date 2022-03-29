@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" href="css/sale.css">
+	<%include _includes/js.html %>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-simple.html %>
+		<!-- 内容部分 -->
+		<section class="container waiting-room container-min-h">
+			
+			<article class="article article-frame">
+				<div class="bg-box"></div>
+				<div class="sale-content waiting-in-queue">
+					<div class="img-box"><img src="images/sale/waiting-logo.png" /></div>
+					<div class="text-box">
+						<h3>当前同时提交信息的人数过多。</h3>
+						<p>请尝试刷新此页面重新提交您的请求，给您带来不便，敬请谅解。</p>
+					</div>
+					<div class="btn-box btn-two-box">
+						<a class="btn btn-black" href="index.html">点击刷新页面</a>
+					</div>
+				</div>
+			</article>
+		
+		</section>
+
+		<%include _includes/modules/footer-simple-no-back-top.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+	</div>
+</body>
+</html>

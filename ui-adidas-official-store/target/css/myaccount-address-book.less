@@ -1,0 +1,1131 @@
+@charset "utf-8";
+
+.ma-address-banner{
+    margin:20px 0 40px;
+    img{
+        width: 100%;
+    }
+
+}
+.container {
+    // padding-top: 0;
+}
+.ma-address-box{
+    background: #FFF;
+    border: 1px solid #000;
+    border-radius: 2px;
+    padding: 0 20px 0;
+}
+.form-select-box .form-input input{
+    text-overflow:ellipsis;
+}
+.form-input {
+    textarea{
+        height: 56px;
+    }
+}
+/*cue-txt start*/
+.form-selects{
+    .form-select{
+        .btn{
+            .dropdown-text{
+                color:#888888;
+           }
+        }
+        &.is-success{
+            .btn{
+                .dropdown-text{
+                    color:#000000;
+               }
+            }
+        }
+    }
+
+}
+
+.select-box{
+    .dropdown{
+        .btn{
+            .dropdown-text{
+                color:#888888;
+
+            }
+        }
+        &.is-success{
+            .btn{
+                .dropdown-text{
+                    color:#000000;
+               }
+            }
+        }
+    }
+}
+/*cue-txt end*/
+.address-form-content{
+    padding:20px 0 20px;
+}
+.order-submit-member-content{
+        .event-address-box{
+
+
+        }
+    }
+.order-submit-content {
+    // width: 950px;
+    // margin: 30px auto 50px;
+
+    .order-content-left {
+        // width: 650px;
+        // float: left;
+        .address-select-list,
+        .address-form-box{
+            position: relative;
+        }
+        .address-select-list{
+            padding-top:20px;
+        }
+    }
+    // .order-content-right {
+    //     width: 280px;
+    //     float: right;
+    // }
+    // .order-line {
+    //     height: 1px;
+    //     border-top: 1px dotted #C8CBCC;
+    //     margin: 32px 0 35px 0;
+    // }
+    /*会员*/
+    &.order-submit-member-content{
+        // .address-form-box{
+        //     display: block;
+        // }
+        // .address-select-list{
+        //     display: none;
+        // }
+    }
+}
+
+.payment-method {
+    // padding: 0 0 35px;
+    // margin: 0 0 35px;
+    // border-bottom: 3px solid #C8CBCC;
+    .order-title {
+        font-size: 20px;
+        color: #000;
+        line-height:60px;
+        border-bottom: 1px solid #C8CBCC;
+        font-weight: bold;
+        span{
+            font-size: 12px;
+            color: #C53622;
+            line-height: 12px;
+            display: inline-block;
+            vertical-align: bottom;
+            margin-left: 20px;
+        }
+    }
+    .order-title-box{
+        .pc-place{
+            border-bottom: 1px solid #C8CBCC;
+        }
+        line-height:58px;
+        .order-title-labels {
+            font-size: 20px;
+            color: #000000;
+            font-weight:700;
+        }
+        .order-title-link{
+            float: right;
+            font-size: 16px;
+            color: #0280C3;
+            &:hover{
+                color: #025F8E;
+            }
+
+        }
+        .maxaddress{
+            font-size: 16px;
+            color:#000000;
+            cursor: auto;
+            &:hover{
+                color: #000000;
+            }
+            .warning-ic{
+                display:inline-block;
+                width: 16px;
+                height:16px;
+                margin:0 0 -2px 10px;
+                background: url(../images/icon.png);
+                background-size:1000px auto;
+                background-position: -304px -86px;
+            }
+        }
+
+
+    }
+
+    .order-title-tips{
+        font-size: 14px;
+        line-height: 50px;
+        border-bottom:1px dotted #C8CBCC;
+        span{
+            font-weight:700;
+            cursor: pointer;
+        }
+    }
+
+}
+
+/*配送地址*/
+.delivery-address{
+    .delivery-address-top {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #C8CBCC;
+        height:60px;
+        line-height:60px;
+        .address-top-labels {
+            font-size: 20px;
+            color: #000000;
+        }
+        .add-address-link {
+            float: right;
+            font-size: 16px;
+            color: #0280C3;
+            &:hover{
+                color: #025F8E;
+            }
+
+        }
+        .maxadd-mb{
+            display:none;
+        }
+        .maxaddress{
+            font-size: 16px;
+            padding-right: 26px;
+            color:#000000;
+
+            .warning-ic{
+                display:inline-block;
+                width: 16px;
+                height:16px;
+                margin:0 0 -2px 10px;
+                background: url(../images/maxlist.png);
+            }
+        }
+    }
+    .address-top-tips{
+        font-size: 14px;
+        line-height: 55px;
+        padding-left:20px;
+        margin-top:-15px;
+
+    }
+    .add-address-list{
+        margin-bottom: 20px;
+        border-bottom: 1px dotted #C8CBCC;
+        .distribution-list {
+            position: relative;
+            padding: 12px 20px 12px 55px;
+            border-top: 1px dotted #C8CBCC;
+            i.icon {
+                position: absolute;
+                left: 14px;
+                top: 50%;
+                margin-top: -13px;
+                &:hover{
+                    background-position:-104px -228px;
+                }
+            }
+            .distribution-list-box {
+                display: inline-block;
+                color: #000;
+                .address-default{
+                    width: 140px;
+                    font-size: 14px;
+                    color: #000000;
+                    line-height: 16px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    position: absolute;
+                    left: 55px;
+                    left: 50px;
+                    top: 50%;
+                    margin: -8px 0 0 0;
+
+                    span{
+                        &.default-span{
+                                display: none;
+                            }
+                    }
+                }
+                .address-name{
+                    width: 110px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    padding: 0 8px 0 0;
+                    display: inline-block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    position: absolute;
+                    left: 195px;
+                    top: 50%;
+                    margin: -8px 0 0 0;
+                    span{
+                        display: none;
+                    }
+                }
+                .address-box {
+                    vertical-align: middle;
+                    float: left;
+                    max-width: 330px;
+                    margin: 0 0 0 250px;
+                    p {
+                        font-size: 14px;
+                        line-height: 22px;
+                        /*white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;*/
+                    }
+                }
+
+            }
+            .edit-box {
+                position:absolute;
+                top: 50%;
+                right:20px;
+                margin: -8px 0 0 0;
+                .edit-button {
+                    font-size: 14px;
+                    color: #0287CD;
+                    line-height: 20px;
+                    padding: 0 2px;
+                    &:hover{
+                        color: #025F8E;
+                    }
+                }
+                .event-delect{
+                    em{
+                        font-style: normal!important;
+                    }
+                }
+            }
+            &.is-active {
+                background: #F9F9F9;
+                .icon{
+                    left:-9999px !important;
+                }
+                .distribution-list-box{
+
+                    .address-default{
+                        margin-left:-30px;
+                        span{
+                            display: none;
+                            margin: 0 4px 0 0;
+                            &.default-span{
+                                display: block;
+                            }
+                        }
+                    }
+                    .address-name{
+                        span{
+                            display: inline-block;
+                            margin: 0 4px 0 0;
+                        }
+                        .sm-show{
+                            display: none;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    .delivery-address-bottom {
+        a {
+            font-size: 14px;
+            color: #000;
+            line-height: 16px;
+            .icon-caret {
+                display: inline-block;
+                width: 12px;
+                height: 8px;
+                background-position: -74px 0;
+                margin-left: 7px;
+            }
+            &.is-open{
+                .icon-caret {
+                    background-position: -52px 0;
+                }
+            }
+        }
+
+    }
+
+}
+
+/*游客*/
+.order-submit-guest-content{
+    .address-form-box{
+        .form-group{
+            &:nth-child(4),
+            &:nth-child(5) {
+               margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+/*复选按钮*/
+.checked-select-con{
+    position: relative;
+    line-height: 24px;
+    margin-bottom: 10px;
+    .icon-checked{
+        vertical-align: middle;
+    }
+    .checked-select{
+        display: inline-block;
+        span{
+            font-size: 14px;
+            color: #000;
+            vertical-align: middle;
+            margin-left: 8px;
+            a{
+                text-decoration: underline;
+            }
+        }
+    }
+    &.font-size-12{
+        .checked-select{
+            span{
+                font-size: 12px;
+            }
+        }
+    }
+    &.invoice-select{
+        margin: 20px 0 0;
+        .invoice-box{
+            margin: 20px 0 0;
+            >div{
+                float: left;
+                position: relative;
+                line-height: 24px;
+                margin-top: 7px;
+                span{
+                    font-size: 14px;
+                    color: #000;
+                    vertical-align: middle;
+                    margin-left: 10px;
+                }
+            }
+            .invoice-company{
+                margin: 7px 0 0 60px;
+            }
+            .form-group{
+                margin: 0 0 0 20px;
+                .form-input{
+                    width: 230px;
+                }
+            }
+        }
+    }
+}
+
+/*订单详情*/
+@import "modules/address-form.less";
+@import "modules/order-summary-box.less";
+@import "modules/order-help-box.less";
+@import "modules/other-payment-method.less";
+
+.address-form-box{
+    .form-group:nth-child(4){
+        width: 435px;
+    }
+}
+
+.common-payment{
+    position: relative;
+    .order-summary-box{
+        margin-bottom: 50px;
+    }
+    .order-help-box {
+        margin-bottom: 60px;
+    }
+
+}
+
+/*订单详情 end*/
+@media (max-width:1024px){
+    .address-form-box{
+        .form-group:nth-child(4){
+            width: 100%;
+        }
+    }
+    .ma-address-box{
+        border: none;
+        padding: 0;
+    }
+    .myaccount-might-like{
+        margin-top:-20px;
+        max-width: 100%;
+    }
+    .form-select-box .form-input input{
+        text-overflow:ellipsis;
+    }
+
+
+    .order-submit-content {
+        width: 100%;
+        margin: 18px auto 0;
+
+        .order-content-left,
+        .order-content-right {
+            width: 100%;
+            float: none;
+        }
+        .order-content-left{
+            .address-form-box{
+                padding:0 20px 0;
+                .form-group{
+                    .control-label{
+                        span{
+                            color:#888888;
+                        }
+                    }
+                }
+            }
+            .address-select-list{
+                padding-top:0px;
+            }
+
+        }
+
+    }
+    .payment-method {
+        padding: 0 0 0;
+        margin: 0 0 0;
+        border-bottom: 2px solid #C8CBCC;
+        .order-title {
+            font-size: 18px;
+            line-height: 18px;
+            margin-bottom: 0;
+            padding:0 0 0 20px;
+            height:60px;
+            line-height:60px;
+            span{
+                margin-left: 10px;
+            }
+        }
+        .order-title-box{
+            border:none;
+            height:auto;
+            .order-title-labels {
+                display:block;
+                padding-left:20px;
+                font-size: 18px;
+                color: #000000;
+                border-bottom: 1px solid #C8CBCC;
+            }
+            .order-title-link{
+                float: none;
+                display:block;
+                padding-left:20px;
+                font-size: 14px;
+                color: #0087D3;
+                line-height: 50px;
+                border-bottom: 1px solid #C8CBCC;
+                &:hover{
+                    color: #025F8E;
+                }
+                .add-ic{
+                    display: inline-block;
+                    width: 14px;
+                    height:14px;
+                    background:url(../images/icon@2x.png);
+                    background-size: 500px auto;
+                    background-position:-20px -300px;
+                    margin: 0 10px -2px 0;
+                }
+            }
+            .maxaddress{
+                font-size: 14px;
+                color: #000000;
+                &:hover{
+                    color: #000000;
+                }
+                .add-ic{
+                    width: 16px;
+                    height:16px;
+                    background:url(../images/icon.png);
+                    background-position:-304px -86px ;
+                }
+            }
+            .spantxt{
+                color:#000000;
+                &:hover{
+                    color: #000000;
+                }
+            }
+
+
+        }
+
+        .order-title-tips{
+            font-size: 12px;
+            line-height:1;
+            padding:20px 0 0 20px;
+            border-bottom:none;
+        }
+
+    }
+    .common-payment{
+        .other-payment-method,
+        .order-help-box {
+            display: none;
+        }
+        .order-summary-box{
+            margin-bottom: 0;
+        }
+    }
+    .order-summary-box .check-product-list .viewport {
+        max-height: 100%;
+    }
+
+    /*配送地址*/
+
+
+    .delivery-address{
+        border-bottom: 0px solid #C8CBCC;
+        margin: 0 0 6px;
+        .delivery-address-top {
+
+            height:auto;
+            border:none;
+            margin-bottom: 0;
+            .address-top-labels {
+                display:block;
+                padding-left: 20px;
+                font-size: 14px;
+            }
+            .add-address-link {
+                float:none;
+                display:block;
+                font-size: 14px;
+                padding-left: 20px;
+                border-bottom:1px solid #C8CBCC;
+            }
+            .maxadd-mb{
+                font-size: 14px;
+                color: #888888!important;
+                .add-ic{
+                    display: inline-block;
+                    width: 16px;
+                    height:16px;
+                    background:url(../images/icon@2x-copy.png);
+                    background-position:0px -305px ;
+                    background-size: 500px auto;
+                    margin: 0 10px -3px 0;
+                }
+            }
+
+        }
+        .address-top-tips{
+            font-size: 12px;
+            line-height: 60px;
+            padding-left:20px;
+
+        }
+        .add-address-list{
+            margin-bottom: 0px;
+            border-top: none;
+            padding-bottom: 10px;
+            border-bottom:none;
+            .distribution-list {
+                position: relative;
+                padding: 17px 20px 17px 50px;
+                border-top:none;
+                border-bottom: 1px solid #C8CBCC;
+                // margin-bottom: 8px;
+                background: #FFFFFF;
+                i.icon {
+                    top: 17px;
+                    left: 20px !important;
+                    margin-top: 0 !important;
+                    &:hover{
+                        background-position:-120px -360px;
+                    }
+                }
+                .distribution-list-box {
+                    display: inline-block;
+                    color: #000;
+                    max-width:240px;
+                    .address-default{
+                        width: 100%;
+                        line-height: 22px;
+                        padding: 0 ;
+                        display: block;
+                        position: static;
+                        margin: 0;
+                        span{
+                            display:block;
+                            &.default-span{
+                                display:none;
+                            }
+                        }
+                    }
+                    .address-name{
+                        width: 100%;
+                        line-height: 22px;
+                        padding: 0 ;
+                        display: block;
+                        position: static;
+                        margin: 0;
+                        span{
+                            display: none;
+                        }
+                        .sm-show{
+                            display: inline-block;
+                            margin: 0 0 0 5px;
+                        }
+                    }
+                    .address-box {
+                        float: none;
+                        max-width: 100%;
+                        margin: 0;
+
+                        p {
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+
+                }
+                .edit-box {
+
+                    top: 0px;
+                    right: -81px;
+                    z-index: 5;
+                    height: 101%;
+                    margin:0;
+                    .edit-button {
+                        padding: 17px 4px 0;
+                    }
+                    span{
+                        display:none;
+                    }
+                    a{
+                        width: 80px;
+                        display: table;
+                        height: 100%;
+                        text-align: center;
+                        float: left;
+                        padding-top: 38%;
+                        color: #BA021F;
+                        font-size: 14px;
+                    }
+                    .event-delect{
+                        background:#D9002A;
+                        color:#fff;
+                        padding-top:0;
+                        &:hover{
+                            color:#fff;
+                        }
+                        em{
+                            display:table-cell;
+                            vertical-align:middle;
+                        }
+
+                    }
+
+                }
+                &.is-active {
+                    background: #F7F7F7;
+                    .icon{
+                        left:20px !important;;
+                    }
+                    .distribution-list-box{
+                        .address-default{
+                            margin-left:0;
+                            span{
+                                display:block;
+                                &.default-span{
+                                    display:none;
+                                }
+                            }
+                        }
+                        .address-name{
+                            span{
+                                display: none;
+                            }
+                            .sm-show{
+                                display: inline-block;
+                                margin: 0 0 0 5px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .delivery-address-bottom {
+            a {
+                .icon-caret{
+                    background-position: -69px 0;
+                }
+                &.is-open{
+                    .icon-caret{
+                        background-position: -115px 0;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    /*复选按钮*/
+    .checked-select-con{
+        padding: 0 20px;
+        margin-bottom: 14px;
+        line-height: 20px;
+        &.invoice-select {
+            margin: 16px 0 0;
+            .checked-select{
+                >.icon-checked.is-active {
+                    background-position: -36px -79px;
+                }
+            }
+            .invoice-box{
+                >div{
+                    margin: 0;
+                    .icon-checked{
+                        background-position: -255px -110px;
+                        width: 22px;
+                        height: 22px;
+                        &.is-active{
+                            background-position: -287px -110px;
+                        }
+                    }
+                }
+                .invoice-company {
+                    margin: 0px 0 0 56px;
+                }
+                .form-group{
+                    margin: 15px 0 0;
+                    width: 100%;
+                    .form-input {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .address-form-content{
+        padding:20px 0 0;
+        .mob-address-list-content{
+            padding-top:30px;
+            padding-bottom:20px;
+            .mb-list-tit{
+                font-size: 14px;
+                font-weight: normal;
+                height:60px;
+                line-height:60px;
+                padding-left:20px;
+                border-top:1px solid #C8CBCC;
+                border-bottom:1px solid #C8CBCC;
+
+            }
+            .mob-address-list{
+                .distribution-list{
+                    &.is-active{
+                        background:#F7F7F7;
+                    }
+                    .distribution-list-box {
+                        max-width:240px;
+                        .address-default{
+                            width: 100%;
+                            line-height: 22px;
+                            padding: 0 ;
+                            display: block;
+                            position: static;
+                            margin: 0;
+                            font-size:14px;
+
+                            span{
+                                display:block;
+                                &.default-span{
+                                    display:none;
+                                }
+                            }
+
+                        }
+
+
+                    }
+                    i{
+
+                        position: absolute;
+                        top: 17px;
+                        left: 18px;
+                        margin-top:0;
+                    }
+                    .edit-box{
+                        a{
+                            display:table;
+                            background: transparent;
+                        }
+                        right:-81px;
+                        .edit-button{
+                            padding:17px 4px 0;
+                            color:#0087D3;
+
+                        }
+                        .event-delect{
+                            padding-top:0;
+                            em{
+                                font-style:normal!important;
+                                display:table-cell;
+                                vertical-align:middle;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+
+
+    .address-form-content{
+        .address-form-box{
+            .add-address-btn{
+                .btn-black{
+                    display: block;
+                    text-indent: 0;
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 40px;
+                    background: #000;
+                    padding: 0;
+                    margin: 0;
+                    z-index: 0;
+                }
+                .btn-blue{
+                    margin: 0 0 10px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+    .order-submit-member-content{
+        .event-address-box{
+            display: none;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .address-form-new-tit{
+        .main-tit{
+            font-size: 18px;
+            line-height:60px;
+            padding-left:20px;
+            border-bottom:1px solid #C8CBCC;
+
+        }
+        .add-tit{
+            font-size: 14px;
+            color: #0087D3;
+            line-height:60px;
+            padding-left:20px;
+            border-bottom:1px solid #C8CBCC;
+        }
+        .tip-tit{
+            font-size: 14px;
+            line-height:60px;
+            padding-left:20px;
+            border-bottom:1px solid #C8CBCC;
+        }
+    }
+
+
+
+
+}
+
+@media (max-width:359px){
+    .payment-method .order-title span {
+        margin-left: 0;
+    }
+    .distribution-method{
+        .distribution-list{
+            padding: 20px 10px 20px 55px;
+            .distribution-list-box {
+                width: 70%;
+            }
+        }
+    }
+
+}
+
+
+.dialog-opacity{
+    .dialog-scroll-container{
+        .dialog{
+            .dialog-container{
+                .dialog-content{
+                    h4{
+                        font-size: 14px;
+                        color: #000000;
+                        text-align:center;
+                        margin-top:30px;
+                        border:none;
+
+                    }
+                }
+                .dialog-btn-wrap{
+                    text-align:center;
+                    margin-bottom:35px;
+                    padding: 0 15px;
+                    .btn{
+                        display:block;
+                        margin:0 30px 15px;
+                        width: 216px;
+                        height:40px;
+                        line-height:40px;
+                        font-size: 16px;
+                        color: #FFFFFF;
+                        min-width: 80px;
+                        margin: 0 10px 15px;
+                        width: 120px;
+                        &.btn-blue{
+                            float: right;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+    }
+}
+
+
+@media (max-width:359px){
+
+    .delivery-address{
+        .add-address-list{
+            .distribution-list{
+                padding:17px 20px 17px 50px;
+                i.icon{
+                    left:20px;
+                }
+                &.is-active{
+                    .icon{
+                        left:20px;
+
+                    }
+                }
+                .distribution-list-box{
+                    max-width:180px;
+
+                }
+
+            }
+        }
+    }
+
+
+    .mob-address-list-content{
+        .mob-address-list{
+            border-top:1px solid #C8CBCC;
+            .distribution-list{
+                padding:17px 20px 17px 55px;
+                i.icon{
+                    left:20px;
+                }
+                &.is-active{
+                    .icon{
+                        left:20px;
+
+                    }
+                }
+                .distribution-list-box{
+                    max-width:180px;
+
+                }
+
+            }
+        }
+    }
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:2),
+screen and (min--moz-device-pixel-ratio:2),
+screen and (-o-min-device-piratio:200/100),
+screen and (min-device-pixel-ratio:2) {
+    .delivery-address .add-address-list .distribution-list i.icon-radio{
+        width: 26px;
+        height:26px;
+        background-position:-70px -110px;
+        margin-top:-13px!important;
+        left:14px!important;
+    }
+    .delivery-address .add-address-list .distribution-list i.icon:hover{
+        background-position:-35px -110px;
+    }
+
+}
+
+@media (max-width:1024px){
+    .delivery-address .add-address-list .distribution-list i.icon-radio{
+        width: 20px;
+        height:20px;
+        background-position:-90px -360px;
+        margin-top:0px!important;
+        left:20px!important;
+    }
+    .delivery-address .add-address-list .distribution-list i.icon:hover{
+        background-position:-120px -360px;
+    }
+
+    .delivery-address .add-address-list .distribution-list.is-active i.icon{
+        background-position:-120px -360px;
+    }
+
+
+    .dialog-opacity{
+        .dialog-scroll-container{
+            .dialog{
+                .dialog-container{
+                    .dialog-btn-wrap{
+                        padding: 0;
+                        .btn{
+                            margin:0 30px 15px;
+                            width: 216px;
+                            &.btn-blue{
+                                float: none;
+                            }
+                        }
+
+                    }
+
+                }
+
+            }
+        }
+    }
+
+}

@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+
+<body>
+	<div id="wrapper">
+		<!-- 头部 -->
+		<%include _includes/modules/header.html %>
+		<!-- 內容 -->
+
+		<section class="container">
+			<style>
+				
+				.article{
+					position: relative;
+				}
+				.article img{
+					width: 100%;
+				}
+				.article-btn {
+					margin: 20px 0;
+					text-align: center;
+				}
+				.btn-box{
+					display: flex;
+					justify-content: start;
+					align-items: center;
+					width: 45%;
+					margin: 0 auto;
+					padding: 60px 0 86px;
+					text-align: center;
+				}
+				.btn-box a{
+					width: 33%;
+					height: 100%;
+					font-size: 20px;
+				}
+				.pro-box{
+					position: absolute;
+					width: 68%;
+					height: 100%;
+					left: 50%;
+					transform: translateX(-50%);
+					top: 0;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-wrap: wrap;
+				}
+				.pro-box a{
+					width: 25%;
+					height: 33.33%;
+				}
+				
+				@media (max-width:1024px) {
+					.btn-box{
+						width: 100%;
+						padding: 30px 10px;
+					}
+					.btn-box a{
+						font-size: 12px;
+					}
+					.pro-box{
+						width: 100%;
+					}
+					.pro-box a{
+						width: 50%;
+						height: 16.66%;
+					}
+				}
+			</style>
+			<article class="article">
+					<img lazysrc="https://img.adidas.com.hk/resources/2021/FEB/IVY/clp/IVY-pc_01.jpg" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/FEB/IVY/clp/IVY-pc_01.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/FEB/IVY/clp/IVY-mob_01.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/FEB/IVY/clp/IVY-mob_01.jpg&quot;}
+					}">
+			
+			</article>
+			<article class="article article-btn">
+				<div class="btn-box">
+					<a href="https://www.adidas.com.hk/ivypark">ICY PARK</a>
+					<a href="https://www.adidas.com.hk/footwear">FOOTWEAR</a>
+					<a href="https://www.adidas.com.hk/hardware">HW ACC </a>
+				</div>
+			</article>
+			<article class="article ">
+				<img lazysrc="https://img.adidas.com.hk/resources/2021/FEB/IVY/clp/IVY-pc_02.jpg" src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/FEB/IVY/clp/IVY-pc_02.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/FEB/IVY/clp/IVY-mob_02.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/FEB/IVY/clp/IVY-mob_02.jpg&quot;}
+				}">
+				<div class="pro-box">
+					<a href="https://www.adidas.com.hk/item/H61806"></a>
+					<a href="https://www.adidas.com.hk/item/H18993"></a>
+					<a href="https://www.adidas.com.hk/item/HB5555"></a>
+					<a href="https://www.adidas.com.hk/item/H21148"></a>
+					<a href="https://www.adidas.com.hk/item/HB8421"></a>
+					<a href="https://www.adidas.com.hk/item/H21148"></a>
+					<a href="https://www.adidas.com.hk/item/H21201"></a>
+					<a href="https://www.adidas.com.hk/item/HB8413"></a>
+					<a href="https://www.adidas.com.hk/item/HB5983"></a>
+					<a href="https://www.adidas.com.hk/item/H19012"></a>
+					<a href="https://www.adidas.com.hk/item/HB8423"></a>
+					<a href="https://www.adidas.com.hk/item/H18998"></a>
+				</div>
+			</article>
+			<article class="article article-btn">
+				<a class="btn1  btn btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" href="https://www.adidas.com.hk/ivypark-drop3">Shop All Ivy Park Collection <span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span></a>
+			</article>
+			<script>
+				$(function () {
+					
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+				})
+	
+			</script>
+		</section>
+
+		
+
+		<!-- 底部 -->
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+
+</html>
+
+
+

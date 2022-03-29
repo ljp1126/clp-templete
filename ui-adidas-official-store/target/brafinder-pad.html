@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>brafinder</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/brafinder-pad.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/brafinder-pad.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+			<article class="article article-shopping-assistant-header">
+				<img class="logo" src="images/brafinder-pad/logo.png" alt=""/>
+				<span class="title">运动内衣选购助手</span>
+			</article>
+			<article class="article article-shopping-assistant-tab">
+				<ul class="e-shopping-assistant-tab">
+					<li class="is-active" data-index="1">训练强度</li>
+					<li><span class="triangle"></span></li>
+					<li data-index="2">尺码</li>
+					<li><span class="triangle"></span></li>
+					<li data-index="3">推荐</li>
+				</ul>
+			</article>
+			<article class="article article-shopping-assistant-container">
+				<div class="step step-1 is-active">
+					<div class="box">
+						<div class="top">
+							<h2>第一步：</h2>
+							<h1>选择你的运动类型</h1>
+							<p>当你选到对的装备，运动效果就会事半功倍。<br/>运动强度越高，你越需要更高的运动内衣支撑。</p>
+						</div>
+						<div class="type-option-box">
+							<div class="type-option is-active">
+								<div class="title e-type-option-title">高等强度运动</div>
+								<div class="content">
+									<ul>
+										<li>
+											<div class="img-box">
+												<img src="images/brafinder-pad/type-option/run.png" alt=""/>
+												<img class="hover" src="images/brafinder-pad/type-option/run-hover.png" alt=""/>
+											</div>
+											<span>跑步</span>
+										</li>
+										<li>
+											<div class="img-box">
+												<img src="images/brafinder-pad/type-option/boxing.png" alt=""/>
+												<img class="hover" src="images/brafinder-pad/type-option/boxing-hover.png" alt=""/>
+											</div>
+											<span>拳击</span>
+										</li>
+										<li>
+											<div class="img-box">
+												<img src="images/brafinder-pad/type-option/hiit.png" alt=""/>
+												<img class="hover" src="images/brafinder-pad/type-option/hiit-hover.png" alt=""/>
+											</div>
+											<span>HIIT</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="type-option">
+								<div class="title e-type-option-title">中等强度运动</div>
+								<div class="content">
+									<ul>
+										<li>
+											<div class="img-box">
+												<img src="images/brafinder-pad/type-option/onfoot.png" alt=""/>
+												<img class="hover" src="images/brafinder-pad/type-option/onfoot-hover.png" alt=""/>
+											</div>
+											<span>徒步</span>
+										</li>
+										<li>
+											<div class="img-box">
+												<img src="images/brafinder-pad/type-option/rideabike.png" alt=""/>
+												<img class="hover" src="images/brafinder-pad/type-option/rideabike-hover.png" alt=""/>
+											</div>
+											<span>骑车</span>
+										</li>
+										<li>
+											<div class="img-box">
+												<img src="images/brafinder-pad/type-option/strengthtraining.png" alt=""/>
+												<img class="hover" src="images/brafinder-pad/type-option/strengthtraining-hover.png" alt=""/>
+											</div>
+											<span>力量训练</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="type-option">
+								<div class="title e-type-option-title">低等强度运动</div>
+								<div class="content">
+									<ul>
+										<li>
+											<div class="img-box">
+												<img src="images/brafinder-pad/type-option/yoga.png" alt=""/>
+												<img class="hover" src="images/brafinder-pad/type-option/yoga-hover.png" alt=""/>
+											</div>
+											<span>瑜伽</span>
+										</li>
+										<li>
+											<div class="img-box">
+												<img src="images/brafinder-pad/type-option/pilates.png" alt=""/>
+												<img class="hover" src="images/brafinder-pad/type-option/pilates-hover.png" alt=""/>
+											</div>
+											<span>普拉提</span>
+										</li>
+										<li>
+											<div class="img-box">
+												<img src="images/brafinder-pad/type-option/bodydance.png" alt=""/>
+												<img class="hover" src="images/brafinder-pad/type-option/bodydance-hover.png" alt=""/>
+											</div>
+											<span>形体舞</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="step step-2">
+					<div class="box">
+						<div class="top">
+							<h2>第二步：</h2>
+							<h1>找到合适你的尺码</h1>
+						</div>
+						<div class="size-content">
+							<ul class="size-tabs-title">
+								<li class="is-active">普通内衣尺码推算</li>
+								<li>不知道你的尺码？</li>
+							</ul>
+							<div class="size-tabs-content float-clearfix">
+								<div class="size-description description-measure is-active">
+									<h3>普通内衣尺码推算</h3>
+									<p>通过你的普通内衣尺码，<br/>来推算合适你的运动胸衣。<br/>不同品牌采用的面料和剪裁工艺都不相同，<br/>推算可能存在偏差，测量一下吧！</p>
+									<div class="size-select-content float-clearfix">
+										<div class="size-select-item">
+											<p>胸围<span>（厘米）</span></p>
+											<div class="dropdown size-selector-box e-size-selector-m">
+												<a class="btn">
+													<span class="dropdown-text is-empty"></span>
+													<span class="dropdown-icon"></span>
+												</a>
+												<select>
+													<option value="30">30</option>
+													<option value="32">32</option>
+													<option value="34">34</option>
+													<option value="36">36</option>
+													<option value="38">38</option>
+													<option value="40">40</option>
+													<option value="42">42</option>
+													<option value="44">44</option>
+													<option value="40">40</option>
+													<option value="42">42</option>
+													<option value="44">44</option>
+													<option value="40">40</option>
+													<option value="42">42</option>
+													<option value="44">44</option>
+													<option value="40">40</option>
+													<option value="42">42</option>
+													<option value="44">44</option>
+												</select>
+											</div>
+										</div>
+										<div class="size-select-item">
+											<p>罩杯<span></span></p>
+											<div class="dropdown size-selector-box e-size-selector-m">
+												<a class="btn">
+													<span class="dropdown-text is-empty"></span>
+													<span class="dropdown-icon"></span>
+												</a>
+												<select>
+													<option value="30">30</option>
+													<option value="32">32</option>
+													<option value="34">34</option>
+													<option value="36">36</option>
+													<option value="38">38</option>
+													<option value="40">40</option>
+													<option value="42">42</option>
+													<option value="44">44</option>
+													<option value="40">40</option>
+													<option value="42">42</option>
+													<option value="44">44</option>
+													<option value="40">40</option>
+													<option value="42">42</option>
+													<option value="44">44</option>
+													<option value="40">40</option>
+													<option value="42">42</option>
+													<option value="44">44</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<a class="btn btn-blue btn-calculation is-disabled"><span>运动胸衣尺码推算</span></a>
+								</div>
+								<div class="size-description description-knowsize">
+									<h3>一把皮尺 两个步骤 轻松搞定</h3>
+									<p><span>第一步：</span>测量上胸围，将尺子绕胸部最高点量一圈。<br/>（注意保持尺子水平，四舍五入取整数）</p>
+									<p><span>第二步：</span>测量下胸围，将尺子绕胸部下围量一圈。<br/>（注意保持尺子水平，四舍五入取整数）</p>
+									<div class="size-select-content float-clearfix">
+										<div class="size-select-item">
+											<p>胸围<span>（厘米）</span></p>
+											<div class="dropdown size-selector-box e-size-selector-m">
+												<a class="btn">
+													<span class="dropdown-text is-empty"></span>
+													<span class="dropdown-icon"></span>
+												</a>
+												<select>
+													<option value="30">30</option>
+													<option value="32">32</option>
+													<option value="34">34</option>
+													<option value="36">36</option>
+													<option value="38">38</option>
+													<option value="40">40</option>
+													<option value="42">42</option>
+													<option value="44">44</option>
+													<option value="40">40</option>
+													<option value="42">42</option>
+													<option value="44">44</option>
+													<option value="40">40</option>
+													<option value="42">42</option>
+													<option value="44">44</option>
+													<option value="40">40</option>
+													<option value="42">42</option>
+													<option value="44">44</option>
+												</select>
+											</div>
+										</div>
+										<div class="size-select-item">
+											<p>罩杯<span></span></p>
+											<div class="dropdown size-selector-box e-size-selector-m">
+												<a class="btn">
+													<span class="dropdown-text is-empty"></span>
+													<span class="dropdown-icon"></span>
+												</a>
+												<select>
+													<option value="30">30</option>
+													<option value="32">32</option>
+													<option value="34">34</option>
+													<option value="36">36</option>
+													<option value="38">38</option>
+													<option value="40">40</option>
+													<option value="42">42</option>
+													<option value="44">44</option>
+													<option value="40">40</option>
+													<option value="42">42</option>
+													<option value="44">44</option>
+													<option value="40">40</option>
+													<option value="42">42</option>
+													<option value="44">44</option>
+													<option value="40">40</option>
+													<option value="42">42</option>
+													<option value="44">44</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="measurement-demonstration-img">
+										<img src="images/brafinder-pad/Bitmap.jpg"/>
+										<p>注意保持尺子水平</p>
+									</div>
+									<p class="info">试衣间内有测量用的皮尺</p>
+									<a class="btn btn-blue btn-calculation is-disabled"><span>运动胸衣尺码推算</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="step step-3">
+					<!-- 给box 添加class is-active 显示 -->
+					<div class="box is-active">
+						<p class="close-size">您选择的尺码为：</p>
+						<div class="top">
+							<h2>第三步：</h2>
+							<h1>以下是适合您运动强度的款式</h1>
+							<p>如需选购或试穿，<br/>请联系店员提供帮助</p>
+							<span class="triangle"></span>
+						</div>
+						<div class="grade high">
+							<div class="range">
+								<h1>高度支撑</h1>
+								<p>适用于跑步 • 拳击 • 热舞 • HIIT等运动</p>
+							</div>
+							<div class="recommend recommend-3">
+								<ul>
+									<li>
+										<img src="images/brafinder-pad/step-3/high/img-1.jpg" alt=""/>
+										<div class="text">
+											<p>CMMTTD X 系列</p>
+											<p>•  表现优雅   • 完美支撑   • 舒适自如</p>
+											<p>推荐尺码：75D</p>
+										</div>
+									</li>
+									<li>
+										<img src="images/brafinder-pad/step-3/high/img-2.jpg" alt=""/>
+										<div class="text">
+											<p>RACERBACK 系列</p>
+											<p>• 安全保护   • 避免位移   • 专属尺码</p>
+											<p>推荐尺码：</p>
+										</div>
+									</li>
+									<li>
+										<img src="images/brafinder-pad/step-3/high/img-3.jpg" alt=""/>
+										<div class="text">
+											<p>CMMTTD RACER 系列</p>
+											<p>• 工一体成型   • 稳定支撑   • 工字肩带</p>
+											<p>推荐尺码：</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="top">
+							<h2>第三步：</h2>
+							<h1>以下是适合您运动强度的款式</h1>
+							<p>如需选购或试穿，<br/>请联系店员提供帮助</p>
+							<span class="triangle"></span>
+						</div>
+						<div class="grade medium">
+							<div class="range">
+								<h1>中度支撑</h1>
+								<p>适用于徒步 • 骑车 • 力量训练等运动</p>
+							</div>
+							<div class="recommend recommend-3">
+								<ul>
+									<li>
+										<img src="images/brafinder-pad/step-3/medium/img-1.jpg" alt=""/>
+										<div class="text">
+											<p>TECH FIT PADDED 系列</p>
+											<p>• 加倍灵活   • 挣脱束缚   • 柔弹包裹</p>
+											<p>推荐尺码： S</p>
+										</div>
+									</li>
+									<li>
+										<img src="images/brafinder-pad/step-3/medium/img-2.jpg" alt=""/>
+										<div class="text">
+											<p>HALTER 系列</p>
+											<p>• 舒适支撑   • 完美贴合   • 活力优雅</p>
+											<p>推荐尺码： </p>
+										</div>
+									</li>
+									<li>
+										<img src="images/brafinder-pad/step-3/medium/img-3.jpg" alt=""/>
+										<div class="text">
+											<p>CLMCH 系列</p>
+											<p>Stella McCartney 潮流新作</p>
+											<p>推荐尺码： </p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="top">
+							<h2>第三步：</h2>
+							<h1>以下是适合您运动强度的款式</h1>
+							<p>如需选购或试穿，<br/>请联系店员提供帮助</p>
+							<span class="triangle"></span>
+						</div>
+						<div class="grade low">
+							<div class="range">
+								<h1>低度支撑</h1>
+								<p>适用于瑜伽 • 普拉提 • 形体舞蹈等运动</p>
+							</div>
+							<div class="recommend recommend-2">
+								<ul>
+									<li>
+										<img src="images/brafinder-pad/step-3/low/img-1.jpg" alt=""/>
+										<div class="text">
+											<p>STRAPPY 系列</p>
+											<p>• 纯粹支撑   • 透气排热   • 独特设计</p>
+											<p>推荐尺码： S</p>
+										</div>
+									</li>
+									<li>
+										<img src="images/brafinder-pad/step-3/low/img-2.jpg" alt=""/>
+										<div class="text">
+											<p>SEAMLESS 系列</p>
+											<p>• 纯粹支撑   • 流畅无阻   • 简洁主义</p>
+											<p>推荐尺码： S</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="code-box">
+						<p>不同系列适用的尺码系统略有区别</p>
+						<img src="images/brafinder-pad/step-3/code.jpg" alt=""/>
+						<div class="info">
+							<p>长按识别二维码</p>
+							<p>关注adidasWomen</p>
+							<p>获取更多信息</p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+	</div>
+</body>
+</html>

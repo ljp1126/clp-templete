@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" href="css/sale.css">
+	<%include _includes/js.html %>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-simple.html %>
+		<!-- 内容部分 -->
+		<section class="container container-min-h">
+			
+			<article class="article article-frame">
+				<div class="bg-box"></div>
+				
+				<div class="sale-content frame-content waiting-in-queue">
+					
+					<div class="img-box img-gif-box"><img src="images/sale/loading.gif" /></div>
+					<div class="text-box">
+						<h3>排队等待中...</h3>
+						<p>正在排队等待中，您仍有机会购买此产品。为保证您排队的次序，请不要关闭或刷新此页面。如果您正在使用手机购买，排队时请勿接听来电。</p>
+						<p>等待时间可能因订单量和剩余产品数量会有所不同，您最终有可能因产品售罄而无法买到。</p>
+					</div>
+					
+					<ul class="info-box float-clearfix">
+						<li><span><i></i></span>仅支持在线支付</li>
+						<li><span><i></i></span>不参加任何优惠活动</li>
+						<li><span><i></i></span>每个用户ID仅限购一件</li>
+					</ul>
+				</div>
+				
+			</article>
+		
+		</section>
+
+		<%include _includes/modules/footer-simple.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+	</div>
+</body>
+</html>

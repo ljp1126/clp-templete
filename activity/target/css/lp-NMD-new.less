@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+.article{
+    position: relative;
+    >img{
+        width: 100%;
+    }
+}
+
+.link{
+    position: absolute;
+    z-index: 1;
+    // background: rgba(0, 0, 0, .4);
+}
+
+img{
+    width: 100%;
+}
+
+.article-kv{
+    .btn-01{
+        position: absolute;
+        top: 52%;
+        left: 65.5%;
+        transform: translateX(-50%);
+    }
+}
+
+.article-man{
+    .link-01{
+        width: 14%;
+        height: 9%;
+        top: 29%;
+        left: 25%;
+    }
+    .link-02{
+        width: 15%;
+        height: 9%;
+        top: 58.5%;
+        left: 28%;
+    }
+    .link-03{
+        width: 14%;
+        height: 9%;
+        top: 18%;
+        left: 56.5%;
+    }
+    .link-04{
+        width: 11%;
+        height: 9%;
+        left: 60%;
+        bottom: 0;
+    }
+}
+.article-man-btn{
+    text-align: center;
+    margin-bottom: 8vh;
+    .btn-02{
+        min-width: 220px;
+    }
+}
+.article-woman{
+    .link-05{
+        height: 8%;
+        width: 11%;
+        top: 38%;
+        left: 30%;
+    }
+    .link-06{
+        height: 8%;
+        width: 14%;
+        top: 64%;
+        left: 29%;
+    }
+    .link-07{
+        height: 8%;
+        width: 15%;
+        top: 18%;
+        left: 60%;
+    }
+    .link-08{
+        height: 8%;
+        width: 11%;
+        top: 88%;
+        left: 59%;
+    }
+}
+.article-woman-btn{
+    text-align: center;
+    margin-bottom: 8vh;
+    .btn-03{
+        min-width: 220px;
+    }
+}
+.article-foot{
+    font-size: 0;
+    width: 70%;
+    margin-bottom: 8vh;
+    .foot-box{
+        width: 24%;
+        margin: 0 0.5% 0 0.5%;
+        display: inline-block;
+        position: relative;
+        .btn{
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+.article-size{
+    margin-bottom: 6vh;
+    margin-top: 6vh;
+    .size-box{
+        height: 50px;
+    }
+    .size-boxs{
+        position: absolute;
+        height: 50px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        z-index: 5;
+        text-align: center;
+        background: #fff;
+        a{
+            display: inline-block;
+            font-size: 28px;
+            font-weight: 700;
+            height: 50px;
+            line-height: 50px;
+            &:nth-child(1){
+                letter-spacing: 5px;
+                padding-right: 40px;
+            }
+            &:nth-child(3){
+                letter-spacing: 5px;
+                padding-left: 40px;
+            }
+            &:hover{
+                color: #000;
+            }
+        }
+        div{
+            display: inline-block;
+            height: 20px;
+            line-height: 50px;
+            border-right: 3px solid #000;
+        }
+    }
+    .article-fixed{
+        position: fixed;
+    }
+}
+@media (max-width: 1024px){
+    .article-kv{
+        .btn-01{
+            top: 66%;
+            left: 74%;
+            height: 36px;
+            line-height: 36px;
+            font-size: 14px;
+            span{
+                &:after{
+                    top: 1px;
+                }
+            }
+        }
+    }
+    .article-man{
+        .link-01{
+            width: 35%;
+            left: 4%;
+        }
+        .link-02{
+            width: 38%;
+            left: 3%;
+        }
+        .link-03{
+            width: 33%;
+        }
+        .link-04{
+            width: 25%;
+        }
+    }
+    .article-man-btn{
+        .btn-02{
+            height: 36px;
+            line-height: 36px;
+            font-size: 14px;
+            span{
+                &:after{
+                    top: 1px;
+                }
+            }
+        }
+    }
+    .article-woman{
+        .link-05{
+            left: 12%;
+            width: 26%;
+        }
+        .link-06{
+            left: 10%;
+            width: 33%;
+        }
+        .link-07{
+            top: 26%;
+            width: 38%;
+        }
+        .link-08{
+            width: 29%;
+        }
+    }
+    .article-woman-btn{
+        .btn-03{
+            height: 36px;
+            line-height: 36px;
+            font-size: 14px;
+            span{
+                &:after{
+                    top: 1px;
+                }
+            }
+        }
+    }
+    .article-foot{
+        width: 95%;
+        margin-bottom: 2vh;
+        .foot-box{
+            width: 46%;
+            margin: 0 2% 4% 2%;
+            .btn{
+                height: 36px;
+                line-height: 36px;
+                font-size: 14px;
+                min-width: 110px;
+                &:after{
+                    top: 1px;
+                }
+            }
+        }
+    }
+    .article-size{
+        .size-boxs{
+            height: 44px;
+            a{
+                font-size: 20px;
+                height: 44px;
+                line-height: 44px;
+            }
+            div{
+                height: 12px;
+            }
+        }
+    }
+}

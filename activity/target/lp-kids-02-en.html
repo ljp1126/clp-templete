@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%include _includes/meta.html %>
+	<title>lp-deerupt-campaign</title>
+	<%include _includes/css.html %>
+	<!-- <link rel="stylesheet" href="css/lp-kids-02-en.css" /> -->
+	<%include _includes/js.html %>
+	<!-- <script type="text/javascript" src="js/lp-kids-02.js"></script> -->
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+
+			<style>
+				.article {
+					position: relative;
+				}
+
+				.article>img {
+					width: 100%;
+				}
+
+				.link {
+					position: absolute;
+					z-index: 1;
+				}
+
+				img {
+					width: 100%;
+				}
+
+				.article-kv {
+					position: relative;
+				}
+
+				.article-kv .btn1{
+					left: 13%;
+					position: absolute;
+					top: 56%;
+				}
+				.btn-box{
+					left: 5%;
+					position: absolute;
+					top: 56%;
+				}
+				.btn-box h5{
+					color: #fff;
+					font-size: 36px;
+    				line-height: 32px;
+				}
+				.btn-box  p{
+					font-size: 18px;
+					line-height: 24px;
+					margin-bottom: 18px;
+					font-family: "AdihausDIN";
+					font-style: normal;
+					font-weight: normal;
+					color: #fff;
+				}
+				.article-size {
+					margin-top: 20px;
+					margin-bottom: 20px;
+				}
+
+				.article-size .size-box {
+					height: 92px;
+					padding-bottom: 26px;
+					display: inline-block;
+					background-color: #fff;
+					padding-bottom: 12px;
+					max-width: 1140px;
+					margin: 0 auto;
+					display: -webkit-flex;
+					display: flex;
+					-webkit-justify-content: center;
+					justify-content: center;
+					-webkit-align-items: center;
+					align-items: center;
+					width: 100%;
+					position: relative;
+				}
+
+				.article-size .size-box h4 {
+					text-align: center;
+					position: relative;
+					margin: 0;
+					-webkit-flex: 1 auto;
+					flex: 1 auto;
+					font-size: 30px;
+					line-height: 28px;
+					font-weight: 600;
+				}
+
+				.article-size .size-box-02 {
+					box-shadow: 1px 8px 20px rgba(0, 0, 0, 0.05);
+					max-width: 1100px;
+					font-size: 16px;
+					margin: 0 auto;
+					padding: 0 20px;
+					background-color: #ebedee;
+					-webkit-transform: translateY(-35%);
+					transform: translateY(-35%);
+				}
+
+				.article-size .size-box-02 .swiper-container-od-jacket {
+					display: -webkit-flex;
+					display: flex;
+					-webkit-justify-content: center;
+					justify-content: center;
+					-webkit-align-items: center;
+					align-items: center;
+				}
+
+				.article-size .size-box-02 .swiper-container-od-jacket .swiper-wrapper {
+					display: -webkit-flex;
+					display: flex;
+					-webkit-justify-content: center;
+					justify-content: center;
+					-webkit-align-items: center;
+					align-items: center;
+					-webkit-justify-content: space-between;
+					justify-content: space-between;
+				}
+
+				.article-size .size-box-02 .swiper-container-od-jacket .swiper-wrapper .swiper-slide {
+					display: inline-block;
+					width: auto;
+				}
+
+				.article-size .size-box-02 .swiper-container-od-jacket .swiper-wrapper .swiper-slide>a {
+					height: 55px;
+					line-height: 55px;
+				}
+
+				.article-size .size-box-02 .swiper-container-od-jacket .swiper-wrapper .swiper-slide>a p {
+					margin: 0 20px;
+					color: #000;
+				}
+
+				.article-size .size-box-02 .swiper-container-od-jacket .swiper-wrapper .swiper-slide>a:hover p {
+					opacity: 0.6;
+					color: #000;
+				}
+
+				.article-wrapper {
+					margin-top: 15px;
+				}
+
+				.article-wrapper .wrapper-box {
+					padding: 5px;
+					font-size: 0;
+				}
+
+				.article-wrapper .wrapper-box .wrapper-con {
+					padding: 12px 7px;
+					width: 33.33%;
+					position: relative;
+					display: inline-block;
+				}
+
+				.article-wrapper .wrapper-box .wrapper-con a .wrapper-con-01 {
+					width: 100%;
+					height: 100%;
+				}
+
+				.article-wrapper .wrapper-box .wrapper-con a .wrapper-con-01 img {
+					width: 100%;
+					object-fit: cover;
+					height: 100%;
+				}
+
+				.article-wrapper .wrapper-box .wrapper-con a .wrapper-con-02 {
+					position: absolute;
+					top: auto;
+					left: 0;
+					right: 0;
+					bottom: 14%;
+					text-align: center;
+					display: -webkit-flex;
+					flex-flow: column;
+				}
+
+				.article-wrapper .wrapper-box .wrapper-con a .wrapper-con-02 .btn {
+					margin: 0 auto;
+				}
+
+				.article-foot {
+					font-size: 0;
+					margin-bottom: 20px;
+				}
+
+				.article-foot .foot-box {
+					width: 50%;
+					display: inline-block;
+					padding: 10px;
+					position: relative;
+				}
+
+				.article-foot .foot-box .btn {
+					min-width: 159px;
+				}
+
+				.article-foot .foot-box div {
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+					bottom: 4%;
+				}
+
+				.article-wrapper .wrapper-box .wrapper-con a .wrapper-con-02 .btn {
+					min-width: 159px;
+				}
+
+				.section1 .btn1 {
+					position: absolute;
+					width: 21.5%;
+					height: 41%;
+					left: 17%;
+					top: 23%;
+				}
+
+				.section1 .btn2 {
+					position: absolute;
+					width: 21.5%;
+					height: 41%;
+					left: 39%;
+					top: 23%;
+				}
+
+				.section1 .btn3 {
+					position: absolute;
+					width: 21.5%;
+					height: 41%;
+					left: 61%;
+					top: 23%;
+				}
+				.video-box .video-content .video {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					visibility: hidden;
+				}
+
+				.article-video1.is-play .video-box .video-content .video {
+					visibility: visible;
+				}
+
+				.article-video1.is-play .video-box .video-code img {
+					visibility: hidden;
+				}
+				.section-content .video-box {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					left: 0;
+					top: 0;
+				}
+				.video-box .video-content {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					left: 0;
+					top: 0;
+				}
+				@media (max-width: 1023px) {
+					.article-kv .btn1 {
+						left: 5%;
+						position: absolute;
+						top: 88%;
+					}
+					.btn-box{
+						top:58%;
+					}
+					.btn-box h5{
+						font-weight: 600;
+						margin-bottom: 10px;
+					}
+					.article-size {
+						margin-top: 0px;
+						margin-bottom: 0px;
+					}
+
+					.article-size .size-box {
+						margin-top: 10px;
+					}
+
+					.article-size .size-box h4 {
+						top: 11px;
+						flex: 3 auto;
+						font-size: 26px;
+					}
+
+					.article-size .size-box .size-cen .icon-arrow-football {
+						bottom: auto;
+					}
+
+					.article-size .size-box .size-cen .icon-arrow-football-click {
+						left: 34px;
+						top: 0;
+						width: 150px;
+					}
+
+					.article-size .size-box-02 {
+						padding: 0 20px;
+						margin-left: 24px;
+					}
+
+					.article-wrapper .wrapper-box {
+						padding: 0 20px;
+					}
+
+					.article-wrapper .wrapper-box .wrapper-con {
+						width: 100%;
+						padding: 0px;
+					}
+
+					.article-wrapper .wrapper-box .wrapper-con a .wrapper-con-02 {
+						padding-bottom: 25px;
+						padding-left: 27px;
+						padding-right: 27px;
+						bottom: 11%;
+					}
+
+					.article-foot .foot-box {
+						width: 100%;
+						padding: 20px;
+					}
+
+					.article-foot .foot-box div {
+						bottom: 6%;
+					}
+
+					.section1 .btn1 {
+						width: 47.5%;
+						height: 29%;
+						left: 2%;
+						top: 17%;
+					}
+
+					.section1 .btn2 {
+						width: 47.5%;
+						height: 29%;
+						left: 50%;
+						top: 17%;
+					}
+
+					.section1 .btn3 {
+						width: 47.5%;
+						height: 29%;
+						left: 2%;
+						top: 53%;
+					}
+				}
+			</style>
+			<article class="article article-video1 none-sm">
+				<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/kv-p.jpg" src="https://www.adidas.com.hk/images/blank.gif">
+				<div class="section-content e-play-video  pc-mob-video ">
+					<div class="video-box e-home-video">
+						<div class="video-content"></div>
+						<a class="video-bg-wrapper" href="JavaScript:void(0);"> <span class="video-code" data-video-code="F1132FD0E03FFDEF9C33DC5901307461"> </span> </a>
+					</div>
+				</div>
+				<div class='btn-box'>
+					<h5>ALL ABOUT DOTS</h5>
+					<p>Get colorful in the new adidas X LEGO® DOTS collection.</p>
+					<a class="btn  btn1 btn-have-opacity gl-cta-height gl-cta-color-white gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" target="_blank" href="https://www.adidas.com.hk/lego/all">SHOP NOW<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span> </a>
+				</div>
+			
+			</article>
+			<article class="article article-video1 none block-sm">
+				<img lazysrc="https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/kv-m.jpg" src="https://www.adidas.com.hk/images/blank.gif" >
+				<div class="section-content e-play-video  pc-mob-video ">
+					<div class="video-box e-home-video">
+						<div class="video-content"></div>
+						<a class="video-bg-wrapper" href="JavaScript:void(0);"> <span class="video-code" data-video-code="8451AACE8998A3A89C33DC5901307461"> </span> </a>
+					</div>
+				</div>
+				<div class='btn-box'>
+					<h5>ALL ABOUT DOTS</h5>
+					<p>Get colorful in the new adidas X LEGO® DOTS collection.</p>
+					<a class="btn  btn1 btn-have-opacity gl-cta-height gl-cta-color-white gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" target="_blank" href="https://www.adidas.com.hk/lego/all">SHOP NOW<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span> </a>
+				</div>
+			</article>
+			<!-- <article class="article article-kv">
+				<a target="_blank" href="https://www.adidas.com.hk/lego/all"> <img lazysrc="https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/kv-p.jpg" src="https://www.adidas.com.hk/images/blank.gif" data-image="{
+						&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/kv-p.jpg&quot;},
+						&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/kv-m.jpg&quot;},
+						&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/NOV/Lego/kv-m.jpg&quot;}
+					}"> </a>
+				<a class="btn  btn1 btn-have-opacity gl-cta-height gl-cta-color-white gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow" target="_blank" href="https://www.adidas.com.hk/lego/all">SHOP NOW<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span> </a>
+			</article> -->
+			<article class="article article-size">
+				<div class="size-box">
+					<h4>KIDS</h4>
+				</div>
+				<div class="size-box-02">
+					<div class="swiper-container swiper-container-od-jacket">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a target="_blank" href="https://www.adidas.com.hk/kids/shoes">
+									<p>SHOES</p>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a target="_blank" href="https://www.adidas.com.hk/kids/clothing">
+									<p>CLOTHING</p>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a target="_blank" href="https://www.adidas.com.hk/kids/acc">
+									<p>ACCESSORIES</p>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a target="_blank" href="https://www.adidas.com.hk/kids/newarrivals">
+									<p>NEW ARRIVALS</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="article article-foot">
+				<a class="foot-box" href="https://www.adidas.com.hk/originals/superstar/kids" target="_blank"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+											&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/MAR/kidsLP/en/pc-2.jpg&quot;},
+											&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/MAR/kidsLP/en/mob-2.jpg&quot;},
+											&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/MAR/kidsLP/en/mob-2.jpg&quot;}}">
+					<div>
+						<span class="btn btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow"> shop now<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span> </span>
+					</div>
+				</a>
+				<a class="foot-box" href="https://www.adidas.com.hk/kids/0-4years" target="_blank"> <img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+											&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/MAR/kidsLP/en/pc-3.jpg&quot;},
+											&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/MAR/kidsLP/en/mob-3.jpg&quot;},
+											&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/MAR/kidsLP/en/mob-3.jpg&quot;}}">
+					<div>
+						<span class="btn btn-have-opacity gl-cta-height gl-cta-color-white gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow"> SHOP 0-4 YEARS<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span> </span>
+					</div>
+				</a>
+			</article>
+			<article class="article article-wrapper">
+				<div class="wrapper-box">
+					<div class="wrapper-con">
+						<a target="_target" href="https://www.adidas.com.hk/kids/0-4years">
+							<div class="wrapper-con-01">
+								<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+														 &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/MAR/kidsLP/en/pc-4-1.jpg&quot;},
+														 &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/MAR/kidsLP/en/mob-4-1.jpg&quot;},
+														 &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/MAR/kidsLP/en/mob-4-1.jpg&quot;}}">
+							</div>
+							<div class="wrapper-con-02">
+								<span class="btn btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow"> SHOP INFANTS<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span> </span>
+							</div>
+						</a>
+					</div>
+					<div class="wrapper-con">
+						<a target="_target" href="https://www.adidas.com.hk/kids/4-8years">
+							<div class="wrapper-con-01">
+								<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+														&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/MAR/kidsLP/en/pc-5-1.jpg&quot;},
+														&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/MAR/kidsLP/en/mob-5-1.jpg&quot;},
+														&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/MAR/kidsLP/en/mob-5-1.jpg&quot;}}">
+							</div>
+							<div class="wrapper-con-02">
+								<span class="btn btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow"> SHOP CHILDREN<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span> </span>
+							</div>
+						</a>
+					</div>
+					<div class="wrapper-con">
+						<a target="_target" href="https://www.adidas.com.hk/kids/8-14years">
+							<div class="wrapper-con-01">
+								<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+														&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/MAR/kidsLP/en/pc-6-1.jpg&quot;},
+														&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/MAR/kidsLP/en/mob-6-1.jpg&quot;},
+														&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2020/KV/MAR/kidsLP/en/mob-6-1.jpg&quot;}}">
+							</div>
+							<div class="wrapper-con-02">
+								<span class="btn btn-have-opacity gl-cta-height gl-cta-color-black gl-cta gl-cta--primary gl-cta--primary-light gl-cta-box-shadow"> SHOP YOUTH<span class="gl-icon icon-arrow-right-long gl-cta__icon icon--size-l"></span> </span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</article>
+			<script type="text/javascript">
+				$(function() {
+					// 换图 + 懒加载
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+					if ($.spice.getWindowWidth() < 1023) {
+						var swiper1 = new Swiper('.swiper-container-od-jacket', {
+							slidesPerView: 'auto',
+							spaceBetween: 30,
+							prevButton: '.swiper-button-prev1',
+							nextButton: '.swiper-button-next1',
+							slidesPerGroup: 1,
+							initialSlide: 0,
+							breakpoints: {
+								1024: {
+									slidesPerGroup: 1
+								}
+							}
+						});
+					}
+					var loadImgFun_index = function(imgArr, fn) {
+						var loadImgLen = 0,
+							errImgLen = 0;
+						var imgdefereds = [];
+						$(imgArr).each(function() {
+							var defered = $.Deferred();
+							$(this)
+								.on("load", function() {
+									defered.resolve();
+									loadImgLen++;
+								})
+								.on("error", function() {
+									defered.resolve();
+									errImgLen++;
+								});
+							if (this.complete)
+								setTimeout(function() {
+									defered.resolve();
+								}, 200);
+							imgdefereds.push(defered);
+						});
+						$.when.apply(null, imgdefereds).done(function() {
+							if (fn && $.isFunction(fn)) {
+								fn();
+							}
+						});
+					};
+
+					//自动播放视频
+
+					$('.e-home-video').each(function(index, el) {
+
+						$(el).parents('.article-video1').addClass('home-video')
+						var videoCode = $('.video-code', el).data('video-code'),
+							videoId = 'home_video_' + index;
+						loadImgFun_index($('.video-code img', el), function() {
+							$('.video-content', el).show().css({
+								'height': $('.video-code img', el).outerHeight(true)
+							})
+							$('.video-code img', el).css({
+								'visibility': 'hidden'
+							})
+						})
+						// 开发需要打开此代码---开始
+						var bannerVideoId = videoCode;
+						var url = base + "/indexCCVideo.json";
+						var data = loxia.syncXhrGet(url, {
+							'bannerVideoId': bannerVideoId
+						});
+						var videoUrl = data.mp4VideoUrl;
+						// 开发需要打开此代码---结束
+
+						// 下面的videoUrl为前端静态视频地址（静态页面的video路径 ，开发需注释掉）
+						// var videoUrl = 'https://cm15-c110-2.play.bokecc.com/flvs/ca/QxDHa/ukeavxX6l3-30.mp4?t=1617166851&key=7CAE0FDF6F9F4EC9379A36758AE66B8C&tpl=10';
+						var html = '<video class="video" id="' + videoId + '" preload="meta" webkit-playsinline="true" playsInline="true" muted><source src="' + videoUrl + '" ></source></video>';
+						$('.video-content', el).html(html);
+
+					})
+					// 视频播放
+					$('#home_video_0')[0].play();
+					$('#home_video_0').parents('.article-video1').addClass('is-play');
+					$('#home_video_0')[0].addEventListener("ended", function() {
+						this.play();
+					});
+					// mob
+					$('#home_video_1')[0].play();
+					$('#home_video_1').parents('.article-video1').addClass('is-play');
+					$('#home_video_1')[0].addEventListener("ended", function() {
+						this.play();
+					});
+
+				});
+			</script>
+
+
+		</section>
+		<%include _includes/modules/footer.html %>
+	</div>
+</body>
+
+</html>

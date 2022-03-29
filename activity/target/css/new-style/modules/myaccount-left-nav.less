@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.myaccount-left{
+	.myaccount-left-top{
+		background: #000;
+		.myaccount-tit{
+			p{
+				color: #fff;
+			}
+			.icon-head-portrait,.icon-head-portrait-ed{
+                background: transparent!important;
+                &:before{
+                    content: "\E81D";
+                    font-size: 26px;
+                    color: #FFF;
+                    margin-left: -4px;
+                    margin-top: -5px;
+                }
+			}
+		}
+	}
+}
+.help-left-nav-item{
+	.item-name{
+		.icon-help{
+            &:before{
+
+            }
+		}
+	}
+}
+
+@media (max-width:1023px){
+    .myaccount-left{
+    	.myaccount-left-top{
+    		.myaccount-tit{
+    			.icon-head-portrait,.icon-head-portrait-ed{
+                    &:before{
+                        color: #000;
+                        font-size: 24px;
+                        margin-left: -5px;
+                    }
+    			}
+    		}
+    	}
+    }
+}

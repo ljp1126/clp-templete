@@ -1,0 +1,579 @@
+@charset "UTF-8";
+.container {
+  padding-top: 0px;
+}
+.article-matrix {
+  max-width: 750px;
+  padding: 0 15px;
+}
+.article-matrix-bg {
+  background: #f8f8f8;
+}
+.matrix-top h5 {
+  color: #000000;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "adineueprobold", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+  line-height: 42px;
+  border-bottom: 1px dashed #000;
+  padding: 7% 0 6.8%;
+}
+.matrix-top h5 span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 11%;
+}
+.matrix-top h5 span span {
+  font-size: 36px;
+  margin: 0;
+  vertical-align: top;
+}
+.matrix-top h5 span span.large {
+  font-size: 43px;
+}
+.matrix-top h5 i {
+  display: inline-block;
+  position: relative;
+  width: 7px;
+  height: 33px;
+  background: #000000;
+  vertical-align: middle;
+}
+.matrix-top h5 i:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  display: block;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -moz-transform: rotate(90deg);
+  /* Firefox */
+  -webkit-transform: rotate(90deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(90deg);
+}
+.matrix-box .matrix-title {
+  font-weight: bold;
+  text-align: center;
+  font-family: "adineueprobold", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+  font-size: 0;
+  line-height: 43px;
+  margin: 10.8% 0 4.9%;
+}
+.matrix-box .matrix-title span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 2%;
+  font-size: 43px;
+}
+.matrix-box .matrix-title span span {
+  font-size: 54px;
+  margin: 0px;
+  vertical-align: top;
+}
+.matrix-box .matrix-title i {
+  display: inline-block;
+  position: relative;
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+  border-top: 7px solid #000;
+  border-left: 7px solid #000;
+  transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  /* Internet Explorer */
+  -moz-transform: rotate(135deg);
+  /* Firefox */
+  -webkit-transform: rotate(135deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(135deg);
+  /* Opera */
+}
+.matrix-box .matrix-title i:last-child {
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  /* Internet Explorer */
+  -moz-transform: rotate(-45deg);
+  /* Firefox */
+  -webkit-transform: rotate(-45deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(-45deg);
+  /* Opera */
+}
+.matrix-box .lien {
+  display: block;
+  width: 72px;
+  height: 4px;
+  background: #000;
+  margin: 0 auto 27px;
+  border-radius: 2px;
+}
+.matrix-box .matrix-text {
+  font-size: 24px;
+  line-height: 45px;
+  text-align: center;
+}
+.matrix-box .matrix-text .red {
+  color: #f00;
+}
+.matrix-box .matrix-img {
+  width: 83%;
+  margin: 4% auto 8.5%;
+}
+.matrix-box .matrix-activity {
+  font-size: 0;
+  padding: 4% 0 0;
+}
+.matrix-box .matrix-activity li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  padding-bottom: 12%;
+  vertical-align: top;
+}
+.matrix-box .matrix-activity li > span {
+  display: block;
+  width: 79%;
+  margin: 0 auto;
+}
+.matrix-box .matrix-activity li p {
+  font-size: 18px;
+  margin-top: 3%;
+}
+.matrix-box .matrix-activity li p span {
+  display: inline-block;
+  position: relative;
+  padding-left: 12px;
+}
+.matrix-box .matrix-activity li p span:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: #000;
+  border-radius: 3px;
+}
+.matrix-box .matrix-details {
+  border-bottom: 1px dashed #000;
+  padding: 0 9.5% 11%;
+}
+.matrix-box .matrix-details li {
+  position: relative;
+  min-height: 40px;
+  margin-bottom: 4.65%;
+}
+.matrix-box .matrix-details li::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px dashed #000;
+}
+.matrix-box .matrix-details li p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f8f8f8;
+  padding-right: 9px;
+  font-size: 20px;
+  line-height: 40px;
+}
+.matrix-box .matrix-details li .details-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #f8f8f8;
+  padding-left: 9px;
+  font-size: 0;
+}
+.matrix-box .matrix-details li .details-icon span {
+  margin-right: 20px;
+  width: 30px;
+  height: 39px;
+  display: inline-block;
+}
+.matrix-box .matrix-details li .details-icon span:last-child {
+  margin-right: 0;
+}
+.matrix-box .matrix-details li .details-icon span.corner {
+  position: relative;
+}
+.matrix-box .matrix-details li .details-icon span.corner:after {
+  content: '*';
+  position: absolute;
+  top: 5px;
+  right: -16px;
+  font-size: 36px;
+  color: #f00;
+  line-height: 1px;
+}
+.matrix-box .matrix-details .red {
+  font-size: 16px;
+  color: #f00;
+  margin-top: 5.8%;
+}
+.matrix-box .matrix-brand {
+  padding-bottom: 1%;
+}
+.matrix-box .matrix-brand ul {
+  width: 80%;
+  margin: 0 auto;
+}
+.matrix-box .matrix-brand li {
+  float: left;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 4.5%;
+}
+.matrix-box .matrix-brand li span {
+  display: block;
+  width: 44%;
+  margin: 0 auto;
+  position: relative;
+  font-size: 0;
+  cursor: pointer;
+}
+.matrix-box .matrix-brand li span:after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  z-index: 1;
+  display: none;
+  animation: rotate 5s infinite;
+  animation-delay: 0.5s;
+  background-image: url(../images/matrix/dashed.png);
+  background-size: 100%;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.matrix-box .matrix-brand li p {
+  font-size: 26px;
+  font-family: "adineueprobold", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+  font-weight: bold;
+  margin-top: 4%;
+}
+.matrix-box .matrix-brand li.active span:after {
+  display: block;
+}
+.matrix-box .final-scroll {
+  margin: 0 -15px;
+}
+.matrix-box .final-scroll .scroll {
+  padding-bottom: 8%;
+}
+.matrix-box .final-scroll li {
+  text-align: center;
+}
+.matrix-box .final-scroll li .final-scroll-text {
+  min-height: 142px;
+  position: relative;
+}
+.matrix-box .final-scroll li .final-scroll-text div {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.matrix-box .final-scroll li .final-scroll-text h6 {
+  font-size: 36px;
+  font-family: "adineueprobold", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0 56px;
+  position: relative;
+}
+.matrix-box .final-scroll li .final-scroll-text h6::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+.matrix-box .final-scroll li .final-scroll-text h6 span {
+  display: block;
+  background: #ffffff;
+  padding: 0 20px;
+  position: relative;
+}
+.matrix-box .final-scroll li .final-scroll-text h6 .span-bg {
+  background: #f8f8f8;
+}
+.matrix-box .final-scroll li .final-scroll-text p {
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 6px;
+}
+.matrix-box .final-scroll .scroll-dots a {
+  width: 12px;
+  height: 12px;
+  margin: 0 9px;
+}
+.matrix-box-two .matrix-title {
+  margin: 1.3% 0 6.5%;
+}
+.matrix-box-two .matrix-text {
+  padding-top: 1.7%;
+}
+.matrix-box-two .matrix-activity {
+  padding: 6.6% 2% 0;
+}
+.matrix-box-two .matrix-activity li {
+  padding-bottom: 6.5%;
+}
+.matrix-box-two .matrix-activity li p {
+  margin-top: 6%;
+}
+.matrix-box-two .matrix-activity li span {
+  width: 39%;
+}
+.matrix-box-three .matrix-title {
+  margin: 10% 0 7.5%;
+}
+.matrix-box-four .matrix-title {
+  margin-bottom: 6.5%;
+}
+.matrix-box-four .lien {
+  margin-bottom: 8%;
+}
+.article-matrix-new .matrix-new-img {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.article-matrix-new .coupon-box {
+  margin-bottom: 3.34%;
+}
+.article-matrix-new .matrix-top h5 {
+  border-bottom-color: #bbb;
+}
+.article-matrix-new .matrix-box-three .matrix-title {
+  margin-bottom: 0;
+}
+.article-matrix-new .matrix-box-three .matrix-img {
+  width: auto;
+  margin-bottom: 0;
+}
+.article-matrix-new .matrix-box-footer dl {
+  padding: 5.56% 3% 9.57% 4.5%;
+  font-size: 18px;
+  line-height: 2;
+  color: #808080;
+}
+@media screen and (max-width: 749px) {
+  .matrix-top h5 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .matrix-top h5 span {
+    margin: 0 11%;
+  }
+  .matrix-top h5 span span {
+    font-size: 18px;
+  }
+  .matrix-top h5 span span.large {
+    font-size: 21px;
+  }
+  .matrix-top h5 i {
+    width: 4px;
+    height: 17px;
+  }
+  .matrix-box .matrix-title {
+    line-height: 21px;
+    margin: 11.8% 0 5.8%;
+  }
+  .matrix-box .matrix-title span {
+    margin: 0 2%;
+    font-size: 20px;
+  }
+  .matrix-box .matrix-title span span {
+    font-size: 20px;
+  }
+  .matrix-box .matrix-title i {
+    width: 13px;
+    height: 13px;
+    border-top: 3px solid #000;
+    border-left: 3px solid #000;
+  }
+  .matrix-box .lien {
+    width: 36px;
+    height: 2px;
+    margin: 0 auto 13px;
+    border-radius: 1px;
+  }
+  .matrix-box .matrix-text {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .matrix-box .matrix-img {
+    width: 87%;
+    margin: 4% auto 8.5%;
+  }
+  .matrix-box .matrix-activity {
+    padding: 5% 0 0;
+  }
+  .matrix-box .matrix-activity li {
+    padding-bottom: 12%;
+  }
+  .matrix-box .matrix-activity li p {
+    margin-top: 0%;
+    padding-right: 5px;
+    width: 140%;
+    margin-left: -20%;
+    line-height: 10px;
+  }
+  .matrix-box .matrix-activity li p span {
+    padding-left: 5px;
+    font-size: 12px;
+    -webkit-transform: scale(0.83333333, 0.83333333);
+    -moz-transform: scale(0.83333333, 0.83333333);
+    -ms-transform: scale(0.83333333, 0.83333333);
+    -o-transform: scale(0.83333333, 0.83333333);
+    transform: scale(0.83333333, 0.83333333);
+  }
+  .matrix-box .matrix-activity li p span:after {
+    top: 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+  }
+  .matrix-box .matrix-details {
+    border-bottom: 1px dashed #cfcfcf;
+    padding: 0 4.5% 11%;
+  }
+  .matrix-box .matrix-details li {
+    position: relative;
+    min-height: 20px;
+    margin-bottom: 4.4%;
+  }
+  .matrix-box .matrix-details li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px dashed #000;
+  }
+  .matrix-box .matrix-details li p {
+    padding-right: 9px;
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .matrix-box .matrix-details li .details-icon span {
+    margin-right: 10px;
+    width: 15px;
+    height: 20px;
+  }
+  .matrix-box .matrix-details li .details-icon span.corner:after {
+    right: -7px;
+    font-size: 18px;
+  }
+  .matrix-box .matrix-details .red {
+    font-size: 12px;
+    -webkit-transform: scale(0.91666667, 0.91666667);
+    -moz-transform: scale(0.91666667, 0.91666667);
+    -ms-transform: scale(0.91666667, 0.91666667);
+    -o-transform: scale(0.91666667, 0.91666667);
+    transform: scale(0.91666667, 0.91666667);
+    -webkit-transform-origin-x: 0;
+  }
+  .matrix-box .matrix-brand {
+    padding-bottom: 1%;
+  }
+  .matrix-box .matrix-brand ul {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .matrix-box .matrix-brand li {
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 4.5%;
+  }
+  .matrix-box .matrix-brand li p {
+    font-size: 13px;
+    margin-top: 4%;
+  }
+  .matrix-box .final-scroll {
+    margin: 0 -15px;
+  }
+  .matrix-box .final-scroll li .final-scroll-text {
+    min-height: 71px;
+  }
+  .matrix-box .final-scroll li .final-scroll-text h6 {
+    font-size: 18px;
+    padding: 0 25px;
+  }
+  .matrix-box .final-scroll li .final-scroll-text p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .matrix-box .final-scroll .scroll-dots a {
+    width: 6px;
+    height: 6px;
+    margin: 0 5px;
+  }
+  .matrix-box-two .matrix-title {
+    margin: 2% 0 6.5%;
+  }
+  .matrix-box-two .matrix-text {
+    padding-top: 2.2%;
+  }
+  .matrix-box-two .matrix-text .red {
+    font-weight: bold;
+  }
+  .matrix-box-two .matrix-activity {
+    padding: 6.6% 2% 0;
+  }
+  .matrix-box-two .matrix-activity li {
+    padding-bottom: 6.5%;
+  }
+  .matrix-box-two .matrix-activity li p {
+    margin-top: 9%;
+    font-size: 12px;
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+  .matrix-box-two .matrix-activity li span {
+    width: 39%;
+  }
+  .matrix-box-three .matrix-title {
+    margin: 10% 0 8.5%;
+  }
+  .matrix-box-four .matrix-title {
+    margin-bottom: 7.5%;
+    margin-top: 10%;
+  }
+  .matrix-box-four .lien {
+    margin-bottom: 8%;
+  }
+  .article-matrix-new .coupon-box {
+    margin-bottom: 4.64%;
+  }
+  .article-matrix-new .matrix-box-footer dl {
+    padding: 7% 0 9.57% 2.7%;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .article-matrix-new .matrix-box-footer dl dt,
+  .article-matrix-new .matrix-box-footer dl dd {
+    margin-top: 2px;
+  }
+}

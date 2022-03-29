@@ -1,0 +1,634 @@
+<html>
+<head>
+	<%include _includes/meta.html %>
+	<title>campaign</title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+			
+			<link rel="stylesheet" type="text/css" href="libs/dist/css/app.css"/>
+			<style type="text/css">
+				.section-campaign {
+				  max-width: 1360px;
+				  font-family:  "微软雅黑","Microsoft YaHei";
+				}
+				.section-campaign .campaign {
+				  position: relative;
+				}
+				.section-campaign .campaign > img {
+				  width: 100%;
+				}
+				.section-campaign .campaign-text {
+				  position: absolute;
+				  text-align: center;
+				}
+				.section-campaign .campaign-text .green {
+				  color: #00a2a2;
+				  margin-bottom: 4px;
+				}
+				.section-campaign .campaign-text h4 {
+				  color: #00a2a2;
+				  font-size: 60px;
+				  font-weight: bold;
+				  margin-bottom: 33px;
+				  line-height: 60px;
+				  text-transform: uppercase;
+				}
+				.section-campaign .campaign-text h4 span {
+				  font-size: 24px;
+				  line-height: 24px;
+				  display: inline-block;
+				  vertical-align: top;
+				  margin-top: 6px;
+				}
+				.section-campaign .campaign-text p {
+				  color: #000000;
+				  font-size: 24px;
+				  text-transform: uppercase;
+				  line-height: 32px;
+				}
+				.section-campaign .campaign-text .down {
+				  display: inline-block;
+				  border-right: 2px solid;
+				  border-bottom: 2px solid;
+				  width: 15px;
+				  height: 15px;
+				  transform: rotate(45deg);
+				  position: absolute;
+				  left: 50%;
+				  bottom: -49%;
+				  margin-left: -7px;
+				}
+				.section-campaign .campaign-text a {
+				  display: inline-block;
+				  background: #000;
+				  padding: 0px 42px;
+				  line-height: 50px;
+				  font-size: 13px;
+				  color: #fff;
+				  text-transform: uppercase;
+				  min-width: 197px;
+				}
+				.section-campaign .banner {
+				  top: 48.8%;
+				  transform: translateY(-50%);
+				  right: 0;
+				  width: 41.2%;
+				  padding-right: 1%;
+				}
+				.section-campaign .banner div {
+				  padding: 0 10%;
+				}
+				.section-campaign .campaign-text2 {
+				  top: 56%;
+				  left: 0;
+				  width: 100%;
+				}
+				.section-campaign .campaign-text2 div {
+				  width: 54%;
+				  margin: 0 auto;
+				}
+				.section-campaign .campaign-text3 {
+				  top: 43%;
+				  transform: translateY(-50%);
+				  left: 1%;
+				  width: 50.7%;
+				}
+				.section-campaign .campaign-text3 div {
+				  width: 63%;
+				  margin: 0 auto;
+				  text-align: left;
+				}
+				.section-campaign .campaign-text3 h4 {
+				  line-height: 56px;
+				}
+				.section-campaign .campaign-text4 {
+				  top: 47%;
+				  transform: translateY(-50%);
+				  right: 0;
+				  width: 49%;
+				  text-align: left;
+				  padding-left: 3%;
+				}
+				.section-campaign .campaign-text4 div {
+				  padding: 0 10%;
+				}
+				.section-campaign .campaign-text4 a {
+				  margin-top: 5%;
+				  min-width: 318px;
+				  text-align: center;
+				}
+				.article-swiper-swift {
+				  background: url(https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/bg.jpg);
+				}
+				.banner-campaign {
+				  position: relative;
+				  text-align: center;
+				  padding-top: 2%;
+				  padding-bottom: 3%;
+				  background: url(https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/pc_03.jpg) no-repeat;
+				}
+				.banner-campaign h4 {
+				  color: #00a2a2;
+				  font-size: 36px;
+				  font-weight: bold;
+				  line-height: 40px;
+				  text-transform: uppercase;
+				  text-align: center;
+				}
+				.banner-img{
+					width: 80.5%;
+					margin: 0 auto;
+					padding-left: 3%;
+				}
+				.banner-img img{
+					width: 100%;
+				}
+				.banner-img ul{
+					font-size: 0;
+					text-align: left;
+				}
+				.banner-img li{
+					font-size: 22px;
+					display: inline-block;
+					margin-right: 5%;
+					vertical-align: top;
+					font-weight: bold;
+				}
+				.banner-img a{
+					display: none;
+				}
+				.banner-campaign .banner-img ul li.banner-campaign-size-01{
+					font-size: 22px;
+					display: inline-block;
+					vertical-align: bottom;
+					font-weight: bold;
+					position: relative;
+					left: 0;
+					top: 0;
+					height: 60px;
+					line-height: 60px;
+					margin: 0px 60px 0 40px;
+				}
+				.banner-campaign .banner-img ul li.banner-campaign-size-02{
+					font-size: 22px;
+					display: inline-block;
+					vertical-align: bottom;
+					font-weight: bold;
+					position: relative;
+					left: 0;
+					top: 0;
+					height: 60px;
+					line-height: 30px;
+					margin: 0px 60px 0 40px;
+				}
+				.banner-campaign .banner-img ul li.banner-campaign-size-03{
+					font-size: 22px;
+					display: inline-block;
+					vertical-align: bottom;
+					font-weight: bold;
+					position: relative;
+					left: 0;
+					top: 0;
+					height: 60px;
+					line-height: 60px;
+					margin: 0px 0 0 45px;
+				}
+				.banner-campaign .banner-img ul li.banner-campaign-size-01 span{
+					display: inline-block;
+					font-size: 60px;
+					position: absolute;
+					top: -10px;
+					left: -40px;
+					color: #99dada;
+					vertical-align: bottom;
+				}
+				.banner-campaign .banner-img ul li.banner-campaign-size-02 span{
+					display: inline-block;
+					font-size: 60px;
+					position: absolute;
+					top: 5px;
+					left: -40px;
+					color: #99dada;
+					vertical-align: bottom;
+				}
+				.banner-campaign .banner-img ul li.banner-campaign-size-03 span{
+					  display: inline-block;
+						font-size: 60px;
+						position: absolute;
+						top: -10px;
+						left: -45px;
+						color: #99dada;
+						vertical-align: bottom;
+				}
+				.app-eX7W9uA{
+					/* height: 500px; */
+					position: relative;
+					margin-bottom: 20px;
+				}
+				.article-btn{
+					margin-bottom: 100px;
+					text-align: center;
+				}
+				.article-btn a img{
+					margin: 0 auto;
+				}
+				@media screen and (max-width: 1280px) {
+					.section-campaign .campaign-text2 div{
+						width:75% ;
+					}
+				}
+				@media screen and (max-width: 1024px) {
+				  .section-campaign {
+				    max-width: 100%;
+				    background: url(https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/m-bg.jpg);
+				  }
+				  .section-campaign .campaign-text {
+				    position: relative;
+				    width: 100%;
+				    left: 0;
+				    top: 0;
+				    transform: translate(0, 0);
+				  }
+				  .section-campaign .campaign-text div {
+				    padding: 10% 5%;
+				    width: 100%;
+				  }
+				  .section-campaign .campaign-text .green {
+				    font-size: 36px;
+				  }
+				  .section-campaign .campaign-text h4 {
+				    color: #00a2a2;
+				    font-size: 30px;
+				    margin-bottom: 20px;
+				    line-height: 30px;
+				  }
+				  .section-campaign .campaign-text h4 span {
+				    font-size: 18px;
+				    line-height: 30px;
+				  }
+				  .section-campaign .campaign-text p {
+				    color: #000000;
+				    font-size: 18px;
+				    text-transform: uppercase;
+				    line-height: 32px;
+				  }
+				  .section-campaign .campaign-text .down {
+				    position: relative;
+				    left: 0;
+				    bottom: 0;
+				    margin-left: 0;
+				    margin-top: 50px;
+				  }
+				  .section-campaign .banner div h4 {
+				    color: #00a2a2;
+				    font-size: 60px;
+				    margin-bottom: 50px;
+				    line-height: 60px;
+				  }
+				  .section-campaign .banner div h4 span {
+				    font-size: 22px;
+				    line-height: 22px;
+				  }
+				  .section-campaign .campaign-text2 {
+				    background: url(https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/mob_04_02.jpg);
+				  }
+				  .section-campaign .campaign-text2 div {
+				    padding-top: 0;
+				  }
+				  .section-campaign .campaign-text4 {
+				    text-align: center;
+				    padding: 0 0%;
+				  }
+				  .section-campaign .campaign-text4 div {
+				    padding-bottom: 15%;
+				  }
+				  .section-campaign3 {
+				    padding-top: 4%;
+					}
+				  .article-swiper-swift {
+				    background: url(https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/m-bg.jpg);
+				  }
+				  .swiper-campaign {
+				    padding-bottom: 5%;
+					}
+					.banner-campaign{
+						background: url(https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/m-bg.jpg);
+						padding-bottom: 6%;
+					}
+				  .banner-campaign h4 {
+				    color: #00a2a2;
+				    font-size: 46px;
+				    font-weight: bold;
+				    line-height: 60px;
+				    text-transform: uppercase;
+				    text-align: center;
+					}
+					.banner-img{
+						display: block;
+						width: 100%;
+						padding: 0;
+					}
+					.banner-img a{
+						display: inline-block;
+						background: #000;
+						padding: 0px 42px;
+						line-height: 50px;
+						font-size: 13px;
+						color: #fff;
+						text-transform: uppercase;
+					}
+					.banner-img ul{
+						text-align: center;
+						margin: 4% 6% 6%;
+					}
+					.banner-img li{
+						font-size: 14px;
+						margin-right: 0%;
+						width: 14%;
+					}
+					.banner-img li:nth-child(2){
+						width: 31%;
+					}
+					.banner-campaign .banner-img ul li.banner-campaign-size-01{
+						font-size: 14px;
+					}
+					.banner-campaign .banner-img ul li.banner-campaign-size-02{
+						font-size: 14px;	
+					}
+					.banner-campaign .banner-img ul li.banner-campaign-size-03{
+						font-size: 14px;
+					}
+					.banner-campaign .banner-img ul li.banner-campaign-size-01 span{
+						font-size: 40px;
+					}
+					.banner-campaign .banner-img ul li.banner-campaign-size-02 span{
+						font-size: 40px;
+					}
+					.banner-campaign .banner-img ul li.banner-campaign-size-03 span{
+						font-size: 40px;
+					}
+				}
+				@media screen and (max-width: 767px) {
+				  .section-campaign {
+				    max-width: 100%;
+				    background: url(https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/m-bg.jpg);
+				  }
+				  .section-campaign .campaign-text .green {
+				    font-size: 16px;
+				  }
+				  .section-campaign .campaign-text h4 {
+				    font-size: 24px;
+				    margin-bottom: 20px;
+				    line-height: 30px;
+				  }
+				  .section-campaign .campaign-text p {
+				    color: #000000;
+				    font-size: 12px;
+				    text-transform: uppercase;
+				    line-height: 24px;
+				  }
+				  .section-campaign .campaign-text .down {
+				    position: relative;
+				    left: 0;
+				    bottom: 0;
+				    margin-left: 0;
+				    margin-top: 30px;
+				  }
+				  .section-campaign .banner {
+				    padding: 0;
+				  }
+				  .section-campaign .banner div h4 {
+				    font-size: 24px;
+				    margin-bottom: 25px;
+				    line-height: 36px;
+				  }
+				  .section-campaign .banner div h4 span {
+				    margin-top: 2px;
+				  }
+				  .section-campaign .campaign-text2 {
+				    background: url(https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/mob_04_02.jpg);
+				  }
+				  .section-campaign .campaign-text2 div {
+				    padding-top: 0;
+				  }
+				  .section-campaign3 {
+				    padding-top: 4%;
+				  }
+				  .banner-campaign h4 {
+				    font-size: 24px;
+						line-height: 36px;
+						margin-bottom: 5%;
+					}
+					.banner-img li{
+						font-size: 12px;
+						width: 28%;
+					}
+				  .app-eX7W9uA{
+						/* height:250px; */
+					}
+					.banner-img ul{
+						margin: 4% 0 6%;
+					}
+					.banner-img li:nth-child(2){
+						width: 42%;
+					}
+					.banner-campaign .banner-img ul li.banner-campaign-size-01{
+						margin: 0;
+						font-size: 12px;
+						height: auto;
+						line-height: normal;
+					}
+					.banner-campaign .banner-img ul li.banner-campaign-size-02{
+						margin: 0;
+						font-size: 12px;
+						height: auto;
+						line-height: normal;
+						width: 41%;
+					}
+					.banner-campaign .banner-img ul li.banner-campaign-size-03{
+						margin: 0;
+						font-size: 12px;
+						height: auto;
+						line-height: normal;
+						width: 26%;
+					}
+					.banner-campaign .banner-img ul li.banner-campaign-size-01 span{
+						font-size: 20px;
+						left: -2px;
+						top: -7px;
+					}
+					.banner-campaign .banner-img ul li.banner-campaign-size-02 span{
+						font-size: 20px;
+						left: -4px;
+						top: 8px;
+					}
+					.banner-campaign .banner-img ul li.banner-campaign-size-03 span{
+						font-size: 20px;
+						left: -5px;
+						top: -7px;
+
+					}
+				}
+				.introduction-text-component-3J66tXE .copy-2jUKApt{
+					font: 700 2.2em/1.2 Adihaus-din, Arial, sans-serif;
+				}
+				.introduction-text-component-3J66tXE .heading-fHMEzdV{
+					font: 700 2.2em/1.2 Adihaus-din, Arial, sans-serif;
+				}
+			</style>
+			
+			<script type="text/javascript">
+				window['LOCALE'] = 'chCH';
+					window['LOCALE_FILE'] = 'chCH';
+					window['ASSET_QUERY_PARAMS'] = {
+							'env': 'local',
+							'device': 'desktop',
+							'locale': 'chCH',
+						};
+					$('.text-reveal-inner').removeAttr('style');
+			</script>
+			<script type="text/javascript" src="libs/dist/js/runtime~app.js"></script>
+			<script type="text/javascript" src="libs/dist/js/vendors~app.js"></script>
+			<script type="text/javascript" src="libs/dist/js/app.js"></script>
+			
+			<!-- 动画模块   要显示把 none去掉-->
+			<article class="article">
+				<div id="app"></div>
+			</article>
+			<!-- 动画模块  end-->
+
+			<article class="article section-campaign none">
+				<div class="campaign">
+					<img src="images/blank.gif"
+						data-image='{
+							"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/pc_02.jpg"},
+							"medium":{"high":"",  "normal":"https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/mob_02.jpg"},
+							"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/mob_02.jpg"}}'
+					/>
+					
+					<div class="campaign-text banner">
+						<div>
+							<p class="green">开始时间</p>
+							<h4>6月8日</h4>
+							<p>为保护海洋，阻止塑料污染而跑。每跑公里即为PARLEY保护海洋活动捐出1美元</p>
+							<span class="down"></span>
+						</div>
+					</div>
+				</div>
+			</article>
+			
+			<article class="article section-campaign article-swiper-swift none">
+				<div class="banner-campaign">
+					<h4>参与办法</h4>
+					<div class="banner-img">
+						<img src="images/blank.gif"
+							data-image='{
+								"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/2018/5/lp-campaign-RFTO/kv.png"},
+								"medium":{"high":"",  "normal":"https://img.adidas.com.cn/resources/2018/5/lp-campaign-RFTO/m-kv.jpg"},
+								"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/2018/5/lp-campaign-RFTO/m-kv.jpg"}}'
+						/>
+						
+						<ul>
+							<li class="banner-campaign-size-01"><span>1</span>下载悦跑圈APP</li>
+							<li class="banner-campaign-size-02"><span>2</span>点击底部“活动”菜单，<br class="">加入“跑出蔚蓝”活动&emsp;</li>
+							<li class="banner-campaign-size-03"><span>3</span>邀请好友参与</li>
+						</ul>
+						<a class=""><span>立即加入</span></a>
+					</div>
+				</div>
+			</article>
+			
+			<article class="article section-campaign">
+				<div class="campaign">
+					<img src="images/blank.gif"
+						data-image='{
+							"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/pc_04.jpg"},
+							"medium":{"high":"",  "normal":"https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/mob_04.jpg"},
+							"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/mob_04.jpg"}}'
+					/>
+					
+					<div class="campaign-text campaign-text2">
+						<div>
+							<h4>PARLEY与海洋</h4>
+							<p>Parley集合艺术家、环保先锋和意见，提升人们保护海洋的意识，以实际行动倡导和策划不同项目，为减少海洋污染身体力行。作为创始成员，adidas支持Parley共同努力，合作和创造力至关重要。</p>
+						</div>
+					</div>
+				</div>
+			</article>
+			
+			
+			<article class="article section-campaign section-campaign3">
+				<div class="campaign">
+					<img src="images/blank.gif"
+						data-image='{
+							"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/pc_05.jpg"},
+							"medium":{"high":"",  "normal":"https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/mob_05.jpg"},
+							"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/mob_05.jpg"}}'
+					/>
+					
+					<div class="campaign-text campaign-text3">
+						<div>
+							<h4>PARLEY保护海洋活动</h4>
+							<p>“为海洋奔跑”筹集的资金，将用于在马尔代夫建立Parley海洋学校。Parley海洋学校这一环保教育项目，以实地体验等方式，教导孩子们成为下一代的海洋保护卫士。</p>
+						</div>
+					</div>
+				</div>
+			</article>
+			
+			
+			<article class="article section-campaign">
+				<div class="campaign">
+					<img src="images/blank.gif"
+						data-image='{
+							"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/pc_06.jpg"},
+							"medium":{"high":"",  "normal":"https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/mob_06.jpg"},
+							"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/mob_06.jpg"}}'
+					/>
+					
+					<div class="campaign-text campaign-text4">
+						<div>
+							<h4>织出美丽海洋</h4>
+							<p>
+								采用PARLEY OCEAN PLASTIC™制成：沙滩及沿岸社区海洋回收物再生利用，阻断其对海洋的进一步污染。
+							</p>
+							<a target="_blank" href="https://www.adidas.com.cn/parley_all"><span>选购全部PARLEY产品</span></a>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="article article-btn">
+				<a href="https://www.adidas.com.cn/campaign/sports_ros" target="_blank">
+						<img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+													"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/img-pc-01.jpg"},
+													"medium":{"high":"",  "normal":"https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/img-mob-01.jpg"},
+													"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/lp-campaign-RFTO/img-mob-01.jpg"}}' />
+				</a>
+			</article>
+						<script>
+							$('.text-reveal-inner').removeAttr('style');
+						</script>
+		</section>
+		<%include _includes/modules/footer.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+		<!-- 视频弹层 -->
+		<script id="video-dialog" type="text/template">
+			<div class="dialog">
+				<div class="dialog-container">
+					<div class="loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+					<div class="video-content">
+
+					</div>
+				</div>
+				<i class="icon icon-close dialog-close">&times;</i>
+			</div>
+		</script>
+
+	</div>
+</body>
+</html>

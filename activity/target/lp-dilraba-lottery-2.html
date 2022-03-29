@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>抽奖活动</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/lp-dilraba-lottery-1.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/lp-dilraba-lottery-2.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-draw.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+            <article class="article start-draw-inner">
+                <img src="images/blank.gif"
+                    data-image='{
+                    "standard":{"high":"", "normal":"../static/images/lp-dilraba-lottery/parts-1-01.jpg"},
+                    "medium":{"high":"",  "normal":"../static/images/lp-dilraba-lottery/parts-1-01-m.jpg"},
+                    "small":{"high":"", "normal":"../static/images/lp-dilraba-lottery/parts-1-01-m.jpg"}}'
+                />
+
+                <div class="ad-logo">
+                    <img src="../static/images/lp-dilraba-lottery/logo-pc.png" alt="">
+                </div>
+
+            </article>
+		</section>
+
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		<script id="draw-step-qx" type="text/template" >
+			<div class="qx-winning">
+				<!-- 如果已抽显示第一个图片 未中奖显示第二张图片 -->
+				<!-- 已抽奖 -->
+				<div class="yi-draw">
+					<img src="../static/images/lp-dilraba-lottery/img1_03.png"/>
+					<a href="index.html"></a>
+                </div>
+                
+				<!-- 未中奖 -->
+				<!-- <div class="losing-lottery">
+                    <img src="images/blank.gif"
+                        data-image='{
+                        "standard":{"high":"", "normal":"../static/images/lp-dilraba-lottery/img2_03.png"},
+                        "medium":{"high":"",  "normal":"../static/images/lp-dilraba-lottery/img2_03-m.png"},
+                        "small":{"high":"", "normal":"../static/images/lp-dilraba-lottery/img2_03-m.png"}}'
+                    />
+
+					<a href="index.html"></a>
+                </div> -->
+                
+				<!-- 已中奖 -->
+				<!-- <div class="winning-infro">
+					<p><span>你已中奖</span> 以下是你提交的联系方式</p>
+					<p>请耐心等待工作人员与你联系</p>
+					<div class="infro-box">
+						<p><span>姓名</span>爱热巴</p>
+						<p><span>电话</span>18634338858</p>
+						<p><span>地址</span>广东省广州市越秀区中山六路</p>
+						<div>
+                            *以上信息如需修改请联系客服400-999-5999
+						</div>
+					</div>
+				</div> -->
+			</div>
+
+		</script>
+
+	</div>
+</body>
+</html>

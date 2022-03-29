@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+		<%include _includes/js.html %>
+
+	</head>
+    <body>
+		<div id="wrapper">
+			<!-- 头部 -->
+			<%include _includes/modules/header.html %>
+			<!-- 內容 -->
+			<section class="container">
+
+				<style>
+					.article img {
+						display: block;
+						width: 100%;
+					}
+					.article-swiper .swiper-button-next,
+					.article-swiper .swiper-button-prev {
+						top: 83%;
+						width: 4.5%;
+						height: auto;
+						background: none;
+						margin-top: 0;
+					}
+					.article-swiper .swiper-button-next {
+						right: 23.5%;
+					}
+					.article-swiper .swiper-button-prev {
+						left: 65.5%;
+					}
+					.modular {
+						position: relative;
+					}
+					.modular .link {
+						position: absolute;
+						font-size: 0;
+					}
+					.modular .list .link img {
+						height: 100%;
+					}
+					.modular .list .link1 {
+						left: 22.5%;
+						width: 21%;
+						height: 33%;
+						top: 15%;
+					}
+					.modular .list .link2 {
+						left: 45%;
+						width: 33.5%;
+						height: 29%;
+						top: 16.3%;
+					}
+					.modular .list .link3 {
+						left: 49%;
+						width: 28.5%;
+						height: 27%;
+						top: 48.3%;
+					}
+					.modular .list .link4 {
+						left: 51%;
+						width: 26.5%;
+						height: 20%;
+						top: 79.3%;
+					}
+					.modular .list .link5 {
+						left: 19.5%;
+						width: 26%;
+						height: 44%;
+						top: 49.5%;
+					}
+
+					.modular .list .link6 {
+						left: 19.5%;
+						width: 33%;
+						height: 28%;
+						top: 17%;
+					}
+					.modular .list .link7 {
+						left: 56.5%;
+						width: 20%;
+						height: 27%;
+						top: 20%;
+					}
+					.modular .list .link8 {
+						left: 19%;
+						width: 30%;
+						height: 18%;
+						top: 50%;
+					}
+					.modular .list .link9 {
+						left: 51.5%;
+						width: 26%;
+						height: 35%;
+						top: 52.5%;
+					}
+					.modular .list .link10 {
+						left: 20.5%;
+						width: 27%;
+						height: 18%;
+						bottom: 4%;
+					}
+
+					.modular .list .link11 {
+						left: 23%;
+						width: 20%;
+						height: 27%;
+						top: 19.5%;
+					}
+					.modular .list .link12 {
+						left: 45%;
+						width: 33.5%;
+						height: 28%;
+						top: 16%;
+					}
+					.modular .list .link13 {
+						left: 49.5%;
+						width: 26%;
+						height: 22%;
+						top: 50.5%;
+					}
+					.modular .list .link14 {
+						left: 19.5%;
+						width: 26%;
+						height: 35%;
+						top: 48%;
+					}
+					.modular .list .link15 {
+						left: 45.5%;
+						width: 27%;
+						height: 18%;
+						bottom: 4%;
+					}
+
+					.article-bottom {
+						margin-bottom: 10%;
+					}
+					.article-bottom img {
+						display: block;
+						width: 100%;
+					}
+					.article-bottom ul {
+						max-width: 1408px;
+						margin: 0 auto;
+					}
+					.article-bottom ul li {
+						width: 25%;
+						padding: 0 27px;
+						float: left;
+					}
+					.article-bottom ul li a {
+						position: relative;
+						display: block;
+						text-align: center;
+					}
+					.article-bottom ul li a .btn {
+						position: absolute;
+						bottom: 20px;
+						left: 50%;
+						width: 180px;
+						margin-left: -90px;
+					}
+					@media (max-width: 1024px) {
+						.article-swiper .swiper-button-prev,
+						.article-swiper .swiper-button-next {
+							top: 75.5%;
+							width: 7%;
+						}
+						.article-swiper .swiper-button-prev {
+							left: 66%;
+						}
+						.article-swiper .swiper-button-next {
+							right: 15%;
+						}
+						.modular {
+							position: relative;
+						}
+
+						.modular .list .link1 {
+							left: 10%;
+							top: 18.8%;
+							width: 30%;
+							height: 28%;
+						}
+						.modular .list .link2 {
+							left: 43%;
+							width: 55.5%;
+							height: 23%;
+							top: 16.3%;
+						}
+						.modular .list .link3 {
+							left: 54%;
+							width: 35.5%;
+							height: 32%;
+							top: 45.3%;
+						}
+						.modular .list .link4 {
+							left: 41%;
+							width: 51.5%;
+							height: 16%;
+							top: 83.3%;
+						}
+						.modular .list .link5 {
+							left: 0%;
+							width: 42%;
+							height: 35%;
+							top: 52%;
+						}
+
+						.modular .list .link6 {
+							left: 0%;
+							width: 57%;
+							height: 23%;
+							top: 18.2%;
+						}
+						.modular .list .link7 {
+							left: 60.5%;
+							width: 36%;
+							height: 27%;
+							top: 20%;
+						}
+						.modular .list .link8 {
+							left: 0%;
+							width: 49%;
+							height: 28%;
+							top: 50%;
+						}
+						.modular .list .link9 {
+							left: 54.5%;
+							width: 45%;
+							height: 28%;
+							top: 57.5%;
+						}
+						.modular .list .link10 {
+							left: 13.5%;
+							width: 39%;
+							height: 18%;
+							bottom: 0%;
+						}
+
+						.modular .list .link11 {
+							left: 0%;
+							width: 36%;
+							height: 30%;
+							top: 18.2%;
+						}
+						.modular .list .link12 {
+							left: 37.5%;
+							width: 62%;
+							height: 26%;
+							top: 17%;
+						}
+						.modular .list .link13 {
+							left: 52.5%;
+							width: 34%;
+							height: 28%;
+							top: 48%;
+						}
+						.modular .list .link14 {
+							left: 0%;
+							width: 46%;
+							height: 25%;
+							top: 56%;
+						}
+						.modular .list .link15 {
+							left: 44.5%;
+							width: 49%;
+							height: 18%;
+							bottom: 1%;
+						}
+
+						.article-bottom {
+							margin-bottom: 5%;
+						}
+						.article-bottom ul {
+							padding: 0 24px;
+						}
+						.article-bottom ul li {
+							width: 50%;
+							padding: 0 3px 6px;
+						}
+						.article-bottom ul li a .btn {
+							bottom: 15px;
+							width: 140px;
+							margin-left: -70px;
+							min-width: 120px;
+							height: 40px;
+							line-height: 40px;
+							font-size: 16px;
+						}
+					}
+				</style>
+
+				<article class="article article-swiper">
+					<div class="swiper-container events-swiper-neo">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="https://www.adidas.com.cn/adidasneo_may_liverestless"><img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny-ec/kv-01.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-cny-ec/kv-01-m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-cny-ec/kv-01-m.jpg"}
+								}' /></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="https://www.adidas.com.cn/adidasneo_may_liverestless"><img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny-ec/kv-02.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-cny-ec/kv-02-m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-cny-ec/kv-02-m.jpg"}
+								}' /></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="https://www.adidas.com.cn/adidasneo_may_liverestless"><img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny-ec/kv-03.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-cny-ec/kv-03-m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-cny-ec/kv-03-m.jpg"}
+								}' /></a>
+							</div>
+						</div>
+						<!-- 箭头 -->
+						<div class="swiper-button-prev">
+							<img class="events-changeSrc" src="images/blank.gif"
+								data-image='{"standard":{"high":"", 	"normal":"../static/images/lp-neo-cny-ec/kv-left.png"},
+									"medium":{"high":"", "normal":"../static/images/lp-neo-cny-ec/kv-left-m.png"},
+									"small":{"high":"", "normal":"../static/images/lp-neo-cny-ec/kv-left-m.png"}
+							}' />
+						</div>
+						<div class="swiper-button-next">
+							<img class="events-changeSrc" src="images/blank.gif"
+								data-image='{"standard":{"high":"", 	"normal":"../static/images/lp-neo-cny-ec/kv-right.png"},
+									"medium":{"high":"", "normal":"../static/images/lp-neo-cny-ec/kv-right-m.png"},
+									"small":{"high":"", "normal":"../static/images/lp-neo-cny-ec/kv-right-m.png"}
+							}' />
+						</div>
+					</div>
+				</article>
+
+				<!-- 易洋千玺 -->
+				<article class="article modular">
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny-ec/article-01.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny-ec/article-01-m.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny-ec/article-01-m.jpg"}
+						}' />
+					</div>
+
+					<div class="list list-yyqx">
+						<a target="_blank" class="link link1" href="https://www.adidas.com.cn/item/CV6998">1
+							<img src="images/blank.gif"/>
+						</a>
+						<a target="_blank" class="link link2" href="https://www.adidas.com.cn/item/CV6998">2
+							<img src="images/blank.gif"/>
+						</a>
+						<a target="_blank" class="link link3" href="https://www.adidas.com.cn/item/CV9295">3
+							<img src="images/blank.gif"/>
+						</a>
+						<a target="_blank" class="link link4" href="https://www.adidas.com.cn/item/BC0942">4
+							<img src="images/blank.gif"/>
+						</a>
+						<a target="_blank" class="link link5" href="https://www.adidas.com.cn/item/CV9295">5
+							<img src="images/blank.gif"/>
+						</a>
+					</div>
+				</article>
+
+				<!-- 迪丽热巴 -->
+				<article class="article modular">
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny-ec/article-02.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny-ec/article-02-m.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny-ec/article-02-m.jpg"}
+						}' />
+					</div>
+					<div class="list list-dlrb">
+						<a target="_blank" class="link link6" href="https://www.adidas.com.cn/item/CV9609">
+							6<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link7" href="https://www.adidas.com.cn/item/CV9609">
+							7<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link8" href="https://www.adidas.com.cn/item/CV7368">
+							8<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link9" href="https://www.adidas.com.cn/item/DB1336">
+							9<img src="images/blank.gif" />
+						</a>
+						<a target="_blank" class="link link10" href="https://www.adidas.com.cn/item/DB1336">
+							10<img src="images/blank.gif" />
+						</a>
+					</div>
+				</article>
+
+				<!-- 郑恺 -->
+				<article class="article modular">
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny-ec/article-03.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny-ec/article-03-m.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny-ec/article-03-m.jpg"}
+						}' />
+					</div>
+					<div class="list list-zk">
+						<a target="_blank" class="link link11" href="https://www.adidas.com.cn/item/DN7388">
+							11<img src="images/blank.gif"/>
+						</a>
+						<a target="_blank" class="link link12" href="https://www.adidas.com.cn/item/DN7388">
+							12<img src="images/blank.gif"/>
+						</a>
+						<a target="_blank" class="link link13" href="https://www.adidas.com.cn/item/DN7414">
+							13<img src="images/blank.gif"/>
+						</a>
+						<a target="_blank" class="link link14" href="https://www.adidas.com.cn/item/DB1591">
+							14<img src="images/blank.gif"/>
+						</a>
+						<a target="_blank" class="link link15" href="https://www.adidas.com.cn/item/DB1591">
+							15<img src="images/blank.gif"/>
+						</a>
+					</div>
+				</article>
+
+				<!-- 脑洞附件 -->
+				<article class="article modular">
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny-ec/article-04.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny-ec/article-04-m.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny-ec/article-04-m.jpg"}
+						}' />
+					</div>
+				</article>
+
+				<article class="article article-bottom">
+					<div>
+						<img class="events-changeSrc" src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny-ec/pc_19.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-neo-cny-ec/mob_19.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-neo-cny-ec/mob_19.jpg"}
+						}' />
+					</div>
+					<ul class="float-clearfix">
+						<li>
+							<a target="_blank" href="https://www.adidas.com.cn/men_adidasneo_shoes">
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny-ec/items-01.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-cny-ec/items-01-m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-cny-ec/items-01-m.jpg"}
+								}' />
+								<span class="btn btn-white btn-have-arrow btn-have-opacity"><span>选购男子鞋类</span></span>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://www.adidas.com.cn/men_adidasneo_clothing">
+
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny-ec/items-02.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-cny-ec/items-02-m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-cny-ec/items-02-m.jpg"}
+								}' />
+								<span class="btn btn-white btn-have-arrow btn-have-opacity"><span>选购男子服饰</span></span>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://www.adidas.com.cn/women_adidasneo_shoes">
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny-ec/items-03.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-cny-ec/items-03-m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-cny-ec/items-03-m.jpg"}
+								}' />
+								<span class="btn btn-white btn-have-arrow btn-have-opacity"><span>选购女子鞋类</span></span>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://www.adidas.com.cn/women_adidasneo_clothing">
+								<img class="events-changeSrc" src="images/blank.gif"
+									data-image='{"standard":{"high":"", "normal":"../static/images/lp-neo-cny-ec/items-04.jpg"},
+										"medium":{"high":"", "normal":"../static/images/lp-neo-cny-ec/items-04-m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-neo-cny-ec/items-04-m.jpg"}
+								}' />
+								<span class="btn btn-white btn-have-arrow btn-have-opacity"><span>选购女子服饰</span></span>
+							</a>
+						</li>
+					</ul>
+				</article>
+
+				<script>
+					$(function(){
+						// kv
+						var mySwiper1 = new Swiper('.events-swiper-neo', {
+							loop: true,
+							slidesPerView : 1,
+							spaceBetween : 0,
+							paginationClickable: true,
+							centeredSlides: true,
+							autoplay: 2500,
+							autoplayDisableOnInteraction: false,
+							nextButton: '.swiper-button-next',
+							prevButton: '.swiper-button-prev'
+						});
+
+					})
+				</script>
+			</section>
+			<!-- 底部 -->
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		</div>
+    </body>
+</html>

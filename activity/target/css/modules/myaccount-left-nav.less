@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+.myaccount-left{
+	float: left;
+	width: 240px;
+	margin-right: -240px;
+	position: relative;
+	.myaccount-left-top{
+		background: #000;
+		border: 1px solid #000;
+		height: 60px;
+		.myaccount-tit{
+			position: relative;
+			padding: 0 0 0 41px;
+			p{
+				font-size: 20px;
+				color: #FFF;
+				line-height: 60px;
+			}
+			.icon-head-portrait,.icon-head-portrait-ed{
+				position: absolute;
+				left: 15px;
+				top: 19px;
+			}
+			.icon-caret{}
+		}
+	}
+
+}
+/*员工账户*/
+.employee-account{
+    .myaccount-left-top{
+        background: #fff;
+        border-bottom: 0;
+        .myaccount-tit p{
+            color: #000;
+        }
+    }
+}
+.left-nav-item{
+	border: 1px solid #000;
+	color: #000;
+	.item-name{
+		border-bottom: 1px solid #000;
+		font-size: 16px;
+		line-height: 38px;
+		padding: 0 15px;
+	}
+	ul{
+		padding: 12px 0;
+		li{
+			a{
+				display: block;
+				font-size: 14px;
+				color: #000;
+				line-height: 40px;
+				padding: 0 30px;
+				position: relative;
+				.icon-myaccount{
+					display: none;
+				}
+				.icon-caret{
+					position: absolute;
+					right: 30px;
+					top: 13px;
+					width: 14px;
+					height: 14px;
+					background-position: -96px -20px;
+					display: none;
+				}
+			}
+			&:hover{
+				a{
+					background: rgba(222,243,250,0.50);
+					span{
+						position: relative;
+						&:after {
+						    position: absolute;
+						    display: block;
+						    content: "";
+						    line-height: 1;
+						    z-index: 1;
+						    top: 2px;
+						    right: -26px;
+						    width: 14px;
+						    height: 14px;
+						    background: url(../images/icon.png);
+						    background-position: -74px -20px;
+						    display: none;
+						}
+					}
+				}
+			}
+			&.is-active{
+				a{
+					color: #fff;
+					background: #0287CD;
+					.icon-caret{
+						display: none;
+					}
+					span{
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.help-left-nav-item{
+	margin-top: 20px;
+	.item-name{
+		font-size: 20px;
+		line-height: 58px;
+		border-top: 0px solid #000;
+		.icon-help{
+			vertical-align: middle;
+			margin: -4px 10px 0 0;
+		}
+	}
+}
+
+@media (max-width:1024px){
+	.myaccount-left{
+		float: none;
+		width: 100%;
+		margin: 0px;
+		.help-left-nav-item{
+			display: none;
+		}
+		.myaccount-left-top{
+			background: #F9F9F9;
+			border: 0px solid #000;
+			height: 40px;
+			.myaccount-tit{
+				padding: 0 0 0 43px;
+				p{
+					font-size: 14px;
+					color: #232323;
+					line-height: 40px;
+				}
+				.icon-head-portrait,.icon-head-portrait-ed{
+					left: 20px;
+					top: 9px;
+					background-position: -200px -220px;
+					width: 19px;
+					height: 21px;
+				}
+				.icon-caret{
+					position: absolute;
+					right: 20px;
+					top: 16px;
+				}
+			}
+			&.is-active{
+				.myaccount-tit{
+					.icon-caret{
+						background-position: -115px 0;
+					}
+				}
+			}
+		}
+	}
+	.left-nav-item{
+		display: none;
+		background: #F9F9F9;
+		border: 0px solid #000;
+		color: #232323;
+		padding: 0 20px;
+		.item-name{
+			border-top: 0px solid #000;
+			border-bottom: 1px solid #C7CBCC;
+			font-size: 20px;
+			line-height: 22px;
+			padding: 8px 0 20px;
+			color: #888;
+		}
+		ul{
+			padding: 14px 0;
+			font-size: 0;
+			letter-spacing: 0;
+			li{
+				width: 33.3333%;
+				text-align: center;
+				margin: 16px 0;
+				display: inline-block;
+				vertical-align: top;
+				a{
+					display: block;
+					font-size: 14px;
+					color: #232323;
+					line-height: normal;
+					padding: 0px;
+					.icon-myaccount{
+						display: inline-block;
+						height: 30px;
+					}
+					span{
+						display: block;
+						line-height: 16px;
+					}
+				}
+				&:hover{
+					a{
+						color: #000;
+						background: #F9F9F9;
+						.icon-caret{
+							display: none;
+						}
+						span{
+							position: relative;
+							&:after {
+							    display: none;
+							}
+						}
+					}
+				}
+				&.is-active{
+					a{
+						color: #000;
+						background: #F9F9F9;
+						.icon-caret{
+							display: none;
+						}
+						span{
+							&:after {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

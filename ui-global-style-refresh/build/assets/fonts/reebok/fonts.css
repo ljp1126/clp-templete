@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('https://www.reebok.com/glass/assets/fonts/reebok/DINPro-Regular.woff2') format('woff2'), url('https://www.reebok.com/glass/assets/fonts/reebok/DINPro-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('https://www.reebok.com/glass/assets/fonts/reebok/DINPro-Bold.woff2') format('woff2'), url('https://www.reebok.com/glass/assets/fonts/reebok/DINPro-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Cond';
+  src: url('https://www.reebok.com/glass/assets/fonts/reebok/DINPro-CondensedRegular.woff2') format('woff2'), url('https://www.reebok.com/glass/assets/fonts/reebok/DINPro-CondensedRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Cond';
+  src: url('https://www.reebok.com/glass/assets/fonts/reebok/DINPro-CondensedMedium.woff2') format('woff2'), url('https://www.reebok.com/glass/assets/fonts/reebok/DINPro-CondensedMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Cond';
+  src: url('https://www.reebok.com/glass/assets/fonts/reebok/DINPro-CondensedBold.woff2') format('woff2'), url('https://www.reebok.com/glass/assets/fonts/reebok/DINPro-CondensedBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'fonticons-reebok';
+  src: url('https://www.reebok.com/glass/assets/fonts/reebok/fonticons-reebok.woff2') format('woff2'), url('https://www.reebok.com/glass/assets/fonts/reebok/fonticons-reebok.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

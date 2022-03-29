@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+.article{
+    position: relative;
+    >img{
+        width: 100%;
+    }
+}
+
+.link{
+    position: absolute;
+    z-index: 1;
+    // background: rgba(0, 0, 0, .4);
+}
+
+.article-size{
+    background: #edede3;
+    text-align: center;
+    padding-top: 7vh;
+    padding-bottom: 8vh;
+    .size-box{
+        padding-bottom: 1vh;
+        h4{
+            font-size: 30px;
+            height: 60px;
+            line-height: 60px;
+            font-family: "aditstarheavy", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+        }
+        p{
+            font-size: 20px;
+            height: 36px;
+            line-height: 36px;
+
+        }
+    }
+    .size-box-img{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .size-box-02{
+        .size-box-02-size{
+            border-bottom:1px solid #000000;
+            display: block;
+            font-size: 18px;
+            height: 34px;
+            line-height: 34px;
+            color: #1f1520;
+            margin-bottom: 10px;
+            width: 200px;
+            margin: 0 auto;
+
+            &:hover{
+                color: #1f1520;
+            }
+        }
+        .btn-have-arrow{
+            margin-top: 15px;
+            
+        }
+    }
+    .size-box-04{
+        padding-top: 13vh;
+        h2{
+            font-weight: 700;
+            font-size: 31px;
+            letter-spacing: 4px;
+            font-family: "adineueprobold", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+        }
+    }
+    .size-box-05{
+        font-size: 0;
+        padding-top: 6vh;
+        padding-bottom: 7vh;
+        width: 67%;
+        margin: 0 auto;
+        div{
+            position: relative;
+            display: inline-block;
+            padding: 6px;
+            width: 25%;
+            .btn{
+                position: absolute;
+                left: 50%;
+                top: 72%;
+                transform: translateX(-50%);
+                min-width: 240px;
+                background: rgba(0, 0, 0, 0);
+                font-size: 22px;
+                font-weight: 700;
+                font-family: "adineueprobold", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+                span{
+                    &:after{
+                        top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.article-size{
+    .size-box-02{
+        .btn-have-arrow{
+            min-width: 210px;
+        }
+    }
+}
+@media (max-width: 1590px){
+    .article-size{
+        .size-box-05{
+            width: 73%;
+        }
+    }
+}
+@media (max-width: 1450px){
+    .article-size{
+        .size-box-05{
+            width: 78%;
+        }
+    }
+}
+@media (max-width: 1290px){
+    .article-size{
+        .size-box-05{
+            width: 85%;
+        }
+    }
+}
+@media (max-width: 1200px){
+    .article-size{
+        .size-box-05{
+            width: 95%;
+        }
+    }
+}
+@media (max-width: 1024px){
+    .article-size{
+        .size-box{
+            h4{
+                font-size: 22px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        .size-box-02{
+            .size-box-02-size{
+                font-size: 16px;
+            }
+        }
+        .size-box-02,
+        .size-box-03{
+            .btn-have-arrow{
+                height: 38px;
+                line-height: 38px;
+                font-size: 16px;
+            }
+        }
+        .size-box-04{
+            h2{
+                font-size: 22px;
+            }
+        }
+        .size-box-05{
+            width: 100%;
+            padding: 10px 10px 6vh 10px;
+            div{
+                width: 50%;
+                .btn{
+                    top: 64%;
+                    min-width: 190px;
+                    font-size: 14px;
+                    span{
+                        &:after{
+                            top: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 320px){
+    .article-size{
+        .size-box{
+            h4{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .size-box-05{
+            div{
+                .btn{
+                    font-size: 12px;
+                    span{
+                        &:after{
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

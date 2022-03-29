@@ -1,0 +1,338 @@
+@charset "UTF-8";
+// 公共方法
+@import "common/utilities.less";
+// 公共变量、样式
+@import "common/variables.less";
+
+body{
+    background: #000;
+}
+
+
+.article{
+    text-align: center;
+    img{
+        max-width: 640px;
+    }
+}
+
+.article-1{
+    >img{
+        display: none;
+    }
+}
+
+.article-2{
+    img{
+        max-width: 100%;
+    }
+}
+
+.article-test{
+    color: #fff;
+    h2{
+        font-size: 45px;
+        font-weight: bold;
+        margin-bottom: 46px;
+    }
+    p{
+        font-size: 22px;
+        line-height: 36px;
+        margin-bottom: 60px;
+    }
+}
+
+.article-code{
+    .article-code-text{
+        padding-bottom: 27px;
+        img{
+            max-width: 100%;
+        }
+        &:after{
+            content: '';
+            width: 1px;
+            height: 114px;
+            display: block;
+            margin: 0 auto;
+            background: #cccccc;
+        }
+    }
+
+    .code-img{
+        max-width: 260px;
+        margin-bottom: 24px;
+    }
+
+    .code-icon{
+        width: 21px;
+    }
+
+    >img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .form-group{
+        font-size: 0;
+        margin-top: 38px;
+        margin-bottom: 40px;
+        .form-checkbox{
+            font-size: 0;
+            line-height: normal;
+            padding-left: 0;
+            min-height: 0;
+            .icon{
+                position: relative;
+                vertical-align: middle;
+                margin-right: 10px;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    border: 1px solid #969696;
+                    background: #000;
+                }
+
+                &.is-active{
+                    &:after{
+                        background: none;
+                    }
+                }
+            }
+        }
+        span,
+        a{
+            font-size: 16px;
+            color: #fff;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        a{
+            text-decoration: underline;
+        }
+    }
+
+    .text-box{
+        margin: 20px auto;
+        max-width: 640px;
+        p{
+            position: relative;
+            text-align: left;
+            color: #fff;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 10px;
+            padding-left: 16px;
+
+            &.small{
+                font-size: 12px;
+                line-height: 16px;
+                margin-top: -8px;
+            }
+            span{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            a{
+                color: #fff;
+            }
+        }
+    }
+
+    .btn-box{
+        margin-bottom: 114px;
+        .btn{
+            min-width: 413px;
+            height: 54px;
+            line-height: 54px;
+            font-size: 21px;
+            span{
+                &:after{
+                    top: 6px;
+                }
+            }
+        }
+        .msg-block{
+            margin-top: 10px;
+            text-align: center;
+            span{
+                font-size: 16px;
+                color: #d21616;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1024px){
+    .article{
+        >img{
+            // max-width: 100%;
+        }
+    }
+
+    .article-1{
+        >img{
+            display: inline-block;
+        }
+    }
+
+    .article-test{
+        h2{
+            font-size: 32px;
+            margin-bottom: 42px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 40px;
+        }
+    }
+    
+    .article-code{
+        .article-code-text{
+            img{
+                max-width: 640px;
+            }
+            &:after{
+                height: 85px;
+            }
+        }
+    
+        .code-img{
+            margin-bottom: 18px;
+        }
+    
+        .form-group{
+            margin-top: 36px;
+            margin-bottom: 38px;
+            .form-checkbox{
+                .icon{
+                    &:after{}
+    
+                    &.is-active{
+                        &:after{}
+                    }
+                }
+            }
+            span,
+            a{
+                font-size: 12px;
+            }
+            a{}
+        }
+        
+        .text-box{
+            max-width: 100%;
+            padding: 0 20px;
+            p{
+                margin-bottom: 5px;
+                &.small{
+                    margin-top: -3px;
+                }
+            }
+        }
+
+        .btn-box{
+            margin-bottom: 106px;
+            .btn{
+                font-size: 16px;
+                span{
+                    &:after{
+                        top: 3px;
+                    }
+                }
+            }
+            .msg-block{
+                margin-top: 14px;
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    
+    
+}
+
+
+@media (max-width: 767px){
+    .article{
+        >img{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    .article-test{
+        padding: 0 20px;
+        h2{
+            font-size: 18px;
+            margin-bottom: 21px;
+        }
+        p{
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 20px;
+        }
+    }
+    
+    .article-code{
+        .article-code-text{
+            img{
+                width: 100%;
+                max-width: 100%;
+            }
+            &:after{
+                height: 43px;
+            }
+        }
+    
+        .code-img{
+            margin-bottom: 9px;
+        }
+    
+        .form-group{
+            margin-top: 18px;
+            margin-bottom: 19px;
+            .form-checkbox{
+                .icon{
+                    &:after{}
+    
+                    &.is-active{
+                        &:after{}
+                    }
+                }
+            }
+            span,
+            a{}
+            a{}
+        }
+
+        .btn-box{
+            margin-bottom: 53px;
+            .btn{
+                font-size: 12px;
+
+                min-width: 260px;
+                height: 30px;
+                line-height: 30px;
+                
+                span{
+                    &:after{
+                        top: 0;
+                    }
+                }
+            }
+            .msg-block{
+                margin-top: 7px;
+                span{}
+            }
+        }
+    }
+    
+    
+}

@@ -1,0 +1,607 @@
+@charset "UTF-8";
+.site-width {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+.site-map-top .site-map-title {
+  font-size: 24px;
+  color: #000000;
+  letter-spacing: 3px;
+  line-height: 24px;
+  text-align: center;
+}
+.site-map-top .site-top-list {
+  text-align: center;
+  margin: 30px 0 40px 0;
+}
+.site-map-top .site-top-list li {
+  display: inline-block;
+  font-size: 18px;
+  color: #000000;
+  line-height: 20px;
+  padding-right: 34px;
+  padding-left: 34px;
+  border-left: 1px solid #000;
+}
+.site-map-top .site-top-list li a {
+  display: block;
+  width: 100%;
+}
+.site-map-top .site-top-list li:first-child {
+  border: none;
+}
+.site-section h2 {
+  font-size: 18px;
+  color: #000000;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  background: #F3F6F1;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+.site-section .site-section-content {
+  clear: both;
+  overflow: hidden;
+  margin: 25px 0 40px 0;
+  padding-left: 58px;
+}
+.site-section .site-section-content ul {
+  float: left;
+  margin-right: 120px;
+  text-align: left;
+  width: 16.6667%;
+  margin-right: 0;
+  padding: 0 20px 0 0;
+}
+.site-section .site-section-content ul a {
+  font-size: 14px;
+  color: #000000;
+  line-height: 24px;
+}
+.site-section .site-section-content ul a:hover {
+  color: #025F8E;
+}
+.site-section .site-section-content ul:last-child {
+  margin-right: 0;
+}
+/* about adidasCLUB*/
+.about-top {
+  padding: 30px 0;
+  text-align: center;
+  border-bottom: 1px dotted #C8CBCC;
+}
+.about-top h2 {
+  font-size: 30px;
+  color: #000000;
+  font-weight: bold;
+  line-height: 30px;
+}
+.about-top h3 {
+  font-size: 24px;
+  color: #333333;
+  line-height: 24px;
+  font-weight: bold;
+  margin-top: 14px;
+}
+.about-top h4 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+  line-height: 18px;
+}
+.about-top p {
+  font-size: 14px;
+  color: #333333;
+  line-height: 20px;
+  margin-top: 10px;
+}
+.about-top p.magin-top {
+  margin: 0;
+}
+.grade-section {
+  margin-top: 50px;
+}
+.grade-section .grade-title {
+  font-size: 30px;
+  color: #000000;
+  line-height: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.grade-section .grade-items {
+  clear: both;
+  overflow: hidden;
+  padding: 30px 0;
+}
+.grade-section .grade-items .card-width {
+  clear: both;
+  overflow: hidden;
+  padding: 0px 3%;
+}
+.grade-section .grade-items .card-img-box {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 250px;
+}
+.grade-section .grade-items .grade-info {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 560px;
+}
+.grade-section .grade-items .grade-info .grade-info-items {
+  position: relative;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+.grade-section .grade-items .grade-info .grade-info-items .grade-lbael {
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+  line-height: 24px;
+}
+.grade-section .grade-items .grade-info .grade-info-items .grade-text {
+  font-size: 14px;
+  color: #000000;
+  line-height: 24px;
+}
+.grade-section .grade-items-1 {
+  background: #F9F9F9;
+}
+.grade-section .grade-items-1 .card-img-box {
+  margin-right: 25px;
+}
+.grade-section .grade-items-3 {
+  background: #F9F9F9;
+}
+.grade-section .grade-items-3 .card-img-box {
+  float: left;
+  margin-right: 25px;
+}
+.grade-section .grade-items-3 .grade-info {
+  float: right;
+}
+.grade-section .grade-items-2 .card-img-box,
+.grade-section .grade-items-4 .card-img-box {
+  float: right;
+  margin-left: 25px;
+}
+.grade-section .grade-items-2 .grade-info,
+.grade-section .grade-items-4 .grade-info {
+  float: left;
+}
+.member-section {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.member-section .member-img-box {
+  position: relative;
+  width: 1920px;
+  left: 50%;
+  margin-left: -960px;
+}
+.member-section .member-img-box .more-box {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  margin-left: -475px;
+}
+.member-section .member-img-box .more-box .more-info {
+  text-align: center;
+  margin-top: 14%;
+}
+.member-section .member-img-box .more-box .more-info h2 {
+  font-weight: bold;
+}
+.member-section .member-img-box .more-box .more-info h2,
+.member-section .member-img-box .more-box .more-info p {
+  font-size: 32px;
+  color: #000000;
+  letter-spacing: 5px;
+  line-height: 200%;
+}
+.member-section .member-img-box .more-box .more-info .member-btn {
+  min-width: 210px;
+  margin-top: 16%;
+}
+.about-section .about-title {
+  font-size: 24px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.about-section .about-info {
+  font-size: 12px;
+  color: #000000;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+/*会员条款*/
+.clause-section {
+  /*padding-left: 20px;*/
+}
+.clause-section .catalog-box {
+  background: #F9F9F9;
+  margin: 0 -20px;
+  padding: 20px;
+}
+.clause-section .catalog-box .catalog-title {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  color: #232323;
+  line-height: 34px;
+}
+.clause-section .catalog-box .catalog-title .catalog-arrow {
+  position: absolute;
+  right: 0;
+  bottom: 13px;
+  width: 15px;
+  background-position: 0 0;
+}
+.clause-section .catalog-box .catalog-content .catalog-item a {
+  display: block;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 34px;
+}
+.clause-section .clause-title {
+  font-size: 24px;
+  color: #000000;
+  line-height: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.clause-section .clause-info {
+  margin-bottom: 40px;
+}
+.clause-section .clause-info .info-title {
+  display: inline-block;
+  font-size: 18px;
+  color: #000000;
+  line-height: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.clause-section .clause-info .clause-text {
+  font-size: 12px;
+  color: #000000;
+  line-height: 20px;
+}
+.clause-section .clause-info .sub-title {
+  margin: 16px 0;
+}
+.clause-section .clause-info .sub-info {
+  margin-bottom: 16px;
+}
+.clause-section .clause-info .sub-info .three-info {
+  padding-left: 20px;
+}
+.about-banner img {
+  width: 100%;
+}
+@media (max-width: 1024px), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), screen and (-o-min-device-piratio: 200/100), screen and (min-device-pixel-ratio: 2) {
+  .icon-round-gray-rights {
+    width: 16px;
+    height: 16px;
+    background-position: -285px -219px;
+    vertical-align: sub;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* site-map */
+  .site-map-top .site-top-section {
+    position: relative;
+    margin: 31px 20px 0 20px;
+  }
+  .site-map-top .site-top-section .site-map-title {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+  }
+  .site-map-top .site-top-section .ruturn-back {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-block !important;
+  }
+  .site-map-top .site-top-list {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    -o-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    border-top: 1px solid #C7CBCC;
+    border-bottom: 1px solid #C7CBCC;
+    -ms-align-items: center;
+    align-items: center;
+    height: 42px;
+    margin: 20px 0;
+  }
+  .site-map-top .site-top-list li {
+    font-size: 12px;
+    color: #000000;
+    line-height: 12px;
+    padding: 0;
+    border: none;
+  }
+  .site-map-top .site-top-list li a {
+    display: block;
+  }
+  .site-section {
+    margin: 0 20px;
+  }
+  .site-section h2 {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    text-indent: 10px;
+    background: #F7F7F7;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+  }
+  .site-section .site-section-content {
+    clear: both;
+    overflow: hidden;
+    margin: 0;
+    padding: 0px;
+  }
+  .site-section .site-section-content ul {
+    float: none;
+    width: 100%;
+    padding: 13px 20px;
+    margin-right: 0px;
+    text-align: left;
+    border-bottom: 1px dotted #C8CBCC;
+  }
+  .site-section .site-section-content ul a {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .site-section .site-section-content ul:last-child {
+    margin-right: 0;
+    border-bottom: none;
+  }
+  /* about adidasCLUB*/
+  .about-top {
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 1px dotted #C8CBCC;
+  }
+  .about-top h2 {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .about-top h3 {
+    font-size: 18px;
+    color: #000;
+    line-height: 18px;
+    margin-top: 20px;
+  }
+  .about-top h4 {
+    text-align: left;
+  }
+  .about-top p {
+    font-size: 14px;
+    color: #000;
+    line-height: 20px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  .grade-section {
+    margin-top: 20px;
+  }
+  .grade-section .grade-title {
+    font-size: 20px;
+    color: #fff;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 0px;
+    background: #000;
+  }
+  .grade-section .grade-items {
+    clear: both;
+    overflow: hidden;
+    padding: 30px 0;
+    border-bottom: 1px dotted #C8CBCC;
+  }
+  .grade-section .grade-items .card-width {
+    clear: both;
+    overflow: hidden;
+    padding: 0px 4%;
+  }
+  .grade-section .grade-items .card-img-box {
+    display: block;
+    vertical-align: middle;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  .grade-section .grade-items .grade-info {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 560px;
+  }
+  .grade-section .grade-items .grade-info .grade-info-items .grade-lbael {
+    font-size: 12px;
+    line-height: 24px;
+    min-width: 74px;
+  }
+  .grade-section .grade-items .grade-info .grade-info-items .grade-text {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .grade-section .grade-items-1 {
+    background: none;
+  }
+  .grade-section .grade-items-1 .card-img-box {
+    margin-right: 0px;
+    margin: 0 auto;
+  }
+  .grade-section .grade-items-3 {
+    background: none;
+  }
+  .grade-section .grade-items-3 .card-img-box {
+    float: none;
+    margin-right: 0px;
+    margin: 0 auto;
+  }
+  .grade-section .grade-items-3 .grade-info {
+    float: none;
+  }
+  .grade-section .grade-items-2 .card-img-box,
+  .grade-section .grade-items-4 .card-img-box {
+    float: none;
+    margin-left: 0px;
+    margin: 0 auto;
+  }
+  .grade-section .grade-items-2 .grade-info,
+  .grade-section .grade-items-4 .grade-info {
+    float: none;
+  }
+  .about-section {
+    padding: 0 4%;
+  }
+  .about-section .about-title {
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+    margin: 30px 0 25px 0;
+  }
+  .about-section .about-info {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 24px;
+  }
+  /*会员条款*/
+  .clause-section {
+    padding: 0 20px;
+  }
+  .clause-section .catalog-box {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    background: #F9F9F9;
+    margin: 0 -20px;
+    padding: 10px 20px;
+  }
+  .clause-section .catalog-box .catalog-title {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    color: #232323;
+    line-height: 34px;
+  }
+  .clause-section .catalog-box .catalog-title .catalog-arrow {
+    position: absolute;
+    right: 0;
+    bottom: 13px;
+    background-position: -23px 0;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+  }
+  .clause-section .catalog-box .catalog-title .catalog-arrow.catalog-arrow-up {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  .clause-section .catalog-box .catalog-content {
+    display: none;
+  }
+  .clause-section .catalog-box .catalog-content .catalog-item a {
+    display: block;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 34px;
+  }
+  .clause-section .catalog-body {
+    margin-top: 84px;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+  }
+  .clause-section .clause-title {
+    text-align: left;
+    margin-top: 30px;
+  }
+  .clause-section .clause-info .clause-text {
+    line-height: 24px;
+  }
+  .member-section {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .member-section .member-img-box {
+    position: relative;
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+  .member-section .member-img-box img {
+    display: block;
+    width: 100%;
+  }
+  .member-section .member-img-box .more-box {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .member-section .member-img-box .more-box .more-info {
+    text-align: center;
+    display: flex;
+    height: 100%;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .member-section .member-img-box .more-box .more-info h2,
+  .member-section .member-img-box .more-box .more-info p {
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 5px;
+    line-height: 40px;
+  }
+  .member-section .member-img-box .more-box .more-info .member-btn {
+    min-width: 210px;
+    margin-top: 12px;
+  }
+}

@@ -1,0 +1,164 @@
+.container {
+  padding-top: 90px;
+  min-height: 385px;
+  padding-bottom: 50px;
+}
+.article-nav {
+  width: 100%;
+  max-width: 990px;
+  margin: 20px auto 30px;
+}
+.list-inline li.back {
+  position: relative;
+  margin-right: 28px;
+}
+.list-inline li.back::before {
+  content: "";
+  width: 2px;
+  height: 12px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  right: -14px;
+  transform: translateY(-50%);
+}
+.list-inline li.login {
+  position: relative;
+  margin-right: 28px;
+}
+.list-inline li.login::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  right: -14px;
+  transform: translateY(-50%);
+}
+.regist-bg {
+  padding: 0;
+  width: 100%;
+  max-width: 990px;
+  margin-top: 20px;
+  font-family: PingFangSC-Regular;
+}
+.regist-bg .regist-content .regist-left {
+  float: left;
+  max-width: inherit;
+  width: 55.4%;
+  padding-right: 9.6%;
+  border-right: 2px solid #EBEBEB;
+  min-height: 310px;
+}
+.regist-bg .regist-content .regist-left.regist-sent {
+  border-right: 0;
+  margin-top: 50px;
+  width: 55.4%;
+  padding-right: 16.6%;
+}
+.regist-bg .regist-content .regist-left .title {
+  font-size: 24px;
+  color: #000000;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.regist-bg .regist-content .regist-left .content {
+  font-size: 14px;
+  color: #000000;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+.regist-bg .regist-content .regist-left .no-received {
+  font-size: 14px;
+  color: #000000;
+  line-height: 14px;
+  margin-bottom: 30px;
+}
+.regist-bg .regist-content .regist-left .no-received a {
+  text-decoration: underline;
+}
+.skip-gray {
+  font-size: 14px;
+  color: #000000;
+  line-height: 14px;
+  margin-top: 20px;
+}
+.skip-gray a {
+  text-decoration: underline;
+}
+.regist-bg .regist-content .regist-left .no-received a:hover {
+  color: #000000;
+}
+.regist-bg .regist-content .regist-left .regist-btn .activation {
+  display: block;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 38px;
+}
+.regist-bg .regist-content .regist-left .regist-btn .activation:hover {
+  color: #98989a;
+}
+.regist-bg .regist-content .regist-right {
+  float: right;
+  max-width: 410px;
+  width: auto;
+}
+.regist-bg .regist-content .regist-right .title {
+  font-family: AdiHaus-Bold;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 13px;
+}
+.regist-bg .regist-content .regist-right .rights {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #000000;
+  line-height: 14px;
+  margin-bottom: 40px;
+}
+.regist-bg .regist-content .regist-right .icon-conform {
+  margin-right: 5px;
+}
+.regist-bg .regist-content .regist-right .item-rights {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-top: 52px;
+    padding-bottom: 40px;
+    min-height: auto;
+  }
+  .regist-bg .regist-content .regist-left {
+    float: none;
+    width: 100%;
+    border-right: none;
+    padding-right: 0;
+    min-height: auto;
+  }
+  .regist-bg .regist-content .regist-left .content,
+  .regist-bg .regist-content .regist-left .no-received {
+    font-size: 12px;
+  }
+  .regist-bg .regist-content .regist-left.regist-sent {
+    margin-top: 0;
+    width: 100%;
+    padding-right: 0;
+  }
+  .regist-bg .regist-content .regist-left .title {
+    font-size: 18px;
+  }
+  .regist-bg {
+    padding: 30px 20px 0;
+    font-family: PingFangSC-Regular;
+    margin-top: 0;
+  }
+  .regist-bg .regist-content .regist-left .regist-btn .activation {
+    width: 100%;
+  }
+}

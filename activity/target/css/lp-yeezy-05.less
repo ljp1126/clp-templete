@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+.article{
+    position: relative;
+    >img{
+        width: 100%;
+    }
+}
+
+.link{
+    position: absolute;
+    z-index: 1;
+}
+
+img{
+    width: 100%;
+}
+
+.article-box{
+    background: #edede3;
+    // padding: 12vh 0;
+    padding: 12vh 18px 12vh;
+    .box-content{
+        max-width: 1275px;
+        margin: 0 auto;
+        text-align: center;
+       .box-contents{
+            width: 55%;
+            float: left;
+            margin-right: 70px;
+            .swiper-container{
+            display: inline-block;
+            // margin-right: 70px;
+            // padding-right: 5%;
+            .swiper-wrapper{
+                .swiper-slide{
+                    div{
+                        max-width: 596px;
+                        width: 100%;
+                        margin: 0 auto;
+                        max-height: none;
+                        img{
+                            width: 100%;
+                            height: auto;
+                            text-align: center;
+                        }
+                    }
+                   
+                }
+            }
+            .swiper-pagination{
+                .swiper-pagination-bullet{
+                    background: #edede3;
+                    border: 1px solid #000000 !important;
+                    width: 12px;
+                    height: 12px;
+                    margin: 5px 7px;
+                    opacity: 1;
+                    &:hover{
+                        background: #000;
+                    }
+                }
+                .swiper-pagination-bullet-active{
+                    background: #000;
+                }
+            }
+            .swiper-button-next,
+            .swiper-button-prev{
+                top: 98.5%;
+                width: 5px;
+                height: 12px;
+                background-size: 5px 12px;
+            }
+            .swiper-button-next{
+                right: 35%;
+                background-image: url(https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-p-right.jpg)
+            }
+            .swiper-button-prev{
+                left: 35%;
+                background-image: url(https://img.adidas.com.cn/resources/activePage/SEP/YEEZY/0925/img-p-left.jpg)
+            }
+        }
+       }
+        .article-size{
+            display: inline-block;
+            float: left;
+            padding: 0 20px;
+            width: 34%;
+            position: relative;
+            .link-01{
+                position: absolute;
+                width: 48%;
+                height: 7%;
+                top: 37%;
+                left: 34%;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 1024px){
+    .article-box{
+        padding: 0 0;
+        padding-bottom: 15vh;
+        .box-content{
+            .box-contents{
+                width: 100%;
+                margin-right: 0;
+                .swiper-container{
+                    width: 100%;
+                    float: none;
+                    margin-left: 0;
+                    margin-right: 0;
+                    .swiper-button-prev{
+                        left: 30%;
+                    }
+                    .swiper-button-next{
+                        right: 30%;
+                    }
+                    .swiper-pagination{
+                        .swiper-pagination-bullet{
+                            &:hover{
+                                background: #edede3;
+                            }
+                        }
+                    }
+                }
+            }
+            .article-size{
+                padding-top: 20px;
+                width: 100%;
+                float: none;
+                margin-top: 0vh;
+                padding: 0 0px;
+                .link-01{
+                    width: 41%;
+                    height: 7%;
+                    top: 60%;
+                    left: 29%;
+                }
+            }
+        }
+    }
+}

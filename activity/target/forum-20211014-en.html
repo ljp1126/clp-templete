@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <%include _includes/meta.html %>
+        <title></title>
+        <%include _includes/css.html %>
+            <!-- <link rel="stylesheet" type="text/css" href="css/adiclub.css"> -->
+            <%include _includes/js.html %>
+                <!-- <script type="text/javascript" src="js/adiclub.js"></script> -->
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <%include _includes/modules/header.html %>
+            <!-- 内容部分 -->
+            <section class="container">
+                <style>
+                    .article {
+                        position: relative;
+                    }
+
+                    .article>img {
+                        width: 100%;
+                    }
+
+                    .link-1,
+                    .link-2 {
+                        position: absolute;
+                        position: absolute;
+                        width: 28%;
+                        height: 86%;
+                        left: 19%;
+                        top: 14%;
+                    }
+
+                    .link-2 {
+                        left: 53%;
+                    }
+
+                    .link-3 {
+                        width: 56%;
+                        height: 13%;
+                        left: 22%;
+                        top: 3%;
+                        position: absolute;
+                    }
+
+                    .pro-content,
+                    .pro-content1 {
+                        max-width: 1300px;
+                        width: 68%;
+                        margin: auto;
+                        position: relative;
+                    }
+
+                    .pro-content>img {
+                        width: 69%;
+                    }
+
+                    .pro1 {
+                        width: 34%;
+                        position: absolute;
+                        right: 1%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    .pro-content1 {
+                        margin-top: 100px;
+                        text-align: right;
+                    }
+
+                    .pro-content1>img {
+                        width: 69%;
+                        display: inline-block;
+                    }
+
+                    .pro2 {
+                        width: 32%;
+                        position: absolute;
+                        left: 1%;
+                        top: 4%;
+                        transform: translateY(0);
+                    }
+
+                    .article-video .video-wrapper1 {
+                        position: absolute;
+                        width: 100%;
+                        height: 78.3%;
+                        top: 0;
+                        left: 0;
+                        cursor: pointer;
+                    }
+
+                    .video-box .video-content1 {
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    .video-content1 .video {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        visibility: hidden;
+                    }
+
+                    .video-box.is-play .video-wrapper .video-content1 .video {
+                        visibility: visible;
+                    }
+
+                    @media (max-width: 1024px) {
+
+                        .pro-content,
+                        .pro-content1 {
+                            width: 100%;
+                            text-align: center;
+                        }
+
+                        .pro-content>img,
+                        .pro-content1>img {
+                            width: 100%;
+                        }
+
+                        .pro1,
+                        .pro2 {
+                            width: 90%;
+                            position: static;
+                            transform: translateY(0);
+                            margin: -10% auto 0;
+                            display: inline-block;
+                        }
+
+                        .link-1 {
+                            width: 75%;
+                            left: 12%;
+                            bottom: 24%;
+                            height: 60%;
+                        }
+                    }
+                </style>
+                <article class="article article-video video-box">
+                    <img src="https://img.adidas.com.cn/images/blank.gif"
+                        data-image="{
+&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/pc_01.jpg&quot;},
+&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/mob_01.jpg&quot;},
+&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/mob_01.jpg&quot;}}">
+                    <div class="video-wrapper e-video1 e-play-video-new1">
+                        <div class="video-content1">
+                        </div>
+                        <a class="video-play" href="javascript:void(0)">
+                            <span class="video-code" data-video-code="4CD2DE1C3E842F5C13358DE27D943A99"></span>
+                        </a>
+                    </div>
+                </article>
+                <article class="article">
+                    <img src="https://img.adidas.com.cn/images/blank.gif"
+                        data-image="{
+&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/en-pc_02.jpg&quot;},
+&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/en-mob_02.jpg&quot;},
+&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/en-mob_02.jpg&quot;}}">
+                </article>
+                <article class="article">
+                    <div class="pro-content">
+                        <img src="https://img.adidas.com.cn/images/blank.gif"
+                            data-image="{
+    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/pc2.gif&quot;},
+    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/mob1.gif&quot;},
+    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/mob1.gif&quot;}}">
+                        <a href="https://www.adidas.com.hk/item/GX5061">
+                            <img class="pro1" src="https://img.adidas.com.cn/images/blank.gif"
+                                data-image="{
+        &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/en-pro1.png&quot;},
+        &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/en-mob-pro1.png&quot;},
+        &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/en-mob-pro1.png&quot;}}">
+                        </a>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="pro-content1">
+                        <img src="https://img.adidas.com.cn/images/blank.gif"
+                            data-image="{
+    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/pc1.gif&quot;},
+    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/mob2.gif&quot;},
+    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/mob2.gif&quot;}}">
+                        <a href="https://www.adidas.com.hk/item/GW6211">
+                            <img class="pro2" src="https://img.adidas.com.cn/images/blank.gif"
+                                data-image="{
+        &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/en-pro2.png&quot;},
+        &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/en-mob-pro2.png&quot;},
+        &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/en-mob-pro2.png&quot;}}">
+                        </a>
+                    </div>
+                </article>
+                <article class="article" style="margin-top: 74px;">
+                    <img src="https://img.adidas.com.cn/images/blank.gif"
+                        data-image="{
+&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/en-pc_04.jpg&quot;},
+&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/en-mob_04.jpg&quot;},
+&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/en-mob_04.jpg&quot;}}">
+                    <a class="link link-1" href="https://www.adidas.com.hk/item/Q46358 "></a>
+                    <a class="link link-2" href="https://www.adidas.com.hk/item/GX3658"></a>
+                </article>
+                <article class="article">
+                    <img src="https://img.adidas.com.cn/images/blank.gif"
+                        data-image="{
+&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/en-pc_05.jpg&quot;},
+&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/en-mob_05.jpg&quot;},
+&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/OCT/FORUM/CN/en-mob_05.jpg&quot;}}">
+                    <a class="link link-3" href="https://www.adidas.com.hk/forum/all"></a>
+                </article>
+
+                <script type="text/javascript">
+                    $(function () {
+                        // 换图 + 懒加载
+                        $.spice.lazyLoad('img[lazysrc]', {
+                            attr: 'lazysrc'
+                        });
+                        $.spice.tools.changeImageSrc({
+                            callBack: function (img, self) {
+                                $.spice.lazyLoad('img[lazysrc]', {
+                                    attr: self.opt.lazyData,
+                                    prestrain: 1
+                                });
+                            }
+                        });
+
+                        var loadImgFun_index = function (imgArr, fn) {
+                            var loadImgLen = 0,
+                                errImgLen = 0;
+                            var imgdefereds = [];
+                            $(imgArr).each(function () {
+                                var defered = $.Deferred();
+                                $(this)
+                                    .on("load", function () {
+                                        defered.resolve();
+                                        loadImgLen++;
+                                    })
+                                    .on("error", function () {
+                                        defered.resolve();
+                                        errImgLen++;
+                                    });
+                                if (this.complete)
+                                    setTimeout(function () {
+                                        defered.resolve();
+                                    }, 200);
+                                imgdefereds.push(defered);
+                            });
+                            $.when.apply(null, imgdefereds).done(function () {
+                                if (fn && $.isFunction(fn)) {
+                                    fn();
+                                }
+                            });
+                        };
+                        $(".e-video1").each(function (index, el) {
+                            $(el).addClass("home-video");
+                            var videoCode = $(".video-code", el).data("video-code");
+                            var videoId = "home_video1_" + index;
+                            loadImgFun_index($(".video-code img", el), function () { });
+                            var bannerVideoId = videoCode;
+                            var url = base + "/indexCCVideo.json";
+                            var data = loxia.syncXhrGet(url, {
+                                'bannerVideoId': bannerVideoId
+                            });
+                            var videoUrl = data.mp4VideoUrl;
+                            // var videoUrl = "https://cm15-c110-3.play.bokecc.com/flvs/ca/QxDbA/Mwd5kfZAA1-30.mp4?t=1636784498&key=949AEE759A375211508A50512D2436AD&tpl=10"
+                            var html = '<video class="video" id="' +
+                                videoId +
+                                '"  webkit-playsinline="true" playsInline="true" autoplay="autoplay" loop="loop" muted><source src="' +
+                                videoUrl +
+                                '" ></source></video>';
+                            $(".video-content1", el).html(html);
+                            var _parent_article = $(this).parents(".article-video"),
+                                _video_s = $(this).parents(".article-video").find(".video"),
+                                _video = $(this)
+                                    .parents(".article-video")
+                                    .find(".video");
+                            if (!_parent_article.hasClass("is-play")) {
+                                _parent_article.addClass("is-play");
+                            }
+                        });
+
+                        var videoElement = document.getElementById("home_video1_0");
+                        document.body.addEventListener('mousedown', function () {
+                            videoElement.muted = false;
+                            videoElement.volume = 0.3;
+                        }, true);
+                        $(".e-play-video-new1").on("tap", function () {
+                            var _parent_article = $(this).parents(".article-video"),
+                                _video_s = $(this).parents(".article-video").find(".video"),
+                                _video = $(this)
+                                    .parents(".article-video")
+                                    .find(".video");
+                            _parent_article.toggleClass("is-play");
+
+                            if (_parent_article.hasClass("is-play")) {
+                                for (var i = 0; i < _video_s.length; i++) {
+                                    _video_s.eq(i)[0].pause();
+                                }
+                                // console.log(_video[0])
+                                _video[0].play();
+                                _video[0].addEventListener("ended", function () {
+                                    this.play();
+                                });
+                            } else {
+                                _video[0].pause();
+                            }
+                        });
+
+                    });
+                </script>
+            </section>
+
+            <%include _includes/modules/footer-no-back-top.html %>
+                <!-- 公共部分放最下，如回到顶部，弹出层等 -->
+    </div>
+</body>
+
+</html>

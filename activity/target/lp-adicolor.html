@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<%include _includes/meta.html %>
+		<title>adicolor</title>
+		<%include _includes/css.html %>
+		<!-- <link rel="stylesheet" href="css/lp-adicolor.css" /> -->
+		<%include _includes/js.html %>
+		<!-- <script type="text/javascript" src="js/lp-adicolor.js"></script> -->
+	</head>
+
+	<body>
+
+
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+			<section class="container">
+				<style>
+					.article-adicolor-kv .swiper-container .swiper-button-prev,
+					.article-adicolor-kv .swiper-container .swiper-button-next {
+					width: 42px;
+					height: 75px;
+					background: none;
+					}
+					.article-adicolor-kv .swiper-container .swiper-button-prev:before,
+					.article-adicolor-kv .swiper-container .swiper-button-next:before,
+					.article-adicolor-kv .swiper-container .swiper-button-prev:after,
+					.article-adicolor-kv .swiper-container .swiper-button-next:after {
+					content: '';
+					width: 6px;
+					height: 55px;
+					background: #fff;
+					position: absolute;
+					}
+					.article-adicolor-kv .swiper-container .swiper-button-prev.swiper-button-disabled,
+					.article-adicolor-kv .swiper-container .swiper-button-next.swiper-button-disabled {
+					opacity: 1;
+					}
+					.article-adicolor-kv .swiper-container .swiper-button-prev.swiper-button-disabled:before,
+					.article-adicolor-kv .swiper-container .swiper-button-next.swiper-button-disabled:before,
+					.article-adicolor-kv .swiper-container .swiper-button-prev.swiper-button-disabled:after,
+					.article-adicolor-kv .swiper-container .swiper-button-next.swiper-button-disabled:after {
+					background: #f1f1f1;
+					}
+					.article-adicolor-kv .swiper-container .swiper-button-prev {
+					left: 19%;
+					}
+					.article-adicolor-kv .swiper-container .swiper-button-prev:before,
+					.article-adicolor-kv .swiper-container .swiper-button-prev:after {
+					left: 18px;
+					}
+					.article-adicolor-kv .swiper-container .swiper-button-prev:before {
+					-webkit-transform: rotate(45deg);
+					-moz-transform: rotate(45deg);
+					-ms-transform: rotate(45deg);
+					-o-transform: rotate(45deg);
+					transform: rotate(45deg);
+					top: -7px;
+					}
+					.article-adicolor-kv .swiper-container .swiper-button-prev:after {
+					-webkit-transform: rotate(-45deg);
+					-moz-transform: rotate(-45deg);
+					-ms-transform: rotate(-45deg);
+					-o-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+					bottom: -8px;
+					}
+					.article-adicolor-kv .swiper-container .swiper-button-next {
+					right: 19%;
+					}
+					.article-adicolor-kv .swiper-container .swiper-button-next:before,
+					.article-adicolor-kv .swiper-container .swiper-button-next:after {
+					left: 18px;
+					}
+					.article-adicolor-kv .swiper-container .swiper-button-next:before {
+					-webkit-transform: rotate(135deg);
+					-moz-transform: rotate(135deg);
+					-ms-transform: rotate(135deg);
+					-o-transform: rotate(135deg);
+					transform: rotate(135deg);
+					top: -7px;
+					}
+					.article-adicolor-kv .swiper-container .swiper-button-next:after {
+					-webkit-transform: rotate(-135deg);
+					-moz-transform: rotate(-135deg);
+					-ms-transform: rotate(-135deg);
+					-o-transform: rotate(-135deg);
+					transform: rotate(-135deg);
+					bottom: -8px;
+					}
+					.article-img-text {
+					max-width: 1380px;
+					margin: 0 auto;
+					padding: 0 40px;
+					padding-top: 65px;
+					padding-bottom: 44px;
+					text-transform: lowercase;
+					}
+					.article-img-text .title {
+					text-align: center;
+					margin-bottom: 33px;
+					}
+					.article-img-text .title h3 {
+					font-family: "adineueprobold", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+					font-size: 30px;
+					font-weight: bold;
+					}
+					.article-img-text .img-text-content {
+					font-size: 0;
+					}
+					.article-img-text .img-text-content .img,
+					.article-img-text .img-text-content .text {
+					display: inline-block;
+					vertical-align: middle;
+					}
+					.article-img-text .img-text-content .img {
+					width: 456px;
+					}
+					.article-img-text .img-text-content .text {
+					font-family: "adineueprobold", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+					width: calc(100% - 456px);
+					padding-left: 10%;
+					}
+					.article-img-text .img-text-content .text p {
+					font-size: 18px;
+					line-height: 36px;
+					margin-bottom: 52px;
+					}
+					.article-img-text .img-text-content .text p:last-child {
+					margin-bottom: 0;
+					}
+					.article-adicolor-nav {
+					width: 100%;
+					position: relative;
+					z-index: 10;
+					padding: 40px 0;
+					}
+					.article-adicolor-nav.nav-fixed .adicolor-nav-content {
+					background: #fff;
+					width: 100%;
+					position: fixed;
+					top: 80px;
+					}
+					.article-adicolor-nav.nav-fixed .adicolor-nav-content.hidden {
+					opacity: 0;
+					z-index: -1;
+					pointer-events: none;
+					}
+					.article-adicolor-nav .blank-box {
+					width: 100%;
+					height: 0;
+					}
+					.article-adicolor-nav .swiper-container {
+					padding: 30px 0;
+					}
+					.article-adicolor-nav .swiper-container .swiper-wrapper .swiper-slide {
+					width: 10%;
+					cursor: pointer;
+					}
+					.article-adicolor-nav .swiper-container .swiper-wrapper .swiper-slide img {
+					width: 100%;
+					transition: all 0.2s ease-out;
+					}
+					.article-adicolor-nav .swiper-container .swiper-wrapper .swiper-slide.is-active {
+					z-index: 1;
+					}
+					.article-adicolor-nav .swiper-container .swiper-wrapper .swiper-slide.is-active img {
+					-webkit-transform: scale(1.2);
+					-moz-transform: scale(1.2);
+					-ms-transform: scale(1.2);
+					-o-transform: scale(1.2);
+					transform: scale(1.2);
+					-webkit-box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.4);
+					-moz-box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.4);
+					-ms-box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.4);
+					-o-box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.4);
+					box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.4);
+					}
+					.article-product-box {
+					text-align: center;
+					padding-bottom: 140px;
+					}
+					.article-product-box > img {
+					width: 100%;
+					}
+					.article-product-box .img-box {
+					position: relative;
+					}
+					.article-product-box .img-box img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					}
+					.article-product-box .img-box img.blank {
+					position: static;
+					}
+					.article-product-box > ul {
+					font-size: 0;
+					text-align: center;
+					margin-top: 25px;
+					}
+					.article-product-box > ul li {
+					display: inline-block;
+					margin: 0 20px;
+					}
+					.article-product-box > ul li .goods-info {
+					padding-top: 35px;
+					}
+					.article-product-box > ul li .goods-info p {
+					font-size: 18px;
+					text-transform: uppercase;
+					}
+					.article-product-box > ul li .goods-info p:last-child {
+					font-weight: bold;
+					margin-top: 15px;
+					}
+					.article-classification {
+					max-width: 1300px;
+					margin: 0 auto;
+					margin-bottom: 200px;
+					text-align: center;
+					}
+					.article-classification > img {
+					display: block;
+					margin: 0 auto;
+					}
+					.article-classification > img.logo {
+					margin-bottom: 65px;
+					}
+					.article-classification > img.orignal {
+					margin-top: 63px;
+					}
+					.article-classification > ul {
+					text-align: left;
+					font-size: 0;
+					}
+					.article-classification > ul > li ul li {
+					display: inline-block;
+					position: relative;
+					}
+					.article-classification > ul > li ul li img {
+					width: 100%;
+					}
+					.article-classification > ul > li ul li .describe {
+					position: absolute;
+					}
+					.article-classification > ul > li ul li .describe .describe-content h3 {
+					font-size: 30px;
+					font-weight: bold;
+					color: #000;
+					margin-bottom: 15px;
+					font-family: "adineueprobold", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+					}
+					.article-classification > ul > li ul li .describe .describe-content h3.white {
+					color: #fff;
+					}
+					.article-classification > ul > li:first-child ul li {
+					width: calc(50% - 21px);
+					}
+					.article-classification > ul > li:first-child ul li .describe {
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					}
+					.article-classification > ul > li:first-child ul li .describe .describe-content {
+					vertical-align: middle;
+					display: inline-block;
+					margin-left: 27px;
+					}
+					.article-classification > ul > li:first-child ul li .describe:after {
+					content: '';
+					width: 0;
+					height: 100%;
+					display: inline-block;
+					vertical-align: middle;
+					}
+					.article-classification > ul > li:first-child ul li:first-child {
+					margin-right: 42px;
+					}
+					.article-classification > ul > li:last-child {
+					margin-top: 15px;
+					}
+					.article-classification > ul > li:last-child ul li {
+					width: calc(33.333% - 16px);
+					}
+					.article-classification > ul > li:last-child ul li .describe {
+					text-align: center;
+					right: 0;
+					left: 0;
+					bottom: 30px;
+					}
+					.article-classification > ul > li:last-child ul li:nth-child(2) {
+					margin: 0 24px;
+					}
+					.article-classification > .btn {
+					min-width: 240px;
+					margin-top: 50px;
+					}
+					@media (max-width: 1024px) {
+					.article-img-text {
+						max-width: 100%;
+						padding: 0;
+						padding-top: 35px;
+						padding-bottom: 15px;
+					}
+					.article-img-text .title {
+						margin-bottom: 30px;
+						padding: 0 38px;
+					}
+					.article-img-text .title h3 {
+						font-size: 18px;
+						line-height: 28px;
+					}
+					.article-img-text .img-text-content .img {
+						width: 100%;
+						margin-bottom: 40px;
+					}
+					.article-img-text .img-text-content .text {
+						width: 100%;
+						padding-left: 0;
+						padding: 0 38px;
+						text-align: center;
+					}
+					.article-img-text .img-text-content .text p {
+						font-size: 12px;
+						line-height: 20px;
+						margin-bottom: 0;
+					}
+					.article-adicolor-nav {
+						padding: 20px 0;
+					}
+					.article-adicolor-nav .swiper-container {
+						padding: 15px 0;
+					}
+					.article-adicolor-nav .swiper-container .swiper-wrapper .swiper-slide {
+						width: 20%;
+					}
+					.article-product-box {
+						padding: 0 10px;
+						padding-bottom: 45px;
+					}
+					.article-product-box > ul {
+						margin-top: 0;
+					}
+					.article-product-box > ul > div {
+						display: inline-block;
+						vertical-align: top;
+						width: 50%;
+					}
+					.article-product-box > ul li {
+						width: 100%;
+						margin: 0;
+						vertical-align: top;
+					}
+					.article-product-box > ul li .goods-info {
+						padding-top: 15px;
+					}
+					.article-product-box > ul li .goods-info p {
+						font-size: 12px;
+					}
+					.article-product-box > ul li .goods-info p:last-child {
+						margin-top: 10px;
+					}
+					.article-product-box > ul li.mt-30 {
+						margin-top: 30px;
+					}
+					.article-product-box > ul li > a {
+						display: block;
+						padding: 0 10px;
+					}
+					.article-product-box > ul li.left-right a img,
+					.article-product-box > ul li.left-right a .goods-info {
+						display: inline-block;
+					}
+					.article-product-box > ul li.left-right a img {
+						width: 60%;
+					}
+					.article-product-box > ul li.left-right a .goods-info {
+						width: 40%;
+						vertical-align: middle;
+					}
+					.article-classification {
+						max-width: 100%;
+						margin-bottom: 70px;
+					}
+					.article-classification > img.logo {
+						width: 92px;
+						margin-bottom: 15px;
+					}
+					.article-classification > img.orignal {
+						width: 184px;
+						margin-top: 22px;
+					}
+					.article-classification > ul > li ul li .describe .describe-content h3 {
+						font-size: 15px;
+						margin-bottom: 10px;
+					}
+					.article-classification > ul > li ul li .describe .describe-content > .btn {
+						min-width: 72px;
+						height: 25px;
+						line-height: 25px;
+						font-size: 12px;
+					}
+					.article-classification > ul > li ul li .describe .describe-content > .btn span:after {
+						top: 0;
+					}
+					.article-classification > ul > li:first-child ul li {
+						width: calc(50% - 15px);
+					}
+					.article-classification > ul > li:first-child ul li .describe {
+						text-align: center;
+					}
+					.article-classification > ul > li:first-child ul li .describe .describe-content {
+						vertical-align: bottom;
+						margin-left: 0;
+						margin-bottom: 40px;
+					}
+					.article-classification > ul > li:first-child ul li:first-child {
+						margin-right: 30px;
+					}
+					.article-classification > ul > li:last-child ul li {
+						width: calc(33.333% - 12px);
+					}
+					.article-classification > ul > li:last-child ul li .describe {
+						bottom: 14px;
+					}
+					.article-classification > ul > li:last-child ul li:nth-child(2) {
+						margin: 0 18px;
+					}
+					.article-classification > .btn {
+						margin-top: 25px;
+						font-size: 12px;
+						min-width: 190px;
+						height: 30px;
+						line-height: 30px;
+					}
+					.article-classification > .btn span:after {
+						top: 0;
+					}
+					}
+
+				</style>
+				<article class="article article-adicolor-kv">
+					<div class="swiper-container e-swiper-adicolor-kv">
+						<div class="swiper-wrapper">
+							<% for (var i = 1; i < 7; i++) { %>
+							<div class="swiper-slide">
+								<img src="images/blank.gif"
+									data-image='{
+									"standard":{"high":"", "normal":"../static/images/lp-adicolor/kv-p-<%=[i] %>.jpg"},
+									"medium":{"high":"",  "normal":"../static/images/lp-adicolor/kv-m-<%=[i] %>.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-adicolor/kv-m-<%=[i] %>.jpg"}}'
+								/>
+							</div>
+							<% } %>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next none-sm"></div>
+						<div class="swiper-button-prev none-sm"></div>
+					</div>
+				</article>
+
+				<article class="article article-img-text">
+					<div class="title none-sm">
+						<h3>adidas Originals 新鲜事</h3>
+						<h3>活力觉醒，#玩翻经典色</h3>
+						<h3>adicolor 2018春夏系列全新发布</h3>
+					</div>
+					<div class="img-text-content float-clearfix">
+						<div class="img">
+							<a class="e-lp-video-btn" data-video-code="14693EB12FBDE4549C33DC5901307461">
+								<img class="blank" src="images/blank.gif"
+									data-image='{
+									"standard":{"high":"", "normal":"../static/images/lp-adicolor/video-img-p.jpg"},
+									"medium":{"high":"",  "normal":"../static/images/lp-adicolor/video-img-m.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-adicolor/video-img-m.jpg"}}'
+								/>
+							</a>
+						</div>
+
+						<div class="title none block-sm">
+							<h3>adidas Originals 新鲜事</h3>
+							<h3>活力觉醒，#玩翻经典色</h3>
+							<h3>adicolor 2018春夏系列全新发布</h3>
+						</div>
+
+						<div class="text">
+							<div class="text-content">
+								<p>诞生于上世纪70年代的adicolor系列拥有诙谐玩趣的性格，作为历久弥新的运动及街头文化代表，广受跨世代人群的喜爱。时至2018春夏，adidas Originals着力聚焦于色彩本身，将玩世不恭的个性注入adicolor色彩造型，打造玩趣非凡的潮流新标。</p>
+								<p class="none-sm">adidas Originals 号召四位原创代言人：杨幂、鹿晗、ANGELABABY、范冰冰与时尚达人KIKO MIZUHARA，共同＃玩翻经典色，通过一系列趣味物件，解读不同语境下色彩所传达的情绪，呈现新一季adicolor的时尚风格。</p>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="article article-adicolor-nav">
+					<div class="blank-box e-blank-box"></div>
+					<div class="adicolor-nav-content">
+						<div class="swiper-container e-swiper-adicolor-nav">
+							<div class="swiper-wrapper">
+								<% for (var i = 1; i < 11; i++) { %>
+								<div class="swiper-slide">
+									<img src="../static/images/lp-adicolor/nav/pic-0<%=[i] %>.jpg" />
+								</div>
+								<% } %>
+							</div>
+							<!-- <div class="swiper-pagination"></div> -->
+						</div>
+					</div>
+				</article>
+
+				<article class="article article-product-box">
+					<div class="img-box none-sm">
+						<img class="blank" src="images/blank.gif"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/banner-blank-m.png"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-m.png"}}'
+						/>
+
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-adicolor/product-1/banner-p.jpg"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-1/banner-p.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-1/banner-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/product-1/banner-m.jpg"}}'
+						/>
+					</div>
+					<ul class="none-sm">
+						<li>
+							<a href="https://www.adidas.com.cn/item/CY5846" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-1/pic-1.png"/>
+								<div class="goods-info">
+									<p>女子 originals 运动外套</p>
+									<p>rmb 899</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/CY5841" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-1/pic-2.png"/>
+								<div class="goods-info">
+									<p>女子 originals 运动裤</p>
+									<p>rmb 799</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/C77124" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-1/pic-3.png"/>
+								<div class="goods-info">
+									<p>中性 originals SUPERSTAR 经典鞋</p>
+									<p>rmb 799</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="none block-sm">
+						<div>
+							<li>
+								<a href="https://www.adidas.com.cn/item/CY5846" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-1/pic-1.png"/>
+									<div class="goods-info">
+										<p>女子 originals 运动外套</p>
+										<p>rmb 899</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="mt-30">
+								<a href="https://www.adidas.com.cn/item/CY5841" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-1/pic-2.png"/>
+									<div class="goods-info">
+										<p>女子 originals 运动裤</p>
+										<p>rmb 799</p>
+									</div>
+								</a>
+							</li>
+						</div>
+
+						<div>
+							<li>
+								<div class="img-box none block-sm">
+									<img class="blank" src="images/blank.gif"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-1/banner-blank-m.png"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-1/banner-blank-m.png"}}'
+									/>
+
+									<img src="images/blank.gif"
+										lazysrc="../static/images/lp-adicolor/product-1/banner-p.jpg"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-1/banner-p.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-1/banner-m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-1/banner-m.jpg"}}'
+									/>
+								</div>
+							</li>
+							<li>
+								<a href="https://www.adidas.com.cn/item/C77124" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank-250-200.png" lazysrc="../static/images/lp-adicolor/product-1/pic-3-m.png"/>
+									<div class="goods-info">
+										<p>中性 originals SUPERSTAR 经典鞋</p>
+										<p>rmb 799</p>
+									</div>
+								</a>
+							</li>
+						</div>
+					</ul>
+				</article>
+
+				<article class="article article-product-box">
+					<div class="img-box none-sm">
+						<img class="blank" src="images/blank.gif"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/banner-blank-m.png"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-m.png"}}'
+						/>
+
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-adicolor/product-2/banner-p.jpg"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-2/banner-p.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-2/banner-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/product-2/banner-m.jpg"}}'
+						/>
+					</div>
+					<ul class="none-sm">
+						<li>
+							<a href="https://www.adidas.com.cn/item/CW1317" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-2/pic-1.png"/>
+								<div class="goods-info">
+									<p>男子 originals 外套茄克</p>
+									<p>rmb 899</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/CW1269" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-2/pic-2.png"/>
+								<div class="goods-info">
+									<p>男子 originals 运动裤</p>
+									<p>rmb 599</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/C77124" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-2/pic-3.png"/>
+								<div class="goods-info">
+									<p>中性 originals SUPERSTAR 经典鞋</p>
+									<p>rmb 799</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="none block-sm">
+						<div>
+							<li>
+								<div class="img-box none block-sm">
+									<img class="blank" src="images/blank.gif"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-2/banner-blank-m.png"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-2/banner-blank-m.png"}}'
+									/>
+
+									<img src="images/blank.gif"
+										lazysrc="../static/images/lp-adicolor/product-1/banner-p.jpg"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-2/banner-p.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-2/banner-m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-2/banner-m.jpg"}}'
+									/>
+								</div>
+							</li>
+							<li>
+								<a href="https://www.adidas.com.cn/item/C77124" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank-250-200.png" lazysrc="../static/images/lp-adicolor/product-2/pic-3-m.png"/>
+									<div class="goods-info">
+										<p>中性 originals SUPERSTAR 经典鞋</p>
+										<p>rmb 799</p>
+									</div>
+								</a>
+							</li>
+						</div>
+
+						<div>
+							<li>
+								<a href="https://www.adidas.com.cn/item/CW1317" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-2/pic-1.png"/>
+									<div class="goods-info">
+										<p>男子 originals 外套茄克</p>
+										<p>rmb 899</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="mt-30">
+								<a href="https://www.adidas.com.cn/item/CW1269" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-2/pic-2.png"/>
+									<div class="goods-info">
+										<p>男子 originals 运动裤</p>
+										<p>rmb 599</p>
+									</div>
+								</a>
+							</li>
+						</div>
+					</ul>
+				</article>
+
+				<article class="article article-product-box">
+					<div class="img-box none-sm">
+						<img class="blank" src="images/blank.gif"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/banner-blank-m.png"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-m.png"}}'
+						/>
+
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-adicolor/product-3/banner-p.jpg"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-3/banner-p.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-3/banner-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/product-3/banner-m.jpg"}}'
+						/>
+					</div>
+					<ul class="none-sm">
+						<li>
+							<a href="https://www.adidas.com.cn/item/CE2413" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-3/pic-1.png"/>
+								<div class="goods-info">
+									<p>女子 originals 套头衫</p>
+									<p>rmb 599</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/CE2397" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-3/pic-2.png"/>
+								<div class="goods-info">
+									<p>女子 originals 运动外套</p>
+									<p>rmb 599</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/CE2405" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-3/pic-3.png"/>
+								<div class="goods-info">
+									<p>女子 originals 运动裤</p>
+									<p>rmb 599</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="none block-sm">
+						<div>
+							<li>
+								<a href="https://www.adidas.com.cn/item/CE2397" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-3/pic-2.png"/>
+									<div class="goods-info">
+										<p>女子 originals 运动外套</p>
+										<p>rmb 599</p>
+									</div>
+								</a>
+							</li>
+							<li class="mt-30">
+								<a href="https://www.adidas.com.cn/item/CE2405" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-3/pic-3.png"/>
+									<div class="goods-info">
+										<p>女子 originals 运动裤</p>
+										<p>rmb 599</p>
+									</div>
+								</a>
+							</li>
+						</div>
+						<div>
+							<li>
+								<div class="img-box none block-sm">
+									<img class="blank" src="images/blank.gif"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-3/banner-blank-m.png"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-3/banner-blank-m.png"}}'
+									/>
+
+									<img src="images/blank.gif"
+										lazysrc="../static/images/lp-adicolor/product-1/banner-p.jpg"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-3/banner-p.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-3/banner-m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-3/banner-m.jpg"}}'
+									/>
+								</div>
+							</li>
+							<li>
+								<a href="https://www.adidas.com.cn/item/CE2413" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-3/pic-1.png"/>
+									<div class="goods-info">
+										<p>女子 originals 套头衫</p>
+										<p>rmb 599</p>
+									</div>
+								</a>
+							</li>
+						</div>
+					</ul>
+				</article>
+
+				<article class="article article-product-box">
+					<div class="img-box none-sm">
+						<img class="blank" src="images/blank.gif"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/banner-blank-m.png"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-m.png"}}'
+						/>
+
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-adicolor/product-4/banner-p.jpg"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-4/banner-p.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-4/banner-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/product-4/banner-m.jpg"}}'
+						/>
+					</div>
+					<ul class="none-sm">
+						<li>
+							<a href="https://www.adidas.com.cn/item/CE2425" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-4/pic-1.png"/>
+								<div class="goods-info">
+									<p>女子 originals 运动外套</p>
+									<p>rmb 699</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/CE2429" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-4/pic-2.png"/>
+								<div class="goods-info">
+									<p>女子 originals 运动裤</p>
+									<p>rmb 699</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/DB1018" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-4/pic-3.png"/>
+								<div class="goods-info">
+									<p>女子 originals CAMPUS W 经典鞋</p>
+									<p>rmb 899</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="none block-sm">
+						<div>
+							<li>
+								<div class="img-box none block-sm">
+									<img class="blank" src="images/blank.gif"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-4/banner-blank-m.png"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-4/banner-blank-m.png"}}'
+									/>
+
+									<img src="images/blank.gif"
+										lazysrc="../static/images/lp-adicolor/product-1/banner-p.jpg"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-4/banner-p.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-4/banner-m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-4/banner-m.jpg"}}'
+									/>
+								</div>
+							</li>
+							<li>
+								<a href="https://www.adidas.com.cn/item/DB1018" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank-250-200.png" lazysrc="../static/images/lp-adicolor/product-4/pic-3-m.png"/>
+									<div class="goods-info">
+										<p>女子 originals CAMPUS W 经典鞋</p>
+										<p>rmb 899</p>
+									</div>
+								</a>
+							</li>
+						</div>
+						<div>
+							<li>
+								<a href="https://www.adidas.com.cn/item/CE2425" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-4/pic-1.png"/>
+									<div class="goods-info">
+										<p>女子 originals 运动外套</p>
+										<p>rmb 699</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="mt-30">
+								<a href="https://www.adidas.com.cn/item/CE2429" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-4/pic-2.png"/>
+									<div class="goods-info">
+										<p>女子 originals 运动裤</p>
+										<p>rmb 699</p>
+									</div>
+								</a>
+							</li>
+						</div>
+					</ul>
+				</article>
+
+				<article class="article article-product-box">
+					<div class="img-box none-sm">
+						<img class="blank" src="images/blank.gif"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/banner-blank-m.png"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-m.png"}}'
+						/>
+
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-adicolor/product-5/banner-p.jpg"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-5/banner-p.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-5/banner-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/product-5/banner-m.jpg"}}'
+						/>
+					</div>
+					<ul class="none-sm">
+						<li>
+							<a href="https://www.adidas.com.cn/item/CE2433" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-5/pic-1.png"/>
+								<div class="goods-info">
+									<p>女子 originals 卫衣</p>
+									<p>rmb 599</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/CE2402" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-5/pic-2.png"/>
+								<div class="goods-info">
+									<p>女子 originals 运动裤</p>
+									<p>rmb 599</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/DB1019" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-5/pic-3.png"/>
+								<div class="goods-info">
+									<p>女子 originals CAMPUS W 经典鞋</p>
+									<p>rmb 899</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="none block-sm">
+						<div>
+							<li>
+								<a href="https://www.adidas.com.cn/item/CE2433" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-5/pic-1.png"/>
+									<div class="goods-info">
+										<p>女子 originals 卫衣</p>
+										<p>rmb 599</p>
+									</div>
+								</a>
+							</li>
+							<li class="mt-30">
+								<a href="https://www.adidas.com.cn/item/CE2402" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-5/pic-2.png"/>
+									<div class="goods-info">
+										<p>女子 originals 运动裤</p>
+										<p>rmb 599</p>
+									</div>
+								</a>
+							</li>
+						</div>
+						<div>
+							<li>
+								<div class="img-box none block-sm">
+									<img class="blank" src="images/blank.gif"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-5/banner-blank-m.png"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-5/banner-blank-m.png"}}'
+									/>
+
+									<img src="images/blank.gif"
+										lazysrc="../static/images/lp-adicolor/product-1/banner-p.jpg"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-5/banner-p.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-5/banner-m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-5/banner-m.jpg"}}'
+									/>
+								</div>
+							</li>
+							<li>
+								<a href="https://www.adidas.com.cn/item/DB1019" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank-250-200.png" lazysrc="../static/images/lp-adicolor/product-5/pic-3-m.png"/>
+									<div class="goods-info">
+										<p>女子 originals CAMPUS W 经典鞋</p>
+										<p>rmb 899</p>
+									</div>
+								</a>
+							</li>
+						</div>
+					</ul>
+				</article>
+
+				<article class="article article-product-box">
+					<div class="img-box none-sm">
+						<img class="blank" src="images/blank.gif"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/banner-blank-m.png"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-m.png"}}'
+						/>
+
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-adicolor/product-6/banner-p.jpg"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-6/banner-p.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-6/banner-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/product-6/banner-m.jpg"}}'
+						/>
+					</div>
+					<ul class="none-sm">
+						<li>
+							<a href="https://www.adidas.com.cn/item/CV8277" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-6/pic-1.png"/>
+								<div class="goods-info">
+									<p>女子 originals 运动裤</p>
+									<p>rmb 699</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/DB1019" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-6/pic-2.png"/>
+								<div class="goods-info">
+									<p>女子 originals CAMPUS W 经典鞋</p>
+									<p>rmb 899</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="none block-sm">
+						<div>
+							<li>
+								<div class="img-box none block-sm">
+									<img class="blank" src="images/blank.gif"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-6/banner-blank-m.png"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-6/banner-blank-m.png"}}'
+									/>
+
+									<img src="images/blank.gif"
+										lazysrc="../static/images/lp-adicolor/product-1/banner-p.jpg"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-6/banner-p.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-6/banner-m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-6/banner-m.jpg"}}'
+									/>
+								</div>
+							</li>
+						</div>
+						<div>
+							<li>
+								<a href="https://www.adidas.com.cn/item/CV8277" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-6/pic-1.png"/>
+									<div class="goods-info">
+										<p>女子 originals 运动裤</p>
+										<p>rmb 699</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.adidas.com.cn/item/DB1019" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank-m.png" lazysrc="../static/images/lp-adicolor/product-6/pic-2-m.png"/>
+									<div class="goods-info">
+										<p>女子 originals CAMPUS W 经典鞋</p>
+										<p>rmb 899</p>
+									</div>
+								</a>
+							</li>
+						</div>
+					</ul>
+				</article>
+
+				<article class="article article-product-box">
+					<div class="img-box none-sm">
+						<img class="blank" src="images/blank.gif"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/banner-blank-m.png"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-m.png"}}'
+						/>
+
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-adicolor/product-7/banner-p.jpg"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-7/banner-p.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-7/banner-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/product-7/banner-m.jpg"}}'
+						/>
+					</div>
+					<ul class="none-sm">
+						<li>
+							<a href="https://www.adidas.com.cn/item/DB0983" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-7/pic-1.png"/>
+								<div class="goods-info">
+									<p>男子 originals CAMPUS 经典鞋</p>
+									<p>rmb 899</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="none block-sm">
+						<li>
+							<div class="img-box none block-sm">
+								<img class="blank" src="images/blank.gif"
+									data-image='{
+									"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+									"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-7/banner-blank-m.png"},
+									"small":{"high":"", "normal":"../static/images/lp-adicolor/product-7/banner-blank-m.png"}}'
+								/>
+
+								<img src="images/blank.gif"
+									lazysrc="../static/images/lp-adicolor/product-1/banner-p.jpg"
+									data-image='{
+									"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-7/banner-p.jpg"},
+									"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-7/banner-m.jpg"},
+									"small":{"high":"", "normal":"../static/images/lp-adicolor/product-7/banner-m.jpg"}}'
+								/>
+							</div>
+						</li>
+						<li class="left-right">
+							<a href="https://www.adidas.com.cn/item/DB0983" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank-m.png" lazysrc="../static/images/lp-adicolor/product-7/pic-1-m.png"/>
+								<div class="goods-info">
+									<p>男子 originals CAMPUS 经典鞋</p>
+									<p>rmb 899</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</article>
+
+				<article class="article article-product-box">
+					<div class="img-box none-sm">
+						<img class="blank" src="images/blank.gif"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/banner-blank-m.png"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-m.png"}}'
+						/>
+
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-adicolor/product-8/banner-p.jpg"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-8/banner-p.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-8/banner-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/product-8/banner-m.jpg"}}'
+						/>
+					</div>
+					<ul class="none-sm">
+						<li>
+							<a href="https://www.adidas.com.cn/item/CW1257" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-8/pic-1.png"/>
+								<div class="goods-info">
+									<p>男子 originals 运动外套</p>
+									<p>rmb 699</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/CW1276" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-8/pic-2.png"/>
+								<div class="goods-info">
+									<p>男子 originals 运动裤</p>
+									<p>rmb 599</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/BZ0087" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-8/pic-3.png"/>
+								<div class="goods-info">
+									<p>中性 originals CAMPUS 经典鞋</p>
+									<p>rmb 899</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="none block-sm">
+						<div>
+							<li>
+								<a href="https://www.adidas.com.cn/item/CW1257" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-8/pic-1.png"/>
+									<div class="goods-info">
+										<p>男子 originals 运动外套</p>
+										<p>rmb 699</p>
+									</div>
+								</a>
+							</li>
+							<li class="mt-30">
+								<a href="https://www.adidas.com.cn/item/CW1276" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-8/pic-2.png"/>
+									<div class="goods-info">
+										<p>男子 originals 运动裤</p>
+										<p>rmb 599</p>
+									</div>
+								</a>
+							</li>
+						</div>
+						<div>
+							<li>
+								<div class="img-box none block-sm">
+									<img class="blank" src="images/blank.gif"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-8/banner-blank-m.png"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-8/banner-blank-m.png"}}'
+									/>
+
+									<img src="images/blank.gif"
+										lazysrc="../static/images/lp-adicolor/product-1/banner-p.jpg"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-8/banner-p.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-8/banner-m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-8/banner-m.jpg"}}'
+									/>
+								</div>
+							</li>
+							<li>
+								<a href="https://www.adidas.com.cn/item/BZ0087" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank-250-200.png" lazysrc="../static/images/lp-adicolor/product-8/pic-3-m.png"/>
+									<div class="goods-info">
+										<p>中性 originals CAMPUS 经典鞋</p>
+										<p>rmb 899</p>
+									</div>
+								</a>
+							</li>
+						</div>
+					</ul>
+				</article>
+
+				<article class="article article-product-box">
+					<div class="img-box none-sm">
+						<img class="blank" src="images/blank.gif"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/banner-blank-m.png"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-m.png"}}'
+						/>
+
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-adicolor/product-9/banner-p.jpg"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-9/banner-p.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-9/banner-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/product-9/banner-m.jpg"}}'
+						/>
+					</div>
+					<ul class="none-sm">
+						<li>
+							<a href="https://www.adidas.com.cn/item/CW1278" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-9/pic-1.png"/>
+								<div class="goods-info">
+									<p>男子 originals 运动裤</p>
+									<p>rmb 599</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/DB0982" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-9/pic-2.png"/>
+								<div class="goods-info">
+									<p>男子 originals CAMPUS 经典鞋</p>
+									<p>rmb 899</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="none block-sm">
+						<div>
+							<li>
+								<div class="img-box none block-sm">
+									<img class="blank" src="images/blank.gif"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-9/banner-blank-m.png"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-9/banner-blank-m.png"}}'
+									/>
+
+									<img src="images/blank.gif"
+										lazysrc="../static/images/lp-adicolor/product-1/banner-p.jpg"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-9/banner-p.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-9/banner-m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-9/banner-m.jpg"}}'
+									/>
+								</div>
+							</li>
+						</div>
+						<div>
+							<li>
+								<a href="https://www.adidas.com.cn/item/CW1278" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-9/pic-1.png"/>
+									<div class="goods-info">
+										<p>男子 originals 运动裤</p>
+										<p>rmb 599</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.adidas.com.cn/item/DB0982" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank-m.png" lazysrc="../static/images/lp-adicolor/product-9/pic-2-m.png"/>
+									<div class="goods-info">
+										<p>男子 originals CAMPUS 经典鞋</p>
+										<p>rmb 899</p>
+									</div>
+								</a>
+							</li>
+						</div>
+					</ul>
+				</article>
+
+				<article class="article article-product-box">
+					<div class="img-box none-sm">
+						<img class="blank" src="images/blank.gif"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/banner-blank-m.png"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-m.png"}}'
+						/>
+
+						<img src="images/blank.gif"
+							lazysrc="../static/images/lp-adicolor/product-10/banner-p.jpg"
+							data-image='{
+							"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-10/banner-p.jpg"},
+							"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-10/banner-m.jpg"},
+							"small":{"high":"", "normal":"../static/images/lp-adicolor/product-10/banner-m.jpg"}}'
+						/>
+					</div>
+					<ul class="none-sm">
+						<li>
+							<a href="https://www.adidas.com.cn/item/CW1312" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-10/pic-1.png"/>
+								<div class="goods-info">
+									<p>男子 originals 防风衣</p>
+									<p>rmb 599</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/CW1273" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-10/pic-2.png"/>
+								<div class="goods-info">
+									<p>男子 originals 运动裤</p>
+									<p>rmb 599</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.adidas.com.cn/item/DB0546" target="_blank">
+								<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-10/pic-3.png"/>
+								<div class="goods-info">
+									<p>男子 originals CAMPUS 经典鞋</p>
+									<p>rmb 899</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="none block-sm">
+						<div>
+							<li>
+								<a href="https://www.adidas.com.cn/item/CW1312" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-10/pic-1.png"/>
+									<div class="goods-info">
+										<p>男子 originals 防风衣</p>
+										<p>rmb 599</p>
+									</div>
+								</a>
+							</li>
+							<li class="mt-30">
+								<a href="https://www.adidas.com.cn/item/CW1273" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank.png" lazysrc="../static/images/lp-adicolor/product-10/pic-2.png"/>
+									<div class="goods-info">
+										<p>男子 originals 运动裤</p>
+										<p>rmb 599</p>
+									</div>
+								</a>
+							</li>
+						</div>
+						<div>
+							<li>
+								<div class="img-box none block-sm">
+									<img class="blank" src="images/blank.gif"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/banner-blank-p.png"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-10/banner-blank-m.png"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-10/banner-blank-m.png"}}'
+									/>
+
+									<img src="images/blank.gif"
+										lazysrc="../static/images/lp-adicolor/product-1/banner-p.jpg"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/product-10/banner-p.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/product-10/banner-m.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/product-10/banner-m.jpg"}}'
+									/>
+								</div>
+							</li>
+
+							<li>
+								<a href="https://www.adidas.com.cn/item/DB0546" target="_blank">
+									<img src="../static/images/lp-adicolor/product-pic-blank-250-200.png" lazysrc="../static/images/lp-adicolor/product-10/pic-3-m.png"/>
+									<div class="goods-info">
+										<p>男子 originals CAMPUS 经典鞋</p>
+										<p>rmb 899</p>
+									</div>
+								</a>
+							</li>
+						</div>
+					</ul>
+				</article>
+
+				<article class="article article-classification">
+					<img class="logo" src="images/blank.gif" lazysrc="../static/images/lp-adicolor/logo.png" />
+					<ul>
+						<li>
+							<ul>
+								<li>
+									<img src="images/blank.gif"
+										lazysrc="../static/images/lp-adicolor/classification/pic-p-1.jpg"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/classification/pic-p-1.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/classification/pic-m-1.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/classification/pic-m-1.jpg"}}'
+									/>
+
+									<div class="describe">
+										<div class="describe-content">
+											<h3 class="white">adicolor.鞋类</h3>
+											<a href="https://www.adidas.com.cn/originals_adicolor_shoes" target="_blank" class="btn btn-white btn-have-arrow btn-have-opacity"><span>立即选购</span></a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="images/blank.gif"
+										lazysrc="../static/images/lp-adicolor/classification/pic-p-2.jpg"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/classification/pic-p-2.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/classification/pic-m-2.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/classification/pic-m-2.jpg"}}'
+									/>
+
+									<div class="describe">
+										<div class="describe-content">
+											<h3>adicolor.服饰</h3>
+											<a href="https://www.adidas.com.cn/originals_adicolor_clothing" target="_blank" class="btn btn-white btn-have-arrow btn-have-opacity"><span>立即选购</span></a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li>
+									<img src="images/blank.gif"
+										lazysrc="../static/images/lp-adicolor/classification/pic-p-3.jpg"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/classification/pic-p-3.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/classification/pic-m-3.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/classification/pic-m-3.jpg"}}'
+									/>
+
+									<div class="describe">
+										<div class="describe-content">
+											<h3 class="white">adicolor.男子</h3>
+											<a href="https://www.adidas.com.cn/men_originals_adicolor" target="_blank" class="btn btn-white btn-have-arrow btn-have-opacity"><span>立即选购</span></a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="images/blank.gif"
+										lazysrc="../static/images/lp-adicolor/classification/pic-p-4.jpg"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/classification/pic-p-4.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/classification/pic-m-4.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/classification/pic-m-4.jpg"}}'
+									/>
+
+									<div class="describe">
+										<div class="describe-content">
+											<h3 class="white">adicolor.女子</h3>
+											<a href="https://www.adidas.com.cn/women_originals_adicolor" target="_blank" class="btn btn-white btn-have-arrow btn-have-opacity"><span>立即选购</span></a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="images/blank.gif"
+										lazysrc="../static/images/lp-adicolor/classification/pic-p-5.jpg"
+										data-image='{
+										"standard":{"high":"", "normal":"../static/images/lp-adicolor/classification/pic-p-5.jpg"},
+										"medium":{"high":"",  "normal":"../static/images/lp-adicolor/classification/pic-m-5.jpg"},
+										"small":{"high":"", "normal":"../static/images/lp-adicolor/classification/pic-m-5.jpg"}}'
+									/>
+
+									<div class="describe">
+										<div class="describe-content">
+											<h3>adicolor.童装</h3>
+											<a href="https://www.adidas.com.cn/kids_originals_adicolor" target="_blank" class="btn btn-white btn-have-arrow btn-have-opacity"><span>立即选购</span></a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<img class="orignal" src="images/blank.gif" lazysrc="../static/images/lp-adicolor/orignal.png" />
+
+					<a href="https://www.adidas.com.cn/originals_all" target="_blank" class="btn btn-black btn-have-arrow"><span>选购所有originals商品</span></a>
+				</article>
+
+				<script type="text/javascript">
+					$(function() {
+						// 换图 + 懒加载
+						$.spice.lazyLoad('img[lazysrc]', {
+							attr: 'lazysrc'
+						});
+						$.spice.tools.changeImageSrc({
+							callBack: function(img, self) {
+								$.spice.lazyLoad('img[lazysrc]', {
+									attr: self.opt.lazyData,
+									prestrain: 1
+								});
+							}
+						});
+
+
+						// kv
+						var kvSwiper = new Swiper('.e-swiper-adicolor-kv', {
+							autoplay: 2000,
+							speed: 600,
+							autoplayDisableOnInteraction: false,
+							nextButton: '.swiper-button-next',
+							prevButton: '.swiper-button-prev',
+							onInit: function (swiper) {
+								$(swiper.container).data('swiper', swiper)
+							}
+						});
+
+						// 视频点击
+						$('.e-lp-video-btn').on('tap', function(e) {
+							e.preventDefault();
+							var _this = $(this),
+								videoCode =_this.data('videoCode');
+
+							openVideo(videoCode, 'true');
+						});
+
+						var navSwitchFlag = false;
+						// nav
+						var navSwiper = new Swiper('.e-swiper-adicolor-nav', {
+							// pagination : '.swiper-pagination',
+							// centeredSlides: true,
+							// autoplay: 2000,
+							speed: 600,
+							loop: true,
+							slidesPerView: 'auto',
+							paginationClickable: true,
+							autoplayDisableOnInteraction: false,
+							onInit: function (swiper) {
+								$(swiper.container).data('swiper', swiper);
+
+								var navSwitchTimer = null;
+								// 点击选中效果
+								$('.swiper-slide', swiper.container).on('tap', function(){
+									navSwitchFlag = true;
+									clearTimeout(navSwitchTimer);
+
+									var _this = $(this),
+										dataIndex = _this.data('swiperSlideIndex');
+									$('.swiper-slide', swiper.container).removeClass('is-active');
+									$('.swiper-slide[data-swiper-slide-index='+ dataIndex +']', swiper.container).addClass('is-active');
+
+									// $('.swiper-pagination span:eq('+ (dataIndex) +')').trigger('click')
+
+									// 屏幕滚动到相应的位置
+									var articleOffsetTop = $('.article-product-box:eq('+ dataIndex +')').offset().top,
+										headerH = $('.header-fixed').outerHeight(true),
+										$adicolorNav = $('.article-adicolor-nav'),
+										$navContent = $('.adicolor-nav-content', $adicolorNav),
+										adicolorNavH = $navContent.outerHeight(true);
+
+									$('html,body').animate({
+										scrollTop: articleOffsetTop - headerH - adicolorNavH
+									}, 500, function(){
+										navSwitchTimer = setTimeout(function(){
+											navSwitchFlag = false;
+										}, 100);
+									});
+
+									return false;
+								});
+							}
+						});
+
+
+						$(window).on('scroll.adicolorNav', function() {
+							var windowScrollTop = $(window).scrollTop(),
+								headerH = $('.header-fixed').outerHeight(true),
+								$adicolorNav = $('.article-adicolor-nav'),
+								adicolorNavOffsetTop = $adicolorNav.offset().top,
+								$navContent = $('.adicolor-nav-content', $adicolorNav),
+								$articleClassification = $('.article-classification'),
+								articleClassificationOffsetTop = $articleClassification.offset().top,
+								$blankBox = $('.e-blank-box'),
+								$navSwiperContainer = $('.e-swiper-adicolor-nav'),
+								productBoxIndex;
+
+							if (windowScrollTop >= adicolorNavOffsetTop) {
+								$blankBox.css({
+									height: $navContent.outerHeight(true),
+								});
+
+								$adicolorNav.addClass('nav-fixed');
+
+								$navContent.css({
+									top: headerH-1,
+								});
+
+								if (windowScrollTop + (window.innerWidth/2) >= articleClassificationOffsetTop) {
+									$navContent.addClass('hidden')
+								}else{
+									$navContent.removeClass('hidden')
+								}
+
+							}else{
+								$blankBox.css({
+									height: 0,
+								});
+
+								$adicolorNav.removeClass('nav-fixed');
+
+								$navContent.css({
+									top: 0,
+								});
+
+								$('.swiper-slide', $navSwiperContainer).removeClass('is-active');
+								navSwiper.slideTo(0, 0, false);
+							}
+
+							// 滚动页面，联动nav
+							if(!navSwitchFlag){
+								$('.article-product-box').each(function(index, el){
+									if(windowScrollTop > $(el).offset().top - 80 - 250 - ($.spice.getWindowWidth() > 1024 ? 30 : 0)){
+										console.log($(el).index() - 4)
+										productBoxIndex = $(el).index() - 4
+										return productBoxIndex;
+									}
+									
+								});
+
+								$('.swiper-slide', $navSwiperContainer).removeClass('is-active');
+								$('.swiper-slide[data-swiper-slide-index='+ productBoxIndex +']', $navSwiperContainer).addClass('is-active');
+
+								navSwiper.slideTo(productBoxIndex, 600, false);
+							}
+
+							// 滚动页面，联动nav end
+
+
+						}).trigger('scroll.adicolorNav');
+
+					});
+
+				</script>
+			</section>
+			<%include _includes/modules/footer.html %>
+
+			<!-- 视频弹层 -->
+			<script id="video-dialog" type="text/template">
+				<div class="dialog">
+					<div class="dialog-container">
+						<div class="loading-wrap"><img src="images/loading.gif" height="32" width="32"></div>
+						<div class="video-content">
+						</div>
+					</div>
+					<i class="icon icon-close dialog-close">&times;</i>
+				</div>
+			</script>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>COD</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" href="css/checkout.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/checkout.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-simple.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+			<div class="order-submit-content checkout-pay-content float-clearfix">
+				<!-- order-content-left 开始 -->
+				<div class="order-content-left">
+					<div class="checkout-pay payment-method">
+						<h2 class="order-title">订单提交成功，感谢您的订购</h2>
+						<p class="payment-text">当您收到货物时，请准备好现金进行支付，如果货到刷卡请先与快递员沟通是否支持</p>
+						<div class="order-detail-box">
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">订单编号：</dt>
+								<dd class="order-detail-text">AD2748596038</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">订单状态：</dt>
+								<dd class="order-detail-text">待发货</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">支付方式：</dt>
+								<dd class="order-detail-text">支付宝</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">订单金额：</dt>
+								<dd class="order-detail-text">￥1,899.00</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">配送地址：</dt>
+								<dd class="order-detail-text">
+									<span>James</span>&nbsp;&nbsp;&nbsp;<span>13855962542</span>
+								</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title"></dt>
+								<dd class="order-detail-text">上海市静安区万荣路1268号市北高新云立方B栋
+								<span class="pc-none-mb">，&nbsp;200046</span></dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix none-sm">
+								<dt class="order-detail-title"></dt>
+								<dd class="order-detail-text">200046</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">配送方式：</dt>
+								<dd class="order-detail-text">普通快递</dd>
+							</dl>
+							<dl class="order-detail-info float-clearfix">
+								<dt class="order-detail-title">发票类型：</dt>
+								<dd class="order-detail-text">普通发票（电子）</dd>
+							</dl>
+							<dl class="order-detail-text-invoice">
+								<span>*电子发票将以短信形式发送至您订单收件人手机</span>
+							</dl>
+						</div>
+						<p class="view-detail-mes"><a href="" class="view-detail successfully-detail">查看订单详情</a></p>
+
+						<%include _includes/modules/evaluation-integral.html %>
+
+					</div>
+				</div>
+				<!-- order-content-left 结束 -->
+
+				<!-- order-content-right 开始 -->
+				<div class="order-content-right">
+					<div class="common-payment">
+						<!-- 公共右 帮助 -->
+					    <%include _includes/checkout-modules/help.html %>
+					</div>
+				</div>
+				<!-- order-content-right 结束 -->
+			</div>
+			<!-- order-submit-content 结束 -->
+
+
+			<!-- 尝试这些 -->
+			<article class="article attempt-section none-sm">
+				<%include _includes/try-these.html %>
+			</article>
+
+			<!-- 本月推荐 -->
+			<article class="article article-res-gallery-box pick-week">
+				<div class="style-guess-you-Iike you-might-like">
+					<h3>本月主推</h3>
+					<!-- 本月主推 -->
+					<%include _includes/guess-you-Iike.html %>
+				</div>
+			</article>
+		</section>
+		<%include _includes/modules/footer-simple.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+</html>

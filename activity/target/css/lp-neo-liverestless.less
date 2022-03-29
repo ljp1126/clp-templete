@@ -1,0 +1,560 @@
+@charset "utf-8";
+// 公共方法
+@import "common/utilities.less";
+.article {
+    position: relative;
+    >img {
+        width: 100%;
+	}
+	.swiper-container-kv{
+		position: absolute;
+		top:0;
+		left: 29.5%;
+		width: 49%;
+		z-index:2;
+	}
+	&.article-1{
+		.kv-bg-2{
+			position: absolute;
+			top: 41%;
+			left: 21%;
+			width: 36%;
+			z-index: 3;
+		}
+		.swiper-btn {
+			position: absolute;
+			top: 76%;
+			z-index: 4;
+			cursor: pointer;
+			width: 6.4%;
+		}
+		.prev-btn{
+			left: 68.8%;
+		}
+		.next-btn{
+			left: 78.6%;
+		}
+	}
+}
+.article-banner{
+	.swiper-btn {
+		position: absolute;
+		top: 56%;
+		z-index: 4;
+		cursor: pointer;
+		width: 3%;
+	}
+	.prev-btn{
+		left: 19.5%;
+	}
+	.next-btn{
+		right: 21%;
+	}
+	.swiper-button-disabled{
+		display: none;
+	}
+	.swiper-pagination{
+		bottom: 5px;
+		.swiper-pagination-bullet{
+			width: 100px;
+			height: 6px;
+			margin: 0 10px;
+			border-radius: 0;
+			background: #959595;
+		}
+		.swiper-pagination-bullet-active{
+			background: #555;
+		}
+	}
+	.link{
+		position: absolute;
+		display: block;
+	}
+	.link-1{
+		top: 17%;
+		left: 23.5%;
+		width: 16%;
+		height: 44%;
+	}
+	.link-2{
+		top: 13%;
+		left: 40.5%;
+		width: 17%;
+		height: 80%;
+	}
+	.link-3{
+		top: 64%;
+		left: 17.5%;
+		width: 18%;
+		height: 28%;
+	}
+	.link-4{
+		top: 53%;
+		left: 57.5%;
+		width: 15%;
+		height: 41%;
+	}
+	.link-5{
+		top: 22%;
+		left: 19.5%;
+		width: 16%;
+		height: 44%;
+	}
+	.link-6{
+		top: 14%;
+		left: 38.5%;
+		width: 19%;
+		height: 51%;
+	}
+	.link-7{
+		top: 50%;
+		left: 57%;
+		width: 22%;
+		height: 39%;
+	}
+	.link-8{
+		top: 53%;
+		left: 19.5%;
+		width: 19%;
+		height: 38%;
+	}
+	.link-9{
+		top: 12%;
+		left: 41%;
+		width: 17%;
+		height: 76%;
+	}
+	.link-10{
+		top: 14%;
+		left: 61%;
+		width: 14%;
+		height: 38%;
+	}
+	.link-11{
+		top: 59%;
+		left: 58.5%;
+		width: 15%;
+		height: 27%;
+	}
+	.link-12{
+		top: 52%;
+		left: 25.5%;
+		width: 17%;
+		height: 31%;
+	}
+	.link-13{
+		top: 17%;
+		left: 44%;
+		width: 14%;
+		height: 67%;
+	}
+	.link-14{
+		top: 13%;
+		left: 62%;
+		width: 18%;
+		height: 46%;
+	}
+	.link-15{
+		top: 61.7%;
+		left: 58.5%;
+		width: 14%;
+		height: 29%;
+	}
+	.link-16{
+		top: 18%;
+		left: 21.5%;
+		width: 17%;
+		height: 42%;
+	}
+	.link-17{
+		top: 61%;
+		left: 22%;
+		width: 16%;
+		height: 37%;
+	}
+	.link-18{
+		top: 15%;
+		left: 40.5%;
+		width: 17%;
+		height: 76%;
+	}
+	.link-19{
+		top: 66%;
+		left: 60%;
+		width: 18%;
+		height: 28%;
+	}
+	.link-20{
+		top: 18%;
+		left: 25%;
+		width: 16%;
+		height: 42%;
+	}
+	.link-21{
+		top: 66%;
+		left: 20.5%;
+		width: 19%;
+		height: 29%;
+	}
+	.link-22{
+		top: 15%;
+		left: 42%;
+		width: 17%;
+		height: 74%;
+	}
+	.link-23{
+		top: 50%;
+		left: 62%;
+		width: 15%;
+		height: 34%;
+	}
+	.link-24{
+		top: 63%;
+		left: 20%;
+		width: 17%;
+		height: 34%;
+	}
+	.link-25{
+		top: 9%;
+		left: 38.5%;
+		width: 26%;
+		height: 85%;
+	}
+	.link-26{
+		top: 27%;
+		left: 35.5%;
+		width: 22%;
+		height: 67%;
+	}
+	.link-27{
+		top: 55%;
+		left: 59%;
+		width: 16%;
+		height: 35%;
+	}
+	.link-28{
+		top: 56%;
+		left: 21%;
+		width: 16%;
+		height: 35%;
+	}
+	.link-29{
+		top: 11%;
+		left: 40%;
+		width: 26%;
+		height: 79%;
+	}
+	.link-30{
+		top: 23%;
+		left: 21.5%;
+		width: 16%;
+		height: 41%;
+	}
+	.link-31{
+		top: 12%;
+		left: 38%;
+		width: 19%;
+		height: 78%;
+	}
+	.link-32{
+		top: 56%;
+		left: 57%;
+		width: 19%;
+		height: 40%;
+	}
+}
+
+.article-bottom {
+	position: relative;
+	padding-bottom: 150px;
+	background: url("../../static/images/lp-neo-liverestless/bg.jpg") repeat ;
+	height: auto;
+}
+.article-bottom img {
+display: block;
+width: 100%;
+}
+.article-bottom ul {
+max-width: 1140px;
+margin: 0 auto;
+}
+.article-bottom ul li {
+width: 25%;
+padding: 0 20px;
+float: left;
+}
+.article-bottom ul li a {
+position: relative;
+display: block;
+text-align: center;
+}
+.article-bottom ul li a .btn {
+position: absolute;
+bottom: 20px;
+left: 50%;
+width: 180px;
+margin-left: -90px;
+}
+
+
+@media (max-width: 1024px) {
+	.article {
+		.swiper-container-kv{
+			left: 14%;
+			width: 74%;
+		}
+		&.article-1{
+			.kv-bg-2{
+				top: 45%;
+				left: 1%;
+				width: 70%;
+			}
+			.swiper-btn {
+				top: 78%;
+			}
+			.prev-btn{
+				left: 78%;
+			}
+			.next-btn{
+				left: 87%;
+			}
+		}
+	}
+	.article-banner{
+		.swiper-slide{
+			img{
+				width: 100%;
+			}
+		}
+		.swiper-btn {
+			top: 48%;
+			width: 6%;
+		}
+		.prev-btn{
+			left: 20px;
+		}
+		.next-btn{
+			right: 20px;
+		}
+		.swiper-pagination{
+			bottom: 0px;
+			.swiper-pagination-bullet{
+				width: 35px;
+				height: 2px;
+				margin: 0 5px;
+			}
+		}
+		.link-1{
+			top: 15%;
+			left: 6.5%;
+			width: 24%;
+			height: 39%;
+		}
+		.link-2{
+			top: 16%;
+			left: 33%;
+			width: 25%;
+			height: 72%;
+		}
+		.link-3{
+			top: 59%;
+			left: 59%;
+			width: 25%;
+			height: 27%;
+		}
+		.link-4{
+			top: 55%;
+			left: 10.5%;
+			width: 21%;
+			height: 39%;
+		}
+		.link-5{
+			top: 15%;
+			left: 7.5%;
+			width: 26%;
+			height: 43%;
+		}
+		.link-6{
+			top: 14%;
+			left: 35.5%;
+			width: 30%;
+			height: 51%;
+		}
+		.link-7{
+			top: 64%;
+			left: 56%;
+			width: 30%;
+			height: 29%;
+		}
+		.link-8{
+			top: 58%;
+			left: 2.5%;
+			width: 26%;
+			height: 29%;
+		}
+		.link-9{
+			top: 17%;
+			left: 38%;
+			width: 18%;
+			height: 70%;
+		}
+		.link-10{
+			top: 12%;
+			left: 9%;
+			width: 27%;
+			height: 35%;
+		}
+		.link-11{
+			top: 70%;
+			left: 57.5%;
+			width: 33%;
+			height: 24%;
+		}
+		.link-12{
+			top: 57%;
+			left: 2.5%;
+			width: 29%;
+			height: 23%;
+		}
+		.link-13{
+			top: 22%;
+			left: 36%;
+			width: 26%;
+			height: 63%;
+		}
+		.link-14{
+			top: 34%;
+			left: 68%;
+			width: 30%;
+			height: 36%;
+		}
+		.link-15{
+			top: 71.7%;
+			left: 63.5%;
+			width: 27%;
+			height: 24%;
+		}
+		.link-16{
+			top: 14%;
+			left: 3.5%;
+			width: 28%;
+			height: 34%;
+		}
+		.link-17{
+			top: 49%;
+			left: 3%;
+			width: 26%;
+			height: 35%;
+		}
+		.link-18{
+			top: 29%;
+			left: 34.5%;
+			width: 27%;
+			height: 59%;
+		}
+		.link-19{
+			top: 64%;
+			left: 62%;
+			width: 35%;
+			height: 22%;
+		}
+		.link-20{
+			top: 25%;
+			left: 9%;
+			width: 29%;
+			height: 35%;
+		}
+		.link-21{
+			top: 76%;
+			left: 59.5%;
+			width: 37%;
+			height: 22%;
+		}
+		.link-22{
+			top: 18%;
+			left: 40%;
+			width: 28.5%;
+			height: 58%;
+		}
+		.link-23{
+			top: 61%;
+			left: 12%;
+			width: 25%;
+			height: 27%;
+		}
+		.link-24{
+			top: 58%;
+			left: 6%;
+			width: 27%;
+			height: 29%;
+		}
+		.link-25{
+			top: 20%;
+			left: 35%;
+			width: 47%;
+			height: 73%;
+		}
+		.link-26{
+			top: 24%;
+			left: 39.5%;
+			width: 47%;
+			height: 59%;
+		}
+		.link-27{
+			top: 57%;
+			left: 7%;
+			width: 30%;
+			height: 30%;
+		}
+		.link-28{
+			top: 62%;
+			left: 9%;
+			width: 29%;
+			height: 28%;
+		}
+		.link-29{
+			top: 15%;
+			left: 41%;
+			width: 53%;
+			height: 69%;
+		}
+		.link-30{
+			top: 7%;
+			left: 3.5%;
+			width: 27%;
+			height: 39%;
+		}
+		.link-31{
+			top: 20%;
+			left: 34%;
+			width: 40%;
+			height: 43%;
+		}
+		.link-32{
+			top: 61%;
+			left: 12%;
+			width: 34%;
+			height: 34%;
+		}
+	}
+	.article-bottom{
+		padding-bottom: 60px;
+	}
+	.article-bottom ul {
+		padding: 0 20px;
+	}
+	.article-bottom ul li {
+		width: 50%;
+		padding: 0 3px 6px;
+	}
+	.article-bottom ul li a .btn {
+		bottom: 15px;
+		width: 140px;
+		margin-left: -70px;
+		min-width: 120px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+	}
+
+}

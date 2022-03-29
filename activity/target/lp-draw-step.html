@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>抽奖活动</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/lp-draw-step-1.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/lp-draw-step-1.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-draw.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+
+			<article class="article start-draw-inner">
+				<img class="none-sm" src="../static/images/lp-draw-active-1/parts-1-01.jpg" alt="" />
+				<img class="none block-sm" src="../static/images/lp-draw-active-1/parts-1-01-m.jpg" alt="" />
+				<div class="ad-logo">
+					<img src="../static/images/lp-draw-active-1/logo-pc.png" alt="">
+				</div>
+				<!-- 抽取玺包 -->
+				<div class="extract-row">
+					<ul>
+						<li>
+							<div class="lang-bg">
+								<img src="../static/images/lp-draw-active-1/parts-1-02.jpg" alt="" />
+							</div>
+							<div class="lang-text">
+								<p class="lang-header">千玺的1128分之一</p>
+								<p class="lang-details"><span>adidas neo</span>全新代言人易烊千玺<br />为你准备了1128份玺包<br />一点一滴都是他的故事，想不想要？</p>
+								<a class="btn-base-green btn-draw-handle e-draw-handle">
+									抽取玺包<img src="../static/images/lp-draw-active-1/arrow.png"/>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<!-- 登陆注册弹层 -->
+				<div class="login-register-tamplate none">
+					<span class="btn-close e-close-login-register"></span>
+					<p>注册会员 即可参与抽奖</p>
+					<ul class="row">
+						<li class="col-12-6"><a class="btn-base-green btn-login-handle">登陆<img src="../static/images/lp-draw-active-1/arrow.png"/></a></li>
+						<li class="col-12-6"><a class="btn-base-green btn-register-handle">注册<img src="../static/images/lp-draw-active-1/arrow.png"/></a></li>
+					</ul>
+				</div>
+			</article>
+
+			<article class="article footer-draw-inner">
+				<img class="none-sm" src="../static/images/lp-draw-active-1/footer-bg.jpg" alt="" />
+				<img class="none block-sm" src="../static/images/lp-draw-active-1/footer-bg-m.jpg" alt="" />
+				<ul class="row footer-details-inner">
+					<li class="col-12-6 col-sm-12-12">
+						<div class="row">
+							<div class="col-12-5">
+								<img src="../static/images/lp-draw-active-1/parts-new.png" alt="" />
+							</div>
+							<div class="col-12-7 right-originals">
+								<p>易烊千玺与<span>adidas neo</span> <br />首次设计合作</p>
+								<p>1128份玺包 限量释出</p>
+								<a class="btn-base-green btn-link-handle e-link-handle">查看活动规则<img src="../static/images/lp-draw-active-1/arrow.png"/></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</article>
+
+		</section>
+
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+		<!-- 查看活动规则  -->
+		<script id="active-regular" type="text/template">
+			<div class="dialog">
+				<div class="dialog-container">
+					<div class="scroll">
+						<div class="scroller-wrap">
+							<p class="header-title"><img src="../static/images/lp-draw-active-1/logo.png" alt=""></p>
+							<p class="green title mt-50">玺包抽奖规则</p>
+							<p class="mt-90"><span class="green">活动日期：</span> 11/30-12/4</p>
+							<p class="green">活动详情：</p>
+							<p>活动为期5天，每天中奖名额为200份</p>
+							<p>adidas club会员登录后即可参与抽奖</p>
+							<p>每个账户只有一次中奖机会，每天可参与抽奖一次</p>
+							<p class="mt-90">未中奖的消费者会获得商城优惠码一份</p>
+							<p class="green">优惠券使用规则：</p>
+							<p>仅限用于购买adidasneo正价产品</p>
+							<p>特殊限量产品/联名款产品不可使用，详情请见产品描述</p>
+							<p>此类型券不可与其它优惠券同享</p>
+							<p>仅可在adidas.com.cn使用</p>
+							<p>袜子帽子等附配件产品不可使用</p>
+						</div>
+					</div>
+				</div>
+				<span class="btn-close"></span>
+			</div>
+		</script>
+
+	</div>
+</body>
+</html>

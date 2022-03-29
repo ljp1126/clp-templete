@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<%include _includes/meta.html %>
+		<title></title>
+		<%include _includes/css.html %>
+		<%include _includes/js.html %>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<%include _includes/modules/header.html %>
+			<!-- 内容部分 -->
+			<section class="container">
+                <style type="text/css">
+                    .aw-kv img{
+                        width:100%;
+                    }
+                    .tab-container-img{
+                        text-align: center;
+                        margin:150px 0 38px 0;
+                    }
+                    .tab-goods-list .tab-name .goods-swiper-container{
+                        width: 100%;
+                        background: #f7f7f7;
+                        margin: 0 auto 30px;
+                    }
+                    .tab-details{
+                        margin-bottom:150px;
+                    }
+                    .tab-goods-list .tab-name .goods-wrapper{
+                        background: #f7f7f7;
+                        border: 0px;
+                        height: 60px;
+                        width: 720px;
+                        margin: 0 auto;
+                    }
+                    .tab-goods-list .tab-name .goods-wrapper .swiper-slide{
+                        display: inline-block;
+                        letter-spacing: 3px;
+                        font-weight: bolder;
+                        font-size: 14px;
+                        height: 60px;
+                        width: auto;
+                        padding: 0 70px;
+                        color: #c6c6c6;
+                        cursor: pointer;
+                    }
+                    .tab-goods-list .tab-name .goods-wrapper .swiper-slide span{
+                        border-top: 0px solid #fff;
+                        border-bottom: 0px solid #fff;
+                        height: 60px;
+                        line-height: 60px;
+                    }
+                    .tab-goods-list .tab-name  .swiper-pagination{
+                        display: none;
+                    }
+                    .tab-goods-list .tab-name .goods-wrapper .selected{
+                        background:#fff;
+                        color:#000;
+                    }
+                    .tab-goods-list .tab-details .tab-datails-info{
+                        max-width:1400px;
+                        margin:0 auto;
+                    }
+                    .tab-goods-list .tab-details .tab-datails-info >div{
+                        float:left;
+                        width:25%;
+                        padding:0 15px 30px 15px;
+                        position:relative;
+
+                    }
+                    .tab-goods-list .tab-details .tab-datails-info >div .mask{
+                        /*display: none;*/
+                        position: absolute;
+                        top:0;
+                        left:15px;
+                        right:15px;
+                        bottom:30px;
+                        background:#000;
+                        opacity: 0;
+						transition: all 0.3s;
+                    }
+                    .tab-goods-list .tab-details .tab-datails-info>div a div img{
+                        width:100%;
+                    }
+                    .look-goods{
+                        /*display: none;*/
+						opacity: 0;
+                        position: absolute;
+                        z-index: 1;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-100%);
+						transition: all 0.3s;
+                    }
+                    .tab-goods-list .tab-details .tab-datails-info >div:hover .mask{
+                        opacity: 0.4;
+                    }
+                    .tab-goods-list .tab-details .tab-datails-info >div:hover .look-goods{
+                        opacity: 1;
+
+                    }
+                    .look-goods a{
+                        width:280px;
+                        max-width:280px;
+                    }
+                    .tab-goods-list .tab-details .tab-datails-info.show{
+                        display: block;
+                    }
+                    .carousels-content{
+                        background:#000;
+                        text-align: center;
+                        position: relative;
+                    }
+                    .carousels-titles img{
+                        padding:10% 0 8% 0;
+                    }
+                    .carousels-top{
+                        position: absolute;
+                        top:-50px;
+                        left:50%;
+                        margin-left:-60px;
+                    }
+                    .carousels-swiper{
+                        position: relative;
+						padding-bottom:200px;
+                    }
+                    .carousels-swiper .swiper-slide img{
+                        width: 100%;
+                    }
+                    .carousels-swiper .swiper-slide-next{
+
+                    }
+					.carousels-swiper .swiper-container{
+						overflow : visible;
+						left : -11%;
+					}
+					.carousels-swiper .swiper-slide a{
+						display : block;
+						position : relative;
+					}
+					.carousels-swiper .swiper-slide-active a:after{
+                        width: 100%;
+                        background: #000;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0%;
+                        bottom: 0;
+                        z-index: 2;
+                        opacity: 0.6;
+                        content: '';
+                        display: block;
+                    }
+					.carousels-swiper .swiper-slide-next + .swiper-slide + .swiper-slide a:after{
+                        width: 100%;
+                        background: #000;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0%;
+                        bottom: 0;
+                        z-index: 2;
+                        opacity: 0.6;
+                        content: '';
+                        display: block;
+                    }
+					.carousels-swiper .swiper-button-prev{
+						left : 31.4%;
+						padding: 0;
+					    margin: 0;
+					    width: 26px;
+					    height: 26px;
+					    background: url(../images/icon.png);
+						background-position:-216px -50px;
+						margin-top:-50px;
+					}
+					.carousels-swiper .swiper-button-prev:hover{
+						background-position:-144px -50px;
+					}
+					.carousels-swiper .swiper-button-next{
+						right : 6.3%;
+						padding: 0;
+						margin: 0;
+						width: 26px;
+						height: 26px;
+						background: url(../images/icon.png);
+						background-position:-252px -50px;
+						margin-top:-50px;
+					}
+					.carousels-swiper .swiper-button-next:hover{
+						background-position:-180px -50px;
+					}
+					.carousels-swiper .swiper-slide-active a {
+						margin-right : -8px;
+					}
+					/*.carousels-swiper .swiper-slide-next a ,.swiper-slide-next + .swiper-slide + .swiper-slide a{
+						margin-top : -15%;
+					}*/
+					.carousels-swiper .swiper-slide-next + .swiper-slide + .swiper-slide a{
+						margin-left : -8px;
+					}
+					.carousels-swiper .swiper-img-1 ,.carousels-swiper .swiper-img-3{
+						margin-top : -15%;
+					}
+                    @media (max-width:1024px) {
+                        .tab-container-img{
+                            margin:36px 0 16px 0;
+                        }
+						.tab-details{
+	                        margin-bottom:70px;
+	                    }
+                        .tab-goods-list .tab-name .goods-swiper-container{
+                            margin: 0 auto 0px;
+                            background: #f2f2f2;
+                        }
+                        .tab-goods-list .tab-name .goods-swiper-container .goods-wrapper{
+                            background: #f2f2f2;
+                            width: 100%;
+                        }
+                        .tab-goods-list .tab-name .goods-swiper-container .goods-wrapper .swiper-slide{
+                            padding: 0 0px;
+                            text-align: center;
+                            width: 160px;
+                        }
+                        .tab-goods-list .tab-details .tab-datails-info >div{
+                            width:50%;
+                            padding:8px;
+                        }
+						.carousels-top{
+							margin-top: 30px;
+							margin-left: -25px;
+						}
+						.carousels-top img{
+							width:50px;
+							height:40px;
+						}
+						.carousels-titles img{
+							width:35%;
+							padding:22% 0 13% 0;
+						}
+						.carousels-swiper{
+							padding-bottom:75px;
+	                    }
+						.carousels-swiper .swiper-container{
+							left : 0%;
+						}
+						.carousels-swiper .swiper-slide-active a:after{
+	                        background: none;
+	                    }
+						.carousels-swiper .swiper-slide-next + .swiper-slide + .swiper-slide a:after{
+	                        background: none;
+	                    }
+						.carousels-swiper .swiper-slide-active a{
+							margin-right : 0px;
+						}
+						.carousels-swiper .swiper-slide-next + .swiper-slide + .swiper-slide a{
+							margin-left : 0px;
+						}
+						.carousels-swiper .swiper-slide-prve a{
+							margin-top : 15%;
+						}
+						.carousels-swiper .swiper-img-1 ,.carousels-swiper .swiper-img-3{
+							margin-top : 0%;
+						}
+						.carousels-swiper .swiper-img-2 ,.carousels-swiper .swiper-img-4{
+							margin-top : -15%;
+						}
+						.carousels-swiper .swiper-button-prev{
+							left : 0%;
+							margin-top: 0;
+						}
+						.carousels-swiper .swiper-button-next{
+							right : 0%;
+							margin-top: 0;
+						}
+						.tab-goods-list .tab-details .tab-datails-info >div:hover .mask{
+	                        display: none;
+	                    }
+	                    .tab-goods-list .tab-details .tab-datails-info >div:hover .look-goods{
+	                        display: none;
+
+	                    }
+                    }
+                </style>
+                <script type="text/javascript">
+                    $(function(){
+                        //tab切换
+                    	 $('.goods-wrapper>div').on('tap',function() {
+                            var _index = $(this).index();
+                            $(this).addClass('selected').siblings().removeClass('selected');
+							var text = $(this).find('span').html().trim();
+							if(text == '全部产品'){
+								$('.tab-datails-info>div').show()
+							}else if(text == '鞋'){
+									$('.tab-datails-info>div').hide().parents().find('.shoe').show()
+							}
+							else if(text == '上装'){
+									$('.tab-datails-info>div').hide().parents().find('.cloth').show()
+							}
+							else if(text == '下装'){
+									$('.tab-datails-info>div').hide().parents().find('.pants').show()
+							}
+
+                            if($(window).width() < 1025){
+                            	var $this = $(this)
+                    			  , li_index = $this.index()
+                    			  , prev_index = $this.parent('goods-wrapper').find('.is-active').index();
+
+                    			$this.addClass('is-active').siblings('div').removeClass('is-active');
+                    			$this.parents('.goods-swiper-container').find('.swiper-pagination span:eq('+ li_index +')').trigger('click');
+                            }
+                        });
+
+                        var swiperFlag = true;
+                        $(window).on('resize.swiper', function(){
+                            if($(window).width() < 1025){
+                                if(swiperFlag){
+                                    /*轮播*/
+                                    if (!$('.goods-swiper-container').data('bud-swiper')) {
+                                        mySwiper($('.goods-swiper-container'));
+                                    }
+                                    // $('.goods-swiper-container .swiper-pagination span:eq(0)').trigger('click');
+                                    swiperFlag = false;
+                                }
+                            }else{
+                                // $('.goods-swiper-container .swiper-pagination span:eq(0)').trigger('click');
+                                var data = $('.goods-swiper-container').data('bud-swiper');
+                                if (data) {
+                                    data.destroy(true, true);
+                                    $('.goods-swiper-container').removeData('bud-swiper');
+                                }
+                                swiperFlag = true;
+                            }
+                        }).trigger("resize.swiper");
+
+
+                        function mySwiper(i) {
+                        	var mySwiper = new Swiper(i, {
+                        			pagination: '.swiper-pagination',
+                        			slidesPerView: 'auto',
+                        			paginationClickable: true,
+                        			grabCursor: true,
+                        			centeredSlides: true,
+                        			onSlideChangeEnd: function(swiper){
+										console.log(swiper);
+                        				$('.goods-swiper-container .goods-wrapper .swiper-slide').removeClass('is-active selected');
+                        				$('.goods-swiper-container .goods-wrapper .swiper-slide:eq('+ swiper.activeIndex +')').addClass('is-active selected');
+										if(swiper.activeIndex ==0){
+											$('.tab-datails-info>div').show()
+										}else if(swiper.activeIndex ==1){
+												$('.tab-datails-info>div').hide().parents().find('.shoe').show()
+										}
+										else if(swiper.activeIndex ==2){
+												$('.tab-datails-info>div').hide().parents().find('.cloth').show()
+										}
+										else if(swiper.activeIndex ==3){
+												$('.tab-datails-info>div').hide().parents().find('.pants').show()
+										}
+                        		    }
+                        		});
+                        	$(i).data('bud-swiper', mySwiper);
+                        }
+
+					    var swiper = new Swiper('.event-carousels', {
+							loop: true,
+					        slidesPerView: 3.2,
+							nextButton: '.swiper-button-next',
+	                    	prevButton: '.swiper-button-prev',
+					        paginationClickable: true,
+					        spaceBetween: 10,
+							breakpoints: {
+					        	1024: {
+					        		slidesPerView : 2,
+									spaceBetween: 6,
+					        	}
+					        }
+					    });
+
+                    })
+                </script>
+				<!-- 模块一-->
+				<article class="article article-aw">
+					<div class="aw-kv">
+						<img src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-aw/pc-bjt.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-aw/mb-bjt.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-aw/mb-bjt.jpg"}
+						}' />
+					</div>
+				</article>
+                <article class="article">
+                    <div class="tab-container-img">
+                        <img src="images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"../static/images/lp-aw/pc-collection.jpg"},
+								"medium":{"high":"", "normal":"../static/images/lp-aw/mb-collection.jpg"},
+								"small":{"high":"", "normal":"../static/images/lp-aw/mb-collection.jpg"}
+						}' />
+                    </div>
+                    <div class="tab-goods-list">
+                        <div class="tab-name">
+                            <div class="swiper-container goods-swiper-container">
+                                <div class="swiper-wrapper goods-wrapper">
+                                    <div class="swiper-slide selected">
+                                        <span>全部产品</span>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <span>鞋</span>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <span>上装</span>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <span>下装</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="tab-details">
+                            <div class="tab-datails-info float-clearfix">
+                                    <div class="shoe">
+                                        <a href="https://www.adidas.com.cn/item/AC6839">
+                                            <div><img src="../static/images/lp-aw/goods-1.png" alt=""></div>
+                                        </a>
+                                        <div class="mask"></div>
+                                        <div class="look-goods">
+                                            <a href="https://www.adidas.com.cn/item/AC6839" class="btn btn-black btn-have-arrow">
+                                                <span>点击查看商品</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="shoe">
+                                        <a href="https://www.adidas.com.cn/item/AC6842">
+                                            <div><img src="../static/images/lp-aw/goods-2.png" alt=""></div>
+                                        </a>
+                                        <div class="mask"></div>
+                                        <div class="look-goods">
+                                            <a href="https://www.adidas.com.cn/item/AC6842" class="btn btn-black btn-have-arrow">
+                                                <span>点击查看商品</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="shoe">
+                                        <a href="https://www.adidas.com.cn/item/AC6847">
+                                            <div><img src="../static/images/lp-aw/goods-3.png" alt=""></div>
+                                        </a>
+                                        <div class="mask"></div>
+                                        <div class="look-goods">
+                                            <a href="https://www.adidas.com.cn/item/AC6847" class="btn btn-black btn-have-arrow">
+                                                <span>点击查看商品</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="shoe">
+                                        <a href="https://www.adidas.com.cn/item/AC6848">
+                                            <div><img src="../static/images/lp-aw/goods-4.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/AC6848" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CG2012">
+                                            <div><img src="../static/images/lp-aw/goods-5.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CG2012" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+
+                            <!-- </div>
+                            <div class="tab-datails-info show float-clearfix"> -->
+
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CV5280">
+                                            <div><img src="../static/images/lp-aw/goods-6.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5280" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CV5281">
+                                            <div><img src="../static/images/lp-aw/goods-7.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5281" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CG2010">
+                                            <div><img src="../static/images/lp-aw/goods-8.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CG2010" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CV5290">
+                                            <div><img src="../static/images/lp-aw/goods-9.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5290" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CV5291">
+                                            <div><img src="../static/images/lp-aw/goods-10.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5291" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CV5249">
+                                            <div><img src="../static/images/lp-aw/goods-11.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5249" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CV5250">
+                                            <div><img src="../static/images/lp-aw/goods-12.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5250" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CV5052">
+                                            <div><img src="../static/images/lp-aw/goods-13.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5052" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CV5292">
+                                            <div><img src="../static/images/lp-aw/goods-14.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5292" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CV5293">
+                                            <div><img src="../static/images/lp-aw/goods-15.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5293" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CG1976">
+                                            <div><img src="../static/images/lp-aw/goods-16.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CG1976" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CV5254">
+                                            <div><img src="../static/images/lp-aw/goods-17.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5254" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CV5251">
+                                            <div><img src="../static/images/lp-aw/goods-18.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5251" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CG1978">
+                                            <div><img src="../static/images/lp-aw/goods-19.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CG1978" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CV5255">
+                                            <div><img src="../static/images/lp-aw/goods-20.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5255" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="cloth">
+                                        <a href="https://www.adidas.com.cn/item/CG1973">
+                                            <div><img src="../static/images/lp-aw/goods-21.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CG1973" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="pants">
+                                        <a href="https://www.adidas.com.cn/item/CG1981">
+                                            <div><img src="../static/images/lp-aw/goods-22.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CG1981" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="pants">
+                                        <a href="https://www.adidas.com.cn/item/CV5257">
+                                            <div><img src="../static/images/lp-aw/goods-23.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5257" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="pants">
+                                        <a href="https://www.adidas.com.cn/item/CV5053">
+                                            <div><img src="../static/images/lp-aw/goods-24.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5053" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="pants">
+                                        <a href="https://www.adidas.com.cn/item/CV5294">
+                                            <div><img src="../static/images/lp-aw/goods-25.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5294" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="pants">
+                                        <a href="https://www.adidas.com.cn/item/CV5295">
+                                            <div><img src="../static/images/lp-aw/goods-26.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5295" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="pants">
+                                        <a href="https://www.adidas.com.cn/item/CV5248">
+                                            <div><img src="../static/images/lp-aw/goods-27.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5248" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="pants">
+                                        <a href="https://www.adidas.com.cn/item/CW3558">
+                                            <div><img src="../static/images/lp-aw/goods-28.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CW3558" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="pants">
+                                        <a href="https://www.adidas.com.cn/item/CG1980">
+                                            <div><img src="../static/images/lp-aw/goods-29.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CG1980" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+                                    </div>
+
+                            <!-- </div>
+                            <div class="tab-datails-info show float-clearfix"> -->
+
+									<div class="pants">
+                                        <a href="https://www.adidas.com.cn/item/CV5256">
+                                            <div><img src="../static/images/lp-aw/goods-30.png" alt=""></div>
+                                        </a>
+                                            <div class="mask"></div>
+                                            <div class="look-goods">
+                                                <a href="https://www.adidas.com.cn/item/CV5256" class="btn btn-black btn-have-arrow">
+                                                    <span>点击查看商品</span>
+                                                </a>
+                                            </div>
+                                    </div>                                                                                                   
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="carousels-content">
+                        <div class="carousels-top">
+                            <img src="images/blank.gif"
+    							data-image='{"standard":{"high":"", "normal":"../static/images/lp-aw/pc.png"},
+    								"medium":{"high":"", "normal":"../static/images/lp-aw/mb.png"},
+    								"small":{"high":"", "normal":"../static/images/lp-aw/mb.png"}
+    						}' />
+                        </div>
+                        <div class="carousels-titles">
+                            <img src="images/blank.gif"
+    							data-image='{"standard":{"high":"", "normal":"../static/images/lp-aw/pc-lookbook.png"},
+    								"medium":{"high":"", "normal":"../static/images/lp-aw/mb-lookbook.png"},
+    								"small":{"high":"", "normal":"../static/images/lp-aw/mb-lookbook.png"}
+    						}' />
+                        </div>
+                        <div class="carousels-swiper">
+                            <div class="swiper-container event-carousels">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#"  class="swiper-img-1">
+                                            <img src="../static/images/lp-aw/img-1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide"  >
+                                        <a href="#" class="swiper-img-2">
+                                            <img src="../static/images/lp-aw/img-2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="swiper-img-3">
+                                            <img src="../static/images/lp-aw/img-3.png" alt="" >
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="swiper-img-4">
+                                            <img src="../static/images/lp-aw/img-4.png" alt="" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </section>
+
+			<%include _includes/modules/footer.html %>
+			<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+		</div>
+	</body>
+
+</html>

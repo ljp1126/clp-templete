@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title>抽奖活动</title>
+	<%include _includes/css.html %>
+	<link rel="stylesheet" type="text/css" href="css/lp-dilraba-lottery-1.css">
+	<%include _includes/js.html %>
+	<script type="text/javascript" src="js/lp-dilraba-lottery-1.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header-draw.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+
+			<article class="article start-draw-inner">
+                <img src="images/blank.gif"
+                    data-image='{
+                    "standard":{"high":"", "normal":"../static/images/lp-dilraba-lottery/parts-1-01.jpg"},
+                    "medium":{"high":"",  "normal":"../static/images/lp-dilraba-lottery/parts-1-01-m.jpg"},
+                    "small":{"high":"", "normal":"../static/images/lp-dilraba-lottery/parts-1-01-m.jpg"}}'
+                />
+
+				<div class="ad-logo">
+					<img src="../static/images/lp-dilraba-lottery/logo-pc.png" alt="">
+				</div>
+				<!-- 抽取玺包 -->
+				<div class="extract-row">
+					<ul>
+						<li>
+							<div class="lang-bg">
+                                <img src="images/blank.gif"
+                                    data-image='{
+                                    "standard":{"high":"", "normal":"../static/images/lp-dilraba-lottery/parts-1-02.jpg"},
+                                    "medium":{"high":"",  "normal":"../static/images/lp-dilraba-lottery/parts-1-02-m.jpg"},
+                                    "small":{"high":"", "normal":"../static/images/lp-dilraba-lottery/parts-1-02-m.jpg"}}'
+                                />
+							</div>
+							<div class="lang-text">
+								<p class="lang-header">热巴打包女生能量</p>
+								<p class="lang-details">亲选单品+时尚包袋</p>
+							</div>
+                            <a class="btn-base-white btn-draw-handle e-draw-handle">
+                                立即抽取<img src="../static/images/lp-dilraba-lottery/arrow.png"/>
+                            </a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- 登陆注册弹层 -->
+				<div class="login-register-tamplate none">
+					<span class="btn-close e-close-login-register"></span>
+					<p>登陆会员 即可参与抽奖</p>
+					<ul class="row">
+						<li class="col-12-6"><a class="btn-base-white btn-login-handle">登陆<img src="../static/images/lp-dilraba-lottery/arrow.png"/></a></li>
+						<li class="col-12-6"><a class="btn-base-white btn-register-handle">注册<img src="../static/images/lp-dilraba-lottery/arrow.png"/></a></li>
+					</ul>
+				</div>
+			</article>
+
+			<article class="article footer-draw-inner">
+                <img src="images/blank.gif"
+                    data-image='{
+                    "standard":{"high":"", "normal":"../static/images/lp-dilraba-lottery/footer-bg.png"},
+                    "medium":{"high":"",  "normal":"../static/images/lp-dilraba-lottery/footer-bg-m.jpg"},
+                    "small":{"high":"", "normal":"../static/images/lp-dilraba-lottery/footer-bg-m.jpg"}}'
+                />
+
+                <a class="view-the-rules e-link-handle"></a>
+			</article>
+
+		</section>
+
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+		<!-- 查看活动规则  -->
+		<script id="active-regular" type="text/template">
+			<div class="dialog">
+				<div class="dialog-container">
+					<div class="scroll">
+						<div class="scroller-wrap">
+							<p><img src="../static/images/lp-dilraba-lottery/logo.png" alt=""></p>
+							<p>女生能量包抽奖活动规则</p>
+							<p><span>活动日期：</span> 3月7日 10:00 - 24:00</p>
+							<p>活动详情：</p>
+							<p>活动为期 1 天，共 50 份奖品，抽完为止</p>
+							<p>adidas club会员登录后即可参与抽奖</p>
+                            <p>抽奖结果由系统随机生成，实时告知</p>
+                            <p>每个账户只有一次中奖机会</p>
+						</div>
+					</div>
+				</div>
+				<span class="btn-close"></span>
+			</div>
+		</script>
+
+	</div>
+</body>
+</html>

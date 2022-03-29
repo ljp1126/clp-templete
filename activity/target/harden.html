@@ -1,0 +1,969 @@
+<html>
+    <head>
+        <%include _includes/meta.html %>
+        <title>adidias-neo</title>
+        <%include _includes/css.html %>
+        <%include _includes/js.html %>
+    </head>
+    <body>
+        <div id="wrapper">
+            <%include _includes/modules/header.html %>
+            <section class="container">
+    
+            <style type="text/css">
+                .fingerpost-winning .fingerpost-draw{
+                    position: relative;
+                }
+                .fingerpost-winning .fingerpost-draw .fingerpost-draw-link{
+                    position: absolute;
+                    top: 8%;
+                    left: 56%;
+                    width: 19.5%;
+                    height: 1.5%;
+                }
+                .fingerpost-winning .fingerpost-draw .fingerpost-draw-link-02{
+                    position: absolute;
+                    top: 9.4%;
+                    left: 25.4%;
+                    width: 10.1%;
+                    height: 1.5%;
+                }
+                .fingerpost-winning .fingerpost-draw-ic {
+                    position: fixed;
+                    top: 0;
+                    height: 30px;
+                    width: 100%;
+                    left: 0;
+                    }
+                    .fingerpost-winning .fingerpost-draw-ic .fingerpost-draw-ic-t {
+                    position: relative;
+                    max-width: 700px;
+                    margin: 0 auto;
+                    }
+                    .fingerpost-winning .fingerpost-draw-ic .fingerpost-draw-ic-t .close-fingerpost-btn {
+                    position: absolute;
+                    width: 30px;
+                    height: 36px;
+                    /* top: 3%; */
+                    right: 20px;
+                    line-height: 36px;
+                    }
+                    .fingerpost-winning .close-fingerpost-btn {
+                    position: fixed;
+                    width: 30px;
+                    height: 36px;
+                    top: 3%;
+                    right: 27%;
+                    line-height: 36px;
+                    }
+                    .fingerpost-winning .close-fingerpost-btn .icon-close {
+                    background: #fff;
+                    position: relative;
+                    top: 30px;
+                    left: 72px;
+                    width: 1px;
+                    height: 20px;
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    display: inline-block;
+                    line-height: 36px;
+                    }
+                    .fingerpost-winning .close-fingerpost-btn .icon-close:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 1px;
+                    height: 20px;
+                    background: #fff;
+                    -webkit-transform: rotate(270deg);
+                    -moz-transform: rotate(270deg);
+                    -o-transform: rotate(270deg);
+                    -ms-transform: rotate(270deg);
+                    transform: rotate(270deg);
+                    }
+                    .fingerpost-winning .close-fingerpost-btn .icon-close:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    }
+
+                .link-wrap{
+                    width:67%;
+                    overflow: hidden;
+                    height:100%;
+                    position: absolute;
+                    left:16%;
+                    top:0;
+                }
+                .link-wrap a{
+                    float: left;
+                    width:33%;
+                    display: block;
+                    height: 100%;
+                }
+            /* .dialog .icon-close{
+                background-position:573px 0px;
+                top:2%;
+                right:10%;
+                position: fixed;
+                z-index: 1000911
+            } */
+
+            .dialog-opacity .dialog-scroll-container .dialog{
+                margin: 0;
+                max-width: 2000px;
+                /* height: 100vh; */
+                /* overflow:auto;
+                -webkit-overflow-scrolling: touch;  */
+            }
+            .article-harden-4{
+                margin-top:70px;
+            } 
+            .article-harden-5{
+                margin-bottom:72px;
+            } 
+            .article-harden-6{
+                margin-bottom:260px;
+            } 
+            .article-harden-8{
+                margin-bottom:162px;
+            } 
+             .center-box{
+                width:67%;
+                min-width: 1300px;
+                margin:0 auto;
+            }
+            .article-harden{
+                position: relative;
+            }
+            .article-harden .link{
+                position: absolute;
+                width:100%;
+                height:100%;
+                top:0;
+                left:0;
+            }
+            .article-harden .product-list{
+                float: left;
+                width:33.3%;
+            }
+            .article-harden .product-list .buy{
+                width: 162px;
+                text-align: center;
+                font:22px/54px "";
+                background: #000;
+                color: #fff;
+            }
+            .article-harden .product-list .product-img,.buy{
+                margin-left:50%;
+                transform: translateX(-50%);
+            }
+            .article-harden .product-list .product-img{
+                position: relative;
+            }
+
+            .article-harden .product-list .product-img img{
+                
+            }
+
+            .article-harden .top-common{
+                position: absolute;
+                width:59%;
+                height: auto;
+                left:20%;
+                bottom:20%;
+                z-index: 2;
+                /* cursor: pointer; */
+            }
+            .article-harden .top-common .top-common-click{
+                width: 19.1%;
+                height: 12%;
+                z-index: 3;
+                position: absolute;
+                bottom: 18%;
+                left: 4.4%;
+            }
+            .article-harden .harden-top a {
+                display: block;
+            }
+            .article-harden .swiper-container1{
+                padding-top:20px;
+                overflow: hidden;
+                width:67%;
+                min-width:1300px;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translate(-50%,50%);
+            }
+
+            .article-harden .swiper-container1 .swiper-slide .active-img{
+                display: none;
+            }
+            .article-harden .swiper-container1 .swiper-slide-active img{
+                display: none;         
+            }
+            .article-harden .swiper-container1 .swiper-slide-active .active-img{
+                border: 2px solid #fff;
+                display: block;
+                transform: translateY(-2%);
+            }
+
+            .article-harden .swiper-wrap{
+                position: absolute;
+                width:100%;
+                height:100%;
+                max-width: 288px;
+                left:0;
+                top:0;
+                background: #000;
+                opacity: 0.7;
+            }
+            .article-harden .swiper-container1 .swiper-slide-active .swiper-wrap{
+                opacity: 0;
+            }
+
+            .article-harden .harden-footer-item{
+                float: left;
+                position: relative;
+                margin-right:20px;
+            }
+
+            .article-harden .harden-footer-item .swiper-wrap{
+                max-width: 320px
+            }
+
+            .article-harden .harden-footer-item .box{
+                /* opacity: 0; */
+                display: none;
+                transition: opacity 1s;
+            }
+
+            .article-harden .harden-footer-item:hover .box{
+                display: block;
+            }
+
+            .article-harden .harden-footer-item .footer-buy{
+                position: absolute;
+                left:50%;
+                top:50%;
+                box-sizing: border-box;
+                transform: translate(-50%,-50%);
+            }
+
+            .article-harden .harden-footer-item .footer-buy span{
+                display: block;
+                color: #fff;
+                font:20px/30px "";
+                text-align: center;
+                white-space: nowrap;
+            }
+
+            .article-harden .harden-footer-item .footer-buy a{
+                display: block;
+                background: #fff;
+                margin: 16px auto;
+                font: 20px/54px "";
+                text-align: center;
+                color: #000;
+            }
+
+            .article-harden .harden-footer-item:last-child{
+                margin-right:0;
+            }
+
+            .article-harden .swperBgImg a{
+                display: none;
+            }
+            .article-harden .swperBgImg a:nth-of-type(1){
+                display: block;
+            }
+            .aricle-btn{
+                height:48px;
+                margin-bottom:160px;
+            }
+
+            .aricle-btn .btn-black{
+                position: absolute;
+                left:50%;
+                transform: translateX(-50%);
+                min-width: 190px;
+            }
+            
+            
+            @media (max-width: 1368px) {
+                .article-harden-4{
+                    margin-top:35px;
+                } 
+                .article-harden-5{
+                    margin-bottom:36px;
+                } 
+                .article-harden-6{
+                    margin-bottom:200px;
+                } 
+                .article-harden-8{
+                    margin-bottom:80px;
+                }
+                .center-box{
+                    width: 100%;
+                    min-width: 10px;
+                }
+                .article-harden .swiper-container1{
+                    min-width: 10px;
+                    width: 100%;
+                    margin-left:1%; 
+                }
+
+                .article-harden .harden-footer .harden-footer-item{
+                   max-width: 23%;
+                }
+
+                .article-harden .harden-footer-item .footer-buy span{
+                    display: block;
+                    color: #fff;
+                    font:16px/30px "";
+                    text-align: center;
+                }
+
+                .article-harden .harden-footer-item .footer-buy a{
+                    font: 16px/30px "";
+                }
+
+                .article-harden .harden-footer{
+                    margin-left:2.5%;
+                }
+
+                .harden-footer-mob{
+                    padding:0 43px; 
+                }
+            }
+
+            @media (max-width: 1024px) {
+                .fingerpost-winning .fingerpost-draw .fingerpost-draw-link{
+                    left: 15%;
+                    top: 10.2%;
+                    width: 68%;
+                }
+                .aricle-btn{
+                    margin-bottom:50px;
+                }
+                .article-harden-6{
+                    margin-bottom:160px;
+                } 
+                /* .dialog .dialog-container .icon-close{
+                    position: fixed;
+                    background-position:494px -20px;
+                    width:24px;
+                    height:22px;
+                } */
+                .article-harden .harden-footer{
+                   width: 780px;
+                   margin: 0 auto;
+                }
+
+                .article-harden .harden-footer .harden-footer-item{
+                    margin: 40px;
+                    max-width: 400px;
+                }
+                
+                .article-harden .harden-footer .harden-footer-item:nth-child(2n){
+                    margin-right:0
+                }
+
+                .harden-footer-mob > a{
+                    display: block;
+                    margin-bottom:15px;
+                    
+                }
+                .harden-footer-mob > a >img{
+                    display:block;
+                    margin:0 auto;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .link-wrap{
+                    width:100%;
+                    left: 0;
+                }
+                .article-harden-4{
+                    margin-top:0px;
+                } 
+                .article-harden-5{
+                    margin-bottom:25px;
+                }
+
+                .article-harden-6{
+                    margin-bottom:100px;
+                }
+                
+                .article-harden .top-common{
+                    position: absolute;
+                    width:59%;
+                    height: auto;
+                    left:20%;
+                    bottom:20%;
+                    z-index: 2;
+                    /* cursor: pointer; */
+                }
+                .article-harden .top-common .top-common-click{
+                    width: 36.1%;
+                    height: 14%;
+                    bottom: 15%;
+                }
+                /* .article-harden .top-common{
+                    width:80%;
+                    height: auto;
+                    left:10%;
+                    bottom:25%;
+                } */
+
+                .article-harden .product-list .product-img{
+                    width: 100%;
+                }
+                .article-harden .product-list .product-img img{
+                    width:100%;
+                }
+
+                .article-harden .swiper-container .swiper-wrapper{
+                   
+                }
+
+                .article-harden .product-list .buy{
+                    width: 66px;
+                    text-align: center;
+                    font:12px/22px "";
+                    background: #000;
+                    color: #fff;
+                }
+                .article-harden .swiper-container1{
+                    min-width: 10px;
+                    margin-left:16px;
+                    padding-top:6px;
+                    overflow: hidden;
+                    width:100%;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    transform: translate(-50%,50%);
+                }
+                .harden-footer-mob > a{
+                    display:block;
+                    margin: 0 auto;
+                    margin-bottom:15px;
+                }
+                .harden-footer-mob{
+                    padding:0 20px; 
+                }
+            }
+            @media (max-width: 424px) {
+                .fingerpost-winning .close-fingerpost-btn .icon-close {
+                    left: 93px;
+                    top:13px;
+                }
+                .article-harden .top-common{
+                    width:90%;
+                    height: auto;
+                    left:5%;
+                    bottom:22%;
+                }
+            }
+            @media (max-width: 375px) {
+                .article-harden .top-common{
+                    width:90%;
+                    height: auto;
+                    left:5%;
+                    bottom:22%;
+                }
+                .article-harden-6{
+                    margin-bottom:80px;
+                }
+                .harden-footer-mob{
+                    padding:0 20px; 
+                }
+            }   
+            </style>
+            <script type="text/javascript">
+                
+            </script>
+             
+                <article class="article article-harden">
+                    <div class="harden-top scroll events-scroll-loop2">
+                        <div class="scroller-wrap">
+                            <ul>
+                                <li>
+                                    <a href="https://www.adidas.com.cn/basketball_jamesharden" class="harden-top-img">
+                                        <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                                            "standard":{"high":"", "normal":"./images/harden/harden-pc-top_01.jpg"},
+                                            "medium":{"high":"",  "normal":"./images/harden/harden-pc-top_01.jpg"},
+                                            "small":{"high":"", "normal":"./images/harden/harden-mob-top_01.jpg"}}' 
+                                        />
+                                    </a>
+                                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                                        "standard":{"high":"", "normal":"./images/harden/harden-pc-writing_01.jpg"},
+                                        "medium":{"high":"",  "normal":"./images/harden/harden-pc-writing_01.jpg"},
+                                        "small":{"high":"", "normal":"./images/harden/harden-mob-writing.jpg"}}' 
+                                    />
+                                </li>
+                                <li>
+                                    <a href="https://www.adidas.com.cn/basketball_derrickrose" class="harden-top-img">
+                                        <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                                            "standard":{"high":"", "normal":"./images/harden/harden-pc-top_02.jpg"},
+                                            "medium":{"high":"",  "normal":"./images/harden/harden-pc-top_02.jpg"},
+                                            "small":{"high":"", "normal":"./images/harden/harden-mob-top_02.jpg"}}' 
+                                        />
+                                    </a>
+                                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                                        "standard":{"high":"", "normal":"./images/harden/harden-pc-writing.jpg"},
+                                        "medium":{"high":"",  "normal":"./images/harden/harden-pc-writing.jpg"},
+                                        "small":{"high":"", "normal":"./images/harden/harden-mob-writing.jpg"}}' 
+                                    />
+                                </li>    
+                            </ul>
+                        </div>         
+                    </div>
+                    <div class="top-common">
+                        <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                            "standard":{"high":"", "normal":"./images/harden/hander-pc-topCommon-new.png"},
+                            "medium":{"high":"",  "normal":"./images/harden/hander-pc-topCommon-new.png"},
+                            "small":{"high":"", "normal":"./images/harden/hander-mob-topCommon-new.png"}}' 
+                        />  
+                        <a href="javascript:void(0)" class="top-common-click"></a>
+                    </div>  
+                </article>
+                <article class="article article-harden">
+                        <a href="https://www.adidas.com.cn/basketball_jamesharden" class="link"></a>
+                        <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                            "standard":{"high":"", "normal":"./images/harden/harden-pc_02.jpg"},
+                            "medium":{"high":"",  "normal":"./images/harden/harden-pc_02.jpg"},
+                            "small":{"high":"", "normal":"./images/harden/harden-mob_02.jpg"}}' 
+                        />
+                </article>
+                <article class="article article-harden">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"./images/harden/harden-pc_03.jpg"},
+                        "medium":{"high":"",  "normal":"./images/harden/harden-pc_03.jpg"},
+                        "small":{"high":"", "normal":"./images/harden/harden-mob_03.jpg"}}' 
+                    />
+                    <div class="link-wrap">
+                        <a href="https://www.adidas.com.cn/item-b/AQ0048"></a>
+                        <a href="https://www.adidas.com.cn/item-b/DN8368"></a>
+                        <a href="https://www.adidas.com.cn/item-b/DN8363"></a>
+                    </div>    
+                </article>
+                <!-- <article class="article article-harden">
+                    <div class="center-box float-clearfix">
+                        <div class="product-list">
+                            <div class="product-img">
+                                    <a href="https://www.adidas.com.cn/item-b/AQ0048" class="link"></a>
+                                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                                        "standard":{"high":"", "normal":"./images/harden/harden-pc_03.jpg"},
+                                        "medium":{"high":"",  "normal":"./images/harden/harden-pc_03.jpg"},
+                                        "small":{"high":"", "normal":"./images/harden/harden-mob_03.jpg"}}' 
+                                    />
+                            </div>
+                            <div class="buy">立即选购</div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-img">
+                                    <a href="https://www.adidas.com.cn/item-b/DN8368" class="link"></a>
+                                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                                        "standard":{"high":"", "normal":"./images/harden/harden-pc_04.jpg"},
+                                        "medium":{"high":"",  "normal":"./images/harden/harden-pc_04.jpg"},
+                                        "small":{"high":"", "normal":"./images/harden/harden-mob_04.jpg"}}' 
+                                    />
+                            </div>
+                            <div class="buy">立即选购</div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-img">
+                                    <a href="https://www.adidas.com.cn/item-b/DN8363" class="link"></a>
+                                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                                        "standard":{"high":"", "normal":"./images/harden/harden-pc_05.jpg"},
+                                        "medium":{"high":"",  "normal":"./images/harden/harden-pc_05.jpg"},
+                                        "small":{"high":"", "normal":"./images/harden/harden-mob_05.jpg"}}' 
+                                    />
+                            </div>
+                            <div class="buy">立即选购</div>
+                        </div>
+                    </div>
+                </article> -->
+                <article class="article article-harden article-harden-4">
+                    <a href="https://www.adidas.com.cn/basketball_derrickrose" class="link"></a>
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"./images/harden/harden-pc_06.jpg"},
+                        "medium":{"high":"",  "normal":"./images/harden/harden-pc_06.jpg"},
+                        "small":{"high":"", "normal":"./images/harden/harden-mob_06.jpg"}}' 
+                    />
+                </article>
+                <article class="article article-harden article-harden-5">
+                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                        "standard":{"high":"", "normal":"./images/harden/harden-pc_04.jpg"},
+                        "medium":{"high":"",  "normal":"./images/harden/harden-pc_04.jpg"},
+                        "small":{"high":"", "normal":"./images/harden/harden-mob_04.jpg"}}' 
+                    />
+                    <div class="link-wrap">
+                        <a href="https://www.adidas.com.cn/item-b/BB7658"></a>
+                        <a href="https://www.adidas.com.cn/item-b/DN8369"></a>
+                        <a href="https://www.adidas.com.cn/item-b/DN8370"></a>
+                    </div>    
+                </article>
+                <article class="article article-harden article-harden-6">
+                    <!-- 背景图片 -->
+                    <div class="swperBgImg">
+                            <a href="https://www.adidas.com.cn/basketball_jamesharden">
+                                    <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                                        "standard":{"high":"", "normal":"./images/harden/harden-pc-swiper_01.jpg"},
+                                        "medium":{"high":"",  "normal":"./images/harden/harden-pc-swiper_01.jpg"},
+                                        "small":{"high":"", "normal":"./images/harden/harden-mob-swiper_01.jpg"}}' 
+                                    />
+                            </a>
+                            <a href="https://www.adidas.com.cn/basketball_jamesharden">
+                                <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                                    "standard":{"high":"", "normal":"./images/harden/harden-pc-swiper_02.jpg"},
+                                    "medium":{"high":"",  "normal":"./images/harden/harden-pc-swiper_02.jpg"},
+                                    "small":{"high":"", "normal":"./images/harden/harden-mob-swiper_02.jpg"}}' 
+                                />
+                            </a>
+                            <a href="https://www.adidas.com.cn/basketball_derrickrose">
+                                <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                                    "standard":{"high":"", "normal":"./images/harden/harden-pc-swiper_03.jpg"},
+                                    "medium":{"high":"",  "normal":"./images/harden/harden-pc-swiper_03.jpg"},
+                                    "small":{"high":"", "normal":"./images/harden/harden-mob-swiper_03.jpg"}}' 
+                                />
+                            </a>
+                            <a href="https://www.adidas.com.cn/basketball_derrickrose">
+                                <img src="https://img.adidas.com.cn/images/blank.gif" data-image='{
+                                    "standard":{"high":"", "normal":"./images/harden/harden-pc-swiper_04.jpg"},
+                                    "medium":{"high":"",  "normal":"./images/harden/harden-pc-swiper_04.jpg"},
+                                    "small":{"high":"", "normal":"./images/harden/harden-mob-swiper_04.jpg"}}' 
+                                />
+                            </a>
+                            
+                    </div>
+                    <!-- 轮播 -->
+                    <div class="swiper-container1">
+                        <div class="swiper-wrapper float-clearfix swiper-wrapper1">
+                                <!-- 第一屏 -->
+                            <div class="swiper-slide" data-index="0">
+                                <!-- 轮播小图 -->
+                                <div class="slide">
+                                    <div class="swiper-img none-sm">
+                                        <a><img src="./images/harden/harden-pc_10.jpg"></a>
+                                        <a><img class="active-img" src="./images/harden/harden-pc-active_10.jpg"></a>
+                                    </div>
+                                    <div class="mobile-swiper none block-sm">
+                                        <a><img src="./images/harden/harden-pc_10.jpg"></a>
+                                        <a><img class="active-img" src="./images/harden/harden-pc-active_10.jpg"></a>
+                                    </div>
+                                </div>
+                                <!-- 轮播遮罩 -->
+                                <div class="swiper-wrap"></div>
+                            </div>
+                            <!-- 第二屏 -->
+                            <div class="swiper-slide" data-index="1">
+                                <!-- 轮播小图 -->
+                                <div class="slide">
+                                    <div class="swiper-img none-sm">
+                                        <a><img src="./images/harden/harden-pc_11.jpg"></a>
+                                        <a><img class="active-img" src="./images/harden/harden-pc-active_11.jpg"></a>
+                                    </div>
+                                    <div class="mobile-swiper none block-sm">
+                                        <a><img src="./images/harden/harden-pc_11.jpg"></a>
+                                        <a><img class="active-img" src="./images/harden/harden-pc-active_11.jpg"></a>
+                                    </div>
+                                </div>
+                                <!-- 轮播遮罩 -->
+                                <div class="swiper-wrap"></div>
+                            </div>
+                            <!-- 第三屏 -->
+                            <div class="swiper-slide" data-index="2">
+                                <!-- 轮播小图 -->
+                                <div class="slide">
+                                    <div class="swiper-img none-sm">
+                                        <a><img src="./images/harden/harden-pc_12.jpg"></a>
+                                        <a><img class="active-img" src="./images/harden/harden-pc-active_12.jpg"></a>
+                                    </div>
+                                    <div class="mobile-swiper none block-sm">
+                                        <a><img src="./images/harden/harden-pc_12.jpg"></a>
+                                        <a><img class="active-img" src="./images/harden/harden-pc-active_12.jpg"></a>
+                                    </div>
+                                </div>
+                                <!-- 轮播遮罩 -->
+                                <div class="swiper-wrap"></div>
+                            </div>
+                            <!-- 第四屏 -->
+                            <div class="swiper-slide" data-index="3">
+                                <!-- 轮播小图 -->
+                                <div class="slide">
+                                    <div class="swiper-img none-sm">
+                                        <a><img src="./images/harden/harden-pc_13.jpg"></a>
+                                        <a><img class="active-img" src="./images/harden/harden-pc-active_13.jpg"></a>
+                                    </div>
+                                    <div class="mobile-swiper none block-sm">
+                                            <a><img src="./images/harden/harden-pc_13.jpg"></a>
+                                            <a><img class="active-img" src="./images/harden/harden-pc-active_13.jpg"></a>
+                                    </div>
+                                </div>
+                                <!-- 轮播遮罩 -->
+                                <div class="swiper-wrap"></div>
+                            </div>    
+                        </div>
+                    </div>    
+                </article>
+                <article class="aricle-btn article-harden article-harden-7">
+                    <a class="btn btn-black  btn-have-arrow" href="https://www.adidas.com.cn/search?pf=34-2976&cf=2-8&pr=-&fo=c2&pn=1&pageSize=120&c=%E9%9E%8B%E7%B1%BB&isSaleTop=false"><span>点击查看更多</span></a>
+                </article>
+                <article class="aricle-btn article-harden article-harden-7">
+                    <a class="btn btn-black  btn-have-arrow" href="https://www.adidas.com.cn/search?pf=34-2976&cf=2-9&pr=-&fo=c2&pn=1&pageSize=120&c=%E6%9C%8D%E8%A3%85&isSaleTop=false">
+                        <span>点击查看更多</span>
+                    </a>
+                </article>
+                <article class="article article-harden article-harden-8">
+                    <div class="center-box">
+                        <div class="harden-footer float-clearfix none-sm">
+                            <div class="harden-footer-item">
+                                <img src="./images/harden/harden-pc_15.jpg">
+                                <div class="box">
+                                    <div class="swiper-wrap"></div>
+                                    <div class="footer-buy">
+                                        <span>选购</span>
+                                        <span>James Harden系列</span>
+                                        <a href="https://www.adidas.com.cn/basketball_jamesharden">立即选购</a>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="harden-footer-item">
+                                <img src="./images/harden/harden-pc_16.jpg">
+                                <div class="box">
+                                    <div class="swiper-wrap"></div>
+                                    <div class="footer-buy">
+                                        <span>选购</span>
+                                        <span>Derrick Rose系列</span>
+                                        <a href="https://www.adidas.com.cn/basketball_derrickrose">立即选购</a>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="harden-footer-item">
+                                <img src="./images/harden/harden-pc_17.jpg">
+                                <div class="box">
+                                    <div class="swiper-wrap"></div>
+                                    <div class="footer-buy">
+                                        <span>选购</span>
+                                        <span>Damian Lillard系列</span>
+                                        <a href="https://www.adidas.com.cn/basketball_damianlillard">立即选购</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="harden-footer-item">
+                                <img src="./images/harden/harden-pc_18.jpg">
+                                <div class="box">
+                                    <div class="swiper-wrap"></div>
+                                    <div class="footer-buy">
+                                        <span>选购</span>
+                                        <span>Miadidas篮球鞋系列</span>
+                                        <a href="https://www.adidas.com.cn/basketball_customise_segment">立即选购</a>
+                                    </div>
+                                </div>   
+                            </div> 
+                        </div>
+                        <div class="harden-footer-mob none block-sm">
+                            <a href="https://www.adidas.com.cn/basketball_jamesharden">
+                                <img src="./images/harden/harden-mob_15.jpg" />
+                            </a>
+                            <a href="https://www.adidas.com.cn/basketball_derrickrose">
+                                <img src="./images/harden/harden-mob_16.jpg" />
+                            </a>
+                            <a href="hhttps://www.adidas.com.cn/basketball_damianlillard">
+                                <img src="./images/harden/harden-mob_17.jpg" />
+                            </a>
+                            <a href="hhttps://www.adidas.com.cn/basketball_customise_segment">
+                                <img src="./images/harden/harden-mob_18.jpg" />
+                            </a>
+                        </div>       
+                    </div>
+                    
+                </article>
+            </section>
+            <%include _includes/modules/footer.html %>
+            <!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+
+            <script id="women-shoe-fingerpost" type="text/template">
+				<div class="dialog">
+					<div class="dialog-container">
+						<div class="fingerpost-winning">
+							<div class="fingerpost-draw">
+								<div class="fingerpost-draw-o none block-sm e-close-fingerpost-btn"><a class="close-fingerpost-btn"><i class="icon icon-close"></i></a></div>
+								<img src="images/blank.gif"
+									data-image='{
+									"standard":{"high":"", "normal":"./images/harden/harden-pc-dialog-new.jpg"},
+									"medium":{"high":"",  "normal":"./images/harden/harden-pc-dialog-new.jpg"},
+									"small":{"high":"", "normal":"./images/harden/harden-mob-dialog-new.jpg"}}'
+                                />
+                                <a href="https://www.adidas.com.cn/basketball_summerpack" class="fingerpost-draw-link" target="_blank"></a>
+                                <a href="https://www.adidas.com.cn/basketball_summerpack" class="fingerpost-draw-link-02 none-sm" target="_blank"></a>
+							</div>
+							<div class="fingerpost-draw-ic none-sm">
+								<div class="fingerpost-draw-ic-t">
+									<a class="close-fingerpost-btn e-close-fingerpost-btn"><i class="icon-close"></i></a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</script>
+
+
+        </div>
+        <script>
+            $(function(){
+                let spaceBetween = 10;
+                let slidesPerView = 3.5;
+                let loop = true;
+                let centeredSlides = true;
+                let simulateTouch = true;
+                let timer;
+
+                if($.spice.getWindowWidth()>768){
+                    spaceBetween = 20;
+                    slidesPerView = 4.1;
+                    loop = false;
+                    centeredSlides = false;
+                    simulateTouch = false;
+                };
+                let mySwiper1 = new Swiper('.swiper-container1', {
+                    slidesPerView : slidesPerView,
+                    simulateTouch : simulateTouch,
+                    spaceBetween : spaceBetween,
+                    centeredSlides: centeredSlides,
+                    initialSlide: 1,
+                    speed:600,
+                    slideToClickedSlide:true,
+                    //loop:loop,
+                    autoplay:3000,
+                    onInit: function(swiper){
+                        clearInterval(timer);
+                        if($.spice.getWindowWidth()>750){
+                            let oIndex = 0;
+                            let changeSwpier = (index)=>{
+                                $('.swiper-wrapper1 > .swiper-slide').removeClass('swiper-slide-active');
+                                $('.swiper-wrapper1 > .swiper-slide:eq('+ index  + ')').addClass('swiper-slide-active');
+                                $('.swperBgImg > a').hide();
+                                $('.swperBgImg > a:eq('+ index  + ')').show();
+                            };
+                            
+                            $('.swiper-slide').on('tap',function(){
+                                clearInterval(timer);
+                                let _index = $(this).attr('data-index');
+                                oIndex = _index;
+                                changeSwpier(_index);
+                                timer = setInterval(()=>{
+                                    if(oIndex<3){
+                                        oIndex++;
+                                    }else{
+                                        oIndex = 0;
+                                    }
+                                    
+                                    changeSwpier(oIndex);
+                                },3000);
+                            })
+
+                            timer = setInterval(()=>{
+                                if(oIndex<3){
+                                    oIndex++;
+                                }else{
+                                    oIndex = 0;
+                                }
+                                
+                                changeSwpier(oIndex);
+                            },3000)
+                        }
+                        
+                       
+                    },
+                    onSlideChangeStart: function(swiper){
+                        // console.log(swiper);
+                        let _index = swiper.activeIndex;
+                        $('.swperBgImg > a').hide();
+                        $('.swperBgImg > a:eq('+ _index  + ')').show();
+                    },
+                });
+
+                var fingerpost = $.spice.dialog({
+                    template: $('#women-shoe-fingerpost').html(),
+                    dialogClass: 'fingerpost-winning-box',
+                    maskClose: true,
+                    initEvent: function (e) {
+                        var dialog = e.data.dialog;
+                        $('.icon-close', dialog.elem).on('tap', function () {
+                            dialog.hide();
+                        });
+                    }
+                });
+
+
+                fingerpost.elem.on('dialog.show-before', function () {
+                    $.spice.tools.changeImageSrc();
+                })
+                $('.top-common-click').on('tap', function (event) {
+                    fingerpost.show(function(){
+                        setTimeout(function () {
+                            $('.fingerpost-winning-box').data('iScroll') && $('.fingerpost-winning-box').data('iScroll').destroy();
+                            $('.fingerpost-winning-box .dialog-scroll-wrap').removeAttr('style');
+                            $('.fingerpost-winning-box').css('touch-action', 'auto');
+                            $('.overflow-hidden').css({
+                                'height': 100 + '%'
+                            })
+                        }, 0);
+                    });	
+                })
+
+                //轮播
+                let mySwiper = new Swiper('.swiper-container', {
+                    effect : 'fade',
+                    autoplay: 5000
+                })
+
+                //弹窗
+                // var ruleDialog = $.spice.dialog({
+                //     template: $('#rule-dialog').html(),
+                //     dialogClass: 'rule-dialog',
+                //     initEvent: function (e) {
+                //         var dialog = e.data.dialog;
+                //         $('.icon-close', dialog.elem).on('tap', function () {
+                //             dialog.hide();
+                //         });
+                //     }
+                // });
+
+                // $('.top-common').on('tap', function () {
+                //     ruleDialog.show();
+                // });
+
+                // 内嵌轮播
+                $.spice.kvScroll('.events-scroll-loop2', {
+                    type: 'fade', 
+                    autoPlay: true,
+                    btn: false,
+                    loop: true,
+                    time: 3000,
+                });
+
+                // $('.icon-close').on('tap', function () {
+                //     fingerpost.hide();
+                // })
+
+            })
+        </script>    
+    </body>
+    </html>
+    

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%include _includes/meta.html %>
+	<title>lp-deerupt-campaign</title>
+	<%include _includes/css.html %>
+
+	<%include _includes/js.html %>
+
+	<!-- <script type="text/javascript" src="libs/hotSpot/hotSpot.js"></script> -->
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+			<style type="text/css">
+				.article {
+					position: relative;
+				}
+
+				.article img {
+					width: 100%;
+				}
+
+				.swiper-container .swiper-wrapper {
+					height: auto;
+				}
+
+				.swiper-container .swiper-wrapper .swiper-slide {
+					position: relative;
+					height: auto;
+				}
+
+				.swiper-container .swiper-button-next,
+				.swiper-container .swiper-button-prev {
+					background: none;
+				}
+
+				.swiper-box {
+					position: relative;
+				}
+				.article-video .video-wrapper {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 50%;
+					transform: translateX(-50%);
+					cursor: pointer;
+				}
+				.video-box .video-content {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					top: 0;
+					left: 0;
+				}
+
+				.video-content .video {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					visibility: hidden;
+				}
+
+				.video-box.is-play .video-wrapper .video-content .video {
+					visibility: visible;
+				}
+				.pro-main .swiper-pagination {
+					left: 50%;
+					transform: translate(-50%, 0);
+					bottom: 2%;
+				}
+				.pro-main .swiper-pagination .swiper-pagination-bullet {
+					width: 10px;
+					height: 10px;
+					background-color: #f08279;
+					margin: 0 5px;
+					border-radius: 50%;
+					opacity: 1;
+				}
+				.pro-main .swiper-pagination .swiper-pagination-bullet-active {
+					background-color: #e8341c;
+				}
+				.pro-img{
+					position: absolute;
+					top: 18%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 50%;
+				}
+				.pro-img .swiper-pagination .swiper-pagination-bullet {
+					width: 10px;
+					height: 10px;
+					border: 1px solid #fff;
+					background: transparent;
+					margin: 0 5px;
+					border-radius: 50%;
+					opacity: 1;
+				}
+				.pro-img .swiper-pagination .swiper-pagination-bullet-active {
+					background-color: #fff;
+				}
+				.link {
+					position: absolute;
+					width: 32%;
+					height: 30%;
+					top: 18%;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+				.link2 {
+					top: 51%;
+				}
+				@media (max-width: 768px) {
+				
+					.pro-img{
+						top: 24%;
+						width: 90%;
+					}
+					
+				}
+			</style>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/pc_01.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_01.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_01.jpg&quot;}}">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/pc_02.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_02.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_02.jpg&quot;}}">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/pc_03.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_03.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_03.jpg&quot;}}">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/pc_04.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_04.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_04.jpg&quot;}}">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/pc_05.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_05.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_05.jpg&quot;}}">	
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/pc_06.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_06.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_06.jpg&quot;}}">						
+			</article>
+			<article class="article  article-video video-box">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/pc_07.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_07.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_07.jpg&quot;}}">	
+					<div class="video-wrapper e-video e-play-video-new">
+						<div class="video-content"></div>
+						<a class="video-play" href="javascript:void(0)">
+							<span class="video-code" data-video-code="02540630AEE7528F3F35109F9F77F2A8"></span>
+						</a>
+					</div>
+			</article>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/pc_08.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_08.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_08.jpg&quot;}}">	
+			</article>
+			<article class="article">
+				<div class="pro-main pro-main-sec">
+					<div class="swiper-container swiper-container-main">
+						<div class="swiper-wrapper" >
+							<div class="swiper-slide">
+								<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/1_09.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/m1_09.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/m1_09.jpg&quot;}}">	
+							</div>
+							<div class="swiper-slide">
+								<img src="https://img.adidas.com.cn/images/blank.gif" data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/2_09.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/m2_09.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/m2_09.jpg&quot;}}">	
+							</div>
+							<div class="swiper-slide">
+								<img src="https://img.adidas.com.cn/images/blank.gif"  data-image="{
+									&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/3_09.jpg&quot;},
+									&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/m3_09.jpg&quot;},
+									&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/m3_09.jpg&quot;}}">	
+							</div>
+						</div>
+						<div class="swiper-pagination "></div>
+					</div>
+				</div>
+			</article>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/pc_10.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_10.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_10.jpg&quot;}}">	
+					<div class="pro-img">
+						<div class="swiper-container swiper-container-main">
+							<div class="swiper-wrapper" >
+								<div class="swiper-slide">
+									<img src="https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/p1.png">	
+								</div>
+								<div class="swiper-slide">
+									<img src="https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/p2.png">	
+								</div>
+								<div class="swiper-slide">
+									<img src="https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/p3.png" >	
+								</div>
+								<div class="swiper-slide">
+									<img src="https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/p4.png">	
+								</div>
+								<div class="swiper-slide">
+									<img src="https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/p5.png" >	
+								</div>
+							</div>
+							<div class="swiper-pagination "></div>
+						</div>
+					</div>
+			</article>
+			<article class="article">
+				<img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+					&quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/pc_11.jpg&quot;},
+					&quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_11.jpg&quot;},
+					&quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2021/MAY/4D_GLIDE/CLP/new/en/mob_11.jpg&quot;}}">	
+					<a href="" class='link '></a>
+					<a href="" class='link link2 '></a>
+			</article>
+			<script type="text/javascript">
+				$(function() {
+					$.spice.lazyLoad('img[lazysrc]', {
+						attr: 'lazysrc'
+					});
+					$.spice.tools.changeImageSrc({
+						callBack: function(img, self) {
+							$.spice.lazyLoad('img[lazysrc]', {
+								attr: self.opt.lazyData,
+								prestrain: 1
+							});
+						}
+					});
+					$('.swiper-container-main').each(function(index, el) {
+						$(this).addClass('swiper-container-main' + '-' + index);
+						$(this).find('.swiper-pagination').addClass('swiper-pagination' + index);
+						var newSwiper;
+						if ($('.swiper-container-main').length) {
+							newSwiper = new Swiper(el, {
+								pagination: '.swiper-pagination' + index,
+								buttonClickable: true,
+								slidesPerView: 1,
+								// speed: 300,
+								noSwiping: true,
+								slidesPerGroup: 1,
+								centeredSlides: false,
+								autoplayDisableOnInteraction: false,
+								// loop: true,
+								paginationClickable: true,
+								onlyExternal: false,
+								// autoplay: 6000,
+								breakpoints: {
+									768: {
+										
+									}
+								}
+							});
+						}
+					})
+					var loadImgFun_index = function(imgArr, fn) {
+						var loadImgLen = 0,
+							errImgLen = 0;
+						var imgdefereds = [];
+						$(imgArr).each(function() {
+							var defered = $.Deferred();
+							$(this)
+								.on("load", function() {
+									defered.resolve();
+									loadImgLen++;
+								})
+								.on("error", function() {
+									defered.resolve();
+									errImgLen++;
+								});
+							if (this.complete)
+								setTimeout(function() {
+									defered.resolve();
+								}, 200);
+							imgdefereds.push(defered);
+						});
+						$.when.apply(null, imgdefereds).done(function() {
+							if (fn && $.isFunction(fn)) {
+								fn();
+							}
+						});
+					};
+					$(".e-video").each(function(index, el) {
+						$(el).addClass("home-video");
+						var videoCode = $(".video-code", el).data("video-code"),
+							videoId = "home_video_" + index;
+						loadImgFun_index($(".video-code img", el), function() {});
+						var bannerVideoId = videoCode;
+						var url = base + "/indexCCVideo.json";
+						var data = loxia.syncXhrGet(url, {
+							'bannerVideoId': bannerVideoId
+						});
+						var videoUrl = data.mp4VideoUrl;
+						// var videoUrl="https://cm15-c110-3.play.bokecc.com/flvs/ca/QxDEP/MaBAAuhdHl-30.mp4?t=1623549723&key=F17BC72A8745AD0551D123D085FF3517&tpl=10"
+						var html = '<video class="video" id="' +
+							videoId +
+							'"  webkit-playsinline="true" playsInline="true"><source src="' +
+							videoUrl +
+							'" ></source></video>';
+						$(".video-content", el).html(html);
+					});
+					$(".e-play-video-new").on("tap", function() {
+						var _parent_article = $(this).parents(".article-video"),
+							_video_s = $(this).parents(".article-video").find(".video"),
+							_video = $(this)
+							.parents(".article-video")
+							.find(".video");
+						_parent_article.toggleClass("is-play");
+						if (_parent_article.hasClass("is-play")) {
+							for (var i = 0; i < _video_s.length; i++) {
+								_video_s.eq(i)[0].pause();
+							}
+							_video[0].play();
+							_video[0].addEventListener("ended", function() {
+								this.play();
+							});
+						} else {
+							_video[0].pause();
+						}
+					});
+
+				});
+			</script>
+		</section>
+		<%include _includes/modules/footer.html %>
+	</div>
+</body>
+
+</html>

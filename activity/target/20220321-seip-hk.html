@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%include _includes/meta.html %>
+	<title>lp-deerupt-campaign</title>
+	<%include _includes/css.html %>
+
+	<%include _includes/js.html %>
+
+	<!-- <script type="text/javascript" src="libs/hotSpot/hotSpot.js"></script> -->
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<section class="container">
+
+
+			  
+        
+          
+   <style type="text/css">
+    .check-banner-swiper1 {
+      margin:  200px 0;
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+      height: 40px;
+      background: #000;
+      color: #fff;
+    }
+
+    .check-banner-swiper1 .swiper-box {
+      width: 100%;
+    }
+
+    .check-banner-swiper1 .swiper-wrapper {
+      align-items: center;
+    }
+
+    .check-banner-swiper1 .swiper-slide {
+      padding: 0 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .check-banner-swiper1 .swiper-slide a {
+      text-decoration: underline;
+    }
+    .check-banner-swiper1 .swiper-slide a:hover {
+      color: #fff;
+    }
+
+    .check-banner-swiper1 .dialog-close-box {
+      position: absolute;
+      right: 10px;
+      width: 14px;
+      height: 14px;
+      z-index: 5;
+      cursor: pointer;
+    }
+
+    .check-banner-swiper1 .dialog-close-box .icon-close-white::after {
+      background-position: -439px -22px;
+    }
+
+    @media (max-width: 1024px) {
+      .check-banner-swiper1 .swiper-slide {
+        padding: 0 30px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+
+      .check-banner-swiper1 .dialog-close-box .icon-close-white::after {
+        background-position: -205px -16px;
+      }
+    }
+  </style>   
+   <article class="article check-banner-swiper1"> 
+    <div class="swiper-box"> 
+     <div class="swiper-container swiper-main-check"> 
+      <div class="swiper-wrapper swiper-wrapper-check"> 
+       <div class="swiper-slide"> 
+        <a href="https://www.adidas.com.hk/CUSTOMER" class="text">CUSTOMER SERVICE SPECIAL ARRANGEMENT </a> 
+       </div> 
+       <div class="swiper-slide"> 
+        <a href="javascript:void(0)" class="text">Due to the pandemic impact and the mandates in place, your order may experience a shipping delay. Thank you for your understanding.</a> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="dialog-close-box"> 
+     <i class="icon icon-close-white dialog-close"></i> 
+    </div> 
+   </article> 
+   <script type="text/javascript">
+    $(function() {
+      $.spice.lazyLoad('img[lazysrc]', {
+        attr: 'lazysrc'
+      });
+      $.spice.tools.changeImageSrc({
+        callBack: function(img, self) {
+          $.spice.lazyLoad('img[lazysrc]', {
+            attr: self.opt.lazyData,
+            prestrain: 1
+          });
+        }
+      });
+
+      $('.dialog-close-box').on('tap', function() {
+        $('.check-banner-swiper1').hide();
+      });
+
+      var info = $('.swiper-wrapper-check .swiper-slide')
+      console.log('info: ', info);
+       
+      if (info.length < 2) {
+        var SwiperMain1 = new Swiper('.swiper-main-check', {
+          loop: false, // 循环滚动
+          autoplay: 3000,
+        })
+      } else {
+        var SwiperMain1 = new Swiper('.swiper-main-check', {
+          loop: true, // 循环滚动
+          autoplay: 3000,
+        })
+      }
+      
+    });
+  </script>  
+  
+
+  
+
+
+		</section>
+
+
+
+		<%include _includes/modules/footer.html %>
+	</div>
+</body>
+
+</html>

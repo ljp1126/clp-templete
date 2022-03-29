@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<%include _includes/meta.html %>
+	<title></title>
+	<%include _includes/css.html %>
+	<%include _includes/js.html %>
+
+</head>
+<body>
+	<div id="wrapper">
+		<%include _includes/modules/header.html %>
+		<!-- 内容部分 -->
+		<section class="container">
+			<style type="text/css">
+				.article,
+				.article > div{
+					position: relative;
+				}
+				.article .btn-link{
+					position: absolute;
+					display: block;
+					z-index: 1;
+				}
+				.article-banner-2 .btn-link-1{
+					width: 14%;
+					height: 34%;
+					top: 26%;
+					left: 49%;
+				}
+				.article-banner-2 .btn-link-2{
+					width: 14%;
+					height: 34%;
+					top: 26%;
+					left: 63.5%;
+				}
+				.article-banner-3 .btn-link-1{
+					width: 13.5%;
+					height: 35%;
+					top: 31%;
+					left: 16.5%;
+				}
+				.article-banner-3 .btn-link-2{
+					width: 13.5%;
+					height: 35%;
+					top: 31%;
+					left: 30.6%;
+				}
+				.article-banner-4 .btn-link-1{
+					width: 14%;
+					height: 28%;
+					top: 16%;
+					left: 32.5%;
+				}
+				.article-banner-4 .btn-link-2{
+					width: 14%;
+					height: 28%;
+					top: 16%;
+					left: 53.5%;
+				}
+				.article-banner-4 .btn-link-3{
+					width: 100%;
+					height: 31%;
+					bottom: 0;
+					left: 0;
+				}
+				.article-banner-5 .btn-link-1{
+					width: 11%;
+					height: 23%;
+					top: 28.5%;
+					left: 22%;
+				}
+				.article-banner-5 .btn-link-2{
+					width: 11%;
+					height: 23%;
+					top: 28.5%;
+					left: 36.5%;
+				}
+				.article-banner-5 .btn-link-3{
+					width: 15%;
+					height: 23%;
+					bottom: 5%;
+					left: 50%;
+				}
+				.article-banner-5 .btn-link-4{
+					width: 15%;
+					height: 23%;
+					bottom: 5%;
+					left: 66.2%;
+				}
+				.article-banner-w{
+					margin: 0 auto;
+					padding: 0 5px;
+					text-align: center;
+				}
+				.article-banner-w > div{
+					margin: 10px auto 0;
+					max-width: 998px;
+				}
+				.article-banner-7{
+					margin-bottom: 100px;
+				}
+				.article-banner-7 > div > div{
+					padding: 0 5px 5px;
+				}
+				.article-tab > p,
+				.article-tab > p img{
+					height: 54px;
+					width: 100%;
+					margin: 0 auto;
+				}
+				.article-tab .tab-main {
+					width: 100%;
+					height: 54px;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+				.article-tab .tab-main > img{
+					width: 100%;
+					height: 54px;
+				}
+				.article-tab .tab-main ul {
+					width: 100%;
+					font-size: 0;
+					position: absolute;
+					top: 0;
+					left: 0;
+					text-align: center;
+				}
+				.article-tab .tab-main ul li {
+					display: inline-block;
+					padding: 0;
+					margin: 0 5px;
+					min-width: 150px;
+					width: 14%;
+					position: relative;
+				}
+				.article-tab .tab-main ul li:after {
+					position: absolute;
+					top: 50%;
+					right: 0;
+					content: '';
+					display: block;
+					width: 1px;
+					height: 40px;
+					margin-top: -20px;
+					background: #FFF;
+				}
+				.article-tab .tab-main ul li:last-child:after {
+					width: 0px;
+				}
+				.article-tab .tab-main ul li a {
+					color: #fff;
+					font-size: 22px;
+					line-height: 54px;
+					display: block;
+					width: 100%;
+					text-align: center;
+					letter-spacing: 10px;
+				}
+				.article-tab .tab-main ul li.is-active a {
+					color: #c21a2c;
+				}
+				.article-tab.tab-fixed .tab-main {
+					position: fixed;
+					z-index: 3;
+					transition: all 0.3s;
+				}
+				@media (max-width: 1024px){
+					.article img{
+						width: 100%;
+					}
+					.article-banner-2 .btn-link-1 {
+						width: 35%;
+						height: 24%;
+						top: 54%;
+						left: 14%;
+					}
+					.article-banner-2 .btn-link-2 {
+						width: 35%;
+						height: 24%;
+						top: 54%;
+						left: 51%;
+					}
+					.article-banner-3 .btn-link-1 {
+						width: 34.5%;
+						height: 27%;
+						top: 56%;
+						left: 10%;
+					}
+					.article-banner-3 .btn-link-2 {
+						width: 34.5%;
+						height: 27%;
+						top: 56%;
+						left: 57%;
+					}
+					.article-banner-4 .btn-link-1 {
+						width: 34.5%;
+						height: 23%;
+						top: 13%;
+						left: 10%;
+					}
+					.article-banner-4 .btn-link-2 {
+						width: 34.5%;
+						height: 23%;
+						top: 13%;
+						left: 57.5%;
+					}
+					.article-banner-4 .btn-link-3 {
+						height: 50%;
+					}
+					.article-banner-5 .btn-link-1 {
+						width: 30%;
+						height: 15%;
+						top: 35%;
+						left: 15%;
+					}
+					.article-banner-5 .btn-link-2 {
+						width: 30%;
+						height: 15%;
+						top: 35%;
+						left: 56%;
+					}
+					.article-banner-5 .btn-link-3 {
+						width: 38%;
+						height: 15%;
+						bottom: 3%;
+						left: 11%;
+					}
+					.article-banner-5 .btn-link-4 {
+						width: 38%;
+						height: 15%;
+						bottom: 3%;
+						left: 53%;
+					}
+					.article-banner-w{
+						padding: 0 25px;
+					}
+					.article-banner-7{
+						margin-bottom: 40px;
+						padding: 0 22px;
+					}
+					.article-banner-7 > div > div{
+						padding: 0 3px 6px;
+					}
+
+					.article-tab > p,
+					.article-tab > p img,
+					.article-tab .tab-main,
+					.article-tab .tab-main > img{
+						height: 30px;
+					}
+					.article-tab .tab-main ul li {
+						margin: 0 5px;
+						min-width: 150px;
+						width: 14%;
+					}
+					.article-tab .tab-main ul li:after {
+						height: 20px;
+						margin-top: -10px;
+					}
+					.article-tab .tab-main ul li a {
+						font-size: 12px;
+						line-height: 30px;
+						letter-spacing: 6px;
+					}
+				}
+			</style>
+			<article class="article article-banner-1">
+				<div>
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/blackwhite520_01.jpg"},
+						"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_01.jpg"},
+						"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_01.jpg"}}' />
+				</div>
+			</article>
+			<article class="article article-banner-2">
+				<div>
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/blackwhite520_02.jpg"},
+						"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_02.jpg"},
+						"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_02.jpg"}}' />
+					<a class="btn-link btn-link-1" href="https://www.adidas.com.cn/item/CG3916"></a>
+					<a class="btn-link btn-link-2" href="https://www.adidas.com.cn/item/CG3923"></a>
+				</div>
+			</article>
+			<article class="article article-banner-3">
+				<div>
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/blackwhite520_03.jpg"},
+						"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_03.jpg"},
+						"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_03.jpg"}}' />
+					<a class="btn-link btn-link-1" href="https://www.adidas.com.cn/item/C77124"></a>
+					<a class="btn-link btn-link-2" href="https://www.adidas.com.cn/item/B27140"></a>
+				</div>
+			</article>
+			<article class="article article-banner-4">
+				<div>
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/blackwhite520_04.jpg"},
+						"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_04.jpg"},
+						"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_04.jpg"}}' />
+					<a class="btn-link btn-link-1" href="https://www.adidas.com.cn/item/BB6166"></a>
+					<a class="btn-link btn-link-2" href="https://www.adidas.com.cn/item/BB6308"></a>
+					<a class="btn-link btn-link-3" href="https://www.adidas.com.cn/search?pf=22-119%2C14-18&pr=-&keyword=stan+smith&fo=p22%2Cp14&pn=1&pageSize=120&p=%E4%BA%A7%E5%93%81%E7%B3%BB%E5%88%97-Stan+Smith%26undefined-%E4%B8%AA%E6%80%A7%E5%8D%B0%E5%88%B6&isSaleTop=false"></a>
+				</div>
+			</article>
+			<article class="article article-banner-5">
+				<div>
+					<img src="https://img.adidas.com.cn/images/blank.gif"
+						data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/blackwhite520_05.jpg"},
+						"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_05.jpg"},
+						"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_05.jpg"}}' />
+					<a class="btn-link btn-link-1" href="https://www.adidas.com.cn/item/CE1612"></a>
+					<a class="btn-link btn-link-2" href="https://www.adidas.com.cn/item/CZ8333"></a>
+					<a class="btn-link btn-link-3" href="https://www.adidas.com.cn/item/CW1212"></a>
+					<a class="btn-link btn-link-4" href="https://www.adidas.com.cn/item/CY9260"></a>
+				</div>
+			</article>
+
+			<article class="article article-tab">
+				<p><img src="https://img.adidas.com.cn/resources/activePage/blackwhite520/tab-bg.jpg" /></p>
+				<div class="tab-main">
+					<img src="https://img.adidas.com.cn/resources/activePage/blackwhite520/tab-bg.jpg" />
+					<ul>
+						<li class="is-active">
+							<a>情侣鞋</a>
+						</li>
+						<li>
+							<a>情侣衫</a>
+						</li>
+					</ul>
+				</div>
+			</article>
+			<article class="article more-commodity-article more-commodity-man worldcup-accessories">
+				<div class="product-list">
+					<div class="product-title">
+						<p>情侣鞋推荐</p>
+					</div>
+				</div>
+			</article>
+
+			<div class="accessories-football-btn">
+				<a class="btn btn-black btn-have-arrow btn-three" href="https://www.adidas.com.cn/campaign/blackwhite520_shoes" target="_blank"> <span>点击查看更多</span> </a>
+			</div>
+			<style>
+				.accessories-football-btn{
+					text-align: center;
+    				margin:20px 0 50px;
+				}
+				.accessories-football-btn .btn-three {
+					min-width: 220px;
+				}
+				@media (max-width: 1024px){
+					.accessories-football-btn{
+						margin:20px 0 ;
+					}
+				}
+			</style>
+
+			<article class="article more-commodity-article more-commodity-man worldcup-accessories">
+					<div class="product-list">
+						<div class="product-title">
+							<p>情侣衫推荐</p>
+						</div>
+					</div>
+			</article>
+
+			<article class="article article-banner-w article-banner-6">
+				<div>
+					<a href="https://www.adidas.com.cn/campaign/blackwhite520">
+						<img src="https://img.adidas.com.cn/images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/blackwhite520_06.jpg"},
+							"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_06.jpg"},
+							"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_06.jpg"}}' />
+					</a>
+				</div>
+			</article>
+			<article class="article article-banner-w article-banner-7">
+				<div class="row">
+					<div class="col-12-3 col-sm-12-6">
+						<a href="https://www.adidas.com.cn/search?pf=25-40%2C%2C25-60%2C70-2259%2C70-2260&cf=2-9&pr=-&s=orders_desc&fo=p25%2Cp25%2Cc2%2Cp70%2Cp70&pn=1&pageSize=120&c=%E6%9C%8D%E8%A3%85&p=undefined-%E7%94%B7%E5%AD%90%26undefined-%E4%B8%AD%E6%80%A7%26%E4%BA%A7%E5%93%81%E7%B1%BB%E5%9E%8B-%E7%9F%AD%E8%A2%96T%E6%81%A4%26%E4%BA%A7%E5%93%81%E7%B1%BB%E5%9E%8B-%E7%9F%AD%E8%A3%A4&isSaleTop=false">
+							<img src="https://img.adidas.com.cn/images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/blackwhite520_07.jpg"},
+							"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_07.jpg"},
+							"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_07.jpg"}}' />
+						</a>
+					</div>
+					<div class="col-12-3 col-sm-12-6">
+						<a href="https://www.adidas.com.cn/search?pf=25-82%2C%2C25-60%2C70-2259%2C70-2260&cf=2-9&pr=-&s=orders_desc&fo=p25%2Cp25%2Cc2%2Cp70%2Cp70&pn=1&pageSize=120&c=%E6%9C%8D%E8%A3%85&p=undefined-%E5%A5%B3%E5%AD%90%26undefined-%E4%B8%AD%E6%80%A7%26%E4%BA%A7%E5%93%81%E7%B1%BB%E5%9E%8B-%E7%9F%AD%E8%A2%96T%E6%81%A4%26%E4%BA%A7%E5%93%81%E7%B1%BB%E5%9E%8B-%E7%9F%AD%E8%A3%A4&isSaleTop=false">
+							<img src="https://img.adidas.com.cn/images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/blackwhite520_08.jpg"},
+							"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_08.jpg"},
+							"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_08.jpg"}}' />
+						</a>
+					</div>
+					<div class="col-12-3 col-sm-12-6">
+						<a href="https://www.adidas.com.cn/search?pf=23-86%2C25-40%2C25-60&cf=2-8&pr=-&s=orders_desc&fo=c2%2Cp23%2Cp25&pn=1&pageSize=120&c=%E9%9E%8B%E7%B1%BB&p=undefined-originals%26%E6%80%A7%E5%88%AB-%E7%94%B7%E5%AD%90&isSaleTop=false">
+							<img src="https://img.adidas.com.cn/images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/blackwhite520_09.jpg"},
+							"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_09.jpg"},
+							"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_09.jpg"}}' />
+						</a>
+					</div>
+					<div class="col-12-3 col-sm-12-6">
+						<a href="https://www.adidas.com.cn/search?pf=23-86%2C25-82%2C25-60&cf=2-8&pr=-&s=orders_desc&fo=c2%2Cp23%2Cp25&pn=1&pageSize=120&c=%E9%9E%8B%E7%B1%BB&p=undefined-originals%26%E6%80%A7%E5%88%AB-%E5%A5%B3%E5%AD%90&isSaleTop=false">
+							<img src="https://img.adidas.com.cn/images/blank.gif"
+							data-image='{"standard":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/blackwhite520_10.jpg"},
+							"medium":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_10.jpg"},
+							"small":{"high":"", "normal":"https://img.adidas.com.cn/resources/activePage/blackwhite520/m-blackwhite520_10.jpg"}}' />
+						</a>
+					</div>
+
+				</div>
+			</article>
+
+
+
+
+			<script type="text/javascript">
+				var _w = $.spice.getWindowWidth();
+				//tab 悬浮
+				var windowTop = 0;
+				$(window).on('scroll.worldCupScroll', function() {
+					var $scrollTop = $(this).scrollTop(),
+						$tabMain = $('.article-tab'),
+						$positionTop = $tabMain.offset().top,
+						headerH = $('.header-fixed').outerHeight(true),
+						headerBannerboxH = 0;
+
+					if ($(".header-banner-box").hasClass('header-banner-show')) {
+						headerBannerboxH = $(".header-banner-box").outerHeight(true);
+					} else {
+						headerBannerboxH = 0;
+					}
+
+					if($scrollTop > $positionTop){
+						$tabMain.addClass('tab-fixed').addClass('tab-main-width');
+						if ($scrollTop >= windowTop) {
+							windowTop = $scrollTop;
+							$tabMain.find('.tab-main').css({ top: 0 })
+						} else {
+							windowTop = $scrollTop;
+							$tabMain.find('.tab-main').css({ top: (headerH + headerBannerboxH) })
+						}
+					}else{
+						if($scrollTop  < $positionTop - headerH - headerBannerboxH){
+							$tabMain.removeClass('tab-fixed').find('.tab-main').removeAttr('style');
+						}
+					}
+
+				}).trigger('scroll.worldCupScroll');
+
+				$('.article-tab').on('tap','.tab-main li',function(){
+					$(this).addClass('is-active').siblings('li').removeClass('is-active');
+					$('html,body').animate({
+						scrollTop: $('.more-commodity-article').eq($(this).index()).offset().top - $('.article-tab').outerHeight(true)
+					}, 500);
+				})
+
+				// 换图 + 懒加载
+				$.spice.tools.changeImageSrc({
+					callBack: function(img, self) {
+						$.spice.lazyLoad('img[lazysrc]', {
+							attr: self.opt.lazyData,
+							prestrain: 1
+						});
+					}
+				});
+				$.spice.lazyLoad('img[lazy-src]', {
+					attr: 'lazy-src'
+				});
+
+			</script>
+		</section>
+
+		<%include _includes/modules/footer-no-back-top.html %>
+		<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+	</div>
+</body>
+</html>
