@@ -34,10 +34,15 @@
 
         .article .link {
           position: absolute;
-          width: 40%;
-          height: 100%;
-          top: 0;
-          left: 5%;
+          width: 50%;
+          height: 13%;
+          bottom: 1%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .article .link-1 {
+          left: 50%;
         }
 
         .article .tipContent {
@@ -61,14 +66,6 @@
           height: 100%;
         }
 
-        .article .link-1 {
-          left: 28%;
-        }
-        .article .link-2 {
-          left: 72%;
-        }
-
-
 				.article-swiper1 .swiper-box {
 					position: absolute;
 					left: 50%;
@@ -83,8 +80,6 @@
 					top: 20%;
 					width: 78%;
 				}
-
-				
 
 				.swiper-button-prev {
 					background: url(https://img.adidas.com.hk/resources/2021/AUG/4D/CN/left.png);
@@ -107,6 +102,41 @@
         .article-swiper2 .swiper-slide {
           position: relative;
         }
+
+        .swiper-button-prev-two {
+					background: url(https://img.adidas.com.hk/resources/2021/AUG/4D/CN/left.png);
+					width: 40px;
+					height: 40px;
+					background-size: 40px 40px;
+					left: -6.4%;
+					top: 35%;
+
+          right: auto;
+          position: absolute;
+          margin-top: -22px;
+          z-index: 10;
+				}
+
+				.swiper-button-next-two {
+					background: url(https://img.adidas.com.hk/resources/2021/AUG/4D/CN/right.png);
+					width: 40px;
+					height: 40px;
+					background-size: 40px 40px;
+					right: -6.4%;
+					top: 35%;
+
+          left: auto;
+          position: absolute;
+          margin-top: -22px;
+          z-index: 10;
+				}
+
+        .article-swiper2 .swiper-box .swiper-button-disabled {
+          opacity: .35;
+          cursor: auto;
+          pointer-events: none;
+        }
+
         .article-swiper2 .swiper-slide .tipShow {
           position: absolute;
           width: 70%;
@@ -117,16 +147,18 @@
           cursor: pointer;
         }
 
-				.link {
-					position: absolute;
-					width: 32%;
-					height: 30%;
-					top: 18%;
-					left: 50%;
-					transform: translateX(-50%);
+				.video-click {
+          position: absolute;
+          width: 30%;
+          height: 7%;
+          top: 77%;
+          left: 8%;
 				}
-				.link2 {
-					top: 51%;
+				.click-1 {
+					top: 77%;
+				}
+        .click-2 {
+					left: 52%;
 				}
 				@media (min-width: 1025px) {
 
@@ -152,15 +184,26 @@
 
           .article .link {
             width: 100%;
-            height: 45%;
-            left: 50%;
+            height: 6%;
+            left: 0;
           }
 
           .article .link-1 {
-            top: 7%;
+            bottom: 1%;
           }
-          .article .link-2 {
-            top: 55%;
+
+          .video-click {
+            position: absolute;
+            width: 50%;
+            height: 5%;
+            top: 43.5%;
+            left: 1%;
+          }
+          .click-1 {
+            top: 43.5%;
+          }
+          .click-2 {
+            top: 88%;
           }
 
           .article .tipContent {
@@ -209,29 +252,30 @@
 			</style>   
    <article class="article"> 
     <a href="https://www.adidas.com.hk/member/login"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-              &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-hk-001.png&quot;},
-              &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-hk-0011.png&quot;},
-              &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-hk-0011.png&quot;}}"> </a> 
+              &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/pc-hk-101.png&quot;},
+              &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-hk-101.png&quot;},
+              &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-hk-101.png&quot;}}"> </a> 
    </article> 
    <article class="article"> 
     <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-              &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-hk-002.png&quot;},
-              &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-hk-002.png&quot;},
-              &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-hk-002.png&quot;}}"> 
+      &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/pc-hk-102.png&quot;},
+      &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-hk-102.png&quot;},
+      &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-hk-102.png&quot;}}">
    </article> 
    <article class="article"> 
     <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-hk-0033.png&quot;},
-                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-hk-0033.png&quot;},
-                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-hk-0033.png&quot;}}"> 
-    <a class="link link-1" href="javascript:void(0);"> </a> 
-    <a class="link link-2" href="javascript:void(0);"> </a> 
+      &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/pc-hk-103.png&quot;},
+      &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-hk-103.png&quot;},
+      &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-hk-103.png&quot;}}">
+    <div class="video-click click-1"> </div> 
+    <div class="video-click click-2"> </div> 
+    <a class="link link-1" href="https://forms.office.com/r/kjjJt9vEvY"> </a> 
    </article> 
    <article class="article"> 
     <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-              &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-hk-0044.png&quot;},
-              &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-hk-0044.png&quot;},
-              &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-hk-0044.png&quot;}}"> 
+      &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/pc-hk-104.png&quot;},
+      &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-hk-104.png&quot;},
+      &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-hk-104.png&quot;}}">
    </article> 
    <article class="article article-swiper1"> 
     <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
@@ -313,6 +357,13 @@
      <div class="swiper-button-next none-sm"></div> 
     </div> 
    </article> 
+   <article class="article"> 
+    <a href="https://www.adidas.com.hk/member/login"> 
+      <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+        &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/pc-hk-105.png&quot;},
+        &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-hk-105.png&quot;},
+        &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-hk-105.png&quot;}}"> </a> 
+    </article>
    <article class="article article-swiper2"> 
     <article class="article"> 
      <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
@@ -357,8 +408,8 @@
        </div> 
       </div> 
      </div> 
-     <div class="swiper-button-prev none-sm"></div> 
-     <div class="swiper-button-next none-sm"></div> 
+     <div class="swiper-button-prev-two none-sm"></div> 
+     <div class="swiper-button-next-two none-sm"></div> 
     </div> 
     <div class="tipContent"> 
      <div class="tipItem item-1"> 
@@ -434,8 +485,8 @@
             }
           })
           var SwiperMain2 = new Swiper('.swiper-main2', {
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
+            nextButton: '.swiper-button-next-two',
+            prevButton: '.swiper-button-prev-two',
             slidesPerView: 4,
             spaceBetween: 15,
             slidesOffsetBefore: 0,
