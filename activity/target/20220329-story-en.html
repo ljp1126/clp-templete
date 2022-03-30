@@ -23,6 +23,49 @@
           background: #f8f7f5;
         }
 
+        .article-video .close-video {
+          display: none;
+        }
+
+        .is-play .close-video {
+          display: block;
+          position: absolute;
+					width: 20px;
+					height: 20px;
+					top: 5%;
+					right: 8%;
+          cursor: pointer;
+        }
+
+        .article-video .video-wrapper {
+					position: absolute;
+					width: 86%;
+					height: 77%;
+					top: 8%;
+					left: 50%;
+					transform: translateX(-50%);
+					cursor: pointer;
+          display: none;
+				}
+				.video-box .video-content {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					top: 0;
+					left: 0;
+				}
+
+				.video-content .video {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					/* visibility: hidden; */
+				}
+
+				/* .video-box.is-play .video-wrapper .video-content .video {
+					visibility: visible;
+				} */
+
         .article img {
           width: 100%;
           height: 100%;
@@ -153,6 +196,7 @@
           height: 7%;
           top: 77%;
           left: 8%;
+          cursor: pointer;
 				}
 				.click-1 {
 					top: 77%;
@@ -174,13 +218,44 @@
         }
         @media (max-width: 1024px) {
 
-          /* .article-swiper1 .swiper-box {
+          .article-video .close-video {
+            display: none;
+          }
+          .is-play .close-video {
+            display: none;
+          }
+
+					.article-video .video-wrapper {
             position: absolute;
-            left: 8.4%;
-            top: -1.3%;
-            width: 290%;
-            transform: translateX(0);
+            width: 100%;
+            height: 43%;
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+          }
+          .article-video .e-video-two {
+            top: 50%;
+          }
+          .video-box .video-content {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+          }
+
+          .video-content .video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* visibility: hidden; */
+          }
+
+          /* .video-box.is-play .video-wrapper .video-content .video {
+            visibility: visible;
           } */
+
           .article .link {
             width: 100%;
             height: 6%;
@@ -249,298 +324,584 @@
           
         }
       </style>   
-    <article class="article"> 
-    <a href="https://www.adidas.com.hk/member/login"> 
-      <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-        &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/pc-en-101.png&quot;},
-        &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-101.png&quot;},
-        &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-101.png&quot;}}"> </a> 
-    </article> 
-    <article class="article"> 
-      <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-        &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/pc-en-102.png&quot;},
-        &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-102.png&quot;},
-        &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-102.png&quot;}}">
-    </article> 
-    <article class="article"> 
-      <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-        &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/pc-en-103.png&quot;},
-        &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-103.png&quot;},
-        &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-103.png&quot;}}">
-      <div class="video-click click-1"> </div> 
-      <div class="video-click click-2"> </div> 
-      <a class="link link-1" href="https://forms.office.com/r/kjjJt9vEvY"> </a> 
-    </article> 
-    <article class="article"> 
-      <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-        &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/pc-en-104.png&quot;},
-        &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-104.png&quot;},
-        &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-104.png&quot;}}">
-    </article> 
-    <article class="article article-swiper1"> 
-    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-              &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-005-bgc.png&quot;},
-              &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-005-bgc.png&quot;},
-              &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-005-bgc.png&quot;}}"> 
-    <div class="swiper-box"> 
-    <div class="swiper-container swiper-main1"> 
-      <div class="swiper-wrapper"> 
-      <div class="swiper-slide"> 
+      <article class="article"> 
+        <a href="https://www.adidas.com.hk/member/login"> 
         <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-01.png&quot;},
-                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-01.png&quot;},
-                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-01.png&quot;}}"> 
-      </div> 
-      <div class="swiper-slide"> 
-        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-02.png&quot;},
-                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-02.png&quot;},
-                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-02.png&quot;}}"> 
-      </div> 
-      <div class="swiper-slide"> 
-        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-03.png&quot;},
-                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-03.png&quot;},
-                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-03.png&quot;}}"> 
-      </div> 
-      <div class="swiper-slide"> 
-        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-04.png&quot;},
-                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-04.png&quot;},
-                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-04.png&quot;}}"> 
-      </div> 
-      <div class="swiper-slide"> 
-        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-05.png&quot;},
-                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-05.png&quot;},
-                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-05.png&quot;}}"> 
-      </div> 
-      <div class="swiper-slide"> 
-        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-06.png&quot;},
-                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-06.png&quot;},
-                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-06.png&quot;}}"> 
-      </div> 
-      <div class="swiper-slide"> 
-        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-07.png&quot;},
-                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-07.png&quot;},
-                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-07.png&quot;}}"> 
-      </div> 
-      <div class="swiper-slide"> 
-        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-08.png&quot;},
-                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-08.png&quot;},
-                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-08.png&quot;}}"> 
-      </div> 
-      <div class="swiper-slide"> 
-        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-09.png&quot;},
-                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-09.png&quot;},
-                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-09.png&quot;}}"> 
-      </div> 
-      <div class="swiper-slide"> 
-        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-010.png&quot;},
-                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-010.png&quot;},
-                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-010.png&quot;}}"> 
-      </div> 
-      <div class="swiper-slide"> 
-        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-011.png&quot;},
-                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-011.png&quot;},
-                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-011.png&quot;}}"> 
-      </div> 
-      </div> 
-    </div> 
-    <div class="swiper-button-prev none-sm"></div> 
-    <div class="swiper-button-next none-sm"></div> 
-    </div> 
-    </article> 
-    <article class="article"> 
-      <a href="https://www.adidas.com.hk/member/login"> 
-        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-          &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/pc-en-105.png&quot;},
-          &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-105.png&quot;},
-          &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-105.png&quot;}}"> </a> 
+          &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/pc-en-101.png&quot;},
+          &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-101.png&quot;},
+          &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-101.png&quot;}}"> </a> 
       </article> 
-    <article class="article article-swiper2"> 
-    <article class="article"> 
-    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-              &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-0061.png&quot;},
-              &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006.png&quot;},
-              &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006.png&quot;}}"> 
-    </article> 
-    <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-          &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-006-bgc.png&quot;},
-          &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-006-bgc.png&quot;},
-          &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-006-bgc.png&quot;}}"> 
-    <div class="swiper-box"> 
-    <div class="swiper-container swiper-main2"> 
-      <div class="swiper-wrapper"> 
-      <div class="swiper-slide"> 
-        <a href="javascript:void(0)"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-                    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-006-1.png&quot;},
-                    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-1.png&quot;},
-                    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-1.png&quot;}}"> </a> 
-        <div class="tipShow tip-1"></div> 
-      </div> 
-      <div class="swiper-slide"> 
-        <a href="javascript:void(0)"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-                    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-006-2.png&quot;},
-                    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-2.png&quot;},
-                    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-2.png&quot;}}"> </a> 
-        <div class="tipShow tip-2"></div> 
-      </div> 
-      <div class="swiper-slide"> 
-        <a href="javascript:void(0)"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-                    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-006-3.png&quot;},
-                    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-3.png&quot;},
-                    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-3.png&quot;}}"> </a> 
-        <div class="tipShow tip-3"></div> 
-      </div> 
-      <div class="swiper-slide"> 
-        <a href="javascript:void(0)"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-                    &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-006-4.png&quot;},
-                    &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-4.png&quot;},
-                    &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-4.png&quot;}}"> </a> 
-        <div class="tipShow tip-4"></div> 
-      </div> 
-      </div> 
-    </div> 
-    <div class="swiper-button-prev-two none-sm"></div> 
-    <div class="swiper-button-next-two none-sm"></div> 
-    </div> 
-    <div class="tipContent"> 
-    <div class="tipItem item-1"> 
-      <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-              &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-006-dig-01.png&quot;},
-              &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-dig-01.png&quot;},
-              &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-dig-01.png&quot;}}"> 
-    </div> 
-    <div class="tipItem item-2"> 
-      <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-              &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-006-dig-02.png&quot;},
-              &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-dig-02.png&quot;},
-              &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-dig-02.png&quot;}}"> 
-    </div> 
-    <div class="tipItem item-3"> 
-      <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-              &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-006-dig-03.png&quot;},
-              &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-dig-03.png&quot;},
-              &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-dig-03.png&quot;}}"> 
-    </div> 
-    <div class="tipItem item-4"> 
-      <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-              &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-006-dig-04.png&quot;},
-              &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-dig-04.png&quot;},
-              &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-dig-04.png&quot;}}"> 
-    </div> 
-    </div> 
-    </article> 
-    <article class="article"> 
-    <a href="https://www.adidas.com.hk/member/login"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
-            &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-007.png&quot;},
-            &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-007.png&quot;},
-            &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-007.png&quot;}}"> </a> 
-    </article> 
-    <script type="text/javascript">
-        $(function() {
-          $.spice.lazyLoad('img[lazysrc]', {
-            attr: 'lazysrc'
+      <article class="article"> 
+        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+          &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/pc-en-102.png&quot;},
+          &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-102.png&quot;},
+          &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-102.png&quot;}}">
+      </article> 
+      <article class="article article-video video-box"> 
+        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+          &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/pc-en-103.png&quot;},
+          &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-103.png&quot;},
+          &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-103.png&quot;}}">
+        <div class="video-click  click-1"> </div> 
+          <div class="video-wrapper e-video-one e-play-video-one">
+            <div class="video-content video-content-one"></div>
+            <a class="video-play" href="javascript:void(0)">
+              <span class="video-code" data-video-code=""></span>
+            </a>
+          </div>
+          <div class="video-click click-2"> </div> 
+          <div class="video-wrapper e-video-two e-play-video-two">
+            <div class="video-content video-content-two"></div>
+            <a class="video-play" href="javascript:void(0)">
+              <span class="video-code" data-video-code=""></span>
+            </a>
+          </div>
+          <div class="close-video"><i class="icon icon-close dialog-close">&times;</i></div>
+      </article> 
+      <article class="article"> 
+        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+          &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/pc-en-104.png&quot;},
+          &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-104.png&quot;},
+          &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-104.png&quot;}}">
+      </article> 
+      <article class="article article-swiper1"> 
+        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-005-bgc.png&quot;},
+                &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-005-bgc.png&quot;},
+                &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-005-bgc.png&quot;}}"> 
+        <div class="swiper-box"> 
+          <div class="swiper-container swiper-main1"> 
+            <div class="swiper-wrapper"> 
+            <div class="swiper-slide"> 
+              <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                      &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-01.png&quot;},
+                      &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-01.png&quot;},
+                      &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-01.png&quot;}}"> 
+            </div> 
+            <div class="swiper-slide"> 
+              <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                      &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-02.png&quot;},
+                      &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-02.png&quot;},
+                      &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-02.png&quot;}}"> 
+            </div> 
+            <div class="swiper-slide"> 
+              <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                      &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-03.png&quot;},
+                      &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-03.png&quot;},
+                      &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-03.png&quot;}}"> 
+            </div> 
+            <div class="swiper-slide"> 
+              <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                      &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-04.png&quot;},
+                      &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-04.png&quot;},
+                      &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-04.png&quot;}}"> 
+            </div> 
+            <div class="swiper-slide"> 
+              <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                      &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-05.png&quot;},
+                      &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-05.png&quot;},
+                      &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-05.png&quot;}}"> 
+            </div> 
+            <div class="swiper-slide"> 
+              <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                      &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-06.png&quot;},
+                      &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-06.png&quot;},
+                      &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-06.png&quot;}}"> 
+            </div> 
+            <div class="swiper-slide"> 
+              <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                      &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-07.png&quot;},
+                      &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-07.png&quot;},
+                      &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-07.png&quot;}}"> 
+            </div> 
+            <div class="swiper-slide"> 
+              <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                      &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-08.png&quot;},
+                      &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-08.png&quot;},
+                      &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-08.png&quot;}}"> 
+            </div> 
+            <div class="swiper-slide"> 
+              <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                      &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-09.png&quot;},
+                      &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-09.png&quot;},
+                      &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-09.png&quot;}}"> 
+            </div> 
+            <div class="swiper-slide"> 
+              <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                      &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-010.png&quot;},
+                      &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-010.png&quot;},
+                      &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-010.png&quot;}}"> 
+            </div> 
+            <div class="swiper-slide"> 
+              <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                      &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-005-011.png&quot;},
+                      &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-011.png&quot;},
+                      &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-005-011.png&quot;}}"> 
+            </div> 
+            </div> 
+          </div> 
+          <div class="swiper-button-prev none-sm"></div> 
+          <div class="swiper-button-next none-sm"></div> 
+        </div> 
+      </article> 
+      <article class="article"> 
+        <a href="https://www.adidas.com.hk/member/login"> 
+          <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+            &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/pc-en-105.png&quot;},
+            &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-105.png&quot;},
+            &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/newStory/mob-en-105.png&quot;}}"> </a> 
+        </article> 
+        <article class="article article-swiper2"> 
+        <article class="article"> 
+        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                  &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-0061.png&quot;},
+                  &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006.png&quot;},
+                  &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006.png&quot;}}"> 
+        </article> 
+        <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+              &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-006-bgc.png&quot;},
+              &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-006-bgc.png&quot;},
+              &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-006-bgc.png&quot;}}"> 
+        <div class="swiper-box"> 
+        <div class="swiper-container swiper-main2"> 
+          <div class="swiper-wrapper"> 
+          <div class="swiper-slide"> 
+            <a href="javascript:void(0)"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                        &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-006-1.png&quot;},
+                        &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-1.png&quot;},
+                        &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-1.png&quot;}}"> </a> 
+            <div class="tipShow tip-1"></div> 
+          </div> 
+          <div class="swiper-slide"> 
+            <a href="javascript:void(0)"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                        &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-006-2.png&quot;},
+                        &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-2.png&quot;},
+                        &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-2.png&quot;}}"> </a> 
+            <div class="tipShow tip-2"></div> 
+          </div> 
+          <div class="swiper-slide"> 
+            <a href="javascript:void(0)"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                        &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-006-3.png&quot;},
+                        &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-3.png&quot;},
+                        &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-3.png&quot;}}"> </a> 
+            <div class="tipShow tip-3"></div> 
+          </div> 
+          <div class="swiper-slide"> 
+            <a href="javascript:void(0)"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                        &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-006-4.png&quot;},
+                        &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-4.png&quot;},
+                        &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-4.png&quot;}}"> </a> 
+            <div class="tipShow tip-4"></div> 
+          </div> 
+          </div> 
+        </div> 
+        <div class="swiper-button-prev-two none-sm"></div> 
+        <div class="swiper-button-next-two none-sm"></div> 
+        </div> 
+        <div class="tipContent"> 
+        <div class="tipItem item-1"> 
+          <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                  &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-006-dig-01.png&quot;},
+                  &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-dig-01.png&quot;},
+                  &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-dig-01.png&quot;}}"> 
+        </div> 
+        <div class="tipItem item-2"> 
+          <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                  &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-006-dig-02.png&quot;},
+                  &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-dig-02.png&quot;},
+                  &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-dig-02.png&quot;}}"> 
+        </div> 
+        <div class="tipItem item-3"> 
+          <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                  &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-006-dig-03.png&quot;},
+                  &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-dig-03.png&quot;},
+                  &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-dig-03.png&quot;}}"> 
+        </div> 
+        <div class="tipItem item-4"> 
+          <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+                  &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-006-dig-04.png&quot;},
+                  &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-dig-04.png&quot;},
+                  &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-006-dig-04.png&quot;}}"> 
+        </div> 
+        </div> 
+      </article> 
+      <article class="article"> 
+        <a href="https://www.adidas.com.hk/member/login"> <img src="https://img.adidas.com.cn/images/blank.gif" lazysrc="https://img.adidas.com.cn/images/blank.gif" data-image="{
+              &quot;standard&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/pc-en-007.png&quot;},
+              &quot;medium&quot;:{&quot;high&quot;:&quot;&quot;,  &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-007.png&quot;},
+              &quot;small&quot;:{&quot;high&quot;:&quot;&quot;, &quot;normal&quot;:&quot;https://img.adidas.com.hk/resources/2022/3/story/mob-en-007.png&quot;}}"> </a> 
+      </article> 
+      <script type="text/javascript">
+          $(function() {
+            $.spice.lazyLoad('img[lazysrc]', {
+              attr: 'lazysrc'
+            });
+            $.spice.tools.changeImageSrc({
+              callBack: function(img, self) {
+                $.spice.lazyLoad('img[lazysrc]', {
+                  attr: self.opt.lazyData,
+                  prestrain: 1
+                });
+              }
+            });
+            var SwiperMain1 = new Swiper('.swiper-main1', {
+              nextButton: '.swiper-button-next',
+              prevButton: '.swiper-button-prev',
+              slidesPerView: 4,
+              spaceBetween: 15,
+              slidesOffsetBefore: 0,
+              breakpoints: {
+                200: {
+                  slidesPerView: 2.3,
+                  spaceBetween: 10,
+                  slidesOffsetBefore: 15,
+                  slidesOffsetAfter: 15
+                },
+                768: {
+                  slidesPerView: 2.3,
+                  spaceBetween: 10,
+                  slidesOffsetBefore: 15,
+                  slidesOffsetAfter: 15
+                },
+                1024: {
+                  slidesPerView: 2.3,
+                  spaceBetween: 10,
+                  slidesOffsetBefore: 15,
+                  slidesOffsetAfter: 15
+                },
+              }
+            })
+            var SwiperMain2 = new Swiper('.swiper-main2', {
+              nextButton: '.swiper-button-next-two',
+              prevButton: '.swiper-button-prev-two',
+              slidesPerView: 4,
+              spaceBetween: 15,
+              slidesOffsetBefore: 0,
+              breakpoints: {
+                200: {
+                  slidesPerView: 1.2,
+                  spaceBetween: 10,
+                  slidesOffsetBefore: 20,
+                  slidesOffsetAfter: 20
+                },
+                768: {
+                  slidesPerView: 1.5,
+                  spaceBetween: 10,
+                  slidesOffsetBefore: 20,
+                  slidesOffsetAfter: 20
+                },
+                1024: {
+                  slidesPerView: 1.5,
+                  spaceBetween: 10,
+                  slidesOffsetBefore: 20,
+                  slidesOffsetAfter: 20
+                },
+              }
+            })
+
+            $('.tip-1').tap(function (e) {
+              e.preventDefault();
+              $('.tipContent').show()
+              $('.item-1').show()
+            });
+            $('.tip-2').tap(function (e) {
+              e.preventDefault();
+              $('.tipContent').show()
+              $('.item-2').show()
+            });
+            $('.tip-3').tap(function (e) {
+              e.preventDefault();
+              $('.tipContent').show()
+              $('.item-3').show()
+            });
+            $('.tip-4').tap(function (e) {
+              e.preventDefault();
+              $('.tipContent').show()
+              $('.item-4').show()
+            });
+
+            $('.tipContent').tap(function (e) {
+              e.preventDefault();
+              $('.tipContent').hide()
+              $('.tipItem').hide()
+            });
+            
           });
-          $.spice.tools.changeImageSrc({
-            callBack: function(img, self) {
-              $.spice.lazyLoad('img[lazysrc]', {
-                attr: self.opt.lazyData,
-                prestrain: 1
+        </script>  
+
+        <script>
+          $(function() {
+
+            var loadImgFun_index = function(imgArr, fn) {
+              var loadImgLen = 0,
+                errImgLen = 0;
+              var imgdefereds = [];
+              $(imgArr).each(function() {
+                var defered = $.Deferred();
+                $(this)
+                  .on("load", function() {
+                    defered.resolve();
+                    loadImgLen++;
+                  })
+                  .on("error", function() {
+                    defered.resolve();
+                    errImgLen++;
+                  });
+                if (this.complete)
+                  setTimeout(function() {
+                    defered.resolve();
+                  }, 200);
+                imgdefereds.push(defered);
               });
-            }
-          });
-          var SwiperMain1 = new Swiper('.swiper-main1', {
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            slidesPerView: 4,
-            spaceBetween: 15,
-            slidesOffsetBefore: 0,
-            breakpoints: {
-              200: {
-                slidesPerView: 2.3,
-                spaceBetween: 10,
-                slidesOffsetBefore: 15,
-                slidesOffsetAfter: 15
-              },
-              768: {
-                slidesPerView: 2.3,
-                spaceBetween: 10,
-                slidesOffsetBefore: 15,
-                slidesOffsetAfter: 15
-              },
-              1024: {
-                slidesPerView: 2.3,
-                spaceBetween: 10,
-                slidesOffsetBefore: 15,
-                slidesOffsetAfter: 15
-              },
-            }
-          })
-          var SwiperMain2 = new Swiper('.swiper-main2', {
-            nextButton: '.swiper-button-next-two',
-            prevButton: '.swiper-button-prev-two',
-            slidesPerView: 4,
-            spaceBetween: 15,
-            slidesOffsetBefore: 0,
-            breakpoints: {
-              200: {
-                slidesPerView: 1.2,
-                spaceBetween: 10,
-                slidesOffsetBefore: 20,
-                slidesOffsetAfter: 20
-              },
-              768: {
-                slidesPerView: 1.5,
-                spaceBetween: 10,
-                slidesOffsetBefore: 20,
-                slidesOffsetAfter: 20
-              },
-              1024: {
-                slidesPerView: 1.5,
-                spaceBetween: 10,
-                slidesOffsetBefore: 20,
-                slidesOffsetAfter: 20
-              },
-            }
-          })
+              $.when.apply(null, imgdefereds).done(function() {
+                if (fn && $.isFunction(fn)) {
+                  fn();
+                }
+              });
+            };
 
-          $('.tip-1').tap(function (e) {
-            e.preventDefault();
-            $('.tipContent').show()
-            $('.item-1').show()
-          });
-          $('.tip-2').tap(function (e) {
-            e.preventDefault();
-            $('.tipContent').show()
-            $('.item-2').show()
-          });
-          $('.tip-3').tap(function (e) {
-            e.preventDefault();
-            $('.tipContent').show()
-            $('.item-3').show()
-          });
-          $('.tip-4').tap(function (e) {
-            e.preventDefault();
-            $('.tipContent').show()
-            $('.item-4').show()
-          });
+            $('.close-video').tap(function (e) {
+              e.preventDefault();
 
-          $('.tipContent').tap(function (e) {
-            e.preventDefault();
-            $('.tipContent').hide()
-            $('.tipItem').hide()
+              $('.e-video-one').hide();
+              $('.e-video-two').hide();
+
+              $('.article-video').toggleClass('is-play')
+
+            });
+
+
+            $('.click-1').tap(function (e) {
+              e.preventDefault();
+
+              if ($(window).width() > 1024) {
+                $('.e-video-two').hide();
+              }
+              
+              $('.e-video-one').show();
+
+              var url = base + "/clp/login/check.json";
+              console.log('url: ', url);
+              var data = loxia.syncXhrGet(url, {});
+              // var data = {result: true};
+              console.log('data: ', data);
+
+              if (data.result) {
+                $(".e-video-one").each(function(index, el) {
+                  $(el).addClass("home-video");
+                  var videoCode = '';
+                  if ($(window).width() > 1024) { // vip
+                    videoCode = '936FED15A968AC83753C612EB38A8D5A'; // pc
+                  } else {
+                    videoCode = 'E87CD01EAFAE9D910498CE5AAF1F53F5'; // mob
+                  }
+                  var videoId = "home_video_one_" + index;
+                  loadImgFun_index($(".video-code img", el), function() {});
+                  console.log('videoCode: ', videoCode);
+
+                  var bannerVideoId = videoCode;
+                  var url = base + "/indexCCVideo.json";
+                  var data = loxia.syncXhrGet(url, {
+                    'bannerVideoId': bannerVideoId
+                  });
+                  var videoUrl = data.mp4VideoUrl;
+
+                  // var videoUrl="https://cm15-c110-3.play.bokecc.com/flvs/ca/QxG2B/yBvChC5qkW-20.mp4?t=1651122011&key=5AB829859AAFB1EDC23E8947C6122AE4&tpl=10"
+
+                  var html = '<video class="video video-one" id="' +
+                    videoId +
+                    '"  webkit-playsinline="true" playsInline="true"><source src="' +
+                    videoUrl +
+                    '" ></source></video>';
+                  $(".video-content-one", el).html(html);
+                });
+              } else {
+                $(".e-video-one").each(function(index, el) {
+                  $(el).addClass("home-video");
+                  var videoCode = '';
+                  if ($(window).width() > 1024) { // 非vip
+                    videoCode = '3D9BD11D77EC50B63F35109F9F77F2A8'; // pc
+                  } else {
+                    videoCode = '2C7E4C9D1F5DA9F1FC9558351D509E7C'; // mob
+                  }
+                  var videoId = "home_video_one_" + index;
+                  loadImgFun_index($(".video-code img", el), function() {});
+
+                  console.log('videoCode: ', videoCode);
+
+                  var bannerVideoId = videoCode;
+                  var url = base + "/indexCCVideo.json";
+                  var data = loxia.syncXhrGet(url, {
+                    'bannerVideoId': bannerVideoId
+                  });
+                  var videoUrl = data.mp4VideoUrl;
+
+                  // var videoUrl="https://cm15-c110-3.play.bokecc.com/flvs/ca/QxG2B/yBvChC5qkW-20.mp4?t=1651122011&key=5AB829859AAFB1EDC23E8947C6122AE4&tpl=10"
+
+                  var html = '<video class="video video-one" id="' +
+                    videoId +
+                    '"  webkit-playsinline="true" playsInline="true"><source src="' +
+                    videoUrl +
+                    '" ></source></video>';
+                  $(".video-content-one", el).html(html);
+                });
+              }
+
+              var _parent_article = $(this).parents(".article-video"),
+                  _video_s = $(this).parents(".article-video").find(".video-one"),
+                  _video = $(this)
+                  .parents(".article-video")
+                  .find(".video-one");
+                _parent_article.toggleClass("is-play");
+
+                for (var i = 0; i < _video_s.length; i++) {
+                  _video_s.eq(i)[0].pause();
+                }
+                _video[0].play();
+                _video[0].addEventListener("ended", function() {
+                  this.play();
+                });
+
+              
+              $(".e-play-video-one").on("tap", function() {
+                var _parent_article = $(this).parents(".article-video"),
+                  _video_s = $(this).parents(".article-video").find(".video-one"),
+                  _video = $(this)
+                  .parents(".article-video")
+                  .find(".video-one");
+                _parent_article.toggleClass("is-play");
+                if (_parent_article.hasClass("is-play")) {
+                  for (var i = 0; i < _video_s.length; i++) {
+                    _video_s.eq(i)[0].pause();
+                  }
+                  _video[0].play();
+                  _video[0].addEventListener("ended", function() {
+                    this.play();
+                  });
+                } else {
+                  _video[0].pause();
+                }
+              });
+              
+            });
+
+            $('.click-2').tap(function (e) {
+              e.preventDefault();
+
+              console.log('$(window).width(2): ', $(window).width());
+
+              if ($(window).width() > 1024) {
+                $('.e-video-one').hide();
+              }
+
+              $('.e-video-two').show();
+
+              var url = base + "/clp/login/check.json";
+              console.log('url: ', url);
+              var data = loxia.syncXhrGet(url,{});
+              // var data = {result: true};
+              console.log('data: ', data);
+
+              if (data.result) {
+                $(".e-video-two").each(function(index, el) {
+                  $(el).addClass("home-video");
+                  var videoCode = '';
+                  if ($(window).width() > 1024) { // vip
+                    videoCode = '936FED15A968AC83753C612EB38A8D5A'; // pc
+                  } else {
+                    videoCode = 'E87CD01EAFAE9D910498CE5AAF1F53F5'; // mob
+                  }
+                  var videoId = "home_video_two_" + index;
+                  loadImgFun_index($(".video-code img", el), function() {});
+
+                  var bannerVideoId = videoCode;
+                  var url = base + "/indexCCVideo.json";
+                  var data = loxia.syncXhrGet(url, {
+                    'bannerVideoId': bannerVideoId
+                  });
+                  var videoUrl = data.mp4VideoUrl;
+
+                  // var videoUrl="https://cm15-c110-3.play.bokecc.com/flvs/ca/QxGwv/61Ek7XtBR9-20.mp4?t=1651126212&key=8979D5DB0969099D31668A0426F2F7C2&tpl=10"
+
+                  var html = '<video class="video video-two" id="' +
+                    videoId +
+                    '"  webkit-playsinline="true" playsInline="true"><source src="' +
+                    videoUrl +
+                    '" ></source></video>';
+                  $(".video-content-two", el).html(html);
+                });
+              } else {
+                $(".e-video-two").each(function(index, el) {
+                  $(el).addClass("home-video");
+                  var videoCode = '';
+                  if ($(window).width() > 1024) { // 非vip
+                    videoCode = '3D9BD11D77EC50B63F35109F9F77F2A8'; // pc
+                  } else {
+                    videoCode = '2C7E4C9D1F5DA9F1FC9558351D509E7C'; // mob
+                  }
+                  var videoId = "home_video_two_" + index;
+                  loadImgFun_index($(".video-code img", el), function() {});
+                  
+                  var bannerVideoId = videoCode;
+                  var url = base + "/indexCCVideo.json";
+                  var data = loxia.syncXhrGet(url, {
+                    'bannerVideoId': bannerVideoId
+                  });
+                  var videoUrl = data.mp4VideoUrl;
+
+                  // var videoUrl="https://cm15-c110-3.play.bokecc.com/flvs/ca/QxGwv/61Ek7XtBR9-20.mp4?t=1651126212&key=8979D5DB0969099D31668A0426F2F7C2&tpl=10"
+                  
+                  var html = '<video class="video video-two" id="' +
+                    videoId +
+                    '"  webkit-playsinline="true" playsInline="true"><source src="' +
+                    videoUrl +
+                    '" ></source></video>';
+                  $(".video-content-two", el).html(html);
+                });
+              }
+
+              var _parent_article = $(this).parents(".article-video"),
+                  _video_s = $(this).parents(".article-video").find(".video-two"),
+                  _video = $(this)
+                  .parents(".article-video")
+                  .find(".video-two");
+                _parent_article.toggleClass("is-play");
+                
+                for (var i = 0; i < _video_s.length; i++) {
+                  _video_s.eq(i)[0].pause();
+                }
+                _video[0].play();
+                _video[0].addEventListener("ended", function() {
+                  this.play();
+                });
+
+              
+              $(".e-play-video-two").on("tap", function() {
+                var _parent_article = $(this).parents(".article-video"),
+                  _video_s = $(this).parents(".article-video").find(".video-two"),
+                  _video = $(this)
+                  .parents(".article-video")
+                  .find(".video-two");
+                _parent_article.toggleClass("is-play");
+                if (_parent_article.hasClass("is-play")) {
+                  for (var i = 0; i < _video_s.length; i++) {
+                    _video_s.eq(i)[0].pause();
+                  }
+                  _video[0].play();
+                  _video[0].addEventListener("ended", function() {
+                    this.play();
+                  });
+                } else {
+                  _video[0].pause();
+                }
+              });
+              
+            });
+
+            
+            
           });
-          
-        });
-      </script>  
+        </script>
 
 
 		</section>
